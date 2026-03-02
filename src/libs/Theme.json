@@ -1,0 +1,66 @@
+{
+  "colors": {
+    "primary": "#3498db",
+    "secondary": "#2ecc71",
+    "accent": "#e74c3c",
+    "background": "#ecf0f1",
+    "text": "#2c3e50",
+    "link": "#2980b9",
+    "border": "#bdc3c7",
+    "white": "#FFF",
+    "black": "#000",
+    "error": "#EC495D",
+    "success": "#6CC070",
+    "iconColor": "#555555",
+    "dark": "#505050",
+    "grey": "#818484",
+    "darkTransparent": "rgba(0,0,0,0.45)",
+    "lightTransparent": "rgba(255,255,255,0.45)"
+  },
+  "typography": {
+    "heading": {
+      "fontFamily": "Roboto-Bold",
+      "fontWeight": "bold"
+    },
+    "body": {
+      "fontFamily": "Roboto-Regular",
+      "fontWeight": "normal"
+    },
+    "caption": {
+      "fontFamily": "Roboto-Light",
+      "fontWeight": "normal"
+    }
+  },
+  "borders": {
+    "miniRadius": 4,
+    "normalRadius": 8,
+    "regularRadius": 10,
+    "fullRadius": 12,
+    "width": 1
+  },
+  "shadows": {
+    "small": {
+      "shadowColor": "#000",
+      "shadowOffset": {"width": 0, "height": 2},
+      "shadowOpacity": 0.2,
+      "shadowRadius": 2
+    },
+    "medium": {
+      "shadowColor": "#000",
+      "shadowOffset": {"width": 0, "height": 4},
+      "shadowOpacity": 0.3,
+      "shadowRadius": 4
+    },
+    "large": {
+      "shadowColor": "#000",
+      "shadowOffset": {"width": 0, "height": 6},
+      "shadowOpacity": 0.4,
+      "shadowRadius": 6
+    }
+  },
+  "elevation": {
+    "small": 2,
+    "medium": 4,
+    "large": 6
+  }
+}

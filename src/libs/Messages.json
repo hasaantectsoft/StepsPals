@@ -1,0 +1,15 @@
+{
+  "validation": {
+    "invalidEmail": "Invalid email format",
+    "invalidPassword": "Password must be 8 characters with at least 1 letter and 1 digit."
+  },
+  "toasts": {
+    "loggedInSuccess": "Logged In successfully!",
+    "loggedInError": "Login failed. Please check your credentials and try again.",
+    "signUpSuccess": "Signed Up successfully!",
+    "signUpError": "Sign up failed. Please try again."
+  },
+  "apiMessages": {
+    "generalPostMessage": "Something went wrong. Please try again later."
+  }
+}
