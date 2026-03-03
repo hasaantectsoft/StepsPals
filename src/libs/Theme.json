@@ -1,6 +1,6 @@
 {
   "colors": {
-    "primary": "#3498db",
+    "primary": "#FEEA88",
     "secondary": "#2ecc71",
     "accent": "#e74c3c",
     "background": "#ecf0f1",
@@ -29,6 +29,10 @@
     "caption": {
       "fontFamily": "Roboto-Light",
       "fontWeight": "normal"
+    },
+    "Retro":{
+      "fontFamily":"PressStart2P-Regular",
+      "fontWeight":"normal"
     }
   },
   "borders": {

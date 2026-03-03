@@ -1,5 +1,5 @@
 import React from 'react';
-import {useColorScheme} from 'react-native';
+import {useColorScheme, View} from 'react-native';
 
 import {useSelector} from 'react-redux';
 import {NavigationContainer} from '@react-navigation/native';
@@ -7,6 +7,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {Theme} from '../libs';
 import UnAuthStack from './UnAuthStack';
 import AuthStack from './AuthStack';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 export default function AppNavigation() {
   const {themeMode} = useSelector(state => state.themeReducer);
@@ -33,12 +34,16 @@ export default function AppNavigation() {
 
   // You can get auth value for redux, firebase auth or any other logic according to your logic
   const isSignedIn = false;
-
+console.log('isSignedIn', isSignedIn);
   // It's important to note that when using such a setup, you don't manually navigate to the Home screen by calling navigation.navigate('Home') or any other method. React Navigation will automatically navigate to the correct screen when isSignedIn changes - Home screen when isSignedIn becomes true, and to SignIn screen when isSignedIn becomes false. You'll get an error if you attempt to navigate manually.
 
   return (
     <NavigationContainer theme={MyTheme}>
+    <View style={{flex: 1,
+    paddingBottom: useSafeAreaInsets().bottom
+     }}>
       {isSignedIn ? <AuthStack /> : <UnAuthStack />}
+      </View>
     </NavigationContainer>
   );
 }

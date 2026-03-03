@@ -1,9 +1,9 @@
 
 
 import React from 'react';
-
+import './src/locals/i18n';
 import {Provider} from 'react-redux';
-import {StyleSheet} from 'react-native';
+import {StatusBar, StyleSheet} from 'react-native';
 import NetInfo from '@react-native-community/netinfo';
 import {PersistGate} from 'reduxjs-toolkit-persist/integration/react';
 import {QueryClient, QueryClientProvider, onlineManager} from 'react-query';
@@ -25,9 +25,10 @@ export default function App() {
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistedStore}>
           <SafeAreaProvider>
-            <SafeAreaView style={styles.safeAreaFlex}>
+            {/* <SafeAreaView style={styles.safeAreaFlex}> */}
+             <StatusBar barStyle="dark-content" backgroundColor="transparent" />
               <AppNavigation />
-            </SafeAreaView>
+            {/* </SafeAreaView> */}
           </SafeAreaProvider>
         </PersistGate>
       </Provider>
@@ -37,6 +38,6 @@ export default function App() {
 
 const styles = StyleSheet.create({
   safeAreaFlex: {
-    flex: 1,
+    flexGrow: 1,
   },
 });

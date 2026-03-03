@@ -1,19 +1,21 @@
 import React from 'react';
-
+import    LandingScreen from '../screens/Unauth/LandingScreen/LandingScreen';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 function UnAuthStack() {
   const Stack = createNativeStackNavigator();
 
-  const screens = {};
+  const screens = {
+    Landing: LandingScreen,
+  };
 
   return (
     <Stack.Navigator
-      initialRouteName=""
+      initialRouteName="Landing"
       screenOptions={{
         headerShown: false,
         statusBarAnimation: 'fade',
-        animation: 'slide_from_bottom',
+        animation: 'slide_from_right',
         orientation: 'default',
         freezeOnBlur: true,
       }}>
