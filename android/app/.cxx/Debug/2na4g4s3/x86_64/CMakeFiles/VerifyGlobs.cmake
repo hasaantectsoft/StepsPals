@@ -84,6 +84,30 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   file(TOUCH_NOCREATE "C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/x86_64/CMakeFiles/cmake.verify_globs")
 endif()
 
+# react_codegen_SRCS at C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-loader-kit/android/build/generated/source/codegen/jni/CMakeLists.txt:9 (file)
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-loader-kit/android/build/generated/source/codegen/jni/*.cpp")
+set(OLD_GLOB
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-loader-kit/android/build/generated/source/codegen/jni/LoaderKitViewSpec-generated.cpp"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/x86_64/CMakeFiles/cmake.verify_globs")
+endif()
+
+# react_codegen_SRCS at C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-loader-kit/android/build/generated/source/codegen/jni/CMakeLists.txt:9 (file)
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-loader-kit/android/build/generated/source/codegen/jni/react/renderer/components/LoaderKitViewSpec/*.cpp")
+set(OLD_GLOB
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-loader-kit/android/build/generated/source/codegen/jni/react/renderer/components/LoaderKitViewSpec/ComponentDescriptors.cpp"
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-loader-kit/android/build/generated/source/codegen/jni/react/renderer/components/LoaderKitViewSpec/EventEmitters.cpp"
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-loader-kit/android/build/generated/source/codegen/jni/react/renderer/components/LoaderKitViewSpec/Props.cpp"
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-loader-kit/android/build/generated/source/codegen/jni/react/renderer/components/LoaderKitViewSpec/ShadowNodes.cpp"
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-loader-kit/android/build/generated/source/codegen/jni/react/renderer/components/LoaderKitViewSpec/States.cpp"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/x86_64/CMakeFiles/cmake.verify_globs")
+endif()
+
 # react_codegen_SRCS at C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-localize/android/build/generated/source/codegen/jni/CMakeLists.txt:9 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-localize/android/build/generated/source/codegen/jni/*.cpp")
 set(OLD_GLOB
@@ -126,6 +150,30 @@ set(OLD_GLOB
   "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-permissions/android/build/generated/source/codegen/jni/react/renderer/components/rnpermissions/Props.cpp"
   "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-permissions/android/build/generated/source/codegen/jni/react/renderer/components/rnpermissions/ShadowNodes.cpp"
   "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-permissions/android/build/generated/source/codegen/jni/react/renderer/components/rnpermissions/States.cpp"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/x86_64/CMakeFiles/cmake.verify_globs")
+endif()
+
+# react_codegen_SRCS at C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-reanimated/android/build/generated/source/codegen/jni/CMakeLists.txt:9 (file)
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-reanimated/android/build/generated/source/codegen/jni/*.cpp")
+set(OLD_GLOB
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-reanimated/android/build/generated/source/codegen/jni/rnreanimated-generated.cpp"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/x86_64/CMakeFiles/cmake.verify_globs")
+endif()
+
+# react_codegen_SRCS at C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-reanimated/android/build/generated/source/codegen/jni/CMakeLists.txt:9 (file)
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-reanimated/android/build/generated/source/codegen/jni/react/renderer/components/rnreanimated/*.cpp")
+set(OLD_GLOB
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-reanimated/android/build/generated/source/codegen/jni/react/renderer/components/rnreanimated/ComponentDescriptors.cpp"
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-reanimated/android/build/generated/source/codegen/jni/react/renderer/components/rnreanimated/EventEmitters.cpp"
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-reanimated/android/build/generated/source/codegen/jni/react/renderer/components/rnreanimated/Props.cpp"
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-reanimated/android/build/generated/source/codegen/jni/react/renderer/components/rnreanimated/ShadowNodes.cpp"
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-reanimated/android/build/generated/source/codegen/jni/react/renderer/components/rnreanimated/States.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -233,6 +281,43 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   file(TOUCH_NOCREATE "C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/x86_64/CMakeFiles/cmake.verify_globs")
 endif()
 
+# rnsvg_SRCS at C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt:10 (file)
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-svg/android/src/main/jni/*.cpp")
+set(OLD_GLOB
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-svg/android/src/main/jni/rnsvg.cpp"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/x86_64/CMakeFiles/cmake.verify_globs")
+endif()
+
+# rnsvg_SRCS at C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt:10 (file)
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp/react/renderer/components/rnsvg/*.cpp")
+set(OLD_GLOB
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp/react/renderer/components/rnsvg/RNSVGImageShadowNode.cpp"
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp/react/renderer/components/rnsvg/RNSVGImageState.cpp"
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp/react/renderer/components/rnsvg/RNSVGLayoutableShadowNode.cpp"
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp/react/renderer/components/rnsvg/RNSVGShadowNodes.cpp"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/x86_64/CMakeFiles/cmake.verify_globs")
+endif()
+
+# rnsvg_codegen_SRCS at C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt:11 (file)
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg/*cpp")
+set(OLD_GLOB
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg/ComponentDescriptors.cpp"
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg/EventEmitters.cpp"
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg/Props.cpp"
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg/ShadowNodes.cpp"
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg/States.cpp"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/x86_64/CMakeFiles/cmake.verify_globs")
+endif()
+
 # react_codegen_SRCS at C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/CMakeLists.txt:9 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/*.cpp")
 set(OLD_GLOB
@@ -251,6 +336,30 @@ set(OLD_GLOB
   "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec/Props.cpp"
   "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec/ShadowNodes.cpp"
   "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/react/renderer/components/RNVectorIconsSpec/States.cpp"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/x86_64/CMakeFiles/cmake.verify_globs")
+endif()
+
+# react_codegen_SRCS at C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-worklets/android/build/generated/source/codegen/jni/CMakeLists.txt:9 (file)
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-worklets/android/build/generated/source/codegen/jni/*.cpp")
+set(OLD_GLOB
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-worklets/android/build/generated/source/codegen/jni/rnworklets-generated.cpp"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/x86_64/CMakeFiles/cmake.verify_globs")
+endif()
+
+# react_codegen_SRCS at C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-worklets/android/build/generated/source/codegen/jni/CMakeLists.txt:9 (file)
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-worklets/android/build/generated/source/codegen/jni/react/renderer/components/rnworklets/*.cpp")
+set(OLD_GLOB
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-worklets/android/build/generated/source/codegen/jni/react/renderer/components/rnworklets/ComponentDescriptors.cpp"
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-worklets/android/build/generated/source/codegen/jni/react/renderer/components/rnworklets/EventEmitters.cpp"
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-worklets/android/build/generated/source/codegen/jni/react/renderer/components/rnworklets/Props.cpp"
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-worklets/android/build/generated/source/codegen/jni/react/renderer/components/rnworklets/ShadowNodes.cpp"
+  "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native-worklets/android/build/generated/source/codegen/jni/react/renderer/components/rnworklets/States.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

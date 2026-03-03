@@ -34,7 +34,6 @@ export default function AppNavigation() {
 
   // You can get auth value for redux, firebase auth or any other logic according to your logic
   const isSignedIn = false;
-console.log('isSignedIn', isSignedIn);
   // It's important to note that when using such a setup, you don't manually navigate to the Home screen by calling navigation.navigate('Home') or any other method. React Navigation will automatically navigate to the correct screen when isSignedIn changes - Home screen when isSignedIn becomes true, and to SignIn screen when isSignedIn becomes false. You'll get an error if you attempt to navigate manually.
 
   return (
