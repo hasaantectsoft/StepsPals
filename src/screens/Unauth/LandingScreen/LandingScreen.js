@@ -44,14 +44,12 @@ export default function LandingScreen({  }) {
         
     };
 
-    if (isLoading) {
-        return
-    }
+    
 
     return (
         <View style={Styles.container}>
             <ImageBackground
-                source={require("../../../assets/images/PawPatterns.png")}
+                source={require("../../../assets/images/required.png")}
                 style={Styles.imgbg}
                 resizeMode="cover"
             >

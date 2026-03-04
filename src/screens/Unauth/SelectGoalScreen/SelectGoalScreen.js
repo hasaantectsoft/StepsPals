@@ -11,6 +11,7 @@ export default function SelectGoalScreen() {
     const { params } = useRoute();
     const navigation = useNavigation();
     const pet = params?.pet;
+    const petName = params?.petName;
     const [stepGoal, setStepGoal] = useState(5000);
 
     return (
@@ -34,7 +35,7 @@ export default function SelectGoalScreen() {
                             <SvgXml xml={pet.svg} width={Styles.petImage.width} height={Styles.petImage.height} />
                         </View>
                     ) : null}
-                    <Text style={Styles.petName}>{pet?.name ?? "Your Pet"}</Text>
+                    <Text style={Styles.petName}>{petName ?? pet?.name ?? "Your Pet"}</Text>
                     <View style={Styles.stepRow}>
                       
                             <Text style={Styles.stepValue}>{stepGoal}</Text>
@@ -42,7 +43,7 @@ export default function SelectGoalScreen() {
                         
                     </View>
                     <StepSlider value={stepGoal} onChange={setStepGoal} />
-                    <RetroDoneButton onPress={() => navigation.navigate('GivePermissions')} />
+                    <RetroDoneButton onPress={() => navigation.navigate('GivePermissions', { pet, petName })} />
                     
                 </View>
             </ImageBackground>

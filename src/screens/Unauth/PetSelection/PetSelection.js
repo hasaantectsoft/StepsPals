@@ -4,6 +4,7 @@ import { Styles } from "./styles";
 import { cat, dino, dog } from "../../../assets/svgs";
 import { SvgXml } from "react-native-svg";
 import { useNavigation } from "@react-navigation/native";
+import NextButton from "../../../components/NextButton/NextButton";
 
 export default () => {
     const pets=[
@@ -30,12 +31,12 @@ export default () => {
     return (
         <View style={Styles.container}>
             <ImageBackground
-                source={require("../../../assets/images/PawPatterns.png")}
+                source={require("../../../assets/images/required.png")}
                 style={Styles.imgbg}
                 resizeMode="cover"
             >
                 <Text style={Styles.title}>
-                    Your future path will be to take care of your Pet.
+                Your step journey starts with picking your StepPal that will keep you accountable to your goals.
                 </Text>
                 <Text style={Styles.subtitle}>
                     Select a Pet to start:
@@ -62,19 +63,7 @@ export default () => {
                         );
                     })}
                 </View>
-                <View style={Styles.nextButtonWrapper}>
-                    <TouchableOpacity activeOpacity={0.8} onPress={() => {navigation.navigate('SelectGoalScreen',
-                        {pet: selectedPet}
-                    )}}>
-                        <ImageBackground
-                            style={Styles.nextButton}
-                            resizeMode="contain"
-                            source={require("../../../assets/images/next.png")}
-                        >
-                            <Text style={Styles.nextButtonText}>NEXT</Text>
-                        </ImageBackground>
-                    </TouchableOpacity>
-                </View>
+                <NextButton  onPress={() => navigation.navigate('NameYourPer', { pet: selectedPet })} />
             </ImageBackground>
         </View >
     );

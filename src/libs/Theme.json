@@ -1,6 +1,10 @@
 {
   "colors": {
     "primary": "#FEEA88",
+    "oragne":"#E89B4C",
+    "DARKRED":"##D93F41",
+    "darkblue":"#2D3E50",
+    "brightgreen":"#4CAF50",
     "brown": "#6F5548",
     "secondary": "#2ecc71",
     "accent": "#e74c3c",
