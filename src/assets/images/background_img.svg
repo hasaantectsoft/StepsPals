@@ -1,0 +1,29 @@
+<svg width="1320" height="411" viewBox="0 0 1320 411" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect x="197.043" y="220.457" width="141.094" height="70.5468" fill="url(#pattern0_2829_55457)" style="mix-blend-mode:overlay"/>
+<rect x="685.831" y="220.457" width="141.094" height="70.5468" fill="url(#pattern1_2829_55457)" style="mix-blend-mode:overlay"/>
+<rect x="1159.5" y="220.457" width="141.094" height="70.5468" fill="url(#pattern2_2829_55457)" style="mix-blend-mode:overlay"/>
+<rect x="471.671" width="141.094" height="70.5468" fill="url(#pattern3_2829_55457)" style="mix-blend-mode:overlay"/>
+<rect x="-2" width="141.094" height="70.5468" fill="url(#pattern4_2829_55457)" style="mix-blend-mode:overlay"/>
+<rect x="1066.28" width="141.094" height="70.5468" fill="url(#pattern5_2829_55457)" style="mix-blend-mode:overlay"/>
+<defs>
+<pattern id="pattern0_2829_55457" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_2829_55457" transform="scale(0.0833333 0.166667)"/>
+</pattern>
+<pattern id="pattern1_2829_55457" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_2829_55457" transform="scale(0.0833333 0.166667)"/>
+</pattern>
+<pattern id="pattern2_2829_55457" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_2829_55457" transform="scale(0.0833333 0.166667)"/>
+</pattern>
+<pattern id="pattern3_2829_55457" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_2829_55457" transform="scale(0.0833333 0.166667)"/>
+</pattern>
+<pattern id="pattern4_2829_55457" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_2829_55457" transform="scale(0.0833333 0.166667)"/>
+</pattern>
+<pattern id="pattern5_2829_55457" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_2829_55457" transform="scale(0.0833333 0.166667)"/>
+</pattern>
+<image id="image0_2829_55457" width="12" height="6" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAGCAYAAAD37n+BAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAaUlEQVQYlZWPMQrAIBRDn6Vrt1IQL+Di7Obh3ZxdvIAIpVsPYCfFSpdmyk/CJxG1Vv5gBXBGh0GzPqZ+jJ6Pya7zh7Pk4IxunEOql7/86gOItkHvWwA4pMLHZFuds2QA0nXbvqEFvzDrDwgkILHqgP5wAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>

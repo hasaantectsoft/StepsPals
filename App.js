@@ -11,6 +11,7 @@ import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 import AppNavigation from './src/navigation';
 import {store, persistedStore} from './src/redux/store';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 export default function App() {
   const queryClient = new QueryClient();
@@ -21,6 +22,7 @@ export default function App() {
     });
   });
   return (
+   <GestureHandlerRootView style={{flex: 1}}> 
     <QueryClientProvider client={queryClient}>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistedStore}>
@@ -30,7 +32,7 @@ export default function App() {
           </SafeAreaProvider>
         </PersistGate>
       </Provider>
-    </QueryClientProvider>
+    </QueryClientProvider></GestureHandlerRootView>
   );
 }
 

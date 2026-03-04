@@ -6,6 +6,7 @@ import CenteralLoader from './CenteralLoader/CenteralLoader';
 import TextWithAnimatedDots from './TextWithAnimatedDots/TextWithAnimatedDots';
 import NativeRightIconInput from './NativeRightIconInput/NativeRightIconInput';
 import NativeActionSheet from './NativeActionSheet/NativeActionSheet';
+import Header from './Header/Header';
 
 export {
   NativeButton,
@@ -16,4 +17,5 @@ export {
   TextWithAnimatedDots,
   CenteralLoader,
   NativeActionSheet,
+  Header,
 };

@@ -3,13 +3,15 @@ import    LandingScreen from '../screens/Unauth/LandingScreen/LandingScreen';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import PetSelection from '../screens/Unauth/PetSelection/PetSelection';
 import SelectGoalScreen from '../screens/Unauth/SelectGoalScreen/SelectGoalScreen';
+import GivePermissions from '../screens/Unauth/Permissions/GivePermissions';
 function UnAuthStack() {
   const Stack = createNativeStackNavigator();
 
   const screens = {
     Landing: LandingScreen,
     SelectGoalScreen:SelectGoalScreen,
-    PetSelection: PetSelection
+    PetSelection: PetSelection,
+    GivePermissions: GivePermissions
   };
 
   return (
