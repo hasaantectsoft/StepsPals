@@ -1,9 +1,12 @@
+import { Platform } from 'react-native';
 import {
   RESULTS,
+  PERMISSIONS,
   request,
   requestMultiple,
   requestNotifications,
   requestLocationAccuracy,
+  openSettings,
 } from 'react-native-permissions';
 
 const handlePermission = result => {
@@ -67,22 +70,34 @@ const permissionUtils = {
   },
   requestNotificationPermission: async () => {
     try {
-      const {status} = await requestNotifications(['alert', 'badge', 'sound']);
-
-      if (
-        status === 'denied' ||
-        status === 'blocked' ||
-        status === 'unavailable'
-      ) {
-        // ask user to allow permission from app setting by using alert or toast
-        return false;
-      }
-      return true;
-    } catch (error) {
+      const { status } = await requestNotifications(['alert', 'badge', 'sound']);
+      return status === 'granted';
+    } catch {
       return false;
     }
   },
-  //only for ios
+  requestHealthPermission: async () => {
+    if (Platform.OS === 'android') {
+      const result = await request(PERMISSIONS.ANDROID.ACTIVITY_RECOGNITION);
+      return result === RESULTS.GRANTED || result === RESULTS.LIMITED;
+    }
+    if (Platform.OS === 'ios') {
+      try {
+        const HealthKit = require('@kingstinct/react-native-healthkit').default;
+        const { HKQuantityTypeIdentifierStepCount } =
+          require('@kingstinct/react-native-healthkit');
+        await HealthKit.requestAuthorization([
+          HKQuantityTypeIdentifierStepCount,
+        ]);
+        return true;
+      } catch (e) {
+        openSettings();
+        return false;
+      }
+    }
+    return false;
+  },
+  openSettings,
   requestLocationAccuracyPermission: async () => {
     try {
       const accuracy = await requestLocationAccuracy({
