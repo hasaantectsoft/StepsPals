@@ -1,6 +1,6 @@
 # ninja log v5
 35263	52923	7942283744933419	RNLocalizeSpec_autolinked_build/CMakeFiles/react_codegen_RNLocalizeSpec.dir/react/renderer/components/RNLocalizeSpec/ComponentDescriptors.cpp.o	6d91bdb1abba58bb
-3	59	0	C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/armeabi-v7a/CMakeFiles/cmake.verify_globs	4d05f2622d514197
+2	49	0	C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/armeabi-v7a/CMakeFiles/cmake.verify_globs	4d05f2622d514197
 131	14403	7942283359663414	RNCNetInfoSpec_autolinked_build/CMakeFiles/react_codegen_RNCNetInfoSpec.dir/RNCNetInfoSpec-generated.cpp.o	574f099d212c6f12
 95	10164	7942283317223431	AsyncStorageSpec_autolinked_build/CMakeFiles/react_codegen_AsyncStorageSpec.dir/react/renderer/components/AsyncStorageSpec/States.cpp.o	b66f95f0f286ed0
 66878	86409	7942284079013434	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/8a3655bd52739505743333ee87bf9e4d/renderer/components/safeareacontext/Props.cpp.o	6436562b07be506f
@@ -100,4 +100,4 @@
 124904	140915	7942284625073444	rnworklets_autolinked_build/CMakeFiles/react_codegen_rnworklets.dir/react/renderer/components/rnworklets/Props.cpp.o	52302c5e60b0f4b6
 128927	146739	7942284683353427	rnworklets_autolinked_build/CMakeFiles/react_codegen_rnworklets.dir/react/renderer/components/rnworklets/ComponentDescriptors.cpp.o	b9b29bcea575a644
 138322	149528	7942284711263450	rnworklets_autolinked_build/CMakeFiles/react_codegen_rnworklets.dir/react/renderer/components/rnworklets/States.cpp.o	ec7444c288e5aa16
-5	50	0	C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/armeabi-v7a/CMakeFiles/cmake.verify_globs	4d05f2622d514197
+3	61	0	C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/armeabi-v7a/CMakeFiles/cmake.verify_globs	4d05f2622d514197

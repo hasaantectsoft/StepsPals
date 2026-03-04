@@ -1,7 +1,7 @@
 # ninja log v5
 66999	86305	7942190880261419	rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/12a73f5420ab9f144462fbe0e4b91d1a/renderer/components/rnscreens/RNSScreenStackHeaderConfigState.cpp.o	3660d7df1a96893d
 56788	72714	7942287132623407	rnpermissions_autolinked_build/CMakeFiles/react_codegen_rnpermissions.dir/react/renderer/components/rnpermissions/Props.cpp.o	dcd40713cb8168a9
-3	56	0	C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/x86_64/CMakeFiles/cmake.verify_globs	63e93d682e03e9c9
+3	52	0	C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/x86_64/CMakeFiles/cmake.verify_globs	63e93d682e03e9c9
 151376	169658	7942288103778692	rnworklets_autolinked_build/CMakeFiles/react_codegen_rnworklets.dir/react/renderer/components/rnworklets/ShadowNodes.cpp.o	27ac4715a45d9cae
 34105	50978	7942286916328110	RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir/react/renderer/components/RNVectorIconsSpec/Props.cpp.o	15eae682fa534718
 93481	106965	7942287476153466	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/d60126d1596dc8f006f2edaf19ae7065/source/codegen/jni/safeareacontext-generated.cpp.o	1f728bf36330b151
@@ -100,4 +100,4 @@
 137471	155611	7942287961828792	rnworklets_autolinked_build/CMakeFiles/react_codegen_rnworklets.dir/react/renderer/components/rnworklets/ComponentDescriptors.cpp.o	f80bc474b80d2bf7
 151810	166275	7942288070018736	rnworklets_autolinked_build/CMakeFiles/react_codegen_rnworklets.dir/react/renderer/components/rnworklets/States.cpp.o	6561be8f28df962a
 147125	166924	7942288076138741	rnworklets_autolinked_build/CMakeFiles/react_codegen_rnworklets.dir/react/renderer/components/rnworklets/Props.cpp.o	9225a6d682570914
-5	61	0	C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/x86_64/CMakeFiles/cmake.verify_globs	63e93d682e03e9c9
+5	76	0	C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/x86_64/CMakeFiles/cmake.verify_globs	63e93d682e03e9c9

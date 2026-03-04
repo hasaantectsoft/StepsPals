@@ -1,6 +1,7 @@
 {
   "colors": {
     "primary": "#FEEA88",
+    "brown": "#6F5548",
     "secondary": "#2ecc71",
     "accent": "#e74c3c",
     "background": "#ecf0f1",
@@ -15,7 +16,8 @@
     "dark": "#505050",
     "grey": "#818484",
     "darkTransparent": "rgba(0,0,0,0.45)",
-    "lightTransparent": "rgba(255,255,255,0.45)"
+    "lightTransparent": "rgba(255,255,255,0.45)",
+    "selectedPetBg": "#FFF074"
   },
   "typography": {
     "heading": {

@@ -26,6 +26,7 @@
     "@react-navigation/native": "^6.1.17",
     "@react-navigation/native-stack": "^6.9.26",
     "@reduxjs/toolkit": "^2.2.3",
+    "@shopify/react-native-skia": "^2.5.0",
     "axios": "^1.6.8",
     "i18next": "^25.8.13",
     "prop-types": "^15.8.1",

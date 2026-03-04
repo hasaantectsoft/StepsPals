@@ -258,7 +258,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "appmodules::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-appmodules-Debug-710b08df23f23ed28b1a.json",
+					"jsonFile" : "target-appmodules-Debug-b13e51aff6bedc7e42a9.json",
 					"name" : "appmodules",
 					"projectIndex" : 0
 				},
@@ -321,14 +321,14 @@
 				{
 					"directoryIndex" : 9,
 					"id" : "react_codegen_rnscreens::@25bcbd507e98d3a854ad",
-					"jsonFile" : "target-react_codegen_rnscreens-Debug-f35b5a11bf0a4becd542.json",
+					"jsonFile" : "target-react_codegen_rnscreens-Debug-caa0257ea95119f5285e.json",
 					"name" : "react_codegen_rnscreens",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 10,
 					"id" : "react_codegen_rnsvg::@4f40eb209d0c0b4a3b65",
-					"jsonFile" : "target-react_codegen_rnsvg-Debug-48c6b2b5eac23013ae2e.json",
+					"jsonFile" : "target-react_codegen_rnsvg-Debug-d78c7cdd1764c09d9e03.json",
 					"name" : "react_codegen_rnsvg",
 					"projectIndex" : 0
 				},
@@ -342,7 +342,7 @@
 				{
 					"directoryIndex" : 8,
 					"id" : "react_codegen_safeareacontext::@7984cd80db47aa7b952a",
-					"jsonFile" : "target-react_codegen_safeareacontext-Debug-bd73521a92826cbeac0a.json",
+					"jsonFile" : "target-react_codegen_safeareacontext-Debug-b87b4ebf8bdb2389d032.json",
 					"name" : "react_codegen_safeareacontext",
 					"projectIndex" : 0
 				}
@@ -352,7 +352,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/x86",
+		"build" : "C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/x86_64",
 		"source" : "C:/Users/sale/Documents/GitHub/StepsPals/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup"
 	},
 	"version" : 

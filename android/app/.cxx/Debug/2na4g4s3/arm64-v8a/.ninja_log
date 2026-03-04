@@ -1,6 +1,6 @@
 # ninja log v5
 108830	139393	7942282991908066	rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/84681c7973a0a9748ce5d500eb256c05/jni/react/renderer/components/rnscreens/ComponentDescriptors.cpp.o	f70f3e9d80e0b923
-4	82	0	C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/arm64-v8a/CMakeFiles/cmake.verify_globs	cf0da58486c7a3c4
+3	49	0	C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/arm64-v8a/CMakeFiles/cmake.verify_globs	cf0da58486c7a3c4
 95	12528	7942281724147466	AsyncStorageSpec_autolinked_build/CMakeFiles/react_codegen_AsyncStorageSpec.dir/react/renderer/components/AsyncStorageSpec/EventEmitters.cpp.o	dc7d4730f4a8269c
 74	16634	7942281765207428	AsyncStorageSpec_autolinked_build/CMakeFiles/react_codegen_AsyncStorageSpec.dir/react/renderer/components/AsyncStorageSpec/ComponentDescriptors.cpp.o	a275b0b062a708ae
 118	11799	7942281716687440	AsyncStorageSpec_autolinked_build/CMakeFiles/react_codegen_AsyncStorageSpec.dir/react/renderer/components/AsyncStorageSpec/States.cpp.o	3d92c356ba91b9e
@@ -100,4 +100,4 @@
 141979	152029	7942283118458081	rnworklets_autolinked_build/CMakeFiles/react_codegen_rnworklets.dir/react/renderer/components/rnworklets/States.cpp.o	1cc3b364a9aa727
 144630	159475	7942283193738056	rnworklets_autolinked_build/CMakeFiles/react_codegen_rnworklets.dir/react/renderer/components/rnworklets/ComponentDescriptors.cpp.o	f0b8548e7b671371
 147063	160272	7942283201973414	rnworklets_autolinked_build/CMakeFiles/react_codegen_rnworklets.dir/react/renderer/components/rnworklets/Props.cpp.o	868fcc9cd2be2b1
-3	52	0	C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/arm64-v8a/CMakeFiles/cmake.verify_globs	cf0da58486c7a3c4
+5	73	0	C:/Users/sale/Documents/GitHub/StepsPals/android/app/.cxx/Debug/2na4g4s3/arm64-v8a/CMakeFiles/cmake.verify_globs	cf0da58486c7a3c4
