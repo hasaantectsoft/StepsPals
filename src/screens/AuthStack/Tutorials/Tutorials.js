@@ -31,9 +31,22 @@ export default function Tutorials() {
     if (index < IMAGES.length - 1) {
       setIndex(prev => prev + 1);
     } else {
-              dispatch(setNewUser(false));
+      dispatch(setNewUser(false));
 
-        navigation.navigate('Home');
+      navigation.reset({
+        index: 0,
+        routes: [
+          {
+            name: 'Main',
+            state: {
+              index: 0,
+              routes: [
+                { name: 'Home' }
+              ]
+            }
+          }
+        ]
+      });
     }
   };
 

@@ -26,7 +26,7 @@ export default function LandingScreen({  }) {
     useEffect(() => {
         if (typeof isNewUser !== 'undefined' && isNewUser === false) {
             if (stack) {
-                navigation.replace('Home');
+                navigation.replace('Main', { screen: 'Home' });
             } else {
                 navigation.replace('PetSelection');
             }
@@ -54,7 +54,7 @@ export default function LandingScreen({  }) {
     const handleStart = () => {
         console.log("Starting app...",stack);
         if(stack){
-            navigation.replace('Home');
+            navigation.replace('Main', { screen: 'Home' });
             return;
         }
         else{

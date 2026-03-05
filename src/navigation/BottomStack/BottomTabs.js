@@ -1,6 +1,7 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import { View, Platform } from 'react-native';
-import { useLinkBuilder, useTheme } from '@react-navigation/native';
+import { View } from 'react-native';
+import { useTheme } from '@react-navigation/native';
 import { Text, PlatformPressable } from '@react-navigation/elements';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { SvgXml } from 'react-native-svg';
@@ -10,39 +11,43 @@ import Settings from '../../screens/AuthStack/Settings/Settings';
 import GraveYard from '../../screens/AuthStack/GraveYard/GraveYard';
 import LeaderBoard from '../../screens/AuthStack/LeaderBoard/LeaderBoard';
 import Statistics from '../../screens/AuthStack/Statistics/Statistics';
-import { Paw, thumb, nointernetlogo } from '../../assets/svgs';
+import { Paw } from '../../assets/svgs';
+
+const Tab = createBottomTabNavigator();
 
 function MyTabBar({ state, descriptors, navigation }) {
   const { colors } = useTheme();
-  const { buildHref } = useLinkBuilder();
 
   const iconForRoute = (name) => {
     switch (name) {
       case 'Home':
-        return Paw;
       case 'LeaderBoard':
-        return thumb;
       case 'Statistics':
-        return thumb;
       case 'GraveYard':
-        return nointernetlogo;
       case 'Settings':
-        return thumb;
+        return Paw;
       default:
         return Paw;
     }
   };
 
   return (
-    <View style={{ flexDirection: 'row' }}>
+    <View
+      style={{
+        flexDirection: 'row',
+        height: 60,
+        borderTopWidth: 1,
+        borderColor: '#eee',
+        backgroundColor: '#fff',
+      }}
+    >
       {state.routes.map((route, index) => {
         const { options } = descriptors[route.key];
+
         const label =
-          options.tabBarLabel !== undefined
-            ? options.tabBarLabel
-            : options.title !== undefined
-              ? options.title
-              : route.name;
+          options.tabBarLabel ??
+          options.title ??
+          route.name;
 
         const isFocused = state.index === index;
 
@@ -54,7 +59,7 @@ function MyTabBar({ state, descriptors, navigation }) {
           });
 
           if (!isFocused && !event.defaultPrevented) {
-            navigation.navigate(route.name, route.params);
+            navigation.navigate(route.name);
           }
         };
 
@@ -66,20 +71,38 @@ function MyTabBar({ state, descriptors, navigation }) {
         };
 
         const IconXml = iconForRoute(route.name);
+        const color = isFocused ? colors.primary : colors.text;
 
         return (
           <PlatformPressable
             key={route.key}
-            href={buildHref(route.name, route.params)}
+            accessibilityRole="button"
             accessibilityState={isFocused ? { selected: true } : {}}
             accessibilityLabel={options.tabBarAccessibilityLabel}
             testID={options.tabBarButtonTestID}
             onPress={onPress}
             onLongPress={onLongPress}
-            style={{ flex: 1, alignItems: 'center', padding: 8 }}
+            style={{
+              flex: 1,
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
           >
-            <SvgXml xml={IconXml} width={24} height={24} />
-            <Text style={{ color: isFocused ? colors.primary : colors.text, fontSize: 12 }}>{label}</Text>
+            {IconXml ? (
+              <SvgXml xml={IconXml} width={24} height={24} />
+            ) : (
+              <View style={{ width: 24, height: 24 }} />
+            )}
+
+            <Text
+              style={{
+                color,
+                fontSize: 12,
+                marginTop: 4,
+              }}
+            >
+              {label}
+            </Text>
           </PlatformPressable>
         );
       })}
@@ -87,11 +110,14 @@ function MyTabBar({ state, descriptors, navigation }) {
   );
 }
 
-const Tab = createBottomTabNavigator();
-
 export default function MyTabs() {
   return (
-    <Tab.Navigator tabBar={(props) => <MyTabBar {...props} />} screenOptions={{ headerShown: false }}>
+    <Tab.Navigator
+      tabBar={(props) => <MyTabBar {...props} />}
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
       <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="LeaderBoard" component={LeaderBoard} />
       <Tab.Screen name="Statistics" component={Statistics} />
