@@ -1,5 +1,5 @@
 import React from 'react';
-import { useColorScheme, View } from 'react-native';
+import { useColorScheme, View, Platform } from 'react-native';
 
 import { useSelector } from 'react-redux';
 import { NavigationContainer } from '@react-navigation/native';
@@ -9,14 +9,35 @@ import UnAuthStack from './UnAuthStack';
 import AuthStack from './AuthStack';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+const { typography } = Theme;
+
+const defaultFonts = Platform.select({
+  ios: {
+    regular: { fontFamily: 'System', fontWeight: '400' },
+    medium: { fontFamily: 'System', fontWeight: '500' },
+    bold: { fontFamily: 'System', fontWeight: '600' },
+    heavy: { fontFamily: 'System', fontWeight: '700' },
+  },
+  android: {
+    regular: { fontFamily: 'sans-serif', fontWeight: '400' },
+    medium: { fontFamily: 'sans-serif-medium', fontWeight: '500' },
+    bold: { fontFamily: 'sans-serif', fontWeight: '600' },
+    heavy: { fontFamily: 'sans-serif', fontWeight: '700' },
+  },
+  default: {
+    regular: { fontFamily: typography?.body?.fontFamily || 'System', fontWeight: '400' },
+    medium: { fontFamily: typography?.body?.fontFamily || 'System', fontWeight: '500' },
+    bold: { fontFamily: typography?.heading?.fontFamily || 'System', fontWeight: '600' },
+    heavy: { fontFamily: typography?.heading?.fontFamily || 'System', fontWeight: '700' },
+  },
+});
+
 export default function AppNavigation() {
   const { themeMode } = useSelector(state => state.themeReducer);
-  // Make sure all of your app stack are wrapped inside this screen
   const scheme = useColorScheme();
   let isDarkMode =
     (themeMode !== 'light' && scheme === 'dark') || themeMode === 'dark';
   const { colors } = Theme;
-  // My Theme will auto apply colors to background and text based on theme, otherwise you can also use color as desired in your file
   const MyTheme = {
     dark: isDarkMode,
     colors: {
@@ -30,18 +51,16 @@ export default function AppNavigation() {
         ? colors.darkTransparent
         : colors.lightTransparent,
     },
+    fonts: defaultFonts,
   };
 
   // You can get auth value for redux, firebase auth or any other logic according to your logic
   const isSignedIn = useSelector(state => state.authReducer?.isSignedIn);
-  // It's important to note that when using such a setup, you don't manually navigate to the Home screen by calling navigation.navigate('Home') or any other method. React Navigation will automatically navigate to the correct screen when isSignedIn changes - Home screen when isSignedIn becomes true, and to SignIn screen when isSignedIn becomes false. You'll get an error if you attempt to navigate manually.
+  const insets = useSafeAreaInsets();
 
   return (
     <NavigationContainer theme={MyTheme}>
-      <View style={{
-        flex: 1,
-        paddingBottom: useSafeAreaInsets().bottom
-      }}>
+      <View style={{ flex: 1, paddingBottom: insets.bottom }}>
         {isSignedIn ? <AuthStack /> : <UnAuthStack />}
       </View>
     </NavigationContainer>
