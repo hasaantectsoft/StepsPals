@@ -7,10 +7,13 @@ import { useNetworkStatus } from "../../../utils/hooks/useNetworkStatus";
 import NetInfo from "@react-native-community/netinfo";
 import {  RetryingState, ConnectedState, NoInternetState } from "../../../components/LandingPageComponents";
 import { useNavigation } from '@react-navigation/native';
+import { useSelector } from "react-redux";
 
 export default function LandingScreen({  }) {
     const [isRetrying, setIsRetrying] = useState(false);
     const [retryFailed, setRetryFailed] = useState(false);
+    const stack=useSelector(state=>state.authReducer?.isSignedIn);
+    const isNewUser = useSelector(state => state.tutorialReducer?.isnewuser);
     const { isConnected, isLoading } = useNetworkStatus();
     const navigation = useNavigation();
 
@@ -19,6 +22,16 @@ export default function LandingScreen({  }) {
             setRetryFailed(false);
         }
     }, [isConnected]);
+
+    useEffect(() => {
+        if (typeof isNewUser !== 'undefined' && isNewUser === false) {
+            if (stack) {
+                navigation.replace('Home');
+            } else {
+                navigation.replace('PetSelection');
+            }
+        }
+    }, [isNewUser, stack, navigation]);
 
     const handleRetry = async () => {
         setIsRetrying(true);
@@ -39,9 +52,14 @@ export default function LandingScreen({  }) {
     };
 
     const handleStart = () => {
-        console.log("Starting app...");
-        navigation.replace('PetSelection');
-        
+        console.log("Starting app...",stack);
+        if(stack){
+            navigation.replace('Home');
+            return;
+        }
+        else{
+            navigation.replace('PetSelection');
+        }
     };
 
     
