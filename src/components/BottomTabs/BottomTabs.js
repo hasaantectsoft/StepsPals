@@ -18,10 +18,12 @@ const BottomTabs = ({ activeTab, onTabPress }) => {
    
     const tabIcons = [
         { name: 'Home', icon: require('../../assets/images/home.png') },
-        { name: 'Settings', icon: require('../../assets/images/settings.png') },
+        { name: 'Statistics', icon: require('../../assets/images/stats.png') },
+
         { name: 'GraveYard', icon: require('../../assets/images/graveyard.png') },
         { name: 'LeaderBoard', icon: require('../../assets/images/tropy.png') },
-        { name: 'Statistics', icon: require('../../assets/images/stats.png') },
+        { name: 'Settings', icon: require('../../assets/images/settings.png') },
+
     ];
     useEffect(() => {
         const checkConnection = () => {
@@ -88,7 +90,7 @@ const BottomTabs = ({ activeTab, onTabPress }) => {
                             >
                                 <Image
                                     source={tab.icon}
-                                    style={[styles.tabIcon, { opacity: activeTab === tab.name ? 1 : 0.5 }]}
+                                    style={[styles.tabIcon, { opacity: activeTab === tab.name ? 1 : 1 }]}
                                     resizeMode="contain"
                                 />
 
