@@ -37,6 +37,7 @@ android/build/
 android/local.properties
 android/.idea/
 android/.cxx/
+ .cxx/
 *.keystore
 *.jks
 
