@@ -1,21 +1,21 @@
 import React from 'react';
-import {useColorScheme, View} from 'react-native';
+import { useColorScheme, View } from 'react-native';
 
-import {useSelector} from 'react-redux';
-import {NavigationContainer} from '@react-navigation/native';
+import { useSelector } from 'react-redux';
+import { NavigationContainer } from '@react-navigation/native';
 
-import {Theme} from '../libs';
+import { Theme } from '../libs';
 import UnAuthStack from './UnAuthStack';
 import AuthStack from './AuthStack';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 export default function AppNavigation() {
-  const {themeMode} = useSelector(state => state.themeReducer);
+  const { themeMode } = useSelector(state => state.themeReducer);
   // Make sure all of your app stack are wrapped inside this screen
   const scheme = useColorScheme();
   let isDarkMode =
     (themeMode !== 'light' && scheme === 'dark') || themeMode === 'dark';
-  const {colors} = Theme;
+  const { colors } = Theme;
   // My Theme will auto apply colors to background and text based on theme, otherwise you can also use color as desired in your file
   const MyTheme = {
     dark: isDarkMode,
@@ -38,10 +38,11 @@ export default function AppNavigation() {
 
   return (
     <NavigationContainer theme={MyTheme}>
-    <View style={{flex: 1,
-    paddingBottom: useSafeAreaInsets().bottom
-     }}>
-      {isSignedIn ? <AuthStack /> : <UnAuthStack />}
+      <View style={{
+        flex: 1,
+        paddingBottom: useSafeAreaInsets().bottom
+      }}>
+        {isSignedIn ? <AuthStack /> : <UnAuthStack />}
       </View>
     </NavigationContainer>
   );
