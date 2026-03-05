@@ -94,10 +94,7 @@ style={styles.permissionsImage}
         <View style={styles.buttonWrap}>
           <NextButton
             text="NEXT"
-            onPress={() => {
-              dispatch(setSignedIn(true));
-              navigation.reset({ index: 0, routes: [{ name: 'LandingScreen' }] });
-            }}
+            onPress={() => navigation.navigate("Settings")}
             disabled={false}
           />
         </View>
