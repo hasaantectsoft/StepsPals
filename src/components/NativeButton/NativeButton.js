@@ -1,7 +1,5 @@
-// NativeButton.js
 import React from 'react';
-import {TouchableOpacity, Text} from 'react-native';
-
+import { TouchableOpacity, Text, ImageBackground } from 'react-native';
 import PropTypes from 'prop-types';
 
 import styles from './NativeButtonStyles';
@@ -12,14 +10,26 @@ const NativeButton = ({
   containerStyle,
   titleStyle,
   disabled,
+  image, // new prop
 }) => {
+  const Content = (
+    <Text style={[styles.buttonText, titleStyle]}>{title}</Text>
+  );
+
   return (
     <TouchableOpacity
       activeOpacity={0.6}
       disabled={disabled}
       style={[styles.button, containerStyle]}
-      onPress={onPress}>
-      <Text style={[styles.buttonText, titleStyle]}>{title}</Text>
+      onPress={onPress}
+    >
+      {image ? (
+        <ImageBackground source={image} style={styles.imageBackground} imageStyle={styles.imageBackground}>
+          {Content}
+        </ImageBackground>
+      ) : (
+        Content
+      )}
     </TouchableOpacity>
   );
 };
@@ -32,11 +42,12 @@ NativeButton.propTypes = {
   containerStyle: PropTypes.object,
   titleStyle: PropTypes.object,
   disabled: PropTypes.bool,
+  image: PropTypes.any,
 };
 
-// Define default values
 NativeButton.defaultProps = {
   disabled: false,
   titleStyle: {},
   containerStyle: {},
+  image: null,
 };
