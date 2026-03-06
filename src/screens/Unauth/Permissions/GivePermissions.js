@@ -9,10 +9,12 @@ import {
   View,
 } from "react-native";
 import { useCallback, useEffect, useState } from "react";
+import { useDispatch } from 'react-redux';
 import { checkNotifications } from "react-native-permissions";
 import { styles } from "./styles";
 import { Header, NextButton } from "../../../components";
 import { useFocusEffect, useNavigation } from "@react-navigation/native";
+import { setSignedIn } from "../../../redux/slices/authSlice";
 import { permissionUtils } from "../../../utils";
 import { scale } from "react-native-size-matters";
 // need to add corrcet url here
@@ -21,6 +23,7 @@ const TERMS_URL = "https://steppals.com/terms";
 
 export default () => {
   const navigation = useNavigation();
+  const dispatch = useDispatch();
   const [notifGranted, setNotifGranted] = useState(false);
   const [healthGranted, setHealthGranted] = useState(false);
   const refreshNotif = useCallback(() => {
@@ -91,7 +94,7 @@ style={styles.permissionsImage}
         <View style={styles.buttonWrap}>
           <NextButton
             text="NEXT"
-            onPress={() => navigation.navigate("Home")}
+            onPress={() => navigation.navigate("Settings")}
             disabled={false}
           />
         </View>

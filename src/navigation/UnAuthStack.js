@@ -5,6 +5,8 @@ import PetSelection from '../screens/Unauth/PetSelection/PetSelection';
 import SelectGoalScreen from '../screens/Unauth/SelectGoalScreen/SelectGoalScreen';
 import GivePermissions from '../screens/Unauth/Permissions/GivePermissions';
 import NameYourPer from '../screens/Unauth/NameYourPer/NameYourPer';
+import Settings from '../screens/AuthStack/Settings/Settings';
+import SubscriptionScreen from '../screens/AuthStack/SubscriptionScreen/SubscriptionScreen';
 function UnAuthStack() {
   const Stack = createNativeStackNavigator();
 
@@ -13,12 +15,14 @@ function UnAuthStack() {
     SelectGoalScreen:SelectGoalScreen,
     PetSelection: PetSelection,
     NameYourPer: NameYourPer,
-    GivePermissions: GivePermissions
+    GivePermissions: GivePermissions,
+    Settings: Settings,
+    SubscriptionScreen: SubscriptionScreen,
   };
 
   return (
     <Stack.Navigator
-      initialRouteName="Landing"
+      initialRouteName="SubscriptionScreen"
       screenOptions={{
         headerShown: false,
         statusBarAnimation: 'fade',

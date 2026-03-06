@@ -1,15 +1,25 @@
 import React from 'react';
-
+import tutorial from '../screens/AuthStack/Tutorials/Tutorials';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import LandingScreen from '../screens/Unauth/LandingScreen/LandingScreen';
+import { useSelector } from 'react-redux';
+import BottomTab from './BottomStack/BottomTabs';
 
 function AuthStack() {
   const Stack = createNativeStackNavigator();
+  const screens = {
+    tutorial: tutorial,
+    
+    LandingScreen: LandingScreen,
+    Main: BottomTab,
+    
 
-  const screens = {};
-
+  };
+const imnewaccount = useSelector(state => state.tutorialReducer?.isnewuser);
+console.log(imnewaccount)
   return (
     <Stack.Navigator
-      initialRouteName=""
+      initialRouteName={imnewaccount ? 'tutorial' : 'LandingScreen'}
       screenOptions={{
         headerShown: false,
         statusBarAnimation: 'fade',
