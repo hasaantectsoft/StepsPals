@@ -43,7 +43,7 @@ export default function SelectGoalScreen() {
                         
                     </View>
                     <StepSlider value={stepGoal} onChange={setStepGoal} />
-                    <RetroDoneButton onPress={() => navigation.navigate('GivePermissions', { pet, petName })} />
+                    <RetroDoneButton onPress={() => navigation.navigate('GivePermissions', { pet, petName, stepGoal })} />
                     
                 </View>
             </ImageBackground>
