@@ -23,7 +23,8 @@
     "lightTransparent": "rgba(255,255,255,0.45)",
     "selectedPetBg": "#FFF074",
     "grayBlack":"#2F3450",
-    "ligtBrown":"#806D58"
+    "ligtBrown":"#806D58",
+    "DarkGreen":"#cee892"
   },
   "typography": {
     "heading": {

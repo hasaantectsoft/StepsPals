@@ -22,7 +22,7 @@ function UnAuthStack() {
 
   return (
     <Stack.Navigator
-      initialRouteName="SubscriptionScreen"
+      
       screenOptions={{
         headerShown: false,
         statusBarAnimation: 'fade',

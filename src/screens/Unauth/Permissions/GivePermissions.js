@@ -24,6 +24,7 @@ const TERMS_URL = "https://steppals.com/terms";
 export default () => {
   const navigation = useNavigation();
   const dispatch = useDispatch();
+  
   const [notifGranted, setNotifGranted] = useState(false);
   const [healthGranted, setHealthGranted] = useState(false);
   const refreshNotif = useCallback(() => {
@@ -92,11 +93,17 @@ style={styles.permissionsImage}
         </Text>
 
         <View style={styles.buttonWrap}>
-          <NextButton
-            text="NEXT"
-            onPress={() => navigation.navigate("Settings")}
-            disabled={false}
-          />
+         <NextButton
+  text="NEXT"
+  onPress={() => {
+    navigation.reset({
+      index: 0,
+      routes: [{ name: "AuthStack" }],
+    });
+    dispatch(setSignedIn(true));
+  }}
+  disabled={false}
+/>
         </View>
       </ScrollView>
 

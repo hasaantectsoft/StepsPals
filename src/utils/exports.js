@@ -52,3 +52,25 @@ export const baseScreenData = [
     private: false,
   },
 ];
+
+
+export const GrayyardArray=[
+  {id:1,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  {id:2,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  {id:3,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  {id:4,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  {id:5,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  {id:6,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  {id:7,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  {id:8,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  {id:9,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  {id:10,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  {id:11,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  {id:12,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  {id:13,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  {id:14,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  {id:15,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  {id:16,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  {id:17,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  {id:18,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+]
