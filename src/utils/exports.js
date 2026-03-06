@@ -1,3 +1,5 @@
+import { images } from "../assets/images";
+
 export const devImage =
   'https://724.one/wp-content/uploads/2022/11/cropped-Navy-Modern-Eagle-and-Wings-Logo-2-254x74.png';
 
@@ -73,4 +75,14 @@ export const GrayyardArray=[
   {id:16,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
   {id:17,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
   {id:18,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+]
+
+
+
+export const LagendArray=[
+  {id:1,firstUser:images.Legend_First_Player,name:"Shrumpalo",score:"7400"},
+  {id:2,name:"Shrumpalo",score:"7400"},
+  {id:3,name:"Shrumpalo",score:"7400"},
+  {id:4,name:"Shrumpalo",score:"7400"},
+  {id:5,name:"Shrumpalo",score:"7400"},
 ]

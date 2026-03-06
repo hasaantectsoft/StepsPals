@@ -1,28 +1,42 @@
 import { Dimensions, StyleSheet, Text, View } from "react-native";
+import { combineStyles } from "../../../libs/combineStyle";
+import { Theme } from "../../../libs";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 const isSmallScreen = SCREEN_WIDTH <= 375;
 
 export default function PetDetails({ pet }) {
+  const details = [
+    { label: "Species:", value: pet.species },
+    { label: "Age:", value: pet.age },
+    { label: "Condition:", value: pet.condition },
+    { label: "Mature stage:", value: pet.stage },
+    { label: "Missed days:", value: pet.missed },
+  ];
+
   return (
     <View style={styles.details}>
-      <Text style={styles.detailText}>Species: {pet.species}</Text>
-      <Text style={styles.detailText}>Age: {pet.age}</Text>
-      <Text style={styles.detailText}>Condition: {pet.condition}</Text>
-      <Text style={styles.detailText}>Mature stage: {pet.stage}</Text>
-      <Text style={styles.detailText}>Missed days: {pet.missed}</Text>
+      {details.map((item, index) => (
+        <View key={index} style={combineStyles.row1}>
+          <Text style={styles.labelText}>{item.label}</Text>
+          <Text style={styles.detailText}>{item.value}</Text>
+        </View>
+      ))}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   details: {
-    alignSelf: "stretch",
+    alignSelf: "center",
     marginVertical: 10,
   },
   detailText: {
-    fontFamily: "PressStart2P_400Regular",
-    fontSize: isSmallScreen ? 10 : 12,
-    marginVertical: 2,
+    ...combineStyles.regular12,
+    color:Theme.colors.brown
+   
   },
+  labelText:{
+    ...combineStyles.regular12,
+  }
 });
