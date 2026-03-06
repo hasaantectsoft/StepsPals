@@ -1,8 +1,9 @@
 import React from "react";
 import { styles } from "./Styles";
-import { ImageBackground, Text } from "react-native";
+import { ImageBackground, Text, View } from "react-native";
 import SpriteLoader from "../../../components/SprieLoader";
 export default () => {
+    
 return (
 
     <ImageBackground
@@ -10,6 +11,11 @@ return (
     imageStyle={{resizeMode: 'cover'}}
         style={styles.container}
     >
+        <View>
+
+        <Text style={styles.name}>Hello [Name]</Text>
+        <Text style={styles.welcome}>is happy</Text>
+        </View>
 <SpriteLoader />
     </ImageBackground>
 )

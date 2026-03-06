@@ -94,7 +94,7 @@ style={styles.permissionsImage}
         <View style={styles.buttonWrap}>
           <NextButton
             text="NEXT"
-            onPress={() => navigation.navigate("Settings")}
+            onPress={() => navigation.reset({index: 0, routes: [{name: "Home"}]})}
             disabled={false}
           />
         </View>
