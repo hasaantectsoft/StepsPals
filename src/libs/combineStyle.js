@@ -52,5 +52,12 @@ export const combineStyles = StyleSheet.create({
         flexDirection: "row",
         gap: moderateScale(10),
         alignItems: "center"
+    },
+    row1:{
+flexDirection: "row",
+        gap: moderateScale(10),
+        alignItems: "center",
+        justifyContent:"center"
     }
+
 });

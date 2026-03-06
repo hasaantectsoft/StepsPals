@@ -9,7 +9,7 @@ const isSmallScreen = SCREEN_WIDTH <= 375;
 const BUTTON_WIDTH = isSmallScreen ? 260 : 300;
 const BUTTON_HEIGHT = isSmallScreen ? 50 : 60;
 
-export const PixelButton = ({ label, onPress }) => {
+export const PixelButton = ({ label, onPress,labelStyle }) => {
   const isGoogleOrIos =
     label.toLowerCase().includes("google") ||
     label.toLowerCase().includes("apple");
@@ -30,7 +30,7 @@ export const PixelButton = ({ label, onPress }) => {
         <SvgXml xml={buttonXml} width={BUTTON_WIDTH} height={BUTTON_HEIGHT} />
       <View style={styles.textOverlay}>
         {imgSelect && <Image source={imgSelect} style={styles.logo} />}
-        <Text style={styles.buttonText}>{label}</Text>
+        <Text style={[styles.buttonText,labelStyle]}>{label}</Text>
       </View>
     </BouncyPressable>
   );

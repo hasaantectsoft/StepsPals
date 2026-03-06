@@ -2034,3 +2034,109 @@ export const poopfilled=`<svg width="182" height="221" viewBox="0 0 182 221" fil
 </svg>
 
 `
+
+
+export const BackArrow=`<svg width="75" height="117" viewBox="0 0 75 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M53.1167 0H63.74V10.6233H53.1167V0Z" fill="#27130C"/>
+<path d="M53.1167 106.234H63.74V116.858H53.1167V106.234Z" fill="#27130C"/>
+<path d="M31.8699 84.9863H42.4932V95.6097H31.8699V84.9863Z" fill="#27130C"/>
+<path d="M42.4934 95.6094H53.1167V106.233H42.4934V95.6094Z" fill="#27130C"/>
+<path d="M42.4934 10.623H53.1167V21.2464H42.4934V10.623Z" fill="#27130C"/>
+<path d="M0 53.1152H10.6233V63.7386H0V53.1152Z" fill="#27130C"/>
+<path d="M10.6233 42.4922H21.2466V53.1155H10.6233V42.4922Z" fill="#27130C"/>
+<path d="M21.2466 53.1152H31.8699V63.7386H21.2466V53.1152Z" fill="#27130C"/>
+<path d="M21.2466 63.7402H31.8699V74.3636H21.2466V63.7402Z" fill="#27130C"/>
+<path d="M10.6233 53.1152H21.2466V63.7386H10.6233V53.1152Z" fill="#27130C"/>
+<path d="M21.2466 42.4922H31.8699V53.1155H21.2466V42.4922Z" fill="#27130C"/>
+<path d="M31.8699 42.4922H42.4932V53.1155H31.8699V42.4922Z" fill="#27130C"/>
+<path d="M31.8699 31.8711H42.4932V42.4944H31.8699V31.8711Z" fill="#27130C"/>
+<path d="M42.4934 31.8711H53.1167V42.4944H42.4934V31.8711Z" fill="#27130C"/>
+<path d="M53.1167 31.8711H63.74V42.4944H53.1167V31.8711Z" fill="#27130C"/>
+<path d="M63.7397 31.8711H74.3631V42.4944H63.7397V31.8711Z" fill="#27130C"/>
+<path d="M53.1167 42.4922H63.74V53.1155H53.1167V42.4922Z" fill="#27130C"/>
+<path d="M63.74 42.4922H74.3633V53.1155H63.74V42.4922Z" fill="#27130C"/>
+<path d="M31.8699 53.1152H42.4932V63.7386H31.8699V53.1152Z" fill="#27130C"/>
+<path d="M31.8699 63.7402H42.4932V74.3636H31.8699V63.7402Z" fill="#27130C"/>
+<path d="M31.8699 74.3633H42.4932V84.9866H31.8699V74.3633Z" fill="#27130C"/>
+<path d="M42.4934 53.1152H53.1167V63.7386H42.4934V53.1152Z" fill="#27130C"/>
+<path d="M42.4934 63.7402H53.1167V74.3636H42.4934V63.7402Z" fill="#27130C"/>
+<path d="M42.4934 74.3633H53.1167V84.9866H42.4934V74.3633Z" fill="#27130C"/>
+<path d="M42.4934 84.9863H53.1167V95.6097H42.4934V84.9863Z" fill="#27130C"/>
+<path d="M53.1167 74.3633H63.74V84.9866H53.1167V74.3633Z" fill="#27130C"/>
+<path d="M53.1167 84.9863H63.74V95.6097H53.1167V84.9863Z" fill="#27130C"/>
+<path d="M53.1167 95.6094H63.74V106.233H53.1167V95.6094Z" fill="#27130C"/>
+<path d="M63.74 74.3633H74.3633V84.9866H63.74V74.3633Z" fill="#27130C"/>
+<path d="M63.7397 84.9863H74.3631V95.6097H63.7397V84.9863Z" fill="#27130C"/>
+<path d="M53.1167 53.1152H63.74V63.7386H53.1167V53.1152Z" fill="#27130C"/>
+<path d="M53.1167 63.7402H63.74V74.3636H53.1167V63.7402Z" fill="#27130C"/>
+<path d="M63.7397 53.1152H74.3631V63.7386H63.7397V53.1152Z" fill="#27130C"/>
+<path d="M63.7397 63.7402H74.3631V74.3636H63.7397V63.7402Z" fill="#27130C"/>
+<path d="M21.2466 31.8711H31.8699V42.4944H21.2466V31.8711Z" fill="#27130C"/>
+<path d="M31.8699 21.248H42.4932V31.8714H31.8699V21.248Z" fill="#27130C"/>
+<path d="M42.4934 21.248H53.1167V31.8714H42.4934V21.248Z" fill="#27130C"/>
+<path d="M42.4934 42.4922H53.1167V53.1155H42.4934V42.4922Z" fill="#27130C"/>
+<path d="M53.1167 21.248H63.74V31.8714H53.1167V21.248Z" fill="#27130C"/>
+<path d="M53.1167 10.623H63.74V21.2464H53.1167V10.623Z" fill="#27130C"/>
+<path d="M21.2466 74.3633H31.8699V84.9866H21.2466V74.3633Z" fill="#27130C"/>
+<path d="M10.6233 63.7402H21.2466V74.3636H10.6233V63.7402Z" fill="#27130C"/>
+<path d="M63.74 0H74.3633V116.857H63.74V0Z" fill="#27130C"/>
+</svg>
+`
+
+
+export const grayButton=`<svg width="1040" height="220" viewBox="0 0 1040 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M960 220H80V200H960V220ZM80 200H40V180H80V200ZM1000 200H960V180H1000V200ZM40 180H20V140H40V180ZM1020 180H1000V140H1020V180ZM20 140H0V80H20V140ZM1020 80H1040V140H1020V80ZM40 80H20V40H40V80ZM1020 80H1000V40H1020V80ZM80 40H40V20H80V40ZM1000 40H960V20H1000V40ZM960 20H80V0H960V20Z" fill="#2F3450"/>
+<rect x="80" y="20" width="880" height="20" fill="#B4CECB"/>
+<rect x="80" y="40" width="880" height="160" fill="#9FB1AF"/>
+<rect x="960" y="40" width="40" height="20" fill="#B4CECB"/>
+<rect x="40" y="40" width="40" height="20" fill="#B4CECB"/>
+<rect width="40" height="20" transform="matrix(-1 0 0 1 1000 60)" fill="#9FB1AF"/>
+<rect x="40" y="60" width="40" height="20" fill="#9FB1AF"/>
+<rect width="60" height="20" transform="matrix(-1 0 0 1 1020 80)" fill="#9FB1AF"/>
+<rect x="20" y="80" width="60" height="20" fill="#9FB1AF"/>
+<rect width="60" height="20" transform="matrix(-1 0 0 1 1020 100)" fill="#9FB1AF"/>
+<rect x="20" y="100" width="60" height="20" fill="#9FB1AF"/>
+<rect width="60" height="20" transform="matrix(-1 0 0 1 1020 120)" fill="#9FB1AF"/>
+<rect x="20" y="120" width="60" height="20" fill="#9FB1AF"/>
+<rect x="960" y="200" width="880" height="20" transform="rotate(180 960 200)" fill="#7C8D8B"/>
+<rect x="1000" y="180" width="960" height="20" transform="rotate(180 1000 180)" fill="#7C8D8B"/>
+<rect x="60" y="140" width="40" height="20" transform="rotate(180 60 140)" fill="#7C8D8B"/>
+<rect x="80" y="160" width="20" height="20" transform="rotate(180 80 160)" fill="#7C8D8B"/>
+<rect x="980" y="160" width="20" height="20" transform="rotate(180 980 160)" fill="#7C8D8B"/>
+<rect x="20" y="120" width="40" height="20" transform="rotate(-90 20 120)" fill="#7C8D8B"/>
+<rect x="1000" y="120" width="40" height="20" transform="rotate(-90 1000 120)" fill="#7C8D8B"/>
+<rect x="40" y="180" width="40" height="20" transform="rotate(-90 40 180)" fill="#7C8D8B"/>
+<rect x="980" y="180" width="40" height="20" transform="rotate(-90 980 180)" fill="#7C8D8B"/>
+<rect x="1020" y="140" width="40" height="20" transform="rotate(180 1020 140)" fill="#7C8D8B"/>
+</svg>
+`
+
+
+export const OrangeButton=`<svg width="1040" height="220" viewBox="0 0 1040 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M960 220H80V200H960V220ZM80 200H40V180H80V200ZM1000 200H960V180H1000V200ZM40 180H20V140H40V180ZM1020 180H1000V140H1020V180ZM20 140H0V80H20V140ZM1020 80H1040V140H1020V80ZM40 80H20V40H40V80ZM1020 80H1000V40H1020V80ZM80 40H40V20H80V40ZM1000 40H960V20H1000V40ZM960 20H80V0H960V20Z" fill="#2F3450"/>
+<rect x="80" y="20" width="880" height="20" fill="#FFCA73"/>
+<rect x="80" y="40" width="880" height="160" fill="#FFB232"/>
+<rect x="960" y="40" width="40" height="20" fill="#FFCA73"/>
+<rect x="40" y="40" width="40" height="20" fill="#FFCA73"/>
+<rect width="40" height="20" transform="matrix(-1 0 0 1 1000 60)" fill="#FFB232"/>
+<rect x="40" y="60" width="40" height="20" fill="#FFB232"/>
+<rect width="60" height="20" transform="matrix(-1 0 0 1 1020 80)" fill="#FFB232"/>
+<rect x="20" y="80" width="60" height="20" fill="#FFB232"/>
+<rect width="60" height="20" transform="matrix(-1 0 0 1 1020 100)" fill="#FFB232"/>
+<rect x="20" y="100" width="60" height="20" fill="#FFB232"/>
+<rect width="60" height="20" transform="matrix(-1 0 0 1 1020 120)" fill="#FFB232"/>
+<rect x="20" y="120" width="60" height="20" fill="#FFB232"/>
+<rect x="960" y="200" width="880" height="20" transform="rotate(180 960 200)" fill="#EF941C"/>
+<rect x="1000" y="180" width="960" height="20" transform="rotate(180 1000 180)" fill="#EF941C"/>
+<rect x="60" y="140" width="40" height="20" transform="rotate(180 60 140)" fill="#EF941C"/>
+<rect x="80" y="160" width="20" height="20" transform="rotate(180 80 160)" fill="#EF941C"/>
+<rect x="980" y="160" width="20" height="20" transform="rotate(180 980 160)" fill="#EF941C"/>
+<rect x="20" y="120" width="40" height="20" transform="rotate(-90 20 120)" fill="#EF941C"/>
+<rect x="1000" y="120" width="40" height="20" transform="rotate(-90 1000 120)" fill="#EF941C"/>
+<rect x="40" y="180" width="40" height="20" transform="rotate(-90 40 180)" fill="#EF941C"/>
+<rect x="980" y="180" width="40" height="20" transform="rotate(-90 980 180)" fill="#EF941C"/>
+<rect x="1020" y="140" width="40" height="20" transform="rotate(180 1020 140)" fill="#EF941C"/>
+</svg>`
+
+
+

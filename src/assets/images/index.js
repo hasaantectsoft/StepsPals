@@ -5,6 +5,25 @@ export const images = {
   OringeButton: require('./OringeButton.png'),
   GravyardBackground: require('./GravyardBackground.png'),
   PetGravYard: require('./PetGravYard.png'),
+  Statistics: require('./Statistics.png'),
+  Cat: require('./Cat.png'),
+  Dog: require('./Dog.png'),
+  Dino: require('./Dino.png'),
+  rankingbtn: require('./rankingbtn.png'),
+  orange_btn: require('./orange_btn.png'),
+  SilverBtn: require('./SilverBtn.png'),
+  RankingBackground: require('./RankingBackground.png'),
+  RankingTitle: require('./RankingTitle.png'),
+  GoldBtn: require('./GoldBtn.png'),
+  Legend: require('./Legend.png'),
+  Bronze: require('./Bronze.png'),
+  Platinum: require('./Platinum.png'),
+  Capsule: require('./Capsule.png'),
+  Legend_First_Player: require('./Legend_First_Player.png'),
+
+  
+
+ 
   
 
 };

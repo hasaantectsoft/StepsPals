@@ -3,7 +3,7 @@ import React from "react";
 import { SvgXml } from "react-native-svg";
 import { moderateScale } from "react-native-size-matters";
 
-const PressableIcon = ({ icon, width, height, onPress, container }) => {
+const PressableIcon = ({ icon, width, height, onPress, container,disable=false }) => {
 
   const getSize = (value) => {
     if (value === undefined) return moderateScale(24);
@@ -29,6 +29,7 @@ const PressableIcon = ({ icon, width, height, onPress, container }) => {
       activeOpacity={0.7}
       hitSlop={15}
       style={container}
+      disabled={disable}
     >
       {Icon}
     </TouchableOpacity>
