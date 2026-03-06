@@ -37,6 +37,7 @@ android/.idea/
 android/.cxx/
 *.keystore
 *.jks
+android/app/.cxx/
 
 # iOS
 ios/build/
