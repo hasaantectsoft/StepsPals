@@ -16,7 +16,7 @@ const isSmallScreen = SCREEN_WIDTH <= 375;
 export default function Petmenu() {
   const router = useNavigation();
   const [stepGoal, setStepGoal] = useState(500);
-
+  
   const increase = () => setStepGoal((v) => Math.min(10000, v + 100));
   const decrease = () => setStepGoal((v) => Math.max(0, v - 100));
 

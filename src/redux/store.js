@@ -17,7 +17,7 @@ import cartSlice from './slices/cartSlice';
 import themeSlice from './slices/themeSlice';
 import authSlice from './slices/authSlice';
 import tutorialSlice from './slices/tutorialslice';
-
+import petSlice from './slices/petslice';
 const persistConfig = {
   key: 'root',
   storage: EncryptedStorage,
@@ -30,7 +30,8 @@ const reducers = combineReducers({
   themeReducer: themeSlice,
   authReducer: authSlice,
   tutorialReducer: tutorialSlice,
-});
+  petReducer: petSlice,
+  });
 
 const _persistedReducer = persistReducer(persistConfig, reducers);
 

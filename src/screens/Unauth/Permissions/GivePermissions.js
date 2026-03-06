@@ -1,8 +1,7 @@
 import {
-    Image,
+  Image,
   ImageBackground,
   Linking,
-
   ScrollView,
   Text,
   TouchableOpacity,
@@ -10,13 +9,15 @@ import {
 } from "react-native";
 import { useCallback, useEffect, useState } from "react";
 import { useDispatch } from 'react-redux';
+import { useRoute } from "@react-navigation/native";
 import { checkNotifications } from "react-native-permissions";
 import { styles } from "./styles";
 import { Header, NextButton } from "../../../components";
-import { useFocusEffect, useNavigation } from "@react-navigation/native";
+import { useNavigation } from "@react-navigation/native";
 import { setSignedIn } from "../../../redux/slices/authSlice";
 import { permissionUtils } from "../../../utils";
 import { scale } from "react-native-size-matters";
+import { setPetName, setPetKey, setPetSteps } from "../../../redux/slices/petslice";
 // need to add corrcet url here
 const PRIVACY_URL = "https://steppals.com/privacy";
 const TERMS_URL = "https://steppals.com/terms";
@@ -24,6 +25,7 @@ const TERMS_URL = "https://steppals.com/terms";
 export default () => {
   const navigation = useNavigation();
   const dispatch = useDispatch();
+  const { pet, petName, stepGoal } = useRoute().params || {};
   const [notifGranted, setNotifGranted] = useState(false);
   const [healthGranted, setHealthGranted] = useState(false);
   const refreshNotif = useCallback(() => {
@@ -47,7 +49,7 @@ export default () => {
     const granted = await permissionUtils.requestHealthPermission();
     setHealthGranted(granted);
   };
-//   console.log(notifGranted)
+  //   console.log(notifGranted)
 
   return (
     <ImageBackground
@@ -68,21 +70,21 @@ export default () => {
         showsVerticalScrollIndicator={false}
       >
         <TouchableOpacity onPress={onRequestNotification} disabled={notifGranted}>
-         <Image
-          source={notifGranted ? require("../../../assets/images/permisionnotifif.png") : require("../../../assets/images/healthkitpermsiom.png")}
-height={scale(100)}
-resizeMode="contain"
-style={styles.permissionsImage}
-/>
-</TouchableOpacity>
-<TouchableOpacity onPress={onRequestHealth} disabled={healthGranted}>
-        <Image
-          source={healthGranted ? require("../../../assets/images/permissionenabled.png") : require("../../../assets/images/healthkitpermsiomdis.png")}
-height={scale(100)}
-resizeMode="contain"
-style={styles.permissionsImage}
-/>
-</TouchableOpacity>
+          <Image
+            source={notifGranted ? require("../../../assets/images/permisionnotifif.png") : require("../../../assets/images/healthkitpermsiom.png")}
+            height={scale(100)}
+            resizeMode="contain"
+            style={styles.permissionsImage}
+          />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={onRequestHealth} disabled={healthGranted}>
+          <Image
+            source={healthGranted ? require("../../../assets/images/permissionenabled.png") : require("../../../assets/images/healthkitpermsiomdis.png")}
+            height={scale(100)}
+            resizeMode="contain"
+            style={styles.permissionsImage}
+          />
+        </TouchableOpacity>
         <Text style={styles.explanationText}>
           StepPals requires Health access to function. Without step data, your
           Pet can't track progress and the core experience is unavailable.
@@ -94,7 +96,13 @@ style={styles.permissionsImage}
         <View style={styles.buttonWrap}>
           <NextButton
             text="NEXT"
-            onPress={() => navigation.reset({index: 0, routes: [{name: "Home"}]})}
+            onPress={() => {
+                dispatch(setPetName(petName ?? ''));
+                dispatch(setPetKey(String(pet?.id ?? '')));
+                dispatch(setPetSteps(stepGoal ?? 242));
+                dispatch(setSignedIn(true));
+                navigation.reset({ index: 0, routes: [{ name: "Main" }] });
+              }}
             disabled={false}
           />
         </View>
