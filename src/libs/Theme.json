@@ -1,10 +1,13 @@
 {
   "colors": {
+    "waterblue":"rgba(110, 202, 255, 1)",
     "primary": "#FEEA88",
-    "oragne":"#E89B4C",
-    "DARKRED":"##D93F41",
-    "darkblue":"#2D3E50",
-    "brightgreen":"#4CAF50",
+    "lightgrey":"rgba(178, 202, 199, 1)",
+    "yellow": "rgba(255, 253, 110, 1)",
+    "oragne": "#E89B4C",
+    "DARKRED": "##D93F41",
+    "darkblue": "#2D3E50",
+    "brightgreen": "#4CAF50",
     "brown": "#6F5548",
     "secondary": "#2ecc71",
     "accent": "#e74c3c",
@@ -22,9 +25,9 @@
     "darkTransparent": "rgba(0,0,0,0.45)",
     "lightTransparent": "rgba(255,255,255,0.45)",
     "selectedPetBg": "#FFF074",
-    "grayBlack":"#2F3450",
-    "ligtBrown":"#806D58",
-    "DarkGreen":"#cee892"
+    "grayBlack": "#2F3450",
+    "ligtBrown": "#806D58",
+    "DarkGreen": "#cee892"
   },
   "typography": {
     "heading": {
@@ -39,9 +42,9 @@
       "fontFamily": "Roboto-Light",
       "fontWeight": "normal"
     },
-    "Retro":{
-      "fontFamily":"PressStart2P-Regular",
-      "fontWeight":"normal"
+    "Retro": {
+      "fontFamily": "PressStart2P-Regular",
+      "fontWeight": "normal"
     }
   },
   "borders": {
@@ -54,19 +57,28 @@
   "shadows": {
     "small": {
       "shadowColor": "#000",
-      "shadowOffset": {"width": 0, "height": 2},
+      "shadowOffset": {
+        "width": 0,
+        "height": 2
+      },
       "shadowOpacity": 0.2,
       "shadowRadius": 2
     },
     "medium": {
       "shadowColor": "#000",
-      "shadowOffset": {"width": 0, "height": 4},
+      "shadowOffset": {
+        "width": 0,
+        "height": 4
+      },
       "shadowOpacity": 0.3,
       "shadowRadius": 4
     },
     "large": {
       "shadowColor": "#000",
-      "shadowOffset": {"width": 0, "height": 6},
+      "shadowOffset": {
+        "width": 0,
+        "height": 6
+      },
       "shadowOpacity": 0.4,
       "shadowRadius": 6
     }

@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 import { combineStyles } from "../../../libs/combineStyle";
 import { Theme } from "../../../libs";
-import { moderateScale } from "react-native-size-matters";
+import { moderateScale, scale } from "react-native-size-matters";
 export const styles = StyleSheet.create({
     container: {
         ...combineStyles.container,
@@ -28,9 +28,13 @@ export const styles = StyleSheet.create({
     gravYardContainer:{
         ...combineStyles.rowSpacebetween,
         flexWrap:"wrap",
-        rowGap: moderateScale(10),
+        
+        rowGap: moderateScale(12),
   columnGap: moderateScale(10),
-  paddingBottom:moderateScale(300)
+  paddingBottom:moderateScale(300),
+  justifyContent:'flex-start',
+  
+
         
     },
     name:{

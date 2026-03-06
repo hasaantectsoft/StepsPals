@@ -19,11 +19,29 @@ export const styles = StyleSheet.create({
     welcome:{
         fontSize: scale(7),
         fontFamily: Retro,
-        color: Theme.colors.white,
+        color: Theme.colors.yellow,
         textAlign: 'center',
         position: 'absolute',
         top: scale(300),
         left: 0,
         right: 0,
-    }
+    },
+    windowContainer:{
+        position: 'absolute',
+        top: scale(120),
+        right: scale(17),
+        zIndex: 1000,
+    },
+    starcontainer: {
+        position: 'absolute',
+        top: scale(58),
+        right: scale(17),
+        width: scale(100),
+        height: scale(80),
+        zIndex: 0,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    cakecontainer: {},
+    
 });

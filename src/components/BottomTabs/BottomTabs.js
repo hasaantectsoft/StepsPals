@@ -4,11 +4,9 @@ import { scale } from 'react-native-size-matters';
 // import InternetModal from '../InternetModal/InternetModal';
 import NetInfo from '@react-native-community/netinfo';
 import { DeviceEventEmitter } from 'react-native';
-import { Theme } from '../../libs';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import useKeyboard from "../../utils/extra/usekeyboard"
 
-const { colors } = Theme;
 
 const BottomTabs = ({ activeTab, onTabPress }) => {
     
@@ -130,7 +128,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        // paddingVertical: (9)
+        paddingVertical: (39)
     },
     tabIcon: {
         width: scale(50),

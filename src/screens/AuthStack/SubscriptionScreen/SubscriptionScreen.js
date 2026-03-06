@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { styles } from "./style";
-import { ImageBackground, View, Text, Alert } from "react-native";
+import { ImageBackground, View, Text } from "react-native";
 import { images } from "../../../assets/images";
 import { combineStyles } from "../../../libs/combineStyle";
 import { Theme } from "../../../libs";

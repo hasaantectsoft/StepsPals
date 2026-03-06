@@ -19,9 +19,8 @@ import { permissionUtils } from "../../../utils";
 import { scale } from "react-native-size-matters";
 import { setPetName, setPetKey, setPetSteps } from "../../../redux/slices/petslice";
 // need to add corrcet url here
-const PRIVACY_URL = "https://steppals.com/privacy";
-const TERMS_URL = "https://steppals.com/terms";
-
+import { PRIVACY_URL, TERMS_URL } from "../../../utils/extra/links";
+import { setIsMain } from "../../../redux/slices/ismain";
 export default () => {
   const navigation = useNavigation();
   const dispatch = useDispatch();
@@ -102,6 +101,7 @@ export default () => {
                 dispatch(setPetKey(String(pet?.id ?? '')));
                 dispatch(setPetSteps(stepGoal ?? 242));
                 dispatch(setSignedIn(true));
+                dispatch(setIsMain(true));
                 navigation.reset({ index: 0, routes: [{ name: "Main" }] });
               }}
             disabled={false}

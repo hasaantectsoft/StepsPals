@@ -1,12 +1,13 @@
 import React from "react";
 import { styles } from "./Styles";
-import { ImageBackground, Platform, Text, View } from "react-native";
+import { ImageBackground, Linking, Platform, Text, View } from "react-native";
 import { images } from "../../../assets/images";
 import { combineStyles } from "../../../libs/combineStyle";
 import { DeleteButtonSvg, PrivacyPolicyBtnSvg, RestorePurchaceBtnSvg, SignInWithAppleBtnSvg, SignInWithGoogleBtnSvg, switchOff, switchOn } from "../../../assets/svgs";
 import PressableIcon from "../../../components/PressSvg/PressSvg";
 import { moderateScale } from "react-native-size-matters";
 import { DeleteMessageModal } from "../../../components/Modal";
+import { PRIVACY_URL } from "../../../utils/extra/links";
 export default () => {
     const [MusicIsOn, setMusicIsOn] = React.useState(false);
     const [SoundIsOn, setSoundIsOn] = React.useState(false);
@@ -43,7 +44,7 @@ export default () => {
                                 <PressableIcon icon={SignInWithGoogleBtnSvg} width={"100%"} height={60} />
 
                         }
-                        <PressableIcon icon={PrivacyPolicyBtnSvg} width={"100%"} height={60} />
+                        <PressableIcon onPress={() => Linking.openURL(PRIVACY_URL)} icon={PrivacyPolicyBtnSvg} width={"100%"} height={60} />
                         <PressableIcon icon={RestorePurchaceBtnSvg} width={"100%"} height={60} />
                         <PressableIcon icon={DeleteButtonSvg} width={"100%"} height={60} onPress={() => setIsDeleteModalVisible(true)} />
                     </View>

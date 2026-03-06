@@ -117,6 +117,8 @@ import {
     const spriteMap = useImage(
       require("../../assets/images/Anim_Dino_Baby_Idle.png"),
     );
+
+   
   
     const numberOfSprites = 1;
     const sprites = useRectBuffer(numberOfSprites, (rect, i) => {

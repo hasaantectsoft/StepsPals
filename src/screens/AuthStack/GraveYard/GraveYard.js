@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import { styles } from "./Styles";
 import {
     FlatList,
-    Image,
     ImageBackground,
     Text,
     View,
-    ActivityIndicator,
 } from "react-native";
 import { images } from "../../../assets/images";
 import { combineStyles } from "../../../libs/combineStyle";
@@ -69,13 +67,14 @@ export default () => {
                             keyExtractor={(item) => item.id.toString()}
                             contentContainerStyle={styles.gravYardContainer}
                             onEndReached={loadMore}
+                            numColumns={3}
                             onEndReachedThreshold={0.5}
                             ListFooterComponent={
                                 loading ? <LoaderKitView
                                     style={{ width: 50, height: 50, }}
                                     name={'BallSpinFadeLoader'}
                                     animationSpeedMultiplier={1.0}
-                                    color={'#3aa1e4'}
+                                    color={'white'}
                                 /> : null
                             }
                             showsVerticalScrollIndicator={false}
