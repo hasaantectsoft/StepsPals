@@ -28,11 +28,11 @@ export default () => {
                     <Text style={{ ...combineStyles.regular26, textAlign: "center" }}>Settings</Text>
                     <View style={[combineStyles.rowSpacebetween,{left:moderateScale(10)}]}>
                         <Text style={styles.textStyle}>Music</Text>
-                        <PressableIcon icon={MusicIsOn ? switchOn : switchOff} width={100} height={30} onPress={() => setMusicIsOn(!MusicIsOn)} />
+                        <PressableIcon icon={MusicIsOn ? switchOn : switchOff} width={100} height={50} onPress={() => setMusicIsOn(!MusicIsOn)} />
                     </View>
                     <View style={[combineStyles.rowSpacebetween,{left:moderateScale(10)}]}>
                         <Text style={{ ...combineStyles.regular18,top:moderateScale(8) }}>Sound</Text>
-                        <PressableIcon icon={SoundIsOn ? switchOn : switchOff} width={100} height={30} onPress={() => setSoundIsOn(!SoundIsOn)} />
+                        <PressableIcon icon={SoundIsOn ? switchOn : switchOff} width={100} height={50} onPress={() => setSoundIsOn(!SoundIsOn)} />
                     </View>
 
 

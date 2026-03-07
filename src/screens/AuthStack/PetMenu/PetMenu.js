@@ -5,7 +5,7 @@ import PetDetails from "../../../components/Petmenu/PetMenu/PetDetails";
 import PetInfo from "../../../components/Petmenu/PetMenu/PetInfo";
 import { useNavigation } from "@react-navigation/native";
 import StepSlider from "../../../components/SelectYourGoal/StepSlider";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { styles } from "./style";
 import { images } from "../../../assets/images";
 import { combineStyles } from "../../../libs/combineStyle";
@@ -14,6 +14,7 @@ import { Theme } from "../../../libs";
 import PressableIcon from "../../../components/PressSvg/PressSvg";
 import { grayButton } from "../../../assets/svgs";
 import { orangeBtn } from "../../../components/Petmenu/buttonSvgs";
+import { setPetSteps } from "../../../redux/slices/petslice";
 
 
 
@@ -22,7 +23,7 @@ export default function Petmenu() {
   const router = useNavigation();
   const [stepGoal, setStepGoal] = useState(petsteps);
   const [disable, setDisable] = useState(true);
-  
+  const dispatch=useDispatch();
 
   const pet = {
     id:petkey,
@@ -36,6 +37,11 @@ export default function Petmenu() {
     image: require("../../../assets/images/Cat.png"),
   };
 
+
+  const handelSave=()=>{
+    dispatch(setPetSteps(stepGoal))
+router.goBack();
+  }
   return (
     <View style={styles.container}>
       <SettingsBackground path={images.Statistics}  />
@@ -54,7 +60,7 @@ export default function Petmenu() {
        Any changes will take effect starting tomorrow
       </Text>
       <View style={styles.saveBtn}>
-        <PressableIcon icon={disable?grayButton:orangeBtn} width={"100%"} height={60} onPress={()=>router.goBack()}/>
+        <PressableIcon icon={disable?grayButton:orangeBtn} width={"100%"} height={60} onPress={handelSave}/>
         <Text style={[styles.btn ,!disable&&{color:"black"}]}>Save</Text>
       </View>
     </View>

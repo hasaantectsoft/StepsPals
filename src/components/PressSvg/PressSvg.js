@@ -1,39 +1,46 @@
-import { View, TouchableOpacity } from "react-native";
-import React from "react";
+import React, { memo, useMemo } from "react";
+import { View, Pressable } from "react-native";
 import { SvgXml } from "react-native-svg";
 import { moderateScale } from "react-native-size-matters";
 
-const PressableIcon = ({ icon, width, height, onPress, container,disable=false }) => {
+const PressableIcon = ({
+  icon,
+  width,
+  height,
+  onPress,
+  container,
+  disable = false
+}) => {
 
   const getSize = (value) => {
     if (value === undefined) return moderateScale(24);
     if (typeof value === "number") return moderateScale(value);
-    return value; // percentage like "100%"
+    return value;
   };
 
-  const Icon = (
+  const iconElement = useMemo(() => (
     <SvgXml
       xml={icon}
       width={getSize(width)}
       height={getSize(height)}
     />
-  );
+  ), [icon, width, height]);
 
   if (!onPress) {
-    return <View style={container}>{Icon}</View>;
+    return <View style={container}>{iconElement}</View>;
   }
 
   return (
-    <TouchableOpacity
+    <Pressable
       onPress={onPress}
-      activeOpacity={0.7}
+      disabled={disable}
       hitSlop={15}
       style={container}
-      disabled={disable}
+      android_ripple={{ color: "rgba(0,0,0,0.1)", borderless: true }}
     >
-      {Icon}
-    </TouchableOpacity>
+      {iconElement}
+    </Pressable>
   );
 };
 
-export default PressableIcon;
+export default memo(PressableIcon);

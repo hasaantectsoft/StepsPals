@@ -86,3 +86,39 @@ export const LagendArray=[
   {id:4,name:"Shrumpalo",score:"7400"},
   {id:5,name:"Shrumpalo",score:"7400"},
 ]
+
+
+export const PlatinumArray=[
+  {id:1,firstUser:images.Legend_First_Player,name:"Shrumpalo",score:"7400"},
+  {id:2,name:"Shrumpalo",score:"7400"},
+  {id:3,name:"Shrumpalo",score:"7400"},
+  {id:4,name:"Shrumpalo",score:"7400"},
+  {id:5,name:"Shrumpalo",score:"7400"},
+]
+
+
+export const GoldArray=[
+  {id:1,firstUser:images.Legend_First_Player,name:"Shrumpalo",score:"7400"},
+  {id:2,name:"Shrumpalo",score:"7400"},
+  {id:3,name:"Shrumpalo",score:"7400"},
+  {id:4,name:"Shrumpalo",score:"7400"},
+  {id:5,name:"Shrumpalo",score:"7400"},
+]
+
+
+export const SilverArray=[
+  {id:1,firstUser:images.Legend_First_Player,name:"Shrumpalo",score:"7400"},
+  {id:2,name:"Shrumpalo",score:"7400"},
+  {id:3,name:"Shrumpalo",score:"7400"},
+  {id:4,name:"Shrumpalo",score:"7400"},
+  {id:5,name:"Shrumpalo",score:"7400"},
+]
+
+
+export const BronzeArray=[
+  {id:1,firstUser:images.Legend_First_Player,name:"Shrumpalo",score:"7400"},
+  {id:2,name:"Shrumpalo",score:"7400"},
+  {id:3,name:"Shrumpalo",score:"7400"},
+  {id:4,name:"Shrumpalo",score:"7400"},
+  {id:5,name:"Shrumpalo",score:"7400"},
+]

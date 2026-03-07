@@ -27,7 +27,8 @@
     "selectedPetBg": "#FFF074",
     "grayBlack": "#2F3450",
     "ligtBrown": "#806D58",
-    "DarkGreen": "#cee892"
+    "DarkGreen": "#cee892",
+    "blue":"#359AF9"
   },
   "typography": {
     "heading": {
