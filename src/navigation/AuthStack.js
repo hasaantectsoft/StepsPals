@@ -5,6 +5,7 @@ import LandingScreen from '../screens/Unauth/LandingScreen/LandingScreen';
 import { useSelector } from 'react-redux';
 import BottomTab from './BottomStack/BottomTabs';
 import PetMenu from '../screens/AuthStack/PetMenu/PetMenu';
+import SubscriptionScreen from '../screens/AuthStack/SubscriptionScreen/SubscriptionScreen';
 function AuthStack() {
   const Stack = createNativeStackNavigator();
   const screens = {
@@ -12,6 +13,7 @@ function AuthStack() {
     LandingScreen: LandingScreen,
     Main: BottomTab,
     PetMenu: PetMenu,
+    SubscriptionScreen:SubscriptionScreen,
     
 
   };
@@ -19,7 +21,8 @@ const imnewaccount = useSelector(state => state.tutorialReducer?.isnewuser);
 console.log(imnewaccount)
   return (
     <Stack.Navigator
-        initialRouteName={imnewaccount ? 'tutorial' : 'LandingScreen'}
+        // initialRouteName={imnewaccount ? 'tutorial' : 'LandingScreen'}
+        initialRouteName={imnewaccount ? 'tutorial' : "SubscriptionScreen"}
       screenOptions={{
         headerShown: false,
         statusBarAnimation: 'fade',

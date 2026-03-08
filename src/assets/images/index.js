@@ -20,6 +20,10 @@ export const images = {
   Platinum: require('./Platinum.png'),
   Capsule: require('./Capsule.png'),
   Legend_First_Player: require('./Legend_First_Player.png'),
+  WelocmBackgruound: require('./WelocmBackgruound.png'),
+  ActiveSubscription: require('./ActiveSubscription.png'),
+  InActiveSubscription: require('./InActiveSubscription.png'),
+  
 
   
 

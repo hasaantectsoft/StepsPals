@@ -39,6 +39,16 @@ export const combineStyles = StyleSheet.create({
         fontFamily: Theme.typography.Retro.fontFamily,
         color: Theme.colors.black
     },
+    regular8: {
+        fontSize: moderateScale(8),
+        fontFamily: Theme.typography.Retro.fontFamily,
+        color: Theme.colors.black
+    },
+    regular6: {
+        fontSize: moderateScale(6),
+        fontFamily: Theme.typography.Retro.fontFamily,
+        color: Theme.colors.black
+    },
     rowSpacebetween: {
         flexDirection: "row",
         justifyContent: "space-between",
@@ -58,6 +68,9 @@ flexDirection: "row",
         gap: moderateScale(10),
         alignItems: "center",
         justifyContent:"center"
+    },
+    container2:{
+        flex:1
     }
 
 });
