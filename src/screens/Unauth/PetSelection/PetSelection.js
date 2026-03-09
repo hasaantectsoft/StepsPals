@@ -6,6 +6,7 @@ import { SvgXml } from "react-native-svg";
 import { useNavigation } from "@react-navigation/native";
 import NextButton from "../../../components/NextButton/NextButton";
 import { scale } from "react-native-size-matters";
+import { images } from "../../../assets/images";
 
 export default () => {
     const pets=[
@@ -55,7 +56,7 @@ export default () => {
                                 <Wrapper
                                     source={
                                         isSelected
-                                            ? require("../../../assets/images/selected.png")
+                                            ? images.selected
                                             : undefined
                                     }
                                     resizeMode="stretch"

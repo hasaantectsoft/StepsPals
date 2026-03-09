@@ -15,13 +15,13 @@ export default function RetroStepsBar({
   height,
   borderRadius,
   steps = 0,
-  goal = 5000,
+  goal = 1200,
 }) {
     // if 0 the 1st icon 2 then 2nd 3 then 4th icon
 const [boul, setBoul] = useState(0)
 const [pop,setpop]=useState(0)
 const [wat,setwat]=useState(0)
-const progress = Math.min(steps / goal, 1);
+const progress = Math.min(goal / steps, 1);
   const progressWidth = `${progress * 100}%`;
   const getIcon = (petsteps, a, b) => (petsteps === 0 ? a : petsteps === 1 ? b : checked);
   return (
@@ -49,7 +49,7 @@ const progress = Math.min(steps / goal, 1);
         <View style={[styles.fillBar, { width: progressWidth }]} />
 
         <Text style={styles.text}>
-          {steps}/{goal} Steps
+        {goal}/{steps} Steps
         </Text>
       </View>
      <View style={{

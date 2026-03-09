@@ -58,8 +58,8 @@ export default () => {
                 width={scale(280)}
                 height={scale(40)}
                 borderRadius={scale(20)}
-                steps={petsteps}
-                goal={1200} />
+                steps={5000}
+                goal={3} />
 
             <ImageBackground
                 source={images.star}

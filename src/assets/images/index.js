@@ -28,6 +28,7 @@ export const images = {
   windowFrame: require('./Window_Frame.png'),
   star: require('./star.png'),
   HomeLayout: require('./HomeLayout.png'),
+  selected: require('./selected.png'),
   
 
   
