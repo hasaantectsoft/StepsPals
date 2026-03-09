@@ -8,7 +8,7 @@ import NetInfo from '@react-native-community/netinfo';
 import {PersistGate} from 'reduxjs-toolkit-persist/integration/react';
 import {QueryClient, QueryClientProvider, onlineManager} from 'react-query';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-
+import { AudioProvider } from './src/Providers/AudioProvider';
 import AppNavigation from './src/navigation';
 import {store, persistedStore} from './src/redux/store';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
@@ -32,7 +32,8 @@ export default function App() {
           </SafeAreaProvider>
         </PersistGate>
       </Provider>
-    </QueryClientProvider></GestureHandlerRootView>
+    </QueryClientProvider>
+    </GestureHandlerRootView>
   );
 }
 

@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 059ae20f1590e446b81c3bdae53dcded
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7321366104195647934
+    second: Anim_Dino2_Feeding_0
+  - first:
+      213: -2053148376143299131
+    second: Anim_Dino2_Feeding_1
+  - first:
+      213: -6075615738408666162
+    second: Anim_Dino2_Feeding_2
+  - first:
+      213: 4985821035696282036
+    second: Anim_Dino2_Feeding_3
+  - first:
+      213: 2673352850742381283
+    second: Anim_Dino2_Feeding_4
+  - first:
+      213: 266653877478471156
+    second: Anim_Dino2_Feeding_5
+  - first:
+      213: -3522161001841264742
+    second: Anim_Dino2_Feeding_6
+  - first:
+      213: 3490256875117330712
+    second: Anim_Dino2_Feeding_7
+  - first:
+      213: 3592752665890210434
+    second: Anim_Dino2_Feeding_8
+  - first:
+      213: 2093306906354669639
+    second: Anim_Dino2_Feeding_9
+  - first:
+      213: -5867875740862212630
+    second: Anim_Dino2_Feeding_10
+  - first:
+      213: 2134461797987458078
+    second: Anim_Dino2_Feeding_11
+  - first:
+      213: 5516809823863092720
+    second: Anim_Dino2_Feeding_12
+  - first:
+      213: -9045204128752470671
+    second: Anim_Dino2_Feeding_13
+  - first:
+      213: 3437038214018510097
+    second: Anim_Dino2_Feeding_14
+  - first:
+      213: -7105137917949633080
+    second: Anim_Dino2_Feeding_15
+  - first:
+      213: 6210064888967976186
+    second: Anim_Dino2_Feeding_16
+  - first:
+      213: 5906340113650444753
+    second: Anim_Dino2_Feeding_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim_Dino_Teen_Feeding_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4606e6429bc444a36ac0a3dfa4314ba7
+      internalID: 46236393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Teen_Feeding_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 2
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07623b8c0e1ec45979ab9ef26f97838f
+      internalID: -1820742483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Teen_Feeding_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 2
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a31050445f0841ca8b7eb5777347a5e
+      internalID: 954610145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Teen_Feeding_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb82d7c81179a42ed898ffff6dbdc6f2
+      internalID: -1295574883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Teen_Feeding_4
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 2
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80ea6a76951a4291a73ddc4734af60f
+      internalID: -512189049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Teen_Feeding_5
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 2
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94613a0dc476542e39f7847743b26772
+      internalID: -579521398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Teen_Feeding_6
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 2
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9753092b3f2ba424e85194e09565b40c
+      internalID: -1555996983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Teen_Feeding_7
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 2
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994db01d2e40043598373772c27166b3
+      internalID: 1031956454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Teen_Feeding_8
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 2
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1109a810d9e414caf53f23fb7f42db
+      internalID: 1646107016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Teen_Feeding_9
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 2
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b627d7dda446f4b7984ef13fd9369808
+      internalID: 873390293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Teen_Feeding_10
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 2
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26d39b5c6c504db3ae55521373ca3b0
+      internalID: -236100892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Teen_Feeding_11
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 2
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7ce3a559bc044d4bef9980c15a1041
+      internalID: 2002171991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Teen_Feeding_12
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 2
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7154477741b4931b01054ad0ffbe29
+      internalID: -739598018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Teen_Feeding_13
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 2
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e4376fd4018406fa3c2d489c2cad38
+      internalID: -1773327614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Teen_Feeding_14
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 2
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87542143bcaf94e708333f0a266974a8
+      internalID: -97714007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Teen_Feeding_15
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 2
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e711f086fe84bc6b418b02e808cd46
+      internalID: -1114437736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Teen_Feeding_16
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 2
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe7ee685119c49da8dc45ca16daa39f
+      internalID: 1785041107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Teen_Feeding_17
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 2
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3247609a148842ceadc88a32af12d85
+      internalID: -381336351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ab1efea8673b245dab67dbaed562e797
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Anim_Dino_Teen_Feeding_0: 46236393
+      Anim_Dino_Teen_Feeding_1: -1820742483
+      Anim_Dino_Teen_Feeding_10: -236100892
+      Anim_Dino_Teen_Feeding_11: 2002171991
+      Anim_Dino_Teen_Feeding_12: -739598018
+      Anim_Dino_Teen_Feeding_13: -1773327614
+      Anim_Dino_Teen_Feeding_14: -97714007
+      Anim_Dino_Teen_Feeding_15: -1114437736
+      Anim_Dino_Teen_Feeding_16: 1785041107
+      Anim_Dino_Teen_Feeding_17: -381336351
+      Anim_Dino_Teen_Feeding_2: 954610145
+      Anim_Dino_Teen_Feeding_3: -1295574883
+      Anim_Dino_Teen_Feeding_4: -512189049
+      Anim_Dino_Teen_Feeding_5: -579521398
+      Anim_Dino_Teen_Feeding_6: -1555996983
+      Anim_Dino_Teen_Feeding_7: 1031956454
+      Anim_Dino_Teen_Feeding_8: 1646107016
+      Anim_Dino_Teen_Feeding_9: 873390293
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -23,7 +23,7 @@ export default () => {
                 <Text style={styles.welcome}>is happy</Text>
             </TouchableOpacity>
             {/* Absolute Elements */}
-            <SpriteLoader />
+            <SpriteLoader  />
             <RetroStepsBar 
             top={scale(92)} 
             right={scale(100)} 

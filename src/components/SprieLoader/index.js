@@ -24,7 +24,10 @@ import {
   };
   
   const ICON_SIZE = getIconSize();
-  export default function BallRollJSX() {
+
+  const DEFAULT_SPRITE = require("../../assets/images/Anim_Dino_Baby_Idle.png");
+
+  export default function BallRollJSX({ spriteImage = DEFAULT_SPRITE, spriteFrameWidth = 34, spriteFrameHeight = 80 }) {
     const ballX = useRef(new Animated.Value(-BALL_SIZE)).current;
   
     useEffect(() => {
@@ -99,27 +102,27 @@ import {
           style={styles.cat}
           resizeMode="contain"
         /> */}
-        <AnimatedStyleUpdateExample />
+        <AnimatedStyleUpdateExample
+          spriteImage={spriteImage}
+          spriteFrameWidth={spriteFrameWidth}
+          spriteFrameHeight={spriteFrameHeight}
+        />
       </View>
     );
   }
   
-  function AnimatedStyleUpdateExample() {
+  function AnimatedStyleUpdateExample({ spriteImage = DEFAULT_SPRITE, spriteFrameWidth = 34, spriteFrameHeight = 80 }) {
     const counter = useSharedValue(0);
     useEffect(() => {
       const interval = setInterval(() => {
         counter.value = (counter.value + 1) % 31;
       }, 100);
-  
+
       return () => clearInterval(interval);
     }, []);
-  
-    const spriteMap = useImage(
-      require("../../assets/images/Anim_Dino_Baby_Idle.png"),
-    );
 
-   
-  
+    const spriteMap = useImage(spriteImage);
+
     const numberOfSprites = 1;
     const sprites = useRectBuffer(numberOfSprites, (rect, i) => {
       "worklet";
@@ -129,7 +132,7 @@ import {
       } else {
         frameSelect = 36 * Math.floor(counter.value);
       }
-      rect.setXYWH(frameSelect + 1, 0, 34, 80);
+      rect.setXYWH(frameSelect + 1, 0, spriteFrameWidth, spriteFrameHeight);
     });
   
     const transforms = [Skia.RSXform(3, 0, MoveTop, ICON_SIZE)];
@@ -141,7 +144,7 @@ import {
           // backgroundColor: "red",
         }}
       >
-        <Atlas image={spriteMap} sprites={sprites} transforms={transforms} />
+        <Atlas image={spriteMap } sprites={sprites} transforms={transforms} />
       </Canvas>
     );
   }

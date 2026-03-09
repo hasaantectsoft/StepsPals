@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { styles } from "./Styles";
 import { ImageBackground, Linking, Platform, Text, View } from "react-native";
 import { images } from "../../../assets/images";
@@ -10,11 +10,11 @@ import { DeleteMessageModal } from "../../../components/Modal";
 import { PRIVACY_URL } from "../../../utils/extra/links";
 import WelcomModal from "../../../components/Modal/WelcomModal";
 export default () => {
-    const [MusicIsOn, setMusicIsOn] = React.useState(false);
-    const [SoundIsOn, setSoundIsOn] = React.useState(false);
-    const [isDeleteModalVisible, setIsDeleteModalVisible] = React.useState(false);
-    const [DisconnectModal, setIsDisConnectModal] = React.useState(false);
-    const [ProgressModal, setIsProgressModal] = React.useState(false);
+    const [MusicIsOn, setMusicIsOn] = useState(false);
+    const [SoundIsOn, setSoundIsOn] = useState(false);
+    const [isDeleteModalVisible, setIsDeleteModalVisible] = useState(false);
+    const [DisconnectModal, setIsDisConnectModal] = useState(false);
+    const [ProgressModal, setIsProgressModal] = useState(false);
 
 
 
@@ -45,7 +45,7 @@ export default () => {
                                 <PressableIcon icon={SignInWithGoogleBtnSvg} width={"100%"} height={60} />
 
                         }
-                        <PressableIcon onPress={() => Linking.openURL(PRIVACY_URL)} icon={PrivacyPolicyBtnSvg} width={"100%"} height={60} />
+                            <PressableIcon onPress={() => Linking.openURL(PRIVACY_URL)} icon={PrivacyPolicyBtnSvg} width={"100%"} height={60} />
                         <PressableIcon icon={RestorePurchaceBtnSvg} width={"100%"} height={60} />
                         <PressableIcon icon={DeleteButtonSvg} width={"100%"} height={60} onPress={() => setIsDeleteModalVisible(true)} />
                     </View>

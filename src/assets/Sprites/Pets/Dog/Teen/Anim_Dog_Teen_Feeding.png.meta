@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 4c7fe18d3496d4f91b401d2d152f9e31
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6708507690912687046
+    second: Anim_Dog2_Feeding_0
+  - first:
+      213: 38164390531863652
+    second: Anim_Dog2_Feeding_1
+  - first:
+      213: 6744639884982166343
+    second: Anim_Dog2_Feeding_2
+  - first:
+      213: -7284102322575541178
+    second: Anim_Dog2_Feeding_3
+  - first:
+      213: 1399013399311594457
+    second: Anim_Dog2_Feeding_4
+  - first:
+      213: 3689103055876200624
+    second: Anim_Dog2_Feeding_5
+  - first:
+      213: 1506246241087951221
+    second: Anim_Dog2_Feeding_6
+  - first:
+      213: 4102916611749989470
+    second: Anim_Dog2_Feeding_7
+  - first:
+      213: 4991235049116116811
+    second: Anim_Dog2_Feeding_8
+  - first:
+      213: 2107237126295645680
+    second: Anim_Dog2_Feeding_9
+  - first:
+      213: 8384187001766060838
+    second: Anim_Dog2_Feeding_10
+  - first:
+      213: 5557202187920403661
+    second: Anim_Dog2_Feeding_11
+  - first:
+      213: -8516183070102093667
+    second: Anim_Dog2_Feeding_12
+  - first:
+      213: -1275782876888890533
+    second: Anim_Dog2_Feeding_13
+  - first:
+      213: -2586670659488810229
+    second: Anim_Dog2_Feeding_14
+  - first:
+      213: -2483570822248438853
+    second: Anim_Dog2_Feeding_15
+  - first:
+      213: 3257537814367300350
+    second: Anim_Dog2_Feeding_16
+  - first:
+      213: 1681695071278078042
+    second: Anim_Dog2_Feeding_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Feeding_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd71e76c95f643babb073e86136b6e0
+      internalID: -1868834782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Feeding_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 2
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae668946efd744454be3aa9508da4c74
+      internalID: 1789310328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Feeding_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 2
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a16ca8f99319a4c5da165af0c6de8e04
+      internalID: -586523082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Feeding_3
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 2
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4bdf41c486094294a34bef30f4f3227
+      internalID: -476556186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Feeding_4
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 2
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059aac1f2cd4f4254a5687c337862b3c
+      internalID: 1306948037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Feeding_5
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 2
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c076ef3a1a6c4eb4bfb0baf899ad355
+      internalID: 844300924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Feeding_6
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 2
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43278cba2c6034aad9657b232ca9de84
+      internalID: -1876337835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Feeding_7
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 2
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e439764252f64188b743f64c8bdc768
+      internalID: 1692259075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Feeding_8
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 2
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60231eb50c09d4a68bcd6c35c62dfb4a
+      internalID: 1649278298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Feeding_9
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063e56e907f964fb4a1a5fc901863560
+      internalID: 1842605172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Feeding_10
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 2
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f8e8ec437ff4d9d87b5cd6a64659b6
+      internalID: -190499127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Feeding_11
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 2
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76e9c9aa55a540bf889476e611e3311
+      internalID: 2087480512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Feeding_12
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 2
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be0b7ad38bf5147b6b03e7023a4df7e8
+      internalID: 1287364122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Feeding_13
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 2
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a37d8e60e8b4a14ac8296622a5d710
+      internalID: 75278865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Feeding_14
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 2
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08fcb7a44d959461588d767cc1f9ab58
+      internalID: 719139409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Feeding_15
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 2
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46707a87d14e14366a2a6dd0eb5cf703
+      internalID: -494529527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Feeding_16
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 2
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241a7f1c5f5d9446a8b5a8ec236d760b
+      internalID: -111664793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Feeding_17
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 2
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935cc10c106bb4b8387a793b415990ca
+      internalID: -47629761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 05a4352098ed442c480ff733bb91026f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Anim_Dog_Teen_Feeding_0: -1868834782
+      Anim_Dog_Teen_Feeding_1: 1789310328
+      Anim_Dog_Teen_Feeding_10: -190499127
+      Anim_Dog_Teen_Feeding_11: 2087480512
+      Anim_Dog_Teen_Feeding_12: 1287364122
+      Anim_Dog_Teen_Feeding_13: 75278865
+      Anim_Dog_Teen_Feeding_14: 719139409
+      Anim_Dog_Teen_Feeding_15: -494529527
+      Anim_Dog_Teen_Feeding_16: -111664793
+      Anim_Dog_Teen_Feeding_17: -47629761
+      Anim_Dog_Teen_Feeding_2: -586523082
+      Anim_Dog_Teen_Feeding_3: -476556186
+      Anim_Dog_Teen_Feeding_4: 1306948037
+      Anim_Dog_Teen_Feeding_5: 844300924
+      Anim_Dog_Teen_Feeding_6: -1876337835
+      Anim_Dog_Teen_Feeding_7: 1692259075
+      Anim_Dog_Teen_Feeding_8: 1649278298
+      Anim_Dog_Teen_Feeding_9: 1842605172
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

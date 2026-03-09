@@ -6172,6 +6172,11 @@ react-native-slider@^0.11.0:
   dependencies:
     prop-types "^15.5.6"
 
+react-native-sound-player@^0.14.5:
+  version "0.14.5"
+  resolved "https://registry.yarnpkg.com/react-native-sound-player/-/react-native-sound-player-0.14.5.tgz#cb9f854ab18859fd955e23448d97c85da0af29d9"
+  integrity sha512-/fCP91KNNCJ8RindTMERklLCbQ+Vjbd6aGY7ZX2W92mRNvAkbPCQ99PZkvYqJsC7VgUn18rxvGmneZbhb7LnxQ==
+
 react-native-svg@^15.15.3:
   version "15.15.3"
   resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-15.15.3.tgz#48baf15ad9610be816b37c03ffbb1f72c056a2b0"

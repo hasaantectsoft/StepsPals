@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 12eeb56c194954956b1d915f319c87b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5004633011901226464
+    second: Anim_Dino3_Sick1_Feeding_0
+  - first:
+      213: -8375647726477626499
+    second: Anim_Dino3_Sick1_Feeding_1
+  - first:
+      213: -131576525405299263
+    second: Anim_Dino3_Sick1_Feeding_2
+  - first:
+      213: -2020930558938914011
+    second: Anim_Dino3_Sick1_Feeding_3
+  - first:
+      213: 3768741337440953833
+    second: Anim_Dino3_Sick1_Feeding_4
+  - first:
+      213: -7724915955797425697
+    second: Anim_Dino3_Sick1_Feeding_5
+  - first:
+      213: 5104967097310349420
+    second: Anim_Dino3_Sick1_Feeding_6
+  - first:
+      213: 4047876253524946697
+    second: Anim_Dino3_Sick1_Feeding_7
+  - first:
+      213: 95952580110392210
+    second: Anim_Dino3_Sick1_Feeding_8
+  - first:
+      213: 4418655723056877922
+    second: Anim_Dino3_Sick1_Feeding_9
+  - first:
+      213: -2357926463592283858
+    second: Anim_Dino3_Sick1_Feeding_10
+  - first:
+      213: -5171993926806278746
+    second: Anim_Dino3_Sick1_Feeding_11
+  - first:
+      213: 5223046625534696923
+    second: Anim_Dino3_Sick1_Feeding_12
+  - first:
+      213: -3714857929777537985
+    second: Anim_Dino3_Sick1_Feeding_13
+  - first:
+      213: 5409040006177220959
+    second: Anim_Dino3_Sick1_Feeding_14
+  - first:
+      213: 9129560260299163948
+    second: Anim_Dino3_Sick1_Feeding_15
+  - first:
+      213: -4952672782922194768
+    second: Anim_Dino3_Sick1_Feeding_16
+  - first:
+      213: 4131348661390189450
+    second: Anim_Dino3_Sick1_Feeding_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Sick_Feeding_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51791be3d71541d5bd2a163dcef96a7
+      internalID: 1207694037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Sick_Feeding_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 2
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82607bc176acf4ab6b4280fbc8b0cecd
+      internalID: 852453021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Sick_Feeding_2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 2
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b27d91a5e50b14a11b212f23f538c1b4
+      internalID: -982000189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Sick_Feeding_3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 2
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57581648dcf904082adb502a2b35e00f
+      internalID: 740826084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Sick_Feeding_4
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 2
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e6c99cb425d45feadfdd859003c7a5
+      internalID: 604939485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Sick_Feeding_5
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 2
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e756e1e8a8c8a43cdb36a4a1d2187574
+      internalID: 1530807264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Sick_Feeding_6
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 2
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fff506924fb49d3a8b7a504dda661a
+      internalID: -609788749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Sick_Feeding_7
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 2
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e069a27883ef445eb9efa7060467f646
+      internalID: -1186431735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Sick_Feeding_8
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 2
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c63a6fea4674cfabbaa1cb7019b727
+      internalID: 1926891668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Sick_Feeding_9
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 2
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e42db0e4ca54a52b1d2605c93a528a
+      internalID: 1155525825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Sick_Feeding_10
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 2
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ef706cdbe9d4b31af6bc027896d750
+      internalID: -1316335438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Sick_Feeding_11
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 2
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0278b0cb757de430f8237dbdbd4848a3
+      internalID: 589696111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Sick_Feeding_12
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 2
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd58a8894caa043d49eef4d6e52d4be2
+      internalID: 282741047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Sick_Feeding_13
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 2
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fcd93b1d2cf47af8d535b8cbfa3b94
+      internalID: 2105620498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Sick_Feeding_14
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 2
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0bbef3dfef24a0e86dadd7fc2dd65a
+      internalID: -187521891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Sick_Feeding_15
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 2
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adfeb22431c0949419dccac202647e80
+      internalID: 1992481868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Sick_Feeding_16
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 2
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408d7455410d1494d98a545049e003f9
+      internalID: 1392201485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Sick_Feeding_17
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 2
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a53d567ef79472eaaf6c766d08ffa7
+      internalID: -557054520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2f69444d211f74a0bb0a4919d93c818b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Anim_Dino_Adult_Sick_Feeding_0: 1207694037
+      Anim_Dino_Adult_Sick_Feeding_1: 852453021
+      Anim_Dino_Adult_Sick_Feeding_10: -1316335438
+      Anim_Dino_Adult_Sick_Feeding_11: 589696111
+      Anim_Dino_Adult_Sick_Feeding_12: 282741047
+      Anim_Dino_Adult_Sick_Feeding_13: 2105620498
+      Anim_Dino_Adult_Sick_Feeding_14: -187521891
+      Anim_Dino_Adult_Sick_Feeding_15: 1992481868
+      Anim_Dino_Adult_Sick_Feeding_16: 1392201485
+      Anim_Dino_Adult_Sick_Feeding_17: -557054520
+      Anim_Dino_Adult_Sick_Feeding_2: -982000189
+      Anim_Dino_Adult_Sick_Feeding_3: 740826084
+      Anim_Dino_Adult_Sick_Feeding_4: 604939485
+      Anim_Dino_Adult_Sick_Feeding_5: 1530807264
+      Anim_Dino_Adult_Sick_Feeding_6: -609788749
+      Anim_Dino_Adult_Sick_Feeding_7: -1186431735
+      Anim_Dino_Adult_Sick_Feeding_8: 1926891668
+      Anim_Dino_Adult_Sick_Feeding_9: 1155525825
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
