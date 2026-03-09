@@ -29,11 +29,11 @@ console.log("Key is follwig",petkey)
     id:petkey,
     name:petname,
     days: "2/7",
-    species: "[Cat]",
-    age: "[x] days",
-    condition: "[Healthy]",
-    stage: "[Teen]",
-    missed: "[0]",
+    species:'cat',
+    age: "2 days",
+    condition: "Healthy",
+    stage: "baby",
+    missed: "0",
     image: require("../../../assets/images/Cat.png"),
   };
 
