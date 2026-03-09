@@ -1,14 +1,12 @@
 import { Pressable } from 'react-native';
-import SoundPlayer from 'react-native-sound-player';
 import PropTypes from 'prop-types';
 import { styles } from './SoundPressableStyles';
-
-const BUTTON_SOUND = require('../../assets/Audio/SFX/Button Click.wav');
+import { playButtonSound } from '../../utils/SoundManager/SoundManager';
 
 const SoundPressable = ({ onPress, style, children, ...rest }) => {
   const handlePress = (e) => {
     try {
-      SoundPlayer.playAsset(BUTTON_SOUND);
+      playButtonSound();
     } catch (err) {
       console.warn('Button sound failed', err);
     }

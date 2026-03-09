@@ -1,6 +1,6 @@
 
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import './src/locals/i18n';
 import {Provider} from 'react-redux';
 import {StatusBar} from 'react-native';
@@ -11,6 +11,7 @@ import {SafeAreaProvider} from 'react-native-safe-area-context';
 import AppNavigation from './src/navigation';
 import {store, persistedStore} from './src/redux/store';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import {playBackgroundSound, startAppSound} from './src/utils/SoundManager/SoundManager'
 
 export default function App() {
   const queryClient = new QueryClient();
@@ -20,6 +21,12 @@ export default function App() {
       setOnline(state.isConnected);
     });
   });
+
+
+  useEffect(() => {
+    startAppSound(); 
+  },[] );
+
   return (
    <GestureHandlerRootView style={{flex: 1}}> 
     <QueryClientProvider client={queryClient}>

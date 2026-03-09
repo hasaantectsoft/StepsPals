@@ -7,6 +7,7 @@ import { useNavigation } from "@react-navigation/native";
 import NextButton from "../../../components/NextButton/NextButton";
 import { scale } from "react-native-size-matters";
 import { images } from "../../../assets/images";
+import { playButtonSound } from "../../../utils/SoundManager/SoundManager";
 
 export default () => {
     const pets=[
@@ -51,7 +52,7 @@ export default () => {
                             <TouchableOpacity
                                 key={pet.id}
                                 activeOpacity={0.8}
-                                onPress={() => setSelectedPet(pet)}
+                                onPress={() => {setSelectedPet(pet);playButtonSound()}}
                             >
                                 <Wrapper
                                     source={
