@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 7538869a981ec4bc09913834aa425bcc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7128983303563504591
+    second: Anim_Dog1_Idle_0
+  - first:
+      213: -8717566046551740954
+    second: Anim_Dog1_Idle_1
+  - first:
+      213: 5298144126731864448
+    second: Anim_Dog1_Idle_2
+  - first:
+      213: 8367751051175164031
+    second: Anim_Dog1_Idle_3
+  - first:
+      213: 470890510259365197
+    second: Anim_Dog1_Idle_4
+  - first:
+      213: 7978525154147864397
+    second: Anim_Dog1_Idle_5
+  - first:
+      213: -497192154741940225
+    second: Anim_Dog1_Idle_6
+  - first:
+      213: 8296446466260079561
+    second: Anim_Dog1_Idle_7
+  - first:
+      213: -5157995284603304988
+    second: Anim_Dog1_Idle_8
+  - first:
+      213: 7611110439977485797
+    second: Anim_Dog1_Idle_9
+  - first:
+      213: 9218705528301535
+    second: Anim_Dog1_Idle_10
+  - first:
+      213: 1927438740613178457
+    second: Anim_Dog1_Idle_11
+  - first:
+      213: -1449707296876182710
+    second: Anim_Dog1_Idle_12
+  - first:
+      213: 7688244287781413292
+    second: Anim_Dog1_Idle_13
+  - first:
+      213: -5035665832402099272
+    second: Anim_Dog1_Idle_14
+  - first:
+      213: 7490619162040595764
+    second: Anim_Dog1_Idle_15
+  - first:
+      213: -3258051505654715802
+    second: Anim_Dog1_Idle_16
+  - first:
+      213: -5745958103336146985
+    second: Anim_Dog1_Idle_17
+  - first:
+      213: -9209247843315707556
+    second: Anim_Dog1_Idle_18
+  - first:
+      213: 7760428138301655814
+    second: Anim_Dog1_Idle_19
+  - first:
+      213: -4056379411637374976
+    second: Anim_Dog1_Idle_20
+  - first:
+      213: -1160042287256620533
+    second: Anim_Dog1_Idle_21
+  - first:
+      213: -152987539487847609
+    second: Anim_Dog1_Idle_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf1e7a4d930c48e987ae2c80a941073
+      internalID: 1158016871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ab62b14eb114b6b964300f6a95f928
+      internalID: -1056272934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c67bb20dce94f89be32133b4bec5e0
+      internalID: -586034637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00defe746c8254987b6f76412b78ce54
+      internalID: 1397865303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae7f2ce73f5aa4f1ab7c56d05ab6ea73
+      internalID: 983237790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148eb9505b1634be594b833a4da39bb4
+      internalID: 391528317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95531252ea46b4294bace4192d3904f1
+      internalID: -665608819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68224d19d1f4b41d388d3e468d57ab27
+      internalID: 573486588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98858466ba2c84a6d8901b593e16edec
+      internalID: -835193812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a703ffbae96428fbd6b6cd2b5d9d1b
+      internalID: 2072041189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f7a56a3443b437e91570c39377be13
+      internalID: -1357369564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1287b3dce0c6543ec96c15b1c0ad0db7
+      internalID: -101841773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 362e3d1372f7c42d2b4394fde1a6ee7a
+      internalID: 349522036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ebb333b86b340a6b6642cacfb5e485
+      internalID: -1615175340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed915f93de724a28b99f661204ae326
+      internalID: -111607221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6164d824e3f4f450389e4197d7f71be5
+      internalID: -1663180742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_16
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efab4b372f8e54daea32056cc9fcc814
+      internalID: -1525778626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_17
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f7cfe5b128f646468ab55bf507ed4f5
+      internalID: -79914924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_18
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d81e24042004713a135874c21cfe49
+      internalID: 939116095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_19
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d1b36a6ee934c1a8db58e5a51cc1d7
+      internalID: -1744459639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_20
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4454446b1e0434d94b3177a0d4bab30a
+      internalID: 1440428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_21
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f483342af0e46179666fb9c85b476f
+      internalID: 397802581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Baby_Idle_22
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 2
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d465b2e1bb4a4257ad12910c7e68233
+      internalID: 863861704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0a26d718a50fc43fa8523c0346b029c1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Anim_Dog_Baby_Idle_0: 1158016871
+      Anim_Dog_Baby_Idle_1: -1056272934
+      Anim_Dog_Baby_Idle_10: -1357369564
+      Anim_Dog_Baby_Idle_11: -101841773
+      Anim_Dog_Baby_Idle_12: 349522036
+      Anim_Dog_Baby_Idle_13: -1615175340
+      Anim_Dog_Baby_Idle_14: -111607221
+      Anim_Dog_Baby_Idle_15: -1663180742
+      Anim_Dog_Baby_Idle_16: -1525778626
+      Anim_Dog_Baby_Idle_17: -79914924
+      Anim_Dog_Baby_Idle_18: 939116095
+      Anim_Dog_Baby_Idle_19: -1744459639
+      Anim_Dog_Baby_Idle_2: -586034637
+      Anim_Dog_Baby_Idle_20: 1440428
+      Anim_Dog_Baby_Idle_21: 397802581
+      Anim_Dog_Baby_Idle_22: 863861704
+      Anim_Dog_Baby_Idle_3: 1397865303
+      Anim_Dog_Baby_Idle_4: 983237790
+      Anim_Dog_Baby_Idle_5: 391528317
+      Anim_Dog_Baby_Idle_6: -665608819
+      Anim_Dog_Baby_Idle_7: 573486588
+      Anim_Dog_Baby_Idle_8: -835193812
+      Anim_Dog_Baby_Idle_9: 2072041189
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

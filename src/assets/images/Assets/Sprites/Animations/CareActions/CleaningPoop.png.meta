@@ -1,0 +1,1051 @@
+fileFormatVersion: 2
+guid: 4a389699c25024aa2bf29e394dc19758
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -700000185467043849
+    second: CleaningPoop_0
+  - first:
+      213: -1504955998965501866
+    second: CleaningPoop_1
+  - first:
+      213: 3140190699312079515
+    second: CleaningPoop_2
+  - first:
+      213: -2997354615013680303
+    second: CleaningPoop_3
+  - first:
+      213: -6220526398863782508
+    second: CleaningPoop_4
+  - first:
+      213: 1036249068174936819
+    second: CleaningPoop_5
+  - first:
+      213: -8894116453238096551
+    second: CleaningPoop_6
+  - first:
+      213: -2834806250884784701
+    second: CleaningPoop_7
+  - first:
+      213: 2213958557332382239
+    second: CleaningPoop_8
+  - first:
+      213: -5681692578075724112
+    second: CleaningPoop_9
+  - first:
+      213: 8862968535778317916
+    second: CleaningPoop_10
+  - first:
+      213: -8328081375869398637
+    second: CleaningPoop_11
+  - first:
+      213: 7608453582185755844
+    second: CleaningPoop_12
+  - first:
+      213: -4559081382695031864
+    second: CleaningPoop_13
+  - first:
+      213: 8884456668236539251
+    second: CleaningPoop_14
+  - first:
+      213: 8067543295937990236
+    second: CleaningPoop_15
+  - first:
+      213: -4074215282812080548
+    second: CleaningPoop_16
+  - first:
+      213: -4345622756486930500
+    second: CleaningPoop_17
+  - first:
+      213: 3503274982048207336
+    second: CleaningPoop_18
+  - first:
+      213: -963579238636768636
+    second: CleaningPoop_19
+  - first:
+      213: -8697715894226000737
+    second: CleaningPoop_20
+  - first:
+      213: 1488213190590609140
+    second: CleaningPoop_21
+  - first:
+      213: 3812755965973979051
+    second: CleaningPoop_22
+  - first:
+      213: 8566089528774199090
+    second: CleaningPoop_23
+  - first:
+      213: 2680150801382659100
+    second: CleaningPoop_24
+  - first:
+      213: 2146438109484975822
+    second: CleaningPoop_25
+  - first:
+      213: 6244773492958659381
+    second: CleaningPoop_26
+  - first:
+      213: 6658776894424552884
+    second: CleaningPoop_27
+  - first:
+      213: 3676399688010831817
+    second: CleaningPoop_28
+  - first:
+      213: -7340736376209700678
+    second: CleaningPoop_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CleaningPoop_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ff77824a891946f0800000000000000
+      internalID: -700000185467043849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65071171e725d1be0800000000000000
+      internalID: -1504955998965501866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_2
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b926b77bdc2349b20800000000000000
+      internalID: 3140190699312079515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15b5b3abbd14766d0800000000000000
+      internalID: -2997354615013680303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49dc8cfa2304ca9a0800000000000000
+      internalID: -6220526398863782508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_5
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa8567890f716e00800000000000000
+      internalID: 1036249068174936819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_6
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d39c57530c19480800000000000000
+      internalID: -8894116453238096551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_7
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd94f8fbbeb8a8d0800000000000000
+      internalID: -2834806250884784701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_8
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f12ab3de39f89be10800000000000000
+      internalID: 2213958557332382239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_9
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b6b2d004b29621b0800000000000000
+      internalID: -5681692578075724112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_10
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c56d78edce69ffa70800000000000000
+      internalID: 8862968535778317916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_11
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39112cadc16bc6c80800000000000000
+      internalID: -8328081375869398637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_12
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c4fa30c838a69960800000000000000
+      internalID: 7608453582185755844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_13
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cbad5233a3eab0c0800000000000000
+      internalID: -4559081382695031864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_14
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 375e694944eeb4b70800000000000000
+      internalID: 8884456668236539251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_15
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ec77c42eba5ff60800000000000000
+      internalID: 8067543295937990236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_16
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ea48159ca7577c0800000000000000
+      internalID: -4074215282812080548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_17
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf1eb7802f31b3c0800000000000000
+      internalID: -4345622756486930500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_18
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e11f77f8022e9030800000000000000
+      internalID: 3503274982048207336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_19
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4823d18a9cda0a2f0800000000000000
+      internalID: -963579238636768636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_20
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f94e3670a718b4780800000000000000
+      internalID: -8697715894226000737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_21
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f6343f030237a410800000000000000
+      internalID: 1488213190590609140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_22
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baf5127a951a9e430800000000000000
+      internalID: 3812755965973979051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_23
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23787c49a0dd0e670800000000000000
+      internalID: 8566089528774199090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_24
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1454ec24fec13520800000000000000
+      internalID: 2680150801382659100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_25
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec68638961ea9cd10800000000000000
+      internalID: 2146438109484975822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_26
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5338396d764e9a650800000000000000
+      internalID: 6244773492958659381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_27
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b511c64e4ab86c50800000000000000
+      internalID: 6658776894424552884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_28
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c71e30b902350330800000000000000
+      internalID: 3676399688010831817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_29
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab88b32a827702a90800000000000000
+      internalID: -7340736376209700678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_30
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e2b9fba170a4186999453949b245f6
+      internalID: -2000399467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_31
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3981783d2a52b412abb1c71f86ed118a
+      internalID: -1538559609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_32
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f264e3efd1ec461ea67a4f264cd619f
+      internalID: -577507030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_33
+      rect:
+        serializedVersion: 2
+        x: 1718
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07158a6a8f48546b7b88e7a0309108b3
+      internalID: -761192432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CleaningPoop_34
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 2
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b63860dd07ce415aa98a771e1eda20d
+      internalID: 1887217414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: abc4d709b00e94baaa7cdfc4394633e7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CleaningPoop_0: -700000185467043849
+      CleaningPoop_1: -1504955998965501866
+      CleaningPoop_10: 8862968535778317916
+      CleaningPoop_11: -8328081375869398637
+      CleaningPoop_12: 7608453582185755844
+      CleaningPoop_13: -4559081382695031864
+      CleaningPoop_14: 8884456668236539251
+      CleaningPoop_15: 8067543295937990236
+      CleaningPoop_16: -4074215282812080548
+      CleaningPoop_17: -4345622756486930500
+      CleaningPoop_18: 3503274982048207336
+      CleaningPoop_19: -963579238636768636
+      CleaningPoop_2: 3140190699312079515
+      CleaningPoop_20: -8697715894226000737
+      CleaningPoop_21: 1488213190590609140
+      CleaningPoop_22: 3812755965973979051
+      CleaningPoop_23: 8566089528774199090
+      CleaningPoop_24: 2680150801382659100
+      CleaningPoop_25: 2146438109484975822
+      CleaningPoop_26: 6244773492958659381
+      CleaningPoop_27: 6658776894424552884
+      CleaningPoop_28: 3676399688010831817
+      CleaningPoop_29: -7340736376209700678
+      CleaningPoop_3: -2997354615013680303
+      CleaningPoop_30: -2000399467
+      CleaningPoop_31: -1538559609
+      CleaningPoop_32: -577507030
+      CleaningPoop_33: -761192432
+      CleaningPoop_34: 1887217414
+      CleaningPoop_4: -6220526398863782508
+      CleaningPoop_5: 1036249068174936819
+      CleaningPoop_6: -8894116453238096551
+      CleaningPoop_7: -2834806250884784701
+      CleaningPoop_8: 2213958557332382239
+      CleaningPoop_9: -5681692578075724112
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

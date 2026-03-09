@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="com.google.android.play:review:[2.0.2]" />
+        <androidPackage spec="com.google.android.play:review-ktx:[2.0.2]" />
+        
+        <androidPackage spec="androidx.core:core:[1.17.0]" />
+        <androidPackage spec="androidx.appcompat:appcompat:[1.7.1]" />
+    </androidPackages>
+</dependencies>

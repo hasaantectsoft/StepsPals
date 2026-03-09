@@ -1,0 +1,2314 @@
+fileFormatVersion: 2
+guid: d3ec70dc5debc4536bc1541aff3c59fb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7526420917268568936
+    second: FlowerFieldPattern_0
+  - first:
+      213: -6919156185467001432
+    second: FlowerFieldPattern_1
+  - first:
+      213: 423852211731912540
+    second: FlowerFieldPattern_2
+  - first:
+      213: -8819343880206992632
+    second: FlowerFieldPattern_3
+  - first:
+      213: -3253177541345327335
+    second: FlowerFieldPattern_4
+  - first:
+      213: 1991497054371445446
+    second: FlowerFieldPattern_5
+  - first:
+      213: 2645418500743075429
+    second: FlowerFieldPattern_6
+  - first:
+      213: 1025999948265159427
+    second: FlowerFieldPattern_7
+  - first:
+      213: 6226653113681627260
+    second: FlowerFieldPattern_8
+  - first:
+      213: -437153532347635195
+    second: FlowerFieldPattern_9
+  - first:
+      213: -6000310131697141336
+    second: FlowerFieldPattern_10
+  - first:
+      213: 2801495275248481906
+    second: FlowerFieldPattern_11
+  - first:
+      213: -5042322444599989603
+    second: FlowerFieldPattern_12
+  - first:
+      213: 518085868145713866
+    second: FlowerFieldPattern_13
+  - first:
+      213: -881797138153696081
+    second: FlowerFieldPattern_14
+  - first:
+      213: -4765933476567067836
+    second: FlowerFieldPattern_15
+  - first:
+      213: 3740556654513704923
+    second: FlowerFieldPattern_16
+  - first:
+      213: 285206819332078475
+    second: FlowerFieldPattern_17
+  - first:
+      213: -6463532986392259058
+    second: FlowerFieldPattern_18
+  - first:
+      213: 1406618239790139434
+    second: FlowerFieldPattern_19
+  - first:
+      213: -5829920965552489746
+    second: FlowerFieldPattern_20
+  - first:
+      213: 5199226137839683543
+    second: FlowerFieldPattern_21
+  - first:
+      213: 6105284908550777770
+    second: FlowerFieldPattern_22
+  - first:
+      213: -3452749190244465171
+    second: FlowerFieldPattern_23
+  - first:
+      213: -7319484591783996623
+    second: FlowerFieldPattern_24
+  - first:
+      213: -5902452447338477614
+    second: FlowerFieldPattern_25
+  - first:
+      213: 6288234813289839577
+    second: FlowerFieldPattern_26
+  - first:
+      213: -5305468030417752900
+    second: FlowerFieldPattern_27
+  - first:
+      213: -2544342022338683377
+    second: FlowerFieldPattern_28
+  - first:
+      213: -524354982645252967
+    second: FlowerFieldPattern_29
+  - first:
+      213: 937442179223894227
+    second: FlowerFieldPattern_30
+  - first:
+      213: -4551272627660290279
+    second: FlowerFieldPattern_31
+  - first:
+      213: -6899022141287780872
+    second: FlowerFieldPattern_32
+  - first:
+      213: 7058804499615917059
+    second: FlowerFieldPattern_33
+  - first:
+      213: 513950624319726480
+    second: FlowerFieldPattern_34
+  - first:
+      213: 6983396565869509415
+    second: FlowerFieldPattern_35
+  - first:
+      213: 4586559320119315567
+    second: FlowerFieldPattern_36
+  - first:
+      213: -5261565117051996
+    second: FlowerFieldPattern_37
+  - first:
+      213: -5323718888445237372
+    second: FlowerFieldPattern_38
+  - first:
+      213: -7502306363720710966
+    second: FlowerFieldPattern_39
+  - first:
+      213: -7349915956588765825
+    second: FlowerFieldPattern_40
+  - first:
+      213: 4866761500269883570
+    second: FlowerFieldPattern_41
+  - first:
+      213: 1308689418425550991
+    second: FlowerFieldPattern_42
+  - first:
+      213: 4879660819117686293
+    second: FlowerFieldPattern_43
+  - first:
+      213: 791516711032919556
+    second: FlowerFieldPattern_44
+  - first:
+      213: -850363299478492299
+    second: FlowerFieldPattern_45
+  - first:
+      213: -2214183786887320805
+    second: FlowerFieldPattern_46
+  - first:
+      213: -402570043852859160
+    second: FlowerFieldPattern_47
+  - first:
+      213: 91163179884864156
+    second: FlowerFieldPattern_48
+  - first:
+      213: -5681633597413398648
+    second: FlowerFieldPattern_49
+  - first:
+      213: 346195537494806695
+    second: FlowerFieldPattern_50
+  - first:
+      213: -1678143344593121370
+    second: FlowerFieldPattern_51
+  - first:
+      213: 7077685628667355313
+    second: FlowerFieldPattern_52
+  - first:
+      213: -4783277785383679871
+    second: FlowerFieldPattern_53
+  - first:
+      213: 7524866692642600585
+    second: FlowerFieldPattern_54
+  - first:
+      213: 7226190553790413226
+    second: FlowerFieldPattern_55
+  - first:
+      213: 300838823207818205
+    second: FlowerFieldPattern_56
+  - first:
+      213: -5165697439077052975
+    second: FlowerFieldPattern_57
+  - first:
+      213: 6508126137803266764
+    second: FlowerFieldPattern_58
+  - first:
+      213: -8030710652328539019
+    second: FlowerFieldPattern_59
+  - first:
+      213: 7300153267942544992
+    second: FlowerFieldPattern_60
+  - first:
+      213: -6030637325843170834
+    second: FlowerFieldPattern_61
+  - first:
+      213: 4394644264014179734
+    second: FlowerFieldPattern_62
+  - first:
+      213: 2746305660828964966
+    second: FlowerFieldPattern_63
+  - first:
+      213: -7563983843059002380
+    second: FlowerFieldPattern_64
+  - first:
+      213: 4834194403518881621
+    second: FlowerFieldPattern_65
+  - first:
+      213: 4287443818777113596
+    second: FlowerFieldPattern_66
+  - first:
+      213: -5002799625602959605
+    second: FlowerFieldPattern_67
+  - first:
+      213: -2264453842604288490
+    second: FlowerFieldPattern_68
+  - first:
+      213: -200415916522488357
+    second: FlowerFieldPattern_69
+  - first:
+      213: -2049264873043859569
+    second: FlowerFieldPattern_70
+  - first:
+      213: -2441729724850681887
+    second: FlowerFieldPattern_71
+  - first:
+      213: -8482879564539188815
+    second: FlowerFieldPattern_72
+  - first:
+      213: 798415913383017925
+    second: FlowerFieldPattern_73
+  - first:
+      213: -6672894825250413864
+    second: FlowerFieldPattern_74
+  - first:
+      213: -557709563114673956
+    second: FlowerFieldPattern_75
+  - first:
+      213: 6888695915649622476
+    second: FlowerFieldPattern_76
+  - first:
+      213: -8486249800886979856
+    second: FlowerFieldPattern_77
+  - first:
+      213: -7864722415806222778
+    second: FlowerFieldPattern_78
+  - first:
+      213: -458027178660295357
+    second: FlowerFieldPattern_79
+  - first:
+      213: -7975896709203122144
+    second: FlowerFieldPattern_80
+  - first:
+      213: -8975585194470834152
+    second: FlowerFieldPattern_81
+  - first:
+      213: -289237153650438495
+    second: FlowerFieldPattern_82
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FlowerFieldPattern_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1677
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86bdcd392f7337860800000000000000
+      internalID: 7526420917268568936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1676
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5eacbcb183aff90800000000000000
+      internalID: -6919156185467001432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_2
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1676
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c575b854753d1e500800000000000000
+      internalID: 423852211731912540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_3
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1677
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b3f34c7756b9580800000000000000
+      internalID: -8819343880206992632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_4
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1677
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91745d023446ad2d0800000000000000
+      internalID: -3253177541345327335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_5
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1676
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cafb01050833ab10800000000000000
+      internalID: 1991497054371445446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_6
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 1677
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56699034c1a66b420800000000000000
+      internalID: 2645418500743075429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_7
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1677
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30bf9e754851d3e00800000000000000
+      internalID: 1025999948265159427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_8
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 1676
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c78c2944404896650800000000000000
+      internalID: 6226653113681627260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_9
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 1677
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50aac10bd2beee9f0800000000000000
+      internalID: -437153532347635195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_10
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 1677
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9b30ae9bd9abca0800000000000000
+      internalID: -6000310131697141336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_11
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 1676
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 276fe112c19e0e620800000000000000
+      internalID: 2801495275248481906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_12
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1502
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a63a6b372160ab0800000000000000
+      internalID: -5042322444599989603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_13
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1556
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac2a9f52a5c903700800000000000000
+      internalID: 518085868145713866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_14
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1472
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa49460cc2a33c3f0800000000000000
+      internalID: -881797138153696081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_15
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1472
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 443d31a01c00cddb0800000000000000
+      internalID: -4765933476567067836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_16
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1472
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf438e757029e330800000000000000
+      internalID: 3740556654513704923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_17
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1435
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8bbec1571245f300800000000000000
+      internalID: 285206819332078475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_18
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1435
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e06d1108efaec46a0800000000000000
+      internalID: -6463532986392259058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_19
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1435
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a28c64526df458310800000000000000
+      internalID: 1406618239790139434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_20
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 1435
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea34a325c5f71fa0800000000000000
+      internalID: -5829920965552489746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_21
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 1435
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d74cdc20ac572840800000000000000
+      internalID: 5199226137839683543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_22
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 1435
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aabe8b2f6445ab450800000000000000
+      internalID: 6105284908550777770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_23
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 1460
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de506f8a7ee5510d0800000000000000
+      internalID: -3452749190244465171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_24
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 1460
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13315c74b87fb6a90800000000000000
+      internalID: -7319484591783996623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_25
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 1460
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d741cc85c6461ea0800000000000000
+      internalID: -5902452447338477614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_26
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 1292
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dbb2660f3c444750800000000000000
+      internalID: 6288234813289839577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_27
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 1309
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbc22c79fe03f56b0800000000000000
+      internalID: -5305468030417752900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_28
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1309
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e5763496ea0bcd0800000000000000
+      internalID: -2544342022338683377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_29
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 1309
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c3933ebed19b8f0800000000000000
+      internalID: -524354982645252967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_30
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1164
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d8bb1af1b6720d00800000000000000
+      internalID: 937442179223894227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_31
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1237
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9178958a8a1a6d0c0800000000000000
+      internalID: -4551272627660290279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_32
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1237
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fdacf24aefb140a0800000000000000
+      internalID: -6899022141287780872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_33
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1237
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30429821b49e5f160800000000000000
+      internalID: 7058804499615917059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_34
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1143
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 093eaaaae5be12700800000000000000
+      internalID: 513950624319726480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_35
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1143
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72bb5525d220ae060800000000000000
+      internalID: 6983396565869509415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_36
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1143
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6c08f8a66bb6af30800000000000000
+      internalID: 4586559320119315567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_37
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 1122
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab4c3862ae4deff0800000000000000
+      internalID: -5261565117051996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_38
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1122
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4872f2290e95e16b0800000000000000
+      internalID: -5323718888445237372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_39
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 1122
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac446427c1472e790800000000000000
+      internalID: -7502306363720710966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_40
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 986
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7d1d86016adff990800000000000000
+      internalID: -7349915956588765825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_41
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 986
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b0322e9cc53a8340800000000000000
+      internalID: 4866761500269883570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_42
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 986
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f884192a716692210800000000000000
+      internalID: 1308689418425550991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_43
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 962
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51eb6e359a908b340800000000000000
+      internalID: 4879660819117686293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_44
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 919
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40617ea41480cfa00800000000000000
+      internalID: 791516711032919556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_45
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 919
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57b2e84a517e234f0800000000000000
+      internalID: -850363299478492299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_46
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 919
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1be62bb393a541e0800000000000000
+      internalID: -2214183786887320805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_47
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 814
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e8dfe29da8c96af0800000000000000
+      internalID: -402570043852859160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_48
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 739
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92e1a9dd60e34100800000000000000
+      internalID: 91163179884864156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_49
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 739
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 887ef328858c621b0800000000000000
+      internalID: -5681633597413398648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_50
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 739
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a01433d10fedc400800000000000000
+      internalID: 346195537494806695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_51
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 680
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af475fe48906b8e0800000000000000
+      internalID: -1678143344593121370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_52
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 680
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b0ea90849df83260800000000000000
+      internalID: 7077685628667355313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_53
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 680
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188403472326e9db0800000000000000
+      internalID: -4783277785383679871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_54
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 659
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98671257362bd6860800000000000000
+      internalID: 7524866692642600585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_55
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 659
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9f5fdc506984460800000000000000
+      internalID: 7226190553790413226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_56
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 659
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd3d2f7d05bcc2400800000000000000
+      internalID: 300838823207818205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_57
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 541
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ddcaa65c81cf48b0800000000000000
+      internalID: -5165697439077052975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_58
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 541
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccad235ad32815a50800000000000000
+      internalID: 6508126137803266764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_59
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 541
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c0302d53f2d8090800000000000000
+      internalID: -8030710652328539019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_60
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 564
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0665f9528ba5f4560800000000000000
+      internalID: 7300153267942544992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_61
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 428
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee9f7e7cd4fde4ca0800000000000000
+      internalID: -6030637325843170834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_62
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 327
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69de5ce9ca9ecfc30800000000000000
+      internalID: 4394644264014179734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_63
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 351
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668da5ea276dc1620800000000000000
+      internalID: 2746305660828964966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_64
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 351
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f39cab35c4570790800000000000000
+      internalID: -7563983843059002380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_65
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 351
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f9ce48232861340800000000000000
+      internalID: 4834194403518881621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_66
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 253
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf377a4ff6f008b30800000000000000
+      internalID: 4287443818777113596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_67
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 253
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b077a791f3c729ab0800000000000000
+      internalID: -5002799625602959605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_68
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 253
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6169d4d4a3b0390e0800000000000000
+      internalID: -2264453842604288490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_69
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 215
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bddb75829caf73df0800000000000000
+      internalID: -200415916522488357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_70
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 215
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87e887947c8f83e0800000000000000
+      internalID: -2049264873043859569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_71
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 215
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e743c880cb3d1ed0800000000000000
+      internalID: -2441729724850681887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 173
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b9a833faf1c64a80800000000000000
+      internalID: -8482879564539188815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_73
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 173
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cdb6340b0b841b00800000000000000
+      internalID: 798415913383017925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_74
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 173
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d2286dc28d1563a0800000000000000
+      internalID: -6672894825250413864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_75
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 0
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd826b27b1e9248f0800000000000000
+      internalID: -557709563114673956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_76
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 48
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc1eaf9ff60999f50800000000000000
+      internalID: 6888695915649622476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_77
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 48
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f2f6e6a4c8ca3a80800000000000000
+      internalID: -8486249800886979856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_78
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 48
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64e61d4c1a4ead290800000000000000
+      internalID: -7864722415806222778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_79
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 48
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d8a7e25b2c4a9f0800000000000000
+      internalID: -458027178660295357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_80
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 48
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 028adba733cef4190800000000000000
+      internalID: -7975896709203122144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_81
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 48
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8108f4002d0507380800000000000000
+      internalID: -8975585194470834152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerFieldPattern_82
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 45
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae02d8575c6cfbf0800000000000000
+      internalID: -289237153650438495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FlowerFieldPattern_0: 7526420917268568936
+      FlowerFieldPattern_1: -6919156185467001432
+      FlowerFieldPattern_10: -6000310131697141336
+      FlowerFieldPattern_11: 2801495275248481906
+      FlowerFieldPattern_12: -5042322444599989603
+      FlowerFieldPattern_13: 518085868145713866
+      FlowerFieldPattern_14: -881797138153696081
+      FlowerFieldPattern_15: -4765933476567067836
+      FlowerFieldPattern_16: 3740556654513704923
+      FlowerFieldPattern_17: 285206819332078475
+      FlowerFieldPattern_18: -6463532986392259058
+      FlowerFieldPattern_19: 1406618239790139434
+      FlowerFieldPattern_2: 423852211731912540
+      FlowerFieldPattern_20: -5829920965552489746
+      FlowerFieldPattern_21: 5199226137839683543
+      FlowerFieldPattern_22: 6105284908550777770
+      FlowerFieldPattern_23: -3452749190244465171
+      FlowerFieldPattern_24: -7319484591783996623
+      FlowerFieldPattern_25: -5902452447338477614
+      FlowerFieldPattern_26: 6288234813289839577
+      FlowerFieldPattern_27: -5305468030417752900
+      FlowerFieldPattern_28: -2544342022338683377
+      FlowerFieldPattern_29: -524354982645252967
+      FlowerFieldPattern_3: -8819343880206992632
+      FlowerFieldPattern_30: 937442179223894227
+      FlowerFieldPattern_31: -4551272627660290279
+      FlowerFieldPattern_32: -6899022141287780872
+      FlowerFieldPattern_33: 7058804499615917059
+      FlowerFieldPattern_34: 513950624319726480
+      FlowerFieldPattern_35: 6983396565869509415
+      FlowerFieldPattern_36: 4586559320119315567
+      FlowerFieldPattern_37: -5261565117051996
+      FlowerFieldPattern_38: -5323718888445237372
+      FlowerFieldPattern_39: -7502306363720710966
+      FlowerFieldPattern_4: -3253177541345327335
+      FlowerFieldPattern_40: -7349915956588765825
+      FlowerFieldPattern_41: 4866761500269883570
+      FlowerFieldPattern_42: 1308689418425550991
+      FlowerFieldPattern_43: 4879660819117686293
+      FlowerFieldPattern_44: 791516711032919556
+      FlowerFieldPattern_45: -850363299478492299
+      FlowerFieldPattern_46: -2214183786887320805
+      FlowerFieldPattern_47: -402570043852859160
+      FlowerFieldPattern_48: 91163179884864156
+      FlowerFieldPattern_49: -5681633597413398648
+      FlowerFieldPattern_5: 1991497054371445446
+      FlowerFieldPattern_50: 346195537494806695
+      FlowerFieldPattern_51: -1678143344593121370
+      FlowerFieldPattern_52: 7077685628667355313
+      FlowerFieldPattern_53: -4783277785383679871
+      FlowerFieldPattern_54: 7524866692642600585
+      FlowerFieldPattern_55: 7226190553790413226
+      FlowerFieldPattern_56: 300838823207818205
+      FlowerFieldPattern_57: -5165697439077052975
+      FlowerFieldPattern_58: 6508126137803266764
+      FlowerFieldPattern_59: -8030710652328539019
+      FlowerFieldPattern_6: 2645418500743075429
+      FlowerFieldPattern_60: 7300153267942544992
+      FlowerFieldPattern_61: -6030637325843170834
+      FlowerFieldPattern_62: 4394644264014179734
+      FlowerFieldPattern_63: 2746305660828964966
+      FlowerFieldPattern_64: -7563983843059002380
+      FlowerFieldPattern_65: 4834194403518881621
+      FlowerFieldPattern_66: 4287443818777113596
+      FlowerFieldPattern_67: -5002799625602959605
+      FlowerFieldPattern_68: -2264453842604288490
+      FlowerFieldPattern_69: -200415916522488357
+      FlowerFieldPattern_7: 1025999948265159427
+      FlowerFieldPattern_70: -2049264873043859569
+      FlowerFieldPattern_71: -2441729724850681887
+      FlowerFieldPattern_72: -8482879564539188815
+      FlowerFieldPattern_73: 798415913383017925
+      FlowerFieldPattern_74: -6672894825250413864
+      FlowerFieldPattern_75: -557709563114673956
+      FlowerFieldPattern_76: 6888695915649622476
+      FlowerFieldPattern_77: -8486249800886979856
+      FlowerFieldPattern_78: -7864722415806222778
+      FlowerFieldPattern_79: -458027178660295357
+      FlowerFieldPattern_8: 6226653113681627260
+      FlowerFieldPattern_80: -7975896709203122144
+      FlowerFieldPattern_81: -8975585194470834152
+      FlowerFieldPattern_82: -289237153650438495
+      FlowerFieldPattern_9: -437153532347635195
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

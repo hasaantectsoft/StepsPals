@@ -1,0 +1,1842 @@
+fileFormatVersion: 2
+guid: a4ae488c0d5be47f79890ca85566ba4c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2533153362704608609
+    second: GivingTreat_0
+  - first:
+      213: 3227138355295239475
+    second: GivingTreat_1
+  - first:
+      213: -8533386649319764521
+    second: GivingTreat_2
+  - first:
+      213: -8845960096621477231
+    second: GivingTreat_3
+  - first:
+      213: 3224458805349667043
+    second: GivingTreat_4
+  - first:
+      213: 4259774756275418950
+    second: GivingTreat_5
+  - first:
+      213: -8538031839794434033
+    second: GivingTreat_6
+  - first:
+      213: 3325087934349370988
+    second: GivingTreat_7
+  - first:
+      213: -3182377777221056976
+    second: GivingTreat_8
+  - first:
+      213: 5678912264074703982
+    second: GivingTreat_9
+  - first:
+      213: 3467474643428409547
+    second: GivingTreat_10
+  - first:
+      213: -453553899038572369
+    second: GivingTreat_11
+  - first:
+      213: 2695845943658641704
+    second: GivingTreat_12
+  - first:
+      213: -4780773725069336114
+    second: GivingTreat_13
+  - first:
+      213: 3499155492659955257
+    second: GivingTreat_14
+  - first:
+      213: -537313259192238879
+    second: GivingTreat_15
+  - first:
+      213: -4707248289869599120
+    second: GivingTreat_16
+  - first:
+      213: -4871607536805859496
+    second: GivingTreat_17
+  - first:
+      213: -8235892895489472837
+    second: GivingTreat_18
+  - first:
+      213: -7825885004977117790
+    second: GivingTreat_19
+  - first:
+      213: 1097936355820846183
+    second: GivingTreat_20
+  - first:
+      213: -2828604332952139726
+    second: GivingTreat_21
+  - first:
+      213: 5973349680278610120
+    second: GivingTreat_22
+  - first:
+      213: -6422743834314326739
+    second: GivingTreat_23
+  - first:
+      213: -1049286944399509715
+    second: GivingTreat_24
+  - first:
+      213: -1625931620969913726
+    second: GivingTreat_25
+  - first:
+      213: 729674228078963895
+    second: GivingTreat_26
+  - first:
+      213: -8563013391535708968
+    second: GivingTreat_27
+  - first:
+      213: 2811686148774427460
+    second: GivingTreat_28
+  - first:
+      213: -3609480867088851074
+    second: GivingTreat_29
+  - first:
+      213: 5568710137996954724
+    second: GivingTreat_30
+  - first:
+      213: -7238912958733036790
+    second: GivingTreat_31
+  - first:
+      213: -2579066176220959336
+    second: GivingTreat_32
+  - first:
+      213: -999194937192466408
+    second: GivingTreat_33
+  - first:
+      213: -3465853565044067221
+    second: GivingTreat_34
+  - first:
+      213: 6487115316794980025
+    second: GivingTreat_35
+  - first:
+      213: 7144980754727076950
+    second: GivingTreat_36
+  - first:
+      213: 6034163267560958184
+    second: GivingTreat_37
+  - first:
+      213: -6329181823255083338
+    second: GivingTreat_38
+  - first:
+      213: 1542205043320827956
+    second: GivingTreat_39
+  - first:
+      213: 6277923900346656791
+    second: GivingTreat_40
+  - first:
+      213: -7359280703611251126
+    second: GivingTreat_41
+  - first:
+      213: 6654456076705080546
+    second: GivingTreat_42
+  - first:
+      213: 5191855260333013548
+    second: GivingTreat_43
+  - first:
+      213: 4784669816502133771
+    second: GivingTreat_44
+  - first:
+      213: -6815448575745669357
+    second: GivingTreat_45
+  - first:
+      213: -3117394482644052991
+    second: GivingTreat_46
+  - first:
+      213: 4036075238269411060
+    second: GivingTreat_47
+  - first:
+      213: 5430009398987735499
+    second: GivingTreat_48
+  - first:
+      213: 429817695280928269
+    second: GivingTreat_49
+  - first:
+      213: 6136877971862719696
+    second: GivingTreat_50
+  - first:
+      213: 1544606222582113981
+    second: GivingTreat_51
+  - first:
+      213: 2393680007042724334
+    second: GivingTreat_52
+  - first:
+      213: 403112759519551806
+    second: GivingTreat_53
+  - first:
+      213: 5744256219094084958
+    second: GivingTreat_54
+  - first:
+      213: 53997380380721057
+    second: GivingTreat_55
+  - first:
+      213: -3174138501566387156
+    second: GivingTreat_56
+  - first:
+      213: 6668154335419452957
+    second: GivingTreat_57
+  - first:
+      213: -6151717131586211962
+    second: GivingTreat_58
+  - first:
+      213: -8180629468213440415
+    second: GivingTreat_59
+  - first:
+      213: 1896819998078467447
+    second: GivingTreat_60
+  - first:
+      213: 1118426440413876502
+    second: GivingTreat_61
+  - first:
+      213: 7783287440522806985
+    second: GivingTreat_62
+  - first:
+      213: -2091620630707586991
+    second: GivingTreat_63
+  - first:
+      213: 6205358863368524493
+    second: GivingTreat_64
+  - first:
+      213: -460691401517641729
+    second: GivingTreat_65
+  - first:
+      213: 5850430829103101997
+    second: GivingTreat_66
+  - first:
+      213: -6011546473521261446
+    second: GivingTreat_67
+  - first:
+      213: -5198947963106141061
+    second: GivingTreat_68
+  - first:
+      213: -8776058985548157106
+    second: GivingTreat_69
+  - first:
+      213: 6010013405670143242
+    second: GivingTreat_70
+  - first:
+      213: -7514897089013820246
+    second: GivingTreat_71
+  - first:
+      213: -8019904092344431700
+    second: GivingTreat_72
+  - first:
+      213: -8556394262133724421
+    second: GivingTreat_73
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GivingTreat_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f679b575aa87343d0bc3db15b9eb97c1
+      internalID: 1011678746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6f1b3e9335a47b3abd192aae339b6a
+      internalID: -53134380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae796218cd4d5454d96a1b04b25a1b33
+      internalID: 1216943572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_3
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf53a48f08114d73b738aa1eb75410b
+      internalID: 1081315317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_4
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456a9b2b41f1f41bca0067555a885110
+      internalID: 1828896297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_5
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dbd4a55cabe44e1f81d193e04e9dba7
+      internalID: -984613870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_6
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2d7aa9f67b343269efaee60190a1e5
+      internalID: 1153832330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_7
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2555a8f0fd0b5449cb6a78585ad3ffc8
+      internalID: 801729996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_8
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72bb2217cfe684adf80eba8b5b199b1f
+      internalID: 714552177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_9
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a76637b778040e6ac9f8c9a1f63561
+      internalID: -1457137373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_10
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937a2050e2c614fe98580dd2ac792097
+      internalID: 1010891460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_11
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2b914afa2bc41c2b390264befb7b2c
+      internalID: 572546649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_12
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e506f0bb688db4b79bb1f4e709af68de
+      internalID: -433851467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_13
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2086bb8a90a450f8b7d1c6451112ce
+      internalID: 631718961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_14
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbbebcca5db84c268df95e0ca0d5ffa
+      internalID: -2071614541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_15
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099974b6bf92744709b9aefaa0543824
+      internalID: 1131903033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_16
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa1505bd94af4c3cb1315419877cc10
+      internalID: 1727814604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_17
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65eae4a8980984caa81e23434f0a3b94
+      internalID: 270013721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_18
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0845352db87d140e3bb7c6ee1360cf6e
+      internalID: -817584451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_19
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed474146f2a240b08758ae80b8022b8
+      internalID: 1847588709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_20
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2112cff8e704304b58a0554d409954
+      internalID: -902202309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_21
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86fa5ccb1514e4b299075818877e85c7
+      internalID: 2027855572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_22
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d405f8693eec4680b4e38894f95c566
+      internalID: -1081352543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_23
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2a10238ced9445184fb7d848736685
+      internalID: -1277425945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_24
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c20615c6efd4865a139ecf4053616d
+      internalID: -1625856948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_25
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93175faba318c4c198f9437fe35635a5
+      internalID: -1851531476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_26
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b103ffe7a464388a602a54f7fd4082
+      internalID: -1941395148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_27
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb422ed40cc304ff9957dbd7b832aa28
+      internalID: 2100675197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_28
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1dcad84ffe9347ab9dc46a6f2367bae
+      internalID: -1961854850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_29
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306464a6539ca47beb252a16c292a1cf
+      internalID: 1018681064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_30
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a9258960531448ebaf92f090ca44096
+      internalID: 484241747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_31
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9e6ee5001904eec9fa19e277450d8f
+      internalID: -1143857065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_32
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e7600ef86384868af9dcf9aace6af0
+      internalID: 1965804755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_33
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6577e551120734b8f8285d6c6217449f
+      internalID: 39575402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_34
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5115f8b2795404087369842abcf6ef
+      internalID: -1977830285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_35
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63927fa7c6240410ca9604b823dc3b45
+      internalID: -1649544580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_36
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d6184001282496aa4d4300bc614e93
+      internalID: 145975778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_37
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76f288d6bf41c4f8cab2e25f5c0b2999
+      internalID: 330055481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_38
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90eb7a847786d4e55872e077d0135686
+      internalID: -240811490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_39
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc8816161527408d93a78f0deafd8f0
+      internalID: 758694531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_40
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6dff5e97aaa64d86a32d954bfc943b5
+      internalID: 1700653284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_41
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86fb2ea51feac4ba09ad6704827dca5b
+      internalID: 1455186009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_42
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ed373b3fd2e49ff846e2e4e1439dd5
+      internalID: 489650176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_43
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed995e3a71f043c1ad6d5f51e7a17db
+      internalID: 1127983926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_44
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709b7054c05f04df4ac1560d2b94759d
+      internalID: -1679023695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_45
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b551296bf10e24fd9abb1e20877d283c
+      internalID: -202971027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_46
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eed1cd4d847c4d88b3052512f772c89
+      internalID: 988185111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_47
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7265d3ec351bb4085b7cc7270eacdd5d
+      internalID: -222786055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_48
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1890873cd23134825b416011a97bfff8
+      internalID: -1563615221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_49
+      rect:
+        serializedVersion: 2
+        x: 2011
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29dd1562658594311b45efa673536eab
+      internalID: -870105042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_50
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e594f3d2628cd4e4ca5daeb6a45bca6f
+      internalID: -455899882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_51
+      rect:
+        serializedVersion: 2
+        x: 2093
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f5b0a2e8ff1423d864ccdfea8a42c1
+      internalID: 294523391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_52
+      rect:
+        serializedVersion: 2
+        x: 2134
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211548855a8e8431fb4f85b3cf34dc0a
+      internalID: 1235583216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_53
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c59d1f031b5b4aedafd9e563e51fde6
+      internalID: -2046429273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_54
+      rect:
+        serializedVersion: 2
+        x: 2216
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d959005f5574c20bfd9fe45d05113b
+      internalID: -364188190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_55
+      rect:
+        serializedVersion: 2
+        x: 2257
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7e951ac4576401198c1adbf75c4870
+      internalID: -44521615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_56
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11f4205035fa4af399360dfd081b320
+      internalID: 1710304201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_57
+      rect:
+        serializedVersion: 2
+        x: 2339
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91fd628bb511349b5af86a6da5378462
+      internalID: -1912015459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_58
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39881fd97fb0041e986ee0863bdb2132
+      internalID: -636190778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_59
+      rect:
+        serializedVersion: 2
+        x: 2421
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74cd20def24c4143be704163e8c97f6
+      internalID: 293438444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_60
+      rect:
+        serializedVersion: 2
+        x: 2462
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161a9ca6e931d49f796646cfee36cf01
+      internalID: -1164698962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_61
+      rect:
+        serializedVersion: 2
+        x: 2503
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1677601c346194bb0bf1c81fc8358767
+      internalID: -1626382814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GivingTreat_62
+      rect:
+        serializedVersion: 2
+        x: 2544
+        y: 2
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e90d0f492974b809ee1adfc9d3582d
+      internalID: 1245982625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3fafd8e2182fc4e638de6ab7bd6977ef
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GivingTreat_0: 1011678746
+      GivingTreat_1: -53134380
+      GivingTreat_10: 1010891460
+      GivingTreat_11: 572546649
+      GivingTreat_12: -433851467
+      GivingTreat_13: 631718961
+      GivingTreat_14: -2071614541
+      GivingTreat_15: 1131903033
+      GivingTreat_16: 1727814604
+      GivingTreat_17: 270013721
+      GivingTreat_18: -817584451
+      GivingTreat_19: 1847588709
+      GivingTreat_2: 1216943572
+      GivingTreat_20: -902202309
+      GivingTreat_21: 2027855572
+      GivingTreat_22: -1081352543
+      GivingTreat_23: -1277425945
+      GivingTreat_24: -1625856948
+      GivingTreat_25: -1851531476
+      GivingTreat_26: -1941395148
+      GivingTreat_27: 2100675197
+      GivingTreat_28: -1961854850
+      GivingTreat_29: 1018681064
+      GivingTreat_3: 1081315317
+      GivingTreat_30: 484241747
+      GivingTreat_31: -1143857065
+      GivingTreat_32: 1965804755
+      GivingTreat_33: 39575402
+      GivingTreat_34: -1977830285
+      GivingTreat_35: -1649544580
+      GivingTreat_36: 145975778
+      GivingTreat_37: 330055481
+      GivingTreat_38: -240811490
+      GivingTreat_39: 758694531
+      GivingTreat_4: 1828896297
+      GivingTreat_40: 1700653284
+      GivingTreat_41: 1455186009
+      GivingTreat_42: 489650176
+      GivingTreat_43: 1127983926
+      GivingTreat_44: -1679023695
+      GivingTreat_45: -202971027
+      GivingTreat_46: 988185111
+      GivingTreat_47: -222786055
+      GivingTreat_48: -1563615221
+      GivingTreat_49: -870105042
+      GivingTreat_5: -984613870
+      GivingTreat_50: -455899882
+      GivingTreat_51: 294523391
+      GivingTreat_52: 1235583216
+      GivingTreat_53: -2046429273
+      GivingTreat_54: -364188190
+      GivingTreat_55: -44521615
+      GivingTreat_56: 1710304201
+      GivingTreat_57: -1912015459
+      GivingTreat_58: -636190778
+      GivingTreat_59: 293438444
+      GivingTreat_6: 1153832330
+      GivingTreat_60: -1164698962
+      GivingTreat_61: -1626382814
+      GivingTreat_62: 1245982625
+      GivingTreat_63: 1960321781
+      GivingTreat_64: -1815412464
+      GivingTreat_65: 1257107864
+      GivingTreat_66: 1545598145
+      GivingTreat_67: -25770770
+      GivingTreat_68: 622759933
+      GivingTreat_69: -1296629625
+      GivingTreat_7: 801729996
+      GivingTreat_70: -903069447
+      GivingTreat_71: 1305309264
+      GivingTreat_72: 1413926950
+      GivingTreat_73: 1775243948
+      GivingTreat_74: 896276507
+      GivingTreat_75: 1904751134
+      GivingTreat_76: 660744596
+      GivingTreat_77: -561283578
+      GivingTreat_8: 714552177
+      GivingTreat_9: -1457137373
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

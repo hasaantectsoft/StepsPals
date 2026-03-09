@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: fc85651bec24d4bc29827799cef66550
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3230842799769791318
+    second: Anim_Dog2_Sick1_Feeding_0
+  - first:
+      213: -3844130360512155136
+    second: Anim_Dog2_Sick1_Feeding_1
+  - first:
+      213: 548590578473130143
+    second: Anim_Dog2_Sick1_Feeding_2
+  - first:
+      213: 916358958865115125
+    second: Anim_Dog2_Sick1_Feeding_3
+  - first:
+      213: 5225283966981481712
+    second: Anim_Dog2_Sick1_Feeding_4
+  - first:
+      213: -958941170465462209
+    second: Anim_Dog2_Sick1_Feeding_5
+  - first:
+      213: 625507296949476944
+    second: Anim_Dog2_Sick1_Feeding_6
+  - first:
+      213: 2754331857926747913
+    second: Anim_Dog2_Sick1_Feeding_7
+  - first:
+      213: -5708913300040540224
+    second: Anim_Dog2_Sick1_Feeding_8
+  - first:
+      213: -2779169646378021538
+    second: Anim_Dog2_Sick1_Feeding_9
+  - first:
+      213: -6160458918188520428
+    second: Anim_Dog2_Sick1_Feeding_10
+  - first:
+      213: -710402710270822936
+    second: Anim_Dog2_Sick1_Feeding_11
+  - first:
+      213: 869753392001550519
+    second: Anim_Dog2_Sick1_Feeding_12
+  - first:
+      213: 8596521964826881609
+    second: Anim_Dog2_Sick1_Feeding_13
+  - first:
+      213: 3932831080262356473
+    second: Anim_Dog2_Sick1_Feeding_14
+  - first:
+      213: -5339942626320392577
+    second: Anim_Dog2_Sick1_Feeding_15
+  - first:
+      213: 5540713477279172308
+    second: Anim_Dog2_Sick1_Feeding_16
+  - first:
+      213: 6159723654038215129
+    second: Anim_Dog2_Sick1_Feeding_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Sick_Feeding_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591b502cdf7044c598f3df869a833921
+      internalID: -1082802984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Sick_Feeding_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 2
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a004f8f17cc4ff2a7fad37c0f30ee4
+      internalID: 951512314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Sick_Feeding_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 2
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b63ac8ee0631465191cb41e22c9c455
+      internalID: -1081618236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Sick_Feeding_3
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 2
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be17148a860548f68a6529145980ca5
+      internalID: 597890926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Sick_Feeding_4
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 2
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990eee40ac73f4ab9b7b568bfdcdeff6
+      internalID: -900281875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Sick_Feeding_5
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 2
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be6adbcf82b44f1ab43cb65a042558c
+      internalID: -1720333541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Sick_Feeding_6
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 2
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593614958c6a34667b180b8e3fb054cd
+      internalID: 1623488889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Sick_Feeding_7
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 2
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694db167a11154b2ea3a295ed56a78c3
+      internalID: 1820266511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Sick_Feeding_8
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 2
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44192e8ba10f54e0680fe776bda6096b
+      internalID: 435894795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Sick_Feeding_9
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0920097f67b514fb68d73946287c5d60
+      internalID: 718885322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Sick_Feeding_10
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 2
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c05534c1803a4e539c332cdb5013498
+      internalID: 1566596290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Sick_Feeding_11
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 2
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71b09b8aa19245f9b17291e33ffd0c5
+      internalID: -896363502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Sick_Feeding_12
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 2
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77e3fc6438744babb7e3f2de814d315
+      internalID: 426260526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Sick_Feeding_13
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 2
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa3da0a6e5114167b65118931307bb9
+      internalID: 1503088118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Sick_Feeding_14
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 2
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f85deaa9bc7e496fa762f6694fa4d8b
+      internalID: 54684141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Sick_Feeding_15
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 2
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2018a344c533043eca75b37f7d969365
+      internalID: 295805293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Sick_Feeding_16
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 2
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a1a35fc5c884dc9b027f5d0b9cde5b
+      internalID: -1513958380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Teen_Sick_Feeding_17
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 2
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7900946aae7411f8c11466125835c8
+      internalID: 14230134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 267258959ef0e4ba59f717de15070b60
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Anim_Dog_Teen_Sick_Feeding_0: -1082802984
+      Anim_Dog_Teen_Sick_Feeding_1: 951512314
+      Anim_Dog_Teen_Sick_Feeding_10: 1566596290
+      Anim_Dog_Teen_Sick_Feeding_11: -896363502
+      Anim_Dog_Teen_Sick_Feeding_12: 426260526
+      Anim_Dog_Teen_Sick_Feeding_13: 1503088118
+      Anim_Dog_Teen_Sick_Feeding_14: 54684141
+      Anim_Dog_Teen_Sick_Feeding_15: 295805293
+      Anim_Dog_Teen_Sick_Feeding_16: -1513958380
+      Anim_Dog_Teen_Sick_Feeding_17: 14230134
+      Anim_Dog_Teen_Sick_Feeding_2: -1081618236
+      Anim_Dog_Teen_Sick_Feeding_3: 597890926
+      Anim_Dog_Teen_Sick_Feeding_4: -900281875
+      Anim_Dog_Teen_Sick_Feeding_5: -1720333541
+      Anim_Dog_Teen_Sick_Feeding_6: 1623488889
+      Anim_Dog_Teen_Sick_Feeding_7: 1820266511
+      Anim_Dog_Teen_Sick_Feeding_8: 435894795
+      Anim_Dog_Teen_Sick_Feeding_9: 718885322
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

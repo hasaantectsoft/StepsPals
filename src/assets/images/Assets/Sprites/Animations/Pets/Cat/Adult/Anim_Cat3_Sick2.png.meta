@@ -1,0 +1,1222 @@
+fileFormatVersion: 2
+guid: 871fceabeec3649e5b897cb160101f25
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9051600499042529656
+    second: Anim_Cat3_Sick2_0
+  - first:
+      213: -1129516752790069961
+    second: Anim_Cat3_Sick2_1
+  - first:
+      213: 5075203984330202765
+    second: Anim_Cat3_Sick2_2
+  - first:
+      213: -2704402731567442592
+    second: Anim_Cat3_Sick2_3
+  - first:
+      213: -6443477971951983842
+    second: Anim_Cat3_Sick2_4
+  - first:
+      213: 7202985377975921525
+    second: Anim_Cat3_Sick2_5
+  - first:
+      213: 4898877209456866829
+    second: Anim_Cat3_Sick2_6
+  - first:
+      213: 9127666892860346675
+    second: Anim_Cat3_Sick2_7
+  - first:
+      213: 864247482517805716
+    second: Anim_Cat3_Sick2_8
+  - first:
+      213: -4199032323626409511
+    second: Anim_Cat3_Sick2_9
+  - first:
+      213: 1915645194532342847
+    second: Anim_Cat3_Sick2_10
+  - first:
+      213: -5627894876557444208
+    second: Anim_Cat3_Sick2_11
+  - first:
+      213: 3546509256766602920
+    second: Anim_Cat3_Sick2_12
+  - first:
+      213: 3253813551073153582
+    second: Anim_Cat3_Sick2_13
+  - first:
+      213: 9002443792058049369
+    second: Anim_Cat3_Sick2_14
+  - first:
+      213: 2153285226419124867
+    second: Anim_Cat3_Sick2_15
+  - first:
+      213: 5573712832559279311
+    second: Anim_Cat3_Sick2_16
+  - first:
+      213: 2796605777790430794
+    second: Anim_Cat3_Sick2_17
+  - first:
+      213: 2913736530039156227
+    second: Anim_Cat3_Sick2_18
+  - first:
+      213: 6856263248580349942
+    second: Anim_Cat3_Sick2_19
+  - first:
+      213: -6119258715864917689
+    second: Anim_Cat3_Sick2_20
+  - first:
+      213: -4000063977572645453
+    second: Anim_Cat3_Sick2_21
+  - first:
+      213: 2397300777302939350
+    second: Anim_Cat3_Sick2_22
+  - first:
+      213: -4365284976290809537
+    second: Anim_Cat3_Sick2_23
+  - first:
+      213: 5989542058361971151
+    second: Anim_Cat3_Sick2_24
+  - first:
+      213: 8579138251088581359
+    second: Anim_Cat3_Sick2_25
+  - first:
+      213: -4576289375549874789
+    second: Anim_Cat3_Sick2_26
+  - first:
+      213: -2646849755973381948
+    second: Anim_Cat3_Sick2_27
+  - first:
+      213: -1157694874691154703
+    second: Anim_Cat3_Sick2_28
+  - first:
+      213: 6373929859041407442
+    second: Anim_Cat3_Sick2_29
+  - first:
+      213: -9168959693795655176
+    second: Anim_Cat3_Sick2_30
+  - first:
+      213: 8843078593275373896
+    second: Anim_Cat3_Sick2_31
+  - first:
+      213: -4433242946359922941
+    second: Anim_Cat3_Sick2_32
+  - first:
+      213: 4509298648824018087
+    second: Anim_Cat3_Sick2_33
+  - first:
+      213: 6270704364064317276
+    second: Anim_Cat3_Sick2_34
+  - first:
+      213: -1991410037790510099
+    second: Anim_Cat3_Sick2_35
+  - first:
+      213: 1177413182130373279
+    second: Anim_Cat3_Sick2_36
+  - first:
+      213: 5544423634461820186
+    second: Anim_Cat3_Sick2_37
+  - first:
+      213: -7307882560763505831
+    second: Anim_Cat3_Sick2_38
+  - first:
+      213: 4189277752174968112
+    second: Anim_Cat3_Sick2_39
+  - first:
+      213: 4993214743724947056
+    second: Anim_Cat3_Sick2_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 871bd2a42bebd9d70800000000000000
+      internalID: 9051600499042529656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d581e6f762350f0800000000000000
+      internalID: -1129516752790069961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_2
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8e16a8522fbe6640800000000000000
+      internalID: 5075203984330202765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_3
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065935f4b08087ad0800000000000000
+      internalID: -2704402731567442592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_4
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e136fbb6cea2496a0800000000000000
+      internalID: -6443477971951983842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_5
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57b6698c90526f360800000000000000
+      internalID: 7202985377975921525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_6
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d06feebddde4cf340800000000000000
+      internalID: 4898877209456866829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_7
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 331d809bdacfbae70800000000000000
+      internalID: 9127666892860346675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_8
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49adf71a18c6efb00800000000000000
+      internalID: 864247482517805716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_9
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d16ddd595a0ab5c0800000000000000
+      internalID: -4199032323626409511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_10
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3cc8c7a72db59a10800000000000000
+      internalID: 1915645194532342847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_11
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b7d897d63b5e1b0800000000000000
+      internalID: -5627894876557444208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_12
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae353af06bb73130800000000000000
+      internalID: 3546509256766602920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_13
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e22511d6f2ed72d20800000000000000
+      internalID: 3253813551073153582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_14
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9536a009eea1fec70800000000000000
+      internalID: 9002443792058049369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_15
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38afecc318102ed10800000000000000
+      internalID: 2153285226419124867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_16
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcc6bb85a4ec95d40800000000000000
+      internalID: 5573712832559279311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_17
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ee00a432a8fc620800000000000000
+      internalID: 2796605777790430794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_18
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e201abfebaf6820800000000000000
+      internalID: 2913736530039156227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_19
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff823a3917562f50800000000000000
+      internalID: 6856263248580349942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_20
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74998208e96041ba0800000000000000
+      internalID: -6119258715864917689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_21
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b542f1710bec78c0800000000000000
+      internalID: -4000063977572645453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_22
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d6d8e20b5ce44120800000000000000
+      internalID: 2397300777302939350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_23
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3936dc31746b63c0800000000000000
+      internalID: -4365284976290809537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_24
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc16de3a4c02f1350800000000000000
+      internalID: 5989542058361971151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_25
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe2d91ff8c83f0770800000000000000
+      internalID: 8579138251088581359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_26
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9d94f42f01cd70c0800000000000000
+      internalID: -4576289375549874789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_27
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c09069ab20844bd0800000000000000
+      internalID: -2646849755973381948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_28
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fc4ebb25aa0fefe0800000000000000
+      internalID: -1157694874691154703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_29
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d13b6faf6fb47850800000000000000
+      internalID: 6373929859041407442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_30
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f18f6bdcbf41c080800000000000000
+      internalID: -9168959693795655176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_31
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8492a01c02de8ba70800000000000000
+      internalID: 8843078593275373896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_32
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30fe5335705f972c0800000000000000
+      internalID: -4433242946359922941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_33
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a4fd45da3f349e30800000000000000
+      internalID: 4509298648824018087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_34
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f9b8f3564060750800000000000000
+      internalID: 6270704364064317276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_35
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de3795f1f171d54e0800000000000000
+      internalID: -1991410037790510099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_36
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f924eba0d03075010800000000000000
+      internalID: 1177413182130373279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_37
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1580608befb1fc40800000000000000
+      internalID: 5544423634461820186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_38
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9535b61a78f259a90800000000000000
+      internalID: -7307882560763505831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_39
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03df5db7bed432a30800000000000000
+      internalID: 4189277752174968112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_Sick2_40
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 2
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 076f7feaa567b4540800000000000000
+      internalID: 4993214743724947056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 563d0777566fd4c80b1e8bf4d50d9cf0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Anim_Cat3_Sick2_0: 9051600499042529656
+      Anim_Cat3_Sick2_1: -1129516752790069961
+      Anim_Cat3_Sick2_10: 1915645194532342847
+      Anim_Cat3_Sick2_11: -5627894876557444208
+      Anim_Cat3_Sick2_12: 3546509256766602920
+      Anim_Cat3_Sick2_13: 3253813551073153582
+      Anim_Cat3_Sick2_14: 9002443792058049369
+      Anim_Cat3_Sick2_15: 2153285226419124867
+      Anim_Cat3_Sick2_16: 5573712832559279311
+      Anim_Cat3_Sick2_17: 2796605777790430794
+      Anim_Cat3_Sick2_18: 2913736530039156227
+      Anim_Cat3_Sick2_19: 6856263248580349942
+      Anim_Cat3_Sick2_2: 5075203984330202765
+      Anim_Cat3_Sick2_20: -6119258715864917689
+      Anim_Cat3_Sick2_21: -4000063977572645453
+      Anim_Cat3_Sick2_22: 2397300777302939350
+      Anim_Cat3_Sick2_23: -4365284976290809537
+      Anim_Cat3_Sick2_24: 5989542058361971151
+      Anim_Cat3_Sick2_25: 8579138251088581359
+      Anim_Cat3_Sick2_26: -4576289375549874789
+      Anim_Cat3_Sick2_27: -2646849755973381948
+      Anim_Cat3_Sick2_28: -1157694874691154703
+      Anim_Cat3_Sick2_29: 6373929859041407442
+      Anim_Cat3_Sick2_3: -2704402731567442592
+      Anim_Cat3_Sick2_30: -9168959693795655176
+      Anim_Cat3_Sick2_31: 8843078593275373896
+      Anim_Cat3_Sick2_32: -4433242946359922941
+      Anim_Cat3_Sick2_33: 4509298648824018087
+      Anim_Cat3_Sick2_34: 6270704364064317276
+      Anim_Cat3_Sick2_35: -1991410037790510099
+      Anim_Cat3_Sick2_36: 1177413182130373279
+      Anim_Cat3_Sick2_37: 5544423634461820186
+      Anim_Cat3_Sick2_38: -7307882560763505831
+      Anim_Cat3_Sick2_39: 4189277752174968112
+      Anim_Cat3_Sick2_4: -6443477971951983842
+      Anim_Cat3_Sick2_40: 4993214743724947056
+      Anim_Cat3_Sick2_5: 7202985377975921525
+      Anim_Cat3_Sick2_6: 4898877209456866829
+      Anim_Cat3_Sick2_7: 9127666892860346675
+      Anim_Cat3_Sick2_8: 864247482517805716
+      Anim_Cat3_Sick2_9: -4199032323626409511
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 192188fbea9604c159b9c4dde7dd5b42
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7598625570292056145
+    second: Anim_Dog3_Sick1_Idle_0
+  - first:
+      213: -6286925320221365220
+    second: Anim_Dog3_Sick1_Idle_1
+  - first:
+      213: -3659813194079643850
+    second: Anim_Dog3_Sick1_Idle_2
+  - first:
+      213: 8196819825226643413
+    second: Anim_Dog3_Sick1_Idle_3
+  - first:
+      213: 5611790531143002672
+    second: Anim_Dog3_Sick1_Idle_4
+  - first:
+      213: -2948707882158818565
+    second: Anim_Dog3_Sick1_Idle_5
+  - first:
+      213: -6115505655032722132
+    second: Anim_Dog3_Sick1_Idle_6
+  - first:
+      213: -4105354314828867768
+    second: Anim_Dog3_Sick1_Idle_7
+  - first:
+      213: 6166538545571648813
+    second: Anim_Dog3_Sick1_Idle_8
+  - first:
+      213: 2979404733114359308
+    second: Anim_Dog3_Sick1_Idle_9
+  - first:
+      213: -4922132786012882443
+    second: Anim_Dog3_Sick1_Idle_10
+  - first:
+      213: 7562604473265032413
+    second: Anim_Dog3_Sick1_Idle_11
+  - first:
+      213: -1045369192246101240
+    second: Anim_Dog3_Sick1_Idle_12
+  - first:
+      213: -3017604677109361456
+    second: Anim_Dog3_Sick1_Idle_13
+  - first:
+      213: 2822436303268027737
+    second: Anim_Dog3_Sick1_Idle_14
+  - first:
+      213: -4563622276890779054
+    second: Anim_Dog3_Sick1_Idle_15
+  - first:
+      213: -8595489795295065440
+    second: Anim_Dog3_Sick1_Idle_16
+  - first:
+      213: -704421630306385516
+    second: Anim_Dog3_Sick1_Idle_17
+  - first:
+      213: -6771405330746604987
+    second: Anim_Dog3_Sick1_Idle_18
+  - first:
+      213: -7678808973704758015
+    second: Anim_Dog3_Sick1_Idle_19
+  - first:
+      213: -8386417230014995623
+    second: Anim_Dog3_Sick1_Idle_20
+  - first:
+      213: 4578185228405760982
+    second: Anim_Dog3_Sick1_Idle_21
+  - first:
+      213: -3622380207560250304
+    second: Anim_Dog3_Sick1_Idle_22
+  - first:
+      213: 1750267401558052008
+    second: Anim_Dog3_Sick1_Idle_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf219643d7cc4d969ed41f8de9238ac
+      internalID: 29586681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce40b4249f3d41daa918c99469edc91
+      internalID: 1600176411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7655ca42726be42a2b8d308a868db666
+      internalID: -529214290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43389a00fe65e4248b14fea9335a29bd
+      internalID: 1167620664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10d98ddeeb7b4e698b29a3b182a3da2
+      internalID: -286255552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0647f082419d54aa39537ef643f83f2b
+      internalID: -1050352065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63eafe158f3d34c1794f80e7f57fec15
+      internalID: -944242790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e3ad04749aae4fcfb9d7a994d419952
+      internalID: -1131415304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304724cf9973c4e8a82b100f880e07e5
+      internalID: -1597507788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb831baee995463b94501df23fa0553
+      internalID: -1559984422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc268c5ba8bc4acdb6f7a35b44e680e
+      internalID: 1374368369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70315fdebb10b46e1a62a5f14097a65c
+      internalID: 786274249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc2187cb340a488daa88c43ecf850a5
+      internalID: -1434149590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0dbeec64ead14d3fb92a30959d9f503
+      internalID: -1513263611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84a3e820b98d458ca44a5a9a7275a82
+      internalID: -1500964694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e24f229f8804ab19c3f5cc13fd6558
+      internalID: 2016869381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_16
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da27848e1482e4563a078b0796deb870
+      internalID: 678246822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_17
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4c37c582e9b4c66ba18baad251d6ee
+      internalID: -1385193711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_18
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d985ec5e4a87c4955a6a4deb08e3eb13
+      internalID: -1163057940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_19
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a3fdf623c9f4a139bdc0d5011d2ce1
+      internalID: -259515140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_20
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5966029572e4cc7a82502c1f464705
+      internalID: 2068339722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_21
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2735f8a1ab38148ba8ce947bc07e41a5
+      internalID: 1769620990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_22
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d843a7876fd44797a568a7a3de4be32
+      internalID: -590349275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dog_Adult_Sick_Idle_23
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 2
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060e946225b3a413cb67acbcc52fdef6
+      internalID: 460354914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: af74bea0711f641e7a72c2f7fddbad34
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Anim_Dog_Adult_Sick_Idle_0: 29586681
+      Anim_Dog_Adult_Sick_Idle_1: 1600176411
+      Anim_Dog_Adult_Sick_Idle_10: 1374368369
+      Anim_Dog_Adult_Sick_Idle_11: 786274249
+      Anim_Dog_Adult_Sick_Idle_12: -1434149590
+      Anim_Dog_Adult_Sick_Idle_13: -1513263611
+      Anim_Dog_Adult_Sick_Idle_14: -1500964694
+      Anim_Dog_Adult_Sick_Idle_15: 2016869381
+      Anim_Dog_Adult_Sick_Idle_16: 678246822
+      Anim_Dog_Adult_Sick_Idle_17: -1385193711
+      Anim_Dog_Adult_Sick_Idle_18: -1163057940
+      Anim_Dog_Adult_Sick_Idle_19: -259515140
+      Anim_Dog_Adult_Sick_Idle_2: -529214290
+      Anim_Dog_Adult_Sick_Idle_20: 2068339722
+      Anim_Dog_Adult_Sick_Idle_21: 1769620990
+      Anim_Dog_Adult_Sick_Idle_22: -590349275
+      Anim_Dog_Adult_Sick_Idle_23: 460354914
+      Anim_Dog_Adult_Sick_Idle_3: 1167620664
+      Anim_Dog_Adult_Sick_Idle_4: -286255552
+      Anim_Dog_Adult_Sick_Idle_5: -1050352065
+      Anim_Dog_Adult_Sick_Idle_6: -944242790
+      Anim_Dog_Adult_Sick_Idle_7: -1131415304
+      Anim_Dog_Adult_Sick_Idle_8: -1597507788
+      Anim_Dog_Adult_Sick_Idle_9: -1559984422
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

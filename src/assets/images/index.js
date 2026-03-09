@@ -23,6 +23,11 @@ export const images = {
   WelocmBackgruound: require('./WelocmBackgruound.png'),
   ActiveSubscription: require('./ActiveSubscription.png'),
   InActiveSubscription: require('./InActiveSubscription.png'),
+  Cloud: require('./Cloud.png'),
+  windowBottom: require('./Window_Bottom.png'),
+  windowFrame: require('./Window_Frame.png'),
+  star: require('./star.png'),
+  HomeLayout: require('./HomeLayout.png'),
   
 
   

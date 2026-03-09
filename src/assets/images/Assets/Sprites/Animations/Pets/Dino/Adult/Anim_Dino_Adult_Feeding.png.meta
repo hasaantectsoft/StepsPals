@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 3a79fd5b945344f6ca765cb8c6cca79e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7068440630322448255
+    second: Anim_Dino3_Feeding_0
+  - first:
+      213: -7067144752333184312
+    second: Anim_Dino3_Feeding_1
+  - first:
+      213: -1260596710260514964
+    second: Anim_Dino3_Feeding_2
+  - first:
+      213: 2816068830459602428
+    second: Anim_Dino3_Feeding_3
+  - first:
+      213: 3238619701340139666
+    second: Anim_Dino3_Feeding_4
+  - first:
+      213: -8051535497846518871
+    second: Anim_Dino3_Feeding_5
+  - first:
+      213: 104690223531535246
+    second: Anim_Dino3_Feeding_6
+  - first:
+      213: 5605550982892381569
+    second: Anim_Dino3_Feeding_7
+  - first:
+      213: -1730511608956727517
+    second: Anim_Dino3_Feeding_8
+  - first:
+      213: -6849720245257923622
+    second: Anim_Dino3_Feeding_9
+  - first:
+      213: -8347068697358902407
+    second: Anim_Dino3_Feeding_10
+  - first:
+      213: 4167894647991050244
+    second: Anim_Dino3_Feeding_11
+  - first:
+      213: 8620116216653353791
+    second: Anim_Dino3_Feeding_12
+  - first:
+      213: 4415780808484586932
+    second: Anim_Dino3_Feeding_13
+  - first:
+      213: 3811880817931143058
+    second: Anim_Dino3_Feeding_14
+  - first:
+      213: -1981229925758535799
+    second: Anim_Dino3_Feeding_15
+  - first:
+      213: -6709158276263243698
+    second: Anim_Dino3_Feeding_16
+  - first:
+      213: -6757983341963125886
+    second: Anim_Dino3_Feeding_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Feeding_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387636b20882f4c0aa3aeaf1a7224847
+      internalID: 2043879143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Feeding_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592dd564030574a149a35662fefa270d
+      internalID: -2109915382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Feeding_2
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ecda41f023f4e0c8705eb6f750820d
+      internalID: 1287131755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Feeding_3
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3568ddad203144cb6b63d2dd3e326554
+      internalID: -186849736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Feeding_4
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a77d17707ea54bac87dba341a1445d9
+      internalID: -2076818116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Feeding_5
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da234be826e44d97af4a2181bfecf11
+      internalID: 1952173250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Feeding_6
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357f106fa69e54234b2cf63d74f1316b
+      internalID: 798777710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Feeding_7
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499d181d0d18e44fb8aa43a71a3738a3
+      internalID: 1215632290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Feeding_8
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead2331e36c984e38b1dd5906a272dd1
+      internalID: 163868243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Feeding_9
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6084e440d0bfc4dfa9cd95c828fd29ef
+      internalID: 1435200859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Feeding_10
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92293d3c0365c4f59a994e7c26855d9f
+      internalID: 327452362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Feeding_11
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072ee4b8a62d9475397080931529b98b
+      internalID: -1798525348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Feeding_12
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54da1f4a0dab145b39a2cf01fff7663c
+      internalID: -1774513207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Feeding_13
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104060078fc60462b846e049f13ac051
+      internalID: -1596626259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Feeding_14
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a298ddbb57f8d420e98695031bdd46a3
+      internalID: 301728192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Feeding_15
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ea66003d9a4457fac9287cf41cb584
+      internalID: 863330575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Feeding_16
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4812697d509430bb50ce38f1310fe6
+      internalID: 2040166063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Feeding_17
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6220a2d9b5d1492ba33220507deea69
+      internalID: 1156942703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 87de68200ed9847c79565079ac38f239
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Anim_Dino_Adult_Feeding_0: 2043879143
+      Anim_Dino_Adult_Feeding_1: -2109915382
+      Anim_Dino_Adult_Feeding_10: 327452362
+      Anim_Dino_Adult_Feeding_11: -1798525348
+      Anim_Dino_Adult_Feeding_12: -1774513207
+      Anim_Dino_Adult_Feeding_13: -1596626259
+      Anim_Dino_Adult_Feeding_14: 301728192
+      Anim_Dino_Adult_Feeding_15: 863330575
+      Anim_Dino_Adult_Feeding_16: 2040166063
+      Anim_Dino_Adult_Feeding_17: 1156942703
+      Anim_Dino_Adult_Feeding_2: 1287131755
+      Anim_Dino_Adult_Feeding_3: -186849736
+      Anim_Dino_Adult_Feeding_4: -2076818116
+      Anim_Dino_Adult_Feeding_5: 1952173250
+      Anim_Dino_Adult_Feeding_6: 798777710
+      Anim_Dino_Adult_Feeding_7: 1215632290
+      Anim_Dino_Adult_Feeding_8: 163868243
+      Anim_Dino_Adult_Feeding_9: 1435200859
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

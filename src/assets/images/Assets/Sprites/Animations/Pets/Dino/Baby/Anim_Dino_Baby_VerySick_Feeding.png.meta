@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: b24a3edbc75e7481fbb6e0b843fc935f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 836119874334064227
+    second: Anim_Dino1_Sick2_Feeding_0
+  - first:
+      213: -2722054354760599435
+    second: Anim_Dino1_Sick2_Feeding_1
+  - first:
+      213: -3121288565035537998
+    second: Anim_Dino1_Sick2_Feeding_2
+  - first:
+      213: -1127614936510071478
+    second: Anim_Dino1_Sick2_Feeding_3
+  - first:
+      213: 5349527713813439245
+    second: Anim_Dino1_Sick2_Feeding_4
+  - first:
+      213: 8675988328403736097
+    second: Anim_Dino1_Sick2_Feeding_5
+  - first:
+      213: 6224963964444818853
+    second: Anim_Dino1_Sick2_Feeding_6
+  - first:
+      213: 2222689851426965230
+    second: Anim_Dino1_Sick2_Feeding_7
+  - first:
+      213: -3825793825685783623
+    second: Anim_Dino1_Sick2_Feeding_8
+  - first:
+      213: 3574258872098795724
+    second: Anim_Dino1_Sick2_Feeding_9
+  - first:
+      213: 6142175302131381641
+    second: Anim_Dino1_Sick2_Feeding_10
+  - first:
+      213: 1255556127683455811
+    second: Anim_Dino1_Sick2_Feeding_11
+  - first:
+      213: 7246826637873014749
+    second: Anim_Dino1_Sick2_Feeding_12
+  - first:
+      213: -4474441632923956024
+    second: Anim_Dino1_Sick2_Feeding_13
+  - first:
+      213: 817806038049706315
+    second: Anim_Dino1_Sick2_Feeding_14
+  - first:
+      213: 1836242807310355209
+    second: Anim_Dino1_Sick2_Feeding_15
+  - first:
+      213: -8287949040815010268
+    second: Anim_Dino1_Sick2_Feeding_16
+  - first:
+      213: 4940670669597081494
+    second: Anim_Dino1_Sick2_Feeding_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim_Dino_Baby_VerySick_Feeding_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66991752ac3e46e59bfebeada4e6a14
+      internalID: -832842785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Baby_VerySick_Feeding_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 2
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea04154b6cd349489463d061644b4e2
+      internalID: -583793244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Baby_VerySick_Feeding_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 2
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30ff2f9a4fee40bd87a5b0b0e47c8ac
+      internalID: 578757959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Baby_VerySick_Feeding_3
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 2
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4e8a57a0fac4daabf594eca8395821
+      internalID: -786538734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Baby_VerySick_Feeding_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 2
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1a484444c974eb09b7d89e6a668f6a
+      internalID: 475299028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Baby_VerySick_Feeding_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 2
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54a335ed14e840f3a095585b45e5931
+      internalID: -1201072725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Baby_VerySick_Feeding_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c493e85fb4a451490d81009e0658f9
+      internalID: -1432926792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Baby_VerySick_Feeding_7
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 2
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3545199876e491e899132a3376373c
+      internalID: 840407891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Baby_VerySick_Feeding_8
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 2
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de659edfc67a4fbd99defd6a2cccd92
+      internalID: -620698788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Baby_VerySick_Feeding_9
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 2
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175377007d2f34f99808c7f9b6a9a36f
+      internalID: -1046023292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Baby_VerySick_Feeding_10
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 2
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3f6c2f61ae545d4b02b0a3ee297994
+      internalID: 637150590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Baby_VerySick_Feeding_11
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 2
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7294c11858eef47c6bfe79d1ffe5bc55
+      internalID: -1717498385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Baby_VerySick_Feeding_12
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 2
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85deb0e7fc0364bfba461406d16f1568
+      internalID: -462608643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Baby_VerySick_Feeding_13
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 2
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4feb0cecbb4934694bd2868c6225a814
+      internalID: 148241821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Baby_VerySick_Feeding_14
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 2
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a6c44c3e2134876974f33b98c7f3ee
+      internalID: -830363684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Baby_VerySick_Feeding_15
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 2
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 361b553acd5b945a0b0f7cce009c8583
+      internalID: -195777949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Baby_VerySick_Feeding_16
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 2
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067bba04153654be384980a2d4370827
+      internalID: -205260629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Baby_VerySick_Feeding_17
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 2
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0eef15fd29c4f25a3f6adbd6d37d51
+      internalID: -769227935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4905a518cc5ce4d8fab310af86fe61ef
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Anim_Dino_Baby_VerySick_Feeding_0: -832842785
+      Anim_Dino_Baby_VerySick_Feeding_1: -583793244
+      Anim_Dino_Baby_VerySick_Feeding_10: 637150590
+      Anim_Dino_Baby_VerySick_Feeding_11: -1717498385
+      Anim_Dino_Baby_VerySick_Feeding_12: -462608643
+      Anim_Dino_Baby_VerySick_Feeding_13: 148241821
+      Anim_Dino_Baby_VerySick_Feeding_14: -830363684
+      Anim_Dino_Baby_VerySick_Feeding_15: -195777949
+      Anim_Dino_Baby_VerySick_Feeding_16: -205260629
+      Anim_Dino_Baby_VerySick_Feeding_17: -769227935
+      Anim_Dino_Baby_VerySick_Feeding_2: 578757959
+      Anim_Dino_Baby_VerySick_Feeding_3: -786538734
+      Anim_Dino_Baby_VerySick_Feeding_4: 475299028
+      Anim_Dino_Baby_VerySick_Feeding_5: -1201072725
+      Anim_Dino_Baby_VerySick_Feeding_6: -1432926792
+      Anim_Dino_Baby_VerySick_Feeding_7: 840407891
+      Anim_Dino_Baby_VerySick_Feeding_8: -620698788
+      Anim_Dino_Baby_VerySick_Feeding_9: -1046023292
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

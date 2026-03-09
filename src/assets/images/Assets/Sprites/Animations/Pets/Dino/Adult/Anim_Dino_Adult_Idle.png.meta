@@ -1,0 +1,1001 @@
+fileFormatVersion: 2
+guid: 39b7a4606a3484985b7bfe03064e8f80
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7387785956710822975
+    second: Anim_Dino3_Idle_0
+  - first:
+      213: 5985534391640938350
+    second: Anim_Dino3_Idle_1
+  - first:
+      213: 2758003918397517603
+    second: Anim_Dino3_Idle_2
+  - first:
+      213: 4475539570416764253
+    second: Anim_Dino3_Idle_3
+  - first:
+      213: 3395302535066006569
+    second: Anim_Dino3_Idle_4
+  - first:
+      213: 1809635271593918452
+    second: Anim_Dino3_Idle_5
+  - first:
+      213: 7701531944524937881
+    second: Anim_Dino3_Idle_6
+  - first:
+      213: -7641512785561966034
+    second: Anim_Dino3_Idle_7
+  - first:
+      213: 1956086981686964349
+    second: Anim_Dino3_Idle_8
+  - first:
+      213: -2559809947541171353
+    second: Anim_Dino3_Idle_9
+  - first:
+      213: -2700728429045451978
+    second: Anim_Dino3_Idle_10
+  - first:
+      213: -8837508424136572362
+    second: Anim_Dino3_Idle_11
+  - first:
+      213: 1548989163093151592
+    second: Anim_Dino3_Idle_12
+  - first:
+      213: 4862944193900383721
+    second: Anim_Dino3_Idle_13
+  - first:
+      213: 7294762198005404407
+    second: Anim_Dino3_Idle_14
+  - first:
+      213: -4509205760639770650
+    second: Anim_Dino3_Idle_15
+  - first:
+      213: 8875817109282353172
+    second: Anim_Dino3_Idle_16
+  - first:
+      213: 8008213713454102785
+    second: Anim_Dino3_Idle_17
+  - first:
+      213: 8323444873068388075
+    second: Anim_Dino3_Idle_18
+  - first:
+      213: 355333204714336841
+    second: Anim_Dino3_Idle_19
+  - first:
+      213: -9085761135606605224
+    second: Anim_Dino3_Idle_20
+  - first:
+      213: -7365858799971303280
+    second: Anim_Dino3_Idle_21
+  - first:
+      213: -2298298038165518638
+    second: Anim_Dino3_Idle_22
+  - first:
+      213: 4105385682061737888
+    second: Anim_Dino3_Idle_23
+  - first:
+      213: 1801212160586844771
+    second: Anim_Dino3_Idle_24
+  - first:
+      213: -7824996173796608239
+    second: Anim_Dino3_Idle_25
+  - first:
+      213: -7062073635697865544
+    second: Anim_Dino3_Idle_26
+  - first:
+      213: -3858653463246942913
+    second: Anim_Dino3_Idle_27
+  - first:
+      213: -3169995327320293653
+    second: Anim_Dino3_Idle_28
+  - first:
+      213: -1476871315610775311
+    second: Anim_Dino3_Idle_29
+  - first:
+      213: 8236720252121092742
+    second: Anim_Dino3_Idle_30
+  - first:
+      213: -1999696324105532560
+    second: Anim_Dino3_Idle_31
+  - first:
+      213: 2031268852371616701
+    second: Anim_Dino3_Idle_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f3a767116064cf3abcfa3bb9021126
+      internalID: -242930375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e868797040a448bcb2620696f102d98
+      internalID: 325646336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f3cea6d0deb4574970f003656f04ae
+      internalID: 176692222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f025fe83c65434ad8b448ba13cc61ed7
+      internalID: 1841760732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43611f6148b404ae7afd532ecbba1175
+      internalID: 1888344167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a9c4ca56ecc467b92bd5cb43763d48
+      internalID: -1307280880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a681f613bf57d4be7a9a9f139bf28e67
+      internalID: 1928307395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6199d7e13fe6d47f2b4972cadaa709fa
+      internalID: 566882770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b11fe48a8e44f1eadad5d493a70630
+      internalID: 107019743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8221c0b0156da45f5a2bb1327fb6f81d
+      internalID: -2067809833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9982e45cb119411ca27b5b89ace1044
+      internalID: 1717794853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523d40fde7e8848a0b04a2194bfacdf4
+      internalID: 684324211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6227eb2dbc1354259a893e4ed861c26b
+      internalID: -530082139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391e5ff6c7cbc44cbac9fd3e462a3438
+      internalID: 293181616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350147a1c9e3d4ea99b72ab00b9f34c6
+      internalID: -896081138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8fad46f228cc4fb3ae460b2eb99967e
+      internalID: 112430917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_16
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835e5b0e0374a4fe38f1e6617fc2baea
+      internalID: -645746504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_17
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e63b81283234f03bce5a46429c2bd6
+      internalID: -388322305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_18
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7456b36150b48474f8a65a70c870ad85
+      internalID: 558117497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_19
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f9ffd4684a94bd78fdeb8dded8535b
+      internalID: 1817386807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_20
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d28a3346ce944e493121146ec1e388
+      internalID: -778258605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_21
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0373a59c230440fa3433a6016ffca6
+      internalID: -115425889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_22
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5fda460c5c0b4e2cad7ae67b6330718
+      internalID: 215520712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_23
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e6d78db2a1c4275b487bb7dba1e7a0
+      internalID: -1892055602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_24
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9054d490e3a2c4b03aa495049b739226
+      internalID: -790942523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_25
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad78cfa20de446efb60225e0d2c7445
+      internalID: -209290645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_26
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c246dcda23d9a48e9997d71094925e59
+      internalID: -664681814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_27
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f11f399b49bb407c9d528f6bc46e13f
+      internalID: 186201161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_28
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bfe68a3fdbba4a5b9a60481a1dd6cf4
+      internalID: -1669593382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_29
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8784bc75364a4dbdb137202fe941f77
+      internalID: 393231340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_30
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7995ecadd430a4abbb06fd331ab1974c
+      internalID: 1935573680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_31
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae31bf776e37743f7a1a1ea411041f3a
+      internalID: -563658522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dino_Adult_Idle_32
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 2
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f515bbe31dcf2484b80c7d39fb2114b9
+      internalID: 1637820898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1074fd0a8ed8d4ecd8e27fb8a15aaa9a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Anim_Dino_Adult_Idle_0: -242930375
+      Anim_Dino_Adult_Idle_1: 325646336
+      Anim_Dino_Adult_Idle_10: 1717794853
+      Anim_Dino_Adult_Idle_11: 684324211
+      Anim_Dino_Adult_Idle_12: -530082139
+      Anim_Dino_Adult_Idle_13: 293181616
+      Anim_Dino_Adult_Idle_14: -896081138
+      Anim_Dino_Adult_Idle_15: 112430917
+      Anim_Dino_Adult_Idle_16: -645746504
+      Anim_Dino_Adult_Idle_17: -388322305
+      Anim_Dino_Adult_Idle_18: 558117497
+      Anim_Dino_Adult_Idle_19: 1817386807
+      Anim_Dino_Adult_Idle_2: 176692222
+      Anim_Dino_Adult_Idle_20: -778258605
+      Anim_Dino_Adult_Idle_21: -115425889
+      Anim_Dino_Adult_Idle_22: 215520712
+      Anim_Dino_Adult_Idle_23: -1892055602
+      Anim_Dino_Adult_Idle_24: -790942523
+      Anim_Dino_Adult_Idle_25: -209290645
+      Anim_Dino_Adult_Idle_26: -664681814
+      Anim_Dino_Adult_Idle_27: 186201161
+      Anim_Dino_Adult_Idle_28: -1669593382
+      Anim_Dino_Adult_Idle_29: 393231340
+      Anim_Dino_Adult_Idle_3: 1841760732
+      Anim_Dino_Adult_Idle_30: 1935573680
+      Anim_Dino_Adult_Idle_31: -563658522
+      Anim_Dino_Adult_Idle_32: 1637820898
+      Anim_Dino_Adult_Idle_4: 1888344167
+      Anim_Dino_Adult_Idle_5: -1307280880
+      Anim_Dino_Adult_Idle_6: 1928307395
+      Anim_Dino_Adult_Idle_7: 566882770
+      Anim_Dino_Adult_Idle_8: 107019743
+      Anim_Dino_Adult_Idle_9: -2067809833
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80ecf0b14cd346f09df5fb46b6360440, type: 3}
+  m_Name: GameBalancesSO
+  m_EditorClassIdentifier: 
+  balances:
+    <DefaultStepsGoal>k__BackingField: 5000
+    <StepsGoalRange>k__BackingField:
+      <Min>k__BackingField: 100
+      <Max>k__BackingField: 20000
+    <GrowthDaysToMature>k__BackingField:
+      <Array>k__BackingField:
+      - <Key>k__BackingField: 1
+        <Value>k__BackingField: 0
+      - <Key>k__BackingField: 2
+        <Value>k__BackingField: 7
+      - <Key>k__BackingField: 3
+        <Value>k__BackingField: 21
+    <ActionOnGoalPercentage>k__BackingField:
+      <Array>k__BackingField:
+      - <Key>k__BackingField: 1
+        <Value>k__BackingField: 25
+      - <Key>k__BackingField: 2
+        <Value>k__BackingField: 50
+      - <Key>k__BackingField: 3
+        <Value>k__BackingField: 75
+      - <Key>k__BackingField: 4
+        <Value>k__BackingField: 100
+    <TutorialsBalances>k__BackingField: {fileID: 11400000, guid: a3d4a11fc392941b0b77b8b2a0f98ddc,
+      type: 2}
+  leaderboardBalances: {fileID: 11400000, guid: 313b26822f9c249b58b788ff0da3d4ac,
+    type: 2}

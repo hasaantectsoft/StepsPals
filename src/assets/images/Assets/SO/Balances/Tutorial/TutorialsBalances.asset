@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe2282125b0048019672f6db418c243f, type: 3}
+  m_Name: TutorialsBalances
+  m_EditorClassIdentifier: 
+  <Scenarios>k__BackingField:
+  - <Id>k__BackingField: 1
+    <StepsSo>k__BackingField:
+    - {fileID: 11400000, guid: 25ea4269c181b40e9b6647e16da1222d, type: 2}
+    - {fileID: 11400000, guid: ddc09fb1ec21447a291764e22f7b4bc3, type: 2}
+    - {fileID: 11400000, guid: beab084e2768d4542885ab0f775420f6, type: 2}
+    - {fileID: 11400000, guid: ebd4967bfd53e4dc497a15112266b808, type: 2}
+    - {fileID: 11400000, guid: b0fafab94690d4eaba9287f21f0b1bf0, type: 2}
+    - {fileID: 11400000, guid: 512d431ee3f274aa4a87a32a09020f26, type: 2}
+    - {fileID: 11400000, guid: 74295084156b84517977c7c2283a20eb, type: 2}
+    - {fileID: 11400000, guid: ccdac784da37d49249878961d3c2d83b, type: 2}
+    - {fileID: 11400000, guid: 51289aa53ae414903b763b1313994139, type: 2}
+    - {fileID: 11400000, guid: cbbaadac51a0d48c8a606739911339ab, type: 2}
+    - {fileID: 11400000, guid: 0671dd43545a04055a4a8677e95f1053, type: 2}
+    - {fileID: 11400000, guid: 73945dde9f1da44bf925bb5220132df1, type: 2}

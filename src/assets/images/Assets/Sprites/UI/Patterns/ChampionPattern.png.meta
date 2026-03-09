@@ -1,0 +1,1547 @@
+fileFormatVersion: 2
+guid: 9d4cdc06afad34b8d8a13ffb81ffc729
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4193658961262007906
+    second: ChampionPattern_0
+  - first:
+      213: -1106632285282960869
+    second: ChampionPattern_1
+  - first:
+      213: 6996712403924136025
+    second: ChampionPattern_2
+  - first:
+      213: 3814764281623222157
+    second: ChampionPattern_3
+  - first:
+      213: -6445812528734795368
+    second: ChampionPattern_4
+  - first:
+      213: -8867401202281485448
+    second: ChampionPattern_5
+  - first:
+      213: -4375288986186447994
+    second: ChampionPattern_6
+  - first:
+      213: 2730167024384484073
+    second: ChampionPattern_7
+  - first:
+      213: 7921221031053648422
+    second: ChampionPattern_8
+  - first:
+      213: 5591880283873418275
+    second: ChampionPattern_9
+  - first:
+      213: -5253948922811897057
+    second: ChampionPattern_10
+  - first:
+      213: -4113718203776558743
+    second: ChampionPattern_11
+  - first:
+      213: -4215042215133877278
+    second: ChampionPattern_12
+  - first:
+      213: 8042256965957053677
+    second: ChampionPattern_13
+  - first:
+      213: -8519594858162369738
+    second: ChampionPattern_14
+  - first:
+      213: 8529191593403065274
+    second: ChampionPattern_15
+  - first:
+      213: -3125253516363934445
+    second: ChampionPattern_16
+  - first:
+      213: 3431759108592592717
+    second: ChampionPattern_17
+  - first:
+      213: -4053405081379302339
+    second: ChampionPattern_18
+  - first:
+      213: -7646094910062610169
+    second: ChampionPattern_19
+  - first:
+      213: 5162715005733102568
+    second: ChampionPattern_20
+  - first:
+      213: -565444042212173285
+    second: ChampionPattern_21
+  - first:
+      213: -7955252612100649193
+    second: ChampionPattern_22
+  - first:
+      213: 5624224720584064430
+    second: ChampionPattern_23
+  - first:
+      213: -5501813638949512291
+    second: ChampionPattern_24
+  - first:
+      213: 7944584772374647247
+    second: ChampionPattern_25
+  - first:
+      213: 4968317969618880313
+    second: ChampionPattern_26
+  - first:
+      213: -4928934857384413499
+    second: ChampionPattern_27
+  - first:
+      213: 7881656951414265555
+    second: ChampionPattern_28
+  - first:
+      213: -4009595145327182198
+    second: ChampionPattern_29
+  - first:
+      213: 6155701678099661848
+    second: ChampionPattern_30
+  - first:
+      213: 3232730272724788028
+    second: ChampionPattern_31
+  - first:
+      213: 8578279146749728962
+    second: ChampionPattern_32
+  - first:
+      213: 3867898437052692190
+    second: ChampionPattern_33
+  - first:
+      213: 6043842546785715007
+    second: ChampionPattern_34
+  - first:
+      213: -7779403238318793076
+    second: ChampionPattern_35
+  - first:
+      213: 4085305529664676889
+    second: ChampionPattern_36
+  - first:
+      213: -5797799112908461634
+    second: ChampionPattern_37
+  - first:
+      213: 8887816505150713068
+    second: ChampionPattern_38
+  - first:
+      213: -7191291132231621181
+    second: ChampionPattern_39
+  - first:
+      213: -2943231455435836692
+    second: ChampionPattern_40
+  - first:
+      213: -2096742538155906695
+    second: ChampionPattern_41
+  - first:
+      213: 4868060074283461293
+    second: ChampionPattern_42
+  - first:
+      213: -7159047759418081804
+    second: ChampionPattern_43
+  - first:
+      213: -3403957609578325721
+    second: ChampionPattern_44
+  - first:
+      213: 415187522955444040
+    second: ChampionPattern_45
+  - first:
+      213: -6284145828339164736
+    second: ChampionPattern_46
+  - first:
+      213: 4264388250980821475
+    second: ChampionPattern_47
+  - first:
+      213: 4353001813878397974
+    second: ChampionPattern_48
+  - first:
+      213: 4816295868571529834
+    second: ChampionPattern_49
+  - first:
+      213: 2845322065966028572
+    second: ChampionPattern_50
+  - first:
+      213: 1906241789526656860
+    second: ChampionPattern_51
+  - first:
+      213: 8212732897387764973
+    second: ChampionPattern_52
+  - first:
+      213: 406559275766946750
+    second: ChampionPattern_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ChampionPattern_0
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 2628
+        width: 218
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9928d8c4612dc5c0800000000000000
+      internalID: -4193658961262007906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_1
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 2628
+        width: 218
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1afababcc374a0f0800000000000000
+      internalID: -1106632285282960869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_2
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 2628
+        width: 218
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 950b7777cd0591160800000000000000
+      internalID: 6996712403924136025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_3
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 2628
+        width: 218
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d87100417e3c0f430800000000000000
+      internalID: 3814764281623222157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2392
+        width: 139
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 899000018afdb86a0800000000000000
+      internalID: -6445812528734795368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_5
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 2392
+        width: 218
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87be3298699a0f480800000000000000
+      internalID: -8867401202281485448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_6
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 2392
+        width: 218
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6838dac29d9d743c0800000000000000
+      internalID: -4375288986186447994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_7
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 2392
+        width: 218
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e22ce1917083e520800000000000000
+      internalID: 2730167024384484073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_8
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 2392
+        width: 139
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6226e4f2f84dded60800000000000000
+      internalID: 7921221031053648422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_9
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 2158
+        width: 219
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32c19cabd795a9d40800000000000000
+      internalID: 5591880283873418275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_10
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 2158
+        width: 221
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1b20c39a493617b0800000000000000
+      internalID: -5253948922811897057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_11
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 2158
+        width: 223
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96917ddc61329e6c0800000000000000
+      internalID: -4113718203776558743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_12
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 2158
+        width: 225
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb6ba500792185c0800000000000000
+      internalID: -4215042215133877278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1879
+        width: 169
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dece740d916db9f60800000000000000
+      internalID: 8042256965957053677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_14
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 1879
+        width: 250
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63bccf08d9154c980800000000000000
+      internalID: -8519594858162369738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_15
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1879
+        width: 252
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab3a90a8096cd5670800000000000000
+      internalID: 8529191593403065274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_16
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1879
+        width: 254
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31556143c7ed0a4d0800000000000000
+      internalID: -3125253516363934445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_17
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 1879
+        width: 181
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d476f5e1abe00af20800000000000000
+      internalID: 3431759108592592717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_18
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1645
+        width: 218
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d349f99ed896fb7c0800000000000000
+      internalID: -4053405081379302339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_19
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1645
+        width: 218
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709bbc6a03d93e590800000000000000
+      internalID: -7646094910062610169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_20
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1645
+        width: 218
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e3ec49c1f5a5a740800000000000000
+      internalID: 5162715005733102568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_21
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 1645
+        width: 218
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a1593b3a32728f0800000000000000
+      internalID: -565444042212173285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1409
+        width: 139
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f0e35e5e3499190800000000000000
+      internalID: -7955252612100649193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_23
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 1409
+        width: 218
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead326fb5924d0e40800000000000000
+      internalID: 5624224720584064430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_24
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1409
+        width: 218
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9bd30e25a1a5a3b0800000000000000
+      internalID: -5501813638949512291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_25
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1409
+        width: 218
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc15e5d12c5d04e60800000000000000
+      internalID: 7944584772374647247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_26
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 1409
+        width: 139
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 937c25ebed203f440800000000000000
+      internalID: 4968317969618880313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_27
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1175
+        width: 219
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c6bf80acd7e89bb0800000000000000
+      internalID: -4928934857384413499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_28
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1175
+        width: 221
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d6198e0d35416d60800000000000000
+      internalID: 7881656951414265555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_29
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1175
+        width: 223
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e74a5857e0b58c0800000000000000
+      internalID: -4009595145327182198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_30
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 1175
+        width: 225
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814086adf027d6550800000000000000
+      internalID: 6155701678099661848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 939
+        width: 139
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c33a9682e07fcdc20800000000000000
+      internalID: 3232730272724788028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_32
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 939
+        width: 218
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c8982e2f6b2c0770800000000000000
+      internalID: 8578279146749728962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_33
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 939
+        width: 218
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed670dfa2298da530800000000000000
+      internalID: 3867898437052692190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_34
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 939
+        width: 218
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f330e8f46ca00e350800000000000000
+      internalID: 6043842546785715007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_35
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 939
+        width: 139
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e1c77c8f10a0490800000000000000
+      internalID: -7779403238318793076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_36
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 705
+        width: 218
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9142a9efbbbe1b830800000000000000
+      internalID: 4085305529664676889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_37
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 705
+        width: 218
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb92404cc641a8fa0800000000000000
+      internalID: -5797799112908461634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_38
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 705
+        width: 218
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cecac52950ed75b70800000000000000
+      internalID: 8887816505150713068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_39
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 705
+        width: 218
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c5eaeaf0d6633c90800000000000000
+      internalID: -7191291132231621181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 469
+        width: 139
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce2bdfec59a8727d0800000000000000
+      internalID: -2943231455435836692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_41
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 469
+        width: 218
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97924c345cfd6e2e0800000000000000
+      internalID: -2096742538155906695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_42
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 469
+        width: 218
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa6de078d2de8340800000000000000
+      internalID: 4868060074283461293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_43
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 469
+        width: 218
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fd34d93ef3f5ac90800000000000000
+      internalID: -7159047759418081804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_44
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 469
+        width: 139
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 729989ac696b2c0d0800000000000000
+      internalID: -3403957609578325721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_45
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 193
+        width: 219
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ffee43ada03c500800000000000000
+      internalID: 415187522955444040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_46
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 193
+        width: 221
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c95719f9aa3ac8a0800000000000000
+      internalID: -6284145828339164736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_47
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 193
+        width: 223
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9af0445862e2b30800000000000000
+      internalID: 4264388250980821475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_48
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 193
+        width: 225
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61c5ad62618f86c30800000000000000
+      internalID: 4353001813878397974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 139
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a62336b139be6d240800000000000000
+      internalID: 4816295868571529834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_50
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 0
+        width: 218
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c175c75085d9c7720800000000000000
+      internalID: 2845322065966028572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_51
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 0
+        width: 218
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c57cdb0dec4547a10800000000000000
+      internalID: 1906241789526656860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_52
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 0
+        width: 218
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec56f7ae0d79f170800000000000000
+      internalID: 8212732897387764973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChampionPattern_53
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 0
+        width: 139
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebb9a3cd18364a500800000000000000
+      internalID: 406559275766946750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ChampionPattern_0: -4193658961262007906
+      ChampionPattern_1: -1106632285282960869
+      ChampionPattern_10: -5253948922811897057
+      ChampionPattern_11: -4113718203776558743
+      ChampionPattern_12: -4215042215133877278
+      ChampionPattern_13: 8042256965957053677
+      ChampionPattern_14: -8519594858162369738
+      ChampionPattern_15: 8529191593403065274
+      ChampionPattern_16: -3125253516363934445
+      ChampionPattern_17: 3431759108592592717
+      ChampionPattern_18: -4053405081379302339
+      ChampionPattern_19: -7646094910062610169
+      ChampionPattern_2: 6996712403924136025
+      ChampionPattern_20: 5162715005733102568
+      ChampionPattern_21: -565444042212173285
+      ChampionPattern_22: -7955252612100649193
+      ChampionPattern_23: 5624224720584064430
+      ChampionPattern_24: -5501813638949512291
+      ChampionPattern_25: 7944584772374647247
+      ChampionPattern_26: 4968317969618880313
+      ChampionPattern_27: -4928934857384413499
+      ChampionPattern_28: 7881656951414265555
+      ChampionPattern_29: -4009595145327182198
+      ChampionPattern_3: 3814764281623222157
+      ChampionPattern_30: 6155701678099661848
+      ChampionPattern_31: 3232730272724788028
+      ChampionPattern_32: 8578279146749728962
+      ChampionPattern_33: 3867898437052692190
+      ChampionPattern_34: 6043842546785715007
+      ChampionPattern_35: -7779403238318793076
+      ChampionPattern_36: 4085305529664676889
+      ChampionPattern_37: -5797799112908461634
+      ChampionPattern_38: 8887816505150713068
+      ChampionPattern_39: -7191291132231621181
+      ChampionPattern_4: -6445812528734795368
+      ChampionPattern_40: -2943231455435836692
+      ChampionPattern_41: -2096742538155906695
+      ChampionPattern_42: 4868060074283461293
+      ChampionPattern_43: -7159047759418081804
+      ChampionPattern_44: -3403957609578325721
+      ChampionPattern_45: 415187522955444040
+      ChampionPattern_46: -6284145828339164736
+      ChampionPattern_47: 4264388250980821475
+      ChampionPattern_48: 4353001813878397974
+      ChampionPattern_49: 4816295868571529834
+      ChampionPattern_5: -8867401202281485448
+      ChampionPattern_50: 2845322065966028572
+      ChampionPattern_51: 1906241789526656860
+      ChampionPattern_52: 8212732897387764973
+      ChampionPattern_53: 406559275766946750
+      ChampionPattern_6: -4375288986186447994
+      ChampionPattern_7: 2730167024384484073
+      ChampionPattern_8: 7921221031053648422
+      ChampionPattern_9: 5591880283873418275
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

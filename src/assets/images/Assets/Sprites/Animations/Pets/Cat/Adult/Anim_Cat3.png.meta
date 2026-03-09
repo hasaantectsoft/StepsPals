@@ -1,0 +1,1794 @@
+fileFormatVersion: 2
+guid: 77953e2b39f8849bb85b670f88ec84c6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1882335875355744186
+    second: Anim_Cat3_0
+  - first:
+      213: -8043007638774505965
+    second: Anim_Cat3_1
+  - first:
+      213: -1592051285181435171
+    second: Anim_Cat3_2
+  - first:
+      213: -111394019970389372
+    second: Anim_Cat3_3
+  - first:
+      213: 531712721181746745
+    second: Anim_Cat3_4
+  - first:
+      213: -4477754359681767329
+    second: Anim_Cat3_5
+  - first:
+      213: 832535472558934161
+    second: Anim_Cat3_6
+  - first:
+      213: 4812783120462398093
+    second: Anim_Cat3_7
+  - first:
+      213: -6861083516619003762
+    second: Anim_Cat3_8
+  - first:
+      213: 69385940555355031
+    second: Anim_Cat3_9
+  - first:
+      213: -1508029385870730909
+    second: Anim_Cat3_10
+  - first:
+      213: 8733713052495536576
+    second: Anim_Cat3_11
+  - first:
+      213: -2813837990472722869
+    second: Anim_Cat3_12
+  - first:
+      213: 5072597705935462415
+    second: Anim_Cat3_13
+  - first:
+      213: -4520676575095836450
+    second: Anim_Cat3_14
+  - first:
+      213: -5094317373013520714
+    second: Anim_Cat3_15
+  - first:
+      213: 3070969925186631684
+    second: Anim_Cat3_16
+  - first:
+      213: -2139676769856676874
+    second: Anim_Cat3_17
+  - first:
+      213: 6336277275824108926
+    second: Anim_Cat3_18
+  - first:
+      213: -4150974109756053324
+    second: Anim_Cat3_19
+  - first:
+      213: 2069878089615900990
+    second: Anim_Cat3_20
+  - first:
+      213: 7052226602454715337
+    second: Anim_Cat3_21
+  - first:
+      213: 7288929982755881794
+    second: Anim_Cat3_22
+  - first:
+      213: 6252305947821136183
+    second: Anim_Cat3_23
+  - first:
+      213: -6874850265894242138
+    second: Anim_Cat3_24
+  - first:
+      213: 5466842502961430106
+    second: Anim_Cat3_25
+  - first:
+      213: -92038043891773590
+    second: Anim_Cat3_26
+  - first:
+      213: -9180791819693984445
+    second: Anim_Cat3_27
+  - first:
+      213: -283772947512156208
+    second: Anim_Cat3_28
+  - first:
+      213: -5895665296188904814
+    second: Anim_Cat3_29
+  - first:
+      213: -3931083545583350237
+    second: Anim_Cat3_30
+  - first:
+      213: -4888256013399810820
+    second: Anim_Cat3_31
+  - first:
+      213: -2035863952262414395
+    second: Anim_Cat3_32
+  - first:
+      213: -7902016165107087642
+    second: Anim_Cat3_33
+  - first:
+      213: -801603873973000781
+    second: Anim_Cat3_34
+  - first:
+      213: 45479729874054156
+    second: Anim_Cat3_35
+  - first:
+      213: -283933572928366088
+    second: Anim_Cat3_36
+  - first:
+      213: -6121441229019958730
+    second: Anim_Cat3_37
+  - first:
+      213: -2235138252320822425
+    second: Anim_Cat3_38
+  - first:
+      213: 5344531983058455739
+    second: Anim_Cat3_39
+  - first:
+      213: 7056341488569785616
+    second: Anim_Cat3_40
+  - first:
+      213: 1354747359993236489
+    second: Anim_Cat3_41
+  - first:
+      213: -3989733459419370327
+    second: Anim_Cat3_42
+  - first:
+      213: -4686308140539196592
+    second: Anim_Cat3_43
+  - first:
+      213: 1681546278193787316
+    second: Anim_Cat3_44
+  - first:
+      213: -7234885941558924378
+    second: Anim_Cat3_45
+  - first:
+      213: -7062084429249336242
+    second: Anim_Cat3_46
+  - first:
+      213: 8943238705045604552
+    second: Anim_Cat3_47
+  - first:
+      213: 5783143206414995468
+    second: Anim_Cat3_48
+  - first:
+      213: -4133072551889032323
+    second: Anim_Cat3_49
+  - first:
+      213: 3335731325032479741
+    second: Anim_Cat3_50
+  - first:
+      213: -7896367042848547504
+    second: Anim_Cat3_51
+  - first:
+      213: -1726203946215405910
+    second: Anim_Cat3_52
+  - first:
+      213: -3450769600357785730
+    second: Anim_Cat3_53
+  - first:
+      213: -424040946360407555
+    second: Anim_Cat3_54
+  - first:
+      213: 835430974279682694
+    second: Anim_Cat3_55
+  - first:
+      213: -7544360033445817264
+    second: Anim_Cat3_56
+  - first:
+      213: -6997636034328755130
+    second: Anim_Cat3_57
+  - first:
+      213: 1731157638435706682
+    second: Anim_Cat3_58
+  - first:
+      213: -4541039737218118177
+    second: Anim_Cat3_59
+  - first:
+      213: 9097190525024444063
+    second: Anim_Cat3_60
+  - first:
+      213: 1516215561461086591
+    second: Anim_Cat3_61
+  - first:
+      213: -7639756881224542377
+    second: Anim_Cat3_62
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim_Cat3_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64862719e7990e5e0800000000000000
+      internalID: -1882335875355744186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31e971d8a2f716090800000000000000
+      internalID: -8043007638774505965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd27e8a8ac5e7e9e0800000000000000
+      internalID: -1592051285181435171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48aef81aabf347ef0800000000000000
+      internalID: -111394019970389372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_4
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 936289c17e5016700800000000000000
+      internalID: 531712721181746745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_5
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5826bf4222dbd1c0800000000000000
+      internalID: -4477754359681767329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_6
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19889c0f992cd8b00800000000000000
+      internalID: 832535472558934161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_7
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d824824bfb07ac240800000000000000
+      internalID: 4812783120462398093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_8
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e88e2a9a4e888c0a0800000000000000
+      internalID: -6861083516619003762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_9
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7935533352286f000800000000000000
+      internalID: 69385940555355031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_10
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36913507347621be0800000000000000
+      internalID: -1508029385870730909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_11
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c160308fb1643970800000000000000
+      internalID: 8733713052495536576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_12
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b46df5a814d33f8d0800000000000000
+      internalID: -2813837990472722869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_13
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f00aebedcbc756640800000000000000
+      internalID: 5072597705935462415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_14
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed0bbf44b945341c0800000000000000
+      internalID: -4520676575095836450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_15
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be8d6017595d49b0800000000000000
+      internalID: -5094317373013520714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_16
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40838a250e64e9a20800000000000000
+      internalID: 3070969925186631684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_17
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fb998670575e42e0800000000000000
+      internalID: -2139676769856676874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_18
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7530ef7c9afee750800000000000000
+      internalID: 6336277275824108926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_19
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b8a52c3a07c466c0800000000000000
+      internalID: -4150974109756053324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_20
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e318be3e72fa9bc10800000000000000
+      internalID: 2069878089615900990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_21
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb8fda0bba8ed160800000000000000
+      internalID: 7052226602454715337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_22
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 243cbde633b772560800000000000000
+      internalID: 7288929982755881794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_23
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 739d0f62227a4c650800000000000000
+      internalID: 6252305947821136183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_24
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8bf519b10a790a0800000000000000
+      internalID: -6874850265894242138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_25
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ef508ba402edb40800000000000000
+      internalID: 5466842502961430106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_26
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6f420003e309bef0800000000000000
+      internalID: -92038043891773590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_27
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 345f35e5b76479080800000000000000
+      internalID: -9180791819693984445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_28
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df1caaf106df0cf0800000000000000
+      internalID: -283772947512156208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_29
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29aef0256a36e2ea0800000000000000
+      internalID: -5895665296188904814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_30
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32e0f13d75cf179c0800000000000000
+      internalID: -3931083545583350237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_31
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc132e0e0d692cb0800000000000000
+      internalID: -4888256013399810820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_32
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cf306a95882fb3e0800000000000000
+      internalID: -2035863952262414395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_33
+      rect:
+        serializedVersion: 2
+        x: 1586
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e6c56d1a26665290800000000000000
+      internalID: -7902016165107087642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_34
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b52341168120e4f0800000000000000
+      internalID: -801603873973000781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_35
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0caf97c29391a000800000000000000
+      internalID: 45479729874054156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_36
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f91cc57be34f0cf0800000000000000
+      internalID: -283933572928366088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_37
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 632b5de82a54c0ba0800000000000000
+      internalID: -6121441229019958730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_38
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ba78e0a913bf0e0800000000000000
+      internalID: -2235138252320822425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_39
+      rect:
+        serializedVersion: 2
+        x: 1874
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbcc9e4a5879b2a40800000000000000
+      internalID: 5344531983058455739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_40
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d9d00a2392de160800000000000000
+      internalID: 7056341488569785616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_41
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90c8bc0db870dc210800000000000000
+      internalID: 1354747359993236489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_42
+      rect:
+        serializedVersion: 2
+        x: 2018
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ac61d2ae8e91a8c0800000000000000
+      internalID: -3989733459419370327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_43
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05bc3274393e6feb0800000000000000
+      internalID: -4686308140539196592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_44
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b1fe194e6d065710800000000000000
+      internalID: 1681546278193787316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_45
+      rect:
+        serializedVersion: 2
+        x: 2162
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aba9e67195889b90800000000000000
+      internalID: -7234885941558924378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_46
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ca6ccc0af6efd90800000000000000
+      internalID: -7062084429249336242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_47
+      rect:
+        serializedVersion: 2
+        x: 2258
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c884cb0834cc1c70800000000000000
+      internalID: 8943238705045604552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_48
+      rect:
+        serializedVersion: 2
+        x: 2306
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0054971b1ad14050800000000000000
+      internalID: 5783143206414995468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_49
+      rect:
+        serializedVersion: 2
+        x: 2354
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7bacb9796064a6c0800000000000000
+      internalID: -4133072551889032323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_50
+      rect:
+        serializedVersion: 2
+        x: 2402
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfb34b677f5ea4e20800000000000000
+      internalID: 3335731325032479741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_51
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05d19e2e2087a6290800000000000000
+      internalID: -7896367042848547504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_52
+      rect:
+        serializedVersion: 2
+        x: 2498
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa604ff18aa4b08e0800000000000000
+      internalID: -1726203946215405910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_53
+      rect:
+        serializedVersion: 2
+        x: 2546
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7f15f8d4576c10d0800000000000000
+      internalID: -3450769600357785730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_54
+      rect:
+        serializedVersion: 2
+        x: 2594
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9a7f581018d1af0800000000000000
+      internalID: -424040946360407555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_55
+      rect:
+        serializedVersion: 2
+        x: 2642
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a8c487b0c089b00800000000000000
+      internalID: 835430974279682694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_56
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 054dec4758c0d4790800000000000000
+      internalID: -7544360033445817264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_57
+      rect:
+        serializedVersion: 2
+        x: 2738
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6448c521a1763ee90800000000000000
+      internalID: -6997636034328755130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_58
+      rect:
+        serializedVersion: 2
+        x: 2786
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a371a2933be460810800000000000000
+      internalID: 1731157638435706682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_59
+      rect:
+        serializedVersion: 2
+        x: 2834
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdd4e202b6cfaf0c0800000000000000
+      internalID: -4541039737218118177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_60
+      rect:
+        serializedVersion: 2
+        x: 2882
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e91226596bf3e70800000000000000
+      internalID: 9097190525024444063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_61
+      rect:
+        serializedVersion: 2
+        x: 2930
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f79bec7150eaa0510800000000000000
+      internalID: 1516215561461086591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Cat3_62
+      rect:
+        serializedVersion: 2
+        x: 2978
+        y: 2
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 757d34cf7912af590800000000000000
+      internalID: -7639756881224542377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9b669e55623cb443688f169bcfdd1f3c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Anim_Cat3_0: -1882335875355744186
+      Anim_Cat3_1: -8043007638774505965
+      Anim_Cat3_10: -1508029385870730909
+      Anim_Cat3_11: 8733713052495536576
+      Anim_Cat3_12: -2813837990472722869
+      Anim_Cat3_13: 5072597705935462415
+      Anim_Cat3_14: -4520676575095836450
+      Anim_Cat3_15: -5094317373013520714
+      Anim_Cat3_16: 3070969925186631684
+      Anim_Cat3_17: -2139676769856676874
+      Anim_Cat3_18: 6336277275824108926
+      Anim_Cat3_19: -4150974109756053324
+      Anim_Cat3_2: -1592051285181435171
+      Anim_Cat3_20: 2069878089615900990
+      Anim_Cat3_21: 7052226602454715337
+      Anim_Cat3_22: 7288929982755881794
+      Anim_Cat3_23: 6252305947821136183
+      Anim_Cat3_24: -6874850265894242138
+      Anim_Cat3_25: 5466842502961430106
+      Anim_Cat3_26: -92038043891773590
+      Anim_Cat3_27: -9180791819693984445
+      Anim_Cat3_28: -283772947512156208
+      Anim_Cat3_29: -5895665296188904814
+      Anim_Cat3_3: -111394019970389372
+      Anim_Cat3_30: -3931083545583350237
+      Anim_Cat3_31: -4888256013399810820
+      Anim_Cat3_32: -2035863952262414395
+      Anim_Cat3_33: -7902016165107087642
+      Anim_Cat3_34: -801603873973000781
+      Anim_Cat3_35: 45479729874054156
+      Anim_Cat3_36: -283933572928366088
+      Anim_Cat3_37: -6121441229019958730
+      Anim_Cat3_38: -2235138252320822425
+      Anim_Cat3_39: 5344531983058455739
+      Anim_Cat3_4: 531712721181746745
+      Anim_Cat3_40: 7056341488569785616
+      Anim_Cat3_41: 1354747359993236489
+      Anim_Cat3_42: -3989733459419370327
+      Anim_Cat3_43: -4686308140539196592
+      Anim_Cat3_44: 1681546278193787316
+      Anim_Cat3_45: -7234885941558924378
+      Anim_Cat3_46: -7062084429249336242
+      Anim_Cat3_47: 8943238705045604552
+      Anim_Cat3_48: 5783143206414995468
+      Anim_Cat3_49: -4133072551889032323
+      Anim_Cat3_5: -4477754359681767329
+      Anim_Cat3_50: 3335731325032479741
+      Anim_Cat3_51: -7896367042848547504
+      Anim_Cat3_52: -1726203946215405910
+      Anim_Cat3_53: -3450769600357785730
+      Anim_Cat3_54: -424040946360407555
+      Anim_Cat3_55: 835430974279682694
+      Anim_Cat3_56: -7544360033445817264
+      Anim_Cat3_57: -6997636034328755130
+      Anim_Cat3_58: 1731157638435706682
+      Anim_Cat3_59: -4541039737218118177
+      Anim_Cat3_6: 832535472558934161
+      Anim_Cat3_60: 9097190525024444063
+      Anim_Cat3_61: 1516215561461086591
+      Anim_Cat3_62: -7639756881224542377
+      Anim_Cat3_7: 4812783120462398093
+      Anim_Cat3_8: -6861083516619003762
+      Anim_Cat3_9: 69385940555355031
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
