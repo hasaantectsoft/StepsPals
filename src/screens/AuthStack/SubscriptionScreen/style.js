@@ -43,6 +43,46 @@ export const styles = StyleSheet.create({
         width:moderateScale(300),
         alignSelf:"center",
         textAlign:"center",
-        color:Theme.colors.ligtBrown
+        color:Theme.colors.ligtBrown,
+        lineHeight:moderateScale(20)
+    },
+    img:{
+        width:"100%",
+        height:moderateScale(110),
+        resizeMode:"contain",
+       
+
+    },
+    listContainer:
+    {
+        width:"100%"
+    },
+    imgStyle:{
+        width:"100%",
+        height:"100%",
+        resizeMode:"cover"
+    },
+    title:{
+        ...combineStyles.regular12,
+        paddingHorizontal:moderateScale(48),
+        paddingTop:moderateScale(20)
+    },
+    trail:{
+        ...combineStyles.regular10,
+        paddingHorizontal:moderateScale(48),
+        color:Theme.colors.brown,
+        marginTop:moderateScale(5)
+    },
+    prise:{
+         ...combineStyles.regular10,
+        paddingHorizontal:moderateScale(48),
+        marginBottom:moderateScale(5)
+
+    },
+    Access:{
+        ...combineStyles.regular8,
+        paddingHorizontal:moderateScale(48),
+        color:"#9853C4"
     }
+    
 });

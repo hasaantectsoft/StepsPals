@@ -8,6 +8,7 @@ import PressableIcon from "../../../components/PressSvg/PressSvg";
 import { moderateScale } from "react-native-size-matters";
 import { DeleteMessageModal } from "../../../components/Modal";
 import { PRIVACY_URL } from "../../../utils/extra/links";
+import WelcomModal from "../../../components/Modal/WelcomModal";
 export default () => {
     const [MusicIsOn, setMusicIsOn] = React.useState(false);
     const [SoundIsOn, setSoundIsOn] = React.useState(false);
@@ -49,7 +50,7 @@ export default () => {
                         <PressableIcon icon={DeleteButtonSvg} width={"100%"} height={60} onPress={() => setIsDeleteModalVisible(true)} />
                     </View>
                 </View>
-                    <DeleteMessageModal isVisible={isDeleteModalVisible} onClose={() => setIsDeleteModalVisible(false)} subtitle={"Are you sure you want to delete your account?"} btn1text={"No"}btn2text={"Yes"} onpressButton2={handelModal} />
+                    <DeleteMessageModal  isVisible={isDeleteModalVisible} onClose={() => setIsDeleteModalVisible(false)} subtitle={"Are you sure you want to delete your account?"} btn1text={"No"}btn2text={"Yes"} onpressButton2={handelModal} />
                     <DeleteMessageModal isVisible={DisconnectModal} onClose={() => setIsDisConnectModal(false)} subtitle={"Disconnecting unlinks the game progress on other devices.Are you sure you want to continue?"} btn1text={"Cancel"}btn2text={"Disconnect"} onpressButton2={() => setIsDisConnectModal(false)} title={"Disconnect?"} />
                     <DeleteMessageModal isVisible={ProgressModal} onpressCenterButton={() => {setIsProgressModal(false);setIsDisConnectModal(true)}} subtitle={"Account deletion in progress?"} centerButtonTxt={"Ok"} centerButton={true} rowBtton={false} />
             </ImageBackground>

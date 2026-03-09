@@ -1,24 +1,21 @@
 import React, { useState } from "react";
 import { styles } from "./style";
-import { ImageBackground, View, Text } from "react-native";
+import { ImageBackground, View, Text, TouchableOpacity } from "react-native";
 import { images } from "../../../assets/images";
 import { combineStyles } from "../../../libs/combineStyle";
 import { Theme } from "../../../libs";
 import PressableIcon from "../../../components/PressSvg/PressSvg";
 import {
-  AnuualActivePlanSvg,
-  AnuualPlanSvg,
-  MonthlyActivePlanSvg,
-  MonthlyPlanSvg,
-  WeeklyActivePlanSvg,
-  WeeklyPlanSvg,
   SubSucribtionAcitveSvg,
   SubSucribtionInacitveSvg,
 } from "../../../assets/svgs";
 import { DeleteMessageModal } from "../../../components/Modal";
+import { FlatList } from "react-native-actions-sheet";
+import { SubsucripitonArray } from "../../../utils/exports";
+import { moderateScale } from "react-native-size-matters";
 
 export default () => {
-  const [selectedPlan, setSelectedPlan] = useState(null); // active plan
+  const [selectedPlan, setSelectedPlan] = useState(); // active plan
   const [isSubscribed, setIsSubscribed] = useState(false); // subscribe toggle
   const [modal,setModal]=useState(false)
 
@@ -28,8 +25,32 @@ setModal(true);
     
   };
 
+
+  const renderItem = ({ item }) => {
+  const isActive = selectedPlan === item.id; // check if this plan is active
+
   return (
-    <View style={combineStyles.combineStyles}>
+    <View style={styles.listContainer}>
+      <TouchableOpacity
+        onPress={() => {setSelectedPlan(item.id);setIsSubscribed(true)}}
+      >
+        <ImageBackground
+          source={isActive ? images.ActiveSubscription : images.InActiveSubscription} 
+          style={styles.img}
+          imageStyle={styles.imgStyle}
+        >
+          <Text style={styles.title}>{item.title}</Text>
+          <Text style={styles.trail}>{item.freeTrails}</Text>
+          <Text style={styles.prise}>{item.prise}</Text>
+          <Text style={styles.Access}>{item.Access}</Text>
+        </ImageBackground>
+      </TouchableOpacity>
+    </View>
+  );
+};
+
+  return (
+    <View style={combineStyles.container2}>
       <ImageBackground source={images.yellowBackground} style={styles.backgroundImage}>
         <View style={styles.main}>
           <View style={styles.header}>
@@ -40,32 +61,12 @@ setModal(true);
           </View>
 
           <View style={styles.subscucriptionContainer}>
-            {/* Annual Plan */}
-            <PressableIcon
-              icon={selectedPlan === "annual" ? AnuualActivePlanSvg : AnuualPlanSvg}
-              width="100%"
-              height={120}
-              container={styles.svgContainer}
-              onPress={() =>{ setSelectedPlan("annual");setIsSubscribed(true)}}
-            />
-
-            {/* Monthly Plan */}
-            <PressableIcon
-              icon={selectedPlan === "monthly" ? MonthlyActivePlanSvg : MonthlyPlanSvg}
-              width="100%"
-              height={120}
-              container={styles.svgContainer}
-              onPress={() => {setSelectedPlan("monthly");setIsSubscribed(true)}}
-            />
-
-            {/* Weekly Plan */}
-            <PressableIcon
-              icon={selectedPlan === "weekly" ? WeeklyActivePlanSvg : WeeklyPlanSvg}
-              width="100%"
-              height={120}
-              container={styles.svgContainer}
-              onPress={() => {setSelectedPlan("weekly");setIsSubscribed(true)}}
-            />
+       <FlatList
+       data={SubsucripitonArray}
+       renderItem={renderItem}
+       keyExtractor={(item)=>item.id.toString()}
+       contentContainerStyle={{gap:moderateScale(15),right:moderateScale(15)}}
+       />
 
             <Text style={styles.txtStyle}>
               Subscription expired — gameplay is paused. Subscribe to come back!
@@ -79,6 +80,7 @@ setModal(true);
               height={60}
               onPress={handleSubscribe}
             />
+            
 
             <DeleteMessageModal title={"Oops!"} subtitle={"Something went wrong \n \n \n Please try again."} isVisible={modal} centerButton={false} rowBtton={false} />
           </View>
@@ -86,4 +88,15 @@ setModal(true);
       </ImageBackground>
     </View>
   );
+
+
+  // return(
+  //  <View style={combineStyles.combineStyles}>
+
+  //  <ImageBackground source={images.yellowBackground} style={styles.backgroundImage}>
+
+  // </ImageBackground>
+  //  </View>
+
+  // );
 };

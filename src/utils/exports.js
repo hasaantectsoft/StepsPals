@@ -122,3 +122,10 @@ export const BronzeArray=[
   {id:4,name:"Shrumpalo",score:"7400"},
   {id:5,name:"Shrumpalo",score:"7400"},
 ]
+
+
+export const SubsucripitonArray=[
+  {id:1,type:"Yearly",freeTrails:"3-day free trial,then",prise:"29.99 USD/YEAR",Access:"Full access.Auto-renews yearly",title:"StepPals Yearly",active:false},
+  {id:2,type:"Monthly",freeTrails:"3-day free trial,then",prise:"9.99 USD/month",Access:"Full access.Auto-renew Monthly",title:"StepPals Monthly",active:false},
+  {id:3,type:"Weekly",freeTrails:"3-day free trial,then",prise:"2.99 USD/week",Access:"Full access.Auto-renews Weekly",title:"StepPals Weekly",active:false},
+]
