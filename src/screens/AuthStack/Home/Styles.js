@@ -59,7 +59,7 @@ export const styles = StyleSheet.create({
     },
     starcontainer: {
         position: 'absolute',
-        top: scale(58),
+        top: scale(62),
         right: scale(17),
         width: scale(100),
         height: scale(80),

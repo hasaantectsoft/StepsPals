@@ -1,8 +1,8 @@
 {
   "colors": {
-    "waterblue":"rgba(110, 202, 255, 1)",
+    "waterblue":"#6ECAFF",
     "primary": "#FEEA88",
-    "lightgrey":"rgba(178, 202, 199, 1)",
+    "lightgrey":"#B2CAC7",
     "yellow": "rgba(255, 253, 110, 1)",
     "oragne": "#E89B4C",
     "DARKRED": "##D93F41",

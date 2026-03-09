@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity, ImageBackground } from "react-native";
 import { Theme } from "../../libs";
 import { retro } from "../../utils/extra/delay";
 import { scale } from "react-native-size-matters";
-import { bowl, bowl1, checked, popp, waterdis, waterfull } from "../../assets/svgs";
+import { bowl, bowl1, checked, homebar, popp, waterdis, waterfull } from "../../assets/svgs";
 import { SvgXml } from "react-native-svg";
+import { images } from "../../assets/images";
 
 export default function RetroStepsBar({
   top = 0,
@@ -15,14 +16,16 @@ export default function RetroStepsBar({
   height,
   borderRadius,
   steps = 0,
-  goal = 1200,
+  goal = 5000,
 }) {
-    // if 0 the 1st icon 2 then 2nd 3 then 4th icon
 const [boul, setBoul] = useState(0)
 const [pop,setpop]=useState(0)
 const [wat,setwat]=useState(0)
-const progress = Math.min(goal / steps, 1);
+const progress = goal ? Math.min(steps / goal, 1) : 0;
   const progressWidth = `${progress * 100}%`;
+  const canFirstPress = steps >= 1500;
+  const canSecondPress = steps >= 2500;
+  const canThirdPress = steps >= 3500;
   const getIcon = (petsteps, a, b) => (petsteps === 0 ? a : petsteps === 1 ? b : checked);
   return (
     <View
@@ -36,38 +39,40 @@ const progress = Math.min(goal / steps, 1);
         },
       ]}
     >
-      <View
-        style={[
-          styles.outerBar,
-          {
-            width: width || scale(280),
-            height: height || scale(40),
-            borderRadius: borderRadius || scale(20),
-          },
-        ]}
-      >
+      <View style={styles.barWrapper}>
+        <SvgXml
+          xml={homebar}
+          style={styles.barBackground}
+          height={scale(70)}
+          width={width || scale(280)}
+        />
+        <View
+          style={[
+            styles.outerBar,
+            {
+            width: width || scale(200),
+              height: height || scale(40),
+              borderRadius: borderRadius || scale(20),
+            },
+          ]}
+        >
         <View style={[styles.fillBar, { width: progressWidth }]} />
 
-        <Text style={styles.text}>
-        {goal}/{steps} Steps
-        </Text>
+          <Text style={styles.text}>
+            {steps}/{goal} Steps
+          </Text>
+        </View>
       </View>
-     <View style={{
-        flexDirection:"row",
-        justifyContent:"space-between",
-        width:"100%",
-        alignItems:"center",
-        gap:scale(10),
-     }}>
-    <TouchableOpacity onPress={() => setBoul(boul+1)} disabled={boul===2}>
+     <View style={styles.gap}>
+    <TouchableOpacity onPress={() => setBoul(boul+1)} disabled={!canFirstPress || boul===2}>
   <SvgXml xml={getIcon(boul,bowl,bowl1)} style={styles.bowlcontainer} height={50} width={40}/>
 </TouchableOpacity>
 
-<TouchableOpacity onPress={() => setwat(wat+1)} disabled={wat===2}>
+<TouchableOpacity onPress={() => setwat(wat+1)} disabled={!canSecondPress || wat===2}>
   <SvgXml xml={getIcon(wat,waterdis,waterfull)} style={styles.bowlcontainer} height={50} width={40}/>
 </TouchableOpacity>
 
-<TouchableOpacity onPress={() => setpop(pop+1)} disabled={pop===2}>
+<TouchableOpacity onPress={() => setpop(pop+1)} disabled={!canThirdPress || pop===2}>
   <SvgXml xml={getIcon(pop,popp,popp)} style={styles.bowlcontainer} height={50} width={40}/>
 </TouchableOpacity>
     </View>
@@ -82,10 +87,29 @@ const styles = StyleSheet.create({
     position: "relative",
     zIndex: 2,
   },
+  gap:{
+    flexDirection:"row",
+    justifyContent:"space-between",
+    width:"100%",
+    alignItems:"center",
+    gap:scale(10),
+ },
+
+  barWrapper: {
+    alignItems: "center",
+    justifyContent: "center",
+  },
+
+  barBackground: {
+    position: "absolute",
+  },
 
   outerBar: {
     borderWidth: scale(4),
-    borderColor: Theme.colors.darkblue,
+    margin:scale(2),
+    marginLeft:scale(10),
+    // marginHorizontal:scale(10),
+    borderColor: Theme.colors.white,
     backgroundColor: Theme.colors.lightgrey,
     overflow: "hidden",
     justifyContent: "center",

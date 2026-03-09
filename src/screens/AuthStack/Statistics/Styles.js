@@ -12,7 +12,6 @@ export const Styles = StyleSheet.create({
         resizeMode: 'stretch',
     },
     title: {
-        
         fontSize: scale(20),
         fontFamily: Retro,
         color: Theme.colors.black,
@@ -29,16 +28,14 @@ export const Styles = StyleSheet.create({
         
     },
     statsContainer: {
-        marginTop: scale(60),
+        marginTop: scale(40),
         alignItems: 'center',
         backgroundColor: Theme.colors.oragne,
         borderWidth: 3,
         borderColor: Theme.colors.white,
-paddingVertical:scale(40),
-paddingHorizontal:scale(30),
-borderRadius:scale(10),
-        
-        
+        paddingVertical: scale(24),
+        paddingHorizontal: scale(20),
+        borderRadius: scale(10),
     },
     stats: {
         fontSize: scale(12),
@@ -47,5 +44,15 @@ borderRadius:scale(10),
         textAlign: 'center',
         marginVertical: scale(8),
     },
-   
+    stwImage: {
+        marginTop: scale(30),
+        width: scale(314),   // ~20% smaller
+        height: scale(269),  // ~20% smaller
+        alignSelf: "center",
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    stwImageInner: {
+        resizeMode: 'stretch',
+    },
 });

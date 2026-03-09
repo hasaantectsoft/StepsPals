@@ -29,6 +29,8 @@ export const images = {
   star: require('./star.png'),
   HomeLayout: require('./HomeLayout.png'),
   selected: require('./selected.png'),
+  homebar: require('./homebar.png'),
+  stw:require('./stw.png'),
   
 
   
