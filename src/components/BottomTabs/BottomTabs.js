@@ -6,6 +6,7 @@ import NetInfo from '@react-native-community/netinfo';
 import { DeviceEventEmitter } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import useKeyboard from "../../utils/extra/usekeyboard"
+import { playBackgroundSound, playButtonSound } from '../../utils/SoundManager/SoundManager';
 
 
 const BottomTabs = ({ activeTab, onTabPress }) => {
@@ -84,7 +85,7 @@ const BottomTabs = ({ activeTab, onTabPress }) => {
                                     styles.tabItem,
 
                                 ]}
-                                onPress={() => onTabPress(tab.name)}
+                                onPress={() => {onTabPress(tab.name);playButtonSound()}}
                             >
                                 <Image
                                     source={tab.icon}

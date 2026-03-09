@@ -14,8 +14,8 @@ export const styles = StyleSheet.create({
         gap: moderateScale(20),
         marginHorizontal: moderateScale(20),
     },
-    header:{
-        alignItems:"center",
+    header: {
+        alignItems: "center",
     },
     buttonContainer: {
         marginTop: moderateScale(30),
@@ -29,60 +29,60 @@ export const styles = StyleSheet.create({
         marginTop: moderateScale(30),
         bottom: moderateScale(10)
     },
-    subscucriptionContainer:{
-        marginTop:moderateScale(30),
-        gap:moderateScale(18),
+    subscucriptionContainer: {
+        marginTop: moderateScale(30),
+        gap: moderateScale(18),
         // alignItems:"center",
         // backgroundColor:"black"
     },
-    svgContainer:{
+    svgContainer: {
         right: moderateScale(15),
     },
-    txtStyle:{
+    txtStyle: {
         ...combineStyles.regular12,
-        width:moderateScale(300),
-        alignSelf:"center",
-        textAlign:"center",
-        color:Theme.colors.ligtBrown,
-        lineHeight:moderateScale(20)
+        width: moderateScale(300),
+        alignSelf: "center",
+        textAlign: "center",
+        color: Theme.colors.ligtBrown,
+        lineHeight: moderateScale(20)
     },
-    img:{
-        width:"100%",
-        height:moderateScale(110),
-        resizeMode:"contain",
-       
+    img: {
+        width: "100%",
+        height: moderateScale(110),
+        resizeMode: "contain",
+
 
     },
     listContainer:
     {
-        width:"100%"
+        width: "100%"
     },
-    imgStyle:{
-        width:"100%",
-        height:"100%",
-        resizeMode:"cover"
+    imgStyle: {
+        width: "100%",
+        height: "100%",
+        resizeMode: "cover"
     },
-    title:{
+    title: {
         ...combineStyles.regular12,
-        paddingHorizontal:moderateScale(48),
-        paddingTop:moderateScale(20)
+        paddingHorizontal: moderateScale(48),
+        paddingTop: moderateScale(20)
     },
-    trail:{
+    trail: {
         ...combineStyles.regular10,
-        paddingHorizontal:moderateScale(48),
-        color:Theme.colors.brown,
-        marginTop:moderateScale(5)
+        paddingHorizontal: moderateScale(48),
+        color: Theme.colors.brown,
+        marginTop: moderateScale(5)
     },
-    prise:{
-         ...combineStyles.regular10,
-        paddingHorizontal:moderateScale(48),
-        marginBottom:moderateScale(5)
+    prise: {
+        ...combineStyles.regular10,
+        paddingHorizontal: moderateScale(48),
+        marginBottom: moderateScale(5)
 
     },
-    Access:{
+    Access: {
         ...combineStyles.regular8,
-        paddingHorizontal:moderateScale(48),
-        color:"#9853C4"
+        paddingHorizontal: moderateScale(48),
+        color: "#9853C4"
     }
-    
+
 });

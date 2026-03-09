@@ -8,6 +8,7 @@ import { SvgXml } from "react-native-svg";
 import { cake, window } from "../../../assets/svgs";
 import RetroStepsBar from "../../../components/Retroprogreebar/Retrostepsbar";
 import { scale } from "react-native-size-matters";
+import { playButtonSound } from "../../../utils/SoundManager/SoundManager";
 export default () => {
     const navigation = useNavigation();
     const { petname ,petsteps} = useSelector((state) => state.petReducer);
@@ -18,11 +19,11 @@ export default () => {
             imageStyle={{ resizeMode: 'cover' }}
             style={styles.container}
         >
-            <TouchableOpacity onPress={() => navigation.navigate('PetMenu')}>
+            <TouchableOpacity onPress={() => {playButtonSound(); navigation.navigate('PetMenu')}}>
                 <Text style={styles.name}>Hello {petname}</Text>
                 <Text style={styles.welcome}>is happy</Text>
             </TouchableOpacity>
-            {/* Absolute Elements */}
+           
             <SpriteLoader  />
             <RetroStepsBar 
             top={scale(92)} 

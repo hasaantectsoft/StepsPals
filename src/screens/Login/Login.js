@@ -83,6 +83,7 @@ export default function Login() {
         containerStyle={styles.containerStyle}
         title="Login"
         onPress={() => {
+          playButtonSound();
           if (
             validateLoginForm(
               email,

@@ -32,5 +32,10 @@ export const styles = StyleSheet.create({
    left:moderateScale(140),
    top:moderateScale(20),
    position:"absolute"
-  }
+  },
+   backBtn: {
+    position:"absolute",
+    right:moderateScale(140),
+    top:moderateScale(15)
+  },
 });

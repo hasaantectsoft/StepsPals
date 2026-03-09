@@ -18,6 +18,8 @@ import themeSlice from './slices/themeSlice';
 import authSlice from './slices/authSlice';
 import tutorialSlice from './slices/tutorialslice';
 import petSlice from './slices/petslice';
+import soundSlice from './slices/soundSlice';
+
 const persistConfig = {
   key: 'root',
   storage: EncryptedStorage,
@@ -31,6 +33,7 @@ const reducers = combineReducers({
   authReducer: authSlice,
   tutorialReducer: tutorialSlice,
   petReducer: petSlice,
+  soundReducer:soundSlice
   });
 
 const _persistedReducer = persistReducer(persistConfig, reducers);

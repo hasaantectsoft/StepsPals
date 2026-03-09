@@ -12,7 +12,7 @@ import { combineStyles } from "../../../libs/combineStyle";
 import { moderateScale } from "react-native-size-matters";
 import { Theme } from "../../../libs";
 import PressableIcon from "../../../components/PressSvg/PressSvg";
-import { grayButton } from "../../../assets/svgs";
+import { BackArrow, grayButton } from "../../../assets/svgs";
 import { orangeBtn } from "../../../components/Petmenu/buttonSvgs";
 import { setPetSteps } from "../../../redux/slices/petslice";
 
@@ -24,11 +24,11 @@ export default function Petmenu() {
   const [stepGoal, setStepGoal] = useState(petsteps);
   const [disable, setDisable] = useState(true);
   const dispatch=useDispatch();
-
+console.log("Key is follwig",petkey)
   const pet = {
     id:petkey,
     name:petname,
-    days: "[2]/[21]",
+    days: "2/7",
     species: "[Cat]",
     age: "[x] days",
     condition: "[Healthy]",
@@ -46,6 +46,11 @@ router.goBack();
   return (
     <View style={styles.container}>
       <SettingsBackground path={images.Statistics}  />
+        <PressableIcon
+              icon={BackArrow}
+              container={styles.backBtn}
+              onPress={() => router.goBack()}
+            />
       <PetInfo pet={pet} />
       <PetDetails pet={pet} />
       <Text style={[combineStyles.regular16,{marginTop:moderateScale(28)}]}>Step Goal</Text>
