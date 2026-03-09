@@ -31,7 +31,7 @@ export const images = {
   selected: require('./selected.png'),
   homebar: require('./homebar.png'),
   stw:require('./stw.png'),
-  
+  messagebox:require('./messagebox.png'),
 
   
 
