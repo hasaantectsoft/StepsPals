@@ -62,8 +62,8 @@ export default () => {
                 steps={3000}
                 goal={5000} />
            
-            <SpriteLoader  />
-            <RetroStepsBar 
+        {/* ?</SpriteLoader  /> */}
+            {/* <RetroStepsBar 
             top={scale(92)} 
             right={scale(100)} 
             left={scale(100)} 
@@ -72,7 +72,7 @@ export default () => {
             height={scale(40)} 
             borderRadius={scale(20)} 
             steps={petsteps} 
-            goal={1200} />          
+            goal={1200} />           */}
 
             <ImageBackground
                 source={images.star}

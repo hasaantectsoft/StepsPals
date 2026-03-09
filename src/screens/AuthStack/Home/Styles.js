@@ -7,7 +7,8 @@ export const styles = StyleSheet.create({
         flex: 1,
     },
     name:{
-        fontSize: scale(7),
+        fontSize: scale(5),
+        // maxWidth:scale(100),
         fontFamily: Retro,
         color: Theme.colors.white,
         textAlign: 'center',
@@ -17,7 +18,7 @@ export const styles = StyleSheet.create({
         right: 0,
     },
     welcome:{
-        fontSize: scale(7),
+        fontSize: scale(5),
         fontFamily: Retro,
         color: Theme.colors.yellow,
         textAlign: 'center',
