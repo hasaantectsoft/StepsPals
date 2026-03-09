@@ -21,6 +21,7 @@ import { setPetName, setPetKey, setPetSteps } from "../../../redux/slices/petsli
 // need to add corrcet url here
 import { PRIVACY_URL, TERMS_URL } from "../../../utils/extra/links";
 import { setIsMain } from "../../../redux/slices/ismain";
+import { setNewUser } from "../../../redux/slices/tutorialslice";
 export default () => {
   const navigation = useNavigation();
   const dispatch = useDispatch();
@@ -95,16 +96,17 @@ export default () => {
 
         <View style={styles.buttonWrap}>
           <NextButton
-            text="NEXT"
+            text={"NEXT"}
             onPress={() => {
                 dispatch(setPetName(petName ?? ''));
                 dispatch(setPetKey(String(pet?.id ?? '')));
                 dispatch(setPetSteps(stepGoal ?? 242));
                 dispatch(setSignedIn(true));
                 dispatch(setIsMain(true));
+                dispatch(setNewUser(true));
                 navigation.reset({ index: 0, routes: [{ name: "Main" }] });
               }}
-            disabled={false}
+            disabled={!notifGranted || !healthGranted ? true : false}
           />
         </View>
       </ScrollView>

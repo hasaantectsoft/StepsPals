@@ -55,7 +55,7 @@ export default function NameYourPet() {
                    </ImageBackground>
                     {error ? <Text style={styles.errorText}>{error}</Text> : null}
                 </View>
-               <NextButton disabled={!petName} text={petName ? "Done" : ""} onPress={handleDone} />
+               <NextButton disabled={!petName} text={petName ? "Done" : "Done"} onPress={handleDone} />
         </View>
         </ImageBackground>
     );

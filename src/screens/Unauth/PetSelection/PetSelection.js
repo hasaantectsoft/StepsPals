@@ -5,6 +5,7 @@ import { cat, dino, dog } from "../../../assets/svgs";
 import { SvgXml } from "react-native-svg";
 import { useNavigation } from "@react-navigation/native";
 import NextButton from "../../../components/NextButton/NextButton";
+import { scale } from "react-native-size-matters";
 
 export default () => {
     const pets=[
@@ -44,21 +45,28 @@ export default () => {
                 <View style={Styles.petContainer}>
                     {pets.map((pet) => {
                         const isSelected = selectedPet?.id === pet.id;
+                        const Wrapper = isSelected ? ImageBackground : View;
                         return (
                             <TouchableOpacity
                                 key={pet.id}
                                 activeOpacity={0.8}
                                 onPress={() => setSelectedPet(pet)}
                             >
-                                <View
-                                    style={[
-                                        Styles.petItem,
-                                        isSelected && Styles.selectedPetItem,
-                                    ]}
+                                <Wrapper
+                                    source={
+                                        isSelected
+                                            ? require("../../../assets/images/selected.png")
+                                            : undefined
+                                    }
+                                    resizeMode="stretch"
+                                    imageStyle={Styles.selectedBgImage}
+                                    style={[Styles.petItem]}
                                 >
-                                    <SvgXml xml={pet.svg} height={80} width={90} />
+                                    <SvgXml style={{
+                                        marginVertical: scale(10),
+                                    }} xml={pet.svg} height={80} width={90} />
                                     <Text style={Styles.petName}>{pet.name}</Text>
-                                </View>
+                                </Wrapper>
                             </TouchableOpacity>
                         );
                     })}

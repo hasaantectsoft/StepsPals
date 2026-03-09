@@ -14,7 +14,7 @@ export default function LandingScreen({  }) {
     const [retryFailed, setRetryFailed] = useState(false);
     const stack=useSelector(state=>state.authReducer?.isSignedIn);
     const isNewUser = useSelector(state => state.tutorialReducer?.isnewuser);
-    const { isConnected, isLoading } = useNetworkStatus();
+    const { isConnected } = useNetworkStatus();
     const navigation = useNavigation();
 
     useEffect(() => {

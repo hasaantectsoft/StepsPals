@@ -18,11 +18,11 @@ function AuthStack() {
 
   };
 const imnewaccount = useSelector(state => state.tutorialReducer?.isnewuser);
+console.log('imnewaccount',imnewaccount)
 console.log(imnewaccount)
   return (
     <Stack.Navigator
-        // initialRouteName={imnewaccount ? 'tutorial' : 'LandingScreen'}
-        initialRouteName={imnewaccount ? 'tutorial' : "SubscriptionScreen"}
+        initialRouteName={imnewaccount ? 'tutorial' : 'LandingScreen'}
       screenOptions={{
         headerShown: false,
         statusBarAnimation: 'fade',

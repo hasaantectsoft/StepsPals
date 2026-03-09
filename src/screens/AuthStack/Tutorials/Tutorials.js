@@ -33,20 +33,7 @@ export default function Tutorials() {
     } else {
       dispatch(setNewUser(false));
 
-      navigation.reset({
-        index: 0,
-        routes: [
-          {
-            name: 'Main',
-            state: {
-              index: 0,
-              routes: [
-                { name: 'Home' }
-              ]
-            }
-          }
-        ]
-      });
+      navigation.navigate("Main");
     }
   };
 
