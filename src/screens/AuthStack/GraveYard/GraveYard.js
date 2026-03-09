@@ -14,7 +14,7 @@ import LoaderKitView from "react-native-loader-kit";
 export default () => {
   const [page, setPage] = useState(1);
   const [visibleData, setVisibleData] = useState(
-    GrayyardArray.slice(0, 9)
+    GrayyardArray.slice(0, 20)
   );
   const [loading, setLoading] = useState(false);
 

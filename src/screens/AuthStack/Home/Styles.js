@@ -55,7 +55,7 @@ export const styles = StyleSheet.create({
         right: scale(10),
         width: scale(117),
         height: scale(160),
-        zIndex: 5,
+        zIndex: 1,
     },
     starcontainer: {
         position: 'absolute',
@@ -63,7 +63,7 @@ export const styles = StyleSheet.create({
         right: scale(17),
         width: scale(100),
         height: scale(80),
-        zIndex: 0,
+        zIndex: 5,
         justifyContent: 'center',
         alignItems: 'center',
     },

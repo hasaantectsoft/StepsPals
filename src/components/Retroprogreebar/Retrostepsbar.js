@@ -79,6 +79,8 @@ const styles = StyleSheet.create({
   container: {
     alignItems: "center",
     justifyContent: "center",
+    position: "relative",
+    zIndex: 2,
   },
 
   outerBar: {
