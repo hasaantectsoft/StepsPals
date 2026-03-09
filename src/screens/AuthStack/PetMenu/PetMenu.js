@@ -37,6 +37,7 @@ export default function Petmenu() {
     image: require("../../../assets/images/Cat.png"),
   };
 
+  
 
   const handelSave=()=>{
     dispatch(setPetSteps(stepGoal))
