@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 import { useNavigation } from "@react-navigation/native";
 import { scale } from "react-native-size-matters";
 import { images } from "../../../assets/images";
+import { NativeModules } from 'react-native';
 import { SvgXml } from "react-native-svg";
 import RetroStepsBar from "../../../components/Retroprogreebar/Retrostepsbar";
 import { cake, windowframe } from "../../../assets/svgs";
@@ -16,23 +17,62 @@ export default () => {
     const { petname, petsteps } = useSelector((state) => state.petReducer);
 
 
+    // useEffect(() => {
+    //     const fetchSteps = async () => {
+    //         const initialized = await initializeHealthConnect();
+    //         if (!initialized) return;
+    //         const permission = await checkBackgroundAccess();
+    //         if (!permission) {
+    //             await requestPermissions();
+    //         }
+    //         const steps = await getTodaySteps();
+    //         console.log('Steps today:', steps);
+    //     };
+
+    //     fetchSteps(); // initial fetch
+
+    //     // // const interval = setInterval(fetchSteps, 5000); // update every 5 seconds
+    //     // return () => clearInterval(interval); // cleanup on unmount
+    // }, []);
+
+
+
     useEffect(() => {
-        const fetchSteps = async () => {
+    const fetchSteps = async () => {
+        try {
             const initialized = await initializeHealthConnect();
             if (!initialized) return;
+
             const permission = await checkBackgroundAccess();
             if (!permission) {
                 await requestPermissions();
             }
+
             const steps = await getTodaySteps();
             console.log('Steps today:', steps);
-        };
 
-        fetchSteps(); // initial fetch
+            // ✅ Update the Android home screen widget
+            if (NativeModules.StepWidget && NativeModules.StepWidget.updateSteps) {
+                NativeModules.StepWidget.updateSteps(steps);
+            }
 
-        // // const interval = setInterval(fetchSteps, 5000); // update every 5 seconds
-        // return () => clearInterval(interval); // cleanup on unmount
-    }, []);
+        } catch (error) {
+            console.error('Error fetching steps or updating widget:', error);
+        }
+    };
+
+    fetchSteps(); // initial fetch
+
+    // Optional: refresh every 5 seconds (or adjust as needed)
+    const interval = setInterval(fetchSteps, 5000);
+    return () => clearInterval(interval); // cleanup on unmount
+}, []);
+
+
+
+
+
+
 
     const cloudX = useRef(new Animated.Value(-scale(65))).current;
     useEffect(() => {

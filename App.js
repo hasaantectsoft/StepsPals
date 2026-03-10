@@ -1,5 +1,3 @@
-
-
 import React, { useEffect } from 'react';
 import './src/locals/i18n';
 import {Provider} from 'react-redux';
@@ -15,7 +13,6 @@ import { startAppSound} from './src/utils/SoundManager/SoundManager'
 
 export default function App() {
   const queryClient = new QueryClient();
-  // For React Query auto refetch on reconnect behavior in React Native you have to use React Query onlineManager
   onlineManager.setEventListener(setOnline => {
     return NetInfo.addEventListener(state => {
       setOnline(state.isConnected);
