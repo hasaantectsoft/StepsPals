@@ -1,5 +1,5 @@
 export const images = {
-  yellowBackground: require('./background.png'),
+  yellowBackground: require('./background.jpeg'),
   ModalBackGround: require('./ModalBackGround.png'),
   blueButton: require('./blueButton.png'),
   OringeButton: require('./OringeButton.png'),
@@ -12,7 +12,7 @@ export const images = {
   rankingbtn: require('./rankingbtn.png'),
   orange_btn: require('./orange_btn.png'),
   SilverBtn: require('./SilverBtn.png'),
-  RankingBackground: require('./RankingBackground.png'),
+  RankingBackground: require('./RankingBackground.jpeg'),
   RankingTitle: require('./RankingTitle.png'),
   GoldBtn: require('./GoldBtn.png'),
   Legend: require('./Legend.png'),
