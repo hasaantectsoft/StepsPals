@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    MusicSound: true, // controls background music
-    Sound: true       // controls button/UI sounds
+    MusicSound: true, 
+    Sound: true       
 };
 
 const soundSlice = createSlice({

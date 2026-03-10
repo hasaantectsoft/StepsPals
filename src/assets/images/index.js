@@ -1,4 +1,5 @@
 export const images = {
+  required: require('./require.jpeg'),
   yellowBackground: require('./background.png'),
   ModalBackGround: require('./ModalBackGround.png'),
   blueButton: require('./blueButton.png'),
@@ -27,11 +28,22 @@ export const images = {
   windowBottom: require('./Window_Bottom.png'),
   windowFrame: require('./Window_Frame.png'),
   star: require('./star.png'),
-  HomeLayout: require('./HomeLayout.png'),
+  HomeLayout: require('./HomeLayout.webp'),
   selected: require('./selected.png'),
   homebar: require('./homebar.png'),
   stw:require('./stw.png'),
   messagebox:require('./messagebox.png'),
+  tutorial1:require('./Tutorial1.webp'),
+  tutorial2:require('./Tutorial2.webp'),
+  tutorial3:require('./Tutorial3.webp'),
+  tutorial4:require('./Tutorial4.webp'),
+  tutorial5:require('./Tutorial5.webp'),
+  tutorial6:require('./Tutorial6.webp'),
+  tutorial7:require('./Tutorial7.webp'),
+  tutorial8:require('./Tutorial8.webp'),
+  tutorial9:require('./Tutorial9.webp'),
+  tutorial10:require('./Tutorial10.webp'),
+    tutorial11:require('./Tutorial11.webp'),
 
   
 

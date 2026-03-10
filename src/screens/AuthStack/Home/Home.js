@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { styles } from "./Styles";
-import { Animated, Easing, ImageBackground, Text, TouchableOpacity } from "react-native";
+import { Animated, Easing, ImageBackground, Pressable, Text, TouchableOpacity } from "react-native";
 import SpriteLoader from "../../../components/SprieLoader";
 import { useSelector } from "react-redux";
 import { useNavigation } from "@react-navigation/native";
@@ -46,10 +46,12 @@ export default () => {
             imageStyle={{ resizeMode: 'cover' }}
             style={styles.container}
         >
-            <TouchableOpacity onPress={() => {playButtonSound(); navigation.navigate('PetMenu')}}>
+           <Pressable onPress={() => {playButtonSound();}}>
+           <TouchableOpacity onPress={() => { navigation.navigate('PetMenu')}}>
                 <Text style={styles.name}>Hello {petname}</Text>
                 <Text style={styles.welcome}>is happy</Text>
             </TouchableOpacity>
+           </Pressable>
             <SpriteLoader />
             <RetroStepsBar
                 top={scale(92)}

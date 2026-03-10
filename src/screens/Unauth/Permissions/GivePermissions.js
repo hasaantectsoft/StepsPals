@@ -22,6 +22,7 @@ import { setPetName, setPetKey, setPetSteps } from "../../../redux/slices/petsli
 import { PRIVACY_URL, TERMS_URL } from "../../../utils/extra/links";
 import { setIsMain } from "../../../redux/slices/ismain";
 import { setNewUser } from "../../../redux/slices/tutorialslice";
+import { images } from "../../../assets/images";
 export default () => {
   const navigation = useNavigation();
   const dispatch = useDispatch();
@@ -54,7 +55,7 @@ export default () => {
 
   return (
     <ImageBackground
-      source={require("../../../assets/images/required.png")}
+      source={images.required}
       style={styles.wrapper}
       resizeMode="cover"
     >
