@@ -35,6 +35,7 @@
     "react-i18next": "^16.5.4",
     "react-native": "0.84.1",
     "react-native-actions-sheet": "^0.9.5",
+    "react-native-background-fetch": "^4.3.0",
     "react-native-encrypted-storage": "^4.0.3",
     "react-native-gesture-handler": "^2.16.1",
     "react-native-health-connect": "^3.5.0",

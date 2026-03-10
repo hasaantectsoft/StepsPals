@@ -61,7 +61,7 @@ export default () => {
                     </View>
 
                     <View style={[combineStyles.rowSpacebetween, { left: moderateScale(10) }]}>
-                        <Text style={{ ...combineStyles.regular18, top: moderateScale(8) }}>Sound</Text>
+                        <Text style={{ ...combineStyles.regular18, top: moderateScale(8) }}>Sounds</Text>
                         <PressableIcon
                             icon={Sound ? switchOn : switchOff} 
                             width={100}
