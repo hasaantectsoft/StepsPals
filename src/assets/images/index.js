@@ -43,7 +43,11 @@ export const images = {
   tutorial8:require('./Tutorial8.webp'),
   tutorial9:require('./Tutorial9.webp'),
   tutorial10:require('./Tutorial10.webp'),
-    tutorial11:require('./Tutorial11.webp'),
+  tutorial11:require('./Tutorial11.webp'),
+  permissionenabled: require('./permissionenabled.png'),
+  healthkitpermsiomdis: require('./healthkitpermsiomdis.png'),
+  permisionnotifif: require('./permisionnotifif.png'),
+  healthkitpermsiom: require('./healthkitpermsiom.png'),
 
   
 

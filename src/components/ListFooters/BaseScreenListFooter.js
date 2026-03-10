@@ -10,7 +10,7 @@ export default function BaseScreenListFooter({onPress}) {
   return (
     <View>
       <Text onPress={onPress} style={styles.footerLink}>
-        Powered by: 724.One
+        Powered by: muhammadhasaanwork@gmail.com
       </Text>
       <NativeImage
         onPress={onPress}

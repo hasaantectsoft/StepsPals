@@ -2,7 +2,6 @@ import UIKit
 import React
 import React_RCTAppDelegate
 import ReactAppDependencyProvider
-import RCTAppleHealthKit   
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
@@ -29,10 +28,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       in: window,
       launchOptions: launchOptions
     )
-
-    //  Initialize HealthKit Background Observers
-    if let bridge = delegate.bridge {
-      RCTAppleHealthKit().initializeBackgroundObservers(bridge)
+    // Initialize Apple Health background observers (if RNAppleHealthKit is installed)
+    if let bridge = factory.bridge {
+      if let healthKitClass: AnyClass = NSClassFromString("RCTAppleHealthKit"),
+         let healthKitType = healthKitClass as? NSObject.Type {
+        let healthKit = healthKitType.init()
+        let selector = NSSelectorFromString("initializeBackgroundObservers:")
+        if healthKit.responds(to: selector) {
+          _ = healthKit.perform(selector, with: bridge)
+        }
+      }
     }
 
     return true
