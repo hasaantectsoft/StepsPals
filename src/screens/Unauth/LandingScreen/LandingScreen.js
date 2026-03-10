@@ -8,6 +8,7 @@ import NetInfo from "@react-native-community/netinfo";
 import {  RetryingState, ConnectedState, NoInternetState } from "../../../components/LandingPageComponents";
 import { useNavigation } from '@react-navigation/native';
 import { useSelector } from "react-redux";
+import { images } from "../../../assets/images";
 
 export default function LandingScreen({  }) {
     const [isRetrying, setIsRetrying] = useState(false);
@@ -27,9 +28,7 @@ export default function LandingScreen({  }) {
         if (typeof isNewUser !== 'undefined' && isNewUser === false) {
             if (stack) {
                 navigation.replace('Main', { screen: 'Home' });
-            } else {
-                navigation.replace('PetSelection');
-            }
+            } 
         }
     }, [isNewUser, stack, navigation]);
 
@@ -67,7 +66,7 @@ export default function LandingScreen({  }) {
     return (
         <View style={Styles.container}>
             <ImageBackground
-                source={require("../../../assets/images/required.png")}
+                source={images.required}
                 style={Styles.imgbg}
                 resizeMode="cover"
             >

@@ -34,7 +34,7 @@ export default () => {
     return (
         <View style={Styles.container}>
             <ImageBackground
-                source={require("../../../assets/images/required.png")}
+                source={images.required}
                 style={Styles.imgbg}
                 resizeMode="cover"
             >

@@ -6,6 +6,7 @@ import { Styles } from "./Styles";
 import { Header } from "../../../components";
 import StepSlider from "../../../components/SelectYourGoal/StepSlider";
 import RetroDoneButton from "../../../components/SelectYourGoal/RetroDoneButton";
+import { images } from "../../../assets/images";
 
 export default function SelectGoalScreen() {
     const { params } = useRoute();
@@ -17,7 +18,7 @@ export default function SelectGoalScreen() {
     return (
         <View style={Styles.container}>
             <ImageBackground
-                source={require("../../../assets/images/Statistics.png")}
+                source={images.Statistics}
                 style={Styles.imgbg}
                 resizeMode="cover"
             >
