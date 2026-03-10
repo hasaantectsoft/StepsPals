@@ -11,6 +11,8 @@ import { PRIVACY_URL } from "../../../utils/extra/links";
 import { playButtonSound, startAppSound, stopBackgroundSound } from "../../../utils/SoundManager/SoundManager";
 import { useDispatch, useSelector } from "react-redux";
 import { setMusicSound, setSound } from "../../../redux/slices/soundSlice";
+import { useNavigation } from '@react-navigation/native';
+import { setSignedIn } from '../../../redux/slices/authSlice';
 export default () => {
 
     const { MusicSound, Sound } = useSelector(state => state.soundReducer);
@@ -20,6 +22,7 @@ export default () => {
     const [DisconnectModal, setIsDisConnectModal] = useState(false);
     const [ProgressModal, setIsProgressModal] = useState(false);
     const dispatch = useDispatch();
+    const navigation = useNavigation();
 
 
     useEffect(() => {
@@ -41,6 +44,19 @@ export default () => {
     const handelModal = () => {
         setIsDeleteModalVisible(false)
         setIsProgressModal(true)
+        // mark user as signed out so App navigation shows UnAuthStack
+        dispatch(setSignedIn(false));
+        // try to reset root navigator to landing (if available)
+        try {
+            const parent = navigation.getParent();
+            if (parent && typeof parent.reset === 'function') {
+                parent.reset({ index: 0, routes: [{ name: 'Landing' }] });
+            } else if (typeof navigation.reset === 'function') {
+                navigation.reset({ index: 0, routes: [{ name: 'Landing' }] });
+            }
+        } catch (e) {
+            // silent catch - navigation reset is best-effort
+        }
     }
     return (
         <View style={[combineStyles.combineStyles]}>
@@ -88,7 +104,7 @@ export default () => {
                     </View>
                 </View>
                 <DeleteMessageModal isVisible={isDeleteModalVisible} onClose={() => setIsDeleteModalVisible(false)} subtitle={"Are you sure you want to delete your account?"} btn1text={"No"} btn2text={"Yes"} onpressButton2={handelModal} />
-                <DeleteMessageModal isVisible={DisconnectModal} onClose={() => setIsDisConnectModal(false)} subtitle={"Disconnecting unlinks the game progress on other devices.Are you sure you want to continue?"} btn1text={"Cancel"} btn2text={"Disconnect"} onpressButton2={() => setIsDisConnectModal(false)} title={"Disconnect?"} />
+                <DeleteMessageModal  isVisible={DisconnectModal} onClose={() => setIsDisConnectModal(false)} subtitle={"Disconnecting unlinks the game progress on other devices.Are you sure you want to continue?"} btn1text={"Cancel"} btn2text={"Disconnect"} onpressButton2={() => setIsDisConnectModal(false)} title={"Disconnect?"} />
                 <DeleteMessageModal isVisible={ProgressModal} onpressCenterButton={() => { setIsProgressModal(false); setIsDisConnectModal(true) }} subtitle={"Account deletion in progress?"} centerButtonTxt={"Ok"} centerButton={true} rowBtton={false} />
             </ImageBackground>
         </View>
