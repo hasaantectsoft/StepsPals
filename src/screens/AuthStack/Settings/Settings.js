@@ -50,12 +50,12 @@ export default () => {
                     <View style={[combineStyles.rowSpacebetween, { left: moderateScale(10) }]}>
                         <Text style={styles.textStyle}>Music</Text>
                         <PressableIcon
-                            icon={MusicSound ? switchOn : switchOff} // use Redux state directly
+                            icon={MusicSound ? switchOn : switchOff} 
                             width={100}
                             height={50}
                             onPress={() => {
-                                handleButtonPress(); // play sound if enabled
-                                dispatch(setMusicSound(!MusicSound)); // toggle Redux state
+                                handleButtonPress(); 
+                                dispatch(setMusicSound(!MusicSound)); 
                             }}
                         />
                     </View>
@@ -63,12 +63,12 @@ export default () => {
                     <View style={[combineStyles.rowSpacebetween, { left: moderateScale(10) }]}>
                         <Text style={{ ...combineStyles.regular18, top: moderateScale(8) }}>Sound</Text>
                         <PressableIcon
-                            icon={Sound ? switchOn : switchOff} // use Redux state directly
+                            icon={Sound ? switchOn : switchOff} 
                             width={100}
                             height={50}
                             onPress={() => {
-                                handleButtonPress(); // play sound if enabled
-                                dispatch(setSound(!Sound)); // toggle Redux state
+                                    handleButtonPress(); 
+                                dispatch(setSound(!Sound)); 
                             }}
                         />
                     </View>

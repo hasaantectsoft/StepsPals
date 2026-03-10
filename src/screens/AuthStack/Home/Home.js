@@ -47,7 +47,7 @@ export default () => {
             style={styles.container}
         >
            <Pressable onPress={() => {playButtonSound();}}>
-           <TouchableOpacity onPress={() => { navigation.navigate('PetMenu')}}>
+           <TouchableOpacity hitSlop={30} onPress={() => { navigation.navigate('PetMenu')}}>
                 <Text style={styles.name}>Hello {petname}</Text>
                 <Text style={styles.welcome}>is happy</Text>
             </TouchableOpacity>
@@ -64,17 +64,7 @@ export default () => {
                 steps={3000}
                 goal={5000} />
            
-        {/* ?</SpriteLoader  /> */}
-            {/* <RetroStepsBar 
-            top={scale(92)} 
-            right={scale(100)} 
-            left={scale(100)} 
-            bottom={scale(100)} 
-            width={scale(280)} 
-            height={scale(40)} 
-            borderRadius={scale(20)} 
-            steps={petsteps} 
-            goal={1200} />           */}
+       
 
             <ImageBackground
                 source={images.star}

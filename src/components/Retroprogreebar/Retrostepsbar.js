@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { View, Text, StyleSheet, TouchableOpacity, ImageBackground } from "react-native";
+import React, { useState, useRef } from "react";
+import { View, Text, StyleSheet, TouchableOpacity, Pressable, Animated } from "react-native";
 import { Theme } from "../../libs";
 import { retro } from "../../utils/extra/delay";
-import { scale } from "react-native-size-matters";
+import {  scale } from "react-native-size-matters";
 import { bowl, bowl1, checked, homebar, popp, waterdis, waterfull } from "../../assets/svgs";
 import { SvgXml } from "react-native-svg";
-import { images } from "../../assets/images";
+import { playButtonSound } from "../../utils/SoundManager/SoundManager";
 
 export default function RetroStepsBar({
   top = 0,
@@ -18,15 +18,28 @@ export default function RetroStepsBar({
   steps = 0,
   goal = 5000,
 }) {
-const [boul, setBoul] = useState(0)
-const [pop,setpop]=useState(0)
-const [wat,setwat]=useState(0)
+const [boul, setBoul] = useState(0);
+const [pop, setpop] = useState(0);
+const [wat, setwat] = useState(0);
+const scaleAnim1 = useRef(new Animated.Value(1)).current;
+const scaleAnim2 = useRef(new Animated.Value(1)).current;
+const scaleAnim3 = useRef(new Animated.Value(1)).current;
+
 const progress = goal ? Math.min(steps / goal, 1) : 0;
-  const progressWidth = `${progress * 100}%`;
-  const canFirstPress = steps >= 1500;
-  const canSecondPress = steps >= 2500;
-  const canThirdPress = steps >= 3500;
-  const getIcon = (petsteps, a, b) => (petsteps === 0 ? a : petsteps === 1 ? b : checked);
+const progressWidth = `${progress * 100}%`;
+const canFirstPress = steps >= 1500;
+const canSecondPress = steps >= 2500;
+const canThirdPress = steps >= 3500;
+const scaleFactor = 0.9;
+const animDur = 100;
+const getIcon = (petsteps, a, b) => (petsteps === 0 ? a : petsteps === 1 ? b : checked);
+
+const scaleIn = (anim) => () => {
+  Animated.timing(anim, { toValue: scaleFactor, duration: animDur, useNativeDriver: true }).start();
+};
+const scaleOut = (anim) => () => {
+  Animated.timing(anim, { toValue: 1, duration: animDur, useNativeDriver: true }).start();
+};
   return (
     <View
       style={[
@@ -64,17 +77,27 @@ const progress = goal ? Math.min(steps / goal, 1) : 0;
         </View>
       </View>
      <View style={styles.gap}>
-    <TouchableOpacity onPress={() => setBoul(boul+1)} disabled={!canFirstPress || boul===2}>
-  <SvgXml xml={getIcon(boul,bowl,bowl1)} style={styles.bowlcontainer} height={50} width={40}/>
-</TouchableOpacity>
-
-<TouchableOpacity onPress={() => setwat(wat+1)} disabled={!canSecondPress || wat===2}>
-  <SvgXml xml={getIcon(wat,waterdis,waterfull)} style={styles.bowlcontainer} height={50} width={40}/>
-</TouchableOpacity>
-
-<TouchableOpacity onPress={() => setpop(pop+1)} disabled={!canThirdPress || pop===2}>
-  <SvgXml xml={getIcon(pop,popp,popp)} style={styles.bowlcontainer} height={50} width={40}/>
-</TouchableOpacity>
+      <Pressable onPressIn={scaleIn(scaleAnim1)} onPressOut={scaleOut(scaleAnim1)} onPress={() => playButtonSound()}>
+        <Animated.View style={{ transform: [{ scale: scaleAnim1 }] }}>
+          <TouchableOpacity onPress={() => setBoul(boul+1)} disabled={!canFirstPress || boul===2}>
+            <SvgXml xml={getIcon(boul,bowl,bowl1)} style={styles.bowlcontainer} height={50} width={40}/>
+          </TouchableOpacity>
+        </Animated.View>
+      </Pressable>
+      <Pressable onPressIn={scaleIn(scaleAnim2)} onPressOut={scaleOut(scaleAnim2)} onPress={() => playButtonSound()}>
+        <Animated.View style={{ transform: [{ scale: scaleAnim2 }] }}>
+          <TouchableOpacity onPress={() => setwat(wat+1)} disabled={!canSecondPress || wat===2}>
+            <SvgXml xml={getIcon(wat,waterdis,waterfull)} style={styles.bowlcontainer} height={50} width={40}/>
+          </TouchableOpacity>
+        </Animated.View>
+      </Pressable>
+      <Pressable onPressIn={scaleIn(scaleAnim3)} onPressOut={scaleOut(scaleAnim3)} onPress={() => playButtonSound()}>
+        <Animated.View style={{ transform: [{ scale: scaleAnim3 }] }}>
+          <TouchableOpacity onPress={() => setpop(pop+1)} disabled={!canThirdPress || pop===2}>
+            <SvgXml xml={getIcon(pop,popp,popp)} style={styles.bowlcontainer} height={50} width={40}/>
+          </TouchableOpacity>
+        </Animated.View>
+      </Pressable>
     </View>
      </View>
   );
