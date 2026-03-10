@@ -37,6 +37,7 @@
     "react-native-actions-sheet": "^0.9.5",
     "react-native-encrypted-storage": "^4.0.3",
     "react-native-gesture-handler": "^2.16.1",
+    "react-native-health": "^1.19.0",
     "react-native-image-crop-picker": "^0.40.2",
     "react-native-keyboard-aware-scroll-view": "^0.9.5",
     "react-native-loader-kit": "^4.1.0",
