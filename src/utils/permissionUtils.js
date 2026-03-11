@@ -5,32 +5,9 @@ import {
   request,
   requestMultiple,
   requestNotifications,
-  requestLocationAccuracy,
-  openSettings,
 } from 'react-native-permissions';
-
-const handlePermission = result => {
-  let isPermitted = false;
-  switch (result) {
-    case RESULTS.UNAVAILABLE:
-     
-      break;
-    case RESULTS.DENIED:
-     
-      break;
-    case RESULTS.LIMITED:
-     
-      isPermitted = true;
-      break;
-    case RESULTS.GRANTED:
-     
-      isPermitted = true;
-      break;
-    case RESULTS.BLOCKED:
-      break;
-  }
-  return isPermitted;
-};
+import { handlePermission } from './extra/handlePermission';
+import { authorizeHealthKit } from '../healthkit';
 
 const permissionUtils = {
   getSinglePermission: async permission => {
@@ -67,52 +44,27 @@ const permissionUtils = {
   },
   requestHealthPermission: async () => {
     if (Platform.OS === 'android') {
-      const result = await request(PERMISSIONS.ANDROID.ACTIVITY_RECOGNITION);
-      return result === RESULTS.GRANTED || result === RESULTS.LIMITED;
+      try {
+        const result = await request(PERMISSIONS.ANDROID.ACTIVITY_RECOGNITION);
+        return result === RESULTS.GRANTED || result === RESULTS.LIMITED;
+      } catch (e) {
+        console.log('Health permission error (android):', e);
+        return false;
+      }
     }
-    
+
     if (Platform.OS === 'ios') {
       try {
-        const { initHealthKitPermissions } = require('../services/healthkitObserver');
-        const granted = await new Promise(resolve => {
-          try {
-            initHealthKitPermissions(success => resolve(!!success));
-          } catch (e) {
-            resolve(false);
-          }
-        });
-        if (!granted) {
-          openSettings();
-          return false;
-        }
-        return true;
+        console.log('requesting health permission (ios)');
+        const granted = await authorizeHealthKit();
+        return !!granted;
       } catch (e) {
-        console.log('Health permission error:', e);
-        openSettings();
+        console.log('Health permission error (ios):', e);
         return false;
       }
     }
+
     return false;
-  },
-  openSettings,
-  requestLocationAccuracyPermission: async () => {
-    try {
-      const accuracy = await requestLocationAccuracy({
-        purposeKey:
-          'Need to fetch your location to show active route between two points',
-      });
-      if (
-        accuracy === 'denied' ||
-        accuracy === 'blocked' ||
-        accuracy === 'unavailable'
-      ) {
-        return false;
-      }
-      return true;
-    } catch (error) {
-      console.error(error);
-      return false;
-    }
   },
 };
 

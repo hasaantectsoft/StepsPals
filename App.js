@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 
 
 import React, { useEffect } from 'react';
@@ -12,11 +13,10 @@ import AppNavigation from './src/navigation';
 import {store, persistedStore} from './src/redux/store';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { startAppSound} from './src/utils/SoundManager/SoundManager'
-import { startHealthKitObservers, initHealthKitPermissions } from './src/services/healthkitObserver';
+import { authorizeHealthKit } from './src/healthkit';
 
 export default function App() {
   const queryClient = new QueryClient();
-  // For React Query auto refetch on reconnect behavior in React Native you have to use React Query onlineManager
   onlineManager.setEventListener(setOnline => {
     return NetInfo.addEventListener(state => {
       setOnline(state.isConnected);
@@ -25,16 +25,9 @@ export default function App() {
 
 
   useEffect(() => {
+    authorizeHealthKit();
     startAppSound();
-    let stopObservers;
-    initHealthKitPermissions((granted) => {
-      if (granted) {
-        stopObservers = startHealthKitObservers();
-      }
-    });
-    return () => {
-      stopObservers && stopObservers();
-    };
+  
   },[] );
 
   return (
