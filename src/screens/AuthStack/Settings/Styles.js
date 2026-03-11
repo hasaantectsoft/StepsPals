@@ -24,5 +24,8 @@ export const styles = StyleSheet.create({
         ...combineStyles.regular18,
         marginTop: moderateScale(30),
         bottom: moderateScale(10)
+    },
+    modalStyle:{
+        height: moderateScale(180),
     }
 });

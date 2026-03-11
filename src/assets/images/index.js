@@ -4,7 +4,7 @@ export const images = {
   ModalBackGround: require('./ModalBackGround.png'),
   blueButton: require('./blueButton.png'),
   OringeButton: require('./OringeButton.png'),
-  GravyardBackground: require('./GravyardBackground.png'),
+  GravyardBackground: require('./GraveYard_Background.png'),
   PetGravYard: require('./PetGravYard.png'),
   Statistics: require('./Statistics.png'),
   Cat: require('./Cat.png'),

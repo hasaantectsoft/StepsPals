@@ -45,6 +45,29 @@ export default () => {
     </View>
   );
 
+  const renderFooter = () => {
+    if (loading) {
+      return (
+        <LoaderKitView
+          style={{ width: 50, height: 50, alignSelf: "center", marginVertical: 20 }}
+          name={"BallSpinFadeLoader"}
+          animationSpeedMultiplier={1.0}
+          color={"white"}
+        />
+      );
+    }
+
+    if (visibleData.length === GrayyardArray.length) {
+      return (
+        <Text style={styles.bottomText}>
+          Your earliest pets now rest in memory beyond the graveyard…
+        </Text>
+      );
+    }
+
+    return null;
+  };
+
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -67,16 +90,7 @@ export default () => {
             contentContainerStyle={styles.gravYardContainer}
             onEndReached={loadMore}
             onEndReachedThreshold={0.5}
-            ListFooterComponent={
-              loading ? (
-                <LoaderKitView
-                  style={{ width: 50, height: 50, alignSelf: "center" }}
-                  name={"BallSpinFadeLoader"}
-                  animationSpeedMultiplier={1.0}
-                  color={"white"}
-                />
-              ) : null
-            }
+            ListFooterComponent={renderFooter}
             showsVerticalScrollIndicator={false}
           />
         )}

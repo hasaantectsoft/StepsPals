@@ -66,6 +66,15 @@ export const GrayyardArray=[
   {id:7,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
   {id:8,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
   {id:9,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  // {id:10,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  // {id:11,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  // {id:12,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  // {id:13,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  // {id:14,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  // {id:15,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  // {id:16,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  // {id:17,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
+  // {id:18,name:"Shrumpalo",bornDate:"13.05.25",dieDate:"23.05.25"},
   
 ]
 
@@ -81,7 +90,7 @@ export const LagendArray=[
 
 
 export const PlatinumArray=[
-  {id:1,firstUser:images.Legend_First_Player,name:"Shrumpalo",score:"7400"},
+  {id:1,name:"Shrumpalo",score:"7400"},
   {id:2,name:"Shrumpalo",score:"7400"},
   {id:3,name:"Shrumpalo",score:"7400"},
   {id:4,name:"Shrumpalo",score:"7400"},
@@ -90,7 +99,7 @@ export const PlatinumArray=[
 
 
 export const GoldArray=[
-  {id:1,firstUser:images.Legend_First_Player,name:"Shrumpalo",score:"7400"},
+  {id:1,name:"Shrumpalo",score:"7400"},
   {id:2,name:"Shrumpalo",score:"7400"},
   {id:3,name:"Shrumpalo",score:"7400"},
   {id:4,name:"Shrumpalo",score:"7400"},
@@ -99,7 +108,7 @@ export const GoldArray=[
 
 
 export const SilverArray=[
-  {id:1,firstUser:images.Legend_First_Player,name:"Shrumpalo",score:"7400"},
+  {id:1,name:"Shrumpalo",score:"7400"},
   {id:2,name:"Shrumpalo",score:"7400"},
   {id:3,name:"Shrumpalo",score:"7400"},
   {id:4,name:"Shrumpalo",score:"7400"},
@@ -108,7 +117,7 @@ export const SilverArray=[
 
 
 export const BronzeArray=[
-  {id:1,firstUser:images.Legend_First_Player,name:"Shrumpalo",score:"7400"},
+  {id:1,name:"Shrumpalo",score:"7400"},
   {id:2,name:"Shrumpalo",score:"7400"},
   {id:3,name:"Shrumpalo",score:"7400"},
   {id:4,name:"Shrumpalo",score:"7400"},

@@ -27,5 +27,19 @@ export const styles = StyleSheet.create({
         ...combineStyles.regular16,
         color:Theme.colors.white,
         bottom:moderateScale(33)
+      },
+      timeContainer:{
+        alignItems:"center",
+        marginTop:moderateScale(10),
+        marginBottom:moderateScale(10),
+        gap:moderateScale(5)
+      },
+      timeText:{
+        ...combineStyles.regular8,
+        color:"#2F3450"
+      },
+      timeValue:{
+        ...combineStyles.regular14,
+        color:"#2F3450"
       }
 });

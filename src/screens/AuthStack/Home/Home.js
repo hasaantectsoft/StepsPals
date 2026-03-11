@@ -63,9 +63,9 @@ export default () => {
 
     fetchSteps(); // initial fetch
 
-    // Optional: refresh every 5 seconds (or adjust as needed)
-    const interval = setInterval(fetchSteps, 5000);
-    return () => clearInterval(interval); // cleanup on unmount
+    // // Optional: refresh every 5 seconds (or adjust as needed)
+    // const interval = setInterval(fetchSteps, 5000);
+    // return () => clearInterval(interval); // cleanup on unmount
 }, []);
 
 

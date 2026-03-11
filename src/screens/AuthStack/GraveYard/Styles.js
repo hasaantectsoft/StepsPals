@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
 
   gravYardContainer: {
     paddingHorizontal: moderateScale(10),
-    paddingBottom: moderateScale(300),
+    paddingBottom: moderateScale(200),
   },
 
   row: {
@@ -67,4 +67,13 @@ export const styles = StyleSheet.create({
     ...combineStyles.regular10,
     fontSize: moderateScale(5),
   },
+  bottomText:{
+    ...combineStyles.regular10,
+    textAlign: "center",
+    marginTop: moderateScale(70),
+    lineHeight: moderateScale(18),
+    color:"#6E5B51",
+    width: moderateScale(270),
+    alignSelf:"center"
+  }
 });

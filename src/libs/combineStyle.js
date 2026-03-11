@@ -57,6 +57,7 @@ export const combineStyles = StyleSheet.create({
     backGroundImg: {
         width: "100%",
         height: "100%",
+        resizeMode:"cover",
     },
     row: {
         flexDirection: "row",

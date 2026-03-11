@@ -7,7 +7,7 @@ import NativeButton from "../NativeButton/NativeButton";
 import PressableIcon from "../PressSvg/PressSvg";
 import { Paw } from "../../assets/svgs";
 
-export default function DeleteMessageModal({ backImg, isVisible, onClose, btn1text, btn2text, subtitle, rowBtton = true, centerButton = false, centerButtonTxt, onpressButton2, onpressCenterButton, title, paw = false }) {
+export default function DeleteMessageModal({ backImg, isVisible, onClose, btn1text, btn2text, subtitle, rowBtton = true, centerButton = false, centerButtonTxt, onpressButton2, onpressCenterButton, title, paw = false, swap = false, modalStyle = {} }) {
 
 
   return (
@@ -19,14 +19,14 @@ export default function DeleteMessageModal({ backImg, isVisible, onClose, btn1te
       statusBarTranslucent
     >
       <View style={styles.overlay}>
-        <View style={styles.modalBox}>
-          <ImageBackground source={backImg ? backImg : images.ModalBackGround} imageStyle={styles.imgStyle} style={styles.imgStyle}>
+        <View style={[styles.modalBox,modalStyle]}>
+          <ImageBackground source={backImg ? backImg : images.ModalBackGround} imageStyle={styles.imgStyle} style={[styles.imgStyle]}>
             {
               title &&
-              <Text style={[combineStyles.regular16, { textAlign: "center", gap: 10, }]}>{title}</Text>
+              <Text style={[combineStyles.regular16, styles.title]}>{title}</Text>
 
             }
-            <Text style={[combineStyles.regular14, { textAlign: "center", gap: 10 }]}>{subtitle}</Text>
+            <Text style={[combineStyles.regular14, styles.subtitleStyle]}>{subtitle}</Text>
 
             {
               rowBtton && (
@@ -34,15 +34,17 @@ export default function DeleteMessageModal({ backImg, isVisible, onClose, btn1te
                   <NativeButton
                     title={btn1text}
                     onPress={onClose}
-                    image={images.blueButton}
+                    image={swap?images.OringeButton:images.blueButton}
                     containerStyle={styles.button}
+                     titleStyle={styles.txt}
                   />
 
                   <NativeButton
                     title={btn2text}
                     onPress={onpressButton2}
-                    image={images.OringeButton}
+                    image={swap?images.blueButton:images.OringeButton}
                     containerStyle={styles.button2}
+                    titleStyle={styles.txt}
                   />
                 </>
               )
@@ -56,6 +58,7 @@ export default function DeleteMessageModal({ backImg, isVisible, onClose, btn1te
                     onPress={onpressCenterButton}
                     image={images.blueButton}
                     containerStyle={styles.centerButton}
+                    
                   />
 
                 </>
@@ -85,14 +88,14 @@ const styles = StyleSheet.create({
   modalBox: {
     width: "90%",
     // backgroundColor: "white",
-    height: moderateScale(180),
+    height: moderateScale(230),
     borderRadius: moderateScale(10)
   },
-  title: { fontSize: 18, marginBottom: 20 },
+  title: { fontSize: moderateScale(18), marginBottom: moderateScale(15) },
   closeButton: { padding: 10, backgroundColor: "red", borderRadius: 6 },
   closeText: { color: "white" },
   imgStyle: {
-    paddingHorizontal: moderateScale(10),
+    // paddingHorizontal: moderateScale(10),
     width: "100%",
     height: "100%",
     resizeMode: "stretch",
@@ -125,6 +128,16 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     // backgroundColor:"red"
+  },
+  txt:{
+    fontSize:moderateScale(9),
+    top:moderateScale(2)
+  },
+  subtitleStyle:{
+    textAlign: "center",
+     fontSize:moderateScale(12),
+     width:moderateScale(290),
+     lineHeight:moderateScale(20),
+    //  right:moderateScale(6)
   }
-
 });

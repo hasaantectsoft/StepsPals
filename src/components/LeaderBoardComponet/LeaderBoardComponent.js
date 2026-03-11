@@ -7,7 +7,7 @@ import { styles } from "./style";
 import { images } from "../../assets/images";
 
 
-const LeaderBoardComponent = ({data,title,titleImage,ContainerStyle}) => {
+const LeaderBoardComponent = ({data,title,titleImage,ContainerStyle,titleStyle}) => {
 
   const renderItem = ({ item }) => (
     <View style={styles.gravYard}>
@@ -35,7 +35,7 @@ const LeaderBoardComponent = ({data,title,titleImage,ContainerStyle}) => {
         style={[styles.titleButton]}
         imageStyle={styles.titleimg}
       />
-      <Text style={styles.Lagendtxt}>{title}</Text>
+      <Text style={[styles.Lagendtxt,titleStyle]}>{title}</Text>
 
       <FlatList
         data={data}
