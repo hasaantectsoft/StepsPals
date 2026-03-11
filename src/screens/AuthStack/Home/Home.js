@@ -10,9 +10,11 @@ import { SvgXml } from "react-native-svg";
 import RetroStepsBar from "../../../components/Retroprogreebar/Retrostepsbar";
 import { cake, windowframe } from "../../../assets/svgs";
 import { playButtonSound } from "../../../utils/SoundManager/SoundManager";
+import { scaleIn, scaleOut } from "../../../components/Popaniamtions/Popanimation";
 export default () => {
     const navigation = useNavigation();
     const { petname, petsteps } = useSelector((state) => state.petReducer);
+    const { step } = useSelector((state) => state.progressReducer);
 
     const cloudX = useRef(new Animated.Value(-scale(65))).current;
     useEffect(() => {
@@ -61,17 +63,20 @@ export default () => {
                 width={scale(280)}
                 height={scale(40)}
                 borderRadius={scale(20)}
-                steps={3000}
-                goal={5000} />
+                steps={step}
+                goal={petsteps} />
            
        
 
             <ImageBackground
+            
                 source={images.star}
                 style={styles.starcontainer}
                 imageStyle={{ resizeMode: 'contain' }}
             >
-                <SvgXml xml={cake} style={styles.cakecontainer} height={50} width={40} />
+                <Pressable onPress={() => playButtonSound()} onPressIn={scaleIn()} onPressOut={scaleOut()}>
+                    <SvgXml xml={cake} style={styles.cakecontainer} height={50} width={40} />
+                </Pressable>
             </ImageBackground>
             <ImageBackground 
                 source={images.windowBottom } 

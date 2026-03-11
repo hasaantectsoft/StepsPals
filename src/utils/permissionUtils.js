@@ -50,14 +50,12 @@ const permissionUtils = {
         const result = await request(PERMISSIONS.ANDROID.ACTIVITY_RECOGNITION);
         return result === RESULTS.GRANTED || result === RESULTS.LIMITED;
       } catch (e) {
-        console.log('Health permission error (android):', e);
         return false;
       }
     }
 
     if (Platform.OS === 'ios') {
       try {
-        console.log('requesting health permission (ios) - checking status');
 
         const status = await authorizationStatusFor('HKQuantityTypeIdentifierStepCount');
         // 0 = NOTDETERMINED, 1 = SHARINGDENIED, 2 = SHARINGAUTHORIZED
@@ -66,21 +64,17 @@ const permissionUtils = {
         }
 
         if (status === 1) {
-          // Previously denied — open app settings so user can enable access
-          console.log('HealthKit sharing denied - opening app settings');
+             const grantedRetry = await authorizeHealthKit();
+          if (grantedRetry) return true;
           try {
             await Linking.openSettings();
           } catch (err) {
-            console.warn('Unable to open settings', err);
           }
           return false;
         }
-
-        // Not determined -> request authorization
         const granted = await authorizeHealthKit();
         return !!granted;
       } catch (e) {
-        console.log('Health permission error (ios):', e);
         return false;
       }
     }

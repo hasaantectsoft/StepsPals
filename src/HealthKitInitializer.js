@@ -10,14 +10,12 @@ export default function HealthKitInitializer() {
   useEffect(() => {
     async function init() {
       const ok = await authorizeHealthKit();
-      console.log('requestAuthorization result:', ok);
 
       const available = await isHealthDataAvailableAsync();
-      console.log('isHealthDataAvailableAsync:', available);
+      console.log('Health data available:', available);
 
       const authStatus = await authorizationStatusFor('HKQuantityTypeIdentifierStepCount');
-      console.log('authorizationStatusFor step count:', authStatus);
-
+      console.log('HealthKit authorization status for step count:', authStatus); // 0 = NOTDETERMINED, 1 = SHARINGDENIED, 2 = SHARINGAUTHORIZED
       if (!ok) return;
 
       try {
@@ -31,16 +29,16 @@ export default function HealthKitInitializer() {
           { filter: { date: { startDate: startOfDay, endDate: now } }, unit: 'count' }
         );
 
-        console.log('HealthKit raw response:', res);
 
         // Try common response fields for the statistic result
         const rawSteps = res?.sumQuantity?.quantity ?? res?.mostRecentQuantity?.quantity ?? res?.averageQuantity?.quantity ?? 0;
         const steps = typeof rawSteps === 'string' ? parseFloat(rawSteps) : rawSteps;
+        console.log( steps);
         const rounded = Number.isFinite(steps) ? Math.round(steps) : 0;
-        console.log('Resolved HealthKit steps:', rounded);
+        console.log('Steps today:', rounded);
         dispatch(setProgressStep(rounded));
       } catch (e) {
-        console.warn('Failed to fetch steps from HealthKit', e);
+        console.error(e);
       }
     }
 

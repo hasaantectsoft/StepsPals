@@ -39,8 +39,6 @@
 	<string>StepPals needs Health access to read your step count and track your Pet's progress.</string>
 	<key>NSHealthUpdateUsageDescription</key>
 	<string>StepPals may save step data to Health for accurate tracking.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
 	<key>RCTNewArchEnabled</key>
 	<true/>
 	<key>UIAppFonts</key>
