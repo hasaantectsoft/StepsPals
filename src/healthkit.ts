@@ -3,16 +3,16 @@ import { requestAuthorization } from '@kingstinct/react-native-healthkit';
 
 export async function authorizeHealthKit() {
   try {
-    await requestAuthorization({
+    const granted = await requestAuthorization({
       toRead: [
         'HKQuantityTypeIdentifierStepCount',
-        'HKQuantityTypeIdentifierHeartRate',
+        // 'HKQuantityTypeIdentifierHeartRate',
       ],
-      toShare: [
-        'HKQuantityTypeIdentifierBodyMassIndex',
-      ],
+    //   toShare: [
+    //     'HKQuantityTypeIdentifierBodyMassIndex',
+    //   ],
     });
-    return true;
+    return !!granted;
   } catch (e) {
     console.warn('HealthKit authorization failed', e);
     return false;
