@@ -2,7 +2,6 @@ import UIKit
 import React
 import React_RCTAppDelegate
 import ReactAppDependencyProvider
-
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
@@ -14,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
   ) -> Bool {
+
     let delegate = ReactNativeDelegate()
     let factory = RCTReactNativeFactory(delegate: delegate)
     delegate.dependencyProvider = RCTAppDependencyProvider()
@@ -28,12 +28,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       in: window,
       launchOptions: launchOptions
     )
+    // Initialize Apple Health background observers (if RNAppleHealthKit is installed)
+    if let bridge = factory.bridge {
+      if let healthKitClass: AnyClass = NSClassFromString("RCTAppleHealthKit"),
+         let healthKitType = healthKitClass as? NSObject.Type {
+        let healthKit = healthKitType.init()
+        let selector = NSSelectorFromString("initializeBackgroundObservers:")
+        if healthKit.responds(to: selector) {
+          _ = healthKit.perform(selector, with: bridge)
+        }
+      }
+    }
 
     return true
   }
 }
 
 class ReactNativeDelegate: RCTDefaultReactNativeFactoryDelegate {
+
   override func sourceURL(for bridge: RCTBridge) -> URL? {
     self.bundleURL()
   }

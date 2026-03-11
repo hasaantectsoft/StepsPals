@@ -1,3 +1,6 @@
+/* eslint-disable react-native/no-inline-styles */
+
+
 import React, { useEffect } from 'react';
 import './src/locals/i18n';
 import {Provider} from 'react-redux';
@@ -10,6 +13,8 @@ import AppNavigation from './src/navigation';
 import {store, persistedStore} from './src/redux/store';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { startAppSound} from './src/utils/SoundManager/SoundManager'
+import { authorizeHealthKit } from './src/healthkit';
+import HealthKitInitializer from './src/HealthKitInitializer';
 
 export default function App() {
   const queryClient = new QueryClient();
@@ -21,7 +26,9 @@ export default function App() {
 
 
   useEffect(() => {
-    startAppSound(); 
+    authorizeHealthKit();
+    startAppSound();
+  
   },[] );
 
   return (
@@ -31,6 +38,7 @@ export default function App() {
         <PersistGate loading={null} persistor={persistedStore}>
           <SafeAreaProvider>
              <StatusBar barStyle="dark-content" backgroundColor="transparent" />
+             <HealthKitInitializer />
               <AppNavigation />
           </SafeAreaProvider>
         </PersistGate>

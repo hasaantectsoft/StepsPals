@@ -9,7 +9,6 @@ import {  RetryingState, ConnectedState, NoInternetState } from "../../../compon
 import { useNavigation } from '@react-navigation/native';
 import { useSelector } from "react-redux";
 import { images } from "../../../assets/images";
-import { delay } from "../../../utils/extra/delay";
 
 export default function LandingScreen({  }) {
     const [isRetrying, setIsRetrying] = useState(false);
@@ -54,7 +53,7 @@ export default function LandingScreen({  }) {
     const handleStart = () => {
         console.log("Starting app...",stack);
         if(stack){
-            navigation.replace('Main', { screen: 'Home' });
+            navigation.replace('Main');
             return;
         }
         else{

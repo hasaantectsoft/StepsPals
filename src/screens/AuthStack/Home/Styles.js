@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 import { scale } from "react-native-size-matters";
 import { Retro } from "../../../utils/extra/retro";
 import { Theme } from "../../../libs";
@@ -13,7 +13,8 @@ export const styles = StyleSheet.create({
         color: Theme.colors.white,
         textAlign: 'center',
         position: 'absolute',
-        top: scale(290),
+        
+        top: Platform.OS === 'ios' ? scale(270) : scale(290),
         left: 0,
         right: 0,
     },
@@ -23,7 +24,7 @@ export const styles = StyleSheet.create({
         color: Theme.colors.yellow,
         textAlign: 'center',
         position: 'absolute',
-        top: scale(300),
+        top: Platform.OS === 'ios' ? scale(280) : scale(300),
         left: 0,
         right: 0,
     },
@@ -68,6 +69,16 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    cakecontainer: {},
-    
+    cakecontainer: {
+        width: scale(40),
+        height: scale(50),
+    },
+    cakeTouchable: {
+        position: 'absolute',
+        // adjust these values to shift the touchable where you want
+        top: scale(8),
+        right: scale(10),
+        zIndex: 6,
+    },
+    collectioncontainer: { alignContent: 'center', position: 'absolute', top: scale(220), left: scale(20) }
 });

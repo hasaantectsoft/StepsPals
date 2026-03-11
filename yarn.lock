@@ -1384,6 +1384,11 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@kingstinct/react-native-healthkit@^13.3.0":
+  version "13.3.0"
+  resolved "https://registry.yarnpkg.com/@kingstinct/react-native-healthkit/-/react-native-healthkit-13.3.0.tgz#a8237cf2c108c16077db68fc411f4133b8eb0e16"
+  integrity sha512-tIr8N82aZCL2uasBWKT7c+7f1Fp5uQZ/R+DXDCAZKe4D6RTzMcWylFI5mZLZEBv/BN6W8gZBLytGfiys0fLrAw==
+
 "@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1":
   version "5.1.1-v1"
   resolved "https://registry.yarnpkg.com/@nicolo-ribaudo/eslint-scope-5-internals/-/eslint-scope-5-internals-5.1.1-v1.tgz#dbf733a965ca47b1973177dc0bb6c889edcfb129"
@@ -6131,6 +6136,11 @@ react-native-modal@^13.0.1:
   integrity sha512-jCUR2DAskuZtVIbnt2ZssX70DCbTLydkL1Glv1Fc/fqVIhq1LpwBK2hKgSf9VIINXFnDjjGIMIC9HhDXnW7Enw==
   dependencies:
     react-native-animatable "1.4.0"
+
+react-native-nitro-modules@^0.35.0:
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/react-native-nitro-modules/-/react-native-nitro-modules-0.35.0.tgz#e026055bceb1e5b43a54b131d0740b8e61412b2b"
+  integrity sha512-Eho1yEcLbsteGpBFn2XZOp5FIptnEciWzuYBW49S0jo41Un2LeyesIO/MqYLY/c5o7D9Fw9th4pxGtV7OAb0+g==
 
 react-native-permissions@^3.10.1:
   version "3.10.1"

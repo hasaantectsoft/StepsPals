@@ -18,6 +18,7 @@ import themeSlice from './slices/themeSlice';
 import authSlice from './slices/authSlice';
 import tutorialSlice from './slices/tutorialslice';
 import petSlice from './slices/petslice';
+import progressSlice from './slices/progressSlice';
 import soundSlice from './slices/soundSlice';
 
 const persistConfig = {
@@ -33,6 +34,7 @@ const reducers = combineReducers({
   authReducer: authSlice,
   tutorialReducer: tutorialSlice,
   petReducer: petSlice,
+  progressReducer: progressSlice,
   soundReducer:soundSlice
   });
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { styles } from "./Styles";
-import { Animated, Easing, ImageBackground, Pressable, Text, TouchableOpacity } from "react-native";
+import { Animated, Easing, Image, ImageBackground, Pressable, Text, TouchableOpacity, View } from "react-native";
 import SpriteLoader from "../../../components/SprieLoader";
 import { useSelector } from "react-redux";
 import { useNavigation } from "@react-navigation/native";
@@ -9,7 +9,7 @@ import { images } from "../../../assets/images";
 import { NativeModules } from 'react-native';
 import { SvgXml } from "react-native-svg";
 import RetroStepsBar from "../../../components/Retroprogreebar/Retrostepsbar";
-import { cake, windowframe } from "../../../assets/svgs";
+import { cake, newfeature, windowframe } from "../../../assets/svgs";
 import { playButtonSound } from "../../../utils/SoundManager/SoundManager";
 import { checkBackgroundAccess, getTodaySteps, initializeHealthConnect, requestPermissions } from "../../../utils/StepCounter";
 export default () => {
@@ -74,6 +74,7 @@ export default () => {
 
 
 
+    const { step } = useSelector((state) => state.progressReducer);
     const cloudX = useRef(new Animated.Value(-scale(65))).current;
     useEffect(() => {
         const cloudWidth = scale(65);
@@ -121,17 +122,25 @@ export default () => {
                 width={scale(280)}
                 height={scale(40)}
                 borderRadius={scale(20)}
-                steps={3000}
-                goal={5000} />
+                steps={step}
+                goal={petsteps} />
 
 
-
+            <View style={styles.collectioncontainer}>
+                <TouchableOpacity onPress={() => { playButtonSound(); navigation.navigate('Collection') }}>
+                    <Image source={images.collection} style={{ width: scale(45), height: scale(45) }} />
+                </TouchableOpacity>                        
+                <SvgXml height={scale(45)} width={scale(45)} xml={newfeature} />
+            </View>
             <ImageBackground
+
                 source={images.star}
                 style={styles.starcontainer}
                 imageStyle={{ resizeMode: 'contain' }}
             >
-                <SvgXml xml={cake} style={styles.cakecontainer} height={50} width={40} />
+                <TouchableOpacity onPress={() => playButtonSound()}>
+                    <SvgXml xml={cake} style={styles.cakecontainer} height={50} width={40} />
+                </TouchableOpacity>
             </ImageBackground>
             <ImageBackground
                 source={images.windowBottom}

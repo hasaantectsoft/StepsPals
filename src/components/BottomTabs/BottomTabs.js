@@ -89,7 +89,7 @@ const BottomTabs = ({ activeTab, onTabPress }) => {
                             >
                                 <Image
                                     source={tab.icon}
-                                    style={[styles.tabIcon, { opacity: activeTab === tab.name ? 1 : 0.6 }]}
+                                    style={[styles.tabIcon, { opacity: activeTab === tab.name ? 1 : 1 }]}
                                     resizeMode="contain"
                                 />
 

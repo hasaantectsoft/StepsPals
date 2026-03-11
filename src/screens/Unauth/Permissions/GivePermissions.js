@@ -18,7 +18,6 @@ import { setSignedIn } from "../../../redux/slices/authSlice";
 import { permissionUtils } from "../../../utils";
 import { scale } from "react-native-size-matters";
 import { setPetName, setPetKey, setPetSteps } from "../../../redux/slices/petslice";
-// need to add corrcet url here
 import { PRIVACY_URL, TERMS_URL } from "../../../utils/extra/links";
 import { setIsMain } from "../../../redux/slices/ismain";
 import { setNewUser } from "../../../redux/slices/tutorialslice";
@@ -51,7 +50,6 @@ export default () => {
     const granted = await permissionUtils.requestHealthPermission();
     setHealthGranted(granted);
   };
-  //   console.log(notifGranted)
 
   return (
     <ImageBackground
@@ -73,7 +71,7 @@ export default () => {
       >
         <TouchableOpacity onPress={onRequestNotification} disabled={notifGranted}>
           <Image
-            source={notifGranted ? require("../../../assets/images/permisionnotifif.png") : require("../../../assets/images/healthkitpermsiom.png")}
+            source={notifGranted ?images.permisionnotifif : images.healthkitpermsiom}
             height={scale(100)}
             resizeMode="contain"
             style={styles.permissionsImage}
@@ -81,7 +79,7 @@ export default () => {
         </TouchableOpacity>
         <TouchableOpacity onPress={onRequestHealth} disabled={healthGranted}>
           <Image
-            source={healthGranted ? require("../../../assets/images/permissionenabled.png") : require("../../../assets/images/healthkitpermsiomdis.png")}
+            source={healthGranted ? images.permissionenabled : images.healthkitpermsiomdis}
             height={scale(100)}
             resizeMode="contain"
             style={styles.permissionsImage}
