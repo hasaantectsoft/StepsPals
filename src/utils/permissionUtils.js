@@ -8,6 +8,8 @@ import {
 } from 'react-native-permissions';
 import { handlePermission } from './extra/handlePermission';
 import { authorizeHealthKit } from '../healthkit';
+import { authorizationStatusFor } from '@kingstinct/react-native-healthkit';
+import { Linking } from 'react-native';
 
 const permissionUtils = {
   getSinglePermission: async permission => {
@@ -55,7 +57,26 @@ const permissionUtils = {
 
     if (Platform.OS === 'ios') {
       try {
-        console.log('requesting health permission (ios)');
+        console.log('requesting health permission (ios) - checking status');
+
+        const status = await authorizationStatusFor('HKQuantityTypeIdentifierStepCount');
+        // 0 = NOTDETERMINED, 1 = SHARINGDENIED, 2 = SHARINGAUTHORIZED
+        if (status === 2) {
+          return true;
+        }
+
+        if (status === 1) {
+          // Previously denied — open app settings so user can enable access
+          console.log('HealthKit sharing denied - opening app settings');
+          try {
+            await Linking.openSettings();
+          } catch (err) {
+            console.warn('Unable to open settings', err);
+          }
+          return false;
+        }
+
+        // Not determined -> request authorization
         const granted = await authorizeHealthKit();
         return !!granted;
       } catch (e) {
