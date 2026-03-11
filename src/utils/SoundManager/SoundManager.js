@@ -17,9 +17,7 @@ export const startAppSound = () => {
     SoundPlayer.playAsset(APP_SOUND);
     SoundPlayer.setNumberOfLoops(-1); // Loop infinitely
     isPlaying = true;
-    console.log('Background music started (looping)');
   } catch (e) {
-    console.log('Error playing background music', e);
     isPlaying = false;
   }
 };
@@ -28,9 +26,7 @@ export const stopBackgroundSound = () => {
   try {
     SoundPlayer.stop();
     isPlaying = false;
-    console.log('Background music stopped');
   } catch (e) {
-    console.log('Error stopping background music', e);
   }
 };
 

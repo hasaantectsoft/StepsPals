@@ -69,6 +69,16 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    cakecontainer: {},
-    
+    cakecontainer: {
+        width: scale(40),
+        height: scale(50),
+    },
+    cakeTouchable: {
+        position: 'absolute',
+        // adjust these values to shift the touchable where you want
+        top: scale(8),
+        right: scale(10),
+        zIndex: 6,
+    },
+    collectioncontainer: { alignContent: 'center', position: 'absolute', top: scale(220), left: scale(20) }
 });

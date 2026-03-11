@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 import BottomTab from './BottomStack/BottomTabs';
 import PetMenu from '../screens/AuthStack/PetMenu/PetMenu';
 import SubscriptionScreen from '../screens/AuthStack/SubscriptionScreen/SubscriptionScreen';
+import CollectionScreen from '../screens/AuthStack/CollectionScreen/CollectionScreen';
 function AuthStack() {
   const Stack = createNativeStackNavigator();
   const screens = {
@@ -14,6 +15,7 @@ function AuthStack() {
     Main: BottomTab,
     PetMenu: PetMenu,
     SubscriptionScreen:SubscriptionScreen,
+    Collection:CollectionScreen
     
 
   };
@@ -26,7 +28,7 @@ console.log(imnewaccount)
       screenOptions={{
         headerShown: false,
         statusBarAnimation: 'fade',
-        animation: 'slide_from_bottom',
+        animation: 'slide_from_right',
         orientation: 'default',
         freezeOnBlur: true,
       }}>

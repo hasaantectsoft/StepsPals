@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { styles } from "./Styles";
-import { Animated, Easing, ImageBackground, Pressable, Text, TouchableOpacity } from "react-native";
+import { Animated, Easing, Image, ImageBackground, Pressable, Text, TouchableOpacity, View } from "react-native";
 import SpriteLoader from "../../../components/SprieLoader";
 import { useSelector } from "react-redux";
 import { useNavigation } from "@react-navigation/native";
@@ -8,14 +8,12 @@ import { scale } from "react-native-size-matters";
 import { images } from "../../../assets/images";
 import { SvgXml } from "react-native-svg";
 import RetroStepsBar from "../../../components/Retroprogreebar/Retrostepsbar";
-import { cake, windowframe } from "../../../assets/svgs";
+import { cake, newfeature, windowframe } from "../../../assets/svgs";
 import { playButtonSound } from "../../../utils/SoundManager/SoundManager";
-import { scaleIn, scaleOut } from "../../../components/Popaniamtions/Popanimation";
 export default () => {
     const navigation = useNavigation();
     const { petname, petsteps } = useSelector((state) => state.petReducer);
     const { step } = useSelector((state) => state.progressReducer);
-
     const cloudX = useRef(new Animated.Value(-scale(65))).current;
     useEffect(() => {
         const cloudWidth = scale(65);
@@ -48,12 +46,13 @@ export default () => {
             imageStyle={{ resizeMode: 'cover' }}
             style={styles.container}
         >
-           <Pressable onPress={() => {playButtonSound();}}>
-           <TouchableOpacity hitSlop={30} onPress={() => { navigation.navigate('PetMenu')}}>
-                <Text style={styles.name}>Hello {petname}</Text>
-                <Text style={styles.welcome}>is happy</Text>
-            </TouchableOpacity>
-           </Pressable>
+            <Pressable onPress={() => { playButtonSound(); }}>
+                <TouchableOpacity hitSlop={30} onPress={() => { navigation.navigate('PetMenu') }}>
+                    <Text style={styles.name}>Hello {petname}</Text>
+                    <Text style={styles.welcome}>is happy</Text>
+                </TouchableOpacity>
+            </Pressable>
+
             <SpriteLoader />
             <RetroStepsBar
                 top={scale(92)}
@@ -65,31 +64,36 @@ export default () => {
                 borderRadius={scale(20)}
                 steps={step}
                 goal={petsteps} />
-           
-       
 
+
+            <View style={styles.collectioncontainer}>
+                <TouchableOpacity onPress={() => { playButtonSound(); navigation.navigate('Collection') }}>
+                    <Image source={images.collection} style={{ width: scale(45), height: scale(45) }} />
+                </TouchableOpacity>                        
+                <SvgXml height={scale(45)} width={scale(45)} xml={newfeature} />
+            </View>
             <ImageBackground
-            
+
                 source={images.star}
                 style={styles.starcontainer}
                 imageStyle={{ resizeMode: 'contain' }}
             >
-                <Pressable onPress={() => playButtonSound()} onPressIn={scaleIn()} onPressOut={scaleOut()}>
+                <TouchableOpacity onPress={() => playButtonSound()}>
                     <SvgXml xml={cake} style={styles.cakecontainer} height={50} width={40} />
-                </Pressable>
+                </TouchableOpacity>
             </ImageBackground>
-            <ImageBackground 
-                source={images.windowBottom } 
-                imageStyle={styles.winowframe} 
+            <ImageBackground
+                source={images.windowBottom}
+                imageStyle={styles.winowframe}
                 style={styles.windowContainer}>
                 <Animated.Image
-                    style={[styles.cloudImage, 
+                    style={[styles.cloudImage,
                     { transform: [{ translateX: cloudX }] }]}
                     resizeMode="contain"
                     source={images.Cloud}
                 />
             </ImageBackground>
-            <SvgXml style={styles.windowFrameImage} height={scale(100)} width={scale(120)} xml={windowframe}/>
+            <SvgXml style={styles.windowFrameImage} height={scale(100)} width={scale(120)} xml={windowframe} />
 
 
         </ImageBackground>
