@@ -7,6 +7,7 @@ import { cat, dog, dino } from "../../../assets/svgs";
 import { styles } from "./styles";
 import ScalePressable from "../../../components/ScalePressable/ScalePressable";
 import { playButtonSound } from "../../../utils/SoundManager/SoundManager";
+import { scale } from "react-native-size-matters";
 
 const petSvgs = { Dog: dog, Cat: cat, Dino: dino };
 
@@ -38,7 +39,11 @@ export default function NameYourPet() {
                 <Header title="" subtitle="" onBackPress={() => navigation.goBack()} />
             </View>
             <View style={styles.wrapper}>
-                <View style={styles.card}>
+                <ImageBackground imageStyle={{
+                    resizeMode: 'contain',
+                    width: scale(250),
+                    height: scale(260),
+                }} source={require('../../../assets/images/box.png')} style={styles.card}>
                     <Text style={styles.title}>Name Your Pet</Text>
                     <View style={styles.petImageWrap}>
                         <SvgXml xml={PetSvg} width={90} height={90} preserveAspectRatio="xMidYMid meet" />
@@ -57,7 +62,7 @@ export default function NameYourPet() {
                     />
                    </ImageBackground>
                     {error ? <Text style={styles.errorText}>{error}</Text> : null}
-                </View>
+                </ImageBackground>
                 <ScalePressable disabled={!petName} onPress={handleDone}>
                 <NextButton disabled={!petName} text={petName ? "Done" : "Done"} useTouchable={false} />
                 </ScalePressable>

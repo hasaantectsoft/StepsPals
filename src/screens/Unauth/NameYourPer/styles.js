@@ -37,15 +37,13 @@ export const styles = StyleSheet.create({
         color: Theme.colors.darkblue,
     },
     card: {
-        backgroundColor: Theme.colors.oragne,
-        borderWidth: 4,
-        borderColor: Theme.colors.white,
         borderRadius: scale(12),
         paddingVertical: scale(24),
         paddingHorizontal: scale(20),
         alignItems: "center",
         width: "100%",
         maxWidth: scale(250),
+        marginBottom: scale(100),
     },
     title: {
         fontFamily: Theme.typography.Retro.fontFamily,
