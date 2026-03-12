@@ -56,6 +56,12 @@ loading100:require('./loadingbarfilled.png'),
   GraveYardCat: require('./GraveYardCat.png'),
   ProgressBarHead: require('./ProgressBarHead.png'),
   SwitchHead: require('./SwitchHead.png'),
+  PetCollecionBackground: require('./PetCollecionBackground.jpeg'),
+  PetCollectionWindow: require('./PetCollectionWindow.png'),
+  CollectionCard: require('./CollectionCard.png'),
+  CollectionLayer: require('./CollectionLayer.png'),
+  collectionLogo: require('./collectionLogo.png'),
+
 
 
 

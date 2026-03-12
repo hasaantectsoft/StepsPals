@@ -15,7 +15,7 @@ function AuthStack() {
     Main: BottomTab,
     PetMenu: PetMenu,
     SubscriptionScreen:SubscriptionScreen,
-    Collection:CollectionScreen
+    
     
 
   };

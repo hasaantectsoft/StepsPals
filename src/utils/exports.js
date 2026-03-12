@@ -130,3 +130,28 @@ export const SubsucripitonArray=[
   {id:2,type:"Monthly",freeTrails:"3-day free trial,then",prise:"9.99 USD/month",Access:"Full access.Auto-renew Monthly",title:"StepPals Monthly",active:false},
   {id:3,type:"Weekly",freeTrails:"3-day free trial,then",prise:"2.99 USD/week",Access:"Full access.Auto-renews Weekly",title:"StepPals Weekly",active:false},
 ]
+
+
+export const PetCollectionArray=[
+  {id:1,name:"Pet Name", date:'13.05.25',img:images.Cat},
+  {id:2,name:"Pet Name", date:'13.05.25',img:images.Dog},
+  {id:3,name:"Pet Name", date:'13.05.25',img:images.Dino},
+  {id:4,name:"Pet Name", date:'13.05.25',img:images.Cat},
+  {id:5,name:"Pet Name", date:'13.05.25',img:images.Dog},
+  {id:6,name:"Pet Name", date:'13.05.25',img:images.Dino},
+  {id:7,name:"Pet Name", date:'13.05.25',img:images.Dog},
+  {id:8,name:"Pet Name", date:'13.05.25',img:images.Dino},
+  {id:9,name:"Pet Name", date:'13.05.25',img:images.Cat},
+  {id:10,name:"Pet Name", date:'13.05.25',img:images.Dino},
+  {id:11,name:"Pet Name", date:'13.05.25',img:images.Dino},
+  {id:12,name:"Pet Name", date:'13.05.25',img:images.Dino},
+  {id:13,name:"Pet Name", date:'13.05.25',img:images.Dino},
+  {id:14,name:"Pet Name", date:'13.05.25',img:images.Dino},
+  {id:15,name:"Pet Name", date:'13.05.25',img:images.Cat},
+  {id:16,name:"Pet Name", date:'13.05.25',img:images.Dino},
+  {id:17,name:"Pet Name", date:'13.05.25',img:images.Dino},
+  {id:18,name:"Pet Name", date:'13.05.25',img:images.Dino},
+  {id:19,name:"Pet Name", date:'13.05.25',img:images.Dino},
+  {id:20,name:"Pet Name", date:'13.05.25',img:images.Dino},
+  {id:21,name:"Pet Name", date:'13.05.25',img:images.Cat},
+]

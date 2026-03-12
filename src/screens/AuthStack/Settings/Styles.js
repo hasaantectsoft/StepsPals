@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
     main: {
         flex: 1,
         paddingHorizontal: moderateScale(40),
-        paddingTop: moderateScale(90),
+        paddingTop: moderateScale(10),
         gap: moderateScale(20),
     },
     buttonContainer: {
@@ -27,5 +27,16 @@ export const styles = StyleSheet.create({
     },
     modalStyle:{
         height: moderateScale(180),
+    },
+    title:{
+        ...combineStyles.regular26, 
+        textAlign: "center" ,
+        marginTop: moderateScale(60)
+    },
+    version:{
+        textAlign: "center",
+        marginTop: moderateScale(20),
+        ...combineStyles.regular8,
+
     }
 });

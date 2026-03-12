@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { styles } from "./Styles";
-import { ImageBackground, Linking, Platform, Text, View } from "react-native";
+import { ImageBackground, Linking, Platform, Text, View,ScrollView } from "react-native";
 import { images } from "../../../assets/images";
 import { combineStyles } from "../../../libs/combineStyle";
 import { DeleteButtonSvg, PrivacyPolicyBtnSvg, RestorePurchaceBtnSvg, SignInWithAppleBtnSvg, SignInWithGoogleBtnSvg, SupportSvg, switchOff, switchOn } from "../../../assets/svgs";
@@ -14,11 +14,10 @@ import { setMusicSound, setSound } from "../../../redux/slices/soundSlice";
 import { useNavigation } from '@react-navigation/native';
 import { setSignedIn } from '../../../redux/slices/authSlice';
 import AnimatedSwitch from "../../../components/Switch/Switch";
+
 export default () => {
 
     const { MusicSound, Sound } = useSelector(state => state.soundReducer);
-    const [MusicIsOn, setMusicIsOn] = useState(MusicSound);
-    const [SoundIsOn, setSoundIsOn] = useState(Sound);
     const [isDeleteModalVisible, setIsDeleteModalVisible] = useState(false);
     const [DisconnectModal, setIsDisConnectModal] = useState(false);
     const [ProgressModal, setIsProgressModal] = useState(false);
@@ -60,35 +59,31 @@ export default () => {
     return (
         <View style={[combineStyles.combineStyles]}>
             <ImageBackground source={images.yellowBackground} style={styles.backgroundImage}>
+                    <Text style={styles.title}>Settings</Text>
+                <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
                 <View style={styles.main}>
-                    <Text style={{ ...combineStyles.regular26, textAlign: "center" }}>Settings</Text>
-                    <View style={[combineStyles.rowSpacebetween, { left: moderateScale(10) }]}>
+                 
+                     <View style={[combineStyles.rowSpacebetween, { left: moderateScale(10) }]}>
                         <Text style={styles.textStyle}>Music</Text>
-                        {/* <PressableIcon
-                            icon={MusicSound ? switchOn : switchOff}
-                            width={100}
-                            height={50}
-                            onPress={() => {
-                                handleButtonPress();
-                                dispatch(setMusicSound(!MusicSound));
-                            }}
-                        /> */}
+
                         <AnimatedSwitch
-  value={MusicSound}          // true/false from Redux
-  images={images}
-  onValueChange={(newVal) => dispatch(setMusicSound(newVal))}
-/>
+                            key="music-switch"
+                            value={MusicSound}
+                            images={images}
+                            onValueChange={(newVal) => {
+                                dispatch(setMusicSound(newVal));
+                            }}
+                        />
                     </View>
 
                     <View style={[combineStyles.rowSpacebetween, { left: moderateScale(10) }]}>
                         <Text style={{ ...combineStyles.regular18, top: moderateScale(8) }}>Sounds</Text>
-                        <PressableIcon
-                            icon={Sound ? switchOn : switchOff}
-                            width={100}
-                            height={50}
-                            onPress={() => {
-                                handleButtonPress();
-                                dispatch(setSound(!Sound));
+                           <AnimatedSwitch
+                            key="sound-switch"
+                            value={Sound}
+                            images={images}
+                            onValueChange={(newVal) => {
+                                dispatch(setSound(newVal));
                             }}
                         />
                     </View>
@@ -106,8 +101,10 @@ export default () => {
                         <PressableIcon icon={SupportSvg} width={"100%"} height={60} />
                         <PressableIcon icon={RestorePurchaceBtnSvg} width={"100%"} height={60} />
                         <PressableIcon icon={DeleteButtonSvg} width={"100%"} height={60} onPress={() => setIsDeleteModalVisible(true)} />
+                            <Text style={styles.version}>Ver. 0.025</Text>
                     </View>
                 </View>
+                   </ScrollView>
                 <DeleteMessageModal isVisible={isDeleteModalVisible} onClose={() => setIsDeleteModalVisible(false)} subtitle={"Are you sure you want to delete your account?"} btn1text={"No"} btn2text={"Yes"} onpressButton2={handelModal} modalStyle={styles.modalStyle} />
                 <DeleteMessageModal isVisible={DisconnectModal} onClose={() => setIsDisConnectModal(false)} subtitle={"Disconnecting unlinks the game progress on other devices.Are you sure you want to continue?"} btn1text={"Cancel"} btn2text={"Disconnect"} onpressButton2={() => setIsDisConnectModal(false)} title={"Disconnect?"} swap={true} />
                 <DeleteMessageModal isVisible={ProgressModal} onpressCenterButton={() => { setIsProgressModal(false); setIsDisConnectModal(true) }} subtitle={"Account deletion in progress?"} centerButtonTxt={"Ok"} centerButton={true} rowBtton={false} modalStyle={styles.modalStyle} />
