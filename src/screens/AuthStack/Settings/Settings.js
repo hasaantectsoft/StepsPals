@@ -13,6 +13,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setMusicSound, setSound } from "../../../redux/slices/soundSlice";
 import { useNavigation } from '@react-navigation/native';
 import { setSignedIn } from '../../../redux/slices/authSlice';
+import AnimatedSwitch from "../../../components/Switch/Switch";
 export default () => {
 
     const { MusicSound, Sound } = useSelector(state => state.soundReducer);
@@ -63,7 +64,7 @@ export default () => {
                     <Text style={{ ...combineStyles.regular26, textAlign: "center" }}>Settings</Text>
                     <View style={[combineStyles.rowSpacebetween, { left: moderateScale(10) }]}>
                         <Text style={styles.textStyle}>Music</Text>
-                        <PressableIcon
+                        {/* <PressableIcon
                             icon={MusicSound ? switchOn : switchOff}
                             width={100}
                             height={50}
@@ -71,7 +72,12 @@ export default () => {
                                 handleButtonPress();
                                 dispatch(setMusicSound(!MusicSound));
                             }}
-                        />
+                        /> */}
+                        <AnimatedSwitch
+  value={MusicSound}          // true/false from Redux
+  images={images}
+  onValueChange={(newVal) => dispatch(setMusicSound(newVal))}
+/>
                     </View>
 
                     <View style={[combineStyles.rowSpacebetween, { left: moderateScale(10) }]}>

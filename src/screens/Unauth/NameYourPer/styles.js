@@ -10,6 +10,7 @@ export const styles = StyleSheet.create({
     },
     headerContainer: {
         paddingTop: scale(30),
+        
     },
     wrapper: {
         flex: 1,

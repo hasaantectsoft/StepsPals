@@ -36,7 +36,7 @@ export default function NameYourPet() {
             resizeMode="cover"
         >
             <View style={styles.headerContainer}>
-                <Header title="" subtitle="" onBackPress={() => navigation.goBack()} />
+                <Header title="" subtitle="" onBackPress={() => navigation.goBack()} conatiner={{paddingHorizontal: scale(20),paddingTop:scale(20)}} />
             </View>
             <View style={styles.wrapper}>
                 <ImageBackground imageStyle={{

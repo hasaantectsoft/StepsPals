@@ -1,6 +1,7 @@
 import { Dimensions, StyleSheet, Text, View } from "react-native";
 import { combineStyles } from "../../../libs/combineStyle";
 import { Theme } from "../../../libs";
+import { moderateScale } from "react-native-size-matters";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 const isSmallScreen = SCREEN_WIDTH <= 375;
@@ -30,6 +31,7 @@ const styles = StyleSheet.create({
   details: {
     alignSelf: "center",
     marginVertical: 10,
+    gap:moderateScale(10)
   },
   detailText: {
     ...combineStyles.regular12,
