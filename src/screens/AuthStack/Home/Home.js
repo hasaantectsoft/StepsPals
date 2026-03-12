@@ -12,12 +12,15 @@ import { SvgXml } from "react-native-svg";
 import RetroStepsBar from "../../../components/Retroprogreebar/Retrostepsbar";
 import { cake, newfeature, windowframe } from "../../../assets/svgs";
 import { playButtonSound } from "../../../utils/SoundManager/SoundManager";
+import ScalePressable from "../../../components/ScalePressable/ScalePressable";
 export default () => {
     const navigation = useNavigation();
     const dispatch = useDispatch();
     const { petname, petsteps } = useSelector((state) => state.petReducer);
     const { step } = useSelector((state) => state.progressReducer);
     const cloudX = useRef(new Animated.Value(-scale(65))).current;
+    const cloudFloat = useRef(new Animated.Value(0)).current;
+    const cloudY = cloudFloat.interpolate({ inputRange: [0, 1], outputRange: [-scale(4), scale(4)] });
 
     useEffect(() => {
         if (Platform.OS === 'android') {
@@ -35,7 +38,7 @@ export default () => {
             Animated.sequence([
                 Animated.timing(cloudX, {
                     toValue: windowWidth,
-                    duration: 6000,
+                    duration: 3000,
                     easing: Easing.linear,
                     useNativeDriver: true,
                 }),
@@ -47,9 +50,17 @@ export default () => {
             ])
         );
 
+        const floatAnim = Animated.loop(
+            Animated.sequence([
+                Animated.timing(cloudFloat, { toValue: 1, duration: 700, easing: Easing.inOut(Easing.sin), useNativeDriver: true }),
+                Animated.timing(cloudFloat, { toValue: 0, duration: 700, easing: Easing.inOut(Easing.sin), useNativeDriver: true }),
+            ])
+        );
+
         anim.start();
-        return () => anim.stop();
-    }, [cloudX]);
+        floatAnim.start();
+        return () => { anim.stop(); floatAnim.stop(); };
+    }, [cloudX, cloudFloat]);
 
     return (
 
@@ -83,23 +94,23 @@ export default () => {
                 </TouchableOpacity>                        
                 <SvgXml height={scale(45)} width={scale(45)} xml={newfeature} />
             </View>
-            <ImageBackground
-
-                source={images.star}
-                style={styles.starcontainer}
-                imageStyle={{ resizeMode: 'contain' }}
-            >
-                <TouchableOpacity onPress={() => playButtonSound()}>
+            <ScalePressable onPress={() => playButtonSound()} pressableStyle={styles.starcontainer}>
+                <ImageBackground
+                    source={images.star}
+                    style={{ width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' }}
+                    imageStyle={{ resizeMode: 'contain' }}
+                >
                     <SvgXml xml={cake} style={styles.cakecontainer} height={50} width={40} />
-                </TouchableOpacity>
-            </ImageBackground>
+                </ImageBackground>
+            </ScalePressable>
+
             <ImageBackground
                 source={images.windowBottom}
                 imageStyle={styles.winowframe}
                 style={styles.windowContainer}>
                 <Animated.Image
                     style={[styles.cloudImage,
-                    { transform: [{ translateX: cloudX }] }]}
+                    { transform: [{ translateX: cloudX }, { translateY: cloudY }] }]}
                     resizeMode="contain"
                     source={images.Cloud}
                 />

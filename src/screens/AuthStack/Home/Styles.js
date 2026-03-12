@@ -49,7 +49,7 @@ export const styles = StyleSheet.create({
     cloudImage: {
         width: scale(65),
         height: scale(32),
-        top: scale(16),
+        top: scale(29),
     },
     windowFrameImage: {
         position: "absolute",
@@ -66,8 +66,6 @@ export const styles = StyleSheet.create({
         width: scale(100),
         height: scale(80),
         zIndex: 5,
-        justifyContent: 'center',
-        alignItems: 'center',
     },
     cakecontainer: {
         width: scale(40),
