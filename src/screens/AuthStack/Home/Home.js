@@ -35,7 +35,7 @@ export default function HomeScreen() {
             />
 
             <View style={styles.collectioncontainer}>
-                <TouchableOpacity onPress={() => { playButtonSound(); navigation.navigate('Collection'); }}>
+                <TouchableOpacity onPress={() => { playButtonSound(); navigation.navigate('Collecition'); }}>
                     <Image source={images.collection} style={{ width: scale(45), height: scale(45) }} />
                 </TouchableOpacity>
                 <SvgXml height={scale(45)} width={scale(45)} xml={newfeature} />
