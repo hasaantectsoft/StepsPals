@@ -20,6 +20,8 @@ const initialState = {
   petcreatedat: null,
   pendingpetsteps: null,
   pendingfrom: null,
+  missedDays: 0,
+  lastCheckedDate: null,
 };
 
 const petSlice = createSlice({
@@ -43,9 +45,7 @@ const petSlice = createSlice({
     setPetIsAlive: (state, action) => { state.petisalive = action.payload },
     setPetIsGrowing: (state, action) => { state.petisgrowing = action.payload },
     setPetCreatedAt: (state, action) => { state.petcreatedat = action.payload },
-
     clearPet: () => initialState,
-
     updatePet: (state, action) => ({ ...state, ...action.payload }),
   },
 });

@@ -56,6 +56,8 @@ loading100:require('./loadingbarfilled.png'),
   GraveYardCat: require('./GraveYardCat.png'),
   ProgressBarHead: require('./ProgressBarHead.png'),
   SwitchHead: require('./SwitchHead.png'),
+  greatjob: require('./greatjob.png'),
+  modalbg: require('./modalbg.png'),
 
 
 

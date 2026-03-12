@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { View, Modal, Text, Image } from 'react-native';
 import { SvgXml } from 'react-native-svg';
 import { LoaderKitView } from 'react-native-loader-kit';
-import { nointernet, Paw, logo } from '../../assets/svgs';
+import { nointernet, Paw } from '../../assets/svgs';
 import ScalePressable from '../ScalePressable/ScalePressable';
 import { Styles } from './InternetModalStyles';
 import { images } from '../../assets/images';

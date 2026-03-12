@@ -15,6 +15,7 @@ import PressableIcon from "../../../components/PressSvg/PressSvg";
 import { BackArrow, grayButton } from "../../../assets/svgs";
 import { orangeBtn } from "../../../components/Petmenu/buttonSvgs";
 import { updatePet } from "../../../redux/slices/petslice";
+import { getCondition } from "../../../utils/petCondition";
 import { babyDogsprites, teenDogsprites, adultDogsprites } from "../../../assets/Sprites/Pets/Dog";
 import { babycatsprites, teencatsprites, adultcatsprites } from "../../../assets/Sprites/Pets/Cat";
 import { babydinosprites, teendinosprites, adultdinosprites } from "../../../assets/Sprites/Pets/Dino";
@@ -36,7 +37,7 @@ const getPetStage = (ageInDays) => {
 };
 
 export default function Petmenu() {
-  const { petname, petkey, petsteps, petcreatedat } = useSelector((state) => state.petReducer);
+  const { petname, petkey, petsteps, petcreatedat, missedDays } = useSelector((state) => state.petReducer);
   const router = useNavigation();
   const [stepGoal, setStepGoal] = useState(petsteps);
   const [disable, setDisable] = useState(true);
@@ -52,7 +53,7 @@ export default function Petmenu() {
     name: petname,
     days,
     age: `${ageInDays} day${ageInDays !== 1 ? "s" : ""}`,
-    condition: "Healthy",
+    condition: getCondition(missedDays),
     stage,
     missed: "0",
     species: SPECIES_MAP[petkey] ?? "Dino",
