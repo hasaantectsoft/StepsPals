@@ -13,7 +13,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { setMusicSound, setSound } from "../../../redux/slices/soundSlice";
 import { useNavigation } from '@react-navigation/native';
 import { setSignedIn } from '../../../redux/slices/authSlice';
-import ProgressBar from "../../../components/ProgressBar/ProgressBar";
 export default () => {
 
     const { MusicSound, Sound } = useSelector(state => state.soundReducer);
@@ -60,7 +59,7 @@ export default () => {
     return (
         <View style={[combineStyles.combineStyles]}>
             <ImageBackground source={images.yellowBackground} style={styles.backgroundImage}>
-                {/* <View style={styles.main}>
+                <View style={styles.main}>
                     <Text style={{ ...combineStyles.regular26, textAlign: "center" }}>Settings</Text>
                     <View style={[combineStyles.rowSpacebetween, { left: moderateScale(10) }]}>
                         <Text style={styles.textStyle}>Music</Text>
@@ -105,13 +104,7 @@ export default () => {
                 </View>
                 <DeleteMessageModal isVisible={isDeleteModalVisible} onClose={() => setIsDeleteModalVisible(false)} subtitle={"Are you sure you want to delete your account?"} btn1text={"No"} btn2text={"Yes"} onpressButton2={handelModal} modalStyle={styles.modalStyle} />
                 <DeleteMessageModal isVisible={DisconnectModal} onClose={() => setIsDisConnectModal(false)} subtitle={"Disconnecting unlinks the game progress on other devices.Are you sure you want to continue?"} btn1text={"Cancel"} btn2text={"Disconnect"} onpressButton2={() => setIsDisConnectModal(false)} title={"Disconnect?"} swap={true} />
-                <DeleteMessageModal isVisible={ProgressModal} onpressCenterButton={() => { setIsProgressModal(false); setIsDisConnectModal(true) }} subtitle={"Account deletion in progress?"} centerButtonTxt={"Ok"} centerButton={true} rowBtton={false} modalStyle={styles.modalStyle} /> */}
-
-
-
-              <View style={{justifyContent:"center", alignItems:"center", flex:1}}>
-                 <ProgressBar progress={0.6} images={images} onProgressChange={(value) => console.log(value)} />
-              </View>
+                <DeleteMessageModal isVisible={ProgressModal} onpressCenterButton={() => { setIsProgressModal(false); setIsDisConnectModal(true) }} subtitle={"Account deletion in progress?"} centerButtonTxt={"Ok"} centerButton={true} rowBtton={false} modalStyle={styles.modalStyle} />
             </ImageBackground>
         </View>
     )
