@@ -12,9 +12,9 @@ const TRACK_PAD = 1;
 const FILLED_COLOR = "#6ECAFF";
 const UNFILLED_COLOR = "#a7baca";
 const BORDER_COLOR = "#000000";
-const MIN = 1000;
-const MAX = 20000;
-const STEP = 500;
+const MIN = 100;
+const MAX = 2000;
+const STEP = 100;
 
 const snapToStep = (v) => Math.round((v - MIN) / STEP) * STEP + MIN;
 

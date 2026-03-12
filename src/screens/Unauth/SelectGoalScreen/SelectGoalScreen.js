@@ -13,7 +13,7 @@ export default function SelectGoalScreen() {
     const navigation = useNavigation();
     const pet = params?.pet;
     const petName = params?.petName;
-    const [stepGoal, setStepGoal] = useState(5000);
+    const [stepGoal, setStepGoal] = useState(100);
 
     return (
         <View style={Styles.container}>
