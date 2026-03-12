@@ -25,7 +25,7 @@ import {
   
   const ICON_SIZE = getIconSize();
 
-  const DEFAULT_SPRITE = require("../../assets/images/Anim_Dino_Baby_Idle.png");
+  const DEFAULT_SPRITE = require("../../assets/Sprites/Pets/Dino/Baby/Anim_Dino_Baby_Idle.png");
 
   export default function BallRollJSX({ spriteImage = DEFAULT_SPRITE, spriteFrameWidth = 34, spriteFrameHeight = 80 }) {
     const ballX = useRef(new Animated.Value(-BALL_SIZE)).current;

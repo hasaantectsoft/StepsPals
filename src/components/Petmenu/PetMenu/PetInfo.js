@@ -10,8 +10,8 @@ export default function PetInfo({ pet }) {
 console.log(pet.id,"Pet.id is follwoing")
   
   const img =
-    pet.id ==1 ? images.Cat :
-    pet.id == 2 ? images.Dog :
+    pet.id ==1 ? images.Dog :
+    pet.id == 2 ? images.Cat :
     images.Dino;
 
   return (

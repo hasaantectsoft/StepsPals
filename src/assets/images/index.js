@@ -51,7 +51,7 @@ export const images = {
   collection: require('./collection.png'),
 loadingzero:require('./loadingbarunfilled.png'),
 loading90:require('./loadingbar90percent.png'),
-loading100:require('./loadingbarfilled.png')
+loading100:require('./loadingbarfilled.png'),
   GraveYardDino: require('./GraveYardDino.png'),
   GraveYardCat: require('./GraveYardCat.png'),
   ProgressBarHead: require('./ProgressBarHead.png'),

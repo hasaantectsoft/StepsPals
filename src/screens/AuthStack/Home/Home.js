@@ -13,10 +13,14 @@ import RetroStepsBar from "../../../components/Retroprogreebar/Retrostepsbar";
 import { cake, newfeature, windowframe } from "../../../assets/svgs";
 import { playButtonSound } from "../../../utils/SoundManager/SoundManager";
 import ScalePressable from "../../../components/ScalePressable/ScalePressable";
+import { babyDogsprites ,teenDogsprites,adultDogsprites} from "../../../assets/Sprites/Pets/Dog";
+import { babydinosprites ,teendinosprites,adultdinosprites} from "../../../assets/Sprites/Pets/Dino";
+import { babycatsprites ,teencatsprites,adultcatsprites} from "../../../assets/Sprites/Pets/Cat";
 export default () => {
     const navigation = useNavigation();
     const dispatch = useDispatch();
     const { petname, petsteps } = useSelector((state) => state.petReducer);
+    console.log(petname);
     const { step } = useSelector((state) => state.progressReducer);
     const cloudX = useRef(new Animated.Value(-scale(65))).current;
     const cloudFloat = useRef(new Animated.Value(0)).current;
@@ -75,7 +79,7 @@ export default () => {
                     <Text style={styles.welcome}>is happy</Text>
                 </TouchableOpacity>
             </Pressable>
-            <SpriteLoader />
+            <SpriteLoader   />
             <RetroStepsBar
                 top={scale(92)}
                 right={scale(100)}
