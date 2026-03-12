@@ -13,8 +13,8 @@ const PET_IMAGE = { '1': images.Dog, '2': images.Cat, '3': images.Dino };
 const getStage = (petcreatedat) => {
   if (!petcreatedat) return 'baby';
   const days = Math.floor((Date.now() - petcreatedat) / 86400000);
-  // if (days <= 7) return 'baby';
-  // if (days <= 21) return 'teen';
+  if (days <= 7) return 'baby';
+  if (days <= 21) return 'teen';
   return 'adult';
 };
 

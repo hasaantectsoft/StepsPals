@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Styles } from "./Styles";
 import { stats } from "../../../utils/extra/stats";
 import { images } from "../../../assets/images";
-import UpgradePetModal from "../../../components/UpgradePetModal/upgradepetmodal";
+// import UpgradePetModal from "../../../components/UpgradePetModal/upgradepetmodal";
 
 export default () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -19,7 +19,7 @@ export default () => {
           ))}
         </ImageBackground>
       </SafeAreaView>
-      <UpgradePetModal label="Tap to continue" isVisible={isVisible} okPressed={() => setIsVisible(false)} />
+      {/* <UpgradePetModal label="Tap to continue" isVisible={isVisible} okPressed={() => setIsVisible(false)} /> */}
     </ImageBackground>
   );
 }
