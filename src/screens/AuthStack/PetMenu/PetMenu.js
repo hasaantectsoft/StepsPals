@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {   Text, View } from "react-native";
+import { Text, View } from "react-native";
 import SettingsBackground from "../../../components/Petmenu/SettingsBackground";
 import PetDetails from "../../../components/Petmenu/PetMenu/PetDetails";
 import PetInfo from "../../../components/Petmenu/PetMenu/PetInfo";
@@ -15,33 +15,55 @@ import PressableIcon from "../../../components/PressSvg/PressSvg";
 import { BackArrow, grayButton } from "../../../assets/svgs";
 import { orangeBtn } from "../../../components/Petmenu/buttonSvgs";
 import { setPetSteps } from "../../../redux/slices/petslice";
+import { babyDogsprites, teenDogsprites, adultDogsprites } from "../../../assets/Sprites/Pets/Dog";
+import { babycatsprites, teencatsprites, adultcatsprites } from "../../../assets/Sprites/Pets/Cat";
+import { babydinosprites, teendinosprites, adultdinosprites } from "../../../assets/Sprites/Pets/Dino";
+
+const SPECIES_MAP = { '1': 'Dog', '2': 'Cat', '3': 'Dino' };
+
+const SPRITE_MAP = {
+  '1': { baby: babyDogsprites.Dogmain, teen: teenDogsprites.Dogmain, adult: adultDogsprites.Dogmain },
+  '2': { baby: babycatsprites.catmain, teen: teencatsprites.catmain, adult: adultcatsprites.catmain },
+  '3': { baby: babydinosprites.dinomain, teen: teendinosprites.dinomain, adult: adultdinosprites.dinomain },
+};
 
 
+
+const getPetStage = (ageInDays) => {
+  if (ageInDays <= 7)  return { stage: "baby",  days: `${ageInDays}/7`  };
+  if (ageInDays <= 21) return { stage: "teen",  days: `${ageInDays}/21` };
+  return                      { stage: "adult", days: "21/21"            };
+};
 
 export default function Petmenu() {
-  const { petname,petkey,petsteps} = useSelector((state) => state.petReducer);
+  const { petname, petkey, petsteps, petcreatedat } = useSelector((state) => state.petReducer);
   const router = useNavigation();
   const [stepGoal, setStepGoal] = useState(petsteps);
   const [disable, setDisable] = useState(true);
-  const dispatch=useDispatch();
-console.log("Key is follwig",petkey)
+  const dispatch = useDispatch();
+
+  const ageInDays = petcreatedat
+    ? Math.min(Math.floor((Date.now() - petcreatedat) / (1000 * 60 * 60 * 24)), 21)
+    : 0;
+  const { stage, days } = getPetStage(ageInDays);
+
   const pet = {
-    id:petkey,
-    name:petname,
-    days: "2/7",
-    species:'cat',
-    age: "2 days",
+    id: petkey,
+    name: petname,
+    days,
+    age: `${ageInDays} day${ageInDays !== 1 ? "s" : ""}`,
     condition: "Healthy",
-    stage: "baby",
+    stage,
     missed: "0",
-    image: require("../../../assets/images/Cat.png"),
+    species: SPECIES_MAP[petkey] ?? "Dino",
+    spriteImage: SPRITE_MAP[petkey]?.[stage] ?? babydinosprites.dinomain,
   };
 
   
 
   const handelSave=()=>{
     dispatch(setPetSteps(stepGoal))
-router.goBack();
+    router.replace('Main')
   }
   return (
     <View style={styles.container}>
@@ -49,7 +71,7 @@ router.goBack();
         <PressableIcon
               icon={BackArrow}
               container={styles.backBtn}
-              onPress={() => router.goBack()}
+              onPress={() => router.replace('Main')}
             />
       <PetInfo pet={pet} />
       <PetDetails pet={pet} />

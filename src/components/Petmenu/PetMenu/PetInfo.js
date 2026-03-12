@@ -5,25 +5,19 @@ import { images } from "../../../assets/images";
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 const isSmallScreen = SCREEN_WIDTH <= 375;
 
+const IMG_MAP = { '1': images.Dog, '2': images.Cat, '3': images.Dino };
+
 export default function PetInfo({ pet }) {
-  
-console.log(pet.id,"Pet.id is follwoing")
-  
-  const img =
-    pet.id ==1 ? images.Dog :
-    pet.id == 2 ? images.Cat :
-    images.Dino;
-
   return (
-    <>
-    
-
-      <View style={styles.petInfo}>
-        <Text style={styles.petName}>{pet.name}</Text>
-        <Text style={styles.petDays}>{pet.days} days</Text>
-        <Image source={img} style={styles.petImage} resizeMode="contain" />
-      </View>
-    </>
+    <View style={styles.petInfo}>
+      <Text style={styles.petName}>{pet.name}</Text>
+      <Text style={styles.petDays}>{pet.days} days</Text>
+      <Image
+        source={IMG_MAP[pet.id] ?? images.Dino}
+        style={styles.petImage}
+        resizeMode="contain"
+      />
+    </View>
   );
 }
 
@@ -32,6 +26,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   petName: {
+    marginTop:moderateScale(10),
     fontFamily: "PressStart2P_400Regular",
     fontSize: isSmallScreen ? moderateScale(18) : moderateScale(22),
     textAlign: "center",
@@ -42,10 +37,8 @@ const styles = StyleSheet.create({
     marginVertical: 4,
   },
   petImage: {
-marginTop:moderateScale(60),
+    marginTop: moderateScale(16),
     width: SCREEN_WIDTH * 0.3,
     height: SCREEN_WIDTH * 0.3,
-    marginVertical: 10,
   },
- 
 });

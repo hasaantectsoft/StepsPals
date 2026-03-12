@@ -13,13 +13,32 @@ import RetroStepsBar from "../../../components/Retroprogreebar/Retrostepsbar";
 import { cake, newfeature, windowframe } from "../../../assets/svgs";
 import { playButtonSound } from "../../../utils/SoundManager/SoundManager";
 import ScalePressable from "../../../components/ScalePressable/ScalePressable";
-import { babyDogsprites ,teenDogsprites,adultDogsprites} from "../../../assets/Sprites/Pets/Dog";
-import { babydinosprites ,teendinosprites,adultdinosprites} from "../../../assets/Sprites/Pets/Dino";
-import { babycatsprites ,teencatsprites,adultcatsprites} from "../../../assets/Sprites/Pets/Cat";
+import { babyDogsprites, teenDogsprites, adultDogsprites } from "../../../assets/Sprites/Pets/Dog";
+import { babydinosprites, teendinosprites, adultdinosprites } from "../../../assets/Sprites/Pets/Dino";
+import { babycatsprites, teencatsprites, adultcatsprites } from "../../../assets/Sprites/Pets/Cat";
+
+const SPRITE_MAP = {
+    '1': { baby: babyDogsprites.Dogmain,  teen: teenDogsprites.Dogmain,  adult: adultDogsprites.Dogmain  },
+    '2': { baby: babycatsprites.catmain,  teen: teencatsprites.catmain,  adult: adultcatsprites.catmain  },
+    '3': { baby: babydinosprites.dinomain, teen: teendinosprites.dinomain, adult: adultdinosprites.dinomain },
+};
+
+const getStage = (ageInDays) => {
+    if (ageInDays <= 7)  return 'baby';
+    if (ageInDays <= 21) return 'teen';
+    return 'adult';
+};
+
 export default () => {
     const navigation = useNavigation();
     const dispatch = useDispatch();
-    const { petname, petsteps } = useSelector((state) => state.petReducer);
+    const { petname, petsteps, petkey, petcreatedat } = useSelector((state) => state.petReducer);
+
+    const ageInDays = petcreatedat
+        ? Math.min(Math.floor((Date.now() - petcreatedat) / (1000 * 60 * 60 * 24)), 21)
+        : 0;
+    const stage = getStage(ageInDays);
+    const spriteImage = SPRITE_MAP[petkey]?.[stage] ?? babydinosprites.dinomain;
     console.log(petname);
     const { step } = useSelector((state) => state.progressReducer);
     const cloudX = useRef(new Animated.Value(-scale(65))).current;
@@ -74,12 +93,12 @@ export default () => {
             style={styles.container}
         >
             <Pressable onPress={() => { playButtonSound(); }}>
-                <TouchableOpacity hitSlop={30} onPress={() => { navigation.navigate('PetMenu') }}>
+                <TouchableOpacity hitSlop={30} onPress={() => { navigation.replace('PetMenu') }}>
                     <Text style={styles.name}>Hello {petname}</Text>
                     <Text style={styles.welcome}>is happy</Text>
                 </TouchableOpacity>
             </Pressable>
-            <SpriteLoader   />
+            <SpriteLoader spriteImage={spriteImage} />
             <RetroStepsBar
                 top={scale(92)}
                 right={scale(100)}
