@@ -18,7 +18,7 @@ import { useNavigation } from "@react-navigation/native";
 import { setSignedIn } from "../../../redux/slices/authSlice";
 import { permissionUtils } from "../../../utils";
 import { scale } from "react-native-size-matters";
-import { setPetName, setPetKey, setPetSteps } from "../../../redux/slices/petslice";
+import { setPetName, setPetKey, setPetSteps, setPetCreatedAt } from "../../../redux/slices/petslice";
 import { setProgressStep } from "../../../redux/slices/progressSlice";
 import { PRIVACY_URL, TERMS_URL } from "../../../utils/extra/links";
 import { setIsMain } from "../../../redux/slices/ismain";
@@ -108,6 +108,7 @@ export default () => {
                 dispatch(setPetName(petName ?? ''));
                 dispatch(setPetKey(String(pet?.id ?? '')));
                 dispatch(setPetSteps(stepGoal ?? 242));
+                dispatch(setPetCreatedAt(Date.now()));
                 dispatch(setSignedIn(true));
                 dispatch(setIsMain(true));
                 dispatch(setNewUser(true));

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, TouchableOpacity, View, Keyboard, Image } from 'react-native';
 import { scale } from 'react-native-size-matters';
-// import InternetModal from '../InternetModal/InternetModal';
+import InternetModal from '../InternetModal/InternetModal';
 import NetInfo from '@react-native-community/netinfo';
 import { DeviceEventEmitter } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -24,27 +24,25 @@ const BottomTabs = ({ activeTab, onTabPress }) => {
         { name: 'Settings', icon: require('../../assets/images/settings.png') ,inactiveIcon: require('../../assets/images/settings_inactive.png') },
 
     ];
+    const checkConnection = () => {
+        return NetInfo.fetch().then(state => {
+            const connected = !!(state.isConnected || state.isInternetReachable);
+            setIsConnectedModal(!connected);
+            return connected;
+        }).catch(() => false);
+    };
+
     useEffect(() => {
-        const checkConnection = () => {
-            NetInfo.fetch().then(state => {
-                const connected = !!(state.isConnected || state.isInternetReachable);
-                setIsConnectedModal(!connected);
-            }).catch(error => {
-            });
-        };
         let unsubscribe;
         try {
             unsubscribe = NetInfo.addEventListener(state => {
                 const connected = !!(state.isConnected || state.isInternetReachable);
                 setIsConnectedModal(!connected);
             });
-        } catch (error) {
-        }
+        } catch (error) {}
         checkConnection();
         return () => {
-            if (unsubscribe) {
-                unsubscribe();
-            }
+            if (unsubscribe) unsubscribe();
         };
     }, []);
 
@@ -64,19 +62,12 @@ const BottomTabs = ({ activeTab, onTabPress }) => {
 
 
                     <View style={styles.container}>
-                        {/* {isConnectedModal && !hideModal && (
+                        {isConnectedModal && !hideModal && (
                             <InternetModal
-                                isVisible={isConnectedModal}
-                                handleRetry={() => checkInternet()}
-                                title={'No Internet Connection'}
-                                description={
-                                    "Oops! We can't load the content until the internet connection is restored."
-                                }
-                                shortDescription={'Please check your connection.'}
-                                btnTxt={'Retry'}
-                                btntext2={'View draft'}
+                              isVisible={isConnectedModal}
+                              onRetry={checkConnection}
                             />
-                        )} */}
+                        )}
 
                         {tabIcons.map(tab => (
                             <TouchableOpacity

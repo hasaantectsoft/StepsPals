@@ -5,7 +5,7 @@ import {Styles} from './MessageBoxStyles';
 import { images } from '../../assets/images';
 
 
-export default function MessageBox({text, style, textStyle, numberOfLines = 3}) {
+export default function MessageBox({text, style, textStyle, numberOfLines = 4}) {
   if (!text) {
     return null;
   }
@@ -25,3 +25,4 @@ export default function MessageBox({text, style, textStyle, numberOfLines = 3}) 
   );
 }
 
+// 

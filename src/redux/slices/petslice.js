@@ -17,6 +17,11 @@ const initialState = {
   petisfullygrown: false,
   petisalive: true,
   petisgrowing: true,
+  petcreatedat: null,
+  pendingpetsteps: null,
+  pendingfrom: null,
+  missedDays: 0,
+  lastCheckedDate: null,
 };
 
 const petSlice = createSlice({
@@ -39,19 +44,18 @@ const petSlice = createSlice({
     setPetIsFullyGrown: (state, action) => { state.petisfullygrown = action.payload },
     setPetIsAlive: (state, action) => { state.petisalive = action.payload },
     setPetIsGrowing: (state, action) => { state.petisgrowing = action.payload },
-
+    setPetCreatedAt: (state, action) => { state.petcreatedat = action.payload },
     clearPet: () => initialState,
-
     updatePet: (state, action) => ({ ...state, ...action.payload }),
   },
 });
 
 export const {
-  setPetName, setPetKey, setPetSteps, setPetSpecies, setPetAge, 
-  setPetCondition, setPetStage, setPetMissed, 
-  setPetDays, setPetDaysLeft, setPetDaysCompleted, setPetDaysRemaining, 
+  setPetName, setPetKey, setPetSteps, setPetSpecies, setPetAge,
+  setPetCondition, setPetStage, setPetMissed,
+  setPetDays, setPetDaysLeft, setPetDaysCompleted, setPetDaysRemaining,
   setPetIsDead, setPetIsFullyGrown, setPetIsAlive, setPetIsGrowing,
-  clearPet, updatePet
+  setPetCreatedAt, clearPet, updatePet
 } = petSlice.actions;
 
 export default petSlice.reducer;

@@ -5,6 +5,7 @@ import { scale } from "react-native-size-matters";
 import { bowl, bowl1, checked, homebar, popp, waterdis, waterfull } from "../../assets/svgs";
 import { SvgXml } from "react-native-svg";
 import { playButtonSound } from "../../utils/SoundManager/SoundManager";
+import MessageBox from "../MessageBox/MessageBox";
 
 export default function RetroStepsBar({
   top = 0, right = 0, left = 0, bottom = 0,
@@ -62,7 +63,10 @@ export default function RetroStepsBar({
             </Animated.View>
           </Pressable>
         ))}
+        
       </View>
+      {/* <MessageBox text="You are doing great! Keep it up!" /> */}
+
     </View>
   );
 }

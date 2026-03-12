@@ -61,7 +61,8 @@ loading100:require('./loadingbarfilled.png'),
   CollectionCard: require('./CollectionCard.png'),
   CollectionLayer: require('./CollectionLayer.png'),
   collectionLogo: require('./collectionLogo.png'),
-
+  greatjob: require('./greatjob.png'),
+  modalbg: require('./modalbg.png'),
 
 
 
