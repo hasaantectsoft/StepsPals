@@ -4,7 +4,7 @@
 import React, { useEffect } from 'react';
 import './src/locals/i18n';
 import {Provider} from 'react-redux';
-import {StatusBar} from 'react-native';
+import {Platform, StatusBar} from 'react-native';
 import NetInfo from '@react-native-community/netinfo';
 import {PersistGate} from 'reduxjs-toolkit-persist/integration/react';
 import {QueryClient, QueryClientProvider, onlineManager} from 'react-query';
@@ -24,12 +24,10 @@ export default function App() {
     });
   });
 
-
   useEffect(() => {
-    authorizeHealthKit();
+    if (Platform.OS === 'ios') authorizeHealthKit();
     startAppSound();
-  
-  },[] );
+  }, []);
 
   return (
    <GestureHandlerRootView style={{flex: 1}}> 

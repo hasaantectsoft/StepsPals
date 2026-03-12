@@ -2,6 +2,7 @@ import {
   Image,
   ImageBackground,
   Linking,
+  Platform,
   ScrollView,
   Text,
   TouchableOpacity,
@@ -18,10 +19,12 @@ import { setSignedIn } from "../../../redux/slices/authSlice";
 import { permissionUtils } from "../../../utils";
 import { scale } from "react-native-size-matters";
 import { setPetName, setPetKey, setPetSteps } from "../../../redux/slices/petslice";
+import { setProgressStep } from "../../../redux/slices/progressSlice";
 import { PRIVACY_URL, TERMS_URL } from "../../../utils/extra/links";
 import { setIsMain } from "../../../redux/slices/ismain";
 import { setNewUser } from "../../../redux/slices/tutorialslice";
 import { images } from "../../../assets/images";
+import { fetchSteps } from "../../../utils/handler/fetchsteps";
 export default () => {
   const navigation = useNavigation();
   const dispatch = useDispatch();
@@ -50,6 +53,11 @@ export default () => {
     const granted = await permissionUtils.requestHealthPermission();
     setHealthGranted(granted);
   };
+  const onRequestHealthAndroid = async () => {
+    const { granted, steps } = await fetchSteps();
+    setHealthGranted(granted);
+    if (granted && steps != null) dispatch(setProgressStep(steps));
+  };
 
   return (
     <ImageBackground
@@ -77,7 +85,7 @@ export default () => {
             style={styles.permissionsImage}
           />
         </TouchableOpacity>
-        <TouchableOpacity onPress={onRequestHealth} disabled={healthGranted}>
+        <TouchableOpacity onPress={Platform.OS==='ios' ? onRequestHealth : onRequestHealthAndroid} disabled={healthGranted}>
           <Image
             source={healthGranted ? images.permissionenabled : images.healthkitpermsiomdis}
             height={scale(100)}

@@ -6,7 +6,7 @@ import NetInfo from '@react-native-community/netinfo';
 import { DeviceEventEmitter } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import useKeyboard from "../../utils/extra/usekeyboard"
-import { playBackgroundSound, playButtonSound } from '../../utils/SoundManager/SoundManager';
+import {  playButtonSound } from '../../utils/SoundManager/SoundManager';
 
 
 const BottomTabs = ({ activeTab, onTabPress }) => {
@@ -16,12 +16,12 @@ const BottomTabs = ({ activeTab, onTabPress }) => {
     const isKeyboardVisible = useKeyboard();
    
     const tabIcons = [
-        { name: 'Home', icon: require('../../assets/images/home.png') },
-        { name: 'Statistics', icon: require('../../assets/images/stats.png') },
+        { name: 'Home', icon: require('../../assets/images/home.png') ,inactiveIcon: require('../../assets/images/homeinactive.png') },
+        { name: 'Statistics', icon: require('../../assets/images/stats.png') ,inactiveIcon: require('../../assets/images/stats_inactive.png') },
 
-        { name: 'GraveYard', icon: require('../../assets/images/graveyard.png') },
-        { name: 'LeaderBoard', icon: require('../../assets/images/tropy.png') },
-        { name: 'Settings', icon: require('../../assets/images/settings.png') },
+        { name: 'GraveYard', icon: require('../../assets/images/graveyard.png') ,inactiveIcon: require('../../assets/images/graveyard_inactive.png') },
+        { name: 'LeaderBoard', icon: require('../../assets/images/tropy.png') ,inactiveIcon: require('../../assets/images/inactive_trophy.png') },
+        { name: 'Settings', icon: require('../../assets/images/settings.png') ,inactiveIcon: require('../../assets/images/settings_inactive.png') },
 
     ];
     useEffect(() => {
@@ -88,7 +88,7 @@ const BottomTabs = ({ activeTab, onTabPress }) => {
                                 onPress={() => {onTabPress(tab.name);playButtonSound()}}
                             >
                                 <Image
-                                    source={tab.icon}
+                                    source={activeTab === tab.name ? tab.inactiveIcon : tab.icon}
                                     style={[styles.tabIcon, { opacity: activeTab === tab.name ? 1 : 1 }]}
                                     resizeMode="contain"
                                 />

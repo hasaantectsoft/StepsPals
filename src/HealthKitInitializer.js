@@ -1,21 +1,28 @@
 import React, { useEffect } from 'react';
+import { Platform } from 'react-native';
 import { queryStatisticsForQuantity, isHealthDataAvailableAsync, authorizationStatusFor } from '@kingstinct/react-native-healthkit';
 import { authorizeHealthKit } from './healthkit';
 import { useDispatch } from 'react-redux';
 import { setProgressStep } from './redux/slices/progressSlice';
+import { fetchSteps } from './utils/handler/fetchsteps';
 
 export default function HealthKitInitializer() {
   const dispatch = useDispatch();
 
   useEffect(() => {
     async function init() {
+      if (Platform.OS === 'android') {
+        const { granted, steps } = await fetchSteps();
+        if (granted && steps != null) dispatch(setProgressStep(steps));
+        return;
+      }
+
       const ok = await authorizeHealthKit();
 
       const available = await isHealthDataAvailableAsync();
       console.log('Health data available:', available);
 
       const authStatus = await authorizationStatusFor('HKQuantityTypeIdentifierStepCount');
-      console.log('HealthKit authorization status for step count:', authStatus); // 0 = NOTDETERMINED, 1 = SHARINGDENIED, 2 = SHARINGAUTHORIZED
       if (!ok) return;
 
       try {

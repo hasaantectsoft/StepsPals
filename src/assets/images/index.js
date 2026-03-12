@@ -49,7 +49,9 @@ export const images = {
   permisionnotifif: require('./permisionnotifif.png'),
   healthkitpermsiom: require('./healthkitpermsiom.png'),
   collection: require('./collection.png'),
-
+loadingzero:require('./loadingbarunfilled.png'),
+loading90:require('./loadingbar90percent.png'),
+loading100:require('./loadingbarfilled.png')
 
 
 

@@ -1,81 +1,32 @@
 import React, { useEffect, useRef } from "react";
 import { styles } from "./Styles";
-import { Animated, Easing, Image, ImageBackground, Pressable, Text, TouchableOpacity, View } from "react-native";
+import { Animated, Easing, Image, ImageBackground, Platform, Pressable, Text, TouchableOpacity, View } from "react-native";
 import SpriteLoader from "../../../components/SprieLoader";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { setProgressStep } from "../../../redux/slices/progressSlice";
+import { fetchSteps } from "../../../utils/handler/fetchsteps";
 import { useNavigation } from "@react-navigation/native";
 import { scale } from "react-native-size-matters";
 import { images } from "../../../assets/images";
-import { NativeModules } from 'react-native';
 import { SvgXml } from "react-native-svg";
 import RetroStepsBar from "../../../components/Retroprogreebar/Retrostepsbar";
 import { cake, newfeature, windowframe } from "../../../assets/svgs";
 import { playButtonSound } from "../../../utils/SoundManager/SoundManager";
-import { checkBackgroundAccess, getTodaySteps, initializeHealthConnect, requestPermissions } from "../../../utils/StepCounter";
 export default () => {
     const navigation = useNavigation();
+    const dispatch = useDispatch();
     const { petname, petsteps } = useSelector((state) => state.petReducer);
-
-
-    // useEffect(() => {
-    //     const fetchSteps = async () => {
-    //         const initialized = await initializeHealthConnect();
-    //         if (!initialized) return;
-    //         const permission = await checkBackgroundAccess();
-    //         if (!permission) {
-    //             await requestPermissions();
-    //         }
-    //         const steps = await getTodaySteps();
-    //         console.log('Steps today:', steps);
-    //     };
-
-    //     fetchSteps(); // initial fetch
-
-    //     // // const interval = setInterval(fetchSteps, 5000); // update every 5 seconds
-    //     // return () => clearInterval(interval); // cleanup on unmount
-    // }, []);
-
-
-
-    useEffect(() => {
-    const fetchSteps = async () => {
-        try {
-            const initialized = await initializeHealthConnect();
-            if (!initialized) return;
-
-            const permission = await checkBackgroundAccess();
-            if (!permission) {
-                await requestPermissions();
-            }
-
-            const steps = await getTodaySteps();
-            console.log('Steps today:', steps);
-
-            // ✅ Update the Android home screen widget
-            if (NativeModules.StepWidget && NativeModules.StepWidget.updateSteps) {
-                NativeModules.StepWidget.updateSteps(steps);
-            }
-
-        } catch (error) {
-            console.error('Error fetching steps or updating widget:', error);
-        }
-    };
-
-    fetchSteps(); // initial fetch
-
-    // // Optional: refresh every 5 seconds (or adjust as needed)
-    // const interval = setInterval(fetchSteps, 5000);
-    // return () => clearInterval(interval); // cleanup on unmount
-}, []);
-
-
-
-
-
-
-
     const { step } = useSelector((state) => state.progressReducer);
     const cloudX = useRef(new Animated.Value(-scale(65))).current;
+
+    useEffect(() => {
+        if (Platform.OS === 'android') {
+            fetchSteps().then(({ granted, steps }) => {
+                if (granted && steps != null) dispatch(setProgressStep(steps));
+            });
+        }
+    }, [dispatch]);
+
     useEffect(() => {
         const cloudWidth = scale(65);
         const windowWidth = scale(117);

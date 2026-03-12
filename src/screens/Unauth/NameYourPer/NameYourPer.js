@@ -5,6 +5,8 @@ import { SvgXml } from "react-native-svg";
 import { Header, NextButton } from "../../../components";
 import { cat, dog, dino } from "../../../assets/svgs";
 import { styles } from "./styles";
+import ScalePressable from "../../../components/ScalePressable/ScalePressable";
+import { playButtonSound } from "../../../utils/SoundManager/SoundManager";
 
 const petSvgs = { Dog: dog, Cat: cat, Dino: dino };
 
@@ -16,6 +18,7 @@ export default function NameYourPet() {
     const PetSvg = petSvgs[pet?.name] || dino;
 
     const handleDone = () => {
+        playButtonSound();
         const trimmed = petName.trim();
         if (!trimmed) {
             setError("This field cannot be empty");
@@ -55,7 +58,9 @@ export default function NameYourPet() {
                    </ImageBackground>
                     {error ? <Text style={styles.errorText}>{error}</Text> : null}
                 </View>
-               <NextButton disabled={!petName} text={petName ? "Done" : "Done"} onPress={handleDone} />
+                <ScalePressable disabled={!petName} onPress={handleDone}>
+                <NextButton disabled={!petName} text={petName ? "Done" : "Done"} useTouchable={false} />
+                </ScalePressable>
         </View>
         </ImageBackground>
     );

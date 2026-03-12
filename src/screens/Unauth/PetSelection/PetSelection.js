@@ -8,6 +8,7 @@ import NextButton from "../../../components/NextButton/NextButton";
 import { scale } from "react-native-size-matters";
 import { images } from "../../../assets/images";
 import { playButtonSound } from "../../../utils/SoundManager/SoundManager";
+import ScalePressable from "../../../components/ScalePressable/ScalePressable";
 
 export default () => {
     const pets=[
@@ -31,6 +32,10 @@ export default () => {
     ];
     const [selectedPet, setSelectedPet] = useState(pets[0]);
     const navigation = useNavigation();
+    const handleNextPress = () => {
+        playButtonSound();
+        navigation.navigate("NameYourPer", { pet: selectedPet });
+    };
     return (
         <View style={Styles.container}>
             <ImageBackground
@@ -73,7 +78,9 @@ export default () => {
                         );
                     })}
                 </View>
-                <NextButton  onPress={() => navigation.navigate('NameYourPer', { pet: selectedPet })} />
+                <ScalePressable onPress={handleNextPress}>
+                <NextButton useTouchable={false} />
+                </ScalePressable>
             </ImageBackground>
         </View >
     );
