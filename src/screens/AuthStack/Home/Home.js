@@ -97,7 +97,7 @@ export default () => {
             <ScalePressable onPress={() => playButtonSound()} pressableStyle={styles.starcontainer}>
                 <ImageBackground
                     source={images.star}
-                    style={{ width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' }}
+                    style={styles.star}
                     imageStyle={{ resizeMode: 'contain' }}
                 >
                     <SvgXml xml={cake} style={styles.cakecontainer} height={50} width={40} />

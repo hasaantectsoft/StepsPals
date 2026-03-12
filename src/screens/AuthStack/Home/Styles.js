@@ -18,6 +18,7 @@ export const styles = StyleSheet.create({
         left: 0,
         right: 0,
     },
+    star:{ width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' },
     welcome:{
         fontSize: scale(5),
         fontFamily: Retro,
