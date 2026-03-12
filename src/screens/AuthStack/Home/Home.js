@@ -1,16 +1,17 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { styles } from "./Styles";
 import { Animated, Easing, Image, ImageBackground, Platform, Pressable, Text, TouchableOpacity, View } from "react-native";
 import SpriteLoader from "../../../components/SprieLoader";
 import { useSelector, useDispatch } from "react-redux";
 import { setProgressStep } from "../../../redux/slices/progressSlice";
+import { updatePet } from "../../../redux/slices/petslice";
 import { fetchSteps } from "../../../utils/handler/fetchsteps";
 import { useNavigation } from "@react-navigation/native";
 import { scale } from "react-native-size-matters";
 import { images } from "../../../assets/images";
 import { SvgXml } from "react-native-svg";
 import RetroStepsBar from "../../../components/Retroprogreebar/Retrostepsbar";
-import { cake, newfeature, windowframe } from "../../../assets/svgs";
+import { cake, newfeature, windowframe, cakefilled, starchecked } from "../../../assets/svgs";
 import { playButtonSound } from "../../../utils/SoundManager/SoundManager";
 import ScalePressable from "../../../components/ScalePressable/ScalePressable";
 import { babyDogsprites, teenDogsprites, adultDogsprites } from "../../../assets/Sprites/Pets/Dog";
@@ -32,7 +33,7 @@ const getStage = (ageInDays) => {
 export default () => {
     const navigation = useNavigation();
     const dispatch = useDispatch();
-    const { petname, petsteps, petkey, petcreatedat } = useSelector((state) => state.petReducer);
+    const { petname, petsteps, petkey, petcreatedat, pendingpetsteps, pendingfrom } = useSelector((state) => state.petReducer);
 
     const ageInDays = petcreatedat
         ? Math.min(Math.floor((Date.now() - petcreatedat) / (1000 * 60 * 60 * 24)), 21)
@@ -45,6 +46,10 @@ export default () => {
     const cloudFloat = useRef(new Animated.Value(0)).current;
     const cloudY = cloudFloat.interpolate({ inputRange: [0, 1], outputRange: [-scale(4), scale(4)] });
 
+    const [starTapped, setStarTapped] = useState(false);
+    const starFlicker = useRef(new Animated.Value(1)).current;
+    const isComplete = step >= petsteps && petsteps > 0;
+
     useEffect(() => {
         if (Platform.OS === 'android') {
             fetchSteps().then(({ granted, steps }) => {
@@ -52,6 +57,12 @@ export default () => {
             });
         }
     }, [dispatch]);
+
+    useEffect(() => {
+        if (pendingpetsteps !== null && pendingfrom !== null && Date.now() >= pendingfrom) {
+            dispatch(updatePet({ petsteps: pendingpetsteps, pendingpetsteps: null, pendingfrom: null }));
+        }
+    }, [pendingpetsteps, pendingfrom]);
 
     useEffect(() => {
         const cloudWidth = scale(65);
@@ -85,6 +96,21 @@ export default () => {
         return () => { anim.stop(); floatAnim.stop(); };
     }, [cloudX, cloudFloat]);
 
+    useEffect(() => {
+        if (isComplete && !starTapped) {
+            const flicker = Animated.loop(
+                Animated.sequence([
+                    Animated.timing(starFlicker, { toValue: 0.15, duration: 300, useNativeDriver: true }),
+                    Animated.timing(starFlicker, { toValue: 1, duration: 300, useNativeDriver: true }),
+                ])
+            );
+            flicker.start();
+            return () => flicker.stop();
+        } else {
+            starFlicker.setValue(1);
+        }
+    }, [isComplete, starTapped]);
+
     return (
 
         <ImageBackground
@@ -99,6 +125,7 @@ export default () => {
                 </TouchableOpacity>
             </Pressable>
             <SpriteLoader spriteImage={spriteImage} />
+            
             <RetroStepsBar
                 top={scale(92)}
                 right={scale(100)}
@@ -117,14 +144,23 @@ export default () => {
                 </TouchableOpacity>                        
                 <SvgXml height={scale(45)} width={scale(45)} xml={newfeature} />
             </View>
-            <ScalePressable onPress={() => playButtonSound()} pressableStyle={styles.starcontainer}>
-                <ImageBackground
-                    source={images.star}
-                    style={styles.star}
-                    imageStyle={{ resizeMode: 'contain' }}
-                >
-                    <SvgXml xml={cake} style={styles.cakecontainer} height={50} width={40} />
-                </ImageBackground>
+            <ScalePressable
+                onPress={() => { playButtonSound(); if (isComplete && !starTapped) setStarTapped(true); }}
+                pressableStyle={styles.starcontainer}
+            >
+                <Animated.View style={{ opacity: isComplete && !starTapped ? starFlicker : 1, width: '100%', height: '100%' }}>
+                    <ImageBackground
+                        source={images.star}
+                        style={styles.star}
+                        imageStyle={{ resizeMode: 'contain' }}
+                    >
+                        <SvgXml
+                            xml={starTapped ? starchecked : isComplete ? cakefilled : cake}
+                            style={styles.cakecontainer}
+                            height={50} width={40}
+                        />
+                    </ImageBackground>
+                </Animated.View>
             </ScalePressable>
 
             <ImageBackground

@@ -13,7 +13,7 @@ export default function SelectGoalScreen() {
     const navigation = useNavigation();
     const pet = params?.pet;
     const petName = params?.petName;
-    const [stepGoal, setStepGoal] = useState(100);
+    const [stepGoal, setStepGoal] = useState(500);
 
     return (
         <View style={Styles.container}>
@@ -22,7 +22,7 @@ export default function SelectGoalScreen() {
                 style={Styles.imgbg}
                 resizeMode="cover"
             >
-                <Header centersub={true} title="Set your" subtitle="daily Step Goal" onBackPress={() => navigation.goBack()} />
+                <Header centersub={true} title="Set your" subtitle="daily Step Goal" onBackPress={() => navigation.replace('NameYourPer',{pet, petName})} />
                 <View style={Styles.content}>
                     <Text style={Styles.descText}>
                         This is the number of steps you’ll aim to walk each day.

@@ -14,7 +14,7 @@ import { Theme } from "../../../libs";
 import PressableIcon from "../../../components/PressSvg/PressSvg";
 import { BackArrow, grayButton } from "../../../assets/svgs";
 import { orangeBtn } from "../../../components/Petmenu/buttonSvgs";
-import { setPetSteps } from "../../../redux/slices/petslice";
+import { updatePet } from "../../../redux/slices/petslice";
 import { babyDogsprites, teenDogsprites, adultDogsprites } from "../../../assets/Sprites/Pets/Dog";
 import { babycatsprites, teencatsprites, adultcatsprites } from "../../../assets/Sprites/Pets/Cat";
 import { babydinosprites, teendinosprites, adultdinosprites } from "../../../assets/Sprites/Pets/Dino";
@@ -61,10 +61,13 @@ export default function Petmenu() {
 
   
 
-  const handelSave=()=>{
-    dispatch(setPetSteps(stepGoal))
-    router.replace('Main')
-  }
+  const handelSave = () => {
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    tomorrow.setHours(0, 0, 0, 0);
+    dispatch(updatePet({ pendingpetsteps: stepGoal, pendingfrom: tomorrow.getTime() }));
+    router.replace('Main');
+  };
   return (
     <View style={styles.container}>
       <SettingsBackground path={images.Statistics}  />

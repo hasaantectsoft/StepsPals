@@ -26,7 +26,7 @@ export default function NameYourPet() {
             return;
         }
         setError("");
-        navigation.navigate("SelectGoalScreen", { pet, petName: trimmed });
+        navigation.replace("SelectGoalScreen", { pet, petName: trimmed });
     };
 
     return (
