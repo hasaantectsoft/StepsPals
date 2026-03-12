@@ -3,7 +3,7 @@ import { styles } from "./Styles";
 import { ImageBackground, Linking, Platform, Text, View } from "react-native";
 import { images } from "../../../assets/images";
 import { combineStyles } from "../../../libs/combineStyle";
-import { DeleteButtonSvg, PrivacyPolicyBtnSvg, RestorePurchaceBtnSvg, SignInWithAppleBtnSvg, SignInWithGoogleBtnSvg, switchOff, switchOn } from "../../../assets/svgs";
+import { DeleteButtonSvg, PrivacyPolicyBtnSvg, RestorePurchaceBtnSvg, SignInWithAppleBtnSvg, SignInWithGoogleBtnSvg, SupportSvg, switchOff, switchOn } from "../../../assets/svgs";
 import PressableIcon from "../../../components/PressSvg/PressSvg";
 import { moderateScale } from "react-native-size-matters";
 import { DeleteMessageModal } from "../../../components/Modal";
@@ -13,6 +13,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setMusicSound, setSound } from "../../../redux/slices/soundSlice";
 import { useNavigation } from '@react-navigation/native';
 import { setSignedIn } from '../../../redux/slices/authSlice';
+import ProgressBar from "../../../components/ProgressBar/ProgressBar";
 export default () => {
 
     const { MusicSound, Sound } = useSelector(state => state.soundReducer);
@@ -44,9 +45,7 @@ export default () => {
     const handelModal = () => {
         setIsDeleteModalVisible(false)
         setIsProgressModal(true)
-        // mark user as signed out so App navigation shows UnAuthStack
         dispatch(setSignedIn(false));
-        // try to reset root navigator to landing (if available)
         try {
             const parent = navigation.getParent();
             if (parent && typeof parent.reset === 'function') {
@@ -61,17 +60,17 @@ export default () => {
     return (
         <View style={[combineStyles.combineStyles]}>
             <ImageBackground source={images.yellowBackground} style={styles.backgroundImage}>
-                <View style={styles.main}>
+                {/* <View style={styles.main}>
                     <Text style={{ ...combineStyles.regular26, textAlign: "center" }}>Settings</Text>
                     <View style={[combineStyles.rowSpacebetween, { left: moderateScale(10) }]}>
                         <Text style={styles.textStyle}>Music</Text>
                         <PressableIcon
-                            icon={MusicSound ? switchOn : switchOff} 
+                            icon={MusicSound ? switchOn : switchOff}
                             width={100}
                             height={50}
                             onPress={() => {
-                                handleButtonPress(); 
-                                dispatch(setMusicSound(!MusicSound)); 
+                                handleButtonPress();
+                                dispatch(setMusicSound(!MusicSound));
                             }}
                         />
                     </View>
@@ -79,12 +78,12 @@ export default () => {
                     <View style={[combineStyles.rowSpacebetween, { left: moderateScale(10) }]}>
                         <Text style={{ ...combineStyles.regular18, top: moderateScale(8) }}>Sounds</Text>
                         <PressableIcon
-                            icon={Sound ? switchOn : switchOff} 
+                            icon={Sound ? switchOn : switchOff}
                             width={100}
                             height={50}
                             onPress={() => {
-                                    handleButtonPress(); 
-                                dispatch(setSound(!Sound)); 
+                                handleButtonPress();
+                                dispatch(setSound(!Sound));
                             }}
                         />
                     </View>
@@ -99,13 +98,20 @@ export default () => {
 
                         }
                         <PressableIcon onPress={() => { Linking.openURL(PRIVACY_URL) }} icon={PrivacyPolicyBtnSvg} width={"100%"} height={60} />
+                        <PressableIcon icon={SupportSvg} width={"100%"} height={60} />
                         <PressableIcon icon={RestorePurchaceBtnSvg} width={"100%"} height={60} />
                         <PressableIcon icon={DeleteButtonSvg} width={"100%"} height={60} onPress={() => setIsDeleteModalVisible(true)} />
                     </View>
                 </View>
                 <DeleteMessageModal isVisible={isDeleteModalVisible} onClose={() => setIsDeleteModalVisible(false)} subtitle={"Are you sure you want to delete your account?"} btn1text={"No"} btn2text={"Yes"} onpressButton2={handelModal} modalStyle={styles.modalStyle} />
-                <DeleteMessageModal isVisible={DisconnectModal} onClose={() => setIsDisConnectModal(false)} subtitle={"Disconnecting unlinks the game progress on other devices.Are you sure you want to continue?"} btn1text={"Cancel"} btn2text={"Disconnect"} onpressButton2={() => setIsDisConnectModal(false)} title={"Disconnect?"}  swap={true} />
-                <DeleteMessageModal isVisible={ProgressModal} onpressCenterButton={() => { setIsProgressModal(false); setIsDisConnectModal(true) }} subtitle={"Account deletion in progress?"} centerButtonTxt={"Ok"} centerButton={true} rowBtton={false} modalStyle={styles.modalStyle} />
+                <DeleteMessageModal isVisible={DisconnectModal} onClose={() => setIsDisConnectModal(false)} subtitle={"Disconnecting unlinks the game progress on other devices.Are you sure you want to continue?"} btn1text={"Cancel"} btn2text={"Disconnect"} onpressButton2={() => setIsDisConnectModal(false)} title={"Disconnect?"} swap={true} />
+                <DeleteMessageModal isVisible={ProgressModal} onpressCenterButton={() => { setIsProgressModal(false); setIsDisConnectModal(true) }} subtitle={"Account deletion in progress?"} centerButtonTxt={"Ok"} centerButton={true} rowBtton={false} modalStyle={styles.modalStyle} /> */}
+
+
+
+              <View style={{justifyContent:"center", alignItems:"center", flex:1}}>
+                 <ProgressBar progress={0.6} images={images} onProgressChange={(value) => console.log(value)} />
+              </View>
             </ImageBackground>
         </View>
     )

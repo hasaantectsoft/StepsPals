@@ -37,7 +37,7 @@ export default () => {
 
   const renderItem = ({ item }) => (
     <View style={styles.item}>
-      <ImageBackground source={images.PetGravYard} style={styles.gravYard}>
+      <ImageBackground source={item.img ? item.img : images.PetGravYard} style={styles.gravYard}>
         <Text style={styles.name}>{item.name}</Text>
         <Text style={styles.borndate}>{item.bornDate}</Text>
         <Text style={styles.diedate}>{item.dieDate}</Text>

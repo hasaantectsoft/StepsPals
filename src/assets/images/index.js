@@ -49,6 +49,9 @@ export const images = {
   permisionnotifif: require('./permisionnotifif.png'),
   healthkitpermsiom: require('./healthkitpermsiom.png'),
   collection: require('./collection.png'),
+  GraveYardDino: require('./GraveYardDino.png'),
+  GraveYardCat: require('./GraveYardCat.png'),
+  ProgressBarHead: require('./ProgressBarHead.png'),
 
 
 

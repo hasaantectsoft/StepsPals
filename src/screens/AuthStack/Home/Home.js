@@ -51,7 +51,7 @@ export default () => {
             const steps = await getTodaySteps();
             console.log('Steps today:', steps);
 
-            // ✅ Update the Android home screen widget
+            
             if (NativeModules.StepWidget && NativeModules.StepWidget.updateSteps) {
                 NativeModules.StepWidget.updateSteps(steps);
             }
@@ -61,11 +61,9 @@ export default () => {
         }
     };
 
-    fetchSteps(); // initial fetch
+    fetchSteps(); 
 
-    // // Optional: refresh every 5 seconds (or adjust as needed)
-    // const interval = setInterval(fetchSteps, 5000);
-    // return () => clearInterval(interval); // cleanup on unmount
+   
 }, []);
 
 
