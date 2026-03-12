@@ -53,6 +53,12 @@ const PressableIcon = ({
 
   return (
     <Pressable
+    onLongPress={() => {
+        playButtonSound();
+        if (onPress) {
+          onPress();
+        }
+      }}
       onPress={() => {
         playButtonSound();
         if (onPress) {

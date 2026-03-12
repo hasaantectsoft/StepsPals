@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 import { Theme } from "../../../libs";
-import { scale } from "react-native-size-matters";
+import { moderateScale, scale } from "react-native-size-matters";
 export const Styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -39,6 +39,8 @@ export const Styles = StyleSheet.create({
 height: scale(130),
 width: scale(100),
         borderRadius: Theme.borders.regularRadius,
+        left:moderateScale(-8),
+
     },
     petName:{
         fontSize: scale(10),
