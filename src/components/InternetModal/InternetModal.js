@@ -26,14 +26,10 @@ export default function InternetModal({ isVisible, onRetry }) {
       <View style={Styles.overlay}>
         <View style={Styles.content}>
           <SvgXml xml={nointernet} width={scale(280)} height={scale(100)} />
-          <Image
-            source={images.loadingzero}
-            style={Styles.loadingBar}
-            resizeMode="contain"
-          />
+         
           {isRetrying ? (
             <LoaderKitView
-              name="BallBeat"
+              name="BallSpinFadeLoader"
               style={Styles.loader}
               color="#ffffff"
             />
