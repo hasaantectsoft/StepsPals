@@ -8,7 +8,7 @@ export const Styles = StyleSheet.create({
     justifyContent: 'center',
   },
   background: {
-    // minWidth: scale(160),/
+    width: scale(170),
     paddingHorizontal: scale(0),
     paddingLeft: scale(34),
     paddingVertical: scale(30),
@@ -23,7 +23,9 @@ export const Styles = StyleSheet.create({
   text: {
     color: Theme.colors.black,
     fontFamily: Theme.typography.Retro?.fontFamily,
-    fontSize: scale(12),
+    marginTop: scale(10),
+    fontSize: scale(8),
+    
     textAlign: 'center',
   },
 });

@@ -49,9 +49,9 @@ export const images = {
   permisionnotifif: require('./permisionnotifif.png'),
   healthkitpermsiom: require('./healthkitpermsiom.png'),
   collection: require('./collection.png'),
-loadingzero:require('./loadingbarunfilled.png'),
-loading90:require('./loadingbar90percent.png'),
-loading100:require('./loadingbarfilled.png'),
+  loadingzero: require('./loadingbarunfilled.png'),
+  loading90: require('./loadingbar90percent.png'),
+  loading100: require('./loadingbarfilled.png'),
   GraveYardDino: require('./GraveYardDino.png'),
   GraveYardCat: require('./GraveYardCat.png'),
   ProgressBarHead: require('./ProgressBarHead.png'),
@@ -63,6 +63,7 @@ loading100:require('./loadingbarfilled.png'),
   collectionLogo: require('./collectionLogo.png'),
   greatjob: require('./greatjob.png'),
   modalbg: require('./modalbg.png'),
+  starmesagebox: require('./starmessageboxi.png'),
 
 
 

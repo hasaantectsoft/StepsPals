@@ -5,7 +5,7 @@ import {Styles} from './MessageBoxStyles';
 import { images } from '../../assets/images';
 
 
-export default function MessageBox({text, style, textStyle, numberOfLines = 4}) {
+export default function MessageBox({star=false,text, style, textStyle, numberOfLines = 4}) {
   if (!text) {
     return null;
   }
@@ -13,7 +13,7 @@ export default function MessageBox({text, style, textStyle, numberOfLines = 4}) 
   return (
     <View style={[Styles.container, style]}>
       <ImageBackground
-        source={images.messagebox}
+        source={star ? images.starmesagebox : images.messagebox}
         resizeMode="contain"
         style={Styles.background}
         imageStyle={Styles.image}>
