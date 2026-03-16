@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { Animated, Image, ImageBackground, Text, TouchableOpacity, View } from "react-native";
+import { Animated, Image, ImageBackground, Pressable, Text, TouchableOpacity, View } from "react-native";
 import { SvgXml } from "react-native-svg";
 import { scale } from "react-native-size-matters";
 import { styles } from "./Styles";
@@ -33,10 +33,14 @@ export default function HomeScreen() {
     return (
         <ImageBackground source={images.HomeLayout} imageStyle={{ resizeMode: 'cover' }} style={styles.container}>
 
-            <TouchableOpacity hitSlop={30} onPress={() => { playButtonSound(); navigation.navigate('PetMenu'); }}>
+            <Pressable
+                style={styles.headerPressArea}
+                hitSlop={40}
+                onPress={() => { playButtonSound(); navigation.navigate('PetMenu'); }}
+            >
                 <Text style={styles.name}>Hello {petname}</Text>
                 <Text style={styles.welcome}>is happy</Text>
-            </TouchableOpacity>
+            </Pressable>
 
             <SpriteLoader />
             {/* <SpriteLoader spriteImage={careActions.treat}/> */}
@@ -48,9 +52,9 @@ export default function HomeScreen() {
             />
 
             <View style={styles.collectioncontainer}>
-                <TouchableOpacity onPress={() => { playButtonSound(); navigation.navigate('Collecition'); }}>
+                <ScalePressable onPress={() => { playButtonSound(); navigation.navigate('Collecition'); }}>
                     <Image source={images.collection} style={{ width: scale(45), height: scale(45) }} />
-                </TouchableOpacity>
+                </ScalePressable>
                 <SvgXml height={scale(45)} width={scale(45)} xml={newfeature} />
             </View>
 

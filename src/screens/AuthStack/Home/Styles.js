@@ -6,17 +6,21 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
     },
+    headerPressArea: {
+        position: 'absolute',
+        top: Platform.OS === 'ios' ? scale(270) : scale(290),
+        left: 0,
+        right: 0,
+        height: scale(30),
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
     name:{
         fontSize: scale(5),
         // maxWidth:scale(100),
         fontFamily: Retro,
         color: Theme.colors.white,
         textAlign: 'center',
-        position: 'absolute',
-        
-        top: Platform.OS === 'ios' ? scale(270) : scale(290),
-        left: 0,
-        right: 0,
     },
     star:{ width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' },
     welcome:{
@@ -24,10 +28,6 @@ export const styles = StyleSheet.create({
         fontFamily: Retro,
         color: Theme.colors.yellow,
         textAlign: 'center',
-        position: 'absolute',
-        top: Platform.OS === 'ios' ? scale(280) : scale(300),
-        left: 0,
-        right: 0,
     },
     cloudContainer:{
         position: 'absolute',

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Animated, View, Text } from "react-native";
 import { styles } from "./styles";
 import { scale } from "react-native-size-matters";
-import { bowl, bowl1, checked, homebar, popp, waterdis, waterfull } from "../../assets/svgs";
+import { bowl, bowl1, checked, homebar, pop1,popp, waterdis, waterfull } from "../../assets/svgs";
 import { SvgXml } from "react-native-svg";
 import { playButtonSound } from "../../utils/SoundManager/SoundManager";
 import MessageBox from "../MessageBox/MessageBox";
@@ -50,7 +50,7 @@ export default function RetroStepsBar({
   const iconConfigs = [
     { pct: 0.25, state: boul, setState: setBoul, getXml: s => getIcon(s, bowl, bowl1),        canPress: steps >= goal * 0.25, msg: "You need to hit 25% of your step goal"  },
     { pct: 0.47, state: wat,  setState: setwat,  getXml: s => getIcon(s, waterdis, waterfull), canPress: steps >= goal * 0.50, msg: "You need to hit 50% of your step goal"  },
-    { pct: 0.70, state: pop,  setState: setpop,  getXml: s => getIcon(s, popp, popp),          canPress: steps >= goal * 0.75, msg: "You need to hit 75% of your step goal"  },
+    { pct: 0.70, state: pop,  setState: setpop,  getXml: s => getIcon(s, popp, pop1),          canPress: steps >= goal * 0.75, msg: "You need to hit 75% of your step goal"  },
   ];
 
   return (

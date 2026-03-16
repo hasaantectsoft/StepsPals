@@ -12,7 +12,7 @@ const ScalePressable = ({
   scaleFactor = 0.9,
   animationDuration = 100,
   hitSlop = 15,
-  androidRipple = { color: "rgba(0,0,0,0.1)", borderless: true },
+  androidRipple = { color: "transparent", borderless: true },
 }) => {
   const scaleAnim = useRef(new Animated.Value(1)).current;
 

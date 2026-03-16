@@ -7,6 +7,7 @@ import { DeviceEventEmitter } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import useKeyboard from "../../utils/extra/usekeyboard"
 import {  playButtonSound } from '../../utils/SoundManager/SoundManager';
+import ScalePressable from '../ScalePressable/ScalePressable';
 
 
 const BottomTabs = ({ activeTab, onTabPress }) => {
@@ -70,7 +71,7 @@ const BottomTabs = ({ activeTab, onTabPress }) => {
                         )}
 
                         {tabIcons.map(tab => (
-                            <TouchableOpacity
+                            <ScalePressable
                                 key={tab.name}
                                 style={[
                                     styles.tabItem,
@@ -85,7 +86,7 @@ const BottomTabs = ({ activeTab, onTabPress }) => {
                                 />
 
 
-                            </TouchableOpacity>
+                            </ScalePressable>
                         ))}
                     </View>
             }

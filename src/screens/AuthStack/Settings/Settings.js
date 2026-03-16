@@ -60,7 +60,11 @@ export default () => {
         <View style={[combineStyles.combineStyles]}>
             <ImageBackground source={images.yellowBackground} style={styles.backgroundImage}>
                     <Text style={styles.title}>Settings</Text>
-                <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
+                <ScrollView
+                    style={styles.scrollView}
+                    contentContainerStyle={styles.scrollContent}
+                    showsVerticalScrollIndicator={false}
+                >
                 <View style={styles.main}>
                  
                      <View style={[combineStyles.rowSpacebetween, { left: moderateScale(10) }]}>
@@ -102,6 +106,7 @@ export default () => {
                         <PressableIcon icon={RestorePurchaceBtnSvg} width={"100%"} height={60} />
                         <PressableIcon icon={DeleteButtonSvg} width={"100%"} height={60} onPress={() => setIsDeleteModalVisible(true)} />
                             <Text style={styles.version}>Ver. 0.025</Text>
+                            
                     </View>
                 </View>
                    </ScrollView>
