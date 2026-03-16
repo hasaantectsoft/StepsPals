@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Animated, Image, ImageBackground, Pressable, Text, View } from "react-native";
 import { SvgXml } from "react-native-svg";
 import { scale } from "react-native-size-matters";
@@ -9,23 +9,62 @@ import { playButtonSound } from "../../../utils/SoundManager/SoundManager";
 import SpriteLoader from "../../../components/SprieLoader";
 import RetroStepsBar from "../../../components/Retroprogreebar/Retrostepsbar";
 import ScalePressable from "../../../components/ScalePressable/ScalePressable";
-import MessageBox from "../../../components/MessageBox/MessageBox";
 import useHomeScreen from "../../../utils/hooks/useHomeScreen";
+import { CatBabySprite_main } from "../../../components/PetSprites/Pets/Cat";
+import { spriteKeys } from "../../../utils/CareActionSpriteKeys/CareActionSpriteKeys";
+
+const careMap = {
+    clean: spriteKeys.find(x => x.id === 1)?.spritecomponent,
+    treat: spriteKeys.find(x => x.id === 2)?.spritecomponent,
+    feed: spriteKeys.find(x => x.id === 3)?.spritecomponent,
+    drink: spriteKeys.find(x => x.id === 4)?.spritecomponent,
+};
+
 export default function HomeScreen() {
     const {
         navigation, petname, petsteps, step, isComplete, starTapped, setStarTapped,
         cloudX, cloudY, starFlicker,
     } = useHomeScreen();
-    const [cakeMsg, setCakeMsg] = useState(false);
-    const cakeMsgOpacity = useRef(new Animated.Value(0)).current;
-    const showCakeMsg = () => {
-        setCakeMsg(true);
-        cakeMsgOpacity.setValue(1);
-        Animated.sequence([
-            Animated.delay(300),
-            Animated.timing(cakeMsgOpacity, { toValue: 0, duration: 300, useNativeDriver: true }),
-        ]).start(() => setCakeMsg(false));
+    const [allCareChecked, setAllCareChecked] = useState(false);
+    const [activeCareKey, setActiveCareKey] = useState(null);
+    const careTimeoutRef = useRef(null);
+
+    const careDurations = {
+        feed: (7 / 8) * 1000,
+        drink: (29 / 12) * 1000,
+        clean: (36 / 12) * 1000,
+        treat: (78 / 12) * 1000,
     };
+
+    const playCareOnce = (key) => {
+        if (!key) return;
+        setActiveCareKey(key);
+        if (careTimeoutRef.current) {
+            clearTimeout(careTimeoutRef.current);
+        }
+        const duration = careDurations[key];
+        if (!duration) return;
+        careTimeoutRef.current = setTimeout(() => {
+            setActiveCareKey((k) => (k === key ? null : k));
+        }, duration);
+    };
+
+    const ActiveCareSprite = activeCareKey ? careMap[activeCareKey] : null;
+
+    const careOffsets = {
+        drink: 35,
+        treat: 35,
+        feed: 40,
+        clean: 0,
+    };
+
+    const handleCareActionChange = (key) => {
+        // keep treat separate from normal care queue
+        if (starTapped && activeCareKey === "treat") return;
+        playCareOnce(key);
+    };
+
+    const canCheckStar = isComplete && allCareChecked && !starTapped;
     return (
         <ImageBackground source={images.HomeLayout} imageStyle={{ resizeMode: 'cover' }} style={styles.container}>
             <Pressable
@@ -35,11 +74,21 @@ export default function HomeScreen() {
                 <Text style={styles.name}>Hello {petname}</Text>
                 <Text style={styles.welcome}>is happy</Text>
             </Pressable>
-            <SpriteLoader />
+            <SpriteLoader>
+                <CatBabySprite_main spriteScale={4} />
+                {ActiveCareSprite && (
+                    <ActiveCareSprite
+                        spriteScale={3.5}
+                        offsetY={careOffsets[activeCareKey] || 0}
+                    />
+                )}
+            </SpriteLoader>
             <RetroStepsBar
                 top={scale(92)} right={scale(100)} left={scale(100)} bottom={scale(100)}
                 width={scale(280)} height={scale(40)} borderRadius={scale(20)}
                 steps={step} goal={petsteps}
+                onAllCareCheckedChange={setAllCareChecked}
+                onCareActionChange={handleCareActionChange}
             />
             <View style={styles.collectioncontainer}>
                 <ScalePressable onPress={() => { playButtonSound(); navigation.navigate('Collecition'); }}>
@@ -52,11 +101,13 @@ export default function HomeScreen() {
                 <ScalePressable
                     onPress={() => {
                         playButtonSound();
-                        if (isComplete && !starTapped) { setStarTapped(true); setCakeMsg(false); }
-                        else if (!isComplete) showCakeMsg();
+
+                        if (!canCheckStar) return;
+                        setStarTapped(true);
+                        playCareOnce("treat");
                     }}
                 >
-                    <Animated.View style={{ opacity: isComplete && !starTapped ? starFlicker : 1, width: '100%', height: '100%' }}>
+                    <Animated.View style={{ opacity: !starTapped && canCheckStar ? starFlicker : 1, width: '100%', height: '100%' }}>
                         <ImageBackground source={images.star} style={styles.star} imageStyle={{ resizeMode: 'contain' }}>
                             <SvgXml
                                 xml={starTapped ? starchecked : isComplete ? cakefilled : cake}
@@ -66,11 +117,6 @@ export default function HomeScreen() {
                         </ImageBackground>
                     </Animated.View>
                 </ScalePressable>
-                {cakeMsg && (
-                    <Animated.View style={{ position: 'absolute', top: scale(70), right: scale(40), opacity: cakeMsgOpacity }}>
-                        <MessageBox star={true} text="You need to hit 100% of your step goal" />
-                    </Animated.View>
-                )}
             </View>
             <ImageBackground source={images.windowBottom} imageStyle={styles.winowframe} style={styles.windowContainer}>
                 <Animated.Image

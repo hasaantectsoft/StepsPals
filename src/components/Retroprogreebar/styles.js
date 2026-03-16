@@ -18,11 +18,8 @@ export const styles = StyleSheet.create({
     },
     outerBar: {
       borderWidth: scale(4),
-      // margin: scale(2),
       marginLeft: scale(10),
-      // borderColor: Theme.colors.white,
       borderColor: "transparent",
-      // backgroundColor: Theme.colors.lightgrey,
       overflow: "hidden",
       justifyContent: "center",
     },

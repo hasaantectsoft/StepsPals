@@ -7,7 +7,6 @@ import { styles } from './styles';
 
 const { width: SW } = Dimensions.get('window');
 
-// ─── Base Component ──────────────────────────────────────────────────────────
 
 export function CareActionSprite({
   spriteSheet,
@@ -21,6 +20,7 @@ export function CareActionSprite({
   offsetX,
   offsetY = 0,
   style,
+  loop = true,
 }) {
   const resolvedCanvasHeight = canvasHeight ?? frameHeight * spriteScale + 20;
   const resolvedOffsetX = offsetX ?? (SW - frameWidth * spriteScale) / 2;
@@ -28,12 +28,19 @@ export function CareActionSprite({
   const progress = useSharedValue(0);
 
   useEffect(() => {
-    progress.value = withRepeat(
-      withTiming(frameCount, { duration: (frameCount / fps) * 1000, easing: Easing.linear }),
-      -1,
-    );
+    const duration = (frameCount / fps) * 1000;
+
+    if (loop) {
+      progress.value = withRepeat(
+        withTiming(frameCount, { duration, easing: Easing.linear }),
+        -1,
+      );
+    } else {
+      progress.value = withTiming(frameCount, { duration, easing: Easing.linear });
+    }
+
     return () => cancelAnimation(progress);
-  }, [fps, frameCount]);
+  }, [fps, frameCount, loop]);
 
   const image = useImage(spriteSheet);
 
@@ -62,13 +69,12 @@ export function CleanPoopSprite(props) {
       frameHeight={47}
       frameCount={36}
       fps={12}
+      loop={false}
       {...props}
     />
   );
 }
 
-// 671 × 26 px → 14 frames × 46 px
-// 667 × 22 px → 29 frames × 23 px wide
 export function DrinkWaterSprite(props) {
   return (
     <CareActionSprite
@@ -77,12 +83,12 @@ export function DrinkWaterSprite(props) {
       frameHeight={22}
       frameCount={29}
       fps={12}
+      loop={false}
       {...props}
     />
   );
 }
 
-// 137 × 19 px → 7 frames × 19 px
 export function FeedingSprite(props) {
   return (
     <CareActionSprite
@@ -91,12 +97,12 @@ export function FeedingSprite(props) {
       frameHeight={19}
       frameCount={7}
       fps={8}
+      loop={false}
       {...props}
     />
   );
 }
 
-// 3198 × 37 px → 78 frames × 41 px wide
 export function GivingTreatSprite(props) {
   return (
     <CareActionSprite
@@ -105,6 +111,7 @@ export function GivingTreatSprite(props) {
       frameHeight={37}
       frameCount={78}
       fps={12}
+      loop={false}
       {...props}
     />
   );
