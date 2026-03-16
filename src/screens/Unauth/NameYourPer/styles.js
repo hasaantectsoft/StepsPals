@@ -55,8 +55,10 @@ export const styles = StyleSheet.create({
     errorText: {
         fontFamily: Theme.typography.Retro.fontFamily,
         fontSize: scale(6),
-        color: Theme.colors.DARKRED,
-        marginTop: scale(8),
+        color: Theme.colors.brown,
+        textAlign: 'center',
+        lineHeight: scale(10),
+        // marginTop: scale(8),
     },
     petImageWrap: {
         marginBottom: scale(16),

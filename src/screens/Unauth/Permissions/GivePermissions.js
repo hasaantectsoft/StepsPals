@@ -7,11 +7,12 @@ import {
   Text,
   TouchableOpacity,
   View,
+  AppState,
 } from "react-native";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, useRef } from "react";
 import { useDispatch } from 'react-redux';
-import { useRoute } from "@react-navigation/native";
-import { checkNotifications } from "react-native-permissions";
+import { useRoute, useFocusEffect } from "@react-navigation/native";
+import { checkNotifications, checkMultiple, PERMISSIONS } from "react-native-permissions";
 import { styles } from "./styles";
 import { Header, NextButton } from "../../../components";
 import { useNavigation } from "@react-navigation/native";
@@ -28,25 +29,80 @@ import { fetchSteps } from "../../../utils/handler/fetchsteps";
 export default () => {
   const navigation = useNavigation();
   const dispatch = useDispatch();
+  const appState = useRef(AppState.currentState);
   
   const { pet, petName, stepGoal } = useRoute().params || {};
   const [notifGranted, setNotifGranted] = useState(false);
   const [healthGranted, setHealthGranted] = useState(false);
+  const [notifRejectionCount, setNotifRejectionCount] = useState(0);
+  
   const refreshNotif = useCallback(() => {
-    checkNotifications().then(({ status }) =>
-      setNotifGranted(status === "granted")
-    );
+    checkNotifications().then(({ status }) => {
+      setNotifGranted(status === "granted");
+    });
+  }, []);
+
+  const refreshHealthPermissions = useCallback(() => {
+    if (Platform.OS === 'ios') {
+      checkMultiple([PERMISSIONS.IOS.HEALTH]).then((statuses) => {
+        setHealthGranted(statuses[PERMISSIONS.IOS.HEALTH] === 'granted');
+      });
+    }
   }, []);
 
   useEffect(() => {
     refreshNotif();
-  }, [refreshNotif]);
+    refreshHealthPermissions();
+  }, [refreshNotif, refreshHealthPermissions]);
+
+  // Handle app state changes (when app returns from background/settings)
+  useEffect(() => {
+    const subscription = AppState.addEventListener('change', handleAppStateChange);
+
+    return () => {
+      subscription.remove();
+    };
+  }, []);
+
+  const handleAppStateChange = useCallback((nextAppState) => {
+    if (appState.current.match(/inactive|background/) && nextAppState === 'active') {
+      // App has come to foreground, refresh permissions with delay
+      setTimeout(() => {
+        refreshNotif();
+        refreshHealthPermissions();
+      }, 1000);
+    }
+    appState.current = nextAppState;
+  }, [refreshNotif, refreshHealthPermissions]);
+
+  // Refresh permissions when screen comes back into focus (after user goes to settings)
+  useFocusEffect(
+    useCallback(() => {
+      // Add a delay to ensure system has updated permissions
+      const timer = setTimeout(() => {
+        refreshNotif();
+        refreshHealthPermissions();
+      }, 800);
+
+      return () => clearTimeout(timer);
+    }, [refreshNotif, refreshHealthPermissions])
+  );
 
   const onRequestNotification = async () => {
-    const granted = await permissionUtils.requestNotificationPermission();
-    setNotifGranted(granted);
-    console.log(notifGranted)
+    // If rejected 2 times already, open app settings
+    if (notifRejectionCount >= 2) {
+      Linking.openSettings();
+      return;
+    }
 
+    const granted = await permissionUtils.requestNotificationPermission();
+    if (granted) {
+      setNotifGranted(granted);
+      setNotifRejectionCount(0);
+    } else {
+      // User rejected, increment counter
+      setNotifRejectionCount(prev => prev + 1);
+    }
   };
 
   const onRequestHealth = async () => {

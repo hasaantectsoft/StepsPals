@@ -7,7 +7,7 @@ import { cat, dog, dino } from "../../../assets/svgs";
 import { styles } from "./styles";
 import ScalePressable from "../../../components/ScalePressable/ScalePressable";
 import { playButtonSound } from "../../../utils/SoundManager/SoundManager";
-import { scale } from "react-native-size-matters";
+import { moderateScale, scale } from "react-native-size-matters";
 
 const petSvgs = { Dog: dog, Cat: cat, Dino: dino };
 
@@ -21,10 +21,23 @@ export default function NameYourPet() {
     const handleDone = () => {
         playButtonSound();
         const trimmed = petName.trim();
+        
         if (!trimmed) {
             setError("This field cannot be empty");
             return;
         }
+        
+        if (trimmed.length < 2) {
+            setError("Pet name must be at least 2 characters");
+            return;
+        }
+        
+        const englishLettersOnly = /^[a-zA-Z]+$/;
+        if (!englishLettersOnly.test(trimmed)) {
+            setError("Pet name must contain English letters only");
+            return;
+        }
+        
         setError("");
         navigation.replace("SelectGoalScreen", { pet, petName: trimmed });
     };
@@ -58,13 +71,25 @@ export default function NameYourPet() {
                         placeholderTextColor="#6F5548"
                         maxLength={10}
                         value={petName}
-                        onChangeText={(t) => { setPetName(t); setError(""); }}
+                        onChangeText={(t) => { 
+                            setPetName(t); 
+                            const trimmed = t.trim();
+                            if (trimmed === "") {
+                                setError("");
+                            } else if (trimmed.length < 2) {
+                                setError("Pet name must be at least 2 characters");
+                            } else if (!/^[a-zA-Z]+$/.test(trimmed)) {
+                                setError("Pet name must contain English letters only");
+                            } else {
+                                setError("");
+                            }
+                        }}
                     />
                    </ImageBackground>
-                    {error ? <Text style={styles.errorText}>{error}</Text> : null}
+                    {error ? <Text style={[styles.errorText]}>{error}</Text> : null}
                 </ImageBackground>
-                <ScalePressable disabled={!petName} onPress={handleDone}>
-                <NextButton disabled={!petName} text={petName ? "Done" : "Done"} useTouchable={false} />
+                <ScalePressable disabled={petName.trim().length < 2 || !/^[a-zA-Z]+$/.test(petName.trim())} onPress={handleDone}>
+                <NextButton disabled={petName.trim().length < 2 || !/^[a-zA-Z]+$/.test(petName.trim())} text={petName ? "Done" : "Done"} useTouchable={false} />
                 </ScalePressable>
         </View>
         </ImageBackground>
