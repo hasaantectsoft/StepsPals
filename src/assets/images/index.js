@@ -63,6 +63,21 @@ loading100:require('./loadingbarfilled.png'),
   collectionLogo: require('./collectionLogo.png'),
   greatjob: require('./greatjob.png'),
   modalbg: require('./modalbg.png'),
+  YellowButton: require('./YellowButton.png'),
+  GoldenCup: require('./GoldenCup.png'),
+  LagendCup: require('./LagendCup.png'),
+  PlatinumCup: require('./PlatinumCup.png'),
+  SilverCup: require('./SilverCup.png'),
+  BlueBackground: require('./BlueBackground.png'),
+  BronzBackground: require('./BronzBackground.png'),
+  GoldenBackground: require('./GoldenBackground.png'),
+  PlatinumBackground: require('./PlatinumBackground.png'),
+  PurpelBackground: require('./PurpelBackground.png'),
+  next: require('./next.png'),
+  StarEye: require('./StarEye.png'),
+  TrophyBack: require('./TrophyBack.png'),
+
+
 
 
 

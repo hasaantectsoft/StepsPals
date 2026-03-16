@@ -10,6 +10,7 @@ import { images } from "../../../assets/images";
 import { combineStyles } from "../../../libs/combineStyle";
 import { GrayyardArray } from "../../../utils/exports";
 import LoaderKitView from "react-native-loader-kit";
+import PetDieModal from "../../../components/PetDieModal/PetDieModal";
 
 export default () => {
   const [page, setPage] = useState(1);
@@ -94,6 +95,8 @@ export default () => {
             showsVerticalScrollIndicator={false}
           />
         )}
+            {/* <PetDieModal isVisible={true}  /> */}
+
       </ImageBackground>
     </View>
   );

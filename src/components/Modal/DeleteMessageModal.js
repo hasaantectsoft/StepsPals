@@ -7,7 +7,7 @@ import NativeButton from "../NativeButton/NativeButton";
 import PressableIcon from "../PressSvg/PressSvg";
 import { Paw } from "../../assets/svgs";
 
-export default function DeleteMessageModal({ backImg, isVisible, onClose, btn1text, btn2text, subtitle, rowBtton = true, centerButton = false, centerButtonTxt, onpressButton2, onpressCenterButton, title, paw = false, swap = false, modalStyle = {} }) {
+export default function DeleteMessageModal({ backImg, isVisible, onClose, btn1text, btn2text, subtitle, rowBtton = true, centerButton = false, centerButtonTxt, onpressButton2, onpressCenterButton, title, paw = false, swap = false, modalStyle = {},yellowBtn=false }) {
 
 
   return (
@@ -42,7 +42,7 @@ export default function DeleteMessageModal({ backImg, isVisible, onClose, btn1te
                   <NativeButton
                     title={btn2text}
                     onPress={onpressButton2}
-                    image={swap?images.blueButton:images.OringeButton}
+                    image={swap?images.blueButton:yellowBtn?images.YellowButton:images.OringeButton}
                     containerStyle={styles.button2}
                     titleStyle={styles.txt}
                   />

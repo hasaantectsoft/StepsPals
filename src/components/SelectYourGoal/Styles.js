@@ -115,13 +115,13 @@ export const Styles = StyleSheet.create({
     doneButtonImage: {
         width: scale(150),
         height: scale(100),
-        borderRadius: scale(12),
+        // borderRadius: scale(12),
     },
     sliderRow: {
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "center",
-        // marginBottom: scale(12),
+       width:"90%",
         gap: scale(12),
     },
     sliderWrap: {

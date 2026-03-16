@@ -1,5 +1,5 @@
 import { Platform, StyleSheet } from "react-native";
-import { scale } from "react-native-size-matters";
+import { moderateScale, scale } from "react-native-size-matters";
 import { Retro } from "../../../utils/extra/retro";
 import { Theme } from "../../../libs";
 export const styles = StyleSheet.create({
@@ -79,5 +79,15 @@ export const styles = StyleSheet.create({
         right: scale(10),
         zIndex: 6,
     },
-    collectioncontainer: { alignContent: 'center', position: 'absolute', top: scale(220), left: scale(20) }
+    collectioncontainer: { alignContent: 'center', position: 'absolute', top: scale(220), left: scale(20) },
+    upgradeModalContainer:{
+        width: scale(270),
+        height: scale(280),
+        gap:moderateScale(10)
+    },
+    titleStyle:{
+        fontSize: scale(14),
+        top: moderateScale(8),
+        color:"red"
+    }
 });

@@ -10,6 +10,7 @@ import SpriteLoader from "../../../components/SprieLoader";
 import RetroStepsBar from "../../../components/Retroprogreebar/Retrostepsbar";
 import ScalePressable from "../../../components/ScalePressable/ScalePressable";
 import useHomeScreen from "../../../utils/hooks/useHomeScreen";
+import UpgradePetModal from "../../../components/UpgradePetModal/upgradepetmodal";
 
 export default function HomeScreen() {
     const {
@@ -65,7 +66,20 @@ export default function HomeScreen() {
             </ImageBackground>
 
             <SvgXml style={styles.windowFrameImage} height={scale(100)} width={scale(120)} xml={windowframe} />
-
+            {/* <UpgradePetModal
+                title={"Great job!"}
+                bottomtext={" You've taken good care of your Pet today, and it's happy."}
+                cup={images.StarEye}
+                backImg={images.TrophyBack}
+                isVisible={true}
+                showPet={false}
+                btn={false}
+                containerStyle={styles.upgradeModalContainer}
+                subtitleShow={false}
+                keepGoing={true}
+                imageStyle={styles.imageStyle}
+                titleStyle={styles.titleStyle}
+            /> */}
         </ImageBackground>
     );
 }

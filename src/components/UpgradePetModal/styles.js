@@ -1,6 +1,7 @@
 import { StyleSheet } from 'react-native';
 import { scale, moderateScale } from 'react-native-size-matters';
 import { Theme } from '../../libs';
+import { combineStyles } from '../../libs/combineStyle';
 
 export const Styles = StyleSheet.create({
   overlay: {
@@ -11,20 +12,25 @@ export const Styles = StyleSheet.create({
   },
   content: {
     alignItems: 'center',
-    gap: scale(12),
+    gap: moderateScale(6),
     paddingHorizontal: scale(20),
   },
   bgContainer: {
     width: scale(250),
-    height: scale(250),
+    height: scale(240),
     alignItems: 'center',
     justifyContent: 'center',
   },
   bgImage: {
     resizeMode: 'stretch',
+    paddingVertical: moderateScale(10)
   },
   petImage: {
     width: scale(80),
+    height: scale(100),
+  },
+  cupImg: {
+    width: scale(120),
     height: scale(120),
   },
   retryPressable: {
@@ -42,9 +48,12 @@ export const Styles = StyleSheet.create({
   },
   fromTo: {
     fontFamily: Theme.typography.Retro.fontFamily,
-    fontSize: moderateScale(11),
+    fontSize: moderateScale(9),
     color: Theme.colors.brown,
-    marginTop: scale(4),
+    // marginTop: scale(4),
+    width: moderateScale(180),
+    textAlign: 'center',
+    lineHeight: scale(16),
   },
   daysText: {
     fontFamily: Theme.typography.Retro.fontFamily,
@@ -55,4 +64,41 @@ export const Styles = StyleSheet.create({
     textAlign: 'center',
     lineHeight: scale(14),
   },
+  buttonPress: {
+    marginTop: scale(0),
+    width: scale(100),
+    height: scale(20),
+  },
+  doneButton: {
+    width: scale(120),
+    height: scale(60),
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  doneButtonText: {
+    fontFamily: Theme.typography.Retro.fontFamily,
+    fontSize: scale(8),
+    lineHeight: moderateScale(15),
+    color: "2F3450",
+
+    textAlign: "center",
+  },
+  doneButtonImage: {
+    width: scale(120),
+    height: scale(60),
+    // borderRadius: scale(12),
+  },
+  bottomtext: {
+    ...combineStyles.regular10,
+    textAlign: 'center',
+    lineHeight: scale(16),
+    color:"0F0E38"
+  },
+  keep:{
+    ...combineStyles.regular10,
+    textAlign: 'center',
+    lineHeight: scale(16),
+    color:"#79430C"
+  }
 });
+

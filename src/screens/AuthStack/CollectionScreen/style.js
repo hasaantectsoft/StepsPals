@@ -73,5 +73,8 @@ export const styles = StyleSheet.create({
         textAlign:"center",
         color:Theme.colors.brown,
 
-    }
+    },
+       modalStyle:{
+        height: moderateScale(160),
+    },
 });

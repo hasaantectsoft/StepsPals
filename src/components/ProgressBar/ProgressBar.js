@@ -7,15 +7,15 @@ import Animated, {
   withSpring,
 } from "react-native-reanimated";
 import { SvgXml } from "react-native-svg";
-
+import { moderateScale } from "react-native-size-matters";
 import { progressBarSvg } from "../../assets/svgs";
 
-const BAR_WIDTH = 280;
-const BAR_HEIGHT = 40;
-const HEAD_SIZE = 40;
+const BAR_WIDTH = moderateScale(250);
+const BAR_HEIGHT = moderateScale(40);
+const HEAD_SIZE = moderateScale(40);
 
-const FILL_LEFT_OFFSET = 10;
-const FILL_RIGHT_OFFSET = 10;
+const FILL_LEFT_OFFSET = moderateScale(10);
+const FILL_RIGHT_OFFSET = moderateScale(10);
 const FILL_AREA = BAR_WIDTH - FILL_LEFT_OFFSET - FILL_RIGHT_OFFSET;
 
 const MIN = 100;
@@ -29,9 +29,12 @@ const ProgressBar = ({ progress = 0, images, onProgressChange }) => {
   const progressValue = useSharedValue(progress);
   const containerX = useRef(0);
   const viewRef = useRef(null);
+
+  // Use a ref (not state) so it's always current inside PanResponder closures
   const isDragging = useRef(false);
 
-  // Sync head position when parent changes progress via +/- buttons
+  // ✅ FIX: Only sync from parent when NOT dragging
+  // This prevents the prop→effect→withSpring from fighting the drag gesture
   useEffect(() => {
     if (!isDragging.current) {
       progressValue.value = withSpring(progress, { damping: 20, stiffness: 200 });
@@ -47,7 +50,7 @@ const ProgressBar = ({ progress = 0, images, onProgressChange }) => {
     onProgressChange(snappedProgress, snapped);
   };
 
-  // Called on release: snaps the head visually
+  // Called on release: snaps the head visually to the nearest step
   const snapHeadToStep = (rawProgress) => {
     const rawVal = MIN + rawProgress * (MAX - MIN);
     const snapped = snapToStep(rawVal);
@@ -61,13 +64,18 @@ const ProgressBar = ({ progress = 0, images, onProgressChange }) => {
       onMoveShouldSetPanResponder: () => true,
 
       onPanResponderGrant: (evt) => {
+        // ✅ FIX: Set BEFORE anything else so the useEffect guard is active immediately
         isDragging.current = true;
+
         viewRef.current?.measure((x, y, width, height, pageX) => {
           containerX.current = pageX;
         });
+
         const touchX = evt.nativeEvent.pageX - containerX.current;
         let newProgress = (touchX - FILL_LEFT_OFFSET) / FILL_AREA;
         newProgress = Math.max(0, Math.min(1, newProgress));
+
+        // ✅ FIX: Move head directly (no spring) while dragging for instant response
         progressValue.value = newProgress;
         runOnJS(notifyParent)(newProgress);
       },
@@ -76,17 +84,26 @@ const ProgressBar = ({ progress = 0, images, onProgressChange }) => {
         const touchX = evt.nativeEvent.pageX - containerX.current;
         let newProgress = (touchX - FILL_LEFT_OFFSET) / FILL_AREA;
         newProgress = Math.max(0, Math.min(1, newProgress));
-        progressValue.value = newProgress; // smooth while dragging
-        runOnJS(notifyParent)(newProgress); // update step label live
+
+        // ✅ FIX: Direct assignment (no spring) = smooth drag tracking
+        progressValue.value = newProgress;
+        runOnJS(notifyParent)(newProgress);
       },
 
       onPanResponderRelease: (evt) => {
         const touchX = evt.nativeEvent.pageX - containerX.current;
         let rawProgress = (touchX - FILL_LEFT_OFFSET) / FILL_AREA;
         rawProgress = Math.max(0, Math.min(1, rawProgress));
-        runOnJS(snapHeadToStep)(rawProgress); // snap head on release
+
+        // Snap head visually on release
+        runOnJS(snapHeadToStep)(rawProgress);
         runOnJS(notifyParent)(rawProgress);
-        isDragging.current = false;
+
+        // ✅ FIX: Clear AFTER snap is scheduled so useEffect doesn't interfere
+        // Use a small delay to let the snap animation start before re-enabling effect
+        setTimeout(() => {
+          isDragging.current = false;
+        }, 300);
       },
 
       onPanResponderTerminate: () => {
@@ -144,14 +161,14 @@ const styles = StyleSheet.create({
   backgroundLayer: {
     position: "absolute",
     top: (HEAD_SIZE - BAR_HEIGHT) / 2,
-    left: 0,
+    left: moderateScale(0),
     zIndex: 1,
   },
   fillContainer: {
     position: "absolute",
     left: FILL_LEFT_OFFSET,
     top: (HEAD_SIZE - BAR_HEIGHT) / 2 + 11,
-    height: 18,
+    height: moderateScale(18),
     overflow: "hidden",
     zIndex: 2,
     width: FILL_AREA,

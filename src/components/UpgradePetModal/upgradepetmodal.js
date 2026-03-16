@@ -1,12 +1,12 @@
-import { View, Modal, Text, ImageBackground, Image } from 'react-native';
+import { View, Modal, Text, ImageBackground, Image, TouchableOpacity } from 'react-native';
 import { SvgXml } from 'react-native-svg';
 import { useSelector } from 'react-redux';
 import { Paw } from '../../assets/svgs';
-import ScalePressable from '../ScalePressable/ScalePressable';
 import { Styles } from './styles';
-import { scale } from 'react-native-size-matters';
+import { moderateScale, scale } from 'react-native-size-matters';
 import { images } from '../../assets/images';
 import { combineStyles } from '../../libs/combineStyle';
+import ScalePressable from '../ScalePressable/ScalePressable';
 
 const PET_IMAGE = { '1': images.Dog, '2': images.Cat, '3': images.Dino };
 
@@ -20,37 +20,109 @@ const getStage = (petcreatedat) => {
 
 const UPGRADE_CONFIG = {
   teen: {
-    title:       'Great Job!',
-    getSubtitle: (name) => `Your pet is growing up!`,
-    getBody:     (name) => `You've taken care of ${name} for 7 days`,
+    title: 'Congratulations!',
+    getSubtitle: (name) => `Your pet has grown up!`,
   },
   adult: {
-    title:       'Congratulations!',
+    title: 'Congratulations!',
     getSubtitle: (name) => `${name} has fully grown!`,
-    getBody:     (name) => `Keep nurturing ${name} to stay on track and maintain your streak!`,
   },
 };
 
-export default function UpgradePetModal({ isVisible, okPressed, label }) {
+export default function UpgradePetModal({
+  isVisible,
+  onClose,
+  label,
+  okPressed,
+  cup,
+  showPet = true,
+  subtitle,
+  bottomtext,
+  title,
+  subtitleStyle,
+  btn = true,
+  backImg,
+  containerStyle,
+  subtitleShow = true,
+  keepGoing = false,
+  imageStyle,
+  titleStyle
+}) {
   const { petkey, petcreatedat, petname } = useSelector((s) => s.petReducer);
-  const stage    = getStage(petcreatedat);
-  const config   = UPGRADE_CONFIG[stage] ?? UPGRADE_CONFIG.teen;
+
+  const stage = getStage(petcreatedat);
+  const config = UPGRADE_CONFIG[stage] ?? UPGRADE_CONFIG.teen;
   const petImage = PET_IMAGE[String(petkey)];
 
   return (
     <Modal visible={isVisible} transparent animationType="fade" statusBarTranslucent>
       <View style={Styles.overlay}>
         <View style={Styles.content}>
-          <ImageBackground source={images.modalbg} style={Styles.bgContainer} imageStyle={Styles.bgImage}>
-            <Text style={combineStyles.regular14}>{config.title}</Text>
-            <Text style={Styles.fromTo}>{config.getSubtitle(petname)}</Text>
-            {petImage && <Image source={petImage} style={Styles.petImage} resizeMode="contain" />}
-            <Text style={Styles.daysText}>{config.getBody(petname)}</Text>
+          <ImageBackground
+            source={backImg ? backImg : images.modalbg}
+            style={[Styles.bgContainer, containerStyle]}
+            imageStyle={[Styles.bgImage,imageStyle]}
+          >
+            <Text style={[combineStyles.regular12,titleStyle, { marginTop: moderateScale(6) }]}>
+              {title || config.title}
+            </Text>
+
+            {subtitleShow && (
+              <Text style={[Styles.fromTo, subtitleStyle]}>
+                {subtitle || config.getSubtitle(petname)}
+              </Text>
+            )}
+
+            {showPet && petImage && (
+              <Image source={petImage} style={Styles.petImage} resizeMode="contain" />
+            )}
+
+            {cup && (
+              <Image source={cup} style={Styles.cupImg} resizeMode="contain" />
+            )}
+
+            {/* <Text style={Styles.daysText}>{config.getBody(petname)}</Text> */}
+
+            {
+              btn &&
+              <TouchableOpacity
+                activeOpacity={0.8}
+                style={[Styles.retroDoneWrap]}
+                onPress={onClose}
+              >
+                <ImageBackground
+                  source={require('../../assets/images/next.png')}
+                  resizeMode="contain"
+                  style={Styles.doneButton}
+                  imageStyle={[Styles.doneButtonImage]}
+                >
+                  <Text style={Styles.doneButtonText}>
+                    {"Add to\ncollection"}
+                  </Text>
+                </ImageBackground>
+              </TouchableOpacity>
+            }
+
+
+            {
+              bottomtext &&
+
+              <Text style={Styles.bottomtext}>{bottomtext}</Text>
+            }
+            {
+              keepGoing &&
+
+              <Text style={Styles.keep}>{"Keep it up!"}</Text>
+            }
           </ImageBackground>
 
-          <ScalePressable onPress={okPressed} pressableStyle={Styles.retryPressable} containerStyle={Styles.retryContainer}>
+          <ScalePressable
+            onPress={okPressed}
+            pressableStyle={Styles.retryPressable}
+            containerStyle={Styles.retryContainer}
+          >
             <SvgXml xml={Paw} width={scale(55)} height={scale(55)} />
-            <Text style={Styles.retryText}>{label}</Text>
+            <Text style={Styles.retryText}>{label || "Tap to continue"}</Text>
           </ScalePressable>
         </View>
       </View>
