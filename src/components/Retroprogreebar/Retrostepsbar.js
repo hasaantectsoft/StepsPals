@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Animated, View, Text } from "react-native";
 import { styles } from "./styles";
 import { scale } from "react-native-size-matters";
-import { bowl, bowl1, checked, homebar, pop1,popp, waterdis, waterfull } from "../../assets/svgs";
+import { bowl, bowl1, checked, newhomebar, pop1,popp, waterdis, waterfull } from "../../assets/svgs";
 import { SvgXml } from "react-native-svg";
 import { playButtonSound } from "../../utils/SoundManager/SoundManager";
 import MessageBox from "../MessageBox/MessageBox";
@@ -56,11 +56,11 @@ export default function RetroStepsBar({
   return (
     <View style={[styles.container, { marginTop: top, marginRight: right, marginLeft: left, marginBottom: bottom }]}>
       <View style={styles.barWrapper}>
-        <SvgXml xml={homebar} style={styles.barBackground} height={scale(70)} width={barWidth} />
         <View style={[styles.outerBar, { width: barWidth, height: height || scale(40), borderRadius: borderRadius || scale(20) }]}>
           <View style={[styles.fillBar, { width: progressWidth }]} />
-          <Text style={styles.text}>{steps}/{goal} Steps</Text>
         </View>
+        <SvgXml xml={newhomebar} style={styles.barBackground} height={scale(70)} width={barWidth} />
+        <Text style={styles.text}>{steps}/{goal} Steps</Text>
       </View>
 
       <View style={[styles.iconsRow, { width: barWidth, overflow: "visible" }]}>
