@@ -77,7 +77,7 @@ export const images = {
   StarEye: require('./StarEye.png'),
   TrophyBack: require('./TrophyBack.png'),
 
-
+puff: require('./Anim_Puff.png'),
   starmesagebox: require('./starmessageboxi.png'),
 
 

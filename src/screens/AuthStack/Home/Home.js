@@ -12,7 +12,6 @@ import ScalePressable from "../../../components/ScalePressable/ScalePressable";
 import MessageBox from "../../../components/MessageBox/MessageBox";
 import useHomeScreen from "../../../utils/hooks/useHomeScreen";
 
-// import { CatDeathGhostSprite_main } from "../../../components/PetSprites/Pets/Cat/DeathGhost";
 export default function HomeScreen() {
     const {
         navigation, petname, petsteps, step, isComplete, starTapped, setStarTapped,
@@ -93,6 +92,7 @@ export default function HomeScreen() {
                     style={[styles.cloudImage, { transform: [{ translateX: cloudX }, { translateY: cloudY }] }]}
                 />
 
+             
             </ImageBackground>
 
 
