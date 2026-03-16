@@ -10,7 +10,6 @@ import SpriteLoader from "../../../components/SprieLoader";
 import RetroStepsBar from "../../../components/Retroprogreebar/Retrostepsbar";
 import ScalePressable from "../../../components/ScalePressable/ScalePressable";
 import useHomeScreen from "../../../utils/hooks/useHomeScreen";
-import { CatBabySprite_main } from "../../../components/PetSprites/Pets/Cat";
 import { careOffsets } from "../../../utils/extra/offsets";
 import { careMap } from "../../../utils/extra/caremap";
 import { careDurations } from "../../../utils/extra/delay";
