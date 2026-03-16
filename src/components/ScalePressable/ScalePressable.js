@@ -39,8 +39,8 @@ const ScalePressable = ({
   return (
     <Pressable
       onPress={onPress}
-      onPressIn={handlePressIn}
-      onPressOut={handlePressOut}
+      onPressIn={handlePressOut}
+      onPressOut={handlePressIn}
       disabled={disabled}
       hitSlop={hitSlop}
       style={pressableStyle}
