@@ -33,7 +33,11 @@ export default function HomeScreen() {
     return (
         <ImageBackground source={images.HomeLayout} imageStyle={{ resizeMode: 'cover' }} style={styles.container}>
 
-            <Pressable hitSlop={30} onPress={() => { playButtonSound(); navigation.navigate('PetMenu'); }}>
+            <Pressable
+                style={styles.headerPressArea}
+                hitSlop={40}
+                onPress={() => { playButtonSound(); navigation.navigate('PetMenu'); }}
+            >
                 <Text style={styles.name}>Hello {petname}</Text>
                 <Text style={styles.welcome}>is happy</Text>
             </Pressable>
