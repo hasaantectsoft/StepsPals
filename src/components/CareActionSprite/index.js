@@ -54,32 +54,29 @@ export function CareActionSprite({
   );
 }
 
-// ─── Pre-configured Care Action Sprites ──────────────────────────────────────
-
-// 1824 × 51 px → 32 frames × 57 px
 export function CleanPoopSprite(props) {
   return (
     <CareActionSprite
       spriteSheet={careActions.cleanpoop}
-      frameWidth={100}
-      frameHeight={100}
-      frameCount={64}
-      fps={20}
+      frameWidth={52}
+      frameHeight={47}
+      frameCount={36}
+      fps={12}
       {...props}
     />
   );
 }
 
 // 671 × 26 px → 14 frames × 46 px
+// 667 × 22 px → 29 frames × 23 px wide
 export function DrinkWaterSprite(props) {
   return (
     <CareActionSprite
       spriteSheet={careActions.drinking}
-      frameWidth={46}
-      frameHeight={26}
-      
-      frameCount={14}
-      fps={10}
+      frameWidth={23}
+      frameHeight={22}
+      frameCount={29}
+      fps={12}
       {...props}
     />
   );
@@ -99,15 +96,15 @@ export function FeedingSprite(props) {
   );
 }
 
-// 2585 × 41 px → 55 frames × 47 px
+// 3198 × 37 px → 78 frames × 41 px wide
 export function GivingTreatSprite(props) {
   return (
     <CareActionSprite
       spriteSheet={careActions.treat}
-      frameWidth={47}
-      frameHeight={41}
-      frameCount={55}
-      fps={14}
+      frameWidth={41}
+      frameHeight={37}
+      frameCount={78}
+      fps={12}
       {...props}
     />
   );

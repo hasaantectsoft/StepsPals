@@ -11,8 +11,6 @@ import RetroStepsBar from "../../../components/Retroprogreebar/Retrostepsbar";
 import ScalePressable from "../../../components/ScalePressable/ScalePressable";
 import MessageBox from "../../../components/MessageBox/MessageBox";
 import useHomeScreen from "../../../utils/hooks/useHomeScreen";
-import { careActions } from "../../../assets/CareActions";
-import { CleanPoopSprite, DrinkWaterSprite, FeedingSprite, GivingTreatSprite } from "../../../components/CareActionSprite";
 export default function HomeScreen() {
     const {
         navigation, petname, petsteps, step,
@@ -81,6 +79,7 @@ export default function HomeScreen() {
                 )}
             </View>
 
+
             <ImageBackground source={images.windowBottom} imageStyle={styles.winowframe} style={styles.windowContainer}>
                 <Animated.Image
                     source={images.Cloud}
@@ -88,13 +87,8 @@ export default function HomeScreen() {
                     style={[styles.cloudImage, { transform: [{ translateX: cloudX }, { translateY: cloudY }] }]}
                 />
             </ImageBackground>
-            {/* <CleanPoopSprite/> */}
-            <DrinkWaterSprite 
-            
-            />
-             {/* <FeedingSprite/> */}
 
-            {/* <GivingTreatSprite/> */}
+
 
             <SvgXml style={styles.windowFrameImage} height={scale(100)} width={scale(120)} xml={windowframe} />
 
