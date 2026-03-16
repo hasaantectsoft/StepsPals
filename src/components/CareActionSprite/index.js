@@ -67,8 +67,7 @@ export function CleanPoopSprite(props) {
   );
 }
 
-// 671 × 26 px → 14 frames × 46 px
-// 667 × 22 px → 29 frames × 23 px wide
+
 export function DrinkWaterSprite(props) {
   return (
     <CareActionSprite
