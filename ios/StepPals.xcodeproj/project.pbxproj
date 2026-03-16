@@ -286,6 +286,7 @@
 				DEVELOPMENT_TEAM = FMA8Z3SFNW;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = StepPals/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Crumbles;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -317,6 +318,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FMA8Z3SFNW;
 				INFOPLIST_FILE = StepPals/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Crumbles;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

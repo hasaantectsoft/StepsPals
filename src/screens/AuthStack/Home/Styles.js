@@ -60,6 +60,14 @@ export const styles = StyleSheet.create({
         height: scale(160),
         zIndex: 1,
     },
+    petSpriteWrapper: {
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+        right: 0,
+        alignItems: 'center',
+        justifyContent: 'flex-end',
+    },
     starcontainer: {
         position: 'absolute',
         top: scale(62),

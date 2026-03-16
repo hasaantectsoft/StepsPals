@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { Animated, Image, ImageBackground, Pressable, Text, TouchableOpacity, View } from "react-native";
+import { Animated, Image, ImageBackground, Pressable, Text, View } from "react-native";
 import { SvgXml } from "react-native-svg";
 import { scale } from "react-native-size-matters";
 import { styles } from "./Styles";
@@ -11,11 +11,11 @@ import RetroStepsBar from "../../../components/Retroprogreebar/Retrostepsbar";
 import ScalePressable from "../../../components/ScalePressable/ScalePressable";
 import MessageBox from "../../../components/MessageBox/MessageBox";
 import useHomeScreen from "../../../utils/hooks/useHomeScreen";
-import { careActions } from "../../../assets/CareActions";
+
+// import { CatDeathGhostSprite_main } from "../../../components/PetSprites/Pets/Cat/DeathGhost";
 export default function HomeScreen() {
     const {
-        navigation, petname, petsteps, step,
-        spriteImage, isComplete, starTapped, setStarTapped,
+        navigation, petname, petsteps, step, isComplete, starTapped, setStarTapped,
         cloudX, cloudY, starFlicker,
     } = useHomeScreen();
     const [cakeMsg, setCakeMsg] = useState(false);
@@ -40,16 +40,17 @@ export default function HomeScreen() {
             >
                 <Text style={styles.name}>Hello {petname}</Text>
                 <Text style={styles.welcome}>is happy</Text>
+                
             </Pressable>
 
             <SpriteLoader />
-            {/* <SpriteLoader spriteImage={careActions.treat}/> */}
 
             <RetroStepsBar
                 top={scale(92)} right={scale(100)} left={scale(100)} bottom={scale(100)}
                 width={scale(280)} height={scale(40)} borderRadius={scale(20)}
                 steps={step} goal={petsteps}
             />
+            
 
             <View style={styles.collectioncontainer}>
                 <ScalePressable onPress={() => { playButtonSound(); navigation.navigate('Collecition'); }}>
@@ -91,8 +92,8 @@ export default function HomeScreen() {
                     resizeMode="contain"
                     style={[styles.cloudImage, { transform: [{ translateX: cloudX }, { translateY: cloudY }] }]}
                 />
-            </ImageBackground>
 
+            </ImageBackground>
 
 
             <SvgXml style={styles.windowFrameImage} height={scale(100)} width={scale(120)} xml={windowframe} />
