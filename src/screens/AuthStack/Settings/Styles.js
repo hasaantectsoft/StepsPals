@@ -7,6 +7,13 @@ export const styles = StyleSheet.create({
         height: "100%",
         resizeMode: "cover",
     },
+    scrollView: {
+        flex: 1,
+    },
+    scrollContent: {
+        flexGrow: 1,
+        paddingBottom: moderateScale(159),
+    },
     main: {
         flex: 1,
         paddingHorizontal: moderateScale(40),
