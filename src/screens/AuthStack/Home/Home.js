@@ -11,14 +11,10 @@ import RetroStepsBar from "../../../components/Retroprogreebar/Retrostepsbar";
 import ScalePressable from "../../../components/ScalePressable/ScalePressable";
 import useHomeScreen from "../../../utils/hooks/useHomeScreen";
 import { CatBabySprite_main } from "../../../components/PetSprites/Pets/Cat";
-import { spriteKeys } from "../../../utils/CareActionSpriteKeys/CareActionSpriteKeys";
-
-const careMap = {
-    clean: spriteKeys.find(x => x.id === 1)?.spritecomponent,
-    treat: spriteKeys.find(x => x.id === 2)?.spritecomponent,
-    feed: spriteKeys.find(x => x.id === 3)?.spritecomponent,
-    drink: spriteKeys.find(x => x.id === 4)?.spritecomponent,
-};
+import { careOffsets } from "../../../utils/extra/offsets";
+import { careMap } from "../../../utils/extra/caremap";
+import { careDurations } from "../../../utils/extra/delay";
+import { DogTeenSprite_sick } from "../../../components/PetSprites/Pets/Dog/Teen";
 
 export default function HomeScreen() {
     const {
@@ -28,14 +24,6 @@ export default function HomeScreen() {
     const [allCareChecked, setAllCareChecked] = useState(false);
     const [activeCareKey, setActiveCareKey] = useState(null);
     const careTimeoutRef = useRef(null);
-
-    const careDurations = {
-        feed: (7 / 8) * 1000,
-        drink: (29 / 12) * 1000,
-        clean: (36 / 12) * 1000,
-        treat: (78 / 12) * 1000,
-    };
-
     const playCareOnce = (key) => {
         if (!key) return;
         setActiveCareKey(key);
@@ -50,16 +38,7 @@ export default function HomeScreen() {
     };
 
     const ActiveCareSprite = activeCareKey ? careMap[activeCareKey] : null;
-
-    const careOffsets = {
-        drink: 35,
-        treat: 35,
-        feed: 40,
-        clean: 0,
-    };
-
     const handleCareActionChange = (key) => {
-        // keep treat separate from normal care queue
         if (starTapped && activeCareKey === "treat") return;
         playCareOnce(key);
     };
@@ -75,7 +54,7 @@ export default function HomeScreen() {
                 <Text style={styles.welcome}>is happy</Text>
             </Pressable>
             <SpriteLoader>
-                <CatBabySprite_main spriteScale={4} />
+                <DogTeenSprite_sick spriteScale={3} />
                 {ActiveCareSprite && (
                     <ActiveCareSprite
                         spriteScale={3.5}
@@ -101,7 +80,6 @@ export default function HomeScreen() {
                 <ScalePressable
                     onPress={() => {
                         playButtonSound();
-
                         if (!canCheckStar) return;
                         setStarTapped(true);
                         playCareOnce("treat");
