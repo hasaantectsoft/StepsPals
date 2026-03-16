@@ -96,6 +96,27 @@ export const playButtonSound = () => {
   });
 };
 
+// ----------------- Egg Crack Sound -----------------
+export const playEggCrackSound = () => {
+  const { Sound: SoundEnabled } = store.getState().soundReducer;
+
+  if (!SoundEnabled) return;
+
+  const eggCrackSfx = new Sound('eggcrack.wav', Sound.MAIN_BUNDLE, (error) => {
+    if (error) {
+      console.log('Failed to load egg crack sound', error);
+      return;
+    }
+
+    // Set volume for egg crack sound
+    eggCrackSfx.setVolume(1.0);
+
+    eggCrackSfx.play(() => {
+      eggCrackSfx.release();
+    });
+  });
+};
+
 // ----------------- Cleanup (Call on App Exit) -----------------
 export const releaseSounds = () => {
   if (bgMusic) {

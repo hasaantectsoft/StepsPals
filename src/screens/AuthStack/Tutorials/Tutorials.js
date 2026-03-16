@@ -7,6 +7,7 @@ import {useDispatch} from 'react-redux';
 import {setNewUser} from '../../../redux/slices/tutorialslice';
 import {images} from '../../../assets/images';
 import {cracks} from '../../../assets/Cracks';
+import {playEggCrackSound} from '../../../utils/SoundManager/SoundManager';
 
 const IMAGES = [
   images.tutorial1,
@@ -58,10 +59,12 @@ export default function Tutorials() {
       if (newTap === 2) {
         setCrackLevel(1);
         animateCrack();
+        playEggCrackSound();
       } else if (newTap === 4) {
         isAdvancing.current = true;
         setCrackLevel(2);
         animateCrack();
+        playEggCrackSound();
         setTimeout(() => {
           setCrackLevel(0);
           setTapCount(0);
