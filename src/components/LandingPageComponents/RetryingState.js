@@ -8,7 +8,7 @@ export const RetryingState = () => {
         <>
 <LoaderKitView
   style={{ width: 50, height: 50 }}
-  name={'BallPulse'}
+  name={'BallSpinFadeLoader'}
   animationSpeedMultiplier={0.1} // speed up/slow down animation, default: 1.0, larger is faster
   color={'#B8BAC6'} // Optional: color can be: 'red', 'green',... or '#ddd', '#ffffff',...
 />

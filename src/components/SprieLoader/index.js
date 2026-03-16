@@ -137,7 +137,6 @@ import {
       <Canvas
         style={{
           flex: 0.5,
-          // backgroundColor: "red",
         }}
       >
         <Atlas image={spriteMap } sprites={sprites} transforms={transforms} />
