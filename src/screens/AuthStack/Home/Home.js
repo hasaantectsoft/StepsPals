@@ -19,16 +19,14 @@ import { getPetDeathGhostComponent } from "../../../components/PetSprites/petSpr
 import { getCondition } from "../../../utils/petCondition";
 import { useDispatch, useSelector } from "react-redux";
 import { WELCOME_BY_HEALTH } from "../../../utils/exports";
-import PetDieModal from "../../../components/PetDieModal/PetDieModal";
-import UpgradePetModal from "../../../components/UpgradePetModal/upgradepetmodal";
 import { setHasShown21DayModal, setHasShown7DayModal } from "../../../redux/slices/petslice";
-import { DeleteMessageModal } from "../../../components/Modal";
 import { addPetToCollection, removePetFromCollection } from "../../../redux/slices/petCollectionSlice";
 import { setSignedIn } from "../../../redux/slices/authSlice";
 import { setNewUser } from "../../../redux/slices/tutorialslice";
 import { clearPet } from "../../../redux/slices/petslice";
 import { clearProgress } from "../../../redux/slices/progressSlice";
 import { setStartoverPet } from "../../../redux/slices/startoverpetslice";
+import HomeModals from "./HomeModals";
 export default function HomeScreen() {
     const {  navigation, petname, petsteps, step, isComplete, starTapped, setStarTapped, cloudX, cloudY, starFlicker, } = useHomeScreen();
     const dispatch = useDispatch();
@@ -77,7 +75,6 @@ export default function HomeScreen() {
 
     const startNewPetFlow = () => {
         dispatch(setStartoverPet(true));
-
         dispatch(setNewUser(false));
         dispatch(clearPet());
         dispatch(clearProgress());
@@ -123,8 +120,8 @@ export default function HomeScreen() {
             createdAt: petcreatedat,
             stage: 'adult',
         }));
-        // setAdultFlowModal('space');
-        startNewPetFlow();
+        setAdultFlowModal('space');
+        // startNewPetFlow();
     };
     const playCareOnce = (key) => {
         if (!key) return;
@@ -223,52 +220,19 @@ export default function HomeScreen() {
                     style={[styles.cloudImage, { transform: [{ translateX: cloudX }, { translateY: cloudY }] }]}
                 />           
             </ImageBackground>
-            <PetDieModal isVisible={showPetDieModal} onClose={() => setShowPetDieModal(false)} />
-                <UpgradePetModal
-                isVisible={upgradeModal === 'stage7'}
-                showPet={true}
-                btn={false}
-                title={'Good job!'}
-                subtitle={'Your pet has grown up!'}
-                bottomtext={`You’ve taken care of \n${petname}\n for 7 days!`}
-                okPressed={() => setUpgradeModal(null)}
-            />
-            <UpgradePetModal
-                isVisible={upgradeModal === 'stage21'}
-                showPet={true}
-                btn={false}
-                title={'Congratulations!'}
-                subtitle={`${petname} has fully grown!`}
-                bottomtext={`Keep nurturing ${petname} to stay on track and maintain your streak!`}
-                okPressed={handleAdultContinue}
-            />
-            <UpgradePetModal
-                isVisible={upgradeModal === 'add'}
-                show_continue_button={false}
-                showPet={true}
-                btn={true}
-                onClose={() => setUpgradeModal(null)}
-                onAddToCollection={handleAddToCollectionPress}
-            />
-            <DeleteMessageModal
-                isVisible={adultFlowModal === 'space'}
-                onClose={() => setAdultFlowModal(null)}
-                subtitle={"Would you like to choose new pet?"}
-                btn1text={"No"}
-                btn2text={"Yes"}
-                onpressButton2={handleAdultYes}
-                modalStyle={styles.modalStyle}
-                yellowBtn={true}
-            />
-            <DeleteMessageModal
-                isVisible={adultFlowModal === 'full'}
-                onClose={() => setAdultFlowModal(null)}
-                subtitle={`Do you want to replace\nyour oldest pet?\n${oldestPet?.name ?? ''}\nwith this new one?`}
-                btn1text={"No"}
-                btn2text={"Yes"}
-                onpressButton2={handleAdultYes}
-                modalStyle={styles.modalStyle}
-                yellowBtn={true}
+            <HomeModals
+                showPetDieModal={showPetDieModal}
+                setShowPetDieModal={setShowPetDieModal}
+                upgradeModal={upgradeModal}
+                setUpgradeModal={setUpgradeModal}
+                petname={petname}
+                handleAdultContinue={handleAdultContinue}
+                handleAddToCollectionPress={handleAddToCollectionPress}
+                adultFlowModal={adultFlowModal}
+                setAdultFlowModal={setAdultFlowModal}
+                oldestPet={oldestPet}
+                handleAdultYes={handleAdultYes}
+                styles={styles}
             />
             <SvgXml style={styles.windowFrameImage} height={scale(100)} width={scale(120)} xml={windowframe} />
      </ImageBackground>
