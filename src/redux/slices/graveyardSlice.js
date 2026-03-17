@@ -31,8 +31,9 @@ const graveyardSlice = createSlice({
         img: GRAVE_IMG[String(key)] || images.PetGravYard,
       });
     },
+    clearGraveyard: () => initialState,
   },
 });
 
-export const { addToGraveyard } = graveyardSlice.actions;
+export const { addToGraveyard, clearGraveyard } = graveyardSlice.actions;
 export default graveyardSlice.reducer;

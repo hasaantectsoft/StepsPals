@@ -14,16 +14,14 @@ function AuthStack() {
     Main: BottomTab,
     PetMenu: PetMenu,
     SubscriptionScreen:SubscriptionScreen,
-    
-    
-
   };
 const imnewaccount = useSelector(state => state.tutorialReducer?.isnewuser);
 const startoverpet = useSelector((state) => state.startoverpetslice?.startoverpet);
-
+console.log('startoverpet',startoverpet)
+console.log('imnewaccount',imnewaccount)
   return (
     <Stack.Navigator
-        initialRouteName={startoverpet ? 'Main' : imnewaccount ? 'tutorial' : 'LandingScreen'}
+        initialRouteName={startoverpet && !imnewaccount ? 'Main' : imnewaccount ? 'tutorial' : 'LandingScreen'}
       screenOptions={{
         headerShown: false,
         statusBarAnimation: 'fade',

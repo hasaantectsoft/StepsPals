@@ -3,7 +3,6 @@ import { View, Text, Modal, TouchableOpacity, StyleSheet, ImageBackground } from
 import { moderateScale } from "react-native-size-matters";
 import { images } from "../../assets/images";
 import { combineStyles } from "../../libs/combineStyle";
-import NativeButton from "../NativeButton/NativeButton";
 import PressableIcon from "../PressSvg/PressSvg";
 import { Paw, Star } from "../../assets/svgs";
 import { Theme } from "../../libs";

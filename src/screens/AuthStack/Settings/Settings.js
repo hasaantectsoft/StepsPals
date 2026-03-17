@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { styles } from "./Styles";
-import { ImageBackground, Linking, Platform, Text, View, ScrollView, Pressable } from "react-native";
+import { ImageBackground, Linking, Platform, Text, View, ScrollView, Pressable, BackHandler } from "react-native";
 import { images } from "../../../assets/images";
 import { combineStyles } from "../../../libs/combineStyle";
 import { DeleteButtonSvg, PrivacyPolicyBtnSvg, RestorePurchaceBtnSvg, SignInWithAppleBtnSvg, SignInWithGoogleBtnSvg, SupportSvg } from "../../../assets/svgs";
@@ -11,16 +11,19 @@ import { PRIVACY_URL } from "../../../utils/extra/links";
 import { playButtonSound, startAppSound, stopBackgroundSound } from "../../../utils/SoundManager/SoundManager";
 import { useDispatch, useSelector } from "react-redux";
 import { setMusicSound, setSound } from "../../../redux/slices/soundSlice";
-import { useNavigation } from '@react-navigation/native';
 import { setSignedIn } from '../../../redux/slices/authSlice';
 import { setNewUser } from '../../../redux/slices/tutorialslice';
-import { updatePet } from '../../../redux/slices/petslice';
-import { addToGraveyard } from '../../../redux/slices/graveyardSlice';
+import { updatePet, clearPet } from '../../../redux/slices/petslice';
+import { addToGraveyard, clearGraveyard } from '../../../redux/slices/graveyardSlice';
+import { clearProgress } from "../../../redux/slices/progressSlice";
+import { dispatchMakeCartEmpty } from "../../../redux/slices/cartSlice";
+import { dispatchThemeMode } from "../../../redux/slices/themeSlice";
+import { dispatchToken, dispatchUser } from "../../../redux/slices/userSlice";
+import { setIsMain } from "../../../redux/slices/ismain";
+import { setStartoverPet } from "../../../redux/slices/startoverpetslice";
+import { persistedStore } from "../../../redux/store";
 import AnimatedSwitch from "../../../components/Switch/Switch";
-import { DeathGhostSprite } from "../../../components/PetSprites/DeathGhost";
-
 const MS_PER_DAY = 86400000;
-
 export default () => {
     const { MusicSound, Sound } = useSelector(state => state.soundReducer);
     const { missedDays, petcreatedat, petname, petkey } = useSelector(state => state.petReducer);
@@ -28,18 +31,14 @@ export default () => {
     const [DisconnectModal, setIsDisConnectModal] = useState(false);
     const [ProgressModal, setIsProgressModal] = useState(false);
     const dispatch = useDispatch();
-    const navigation = useNavigation();
-
-
     useEffect(() => {
         if (MusicSound) {
-            startAppSound(); // starts looping music
+            startAppSound();
         } else {
-            stopBackgroundSound(); // stops music
+            stopBackgroundSound();
         }
     }, [MusicSound]);
 
-    // Play button sound only if Sound is true
     const handleButtonPress = () => {
         if (Sound) {
             playButtonSound();
@@ -47,12 +46,29 @@ export default () => {
     };
 
 
-    const handelModal = () => {
+    const handelModal = async () => {
         setIsDeleteModalVisible(false);
         setIsProgressModal(true);
         dispatch(addToGraveyard({ name: petname, key: petkey, petcreatedat }));
         dispatch(setSignedIn(false));
-        dispatch(setNewUser(false));
+        dispatch(setNewUser(true));
+        dispatch(clearPet());
+        dispatch(clearProgress());
+        dispatch(clearGraveyard());
+        dispatch(dispatchMakeCartEmpty());
+        dispatch(dispatchThemeMode('system'));
+        dispatch(dispatchToken(null));
+        dispatch(dispatchUser(null));
+        dispatch(setIsMain(false));
+        dispatch(setStartoverPet(false));
+        dispatch(setMusicSound(true));
+        dispatch(setSound(true));
+        try {
+            await persistedStore.purge();
+        } catch (e) {}
+        if (Platform.OS === 'android') {
+            setTimeout(() => BackHandler.exitApp(), 250);
+        }
     };
 
     const setHealth = (days) => {
