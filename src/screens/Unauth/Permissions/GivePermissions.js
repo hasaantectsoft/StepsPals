@@ -25,7 +25,7 @@ import { PRIVACY_URL, TERMS_URL } from "../../../utils/extra/links";
 import { setIsMain } from "../../../redux/slices/ismain";
 import { setNewUser } from "../../../redux/slices/tutorialslice";
 import { images } from "../../../assets/images";
-import { fetchSteps } from "../../../utils/handler/fetchsteps";
+import { fetchSteps, HEALTH_CONNECT_PLAY_STORE_URL } from "../../../utils/handler/fetchsteps";
 export default () => {
   const navigation = useNavigation();
   const dispatch = useDispatch();
@@ -110,7 +110,11 @@ export default () => {
     setHealthGranted(granted);
   };
   const onRequestHealthAndroid = async () => {
-    const { granted, steps } = await fetchSteps();
+    const { granted, steps, notInstalled } = await fetchSteps();
+    if (notInstalled) {
+      Linking.openURL(HEALTH_CONNECT_PLAY_STORE_URL);
+      return;
+    }
     setHealthGranted(granted);
     if (granted && steps != null) dispatch(setProgressStep(steps));
   };

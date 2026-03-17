@@ -9,15 +9,21 @@ import {
 
 
 export const initializeHealthConnect = async () => {
-  if (Platform.OS !== 'android') return false;
+  if (Platform.OS !== 'android') return { initialized: false };
 
   try {
     const initialized = await initialize();
     console.log('Health Connect initialized:', initialized);
-    return initialized;
+    return { initialized };
   } catch (error) {
     console.error('Error initializing Health Connect:', error);
-    return false;
+    const msg = (error?.message || String(error)).toLowerCase();
+    const notInstalled =
+      msg.includes('not installed') ||
+      msg.includes('not found') ||
+      msg.includes('unavailable') ||
+      msg.includes('resolution_required');
+    return { initialized: false, notInstalled };
   }
 };
 

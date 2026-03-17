@@ -88,6 +88,13 @@ export const styles = StyleSheet.create({
         zIndex: 6,
     },
     collectioncontainer: { alignContent: 'center', position: 'absolute', top: scale(220), left: scale(20) },
+    starMessageWrap: {
+        position: 'absolute',
+        top: scale(130),
+        right: scale(60),
+        alignItems: 'center',
+        zIndex: 10,
+    },
     upgradeModalContainer:{
         width: scale(270),
         height: scale(280),

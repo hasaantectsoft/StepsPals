@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { View, Text } from "react-native";
 import { styles } from "./styles";
 import { scale } from "react-native-size-matters";
@@ -6,6 +6,13 @@ import { bowl, bowl1, checked, newhomebar, pop1, popp, waterdis, waterfull } fro
 import { SvgXml } from "react-native-svg";
 import { playButtonSound } from "../../utils/SoundManager/SoundManager";
 import ScalePressable from "../ScalePressable/ScalePressable";
+import MessageBox from "../MessageBox/MessageBox";
+
+const DISABLED_MESSAGES = {
+  feed: "Walk more to unlock the food bowl! Reach 25% of your step goal.",
+  drink: "Complete the food bowl first, then reach 50% of your steps for water.",
+  clean: "Complete food and water first, then reach 75% of your steps for cleanup.",
+};
 
 export default function RetroStepsBar({
   top = 0, right = 0, left = 0, bottom = 0,
@@ -13,12 +20,21 @@ export default function RetroStepsBar({
   steps = 0, goal = 5000,
   onAllCareCheckedChange,
   onCareActionChange,
+  onDisabledCarePress,
 }) {
   const [boul, setBoul] = useState(0);
   const [pop, setpop] = useState(0);
   const [wat, setwat] = useState(0);
+  const [activeMessageKey, setActiveMessageKey] = useState(null);
+  const messageTimeoutRef = useRef(null);
 
   const barWidth = width || scale(280);
+  const showIconMessage = useCallback((careKey) => {
+    if (messageTimeoutRef.current) clearTimeout(messageTimeoutRef.current);
+    setActiveMessageKey(careKey);
+    messageTimeoutRef.current = setTimeout(() => setActiveMessageKey(null), 3000);
+  }, []);
+  useEffect(() => () => { if (messageTimeoutRef.current) clearTimeout(messageTimeoutRef.current); }, []);
   const progress = goal ? Math.min(steps / goal, 1) : 0;
   const progressWidth = `${progress * 100}%`;
 
@@ -77,24 +93,33 @@ export default function RetroStepsBar({
 
       <View style={[styles.iconsRow, { width: barWidth, overflow: "visible" }]}>
         {iconConfigs.map(({ pct, state, setState, getXml, canPress, careKey }, idx) => (
-          <ScalePressable
-            key={idx}
-            pressableStyle={[styles.iconAbsolute, { left: barWidth * pct - scale(20) }]}
-            onPress={() => {
-              playButtonSound();
-
-              if (!canPress) return;
-              if (state < 2) {
-                const next = state + 1;
-                setState(next);
-                if (next === 2 && onCareActionChange) {
-                  onCareActionChange(careKey);
+          <React.Fragment key={idx}>
+            <ScalePressable
+              pressableStyle={[styles.iconAbsolute, { left: barWidth * pct - scale(20) }]}
+              onPress={() => {
+                playButtonSound();
+                if (!canPress) {
+                  showIconMessage(careKey);
+                  onDisabledCarePress?.(DISABLED_MESSAGES[careKey]);
+                  return;
                 }
-              }
-            }}
-          >
-            <SvgXml xml={getXml(state)} height={50} width={40} />
-          </ScalePressable>
+                if (state < 2) {
+                  const next = state + 1;
+                  setState(next);
+                  if (next === 2 && onCareActionChange) {
+                    onCareActionChange(careKey);
+                  }
+                }
+              }}
+            >
+              <SvgXml xml={getXml(state)} height={50} width={40} />
+            </ScalePressable>
+            {activeMessageKey === careKey ? (
+              <View style={[styles.iconMessageWrap, { left: barWidth * pct - scale(100), width: scale(170) }]}>
+                <MessageBox text={DISABLED_MESSAGES[careKey]} numberOfLines={3} />
+              </View>
+            ) : null}
+          </React.Fragment>
         ))}
       </View>
     </View>

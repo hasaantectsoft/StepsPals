@@ -2,11 +2,14 @@ import { Platform } from 'react-native';
 import { checkBackgroundAccess, getTodaySteps, initializeHealthConnect, requestPermissions } from '../StepCounter';
 import { NativeModules } from 'react-native';
 
+export const HEALTH_CONNECT_PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.google.android.apps.healthdata';
+
 export const fetchSteps = async () => {
   if (Platform.OS !== 'android') return { granted: false };
 
   try {
-    const initialized = await initializeHealthConnect();
+    const { initialized, notInstalled } = await initializeHealthConnect();
+    if (notInstalled) return { granted: false, notInstalled: true };
     if (!initialized) return { granted: false };
 
     const hasAccess = await checkBackgroundAccess();

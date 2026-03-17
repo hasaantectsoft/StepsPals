@@ -44,5 +44,11 @@ export const styles = StyleSheet.create({
       position: "absolute",
       top: 0,
     },
+    iconMessageWrap: {
+      position: "absolute",
+      top: scale(25),
+      alignItems: "center",
+      zIndex: 10,
+    },
   });
   
