@@ -17,15 +17,19 @@ import { careDurations } from "../../../utils/extra/delay";
 import ActivePetSprite from "../../../components/PetSprites/ActivePetSprite";
 import { getPetDeathGhostComponent } from "../../../components/PetSprites/petSpriteMap";
 import { getCondition } from "../../../utils/petCondition";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { WELCOME_BY_HEALTH } from "../../../utils/exports";
 import PetDieModal from "../../../components/PetDieModal/PetDieModal";
+import UpgradePetModal from "../../../components/UpgradePetModal/upgradepetmodal";
+import { Theme } from "../../../libs";
+import { setHasShown21DayModal, setHasShown7DayModal } from "../../../redux/slices/petslice";
 export default function HomeScreen() {
     const {
         navigation, petname, petsteps, step, isComplete, starTapped, setStarTapped,
         cloudX, cloudY, starFlicker,
     } = useHomeScreen();
-    const { missedDays, petkey } = useSelector((s) => s.petReducer);
+    const dispatch = useDispatch();
+    const { missedDays, petkey, petcreatedat, hasShown7DayModal, hasShown21DayModal } = useSelector((s) => s.petReducer);
     const isPetDead = missedDays >= 3;
     const welcomeText = WELCOME_BY_HEALTH[getCondition(missedDays ?? 0)] ?? "is happy";
     const [allCareChecked, setAllCareChecked] = useState(false);
@@ -34,6 +38,7 @@ export default function HomeScreen() {
     const [messageFromStar, setMessageFromStar] = useState(false);
     const [showPetDieModal, setShowPetDieModal] = useState(false);
     const careTimeoutRef = useRef(null);
+    const [upgradeModal, setUpgradeModal] = useState(null); // 'stage7' | 'stage21' | 'add' | null
     const messageTimeoutRef = useRef(null);
     const petDieModalTimeoutRef = useRef(null);
 
@@ -54,6 +59,19 @@ export default function HomeScreen() {
         petDieModalTimeoutRef.current = setTimeout(() => setShowPetDieModal(true), 2000);
         return () => { if (petDieModalTimeoutRef.current) clearTimeout(petDieModalTimeoutRef.current); };
     }, [isPetDead]);
+
+    useEffect(() => {
+        if (!petcreatedat || isPetDead) return;
+        const days = Math.floor((Date.now() - petcreatedat) / 86400000);
+        if (days >= 7 && days < 21 && !hasShown7DayModal) {
+            dispatch(setHasShown7DayModal(true));
+            setUpgradeModal('stage7');
+        }
+        if (days >= 21 && !hasShown21DayModal) {
+            dispatch(setHasShown21DayModal(true));
+            setUpgradeModal('stage21');
+        }
+    }, [dispatch, hasShown21DayModal, hasShown7DayModal, isPetDead, petcreatedat]);
     const playCareOnce = (key) => {
         if (!key) return;
         setActiveCareKey(key);
@@ -152,6 +170,36 @@ export default function HomeScreen() {
                 />           
             </ImageBackground>
             <PetDieModal isVisible={showPetDieModal} onClose={() => setShowPetDieModal(false)} />
+            
+            {/* grown up modal */}
+            <UpgradePetModal
+                isVisible={upgradeModal === 'stage7'}
+                showPet={true}
+                btn={false}
+                title={'Good job!'}
+                subtitle={'Your pet has grown up!'}
+                bottomtext={`You’ve taken care of \n${petname}\n for 7 days!`}
+                okPressed={() => setUpgradeModal(null)}
+            />
+            {/* fully grown modal */}
+            <UpgradePetModal
+                isVisible={upgradeModal === 'stage21'}
+                showPet={true}
+                btn={false}
+                title={'Congratulations!'}
+                subtitle={`${petname} has fully grown!`}
+                bottomtext={`Keep nurturing ${petname} to stay on track and maintain your streak!`}
+                okPressed={() => setUpgradeModal('add')}
+            />
+            {/* add to collection modal (after 7/21 modal) */}
+            <UpgradePetModal
+                isVisible={upgradeModal === 'add'}
+                show_continue_button={false}
+                showPet={true}
+                btn={true}
+                onClose={() => setUpgradeModal(null)}
+            />
+
             <SvgXml style={styles.windowFrameImage} height={scale(100)} width={scale(120)} xml={windowframe} />
      </ImageBackground>
     );

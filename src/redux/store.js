@@ -22,6 +22,7 @@ import progressSlice from './slices/progressSlice';
 import soundSlice from './slices/soundSlice';
 import graveyardSlice from './slices/graveyardSlice';
 import startoverpetslice from './slices/startoverpetslice';
+import petCollectionSlice from './slices/petCollectionSlice';
 
 const persistConfig = {
   key: 'root',
@@ -36,6 +37,7 @@ const reducers = combineReducers({
   authReducer: authSlice,
   tutorialReducer: tutorialSlice,
   petReducer: petSlice,
+  petCollectionReducer: petCollectionSlice,
   progressReducer: progressSlice,
   soundReducer: soundSlice,
   graveyardReducer: graveyardSlice,

@@ -22,6 +22,8 @@ const initialState = {
   pendingfrom: null,
   missedDays: 0,
   lastCheckedDate: null,
+  hasShown7DayModal: false,
+  hasShown21DayModal: false,
 };
 
 const petSlice = createSlice({
@@ -45,6 +47,8 @@ const petSlice = createSlice({
     setPetIsAlive: (state, action) => { state.petisalive = action.payload },
     setPetIsGrowing: (state, action) => { state.petisgrowing = action.payload },
     setPetCreatedAt: (state, action) => { state.petcreatedat = action.payload },
+    setHasShown7DayModal: (state, action) => { state.hasShown7DayModal = action.payload },
+    setHasShown21DayModal: (state, action) => { state.hasShown21DayModal = action.payload },
     clearPet: () => initialState,
     updatePet: (state, action) => ({ ...state, ...action.payload }),
   },
@@ -55,7 +59,7 @@ export const {
   setPetCondition, setPetStage, setPetMissed,
   setPetDays, setPetDaysLeft, setPetDaysCompleted, setPetDaysRemaining,
   setPetIsDead, setPetIsFullyGrown, setPetIsAlive, setPetIsGrowing,
-  setPetCreatedAt, clearPet, updatePet
+  setPetCreatedAt, setHasShown7DayModal, setHasShown21DayModal, clearPet, updatePet
 } = petSlice.actions;
 
 export default petSlice.reducer;
