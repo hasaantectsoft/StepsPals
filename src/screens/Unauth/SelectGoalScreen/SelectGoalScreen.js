@@ -7,6 +7,7 @@ import { Header } from "../../../components";
 import StepSlider from "../../../components/SelectYourGoal/StepSlider";
 import RetroDoneButton from "../../../components/SelectYourGoal/RetroDoneButton";
 import { images } from "../../../assets/images";
+import { useSelector } from "react-redux";
 
 export default function SelectGoalScreen() {
     const { params } = useRoute();
@@ -14,6 +15,7 @@ export default function SelectGoalScreen() {
     const pet = params?.pet;
     const petName = params?.petName;
     const [stepGoal, setStepGoal] = useState(500);
+    const imnewaccount = useSelector(state => state.tutorialReducer?.isnewuser);
 
     return (
         <View style={Styles.container}>
@@ -44,7 +46,7 @@ export default function SelectGoalScreen() {
                         
                     </View>
                     <StepSlider value={stepGoal} onChange={setStepGoal} />
-                    <RetroDoneButton onPress={() => navigation.navigate('GivePermissions', { pet, petName, stepGoal })} />
+                    <RetroDoneButton onPress={() => imnewaccount ? navigation.navigate('GivePermissions', { pet, petName, stepGoal }) : navigation.navigate('Main', { screen: 'Home' })} />
                     
                 </View>
             </ImageBackground>

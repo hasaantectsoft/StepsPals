@@ -14,19 +14,28 @@ import useHomeScreen from "../../../utils/hooks/useHomeScreen";
 import { careOffsets } from "../../../utils/extra/offsets";
 import { careMap } from "../../../utils/extra/caremap";
 import { careDurations } from "../../../utils/extra/delay";
-import { DogTeenSprite_sick } from "../../../components/PetSprites/Pets/Dog/Teen";
-
+import ActivePetSprite from "../../../components/PetSprites/ActivePetSprite";
+import { getPetDeathGhostComponent } from "../../../components/PetSprites/petSpriteMap";
+import { getCondition } from "../../../utils/petCondition";
+import { useSelector } from "react-redux";
+import { WELCOME_BY_HEALTH } from "../../../utils/exports";
+import PetDieModal from "../../../components/PetDieModal/PetDieModal";
 export default function HomeScreen() {
     const {
         navigation, petname, petsteps, step, isComplete, starTapped, setStarTapped,
         cloudX, cloudY, starFlicker,
     } = useHomeScreen();
+    const { missedDays, petkey } = useSelector((s) => s.petReducer);
+    const isPetDead = missedDays >= 3;
+    const welcomeText = WELCOME_BY_HEALTH[getCondition(missedDays ?? 0)] ?? "is happy";
     const [allCareChecked, setAllCareChecked] = useState(false);
     const [activeCareKey, setActiveCareKey] = useState(null);
     const [disabledMessage, setDisabledMessage] = useState("");
     const [messageFromStar, setMessageFromStar] = useState(false);
+    const [showPetDieModal, setShowPetDieModal] = useState(false);
     const careTimeoutRef = useRef(null);
     const messageTimeoutRef = useRef(null);
+    const petDieModalTimeoutRef = useRef(null);
 
     const showDisabledMessage = useCallback((text, fromStar = false) => {
         if (messageTimeoutRef.current) clearTimeout(messageTimeoutRef.current);
@@ -36,6 +45,15 @@ export default function HomeScreen() {
     }, []);
 
     useEffect(() => () => { if (messageTimeoutRef.current) clearTimeout(messageTimeoutRef.current); }, []);
+
+    useEffect(() => {
+        if (!isPetDead) {
+            setShowPetDieModal(false);
+            return;
+        }
+        petDieModalTimeoutRef.current = setTimeout(() => setShowPetDieModal(true), 2000);
+        return () => { if (petDieModalTimeoutRef.current) clearTimeout(petDieModalTimeoutRef.current); };
+    }, [isPetDead]);
     const playCareOnce = (key) => {
         if (!key) return;
         setActiveCareKey(key);
@@ -55,6 +73,7 @@ export default function HomeScreen() {
         playCareOnce(key);
     };
 
+    const DeathGhostSprite = getPetDeathGhostComponent(petkey);
     const canCheckStar = isComplete && allCareChecked && !starTapped;
     const getStarDisabledMessage = () => {
         if (starTapped) return "You already claimed your star reward!";
@@ -69,10 +88,12 @@ export default function HomeScreen() {
                 hitSlop={40}
                 onPress={() => { playButtonSound(); navigation.navigate('PetMenu'); }}>
                 <Text style={styles.name}>Hello {petname}</Text>
-                <Text style={styles.welcome}>is happy</Text>
+                <Text style={styles.welcome}>{welcomeText}</Text>
+                {isPetDead && <DeathGhostSprite spriteScale={3} offsetY={scale(18)} offsetX={scale(130)} />}
+
             </Pressable>
             <SpriteLoader>
-                <DogTeenSprite_sick spriteScale={3} />
+                <ActivePetSprite spriteScale={3} />
                 {ActiveCareSprite && (
                     <ActiveCareSprite
                         spriteScale={3.5}
@@ -130,9 +151,9 @@ export default function HomeScreen() {
                     style={[styles.cloudImage, { transform: [{ translateX: cloudX }, { translateY: cloudY }] }]}
                 />           
             </ImageBackground>
+            <PetDieModal isVisible={showPetDieModal} onClose={() => setShowPetDieModal(false)} />
             <SvgXml style={styles.windowFrameImage} height={scale(100)} width={scale(120)} xml={windowframe} />
-
-        </ImageBackground>
+     </ImageBackground>
     );
 }
 

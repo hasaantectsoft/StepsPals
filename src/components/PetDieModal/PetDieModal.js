@@ -1,7 +1,8 @@
-import { View, Modal, Text, ImageBackground, Image, TouchableOpacity } from 'react-native';
+import { View, Modal, Text, ImageBackground, Image, TouchableOpacity, Pressable } from 'react-native';
 import { Styles } from './style';
 import { images } from '../../assets/images';
 import { useSelector } from 'react-redux';
+import { useNavigation } from '@react-navigation/native';
 
 
 
@@ -10,11 +11,10 @@ export default function ({
     isVisible,
     onClose,
     onRevive,
-    onStartOver,
 }) {
 
-      const { petname, petkey, petsteps, petcreatedat, missedDays } = useSelector((state) => state.petReducer);
-
+      const { petname } = useSelector((state) => state.petReducer);
+      const navigation = useNavigation();
 
 
     return (
@@ -42,7 +42,10 @@ export default function ({
                                 <Text style={Styles.btnTxt}>Revive $5</Text>
                             </ImageBackground>
                             <ImageBackground source={images.YellowButton} style={Styles.button} imageStyle={Styles.petImage}>
-                                <Text style={Styles.btnTxt}>Start Over</Text>
+<Pressable onPress={()=>navigation.reset({index: 0, routes: [{ name: 'Landing' }]})}>
+<Text style={Styles.btnTxt}>Start Over</Text>
+
+</Pressable>
                             </ImageBackground>
                         </View>
                     </View>

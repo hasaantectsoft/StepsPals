@@ -6,7 +6,6 @@ import { useSelector } from 'react-redux';
 import BottomTab from './BottomStack/BottomTabs';
 import PetMenu from '../screens/AuthStack/PetMenu/PetMenu';
 import SubscriptionScreen from '../screens/AuthStack/SubscriptionScreen/SubscriptionScreen';
-import CollectionScreen from '../screens/AuthStack/CollectionScreen/CollectionScreen';
 function AuthStack() {
   const Stack = createNativeStackNavigator();
   const screens = {
@@ -20,8 +19,7 @@ function AuthStack() {
 
   };
 const imnewaccount = useSelector(state => state.tutorialReducer?.isnewuser);
-console.log('imnewaccount',imnewaccount)
-console.log(imnewaccount)
+
   return (
     <Stack.Navigator
         initialRouteName={imnewaccount ? 'tutorial' : 'LandingScreen'}

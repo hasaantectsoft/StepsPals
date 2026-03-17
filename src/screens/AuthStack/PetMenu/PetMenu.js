@@ -21,7 +21,6 @@ import { babycatsprites, teencatsprites, adultcatsprites } from "../../../assets
 import { babydinosprites, teendinosprites, adultdinosprites } from "../../../assets/Sprites/Pets/Dino";
 
 const SPECIES_MAP = { '1': 'Dog', '2': 'Cat', '3': 'Dino' };
-
 const SPRITE_MAP = {
   '1': { baby: babyDogsprites.Dogmain, teen: teenDogsprites.Dogmain, adult: adultDogsprites.Dogmain },
   '2': { baby: babycatsprites.catmain, teen: teencatsprites.catmain, adult: adultcatsprites.catmain },
@@ -31,9 +30,9 @@ const SPRITE_MAP = {
 
 
 const getPetStage = (ageInDays) => {
-  if (ageInDays <= 7)  return { stage: "baby",  days: `${ageInDays}/7`  };
-  if (ageInDays <= 21) return { stage: "teen",  days: `${ageInDays}/21` };
-  return                      { stage: "adult", days: "21/21"            };
+  if (ageInDays <= 7)  return { stage: "baby",  days: `${ageInDays}/7` };
+  if (ageInDays < 21)  return { stage: "teen",  days: `${ageInDays}/21` };
+  return { stage: "adult", days: "MAX" };
 };
 
 export default function Petmenu() {
@@ -52,10 +51,10 @@ export default function Petmenu() {
     id: petkey,
     name: petname,
     days,
-    age: `${ageInDays} day${ageInDays !== 1 ? "s" : ""}`,
+    age: ageInDays >= 21 ? "21 days" : `${ageInDays} day${ageInDays !== 1 ? "s" : ""}`,
     condition: getCondition(missedDays),
     stage,
-    missed: "0",
+    missed: String(missedDays ?? 0),
     species: SPECIES_MAP[petkey] ?? "Dino",
     spriteImage: SPRITE_MAP[petkey]?.[stage] ?? babydinosprites.dinomain,
   };

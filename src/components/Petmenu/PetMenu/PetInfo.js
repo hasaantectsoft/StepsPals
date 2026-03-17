@@ -11,7 +11,7 @@ export default function PetInfo({ pet }) {
   return (
     <View style={styles.petInfo}>
       <Text style={styles.petName}>{pet.name}</Text>
-      <Text style={styles.petDays}>{pet.days} days</Text>
+      <Text style={styles.petDays}>{pet.days === "MAX" ? "MAX" : `${pet.days} days`}</Text>
       <Image
         source={IMG_MAP[pet.id] ?? images.Dino}
         style={styles.petImage}

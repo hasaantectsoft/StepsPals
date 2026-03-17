@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { styles } from "./Styles";
-import { ImageBackground, Linking, Platform, Text, View,ScrollView } from "react-native";
+import { ImageBackground, Linking, Platform, Text, View, ScrollView, Pressable } from "react-native";
 import { images } from "../../../assets/images";
 import { combineStyles } from "../../../libs/combineStyle";
-import { DeleteButtonSvg, PrivacyPolicyBtnSvg, RestorePurchaceBtnSvg, SignInWithAppleBtnSvg, SignInWithGoogleBtnSvg, SupportSvg, switchOff, switchOn } from "../../../assets/svgs";
+import { DeleteButtonSvg, PrivacyPolicyBtnSvg, RestorePurchaceBtnSvg, SignInWithAppleBtnSvg, SignInWithGoogleBtnSvg, SupportSvg } from "../../../assets/svgs";
 import PressableIcon from "../../../components/PressSvg/PressSvg";
 import { moderateScale } from "react-native-size-matters";
 import { DeleteMessageModal } from "../../../components/Modal";
@@ -13,11 +13,15 @@ import { useDispatch, useSelector } from "react-redux";
 import { setMusicSound, setSound } from "../../../redux/slices/soundSlice";
 import { useNavigation } from '@react-navigation/native';
 import { setSignedIn } from '../../../redux/slices/authSlice';
+import { updatePet } from '../../../redux/slices/petslice';
 import AnimatedSwitch from "../../../components/Switch/Switch";
+import { DeathGhostSprite } from "../../../components/PetSprites/DeathGhost";
+
+const MS_PER_DAY = 86400000;
 
 export default () => {
-
     const { MusicSound, Sound } = useSelector(state => state.soundReducer);
+    const { missedDays, petcreatedat } = useSelector(state => state.petReducer);
     const [isDeleteModalVisible, setIsDeleteModalVisible] = useState(false);
     const [DisconnectModal, setIsDisConnectModal] = useState(false);
     const [ProgressModal, setIsProgressModal] = useState(false);
@@ -42,8 +46,8 @@ export default () => {
 
 
     const handelModal = () => {
-        setIsDeleteModalVisible(false)
-        setIsProgressModal(true)
+        setIsDeleteModalVisible(false);
+        setIsProgressModal(true);
         dispatch(setSignedIn(false));
         try {
             const parent = navigation.getParent();
@@ -52,10 +56,18 @@ export default () => {
             } else if (typeof navigation.reset === 'function') {
                 navigation.reset({ index: 0, routes: [{ name: 'Landing' }] });
             }
-        } catch (e) {
-            // silent catch - navigation reset is best-effort
-        }
-    }
+        } catch (e) { /* best-effort */ }
+    };
+
+    const setHealth = (days) => {
+        handleButtonPress();
+        dispatch(updatePet({ missedDays: days, petisdead: days >= 3 }));
+    };
+    const setAge = (daysAgo) => {
+        handleButtonPress();
+        const created = Date.now() - daysAgo * MS_PER_DAY;
+        dispatch(updatePet({ petcreatedat: created }));
+    };
     return (
         <View style={[combineStyles.combineStyles]}>
             <ImageBackground source={images.yellowBackground} style={styles.backgroundImage}>
@@ -82,16 +94,32 @@ export default () => {
 
                     <View style={[combineStyles.rowSpacebetween, { left: moderateScale(10) }]}>
                         <Text style={{ ...combineStyles.regular18, top: moderateScale(8) }}>Sounds</Text>
-                           <AnimatedSwitch
+                        <AnimatedSwitch
                             key="sound-switch"
                             value={Sound}
                             images={images}
-                            onValueChange={(newVal) => {
-                                dispatch(setSound(newVal));
-                            }}
+                            onValueChange={(newVal) => dispatch(setSound(newVal))}
                         />
                     </View>
 
+                    <View style={styles.devSection}>
+                        <Text style={styles.devLabel}>Pet test (conditions / age)</Text>
+                        <View style={styles.devRow}>
+                            <Text style={styles.devSub}>Health: </Text>
+                            {[0, 1, 2, 3].map((d) => (
+                                <Pressable key={d} onPress={() => setHealth(d)} style={styles.devBtn}>
+                                    <Text style={styles.devBtnText}>{d === 0 ? 'Ok' : d === 1 ? 'Sick' : d === 2 ? 'VS' : 'Dead'}</Text>
+                                </Pressable>
+                            ))}
+                        </View>
+                        <View style={styles.devRow}>
+                            <Text style={styles.devSub}>Age: </Text>
+                            <Pressable onPress={() => setAge(0)} style={styles.devBtn}><Text style={styles.devBtnText}>Baby</Text></Pressable>
+                            <Pressable onPress={() => setAge(8)} style={styles.devBtn}><Text style={styles.devBtnText}>Teen</Text></Pressable>
+                            <Pressable onPress={() => setAge(22)} style={styles.devBtn}><Text style={styles.devBtnText}>Adult</Text></Pressable>
+                        </View>
+                        <Text style={styles.devHint}>Health {missedDays} · Age {petcreatedat ? Math.min(Math.floor((Date.now() - petcreatedat) / MS_PER_DAY), 21) : '-'}d</Text>
+                    </View>
 
                     <View style={styles.buttonContainer}>
                         {

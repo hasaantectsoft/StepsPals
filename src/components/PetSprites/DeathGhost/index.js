@@ -3,7 +3,9 @@ import { useEffect } from 'react';
 import { Dimensions } from 'react-native';
 import { cancelAnimation, Easing, useSharedValue, withRepeat, withTiming } from 'react-native-reanimated';
 import { styles } from './styles';
-import { catghost as DeathGhost } from '../../../assets/Sprites/Pets/Cat';
+import { catghost } from '../../../assets/Sprites/Pets/Cat';
+import { Dogghost } from '../../../assets/Sprites/Pets/Dog';
+import { dinoghost } from '../../../assets/Sprites/Pets/Dino';
 const { width: SW } = Dimensions.get('window');
 
 // ─── Base Component ──────────────────────────────────────────────────────────
@@ -52,15 +54,20 @@ export function AllDeathGhostSprite({
     </Canvas>
   );
 }
-export function DeathGhostSprite(props) {
-  return (
-    <AllDeathGhostSprite
-      spriteSheet={DeathGhost}
-      frameWidth={27}
-      frameHeight={31}
-      frameCount={17}
-      fps={12}
-      {...props}
-    />
-  );
+const ghostFrame = { frameWidth: 27, frameHeight: 31, frameCount: 17, fps: 12 };
+
+export function DeathGhostSprite({ spriteSheet = catghost, ...props }) {
+  return <AllDeathGhostSprite spriteSheet={spriteSheet} {...ghostFrame} {...props} />;
+}
+
+export function CatDeathGhostSprite(props) {
+  return <DeathGhostSprite spriteSheet={catghost} {...props} />;
+}
+
+export function DogDeathGhostSprite(props) {
+  return <DeathGhostSprite spriteSheet={Dogghost} {...props} />;
+}
+
+export function DinoDeathGhostSprite(props) {
+  return <DeathGhostSprite spriteSheet={dinoghost} {...props} />;
 }
