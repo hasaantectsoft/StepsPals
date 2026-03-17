@@ -30,12 +30,12 @@ export const styles = StyleSheet.create({
   },
 
   row: {
-    justifyContent: "space-between",
+    justifyContent: "flex-start",
     marginBottom: moderateScale(12),
   },
 
   item: {
-    flex: 1,
+    width: "33.444%",
     alignItems: "center",
   },
 
@@ -47,9 +47,11 @@ export const styles = StyleSheet.create({
   name: {
     position: "absolute",
     top: moderateScale(39),
-    left: moderateScale(17),
+    left: 0,
+    right: 0,
     ...combineStyles.regular10,
     fontSize: moderateScale(8),
+    textAlign: "center",
   },
 
   borndate: {

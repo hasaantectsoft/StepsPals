@@ -2,20 +2,34 @@ import React, { useState } from "react";
 import { View, Text, ImageBackground } from "react-native";
 import { useRoute, useNavigation } from "@react-navigation/native";
 import { SvgXml } from "react-native-svg";
+import { useSelector, useDispatch } from "react-redux";
 import { Styles } from "./Styles";
 import { Header } from "../../../components";
 import StepSlider from "../../../components/SelectYourGoal/StepSlider";
 import RetroDoneButton from "../../../components/SelectYourGoal/RetroDoneButton";
 import { images } from "../../../assets/images";
-import { useSelector } from "react-redux";
+import { setPetName, setPetKey, setPetSteps, setPetCreatedAt, updatePet } from "../../../redux/slices/petslice";
+import { setSignedIn } from "../../../redux/slices/authSlice";
+import { setIsMain } from "../../../redux/slices/ismain";
 
 export default function SelectGoalScreen() {
     const { params } = useRoute();
     const navigation = useNavigation();
+    const dispatch = useDispatch();
     const pet = params?.pet;
     const petName = params?.petName;
     const [stepGoal, setStepGoal] = useState(500);
-    const imnewaccount = useSelector(state => state.tutorialReducer?.isnewuser);
+    const imnewaccount = useSelector((state) => state.tutorialReducer?.isnewuser);
+    const goToMain = () => {
+        dispatch(setPetName(petName ?? ''));
+        dispatch(setPetKey(String(pet?.id ?? '')));
+        dispatch(setPetSteps(stepGoal ?? 500));
+        dispatch(setPetCreatedAt(Date.now()));
+        dispatch(updatePet({ missedDays: 0, petisdead: false }));
+        dispatch(setSignedIn(true));
+        dispatch(setIsMain(true));
+        navigation.reset({ index: 0, routes: [{ name: "Main" }] });
+    };
 
     return (
         <View style={Styles.container}>
@@ -46,7 +60,7 @@ export default function SelectGoalScreen() {
                         
                     </View>
                     <StepSlider value={stepGoal} onChange={setStepGoal} />
-                    <RetroDoneButton onPress={() => imnewaccount ? navigation.navigate('GivePermissions', { pet, petName, stepGoal }) : navigation.navigate('Main', { screen: 'Home' })} />
+                    <RetroDoneButton onPress={() => imnewaccount ? navigation.navigate('GivePermissions', { pet, petName, stepGoal }) : goToMain()} />
                     
                 </View>
             </ImageBackground>

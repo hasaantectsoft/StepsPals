@@ -13,7 +13,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { setMusicSound, setSound } from "../../../redux/slices/soundSlice";
 import { useNavigation } from '@react-navigation/native';
 import { setSignedIn } from '../../../redux/slices/authSlice';
+import { setNewUser } from '../../../redux/slices/tutorialslice';
 import { updatePet } from '../../../redux/slices/petslice';
+import { addToGraveyard } from '../../../redux/slices/graveyardSlice';
 import AnimatedSwitch from "../../../components/Switch/Switch";
 import { DeathGhostSprite } from "../../../components/PetSprites/DeathGhost";
 
@@ -21,7 +23,7 @@ const MS_PER_DAY = 86400000;
 
 export default () => {
     const { MusicSound, Sound } = useSelector(state => state.soundReducer);
-    const { missedDays, petcreatedat } = useSelector(state => state.petReducer);
+    const { missedDays, petcreatedat, petname, petkey } = useSelector(state => state.petReducer);
     const [isDeleteModalVisible, setIsDeleteModalVisible] = useState(false);
     const [DisconnectModal, setIsDisConnectModal] = useState(false);
     const [ProgressModal, setIsProgressModal] = useState(false);
@@ -48,15 +50,9 @@ export default () => {
     const handelModal = () => {
         setIsDeleteModalVisible(false);
         setIsProgressModal(true);
+        dispatch(addToGraveyard({ name: petname, key: petkey, petcreatedat }));
         dispatch(setSignedIn(false));
-        try {
-            const parent = navigation.getParent();
-            if (parent && typeof parent.reset === 'function') {
-                parent.reset({ index: 0, routes: [{ name: 'Landing' }] });
-            } else if (typeof navigation.reset === 'function') {
-                navigation.reset({ index: 0, routes: [{ name: 'Landing' }] });
-            }
-        } catch (e) { /* best-effort */ }
+        dispatch(setNewUser(false));
     };
 
     const setHealth = (days) => {

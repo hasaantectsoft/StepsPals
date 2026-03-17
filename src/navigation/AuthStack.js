@@ -19,10 +19,11 @@ function AuthStack() {
 
   };
 const imnewaccount = useSelector(state => state.tutorialReducer?.isnewuser);
+const startoverpet = useSelector((state) => state.startoverpetslice?.startoverpet);
 
   return (
     <Stack.Navigator
-        initialRouteName={imnewaccount ? 'tutorial' : 'LandingScreen'}
+        initialRouteName={startoverpet ? 'Main' : imnewaccount ? 'tutorial' : 'LandingScreen'}
       screenOptions={{
         headerShown: false,
         statusBarAnimation: 'fade',
