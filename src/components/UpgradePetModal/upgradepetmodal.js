@@ -39,6 +39,8 @@ export default function UpgradePetModal({
   show_continue_button = true,
   okPressed,
   cup,
+  fontcolor,
+  
   showPet = true,
   subtitle,
   bottomtext,
@@ -95,6 +97,7 @@ export default function UpgradePetModal({
            {showtitle && <Text style={[combineStyles.regular12,titleStyle, { marginTop: moderateScale(6) }]}>
               {title || config.title}
             </Text>}
+            
 
             {subtitleShow && (
               <Text style={[Styles.fromTo, subtitleStyle]}>

@@ -4,8 +4,11 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { useSelector } from "react-redux";
 import { Styles } from "./Styles";
 import { images } from "../../../assets/images";
-import GivingTreatModal from "../../../components/Givingtreatmodal";
-
+import UpgradePetModal from "../../../components/UpgradePetModal/upgradepetmodal";
+import { trophy } from "../../../assets/trophy";
+import { rank } from "../../../assets/rankbg";
+import { Theme } from "../../../libs";
+import { Retro } from "../../../utils/extra/retro";
 export default () => {
   const { petcreatedat, missedDays } = useSelector((s) => s.petReducer ?? {});
   const collectionPets = useSelector((s) => s.petCollectionReducer?.pets ?? []);
@@ -41,6 +44,10 @@ export default () => {
           ))}
         </ImageBackground>
       </SafeAreaView>
+      {/* <UpgradePetModal subtitle={"Legend League"} bottomtext={`Total score last week:182,450 steps`}  title={'Weekly Results'} backImg={rank.Legend} 
+      subtitleStyle={{ color: Theme.colors.yellodimranklegend , fontFamily: Retro }}
+      cup={trophy.Legend} btn={false} showPet={false}/> */}
+
     </ImageBackground>
   );
 }
