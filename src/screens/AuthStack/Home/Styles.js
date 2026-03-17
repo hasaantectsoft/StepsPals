@@ -104,5 +104,8 @@ export const styles = StyleSheet.create({
         fontSize: scale(14),
         top: moderateScale(8),
         color:"red"
-    }
+    },
+    modalStyle: {
+        height: moderateScale(160),
+    },
 });

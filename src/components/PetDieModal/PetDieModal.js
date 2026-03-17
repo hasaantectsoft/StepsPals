@@ -6,6 +6,8 @@ import { addToGraveyard } from '../../redux/slices/graveyardSlice';
 import { setSignedIn } from '../../redux/slices/authSlice';
 import { setNewUser } from '../../redux/slices/tutorialslice';
 import { setStartoverPet } from '../../redux/slices/startoverpetslice';
+import { clearPet } from '../../redux/slices/petslice';
+import { clearProgress } from '../../redux/slices/progressSlice';
 
 export default function ({ isVisible,  onRevive }) {
   const { petname, petkey, petcreatedat } = useSelector((state) => state.petReducer);
@@ -22,6 +24,8 @@ export default function ({ isVisible,  onRevive }) {
   const handleStartOver = () => {
     dispatch(setStartoverPet(true));
     dispatch(addToGraveyard({ name: petname, key: petkey, petcreatedat }));
+    dispatch(clearPet());
+    dispatch(clearProgress());
     dispatch(setSignedIn(false));
     dispatch(setNewUser(false));
   };

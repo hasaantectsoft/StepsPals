@@ -33,6 +33,7 @@ const UPGRADE_CONFIG = {
 export default function UpgradePetModal({
   isVisible,
   onClose,
+  onAddToCollection,
   showtitle = true,
   label,
   show_continue_button = true,
@@ -60,6 +61,16 @@ export default function UpgradePetModal({
   const collectionId = `${petcreatedat ?? 'noDate'}-${String(petkey ?? 'noKey')}`;
 
   const handleAddToCollection = () => {
+    if (onAddToCollection) {
+      onAddToCollection({
+        id: collectionId,
+        name: petname,
+        petkey,
+        createdAt: petcreatedat,
+        stage,
+      });
+      return;
+    }
     dispatch(
       addPetToCollection({
         id: collectionId,

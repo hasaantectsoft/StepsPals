@@ -22,10 +22,18 @@ import { WELCOME_BY_HEALTH } from "../../../utils/exports";
 import PetDieModal from "../../../components/PetDieModal/PetDieModal";
 import UpgradePetModal from "../../../components/UpgradePetModal/upgradepetmodal";
 import { setHasShown21DayModal, setHasShown7DayModal } from "../../../redux/slices/petslice";
+import { DeleteMessageModal } from "../../../components/Modal";
+import { addPetToCollection, removePetFromCollection } from "../../../redux/slices/petCollectionSlice";
+import { setSignedIn } from "../../../redux/slices/authSlice";
+import { setNewUser } from "../../../redux/slices/tutorialslice";
+import { clearPet } from "../../../redux/slices/petslice";
+import { clearProgress } from "../../../redux/slices/progressSlice";
+import { setStartoverPet } from "../../../redux/slices/startoverpetslice";
 export default function HomeScreen() {
     const {  navigation, petname, petsteps, step, isComplete, starTapped, setStarTapped, cloudX, cloudY, starFlicker, } = useHomeScreen();
     const dispatch = useDispatch();
     const { missedDays, petkey, petcreatedat, hasShown7DayModal, hasShown21DayModal } = useSelector((s) => s.petReducer);
+    const collectionPets = useSelector((s) => s.petCollectionReducer?.pets ?? []);
     const isPetDead = missedDays >= 3;
     const welcomeText = WELCOME_BY_HEALTH[getCondition(missedDays ?? 0)] ?? "is happy";
     const [allCareChecked, setAllCareChecked] = useState(false);
@@ -35,6 +43,7 @@ export default function HomeScreen() {
     const [showPetDieModal, setShowPetDieModal] = useState(false);
     const careTimeoutRef = useRef(null);
     const [upgradeModal, setUpgradeModal] = useState(null); 
+    const [adultFlowModal, setAdultFlowModal] = useState(null);
     const messageTimeoutRef = useRef(null);
     const petDieModalTimeoutRef = useRef(null);
     const showDisabledMessage = useCallback((text, fromStar = false) => {
@@ -65,6 +74,58 @@ export default function HomeScreen() {
             setUpgradeModal('stage21');
         }
     }, [dispatch, hasShown21DayModal, hasShown7DayModal, isPetDead, petcreatedat]);
+
+    const startNewPetFlow = () => {
+        dispatch(setStartoverPet(true));
+
+        dispatch(setNewUser(false));
+        dispatch(clearPet());
+        dispatch(clearProgress());
+        dispatch(setSignedIn(false));
+    };
+
+    const getCollectionId = () => `${petcreatedat ?? 'noDate'}-${String(petkey ?? 'noKey')}`;
+
+    const handleAdultContinue = () => {
+        setUpgradeModal('add');
+    };
+
+    const oldestPet = collectionPets[collectionPets.length - 1];
+    const handleAdultYes = () => {
+        const capacity = 24;
+        const isFull = collectionPets.length >= capacity;
+        if (isFull && oldestPet?.id) {
+            dispatch(removePetFromCollection(oldestPet.id));
+        }
+        dispatch(addPetToCollection({
+            id: getCollectionId(),
+            name: petname,
+            petkey,
+            createdAt: petcreatedat,
+            stage: 'adult',
+        }));
+        setAdultFlowModal(null);
+        startNewPetFlow();
+    };
+
+    const handleAddToCollectionPress = () => {
+        const capacity = 24;
+        const isFull = collectionPets.length >= capacity;
+        setUpgradeModal(null);
+        if (isFull) {
+            setAdultFlowModal('full');
+            return;
+        }
+        dispatch(addPetToCollection({
+            id: getCollectionId(),
+            name: petname,
+            petkey,
+            createdAt: petcreatedat,
+            stage: 'adult',
+        }));
+        // setAdultFlowModal('space');
+        startNewPetFlow();
+    };
     const playCareOnce = (key) => {
         if (!key) return;
         setActiveCareKey(key);
@@ -179,7 +240,7 @@ export default function HomeScreen() {
                 title={'Congratulations!'}
                 subtitle={`${petname} has fully grown!`}
                 bottomtext={`Keep nurturing ${petname} to stay on track and maintain your streak!`}
-                okPressed={() => setUpgradeModal('add')}
+                okPressed={handleAdultContinue}
             />
             <UpgradePetModal
                 isVisible={upgradeModal === 'add'}
@@ -187,6 +248,27 @@ export default function HomeScreen() {
                 showPet={true}
                 btn={true}
                 onClose={() => setUpgradeModal(null)}
+                onAddToCollection={handleAddToCollectionPress}
+            />
+            <DeleteMessageModal
+                isVisible={adultFlowModal === 'space'}
+                onClose={() => setAdultFlowModal(null)}
+                subtitle={"Would you like to choose new pet?"}
+                btn1text={"No"}
+                btn2text={"Yes"}
+                onpressButton2={handleAdultYes}
+                modalStyle={styles.modalStyle}
+                yellowBtn={true}
+            />
+            <DeleteMessageModal
+                isVisible={adultFlowModal === 'full'}
+                onClose={() => setAdultFlowModal(null)}
+                subtitle={`Do you want to replace\nyour oldest pet?\n${oldestPet?.name ?? ''}\nwith this new one?`}
+                btn1text={"No"}
+                btn2text={"Yes"}
+                onpressButton2={handleAdultYes}
+                modalStyle={styles.modalStyle}
+                yellowBtn={true}
             />
             <SvgXml style={styles.windowFrameImage} height={scale(100)} width={scale(120)} xml={windowframe} />
      </ImageBackground>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { styles } from "./Styles";
-import { ImageBackground, Linking, Platform, Text, View, ScrollView, Pressable, BackHandler } from "react-native";
+import { ImageBackground, Linking, Platform, Text, View, ScrollView, Pressable, BackHandler, TouchableOpacity } from "react-native";
 import { images } from "../../../assets/images";
 import { combineStyles } from "../../../libs/combineStyle";
 import { DeleteButtonSvg, PrivacyPolicyBtnSvg, RestorePurchaceBtnSvg, SignInWithAppleBtnSvg, SignInWithGoogleBtnSvg, SupportSvg } from "../../../assets/svgs";
@@ -14,10 +14,13 @@ import { setMusicSound, setSound } from "../../../redux/slices/soundSlice";
 import { updatePet } from "../../../redux/slices/petslice";
 import { resetApp } from "../../../redux/resetApp";
 import AnimatedSwitch from "../../../components/Switch/Switch";
+import { useNavigation } from "@react-navigation/native";
+import { addPetToCollection } from "../../../redux/slices/petCollectionSlice";
 const MS_PER_DAY = 86400000;
 export default () => {
     const { MusicSound, Sound } = useSelector(state => state.soundReducer);
     const { missedDays, petcreatedat, petname, petkey } = useSelector(state => state.petReducer);
+    const collectionCount = useSelector((s) => s.petCollectionReducer?.pets?.length ?? 0);
     const [isDeleteModalVisible, setIsDeleteModalVisible] = useState(false);
     const [DisconnectModal, setIsDisConnectModal] = useState(false);
     const [ProgressModal, setIsProgressModal] = useState(false);
@@ -45,7 +48,7 @@ export default () => {
             setTimeout(() => BackHandler.exitApp(), 250);
         }
     };
-
+const navigation = useNavigation();
     const setHealth = (days) => {
         handleButtonPress();
         dispatch(updatePet({ missedDays: days, petisdead: days >= 3 }));
@@ -54,6 +57,19 @@ export default () => {
         handleButtonPress();
         const created = Date.now() - daysAgo * MS_PER_DAY;
         dispatch(updatePet({ petcreatedat: created }));
+    };
+
+    const addTestPetToCollection = () => {
+        handleButtonPress();
+        const testId = `test-${Date.now()}`;
+        const nextKey = String(((Number(petkey) || 1) % 3) + 1);
+        dispatch(addPetToCollection({
+            id: testId,
+            name: `Test Pet ${collectionCount + 1}`,
+            petkey: nextKey,
+            createdAt: Date.now(),
+            stage: "adult",
+        }));
     };
     return (
         <View style={[combineStyles.combineStyles]}>
@@ -105,9 +121,19 @@ export default () => {
                             <Pressable onPress={() => setAge(8)} style={styles.devBtn}><Text style={styles.devBtnText}>Teen</Text></Pressable>
                             <Pressable onPress={() => setAge(22)} style={styles.devBtn}><Text style={styles.devBtnText}>Adult</Text></Pressable>
                         </View>
+                        <View style={styles.devRow}>
+                            <Text style={styles.devSub}>Coll:</Text>
+                            <Text style={styles.devHint}>{collectionCount} pets</Text>
+                            <Pressable onPress={addTestPetToCollection} style={styles.devBtn}>
+                                <Text style={styles.devBtnText}>+1 Pet</Text>
+                            </Pressable>
+                        </View>
                         <Text style={styles.devHint}>Health {missedDays} · Age {petcreatedat ? Math.min(Math.floor((Date.now() - petcreatedat) / MS_PER_DAY), 21) : '-'}d</Text>
                     </View>
 
+<TouchableOpacity onPress={() => navigation.navigate('SubscriptionScreen')}>
+    <Text>Subscription Screen Testing</Text>
+</TouchableOpacity>
                     <View style={styles.buttonContainer}>
                         {
                             Platform.OS === "ios" ?
