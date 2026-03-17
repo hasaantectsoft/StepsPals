@@ -4,6 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { useSelector } from "react-redux";
 import { Styles } from "./Styles";
 import { images } from "../../../assets/images";
+import GivingTreatModal from "../../../components/Givingtreatmodal";
 
 export default () => {
   const { petcreatedat, missedDays } = useSelector((s) => s.petReducer ?? {});

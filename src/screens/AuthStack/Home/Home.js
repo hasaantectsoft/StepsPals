@@ -19,7 +19,7 @@ import { getPetDeathGhostComponent } from "../../../components/PetSprites/petSpr
 import { getCondition } from "../../../utils/petCondition";
 import { useDispatch, useSelector } from "react-redux";
 import { WELCOME_BY_HEALTH } from "../../../utils/exports";
-import { setHasShown21DayModal, setHasShown7DayModal } from "../../../redux/slices/petslice";
+import { setHasShown21DayModal, setHasShown7DayModal, updatePet } from "../../../redux/slices/petslice";
 import { addPetToCollection, removePetFromCollection } from "../../../redux/slices/petCollectionSlice";
 import { setSignedIn } from "../../../redux/slices/authSlice";
 import { setNewUser } from "../../../redux/slices/tutorialslice";
@@ -27,6 +27,7 @@ import { clearPet } from "../../../redux/slices/petslice";
 import { clearProgress } from "../../../redux/slices/progressSlice";
 import { setStartoverPet } from "../../../redux/slices/startoverpetslice";
 import HomeModals from "./HomeModals";
+import GivingTreatModal from "../../../components/Givingtreatmodal";
 export default function HomeScreen() {
     const {  navigation, petname, petsteps, step, isComplete, starTapped, setStarTapped, cloudX, cloudY, starFlicker, } = useHomeScreen();
     const dispatch = useDispatch();
@@ -39,6 +40,7 @@ export default function HomeScreen() {
     const [disabledMessage, setDisabledMessage] = useState("");
     const [messageFromStar, setMessageFromStar] = useState(false);
     const [showPetDieModal, setShowPetDieModal] = useState(false);
+    const [treatModalVisible, setTreatModalVisible] = useState(false);
     const careTimeoutRef = useRef(null);
     const [upgradeModal, setUpgradeModal] = useState(null); 
     const [adultFlowModal, setAdultFlowModal] = useState(null);
@@ -51,6 +53,9 @@ export default function HomeScreen() {
         messageTimeoutRef.current = setTimeout(() => { setDisabledMessage(""); setMessageFromStar(false); }, 3000);
     }, []);
     useEffect(() => () => { if (messageTimeoutRef.current) clearTimeout(messageTimeoutRef.current); }, []);
+    useEffect(() => () => {
+        if (careTimeoutRef.current) clearTimeout(careTimeoutRef.current);
+    }, []);
     useEffect(() => {
         if (!isPetDead) {
             setShowPetDieModal(false);
@@ -133,6 +138,7 @@ export default function HomeScreen() {
         if (!duration) return;
         careTimeoutRef.current = setTimeout(() => {
             setActiveCareKey((k) => (k === key ? null : k));
+            if (key === "treat") setTreatModalVisible(true);
         }, duration);
     };
 
@@ -141,6 +147,7 @@ export default function HomeScreen() {
         if (starTapped && activeCareKey === "treat") return;
         playCareOnce(key);
     };
+    const careOffsetX = scale(["treat", "clean"].includes(activeCareKey) ? 95 : 130);
 
     const DeathGhostSprite = getPetDeathGhostComponent(petkey);
     const canCheckStar = isComplete && allCareChecked && !starTapped;
@@ -162,9 +169,10 @@ export default function HomeScreen() {
 
             </Pressable>
             <SpriteLoader>
-                <ActivePetSprite spriteScale={3} />
+                <ActivePetSprite spriteScale={3.2} />
                 {ActiveCareSprite && (
                     <ActiveCareSprite
+                        offsetX={careOffsetX}
                         spriteScale={3.5}
                         offsetY={careOffsets[activeCareKey] || 0}
                     />
@@ -234,6 +242,14 @@ export default function HomeScreen() {
                 handleAdultYes={handleAdultYes}
                 styles={styles}
             />
+            <GivingTreatModal
+                isVisible={treatModalVisible}
+                onClose={() => {
+                    setTreatModalVisible(false);
+                    dispatch(updatePet({ missedDays: 0, petisdead: false }));
+                }}
+            />
+
             <SvgXml style={styles.windowFrameImage} height={scale(100)} width={scale(120)} xml={windowframe} />
      </ImageBackground>
     );
