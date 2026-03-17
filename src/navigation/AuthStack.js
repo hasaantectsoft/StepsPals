@@ -24,7 +24,7 @@ console.log('imnewaccount',imnewaccount)
 console.log(imnewaccount)
   return (
     <Stack.Navigator
-        initialRouteName={imnewaccount ? 'tutorial' : 'LandingScreen'}
+        initialRouteName={imnewaccount ? 'tutorial' : 'tutorial'}
       screenOptions={{
         headerShown: false,
         statusBarAnimation: 'fade',

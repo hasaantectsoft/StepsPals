@@ -76,9 +76,12 @@ export const images = {
   next: require('./next.png'),
   StarEye: require('./StarEye.png'),
   TrophyBack: require('./TrophyBack.png'),
-
-puff: require('./Anim_Puff.png'),
+  puff: require('./Anim_Puff.png'),
   starmesagebox: require('./starmessageboxi.png'),
+  HomeBa: require('./HomeBa.jpeg'),
+  Subtrac: require('./Subtrac.jpeg'),
+  categ: require('./categ.jpeg'),
+  OringeBox: require('./OringeBox.png'),
 
 
 

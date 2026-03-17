@@ -15,6 +15,7 @@ import { careOffsets } from "../../../utils/extra/offsets";
 import { careMap } from "../../../utils/extra/caremap";
 import { careDurations } from "../../../utils/extra/delay";
 import { DogTeenSprite_sick } from "../../../components/PetSprites/Pets/Dog/Teen";
+import WelcomModal from "../../../components/Modal/WelcomModal";
 
 export default function HomeScreen() {
     const {

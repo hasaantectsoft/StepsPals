@@ -22,4 +22,12 @@ export const styles = StyleSheet.create({
     alignSelf: 'center',
     top: height * 0.59,
   },
+  image:{
+    width: '100%',
+    height: '100%',
+  },
+  imageContainer:{
+    flex:1,
+    backgroundColor:"rgba(0, 0, 0, 0.5)"
+  }
 });

@@ -92,7 +92,7 @@ export default () => {
             <Image source={images.RankingTitle} style={styles.titleLogo} />
             <CountdownTimer />
             <LeaderboardContent />
-            <UpgradePetModal isVisible={false} showPet={false}
+            <UpgradePetModal isVisible={true} showPet={false}
                 cup={images.GoldenCup} title={"Weekly Results"}
                 subtitle={"Legend League"}
                 btn={false}
