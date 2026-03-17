@@ -21,13 +21,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { WELCOME_BY_HEALTH } from "../../../utils/exports";
 import PetDieModal from "../../../components/PetDieModal/PetDieModal";
 import UpgradePetModal from "../../../components/UpgradePetModal/upgradepetmodal";
-import { Theme } from "../../../libs";
 import { setHasShown21DayModal, setHasShown7DayModal } from "../../../redux/slices/petslice";
 export default function HomeScreen() {
-    const {
-        navigation, petname, petsteps, step, isComplete, starTapped, setStarTapped,
-        cloudX, cloudY, starFlicker,
-    } = useHomeScreen();
+    const {  navigation, petname, petsteps, step, isComplete, starTapped, setStarTapped, cloudX, cloudY, starFlicker, } = useHomeScreen();
     const dispatch = useDispatch();
     const { missedDays, petkey, petcreatedat, hasShown7DayModal, hasShown21DayModal } = useSelector((s) => s.petReducer);
     const isPetDead = missedDays >= 3;
@@ -38,19 +34,16 @@ export default function HomeScreen() {
     const [messageFromStar, setMessageFromStar] = useState(false);
     const [showPetDieModal, setShowPetDieModal] = useState(false);
     const careTimeoutRef = useRef(null);
-    const [upgradeModal, setUpgradeModal] = useState(null); // 'stage7' | 'stage21' | 'add' | null
+    const [upgradeModal, setUpgradeModal] = useState(null); 
     const messageTimeoutRef = useRef(null);
     const petDieModalTimeoutRef = useRef(null);
-
     const showDisabledMessage = useCallback((text, fromStar = false) => {
         if (messageTimeoutRef.current) clearTimeout(messageTimeoutRef.current);
         setDisabledMessage(text);
         setMessageFromStar(fromStar);
         messageTimeoutRef.current = setTimeout(() => { setDisabledMessage(""); setMessageFromStar(false); }, 3000);
     }, []);
-
     useEffect(() => () => { if (messageTimeoutRef.current) clearTimeout(messageTimeoutRef.current); }, []);
-
     useEffect(() => {
         if (!isPetDead) {
             setShowPetDieModal(false);
@@ -170,9 +163,7 @@ export default function HomeScreen() {
                 />           
             </ImageBackground>
             <PetDieModal isVisible={showPetDieModal} onClose={() => setShowPetDieModal(false)} />
-            
-            {/* grown up modal */}
-            <UpgradePetModal
+                <UpgradePetModal
                 isVisible={upgradeModal === 'stage7'}
                 showPet={true}
                 btn={false}
@@ -181,7 +172,6 @@ export default function HomeScreen() {
                 bottomtext={`You’ve taken care of \n${petname}\n for 7 days!`}
                 okPressed={() => setUpgradeModal(null)}
             />
-            {/* fully grown modal */}
             <UpgradePetModal
                 isVisible={upgradeModal === 'stage21'}
                 showPet={true}
@@ -191,7 +181,6 @@ export default function HomeScreen() {
                 bottomtext={`Keep nurturing ${petname} to stay on track and maintain your streak!`}
                 okPressed={() => setUpgradeModal('add')}
             />
-            {/* add to collection modal (after 7/21 modal) */}
             <UpgradePetModal
                 isVisible={upgradeModal === 'add'}
                 show_continue_button={false}
@@ -199,7 +188,6 @@ export default function HomeScreen() {
                 btn={true}
                 onClose={() => setUpgradeModal(null)}
             />
-
             <SvgXml style={styles.windowFrameImage} height={scale(100)} width={scale(120)} xml={windowframe} />
      </ImageBackground>
     );

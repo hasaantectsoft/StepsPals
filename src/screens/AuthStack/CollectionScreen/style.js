@@ -43,11 +43,15 @@ export const styles = StyleSheet.create({
         justifyContent:"center"
     },
     CollectionCard: {
-        
+        width: "33.33%",
+        alignItems: "center",
+    },
+    row: {
+        justifyContent: "flex-start",
     },
     listContent:{
-        alignSelf:"center",
-        justifyContent:"center",
+        alignSelf: "stretch",
+        paddingHorizontal: moderateScale(6),
     },
     innerContainer:{
        width:"80%",

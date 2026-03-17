@@ -74,6 +74,7 @@ export default () => {
                             keyExtractor={(item) => item.id.toString()}
                             numColumns={3}
                             contentContainerStyle={styles.listContent}
+                            columnWrapperStyle={styles.row}
                             scrollEnabled={true}
                             showsVerticalScrollIndicator={false}
                         />

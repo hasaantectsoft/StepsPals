@@ -11,17 +11,8 @@ import { PRIVACY_URL } from "../../../utils/extra/links";
 import { playButtonSound, startAppSound, stopBackgroundSound } from "../../../utils/SoundManager/SoundManager";
 import { useDispatch, useSelector } from "react-redux";
 import { setMusicSound, setSound } from "../../../redux/slices/soundSlice";
-import { setSignedIn } from '../../../redux/slices/authSlice';
-import { setNewUser } from '../../../redux/slices/tutorialslice';
-import { updatePet, clearPet } from '../../../redux/slices/petslice';
-import { addToGraveyard, clearGraveyard } from '../../../redux/slices/graveyardSlice';
-import { clearProgress } from "../../../redux/slices/progressSlice";
-import { dispatchMakeCartEmpty } from "../../../redux/slices/cartSlice";
-import { dispatchThemeMode } from "../../../redux/slices/themeSlice";
-import { dispatchToken, dispatchUser } from "../../../redux/slices/userSlice";
-import { setIsMain } from "../../../redux/slices/ismain";
-import { setStartoverPet } from "../../../redux/slices/startoverpetslice";
-import { persistedStore } from "../../../redux/store";
+import { updatePet } from "../../../redux/slices/petslice";
+import { resetApp } from "../../../redux/resetApp";
 import AnimatedSwitch from "../../../components/Switch/Switch";
 const MS_PER_DAY = 86400000;
 export default () => {
@@ -49,23 +40,7 @@ export default () => {
     const handelModal = async () => {
         setIsDeleteModalVisible(false);
         setIsProgressModal(true);
-        dispatch(addToGraveyard({ name: petname, key: petkey, petcreatedat }));
-        dispatch(setSignedIn(false));
-        dispatch(setNewUser(true));
-        dispatch(clearPet());
-        dispatch(clearProgress());
-        dispatch(clearGraveyard());
-        dispatch(dispatchMakeCartEmpty());
-        dispatch(dispatchThemeMode('system'));
-        dispatch(dispatchToken(null));
-        dispatch(dispatchUser(null));
-        dispatch(setIsMain(false));
-        dispatch(setStartoverPet(false));
-        dispatch(setMusicSound(true));
-        dispatch(setSound(true));
-        try {
-            await persistedStore.purge();
-        } catch (e) {}
+        await resetApp(dispatch, { petname, petkey, petcreatedat });
         if (Platform.OS === 'android') {
             setTimeout(() => BackHandler.exitApp(), 250);
         }
