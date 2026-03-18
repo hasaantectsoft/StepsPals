@@ -38,9 +38,7 @@ export default function UpgradePetModal({
   label,
   show_continue_button = true,
   okPressed,
-  cup,
-  fontcolor,
-  
+  cup,  
   showPet = true,
   subtitle,
   bottomtext,
@@ -52,7 +50,8 @@ export default function UpgradePetModal({
   subtitleShow = true,
   keepGoing = false,
   imageStyle,
-  titleStyle
+  titleStyle,
+  btxstyle
 }) {
   const { petkey, petcreatedat, petname } = useSelector((s) => s.petReducer);
   const dispatch = useDispatch();
@@ -139,7 +138,7 @@ export default function UpgradePetModal({
             {
               bottomtext &&
 
-              <Text style={Styles.bottomtext}>{bottomtext}</Text>
+              <Text style={[Styles.bottomtext,btxstyle]}>{bottomtext}</Text>
             }
             {
               keepGoing &&
