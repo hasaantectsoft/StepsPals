@@ -121,7 +121,348 @@ export const playbottomtabsound = () => {
 
   if (!SoundEnabled) return;
 
-  const sfx = new Sound('buttonclick.mp3', Sound.MAIN_BUNDLE, (error) => {
+  const sfx = new Sound('donebuttonclick.mp3', Sound.MAIN_BUNDLE, (error) => {
+    if (error) {
+      console.log('Failed to load button sound', error);
+      return;
+    }
+
+    // Make button sound louder
+    sfx.setVolume(1.0);
+
+    // Optional: slightly reduce background music for clarity
+    if (bgMusic && bgMusic.isPlaying()) {
+      bgMusic.setVolume(0.15);
+
+      setTimeout(() => {
+        bgMusic.setVolume(0.3);
+      }, 200);
+    }
+
+    sfx.play(() => {
+      sfx.release();
+    });
+  });
+};
+export const drinkingwatersound = () => {
+  const { Sound: SoundEnabled } = store.getState().soundReducer;
+
+  if (!SoundEnabled) return;
+
+  const sfx = new Sound('drinking.mp3', Sound.MAIN_BUNDLE, (error) => {
+    if (error) {
+      console.log('Failed to load button sound', error);
+      return;
+    }
+
+    // Make button sound louder
+    sfx.setVolume(1.0);
+
+    // Optional: slightly reduce background music for clarity
+    if (bgMusic && bgMusic.isPlaying()) {
+      bgMusic.setVolume(0.15);
+
+      setTimeout(() => {
+        bgMusic.setVolume(0.3);
+      }, 200);
+    }
+
+    sfx.play(() => {
+      sfx.release();
+    });
+  });
+};
+
+export const congratulationsound = () => {
+  const { Sound: SoundEnabled } = store.getState().soundReducer;
+
+  if (!SoundEnabled) return;
+
+  const sfx = new Sound('congratulations.mp3', Sound.MAIN_BUNDLE, (error) => {
+    if (error) {
+      console.log('Failed to load button sound', error);
+      return;
+    }
+
+    // Make button sound louder
+    sfx.setVolume(1.0);
+
+    // Optional: slightly reduce background music for clarity
+    if (bgMusic && bgMusic.isPlaying()) {
+      bgMusic.setVolume(0.15);
+
+      setTimeout(() => {
+        bgMusic.setVolume(0.3);
+      }, 200);
+    }
+
+    sfx.play(() => {
+      sfx.release();
+    });
+  });
+};
+  export const cleansound = () => {
+    const { Sound: SoundEnabled } = store.getState().soundReducer;
+  
+    if (!SoundEnabled) return;
+  
+    const sfx = new Sound('congratulations.mp3', Sound.MAIN_BUNDLE, (error) => {
+      if (error) {
+        console.log('Failed to load button sound', error);
+        return;
+      }
+  
+      // Make button sound louder
+      sfx.setVolume(1.0);
+  
+      // Optional: slightly reduce background music for clarity
+      if (bgMusic && bgMusic.isPlaying()) {
+        bgMusic.setVolume(0.15);
+  
+        setTimeout(() => {
+          bgMusic.setVolume(0.3);
+        }, 200);
+      }
+  
+      sfx.play(() => {
+        sfx.release();
+      });
+    });
+  };
+
+  export const upgradecompletesound = () => {
+    const { Sound: SoundEnabled } = store.getState().soundReducer;
+  
+    if (!SoundEnabled) return;
+  
+    const sfx = new Sound('evolutionsound.mp3', Sound.MAIN_BUNDLE, (error) => {
+      if (error) {
+        console.log('Failed to load button sound', error);
+        return;
+      }
+  
+      // Make button sound louder
+      sfx.setVolume(1.0);
+  
+      // Optional: slightly reduce background music for clarity
+      if (bgMusic && bgMusic.isPlaying()) {
+        bgMusic.setVolume(0.15);
+  
+        setTimeout(() => {
+          bgMusic.setVolume(0.3);
+        }, 200);
+      }
+  
+      sfx.play(() => {
+        sfx.release();
+      });
+    });
+  };
+  export const eatingsooundone = () => {
+    const { Sound: SoundEnabled } = store.getState().soundReducer;
+  
+    if (!SoundEnabled) return;
+  
+    const sfx = new Sound('chewing.mp3', Sound.MAIN_BUNDLE, (error) => {
+      if (error) {
+        console.log('Failed to load button sound', error);
+        return;
+      }
+  
+      // Make button sound louder
+      sfx.setVolume(1.0);
+  
+      // Optional: slightly reduce background music for clarity
+      if (bgMusic && bgMusic.isPlaying()) {
+        bgMusic.setVolume(0.15);
+  
+        setTimeout(() => {
+          bgMusic.setVolume(0.3);
+        }, 200);
+      }
+  
+      sfx.play(() => {
+        sfx.release();
+      });
+    });
+  };
+  export const eatingsoountwo = () => {
+    const { Sound: SoundEnabled } = store.getState().soundReducer;
+  
+    if (!SoundEnabled) return;
+  
+    const sfx = new Sound('chewingtwo.mp3', Sound.MAIN_BUNDLE, (error) => {
+      if (error) {
+        console.log('Failed to load button sound', error);
+        return;
+      }
+  
+      // Make button sound louder
+      sfx.setVolume(1.0);
+  
+      // Optional: slightly reduce background music for clarity
+      if (bgMusic && bgMusic.isPlaying()) {
+        bgMusic.setVolume(0.15);
+  
+        setTimeout(() => {
+          bgMusic.setVolume(0.3);
+        }, 200);
+      }
+  
+      sfx.play(() => {
+        sfx.release();
+      });
+    });
+  };
+export const fadeoutsound = () => {
+  const { Sound: SoundEnabled } = store.getState().soundReducer;
+
+  if (!SoundEnabled) return;
+
+  const sfx = new Sound('fadeout.mp3', Sound.MAIN_BUNDLE, (error) => {
+    if (error) {
+      console.log('Failed to load button sound', error);
+      return;
+    }
+
+    // Make button sound louder
+    sfx.setVolume(1.0);
+
+    // Optional: slightly reduce background music for clarity
+    if (bgMusic && bgMusic.isPlaying()) {
+      bgMusic.setVolume(0.15);
+
+      setTimeout(() => {
+        bgMusic.setVolume(0.3);
+      }, 200);
+    }
+
+    sfx.play(() => {
+      sfx.release();
+    });
+  });
+};
+
+export const sadpoponesound = () => {
+  const { Sound: SoundEnabled } = store.getState().soundReducer;
+
+  if (!SoundEnabled) return;
+
+  const sfx = new Sound('sadpopup1.mp3', Sound.MAIN_BUNDLE, (error) => {
+    if (error) {
+      console.log('Failed to load button sound', error);
+      return;
+    }
+
+    // Make button sound louder
+    sfx.setVolume(1.0);
+
+    // Optional: slightly reduce background music for clarity
+    if (bgMusic && bgMusic.isPlaying()) {
+      bgMusic.setVolume(0.15);
+
+      setTimeout(() => {
+        bgMusic.setVolume(0.3);
+      }, 200);
+    }
+
+    sfx.play(() => {
+      sfx.release();
+    });
+  });
+};
+
+export const sadpoptwosound = () => {
+  const { Sound: SoundEnabled } = store.getState().soundReducer;
+
+  if (!SoundEnabled) return;
+
+  const sfx = new Sound('sadpopup2.mp3', Sound.MAIN_BUNDLE, (error) => {
+    if (error) {
+      console.log('Failed to load button sound', error);
+      return;
+    }
+
+    // Make button sound louder
+    sfx.setVolume(1.0);
+
+    // Optional: slightly reduce background music for clarity
+    if (bgMusic && bgMusic.isPlaying()) {
+      bgMusic.setVolume(0.15);
+
+      setTimeout(() => {
+        bgMusic.setVolume(0.3);
+      }, 200);
+    }
+
+    sfx.play(() => {
+      sfx.release();
+    });
+  });
+};
+export const successfulgrowth1 = () => {
+  const { Sound: SoundEnabled } = store.getState().soundReducer;
+
+  if (!SoundEnabled) return;
+
+  const sfx = new Sound('successfulgrowth.mp3', Sound.MAIN_BUNDLE, (error) => {
+    if (error) {
+      console.log('Failed to load button sound', error);
+      return;
+    }
+
+    // Make button sound louder
+    sfx.setVolume(1.0);
+
+    // Optional: slightly reduce background music for clarity
+    if (bgMusic && bgMusic.isPlaying()) {
+      bgMusic.setVolume(0.15);
+
+      setTimeout(() => {
+        bgMusic.setVolume(0.3);
+      }, 200);
+    }
+
+    sfx.play(() => {
+      sfx.release();
+    });
+  });
+};
+export const successfulgrowth2 = () => {
+  const { Sound: SoundEnabled } = store.getState().soundReducer;
+
+  if (!SoundEnabled) return;
+
+  const sfx = new Sound('successfulgrowth2.mp3', Sound.MAIN_BUNDLE, (error) => {
+    if (error) {
+      console.log('Failed to load button sound', error);
+      return;
+    }
+
+    // Make button sound louder
+    sfx.setVolume(1.0);
+
+    // Optional: slightly reduce background music for clarity
+    if (bgMusic && bgMusic.isPlaying()) {
+      bgMusic.setVolume(0.15);
+
+      setTimeout(() => {
+        bgMusic.setVolume(0.3);
+      }, 200);
+    }
+
+    sfx.play(() => {
+      sfx.release();
+    });
+  });
+};
+
+export const tadaasound = () => {
+  const { Sound: SoundEnabled } = store.getState().soundReducer;
+
+  if (!SoundEnabled) return;
+
+  const sfx = new Sound('tadafanfarea6313.mp3', Sound.MAIN_BUNDLE, (error) => {
     if (error) {
       console.log('Failed to load button sound', error);
       return;

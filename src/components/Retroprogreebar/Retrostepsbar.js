@@ -4,7 +4,7 @@ import { styles } from "./styles";
 import { scale } from "react-native-size-matters";
 import { bowl, bowl1, checked, newhomebar, pop1, popp, waterdis, waterfull } from "../../assets/svgs";
 import { SvgXml } from "react-native-svg";
-import { playButtonSound } from "../../utils/SoundManager/SoundManager";
+import { playbottomtabsound } from "../../utils/SoundManager/SoundManager";
 import ScalePressable from "../ScalePressable/ScalePressable";
 import MessageBox from "../MessageBox/MessageBox";
 
@@ -97,7 +97,7 @@ export default function RetroStepsBar({
             <ScalePressable
               pressableStyle={[styles.iconAbsolute, { left: barWidth * pct - scale(20) }]}
               onPress={() => {
-                playButtonSound();
+                playbottomtabsound();
                 if (!canPress) {
                   showIconMessage(careKey);
                   onDisabledCarePress?.(DISABLED_MESSAGES[careKey]);

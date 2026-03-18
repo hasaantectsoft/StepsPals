@@ -5,7 +5,7 @@ import { scale } from "react-native-size-matters";
 import { styles } from "./Styles";
 import { images } from "../../../assets/images";
 import { cake, cakefilled, newfeature, starchecked, windowframe } from "../../../assets/svgs";
-import { playButtonSound } from "../../../utils/SoundManager/SoundManager";
+import { playbottomtabsound } from "../../../utils/SoundManager/SoundManager";
 import SpriteLoader from "../../../components/SprieLoader";
 import RetroStepsBar from "../../../components/Retroprogreebar/Retrostepsbar";
 import ScalePressable from "../../../components/ScalePressable/ScalePressable";
@@ -162,7 +162,7 @@ export default function HomeScreen() {
             <Pressable
                 style={styles.headerPressArea}
                 hitSlop={40}
-                onPress={() => { playButtonSound(); navigation.navigate('PetMenu'); }}>
+                onPress={() => { playbottomtabsound(); navigation.navigate('PetMenu'); }}>
                 <Text style={styles.name}>Hello {petname}</Text>
                 <Text style={styles.welcome}>{welcomeText}</Text>
 
@@ -199,7 +199,7 @@ export default function HomeScreen() {
                 </View>
             ) : null}
             <View style={styles.collectioncontainer}>
-                <ScalePressable onPress={() => { playButtonSound(); navigation.navigate('Collecition'); }}>
+                <ScalePressable onPress={() => { playbottomtabsound(); navigation.navigate('Collecition'); }}>
                     <Image source={images.collection} style={{ width: scale(45), height: scale(45) }} />
                 </ScalePressable>
                 <SvgXml height={scale(45)} width={scale(45)} xml={newfeature} />
@@ -208,7 +208,7 @@ export default function HomeScreen() {
             <View style={[styles.starcontainer, { overflow: 'visible' }]}>
                 <ScalePressable
                     onPress={() => {
-                        playButtonSound();
+                        playbottomtabsound();
                         if (!canCheckStar) {
                             showDisabledMessage(getStarDisabledMessage(), true);
                             return;
