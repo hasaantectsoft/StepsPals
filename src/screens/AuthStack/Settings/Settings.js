@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { styles } from "./Styles";
-import { ImageBackground, Linking, Platform, Text, View, ScrollView, Pressable, BackHandler, TouchableOpacity } from "react-native";
+import { ImageBackground, Linking, Platform, Text, View, ScrollView, Pressable, BackHandler, TouchableOpacity, NativeModules } from "react-native";
 import { images } from "../../../assets/images";
 import { combineStyles } from "../../../libs/combineStyle";
 import { DeleteButtonSvg, PrivacyPolicyBtnSvg, RestorePurchaceBtnSvg, SignInWithAppleBtnSvg, SignInWithGoogleBtnSvg, SupportSvg } from "../../../assets/svgs";
@@ -48,9 +48,13 @@ export default () => {
         setIsDeleteModalVisible(false);
         setIsProgressModal(true);
         await resetApp(dispatch, { petname, petkey, petcreatedat });
-        if (Platform.OS === 'android') {
-            setTimeout(() => BackHandler.exitApp(), 250);
-        }
+        setTimeout(() => {
+            if (Platform.OS === 'android') {
+                BackHandler.exitApp();
+            } else {
+                NativeModules.ExitApp?.exit();
+            }
+        }, 250);
     };
     const navigation = useNavigation();
     const setHealth = (days) => {
