@@ -1,12 +1,13 @@
 import { View, Modal, Text, ImageBackground, Image, TouchableOpacity } from 'react-native';
 import { SvgXml } from 'react-native-svg';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Paw } from '../../assets/svgs';
 import { Styles } from './styles';
 import { moderateScale, scale } from 'react-native-size-matters';
 import { images } from '../../assets/images';
 import { combineStyles } from '../../libs/combineStyle';
 import ScalePressable from '../ScalePressable/ScalePressable';
+import { addPetToCollection } from '../../redux/slices/petCollectionSlice';
 
 const PET_IMAGE = { '1': images.Dog, '2': images.Cat, '3': images.Dino };
 
@@ -32,9 +33,12 @@ const UPGRADE_CONFIG = {
 export default function UpgradePetModal({
   isVisible,
   onClose,
+  onAddToCollection,
+  showtitle = true,
   label,
+  show_continue_button = true,
   okPressed,
-  cup,
+  cup,  
   showPet = true,
   subtitle,
   bottomtext,
@@ -46,13 +50,39 @@ export default function UpgradePetModal({
   subtitleShow = true,
   keepGoing = false,
   imageStyle,
-  titleStyle
+  titleStyle,
+  btxstyle
 }) {
   const { petkey, petcreatedat, petname } = useSelector((s) => s.petReducer);
+  const dispatch = useDispatch();
 
   const stage = getStage(petcreatedat);
   const config = UPGRADE_CONFIG[stage] ?? UPGRADE_CONFIG.teen;
   const petImage = PET_IMAGE[String(petkey)];
+  const collectionId = `${petcreatedat ?? 'noDate'}-${String(petkey ?? 'noKey')}`;
+
+  const handleAddToCollection = () => {
+    if (onAddToCollection) {
+      onAddToCollection({
+        id: collectionId,
+        name: petname,
+        petkey,
+        createdAt: petcreatedat,
+        stage,
+      });
+      return;
+    }
+    dispatch(
+      addPetToCollection({
+        id: collectionId,
+        name: petname,
+        petkey,
+        createdAt: petcreatedat,
+        stage,
+      }),
+    );
+    onClose?.();
+  };
 
   return (
     <Modal visible={isVisible} transparent animationType="fade" statusBarTranslucent>
@@ -63,9 +93,10 @@ export default function UpgradePetModal({
             style={[Styles.bgContainer, containerStyle]}
             imageStyle={[Styles.bgImage,imageStyle]}
           >
-            <Text style={[combineStyles.regular12,titleStyle, { marginTop: moderateScale(6) }]}>
+           {showtitle && <Text style={[combineStyles.regular12,titleStyle, { marginTop: moderateScale(6) }]}>
               {title || config.title}
-            </Text>
+            </Text>}
+            
 
             {subtitleShow && (
               <Text style={[Styles.fromTo, subtitleStyle]}>
@@ -88,7 +119,7 @@ export default function UpgradePetModal({
               <TouchableOpacity
                 activeOpacity={0.8}
                 style={[Styles.retroDoneWrap]}
-                onPress={onClose}
+                onPress={handleAddToCollection}
               >
                 <ImageBackground
                   source={require('../../assets/images/next.png')}
@@ -107,7 +138,7 @@ export default function UpgradePetModal({
             {
               bottomtext &&
 
-              <Text style={Styles.bottomtext}>{bottomtext}</Text>
+              <Text style={[Styles.bottomtext,btxstyle]}>{bottomtext}</Text>
             }
             {
               keepGoing &&
@@ -115,7 +146,7 @@ export default function UpgradePetModal({
               <Text style={Styles.keep}>{"Keep it up!"}</Text>
             }
           </ImageBackground>
-
+{show_continue_button && (
           <ScalePressable
             onPress={okPressed}
             pressableStyle={Styles.retryPressable}
@@ -124,6 +155,7 @@ export default function UpgradePetModal({
             <SvgXml xml={Paw} width={scale(55)} height={scale(55)} />
             <Text style={Styles.retryText}>{label || "Tap to continue"}</Text>
           </ScalePressable>
+        )}
         </View>
       </View>
     </Modal>

@@ -6,7 +6,6 @@ import { useSelector } from 'react-redux';
 import BottomTab from './BottomStack/BottomTabs';
 import PetMenu from '../screens/AuthStack/PetMenu/PetMenu';
 import SubscriptionScreen from '../screens/AuthStack/SubscriptionScreen/SubscriptionScreen';
-import CollectionScreen from '../screens/AuthStack/CollectionScreen/CollectionScreen';
 function AuthStack() {
   const Stack = createNativeStackNavigator();
   const screens = {
@@ -15,16 +14,14 @@ function AuthStack() {
     Main: BottomTab,
     PetMenu: PetMenu,
     SubscriptionScreen:SubscriptionScreen,
-    
-    
-
   };
 const imnewaccount = useSelector(state => state.tutorialReducer?.isnewuser);
+const startoverpet = useSelector((state) => state.startoverpetslice?.startoverpet);
+console.log('startoverpet',startoverpet)
 console.log('imnewaccount',imnewaccount)
-console.log(imnewaccount)
   return (
     <Stack.Navigator
-        initialRouteName={imnewaccount ? 'tutorial' : 'tutorial'}
+        initialRouteName={startoverpet && !imnewaccount ? 'Main' : imnewaccount ? 'tutorial' : 'LandingScreen'}
       screenOptions={{
         headerShown: false,
         statusBarAnimation: 'fade',

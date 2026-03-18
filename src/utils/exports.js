@@ -155,3 +155,4 @@ export const PetCollectionArray=[
   {id:20,name:"Pet Name", date:'13.05.25',img:images.Dino},
   {id:21,name:"Pet Name", date:'13.05.25',img:images.Cat},
 ]
+export const WELCOME_BY_HEALTH = { Healthy: "is happy", Sick: "is sick", "Very Sick": "is very sick", Dead: "is dead" };

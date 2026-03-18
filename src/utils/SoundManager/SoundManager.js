@@ -116,6 +116,35 @@ export const playEggCrackSound = () => {
     });
   });
 };
+export const playbottomtabsound = () => {
+  const { Sound: SoundEnabled } = store.getState().soundReducer;
+
+  if (!SoundEnabled) return;
+
+  const sfx = new Sound('buttonclick.mp3', Sound.MAIN_BUNDLE, (error) => {
+    if (error) {
+      console.log('Failed to load button sound', error);
+      return;
+    }
+
+    // Make button sound louder
+    sfx.setVolume(1.0);
+
+    // Optional: slightly reduce background music for clarity
+    if (bgMusic && bgMusic.isPlaying()) {
+      bgMusic.setVolume(0.15);
+
+      setTimeout(() => {
+        bgMusic.setVolume(0.3);
+      }, 200);
+    }
+
+    sfx.play(() => {
+      sfx.release();
+    });
+  });
+};
+
 
 // ----------------- Cleanup (Call on App Exit) -----------------
 export const releaseSounds = () => {

@@ -6,6 +6,10 @@ import { combineStyles } from "../../libs/combineStyle";
 import NativeButton from "../NativeButton/NativeButton";
 import PressableIcon from "../PressSvg/PressSvg";
 import { Paw } from "../../assets/svgs";
+import { retro } from "../../utils/extra/delay";
+import { Theme } from "../../libs";
+import ScalePressable from "../ScalePressable/ScalePressable";
+import { playButtonSound } from "../../utils/SoundManager/SoundManager";
 
 export default function DeleteMessageModal({ backImg, isVisible, onClose, btn1text, btn2text, subtitle, rowBtton = true, centerButton = false, centerButtonTxt, onpressButton2, onpressCenterButton, title, paw = false, swap = false, modalStyle = {},yellowBtn=false }) {
 
@@ -69,10 +73,18 @@ export default function DeleteMessageModal({ backImg, isVisible, onClose, btn1te
           </ImageBackground>
         </View>
 
-        {paw && <TouchableOpacity style={styles.pawBox} onPress={onClose}>
-          <PressableIcon icon={Paw} width={90} height={70} />
-          <Text>Tap to continue</Text>
-        </TouchableOpacity>}
+        {paw && (
+          <ScalePressable style={styles.pawBox} onPress={() => { playButtonSound(); onClose(); }}>
+            <View style={{
+              alignItems:"center",
+              justifyContent:"center",
+marginTop:moderateScale(20)
+}}>
+            <PressableIcon icon={Paw} width={80} height={60} />
+            <Text style={styles.pawText}>Tap to continue</Text>
+            </View>
+          </ScalePressable>
+        )}
       </View>
     </Modal>
   );
@@ -128,6 +140,13 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     // backgroundColor:"red"
+  },
+  pawText: {
+    fontFamily: retro,
+    marginTop: moderateScale(12),
+    fontSize: 10,
+    color: Theme.colors.white,
+    textAlign: "center",
   },
   txt:{
     fontSize:moderateScale(9),

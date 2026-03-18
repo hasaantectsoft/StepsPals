@@ -82,6 +82,10 @@ export const images = {
   Subtrac: require('./Subtrac.jpeg'),
   categ: require('./categ.jpeg'),
   OringeBox: require('./OringeBox.png'),
+  oops: require('./oops.png'),
+  puff: require('./Anim_Puff.png'),
+  starmesagebox: require('./starmessageboxi.png'),
+  givingtreatmodal: require('./givingtreatmodal.png'),
 
 
 

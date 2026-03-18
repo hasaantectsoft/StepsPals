@@ -1,37 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
+import { FlatList, ImageBackground, Text, View } from "react-native";
+import { useSelector } from "react-redux";
 import { styles } from "./Styles";
-import {
-  FlatList,
-  ImageBackground,
-  Text,
-  View,
-} from "react-native";
 import { images } from "../../../assets/images";
 import { combineStyles } from "../../../libs/combineStyle";
-import { GrayyardArray } from "../../../utils/exports";
 import LoaderKitView from "react-native-loader-kit";
-import PetDieModal from "../../../components/PetDieModal/PetDieModal";
+
+const PAGE_SIZE = 9;
 
 export default () => {
+  const entries = useSelector((state) => state.graveyardReducer?.entries ?? []);
   const [page, setPage] = useState(1);
-  const [visibleData, setVisibleData] = useState(
-    GrayyardArray.slice(0, 20)
-  );
+  const visibleData = useMemo(() => entries.slice(0, page * PAGE_SIZE), [entries, page]);
   const [loading, setLoading] = useState(false);
 
   const loadMore = () => {
-    if (loading) return;
-
-    const nextPage = page + 1;
-    const newItems = GrayyardArray.slice(0, nextPage * 9);
-
-    if (newItems.length === visibleData.length) return;
-
+    if (loading || visibleData.length >= entries.length) return;
     setLoading(true);
-
     setTimeout(() => {
-      setVisibleData(newItems);
-      setPage(nextPage);
+      setPage((p) => p + 1);
       setLoading(false);
     }, 500);
   };
@@ -58,7 +45,7 @@ export default () => {
       );
     }
 
-    if (visibleData.length === GrayyardArray.length) {
+    if (entries.length > 0 && visibleData.length >= entries.length) {
       return (
         <Text style={styles.bottomText}>
           Your earliest pets now rest in memory beyond the graveyard…
@@ -77,7 +64,7 @@ export default () => {
       >
         <Text style={styles.header}>Graveyard</Text>
 
-        {GrayyardArray.length === 0 ? (
+        {entries.length === 0 ? (
           <Text style={styles.subtitle}>
             You haven't had a Pet die yet. Keep it up!
           </Text>
@@ -85,7 +72,7 @@ export default () => {
           <FlatList
             data={visibleData}
             renderItem={renderItem}
-            keyExtractor={(item) => item.id.toString()}
+            keyExtractor={(item) => String(item.id)}
             numColumns={3}
             columnWrapperStyle={styles.row}
             contentContainerStyle={styles.gravYardContainer}
@@ -95,8 +82,6 @@ export default () => {
             showsVerticalScrollIndicator={false}
           />
         )}
-            {/* <PetDieModal isVisible={true}  /> */}
-
       </ImageBackground>
     </View>
   );

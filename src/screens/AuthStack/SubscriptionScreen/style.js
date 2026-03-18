@@ -8,11 +8,14 @@ export const styles = StyleSheet.create({
         height: "100%",
         resizeMode: "cover",
     },
+    scrollContent: {
+        paddingBottom: moderateScale(80),
+    },
     main: {
         flex: 1,
         paddingTop: moderateScale(90),
         gap: moderateScale(20),
-        marginHorizontal: moderateScale(20),
+        // marginHorizontal: moderateScale(10),
     },
     header: {
         alignItems: "center",
@@ -32,8 +35,7 @@ export const styles = StyleSheet.create({
     subscucriptionContainer: {
         marginTop: moderateScale(30),
         gap: moderateScale(18),
-        // alignItems:"center",
-        // backgroundColor:"black"
+        overflow: "visible",
     },
     svgContainer: {
         right: moderateScale(15),
@@ -53,9 +55,18 @@ export const styles = StyleSheet.create({
 
 
     },
-    listContainer:
-    {
-        width: "100%"
+    listContent: {
+        paddingTop: moderateScale(12),
+    },
+    listContainer: {
+        width: "100%",
+        overflow: "visible",
+    },
+    badge: {
+        position: "absolute",
+        top: -10,
+        right: 20,
+        overflow: "visible",
     },
     imgStyle: {
         width: "100%",
