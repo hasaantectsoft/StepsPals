@@ -7,7 +7,7 @@ import PressableIcon from "../PressSvg/PressSvg";
 import { Star } from "../../assets/svgs";
 import { Theme } from "../../libs";
 import { RetryButton } from "../RetryButton/RetryButton";
-import { congratulationsound, fadeoutsound } from "../../utils/SoundManager/SoundManager";
+import {  upgradecompletesound } from "../../utils/SoundManager/SoundManager";
 
 export default function GivingTreatModal({
   isVisible,
@@ -16,7 +16,7 @@ export default function GivingTreatModal({
 }) {
   useEffect(() => {
     if (isVisible) {
-      congratulationsound();
+      upgradecompletesound();
     }
     
   }, [isVisible]);

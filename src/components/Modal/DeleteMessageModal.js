@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { View, Text, Modal, TouchableOpacity, StyleSheet, ImageBackground } from "react-native";
 import { moderateScale } from "react-native-size-matters";
 import { images } from "../../assets/images";
@@ -9,11 +9,15 @@ import { Paw } from "../../assets/svgs";
 import { retro } from "../../utils/extra/delay";
 import { Theme } from "../../libs";
 import ScalePressable from "../ScalePressable/ScalePressable";
-import { playButtonSound } from "../../utils/SoundManager/SoundManager";
+import { fadeoutsound, playButtonSound } from "../../utils/SoundManager/SoundManager";
 
 export default function DeleteMessageModal({ backImg, isVisible, onClose, btn1text, btn2text, subtitle, rowBtton = true, centerButton = false, centerButtonTxt, onpressButton2, onpressCenterButton, title, paw = false, swap = false, modalStyle = {},yellowBtn=false }) {
 
-
+  useEffect(() => {
+    if (isVisible) {
+      fadeoutsound();
+    }
+  }, [isVisible]);
   return (
     <Modal
       visible={isVisible}

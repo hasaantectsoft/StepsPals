@@ -8,11 +8,17 @@ import { setNewUser } from '../../redux/slices/tutorialslice';
 import { setStartoverPet } from '../../redux/slices/startoverpetslice';
 import { clearPet } from '../../redux/slices/petslice';
 import { clearProgress } from '../../redux/slices/progressSlice';
+import { fadeoutsound, sadpoptwosound } from '../../utils/SoundManager/SoundManager';
+import { useEffect } from 'react';
 
 export default function ({ isVisible,  onRevive }) {
   const { petname, petkey, petcreatedat } = useSelector((state) => state.petReducer);
   const dispatch = useDispatch();
-
+  useEffect(() => {
+    if (isVisible) {
+      sadpoptwosound();
+    }
+  }, [isVisible]);
   const fmt = (ts) => {
     if (!ts) return '--.--.--';
     const d = new Date(ts);
@@ -22,6 +28,7 @@ export default function ({ isVisible,  onRevive }) {
   };
 
   const handleStartOver = () => {
+    fadeoutsound();
     dispatch(setStartoverPet(true));
     dispatch(addToGraveyard({ name: petname, key: petkey, petcreatedat }));
     dispatch(clearPet());

@@ -19,6 +19,7 @@ import { addPetToCollection } from "../../../redux/slices/petCollectionSlice";
 import { LegendRankingModal, PlatinumRankingModal, GoldRankingModal, SilverRankingModal, BronzeRankingModal, UnrankedRankingModal } from "../../../components/RankingModals";
 import Misseddaysmodal from "../../../components/Misseddaysmodal/missiedonedaymodal";
 import Missed2daysmodal from "../../../components/Misseddaysmodal/missed2daysmodal";
+import UpgradePetModal from "../../../components/UpgradePetModal/upgradepetmodal";
 const MS_PER_DAY = 86400000;
 export default () => {
     const { MusicSound, Sound } = useSelector(state => state.soundReducer);
@@ -82,6 +83,7 @@ export default () => {
     const [isUnrankedRankingModalVisible, setIsUnrankedRankingModalVisible] = useState(false);
     const [isMissedDaysModalVisible, setIsMissedDaysModalVisible] = useState(false);
     const [isMissed2DaysModalVisible, setIsMissed2DaysModalVisible] = useState(false);
+    const [isUpgradeModalVisible, setIsUpgradeModalVisible] = useState(false);
     return (
         <View style={[combineStyles.combineStyles]}>
             <ImageBackground source={images.yellowBackground} style={styles.backgroundImage}>
@@ -154,6 +156,7 @@ export default () => {
                             <Pressable onPress={() => setIsBronzeRankingModalVisible(true)}><Text>Bronze Ranking Modal</Text></Pressable>
                             <Pressable onPress={() => setIsUnrankedRankingModalVisible(true)}><Text>Unranked Ranking Modal</Text></Pressable>
                             <Pressable onPress={() => setIsMissedDaysModalVisible(true)}><Text>Missed Days Modal</Text></Pressable>
+                            <Pressable onPress={() => setIsUpgradeModalVisible(true)}><Text>Upgrade Pet Modal</Text></Pressable>
                         <View style={styles.buttonContainer}>
                             {
                                 Platform.OS === "ios" ?
@@ -182,6 +185,7 @@ export default () => {
                 <SilverRankingModal isVisible={isSilverRankingModalVisible} onClose={() => { setIsSilverRankingModalVisible(false) }} steps={182450} />
                 <BronzeRankingModal isVisible={isBronzeRankingModalVisible} onClose={() => { setIsBronzeRankingModalVisible(false) }} steps={182450} />
                 <UnrankedRankingModal isVisible={isUnrankedRankingModalVisible} onClose={() => { setIsUnrankedRankingModalVisible(false) }} steps={182450} />
+                <UpgradePetModal isVisible={isUpgradeModalVisible} onClose={() => setIsUpgradeModalVisible(false)} />
             </ImageBackground>
         </View>
     )

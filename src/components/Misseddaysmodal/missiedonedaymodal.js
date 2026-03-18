@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { View, Text, Modal, StyleSheet, ImageBackground } from "react-native";
 import { moderateScale } from "react-native-size-matters";
 import { images } from "../../assets/images";
 import { combineStyles } from "../../libs/combineStyle";
 import { Theme } from "../../libs";
 import { RetryButton } from "../RetryButton/RetryButton";
+import { sadpoptwosound } from "../../utils/SoundManager/SoundManager";
 
 export default function missedonedaymodal({
     isVisible,
     onClose,
     petname,
 }) {
+    useEffect(() => {
+        if (isVisible) {
+          sadpoptwosound();
+        }
+        
+      }, [isVisible]);
     return (
         <Modal
             visible={isVisible}
