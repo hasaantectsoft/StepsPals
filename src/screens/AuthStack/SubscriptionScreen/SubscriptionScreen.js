@@ -20,13 +20,29 @@ import WelcomModal from "../../../components/Modal/WelcomModal";
 export default () => {
   const [selectedPlan, setSelectedPlan] = useState();
   const [isSubscribed, setIsSubscribed] = useState(false);
-  const [modal, setModal] = useState(false)
-  const [restoreModal, setRestoreModal] = useState(false)
+  const [modal, setModal] = useState(false);
+  const [restoreModal, setRestoreModal] = useState(false);
+  const [trialModal, setTrialModal] = useState(false);
+  const [weeklyModal, setWeeklyModal] = useState(false);
+  const [monthlyModal, setMonthlyModal] = useState(false);
+  const [yearlyModal, setYearlyModal] = useState(false);
   const handleSubscribe = () => {
     setModal(true);
   };
   const handleRestore = () => {
     setRestoreModal(true);
+  };
+  const handleTestTrial = () => {
+    setTrialModal(true);
+  };
+  const handleTestWeekly = () => {
+    setWeeklyModal(true);
+  };
+  const handleTestMonthly = () => {
+    setMonthlyModal(true);
+  };
+  const handleTestYearly = () => {
+    setYearlyModal(true);
   };
   const renderItem = ({ item }) => {
     const isActive = selectedPlan === item.id;
@@ -60,7 +76,7 @@ export default () => {
           <View style={styles.main}>
             <View style={styles.header}>
               <Text style={combineStyles.regular18}>Subscription</Text>
-              <Text style={[combineStyles.regular12, { color: Theme.colors.ligtBrown }]}>
+              <Text style={[combineStyles.regular12, styles.autoRenewText]}>
                 Auto-renewable
               </Text>
             </View>
@@ -70,7 +86,7 @@ export default () => {
                 data={SubsucripitonArray}
                 renderItem={renderItem}
                 keyExtractor={(item) => item.id.toString()}
-                contentContainerStyle={[styles.listContent, { gap: moderateScale(15), paddingRight: moderateScale(15) }]}
+                contentContainerStyle={styles.listContent}
               />
 
               <Text style={styles.txtStyle}>
@@ -83,6 +99,20 @@ export default () => {
                 height={60}
                 onPress={handleSubscribe}
               />
+              <View style={styles.testButtonsRow}>
+                <ScalePressable onPress={() => { playButtonSound(); handleTestTrial(); }} style={styles.testBtn}>
+                  <Text style={styles.testBtnText}>Test 3 days</Text>
+                </ScalePressable>
+                <ScalePressable onPress={() => { playButtonSound(); handleTestWeekly(); }} style={styles.testBtn}>
+                  <Text style={styles.testBtnText}>Test Weekly</Text>
+                </ScalePressable>
+                <ScalePressable onPress={() => { playButtonSound(); handleTestMonthly(); }} style={styles.testBtn}>
+                  <Text style={styles.testBtnText}>Test Monthly</Text>
+                </ScalePressable>
+                <ScalePressable onPress={() => { playButtonSound(); handleTestYearly(); }} style={styles.testBtn}>
+                  <Text style={styles.testBtnText}>Test Yearly</Text>
+                </ScalePressable>
+              </View>
 
               <DeleteMessageModal
                 backImg={images.oops}
@@ -105,43 +135,52 @@ export default () => {
               />
               <WelcomModal
                 paw
+                backImg={images.purchasedone}
                 subtitle={"Enjoy 3 days of full access. Walk and take care of your StepPal!"}
-                isVisible={restoreModal}
+                isVisible={trialModal}
+                title={"Welcome!"}
+                onClose={() => setTrialModal(false)}
+              />
+              <WelcomModal
+              backImg={images.purchasedone}
+              title={"Congratulations!"}
+                paw
+                subtitle={"Enjoy 7 days of full access. Walk and take care of your StepPal!"}
+                isVisible={weeklyModal}
                 
-                onClose={() => setRestoreModal(false)}
+                onClose={() => setWeeklyModal(false)}
+              />
+              <WelcomModal
+              backImg={images.purchasedone}
+              title={"Congratulations!"}
+                paw
+                subtitle={"Enjoy 1 month of full access. Walk and take care of your StepPal!"}
+                isVisible={monthlyModal}
+                
+                onClose={() => setMonthlyModal(false)}
+              />
+              <WelcomModal
+              backImg={images.purchasedone}
+              title={"Congratulations!"}
+                paw
+                subtitle={"Enjoy 1 year of full access. Walk and take care of your StepPal!"}
+                isVisible={yearlyModal}
+                
+                onClose={() => setYearlyModal(false)}
               />
             </View>
           </View>
           <ScalePressable onPress={() => { playButtonSound(); handleRestore() }}>
-          <Text style={{
-            fontSize: 8,
-            fontFamily: retro,
-            textAlign: "center",
-            marginVertical: moderateScale(20)
-          }}>
-            restore Purchase
-          </Text>
+            <Text style={styles.restoreText}>restore Purchase</Text>
           </ScalePressable>
-          <View style={{
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "space-between",
-            marginHorizontal: moderateScale(20),
-            gap: moderateScale(20)
-          }}>
+          <View style={styles.linksRow}>
             <ScalePressable onPress={() => { playButtonSound(); Linking.openURL(PRIVACY_URL) }}>
-              <Text style={{
-                fontFamily: retro,
-                fontSize: 6,
-              }}>
+              <Text style={styles.linkText}>
                 Privacy policy
               </Text >
             </ScalePressable>
             <ScalePressable onPress={() => { playButtonSound(); Linking.openURL(TERMS_URL) }}>
-              <Text style={{
-                fontFamily: retro,
-                fontSize: 6,
-              }}>Terms of service</Text>
+              <Text style={styles.linkText}>Terms of service</Text>
             </ScalePressable>
           </View>
         </ScrollView>

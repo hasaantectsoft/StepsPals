@@ -2,11 +2,15 @@ import { StyleSheet } from "react-native";
 import { moderateScale } from "react-native-size-matters";
 import { combineStyles } from "../../../libs/combineStyle";
 import { Theme } from "../../../libs";
+import { retro } from "../../../utils/extra/delay";
 export const styles = StyleSheet.create({
     backgroundImage: {
         width: "100%",
         height: "100%",
         resizeMode: "cover",
+    },
+    autoRenewText: {
+        color: Theme.colors.ligtBrown,
     },
     scrollContent: {
         paddingBottom: moderateScale(80),
@@ -57,6 +61,8 @@ export const styles = StyleSheet.create({
     },
     listContent: {
         paddingTop: moderateScale(12),
+        gap: moderateScale(15),
+        paddingRight: moderateScale(15),
     },
     listContainer: {
         width: "100%",
@@ -94,6 +100,38 @@ export const styles = StyleSheet.create({
         ...combineStyles.regular8,
         paddingHorizontal: moderateScale(48),
         color: "#9853C4"
-    }
+    },
+    restoreText: {
+        fontSize: 8,
+        fontFamily: retro,
+        textAlign: "center",
+        marginVertical: moderateScale(20),
+    },
+    linksRow: {
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
+        marginHorizontal: moderateScale(20),
+        gap: moderateScale(20),
+    },
+    linkText: {
+        fontFamily: retro,
+        fontSize: 6,
+    },
+    testButtonsRow: {
+        alignSelf: "center",
+        gap: moderateScale(30),
+        marginVertical: moderateScale(16),
+    },
+    testBtn: {
+        paddingVertical: moderateScale(8),
+        paddingHorizontal: moderateScale(14),
+    },
+    testBtnText: {
+        fontFamily: retro,
+        fontSize: 8,
+        color: Theme.colors.brown,
+        textAlign: "center",
+    },
 
 });
