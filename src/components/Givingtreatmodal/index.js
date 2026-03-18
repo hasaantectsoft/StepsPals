@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { View, Text, Modal, StyleSheet, ImageBackground } from "react-native";
 import { moderateScale } from "react-native-size-matters";
 import { images } from "../../assets/images";
@@ -7,12 +7,19 @@ import PressableIcon from "../PressSvg/PressSvg";
 import { Star } from "../../assets/svgs";
 import { Theme } from "../../libs";
 import { RetryButton } from "../RetryButton/RetryButton";
+import { congratulationsound, fadeoutsound } from "../../utils/SoundManager/SoundManager";
 
 export default function GivingTreatModal({
   isVisible,
   onClose,
  
 }) {
+  useEffect(() => {
+    if (isVisible) {
+      congratulationsound();
+    }
+    
+  }, [isVisible]);
   return (
     <Modal
       visible={isVisible}

@@ -12,7 +12,7 @@ import MessageBox from "../../../components/MessageBox/MessageBox";
 import useHomeScreen from "../../../utils/hooks/useHomeScreen";
 import { careOffsets } from "../../../utils/extra/offsets";
 import { careMap } from "../../../utils/extra/caremap";
-import { careDurations, delay } from "../../../utils/extra/delay";
+import { careDurations } from "../../../utils/extra/delay";
 import ActivePetSprite from "../../../components/PetSprites/ActivePetSprite";
 import { getPetDeathGhostComponent } from "../../../components/PetSprites/petSpriteMap";
 import { getCondition } from "../../../utils/petCondition";
