@@ -16,16 +16,8 @@ import { BackArrow, grayButton } from "../../../assets/svgs";
 import { orangeBtn } from "../../../components/Petmenu/buttonSvgs";
 import { updatePet } from "../../../redux/slices/petslice";
 import { getCondition } from "../../../utils/petCondition";
-import { babyDogsprites, teenDogsprites, adultDogsprites } from "../../../assets/Sprites/Pets/Dog";
-import { babycatsprites, teencatsprites, adultcatsprites } from "../../../assets/Sprites/Pets/Cat";
-import { babydinosprites, teendinosprites, adultdinosprites } from "../../../assets/Sprites/Pets/Dino";
 
 const SPECIES_MAP = { '1': 'Dog', '2': 'Cat', '3': 'Dino' };
-const SPRITE_MAP = {
-  '1': { baby: babyDogsprites.Dogmain, teen: teenDogsprites.Dogmain, adult: adultDogsprites.Dogmain },
-  '2': { baby: babycatsprites.catmain, teen: teencatsprites.catmain, adult: adultcatsprites.catmain },
-  '3': { baby: babydinosprites.dinomain, teen: teendinosprites.dinomain, adult: adultdinosprites.dinomain },
-};
 
 
 
@@ -56,7 +48,6 @@ export default function Petmenu() {
     stage,
     missed: String(missedDays ?? 0),
     species: SPECIES_MAP[petkey] ?? "Dino",
-    spriteImage: SPRITE_MAP[petkey]?.[stage] ?? babydinosprites.dinomain,
   };
 
   
