@@ -37,7 +37,7 @@ export const Styles = StyleSheet.create({
     selectedBgImage: {
         resizeMode: "contain",
 height: scale(130),
-width: scale(100),
+width: scale(110),
         borderRadius: Theme.borders.regularRadius,
         left:moderateScale(-8),
 

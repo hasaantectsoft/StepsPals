@@ -5,6 +5,8 @@ import { styles } from "./ScalePressableStyles";
 
 const ScalePressable = ({
   children,
+  key,
+  activeOpacity,
   onPress,
   containerStyle,
   pressableStyle,
@@ -38,6 +40,8 @@ const ScalePressable = ({
 
   return (
     <Pressable
+    key={key}
+    activeOpacity={activeOpacity}
       onPress={onPress}
       onPressIn={handlePressOut}
       onPressOut={handlePressIn}
