@@ -6,6 +6,8 @@ import { combineStyles } from "../../libs/combineStyle";
 import PressableIcon from "../PressSvg/PressSvg";
 import { Paw, Star } from "../../assets/svgs";
 import { Theme } from "../../libs";
+import { RetryButton } from "../RetryButton/RetryButton";
+import { playButtonSound } from "../../utils/SoundManager/SoundManager";
 
 export default function WelcomModal({ backImg, isVisible, onClose,  subtitle,   title, paw = true }) {
 
@@ -23,14 +25,13 @@ export default function WelcomModal({ backImg, isVisible, onClose,  subtitle,   
 
           <ImageBackground source={backImg ? backImg : images.WelocmBackgruound} imageStyle={styles.imgStyle} style={[styles.imgStyle,{paddingHorizontal:moderateScale(1)}]}>
 <PressableIcon icon={Star} width={60} height={60} container={styles.star}/>
-           
-            <Text style={[combineStyles.regular14, { textAlign: "center", gap: 10,lineHeight:moderateScale(20),marginTop:moderateScale(20),color:Theme.colors.brown }]}>{subtitle}</Text>
+           <Text style={[combineStyles.regular14, { textAlign: "center", gap: 10,lineHeight:moderateScale(20),marginTop:moderateScale(0),color:Theme.colors.darkbrown,marginHorizontal:moderateScale(30) }]}>{title}</Text>
+            <Text style={[combineStyles.regular10, { textAlign: "center", gap: 10,lineHeight:moderateScale(20),marginTop:moderateScale(20),color:Theme.colors.darkbrown,marginHorizontal:moderateScale(30) }]}>{subtitle}</Text>
           </ImageBackground>
         </View>
-        {paw && <TouchableOpacity style={styles.pawBox} onPress={onClose}>
-          <PressableIcon icon={Paw} width={90} height={70} />
-          <Text style={{...combineStyles.regular14,color:Theme.colors.white}}>Tap to continue</Text>
-        </TouchableOpacity>}
+        {paw && 
+        <RetryButton color={Theme.colors.white} onPress={() => { playButtonSound(); onClose() }} />
+        }
       </View>
     </Modal>
   );

@@ -86,6 +86,7 @@ export const images = {
   puff: require('./Anim_Puff.png'),
   starmesagebox: require('./starmessageboxi.png'),
   givingtreatmodal: require('./givingtreatmodal.png'),
+  restoregreenbg: require('./restoregreenbg.png')
 
 
 
