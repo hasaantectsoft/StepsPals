@@ -165,11 +165,18 @@ export default function HomeScreen() {
                 onPress={() => { playButtonSound(); navigation.navigate('PetMenu'); }}>
                 <Text style={styles.name}>Hello {petname}</Text>
                 <Text style={styles.welcome}>{welcomeText}</Text>
-                {isPetDead && <DeathGhostSprite spriteScale={3} offsetY={scale(18)} offsetX={scale(130)} />}
 
             </Pressable>
-            <SpriteLoader>
+            
+            <View style={styles.deathGhostCenter}>
+                {isPetDead && (
+                    <DeathGhostSprite spriteScale={3} offsetY={scale(18)} offsetX={scale(130)} />
+                )}
+            </View>
+
+            <SpriteLoader >
                 <ActivePetSprite spriteScale={3.2} />
+
                 {ActiveCareSprite && (
                     <ActiveCareSprite
                         offsetX={careOffsetX}

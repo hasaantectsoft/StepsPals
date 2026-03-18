@@ -6,6 +6,11 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
     },
+    deathGhostCenter: {
+        alignItems: "center",
+        justifyContent: "center",
+        top: scale(398),
+    },
     headerPressArea: {
         position: 'absolute',
         top: Platform.OS === 'ios' ? scale(270) : scale(290),

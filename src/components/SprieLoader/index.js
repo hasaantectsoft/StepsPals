@@ -4,7 +4,7 @@ import { Animated, Dimensions, Easing, StyleSheet, View } from "react-native";
 const { width, height } = Dimensions.get("window");
 const BALL_SIZE = width * 0.13;
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
-export default function BallRollJSX({ showBall = true, children }) {
+export default function BallRollJSX({ showBall = true, children,ispeatdead=false }) {
   const ballX = useRef(new Animated.Value(-BALL_SIZE)).current;
   useEffect(() => {
     let isMounted = true;
@@ -67,6 +67,7 @@ export default function BallRollJSX({ showBall = true, children }) {
           resizeMode="contain"
         />
       )}
+     
 
 
       <View style={{
@@ -84,8 +85,10 @@ const styles = StyleSheet.create({
   container: {
     position: "absolute",
     bottom: 0,
+    // width: "100%",
     width: "100%",
-
+    height: "100%",
+    
     // backgroundColor: "green",
   },
   ball: {
