@@ -17,6 +17,8 @@ import AnimatedSwitch from "../../../components/Switch/Switch";
 import { useNavigation } from "@react-navigation/native";
 import { addPetToCollection } from "../../../redux/slices/petCollectionSlice";
 import { LegendRankingModal, PlatinumRankingModal, GoldRankingModal, SilverRankingModal, BronzeRankingModal, UnrankedRankingModal } from "../../../components/RankingModals";
+import Misseddaysmodal from "../../../components/Misseddaysmodal/missiedonedaymodal";
+import Missed2daysmodal from "../../../components/Misseddaysmodal/missed2daysmodal";
 const MS_PER_DAY = 86400000;
 export default () => {
     const { MusicSound, Sound } = useSelector(state => state.soundReducer);
@@ -78,6 +80,8 @@ export default () => {
     const [isSilverRankingModalVisible, setIsSilverRankingModalVisible] = useState(false);
     const [isBronzeRankingModalVisible, setIsBronzeRankingModalVisible] = useState(false);
     const [isUnrankedRankingModalVisible, setIsUnrankedRankingModalVisible] = useState(false);
+    const [isMissedDaysModalVisible, setIsMissedDaysModalVisible] = useState(false);
+    const [isMissed2DaysModalVisible, setIsMissed2DaysModalVisible] = useState(false);
     return (
         <View style={[combineStyles.combineStyles]}>
             <ImageBackground source={images.yellowBackground} style={styles.backgroundImage}>
@@ -143,11 +147,13 @@ export default () => {
                            
                         </TouchableOpacity>
                         <Pressable onPress={() => setIsLegendRankingModalVisible(true)}><Text>Legend Ranking Modal</Text></Pressable>
+                            <Pressable onPress={() => setIsMissed2DaysModalVisible(true)}><Text>Missed 2 Days Modal</Text></Pressable>
                             <Pressable onPress={() => setIsPlatinumRankingModalVisible(true)}><Text>Platinum Ranking Modal</Text></Pressable>
                             <Pressable onPress={() => setIsGoldRankingModalVisible(true)}><Text>Gold Ranking Modal</Text></Pressable>
                             <Pressable onPress={() => setIsSilverRankingModalVisible(true)}><Text>Silver Ranking Modal</Text></Pressable>
                             <Pressable onPress={() => setIsBronzeRankingModalVisible(true)}><Text>Bronze Ranking Modal</Text></Pressable>
                             <Pressable onPress={() => setIsUnrankedRankingModalVisible(true)}><Text>Unranked Ranking Modal</Text></Pressable>
+                            <Pressable onPress={() => setIsMissedDaysModalVisible(true)}><Text>Missed Days Modal</Text></Pressable>
                         <View style={styles.buttonContainer}>
                             {
                                 Platform.OS === "ios" ?
@@ -165,6 +171,8 @@ export default () => {
                         </View>
                     </View>
                 </ScrollView>
+                <Missed2daysmodal petname={petname} isVisible={isMissed2DaysModalVisible} onClose={() => setIsMissed2DaysModalVisible(false)} />
+                <Misseddaysmodal petname={petname} isVisible={isMissedDaysModalVisible} onClose={() => setIsMissedDaysModalVisible(false)} />
                 <DeleteMessageModal isVisible={isDeleteModalVisible} onClose={() => setIsDeleteModalVisible(false)} subtitle={"Are you sure you want to delete your account?"} btn1text={"No"} btn2text={"Yes"} onpressButton2={handelModal} modalStyle={styles.modalStyle} />
                 <DeleteMessageModal isVisible={DisconnectModal} onClose={() => setIsDisConnectModal(false)} subtitle={"Disconnecting unlinks the game progress on other devices.Are you sure you want to continue?"} btn1text={"Cancel"} btn2text={"Disconnect"} onpressButton2={() => setIsDisConnectModal(false)} title={"Disconnect?"} swap={true} />
                 <DeleteMessageModal isVisible={ProgressModal} onpressCenterButton={() => { setIsProgressModal(false); setIsDisConnectModal(true) }} subtitle={"Account deletion in progress?"} centerButtonTxt={"Ok"} centerButton={true} rowBtton={false} modalStyle={styles.modalStyle} />

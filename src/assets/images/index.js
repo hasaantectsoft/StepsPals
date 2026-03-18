@@ -87,7 +87,7 @@ export const images = {
   starmesagebox: require('./starmessageboxi.png'),
   givingtreatmodal: require('./givingtreatmodal.png'),
   restoregreenbg: require('./restoregreenbg.png'),
-  purchasedone:require('./purchasedone.png')
+  purchasedone:require('./purchasedone.png'),
 
 
 

@@ -7,9 +7,6 @@ import LeaderBoardComponent from "../../../components/LeaderBoardComponet/Leader
 import { BronzeArray, GoldArray, LagendArray, PlatinumArray, SilverArray } from "../../../utils/exports";
 import { moderateScale } from "react-native-size-matters";
 import { differenceInSeconds } from "date-fns";
-import UpgradePetModal from "../../../components/UpgradePetModal/upgradepetmodal";
-import { DeleteMessageModal } from "../../../components/Modal";
-import PetDieModal from "../../../components/PetDieModal/PetDieModal";
 
 
 const CountdownTimer = memo(() => {
@@ -92,16 +89,6 @@ export default () => {
             <Image source={images.RankingTitle} style={styles.titleLogo} />
             <CountdownTimer />
             <LeaderboardContent />
-            <UpgradePetModal isVisible={true} showPet={false}
-                cup={images.GoldenCup} title={"Weekly Results"}
-                subtitle={"Legend League"}
-                btn={false}
-                bottomtext={"Total score last week: 182,450 steps"}
-                subtitleStyle={styles.subtitleStyle}
-                backImg={images.GoldenBackground}
-            />
-
-            
         </View>
     );
 };
