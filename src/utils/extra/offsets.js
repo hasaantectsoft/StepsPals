@@ -1,6 +1,6 @@
 export const careOffsets = {
-    drink: 23,
-    treat: 20,
-    feed: 35,
-    clean: 20,
+    drink: 35,
+    treat: 35,
+    feed: 40,
+    clean: 30,
 };

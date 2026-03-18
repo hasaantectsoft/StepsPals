@@ -206,7 +206,7 @@ export const congratulationsound = () => {
   
     if (!SoundEnabled) return;
   
-    const sfx = new Sound('congratulations.mp3', Sound.MAIN_BUNDLE, (error) => {
+    const sfx = new Sound('cleanupswoosh.mp3', Sound.MAIN_BUNDLE, (error) => {
       if (error) {
         console.log('Failed to load button sound', error);
         return;

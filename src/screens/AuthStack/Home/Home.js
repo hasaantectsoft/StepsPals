@@ -5,7 +5,6 @@ import { scale } from "react-native-size-matters";
 import { styles } from "./Styles";
 import { images } from "../../../assets/images";
 import { cake, cakefilled, newfeature, starchecked, windowframe } from "../../../assets/svgs";
-import { playbottomtabsound } from "../../../utils/SoundManager/SoundManager";
 import SpriteLoader from "../../../components/SprieLoader";
 import RetroStepsBar from "../../../components/Retroprogreebar/Retrostepsbar";
 import ScalePressable from "../../../components/ScalePressable/ScalePressable";
@@ -13,7 +12,7 @@ import MessageBox from "../../../components/MessageBox/MessageBox";
 import useHomeScreen from "../../../utils/hooks/useHomeScreen";
 import { careOffsets } from "../../../utils/extra/offsets";
 import { careMap } from "../../../utils/extra/caremap";
-import { careDurations } from "../../../utils/extra/delay";
+import { careDurations, delay } from "../../../utils/extra/delay";
 import ActivePetSprite from "../../../components/PetSprites/ActivePetSprite";
 import { getPetDeathGhostComponent } from "../../../components/PetSprites/petSpriteMap";
 import { getCondition } from "../../../utils/petCondition";
@@ -28,6 +27,7 @@ import { clearProgress } from "../../../redux/slices/progressSlice";
 import { setStartoverPet } from "../../../redux/slices/startoverpetslice";
 import HomeModals from "./HomeModals";
 import GivingTreatModal from "../../../components/Givingtreatmodal";
+import {playbottomtabsound, eatingsooundone, drinkingwatersound,  cleansound,eatingsoountwo} from "../../../utils/SoundManager/SoundManager";
 export default function HomeScreen() {
     const {  navigation, petname, petsteps, step, isComplete, starTapped, setStarTapped, cloudX, cloudY, starFlicker, } = useHomeScreen();
     const dispatch = useDispatch();
@@ -126,7 +126,6 @@ export default function HomeScreen() {
             stage: 'adult',
         }));
         setAdultFlowModal('space');
-        // startNewPetFlow();
     };
     const playCareOnce = (key) => {
         if (!key) return;
@@ -151,6 +150,16 @@ export default function HomeScreen() {
 
     const DeathGhostSprite = getPetDeathGhostComponent(petkey);
     const canCheckStar = isComplete && allCareChecked && !starTapped;
+    useEffect(() => {
+        if (!activeCareKey) return;
+        if (activeCareKey === "feed") eatingsooundone();
+        if (activeCareKey === "drink") drinkingwatersound();
+        if (activeCareKey === "clean") cleansound();
+        if (activeCareKey === "treat") {
+            const t = setTimeout(() => eatingsoountwo(), 3000);
+            return () => clearTimeout(t);
+        }
+    }, [activeCareKey]);
     const getStarDisabledMessage = () => {
         if (starTapped) return "You already claimed your star reward!";
         if (!isComplete) return "Reach your step goal to unlock the star!";
