@@ -1451,28 +1451,58 @@ export const SupportSvg=`<svg width="1040" height="220" viewBox="0 0 1040 220" f
 
 
 export const progressBarSvg=`<svg width="879" height="81" viewBox="0 0 879 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M27.5039 22.084H27.5V64.9287H27.5039V73.5566H844.683V64.9287H864.817V22.084H850.504V12.9746H27.5039V22.084Z" fill="#919FE9" fill-opacity="0.64"/>
-<path d="M27.4951 21.5947H27.5V63.252H13.5V21.5947H13.9062V13.5156H27.4951V21.5947Z" fill="#6ECAFF"/>
-<path d="M27.5 66.457H31.5V52.9746H27.5V66.457Z" fill="#2598DA" fill-opacity="0.34"/>
-<path d="M851.525 66.8154H31.5V53.332H851.525V66.8154Z" fill="#6F83EC" fill-opacity="0.34"/>
-<rect x="47.4451" y="25.7207" width="532.531" height="12.2113" fill="white" fill-opacity="0.58"/>
-<rect x="33.9355" y="37.9297" width="13.5103" height="12.2113" fill="white" fill-opacity="0.58"/>
-<rect x="593.487" y="25.7207" width="13.5103" height="12.2113" fill="white" fill-opacity="0.58"/>
-<rect x="843.428" y="37.9297" width="13.5103" height="12.2113" fill="white" fill-opacity="0.58"/>
-<rect x="829.917" y="25.7207" width="13.5103" height="12.2113" fill="white" fill-opacity="0.58"/>
-<rect x="816.407" y="25.7207" width="13.5103" height="12.2113" fill="white" fill-opacity="0.58"/>
-<rect x="13.5103" y="13.5098" width="13.5103" height="13.5103" fill="#2F3450"/>
-<rect x="0.000244141" y="27.0176" width="13.5103" height="13.5103" fill="#2F3450"/>
-<rect x="27.021" width="824.128" height="13.5103" fill="#2F3450"/>
-<rect width="13.5103" height="13.5103" transform="matrix(-1 0 0 1 878.169 27.0176)" fill="#2F3450"/>
-<rect width="13.5103" height="13.5103" transform="matrix(-1 0 0 1 864.659 13.5098)" fill="#2F3450"/>
-<rect width="13.5103" height="13.5103" transform="matrix(-1 0 0 1 878.169 39.6211)" fill="#2F3450"/>
-<rect x="13.51" y="53.1309" width="13.5103" height="13.5103" fill="#2F3450"/>
-<rect y="39.6211" width="13.5103" height="13.5103" fill="#2F3450"/>
-<rect width="13.5103" height="13.5103" transform="matrix(-1 0 0 1 864.659 53.1309)" fill="#2F3450"/>
-<rect x="27.021" y="66.6426" width="824.128" height="13.5103" fill="#2F3450"/>
+
+<defs>
+  <pattern id="pixelPattern" patternUnits="userSpaceOnUse" width="4" height="4">
+    <rect width="4" height="4" fill="white" fill-opacity="0.58"/>
+    <rect width="2" height="2" fill="white" fill-opacity="0.8"/>
+  </pattern>
+</defs>
+
+<path d="M288.899 70.5996H31.5156V10.5996H288.899V0.599609H828.226V10.5996H864.516V70.5996H828.226V71.5996H288.899V70.5996Z" fill="#919FE9" fill-opacity="0.64"/>
+<path d="M42.9893 58.8477H43V13.7207H14V58.8477H14.8428V67.5996H42.9893V58.8477Z" fill="#6ECAFF"/>
+<rect width="13" height="14" transform="matrix(1 0 0 -1 14 67.1543)" fill="#2F3450"/>
+<rect width="14" height="14" transform="matrix(1 0 0 -1 0 53.1543)" fill="#2F3450"/>
+<rect width="824.128" height="13.5103" transform="matrix(1 0 0 -1 27.0209 80.1543)" fill="#2F3450"/>
+<rect x="878.169" y="53.1367" width="13.5103" height="13.5103" transform="rotate(-180 878.169 53.1367)" fill="#2F3450"/>
+<rect x="865" y="71.1543" width="14" height="18" transform="rotate(-180 865 71.1543)" fill="#2F3450"/>
+<rect x="878.169" y="40.5332" width="13.5103" height="13.5103" transform="rotate(-180 878.169 40.5332)" fill="#2F3450"/>
+<rect width="13" height="14" transform="matrix(1 0 0 -1 14 27.1543)" fill="#2F3450"/>
+<rect width="14" height="13" transform="matrix(1 0 0 -1 0 40.1543)" fill="#2F3450"/>
+<rect x="865" y="27.1543" width="14" height="18" transform="rotate(-180 865 27.1543)" fill="#2F3450"/>
+<rect width="824.128" height="13.5103" transform="matrix(1 0 0 -1 27.0209 13.5117)" fill="#2F3450"/>
+<rect x="42.5095" y="22.002" width="532.531" height="12.2113" fill="url(#pixelPattern)"/>
+<rect x="29" y="34.2109" width="13.5103" height="12.2113" fill="url(#pixelPattern)"/>
+<rect x="588.552" y="22.002" width="13.5103" height="12.2113" fill="url(#pixelPattern)"/>
+<rect x="838.492" y="34.2109" width="13.5103" height="12.2113" fill="url(#pixelPattern)"/>
+<rect x="824.981" y="22.002" width="13.5103" height="12.2113" fill="url(#pixelPattern)"/>
+<rect x="811.471" y="22.002" width="13.5103" height="12.2113" fill="url(#pixelPattern)"/>
+
 </svg>
 
+`;
+export const progressBarDottedOverlay = `<svg width="879" height="81" viewBox="0 0 879 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <pattern id="pixelPatternOverlay" patternUnits="userSpaceOnUse" width="4" height="4">
+    <rect width="4" height="4" fill="white" fill-opacity="0.58"/>
+    <rect width="2" height="2" fill="white" fill-opacity="0.8"/>
+  </pattern>
+</defs>
+<rect x="42.5095" y="22.002" width="532.531" height="12.2113" fill="url(#pixelPatternOverlay)"/>
+<rect x="29" y="34.2109" width="13.5103" height="12.2113" fill="url(#pixelPatternOverlay)"/>
+<rect x="588.552" y="22.002" width="13.5103" height="12.2113" fill="url(#pixelPatternOverlay)"/>
+<rect x="838.492" y="34.2109" width="13.5103" height="12.2113" fill="url(#pixelPatternOverlay)"/>
+<rect x="824.981" y="22.002" width="13.5103" height="12.2113" fill="url(#pixelPatternOverlay)"/>
+<rect x="811.471" y="22.002" width="13.5103" height="12.2113" fill="url(#pixelPatternOverlay)"/>
+</svg>`;
+export const filledprogresspixels=`<svg width="823" height="25" viewBox="0 0 823 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="13.5095" width="532.531" height="12.2113" fill="white" fill-opacity="0.58"/>
+<rect y="12.209" width="13.5103" height="12.2113" fill="white" fill-opacity="0.58"/>
+<rect x="559.552" width="13.5103" height="12.2113" fill="white" fill-opacity="0.58"/>
+<rect x="809.492" y="12.209" width="13.5103" height="12.2113" fill="white" fill-opacity="0.58"/>
+<rect x="795.981" width="13.5103" height="12.2113" fill="white" fill-opacity="0.58"/>
+<rect x="782.471" width="13.5103" height="12.2113" fill="white" fill-opacity="0.58"/>
+</svg>
 
 `
 export const cakefilled=`

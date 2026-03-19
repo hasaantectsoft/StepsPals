@@ -8,14 +8,14 @@ import Animated, {
 } from "react-native-reanimated";
 import { SvgXml } from "react-native-svg";
 import { moderateScale } from "react-native-size-matters";
-import { progressBarSvg } from "../../assets/svgs";
+import { progressBarSvg, progressBarDottedOverlay } from "../../assets/svgs";
 
-const BAR_WIDTH = moderateScale(250);
+const BAR_WIDTH = moderateScale(230);
 const BAR_HEIGHT = moderateScale(40);
 const HEAD_SIZE = moderateScale(40);
 
 const FILL_LEFT_OFFSET = moderateScale(10);
-const FILL_RIGHT_OFFSET = moderateScale(10);
+const FILL_RIGHT_OFFSET = moderateScale(12);
 const FILL_AREA = BAR_WIDTH - FILL_LEFT_OFFSET - FILL_RIGHT_OFFSET;
 
 const MIN = 100;
@@ -141,6 +141,10 @@ const ProgressBar = ({ progress = 0, images, onProgressChange }) => {
         <Animated.View style={[styles.fill, fillStyle]} />
       </View>
 
+      <View style={styles.dottedOverlay} pointerEvents="none">
+        <SvgXml xml={progressBarDottedOverlay} width={BAR_WIDTH} height={BAR_HEIGHT} />
+      </View>
+
       <Animated.Image
         source={images.ProgressBarHead}
         style={[styles.head, headStyle]}
@@ -173,6 +177,12 @@ const styles = StyleSheet.create({
     zIndex: 2,
     width: FILL_AREA,
   },
+  dottedOverlay: {
+    position: "absolute",
+    top: (HEAD_SIZE - BAR_HEIGHT) / 2,
+    left: moderateScale(0),
+    zIndex: 3,
+  },
   fill: {
     height: "100%",
     backgroundColor: "#6ECAFF",
@@ -183,6 +193,6 @@ const styles = StyleSheet.create({
     height: HEAD_SIZE,
     top: 0,
     left: 0,
-    zIndex: 3,
+    zIndex: 4,
   },
 });
