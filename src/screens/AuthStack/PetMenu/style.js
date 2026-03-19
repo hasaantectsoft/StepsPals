@@ -18,8 +18,8 @@ export const styles = StyleSheet.create({
     marginTop: scale(25),
   },
   saveBtn: {
-    marginTop: "auto",
-    bottom:moderateScale(60),
+    marginTop: scale(20),
+    // bottom:moderateScale(60),
     // height:moderateScale(50),
     width: "100%",
     // alignItems: "center",

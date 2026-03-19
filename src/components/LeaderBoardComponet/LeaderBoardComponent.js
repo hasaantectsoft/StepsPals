@@ -13,15 +13,18 @@ const LeaderBoardComponent = ({data,title,titleImage,ContainerStyle,titleStyle})
     <View style={styles.gravYard}>
       <ImageBackground
         source={item.firstUser?item.firstUser:images.rankingbtn}
-        style={[styles.titleButton,{width:"85%"}]}
+        style={[styles.titleButton, styles.rankBtn]}
         imageStyle={styles.img}
       >
  <View style={styles.details}>
 <ImageBackground source={images.Capsule} style={styles.rankIcon}>
   <Text style={styles.id}>{item.id}</Text>
 </ImageBackground>
+{/* <Text style={styles.dot}>..</Text> */}
 <Text style={styles.name}>{item.name}</Text>
-<Text style={styles.score}>{item.score}</Text>
+<Text style={styles.dot}>..</Text>
+<Text style={styles.score}>{item.score.toString().slice(0, 3)}</Text>
+<Text style={styles.score}>{item.score.toString().slice(0, 2)}</Text>
 
       </View>
       </ImageBackground>
@@ -41,7 +44,7 @@ const LeaderBoardComponent = ({data,title,titleImage,ContainerStyle,titleStyle})
         data={data}
         renderItem={renderItem}
         keyExtractor={(item) => item.id.toString()}
-        contentContainerStyle={{ gap: 10 }}
+        contentContainerStyle={styles.listGap}
         showsVerticalScrollIndicator={false}
         scrollEnabled={false}
       />

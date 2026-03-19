@@ -17,6 +17,15 @@ export const styles = StyleSheet.create({
     width: "95%",
     height: moderateScale(60)
   },
+  rankBtn: {
+    width: "70%",
+    height: moderateScale(42),
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  listGap: {
+    gap: moderateScale(2)
+  },
 
   titleimg: {
     width: "100%",
@@ -41,36 +50,37 @@ export const styles = StyleSheet.create({
     height: "100%",
     resizeMode: "contain"
   },
-  details:{
-        flexDirection: "row",
+  details: {
+    flexDirection: "row",
     alignItems: "center",
-    // justifyContent: "space-between",
-    paddingHorizontal: moderateScale(30),
-    paddingTop:moderateScale(15)
+    justifyContent: "center",
+    paddingHorizontal: moderateScale(12),
+    gap: moderateScale(8)
   },
-    rankIcon: {
-    width: moderateScale(30),
-    height: moderateScale(30),
-    resizeMode: "contain",
-    alignItems:"center",
-    justifyContent:"center"
+  rankIcon: {
+    width: moderateScale(20),
+    height: moderateScale(20),
+    alignItems: "center",
+    justifyContent: "center"
   },
-  id:{
+  id: {
     ...combineStyles.regular10,
-    color:Theme.colors.white,
-    top:moderateScale(2)
+    color: Theme.colors.white,
+    fontSize: moderateScale(8)
   },
-  name:{
+  dot: {
     ...combineStyles.regular12,
-    left:moderateScale(10),
-    top:moderateScale(3)
+    color: Theme.colors.white,
+    fontSize: moderateScale(8),
+    opacity: 0.7
   },
-  score:{
+  name: {
     ...combineStyles.regular12,
-    
-    color:Theme.colors.blue,
-    position:"absolute",
-    top:moderateScale(24),
-    right:moderateScale(30)
+    fontSize: moderateScale(9)
+  },
+  score: {
+    ...combineStyles.regular12,
+    color: Theme.colors.blue,
+    fontSize: moderateScale(9)
   }
 });
