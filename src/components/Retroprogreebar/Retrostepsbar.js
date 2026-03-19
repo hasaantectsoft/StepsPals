@@ -85,10 +85,11 @@ export default function RetroStepsBar({
     <View style={[styles.container, { marginTop: top, marginRight: right, marginLeft: left, marginBottom: bottom }]}>
       <View style={styles.barWrapper}>
         <View style={[styles.outerBar, { width: barWidth, height: height || scale(40), borderRadius: borderRadius || scale(20) }]}>
-          <ImageBackground source={require("../../assets/images/unfilledhomebar.png")} style={[styles.unfilledBar, { width: `${(1 - progress) * 100}%` }]}>
           <View style={[styles.fillBar, { width: progressWidth }]} />
-
-          </ImageBackground>
+          <ImageBackground
+            source={require("../../assets/images/unfilledhomebar.png")}
+            style={[styles.unfilledBar, { left: progressWidth, width: `${(1 - progress) * 100}%` }]}
+          />
         </View>
         <SvgXml xml={newhomebar} style={styles.barBackground} height={scale(70)} width={barWidth} />
         <Text style={styles.text}>{steps}/{goal} Steps</Text>
