@@ -4,7 +4,8 @@ import Animated, {
   useSharedValue,
   useAnimatedStyle,
   runOnJS,
-  withSpring,
+  withTiming,
+  Easing,
 } from "react-native-reanimated";
 import { SvgXml } from "react-native-svg";
 
@@ -34,9 +35,9 @@ const AnimatedSwitch = ({ value = false, images, onValueChange }) => {
     if (!isDragging.current) {
       setIsOn(value);
       lastIsOn.current = value;
-      thumbX.value = withSpring(value ? THUMB_MAX_X : THUMB_MIN_X, {
-        damping: 20,
-        stiffness: 250,
+      thumbX.value = withTiming(value ? THUMB_MAX_X : THUMB_MIN_X, {
+        duration: 200,
+        easing: Easing.out(Easing.ease),
       });
     }
   }, [value]);
@@ -79,17 +80,17 @@ const AnimatedSwitch = ({ value = false, images, onValueChange }) => {
         if (moved <= TAP_SLOP) {
           // TAP: toggle current state
           const newOn = !lastIsOn.current;
-          thumbX.value = withSpring(newOn ? THUMB_MAX_X : THUMB_MIN_X, {
-            damping: 20,
-            stiffness: 250,
+          thumbX.value = withTiming(newOn ? THUMB_MAX_X : THUMB_MIN_X, {
+            duration: 200,
+            easing: Easing.out(Easing.ease),
           });
           runOnJS(emitChange)(newOn);
         } else {
           // DRAG: snap to whichever side thumb is closer to
           const snapOn = thumbX.value > MIDPOINT;
-          thumbX.value = withSpring(snapOn ? THUMB_MAX_X : THUMB_MIN_X, {
-            damping: 20,
-            stiffness: 250,
+          thumbX.value = withTiming(snapOn ? THUMB_MAX_X : THUMB_MIN_X, {
+            duration: 200,
+            easing: Easing.out(Easing.ease),
           });
           runOnJS(emitChange)(snapOn);
         }
