@@ -18,12 +18,13 @@ export default function SelectGoalScreen() {
     const dispatch = useDispatch();
     const pet = params?.pet;
     const petName = params?.petName;
-    const [stepGoal, setStepGoal] = useState(500);
+    const [stepGoal, setStepGoal] = useState(100);
+    
     const imnewaccount = useSelector((state) => state.tutorialReducer?.isnewuser);
     const goToMain = () => {
         dispatch(setPetName(petName ?? ''));
         dispatch(setPetKey(String(pet?.id ?? '')));
-        dispatch(setPetSteps(stepGoal ?? 500));
+        dispatch(setPetSteps(stepGoal ?? 100));
         dispatch(setPetCreatedAt(Date.now()));
         dispatch(updatePet({ missedDays: 0, petisdead: false }));
         dispatch(setSignedIn(true));

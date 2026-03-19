@@ -59,7 +59,7 @@ export default function App() {
           <PersistGate loading={null} persistor={persistedStore}>
             <SafeAreaProvider>
               <StatusBar barStyle="dark-content" backgroundColor="transparent" />
-              <HealthKitInitializer />
+              {/* <HealthKitInitializer /> */}
               <AppNavigation />
             </SafeAreaProvider>
           </PersistGate>

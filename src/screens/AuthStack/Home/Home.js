@@ -28,9 +28,6 @@ import { setStartoverPet } from "../../../redux/slices/startoverpetslice";
 import HomeModals from "./HomeModals";
 import GivingTreatModal from "../../../components/Givingtreatmodal";
 import {playbottomtabsound, eatingsooundone, drinkingwatersound,  cleansound,eatingsoountwo} from "../../../utils/SoundManager/SoundManager";
-import { CatAdultSprite_Feeding } from "../../../components/PetSprites/Pets/Cat/Adult/CatAdultSprite_Feeding";
-import { CatBabySprite_Feeding } from "../../../components/PetSprites/Pets/Cat/Baby/babycatfeeding";
-import { CatTeenSprite_Feeding } from "../../../components/PetSprites/Pets/Cat/Teen/teencatfeeding";
 export default function HomeScreen() {
     const {  navigation, petname, petsteps, step, isComplete, starTapped, setStarTapped, cloudX, cloudY, starFlicker, } = useHomeScreen();
     const dispatch = useDispatch();
@@ -144,7 +141,7 @@ export default function HomeScreen() {
         }, duration);
     };
 
-    const ActiveCareSprite = activeCareKey ? careMap[activeCareKey] : null;
+    const ActiveCareSprite = activeCareKey && activeCareKey !== 'feed' ? careMap[activeCareKey] : null;
     const handleCareActionChange = (key) => {
         if (starTapped && activeCareKey === "treat") return;
         playCareOnce(key);
@@ -187,7 +184,7 @@ export default function HomeScreen() {
             </View>
 
             <SpriteLoader >
-                <ActivePetSprite  spriteScale={4.0} offsetX={scale(100)} offsetY={scale(-15)} />
+                <ActivePetSprite activeCareKey={activeCareKey} spriteScale={4.0} offsetX={scale(100)} offsetY={scale(-15)} />
 
                 {ActiveCareSprite && (
                     <ActiveCareSprite
@@ -200,7 +197,7 @@ export default function HomeScreen() {
             <RetroStepsBar
                 top={scale(92)} right={scale(100)} left={scale(100)} bottom={scale(100)}
                 width={scale(280)} height={scale(40)} borderRadius={scale(20)}
-                steps={10000} goal={petsteps}
+                steps={step} goal={petsteps}
                 onAllCareCheckedChange={setAllCareChecked}
                 onCareActionChange={handleCareActionChange}
                 onDisabledCarePress={showDisabledMessage}
