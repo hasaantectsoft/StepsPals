@@ -7,6 +7,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: moderateScale(10),
     paddingTop: moderateScale(50),
+    paddingBottom: moderateScale(120)
 
 
   },
