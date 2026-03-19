@@ -56,6 +56,7 @@ export const styles = StyleSheet.create({
         width: "100%",
         height: moderateScale(110),
         resizeMode: "contain",
+        gap: moderateScale(4),
 
 
     },
@@ -65,6 +66,7 @@ export const styles = StyleSheet.create({
         paddingRight: moderateScale(15),
     },
     listContainer: {
+        marginVertical: moderateScale(5),
         width: "100%",
         overflow: "visible",
     },

@@ -15,7 +15,11 @@ export const styles = StyleSheet.create({
 
   titleButton: {
     width: "95%",
-    height: moderateScale(60)
+    height: moderateScale(60),
+    alignSelf: "center",
+    justifyContent: "center",
+    alignItems: "center",
+    resizeMode: "contain"
   },
   rankBtn: {
     width: "70%",
@@ -28,8 +32,11 @@ export const styles = StyleSheet.create({
   },
 
   titleimg: {
-    width: "100%",
-    height: "100%"
+    width: "90%",
+    height: "100%",
+    alignSelf: "center",
+    marginLeft: moderateScale(10),
+    resizeMode: "contain"
   },
 
   Lagendtxt: {
@@ -42,13 +49,14 @@ export const styles = StyleSheet.create({
   gravYard: {
     width: "100%",
     alignItems: "center",
-    // gap: moderateScale(10)
+    justifyContent: "center"
   },
 
   img: {
     width: "100%",
     height: "100%",
-    resizeMode: "contain"
+    resizeMode: "contain",
+    alignSelf: "center"
   },
   details: {
     flexDirection: "row",

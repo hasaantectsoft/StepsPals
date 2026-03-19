@@ -12,8 +12,10 @@ export const styles = StyleSheet.create({
 
   },
   titleLogo: {
-    width: "100%",
-    height: moderateScale(130)
+    width: "90%",
+    height: moderateScale(130),
+    alignSelf: "center",
+    resizeMode: "contain"
   },
   titleButton: {
     width: "100%",

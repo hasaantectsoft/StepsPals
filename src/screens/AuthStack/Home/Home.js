@@ -166,7 +166,7 @@ export default function HomeScreen() {
     const getStarDisabledMessage = () => {
         if (starTapped) return "You already claimed your star reward!";
         if (!isComplete) return "Reach your step goal to unlock the star!";
-        if (!allCareChecked) return "Complete all care actions (feed, water, clean) first!";
+        if (!allCareChecked) return "Complete all care actions first!";
         return "";
     };
     return (
@@ -200,7 +200,7 @@ export default function HomeScreen() {
             <RetroStepsBar
                 top={scale(92)} right={scale(100)} left={scale(100)} bottom={scale(100)}
                 width={scale(280)} height={scale(40)} borderRadius={scale(20)}
-                steps={step} goal={petsteps}
+                steps={10000} goal={petsteps}
                 onAllCareCheckedChange={setAllCareChecked}
                 onCareActionChange={handleCareActionChange}
                 onDisabledCarePress={showDisabledMessage}
