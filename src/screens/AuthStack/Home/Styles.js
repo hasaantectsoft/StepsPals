@@ -1,4 +1,6 @@
-import { Platform, StyleSheet } from "react-native";
+import { Dimensions, Platform, StyleSheet } from "react-native";
+
+const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
 import { moderateScale, scale } from "react-native-size-matters";
 import { Retro } from "../../../utils/extra/retro";
 import { Theme } from "../../../libs";
@@ -13,9 +15,9 @@ export const styles = StyleSheet.create({
     },
     headerPressArea: {
         position: 'absolute',
-        top: Platform.OS === 'ios' ? scale(270) : scale(290),
-        left: 0,
-        right: 0,
+        top: SCREEN_HEIGHT * (Platform.OS === 'ios' ? 0.35 : 0.35),
+        width: SCREEN_WIDTH * 0.5,
+        left: (SCREEN_WIDTH - SCREEN_WIDTH * 0.5) / 2,
         height: scale(46),
         alignItems: 'center',
         justifyContent: 'center',
