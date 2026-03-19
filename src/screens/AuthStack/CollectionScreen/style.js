@@ -34,13 +34,18 @@ export const styles = StyleSheet.create({
         width: moderateScale(75),
         height: moderateScale(105),
         margin: moderateScale(5),
+        overflow: "hidden",
     },
     cardImage: {
         width: "100%",
         height: "100%",
         resizeMode: "stretch",
-        alignItems:"center",
-        justifyContent:"center"
+    },
+    cardContent: {
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "space-between",
+        paddingVertical: moderateScale(4),
     },
     CollectionCard: {
         width: "33.33%",
@@ -53,19 +58,16 @@ export const styles = StyleSheet.create({
         alignSelf: "stretch",
         paddingHorizontal: moderateScale(6),
     },
-    innerContainer:{
-       width:"80%",
-       height:"78%",
-       borderRadius:moderateScale(20),
-       marginTop:"auto",
-       bottom:moderateScale(35),
-    //    backgroundColor:"#f2cc81"
+    innerContainer: {
+        width: "80%",
+        flex: 1,
+        borderRadius: moderateScale(20),
+        marginBottom: moderateScale(35),
     },
-    petimg:{
-        width:"60%",
-        height:"70%",
-        resizeMode:"contain",
-        alignSelf:"center",
+    petimg: {
+        width: moderateScale(45),
+        height: moderateScale(55),
+        resizeMode: "contain",
     },
     name:{
         ...combineStyles.regular6,
