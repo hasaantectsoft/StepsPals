@@ -145,7 +145,7 @@ export default () => {
                                     <Text style={styles.devBtnText}>+1 Pet</Text>
                                 </Pressable>
                             </View>
-                            <Text style={styles.devHint}>Health {missedDays} · Age {petcreatedat ? Math.min(Math.floor((Date.now() - petcreatedat) / MS_PER_DAY), 21) : '-'}d</Text>
+                            <Text style={styles.devHint}>Health {missedDays} · Age {petcreatedat ? Math.floor((Date.now() - petcreatedat) / MS_PER_DAY) : '-'}d</Text>
                         </View>
 
                         <TouchableOpacity onPress={() => navigation.navigate('SubscriptionScreen')}>

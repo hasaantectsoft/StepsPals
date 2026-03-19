@@ -121,11 +121,12 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        paddingVertical: (39)
+        paddingVertical: (39),
+        
     },
     tabIcon: {
-        width: scale(50),
-        height: scale(50),
+        width: scale(65),
+        height: scale(62),
         resizeMode: 'contain',
     },
     tabText: {

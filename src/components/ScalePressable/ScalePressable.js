@@ -28,7 +28,7 @@ const ScalePressable = ({
 
   const handlePressOut = () => {
     Animated.timing(scaleAnim, {
-      toValue: 1,
+      toValue: 1.1,
       duration: animationDuration,
       useNativeDriver: true,
     }).start();

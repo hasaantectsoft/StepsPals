@@ -132,7 +132,7 @@ export default function PetSpriteStill({
 
   return (
     <Canvas style={[{ width: canvasWidth, height: canvasHeight }, styles.canvas, style]}>
-      <Atlas image={image} sprites={sprites} transforms={transforms} />
+      <Atlas image={image} sprites={sprites} transforms={transforms} sampling={{ B: 0, C: 0 }} />
     </Canvas>
   );
 }

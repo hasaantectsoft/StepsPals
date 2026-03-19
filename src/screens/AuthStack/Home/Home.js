@@ -28,6 +28,9 @@ import { setStartoverPet } from "../../../redux/slices/startoverpetslice";
 import HomeModals from "./HomeModals";
 import GivingTreatModal from "../../../components/Givingtreatmodal";
 import {playbottomtabsound, eatingsooundone, drinkingwatersound,  cleansound,eatingsoountwo} from "../../../utils/SoundManager/SoundManager";
+import { CatAdultSprite_Feeding } from "../../../components/PetSprites/Pets/Cat/Adult/CatAdultSprite_Feeding";
+import { CatBabySprite_Feeding } from "../../../components/PetSprites/Pets/Cat/Baby/babycatfeeding";
+import { CatTeenSprite_Feeding } from "../../../components/PetSprites/Pets/Cat/Teen/teencatfeeding";
 export default function HomeScreen() {
     const {  navigation, petname, petsteps, step, isComplete, starTapped, setStarTapped, cloudX, cloudY, starFlicker, } = useHomeScreen();
     const dispatch = useDispatch();
@@ -171,8 +174,8 @@ export default function HomeScreen() {
             <Pressable
                 style={styles.headerPressArea}
                 hitSlop={40}
-                onPress={() => { playbottomtabsound(); navigation.navigate('PetMenu'); }}>
-                <Text style={styles.name}>Hello {petname}</Text>
+                onPress={() => { playbottomtabsound(); navigation.replace('PetMenu'); }}>
+                <Text style={styles.name}>{petname}</Text>
                 <Text style={styles.welcome}>{welcomeText}</Text>
 
             </Pressable>
@@ -184,7 +187,7 @@ export default function HomeScreen() {
             </View>
 
             <SpriteLoader >
-                <ActivePetSprite spriteScale={3.2} />
+                <ActivePetSprite  spriteScale={4.0} offsetX={scale(100)} offsetY={scale(-15)} />
 
                 {ActiveCareSprite && (
                     <ActiveCareSprite

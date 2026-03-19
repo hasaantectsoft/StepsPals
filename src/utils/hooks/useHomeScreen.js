@@ -30,7 +30,7 @@ export default function useHomeScreen() {
         useSelector((s) => s.petReducer);
     const { step } = useSelector((s) => s.progressReducer);
     const ageInDays = petcreatedat
-        ? Math.min(Math.floor((Date.now() - petcreatedat) / 86400000), 21)
+        ? Math.floor((Date.now() - petcreatedat) / 86400000)
         : 0;
     const stage      = getStage(ageInDays);
     const condition  = getCondition(missedDays);

@@ -48,7 +48,7 @@ export function CatTeenSprite({
 
   return (
     <Canvas style={[{ width: canvasWidth, height: resolvedCanvasHeight }, styles.canvas, style]}>
-      <Atlas image={image} sprites={sprites} transforms={transforms} />
+      <Atlas image={image} sprites={sprites} transforms={transforms} sampling={{ B: 0, C: 0 }} />
     </Canvas>
   );
 }

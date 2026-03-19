@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
   details: {
     alignSelf: "center",
     marginVertical: 10,
-    gap:moderateScale(10)
+    gap:moderateScale(16)
   },
   detailText: {
     ...combineStyles.regular12,
