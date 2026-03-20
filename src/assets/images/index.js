@@ -88,7 +88,6 @@ export const images = {
   givingtreatmodal: require('./givingtreatmodal.png'),
   restoregreenbg: require('./restoregreenbg.png'),
   purchasedone:require('./purchasedone.png'),
-  cardimage:require('./cardimage.png'),
 
 
 
