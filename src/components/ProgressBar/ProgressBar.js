@@ -171,8 +171,8 @@ const styles = StyleSheet.create({
   fillContainer: {
     position: "absolute",
     left: FILL_LEFT_OFFSET,
-    top: (HEAD_SIZE - BAR_HEIGHT) / 2 + 11,
-    height: moderateScale(18),
+    top: (HEAD_SIZE - BAR_HEIGHT) / 2 + 12.5,
+    height: moderateScale(16),
     overflow: "hidden",
     zIndex: 2,
     width: FILL_AREA,
