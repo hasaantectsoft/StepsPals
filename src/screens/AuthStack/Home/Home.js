@@ -48,9 +48,13 @@ export default function HomeScreen() {
     const petDieModalTimeoutRef = useRef(null);
     const showDisabledMessage = useCallback((text, fromStar = false) => {
         if (messageTimeoutRef.current) clearTimeout(messageTimeoutRef.current);
-        setDisabledMessage(text);
-        setMessageFromStar(fromStar);
-        messageTimeoutRef.current = setTimeout(() => { setDisabledMessage(""); setMessageFromStar(false); }, 3000);
+        setDisabledMessage("");
+        setMessageFromStar(false);
+        setTimeout(() => {
+            setDisabledMessage(text);
+            setMessageFromStar(fromStar);
+            messageTimeoutRef.current = setTimeout(() => { setDisabledMessage(""); setMessageFromStar(false); }, 3000);
+        }, 0);
     }, []);
     useEffect(() => () => { if (messageTimeoutRef.current) clearTimeout(messageTimeoutRef.current); }, []);
     useEffect(() => () => {

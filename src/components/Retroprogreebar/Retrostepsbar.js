@@ -31,8 +31,11 @@ export default function RetroStepsBar({
   const barWidth = width || scale(280);
   const showIconMessage = useCallback((careKey) => {
     if (messageTimeoutRef.current) clearTimeout(messageTimeoutRef.current);
-    setActiveMessageKey(careKey);
-    messageTimeoutRef.current = setTimeout(() => setActiveMessageKey(null), 3000);
+    setActiveMessageKey(null);
+    setTimeout(() => {
+      setActiveMessageKey(careKey);
+      messageTimeoutRef.current = setTimeout(() => setActiveMessageKey(null), 3000);
+    }, 0);
   }, []);
   useEffect(() => () => { if (messageTimeoutRef.current) clearTimeout(messageTimeoutRef.current); }, []);
   const progress = goal ? Math.min(steps / goal, 1) : 0;

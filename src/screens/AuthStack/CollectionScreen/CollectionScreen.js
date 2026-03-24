@@ -1,4 +1,4 @@
-import { FlatList, Image, ImageBackground, ScrollView, Text, TouchableOpacity, View } from "react-native";
+import { FlatList, Image, ImageBackground,  Text, TouchableOpacity, View } from "react-native";
 import { combineStyles } from "../../../libs/combineStyle";
 import SettingsBackground from "../../../components/Petmenu/SettingsBackground";
 import { images } from "../../../assets/images";
@@ -27,8 +27,9 @@ export default () => {
 
     // Map ID to pet image
     const getPetImage = (id) => {
-        if (id === 1) return images.Dog;
-        if (id === 2) return images.Cat;
+        console.log("getPetImage id", id);
+        if (id == 1) return images.Dog;
+        if (id == 2) return images.Cat;
         return images.Dino;
     };
 
@@ -50,7 +51,7 @@ export default () => {
                         style={styles.card}
                         imageStyle={styles.cardImage}
                     >
-                        <Image source={getPetImage(item.id)} style={styles.petimg} />
+                        <Image source={getPetImage(item.petkey)} style={styles.petimg} />
                         <Text style={styles.name}>{item.name}</Text>
                         <Text style={styles.date}>{formatDate(item.createdAt)}</Text>
                     </ImageBackground>
