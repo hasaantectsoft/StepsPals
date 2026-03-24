@@ -14,6 +14,7 @@ function AuthStack() {
     Main: BottomTab,
     PetMenu: PetMenu,
     SubscriptionScreen:SubscriptionScreen,
+    
   };
 const imnewaccount = useSelector(state => state.tutorialReducer?.isnewuser);
 const startoverpet = useSelector((state) => state.startoverpetslice?.startoverpet);

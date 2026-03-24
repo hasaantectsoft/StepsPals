@@ -1,5 +1,3 @@
-/* eslint-disable react-native/no-inline-styles */
-
 
 import React, { useEffect } from 'react';
 import './src/locals/i18n';

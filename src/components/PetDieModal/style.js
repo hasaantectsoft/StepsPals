@@ -92,6 +92,10 @@ export const Styles = StyleSheet.create({
   },
   petName: {
     ...combineStyles.regular16,
+    fontSize:moderateScale(10),
+    width:moderateScale(120),
+    textAlign:"center",
+    
     
   },
   birthDate: {

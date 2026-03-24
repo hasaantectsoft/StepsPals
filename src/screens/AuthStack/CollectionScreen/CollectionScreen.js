@@ -3,33 +3,65 @@ import { combineStyles } from "../../../libs/combineStyle";
 import SettingsBackground from "../../../components/Petmenu/SettingsBackground";
 import { images } from "../../../assets/images";
 import { styles } from "./style";
-import { PetCollectionArray } from "../../../utils/exports";
 import { DeleteMessageModal } from "../../../components/Modal";
 import { useState } from "react";
-import UpgradePetModal from "../../../components/UpgradePetModal/upgradepetmodal";
+import { useSelector } from "react-redux";
 
 export default () => {
 
+    const petCollection = useSelector((s) => s.petCollectionReducer?.pets ?? []);
+    const collectionCount = petCollection.length;
+
     const [replacePetModal, setReplacePetModal] = useState(false);
 
+    console.log("collectionCount", petCollection);
+
+    // Format timestamp to readable date (DD.MM.YY)
+    const formatDate = (ts) => {
+        if (!ts) return '--.--.--';
+        const d = new Date(ts);
+        return [d.getDate(), d.getMonth() + 1, String(d.getFullYear()).slice(-2)]
+            .map((n) => String(n).padStart(2, '0'))
+            .join('.');
+    };
+
+    // Map ID to pet image
+    const getPetImage = (id) => {
+        if (id === 1) return images.Dog;
+        if (id === 2) return images.Cat;
+        return images.Dino;
+    };
+
+    // Create display array with 24 items (fill empty slots with null)
+    const displayData = [...petCollection];
+    while (displayData.length < 24) {
+        displayData.push(null);
+    }
 
     const handelModal=()=>{
             setReplacePetModal(false)
     }
     const renderItem = ({ item }) => (
         <View style={styles.CollectionCard}>
-            <TouchableOpacity activeOpacity={0.6} onPress={() => setReplacePetModal(true)}>
+            {item ? (
+                <TouchableOpacity activeOpacity={0.6} onPress={() => setReplacePetModal(false)}>
+                    <ImageBackground
+                        source={images.CollectionCard}
+                        style={styles.card}
+                        imageStyle={styles.cardImage}
+                    >
+                        <Image source={getPetImage(item.id)} style={styles.petimg} />
+                        <Text style={styles.name}>{item.name}</Text>
+                        <Text style={styles.date}>{formatDate(item.createdAt)}</Text>
+                    </ImageBackground>
+                </TouchableOpacity>
+            ) : (
                 <ImageBackground
                     source={images.CollectionCard}
                     style={styles.card}
                     imageStyle={styles.cardImage}
-                >
-                    <Image source={item.img} style={styles.petimg} />
-                    <Text style={styles.name}>{item.name}</Text>
-                    <Text style={styles.date}>{item.date}</Text>
-
-                </ImageBackground>
-            </TouchableOpacity>
+                />
+            )}
         </View>
     );
 
@@ -38,9 +70,15 @@ export default () => {
             <SettingsBackground path={images.PetCollecionBackground} />
 
             <View style={styles.container}>
-                <Text style={styles.txt}>
-                    There Are No Pets In The Collection Yet
-                </Text>
+                {collectionCount === 0 ? (
+                    <Text style={styles.txt}>
+                        There Are No Pets In The Collection Yet
+                    </Text>
+                ) : (
+                    <Text style={styles.txt}>
+                        Pet Collection ({collectionCount})
+                    </Text>
+                )}
 
                 <ImageBackground
                     source={images.PetCollectionWindow}
@@ -49,9 +87,9 @@ export default () => {
                 >
                     <View style={styles.innerContainer}>
                         <FlatList
-                            data={PetCollectionArray}
+                            data={displayData}
                             renderItem={renderItem}
-                            keyExtractor={(item) => item.id.toString()}
+                            keyExtractor={(item, index) => (item?.id ? item.id.toString() : `empty-${index}`)}
                             numColumns={3}
                             contentContainerStyle={styles.listContent}
                             scrollEnabled={true}
