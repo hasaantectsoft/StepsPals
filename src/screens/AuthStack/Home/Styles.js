@@ -116,4 +116,7 @@ export const styles = StyleSheet.create({
     modalStyle: {
         height: moderateScale(160),
     },
+    bottomtext:{
+        width: scale(200),
+    }
 });

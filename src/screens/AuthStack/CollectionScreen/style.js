@@ -35,6 +35,8 @@ export const styles = StyleSheet.create({
         height: moderateScale(105),
         margin: moderateScale(5),
         overflow: "hidden",
+        alignItems: "center",
+        justifyContent: "center",
     },
     cardImage: {
         width: "100%",
@@ -50,6 +52,7 @@ export const styles = StyleSheet.create({
     CollectionCard: {
         width: "33.33%",
         alignItems: "center",
+        justifyContent: "center",
     },
     row: {
         justifyContent: "flex-start",
@@ -60,9 +63,11 @@ export const styles = StyleSheet.create({
     },
     innerContainer: {
         width: "80%",
-        flex: 1,
+        height:"78%",
         borderRadius: moderateScale(20),
-        marginBottom: moderateScale(35),
+      marginTop: moderateScale(59),
+        // backgroundColor:"red",
+      
     },
     petimg: {
         width: moderateScale(45),

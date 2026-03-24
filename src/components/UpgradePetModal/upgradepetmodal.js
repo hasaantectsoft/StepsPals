@@ -8,7 +8,7 @@ import { images } from '../../assets/images';
 import { combineStyles } from '../../libs/combineStyle';
 import ScalePressable from '../ScalePressable/ScalePressable';
 import { addPetToCollection } from '../../redux/slices/petCollectionSlice';
-import { playButtonSound, successfulgrowth1, successfulgrowth2, upgradecompletesound } from '../../utils/SoundManager/SoundManager';
+import { playButtonSound, successfulgrowth1, successfulgrowth2,  } from '../../utils/SoundManager/SoundManager';
 import { useEffect } from 'react';
 
 const PET_IMAGE = { '1': images.Dog, '2': images.Cat, '3': images.Dino };
@@ -57,6 +57,8 @@ export default function UpgradePetModal({
 }) {
   const { petkey, petcreatedat, petname } = useSelector((s) => s.petReducer);
   const dispatch = useDispatch();
+
+  console.log("UpgradePetModal rendered with petkey:", petkey, "petcreatedat:", petcreatedat, "petname:", petname);
 
   const stage = getStage(petcreatedat);
   const config = UPGRADE_CONFIG[stage] ?? UPGRADE_CONFIG.teen;

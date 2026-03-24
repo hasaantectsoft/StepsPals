@@ -38,6 +38,7 @@ export default function HomeModals({
                 subtitle={`${petname} has fully grown!`}
                 bottomtext={`Keep nurturing ${petname} to stay on track and maintain your streak!`}
                 okPressed={handleAdultContinue}
+                btxstyle={styles.bottomtext}
             />
             <UpgradePetModal
                 isVisible={upgradeModal === "add"}
