@@ -48,6 +48,7 @@ export default () => {
       <View style={styles.listContainer}>
         <TouchableOpacity
           onPress={() => { setSelectedPlan(item.id); setIsSubscribed(true) }}
+        activeOpacity={0.7}
         >
           <ImageBackground
             source={isActive ? images.ActiveSubscription : images.InActiveSubscription}

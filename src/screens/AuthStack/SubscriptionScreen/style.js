@@ -54,7 +54,7 @@ export const styles = StyleSheet.create({
     },
     img: {
         width: "100%",
-        height: moderateScale(110),
+        height: moderateScale(120),
         resizeMode: "contain",
         gap: moderateScale(4),
 
@@ -72,7 +72,7 @@ export const styles = StyleSheet.create({
     },
     badge: {
         position: "absolute",
-        top: -10,
+        top: -20,
         right: 20,
         overflow: "visible",
     },
@@ -84,7 +84,7 @@ export const styles = StyleSheet.create({
     title: {
         ...combineStyles.regular12,
         paddingHorizontal: moderateScale(48),
-        paddingTop: moderateScale(20)
+        paddingTop: moderateScale(24)
     },
     trail: {
         ...combineStyles.regular10,

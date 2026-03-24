@@ -6,13 +6,12 @@ import { AppState, Platform, StatusBar } from 'react-native';
 import NetInfo from '@react-native-community/netinfo';
 import { PersistGate } from 'reduxjs-toolkit-persist/integration/react';
 import { QueryClient, QueryClientProvider, onlineManager } from 'react-query';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { SafeAreaProvider, SafeAreaView,  } from 'react-native-safe-area-context';
 import AppNavigation from './src/navigation';
 import { store, persistedStore } from './src/redux/store';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { pauseBackgroundSound, preloadSounds, releaseSounds, resumeBackgroundSound, startAppSound } from './src/utils/SoundManager/SoundManager'
 import { authorizeHealthKit } from './src/healthkit';
-import HealthKitInitializer from './src/HealthKitInitializer';
 
 export default function App() {
   const queryClient = new QueryClient();
@@ -50,14 +49,21 @@ export default function App() {
 
 
 
+
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <QueryClientProvider client={queryClient}>
         <Provider store={store}>
           <PersistGate loading={null} persistor={persistedStore}>
             <SafeAreaProvider>
-              <StatusBar barStyle="dark-content" backgroundColor="transparent" />
-              <AppNavigation />
+              <SafeAreaView
+                style={{ flex: 1 }}
+                edges={[ ]}
+              >
+                <StatusBar  translucent barStyle="dark-content" backgroundColor="transparent" />
+                <AppNavigation />
+              </SafeAreaView>
+
             </SafeAreaProvider>
           </PersistGate>
         </Provider>
