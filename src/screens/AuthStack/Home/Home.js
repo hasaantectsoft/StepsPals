@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import { Animated, Image, ImageBackground, Pressable, Text, View } from "react-native";
+import { Animated, Image, ImageBackground, Pressable, Text, View, useWindowDimensions } from "react-native";
 import { SvgXml } from "react-native-svg";
 import { scale } from "react-native-size-matters";
 import { styles } from "./Styles";
@@ -10,7 +10,7 @@ import RetroStepsBar from "../../../components/Retroprogreebar/Retrostepsbar";
 import ScalePressable from "../../../components/ScalePressable/ScalePressable";
 import MessageBox from "../../../components/MessageBox/MessageBox";
 import useHomeScreen from "../../../utils/hooks/useHomeScreen";
-import { careOffsets } from "../../../utils/extra/offsets";
+import { careOnPetNudge } from "../../../utils/extra/offsets";
 import { careMap } from "../../../utils/extra/caremap";
 import { careDurations } from "../../../utils/extra/delay";
 import ActivePetSprite from "../../../components/PetSprites/ActivePetSprite";
@@ -24,14 +24,29 @@ import { setSignedIn } from "../../../redux/slices/authSlice";
 import { setNewUser } from "../../../redux/slices/tutorialslice";
 import { clearPet } from "../../../redux/slices/petslice";
 import { clearProgress } from "../../../redux/slices/progressSlice";
-import { setStartoverPet } from "../../../redux/slices/startoverpetslice";
+import { setStartoverPet, setPendingEggHatch } from "../../../redux/slices/startoverpetslice";
 import HomeModals from "./HomeModals";
 import GivingTreatModal from "../../../components/Givingtreatmodal";
 import {playbottomtabsound, eatingsooundone, drinkingwatersound,  cleansound,eatingsoountwo} from "../../../utils/SoundManager/SoundManager";
+import EggHatch from "../../../components/Egghatchmain";
+const TV_TOP_FRAC = 0.35;
+const TV_WIDTH_FRAC = 0.5;
+const PET_SPRITE_SCALE = 3.4;
+
 export default function HomeScreen() {
+    const { width: winW, height: winH } = useWindowDimensions();
+    const [bgLayout, setBgLayout] = useState(null);
+    const bgW = bgLayout?.width ?? winW;
+    const bgH = bgLayout?.height ?? winH;
+    const headerPos = {
+        top: bgH * TV_TOP_FRAC,
+        width: bgW * TV_WIDTH_FRAC,
+        left: (bgW - bgW * TV_WIDTH_FRAC) / 2,
+    };
     const {  navigation, petname, petsteps, step, isComplete, starTapped, setStarTapped, cloudX, cloudY, starFlicker, } = useHomeScreen();
     const dispatch = useDispatch();
     const { missedDays, petkey, petcreatedat, hasShown7DayModal, hasShown21DayModal } = useSelector((s) => s.petReducer);
+    const pendingEggHatch = useSelector((s) => s.startoverpetslice?.pendingEggHatch);
     const collectionPets = useSelector((s) => s.petCollectionReducer?.pets ?? []);
     const isPetDead = missedDays >= 3;
     const welcomeText = WELCOME_BY_HEALTH[getCondition(missedDays ?? 0)] ?? "is happy";
@@ -91,7 +106,6 @@ export default function HomeScreen() {
     const handleAdultContinue = () => {
         setUpgradeModal('add');
     };
-
     const oldestPet = collectionPets[collectionPets.length - 1];
     const handleAdultYes = () => {
         const capacity = 24;
@@ -141,12 +155,16 @@ export default function HomeScreen() {
         }, duration);
     };
 
-    const ActiveCareSprite = activeCareKey && activeCareKey !== 'feed' ? careMap[activeCareKey] : null;
+    const ActiveCareSprite = activeCareKey ? careMap[activeCareKey] : null;
     const handleCareActionChange = (key) => {
         if (starTapped && activeCareKey === "treat") return;
         playCareOnce(key);
     };
-    const careOffsetX = scale(["treat", "clean"].includes(activeCareKey) ? 95 : 130);
+    const pox = scale(105);
+    const poy = scale(-10);
+    const nudge = activeCareKey ? careOnPetNudge[activeCareKey] : null;
+    const careOffsetX = nudge ? pox + nudge.x : pox;
+    const careOffsetY = nudge ? poy + nudge.y : poy;
 
     const DeathGhostSprite = getPetDeathGhostComponent(petkey);
     const canCheckStar = isComplete && allCareChecked && !starTapped;
@@ -166,32 +184,38 @@ export default function HomeScreen() {
         if (!allCareChecked) return "Complete all care actions first!";
         return "";
     };
+    const showEggHatch =
+        pendingEggHatch && String(petkey || "").trim() && petcreatedat;
     return (
-        <ImageBackground source={images.HomeLayout} imageStyle={{ resizeMode: 'cover' }} style={styles.container}>
+        <ImageBackground
+            source={images.HomeLayout}
+            imageStyle={{ resizeMode: 'cover' }}
+            style={styles.container}
+            onLayout={(e) => setBgLayout(e.nativeEvent.layout)}
+        >
             <Pressable
-                style={styles.headerPressArea}
+                style={[styles.headerPressArea, headerPos]}
                 hitSlop={40}
                 onPress={() => { playbottomtabsound(); navigation.replace('PetMenu'); }}>
-                <Text style={styles.name}>{petname}</Text>
-                <Text style={styles.welcome}>{welcomeText}</Text>
-                
+                <Text style={styles.name} numberOfLines={2} ellipsizeMode="tail">{petname}</Text>
+                <Text style={styles.welcome} numberOfLines={2} ellipsizeMode="tail">{welcomeText}</Text>
 
 
             </Pressable>
             
             <View style={styles.deathGhostCenter}>
                 {isPetDead && (
-                    <DeathGhostSprite spriteScale={3} offsetY={scale(18)} offsetX={scale(130)} />
+                    <DeathGhostSprite spriteScale={3} offsetY={scale(18)} offsetX={scale(100)} />
                 )}
             </View>
 
             <SpriteLoader >
-                <ActivePetSprite activeCareKey={activeCareKey} spriteScale={3.4} offsetX={scale(100)} offsetY={scale(-15)} />
+                <ActivePetSprite activeCareKey={activeCareKey} spriteScale={PET_SPRITE_SCALE} offsetX={pox} offsetY={poy} />
                 {ActiveCareSprite && (
                     <ActiveCareSprite
                         offsetX={careOffsetX}
-                        spriteScale={3.5}
-                        offsetY={careOffsets[activeCareKey] || 0}
+                        offsetY={careOffsetY}
+                        spriteScale={PET_SPRITE_SCALE}
                     />
                 )}
             </SpriteLoader>
@@ -268,6 +292,11 @@ export default function HomeScreen() {
             />
 
             <SvgXml style={styles.windowFrameImage} height={scale(100)} width={scale(120)} xml={windowframe} />
+            {showEggHatch ? (
+                <View style={styles.eggHatchOverlay} pointerEvents="box-none">
+                    <EggHatch onProceedAfterHatch={() => dispatch(setPendingEggHatch(false))} />
+                </View>
+            ) : null}
      </ImageBackground>
     );
 }

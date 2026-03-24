@@ -4,6 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { useSelector } from "react-redux";
 import { Styles } from "./Styles";
 import { images } from "../../../assets/images";
+import EggHatch from "../../../components/Egghatchmain";
 
 export default () => {
   const { petcreatedat, missedDays } = useSelector((s) => s.petReducer ?? {});
@@ -43,5 +44,6 @@ export default () => {
       
       
     </ImageBackground>
+
   );
 }

@@ -114,9 +114,9 @@ const styles = StyleSheet.create({
         shadowRadius: 5,
         overflow: 'hidden',
         paddingHorizontal: 10,
-        // paddingTop: scale(2),
+        paddingTop: scale(20),
         height: scale(100),
-        paddingBottom:scale(30)
+        // paddingBottom:scale(30)
     },
     tabItem: {
         flex: 1,

@@ -11,6 +11,7 @@ import { images } from "../../../assets/images";
 import { setPetName, setPetKey, setPetSteps, setPetCreatedAt, updatePet } from "../../../redux/slices/petslice";
 import { setSignedIn } from "../../../redux/slices/authSlice";
 import { setIsMain } from "../../../redux/slices/ismain";
+import { setPendingEggHatch } from "../../../redux/slices/startoverpetslice";
 
 export default function SelectGoalScreen() {
     const { params } = useRoute();
@@ -27,6 +28,7 @@ export default function SelectGoalScreen() {
         dispatch(setPetSteps(stepGoal ?? 100));
         dispatch(setPetCreatedAt(Date.now()));
         dispatch(updatePet({ missedDays: 0, petisdead: false }));
+        dispatch(setPendingEggHatch(true));
         dispatch(setSignedIn(true));
         dispatch(setIsMain(true));
         navigation.reset({ index: 0, routes: [{ name: "Main" }] });

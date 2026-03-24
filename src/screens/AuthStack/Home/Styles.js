@@ -1,6 +1,4 @@
-import { Dimensions, Platform, StyleSheet } from "react-native";
-
-const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
+import { StyleSheet } from "react-native";
 import { moderateScale, scale } from "react-native-size-matters";
 import { Retro } from "../../../utils/extra/retro";
 import { Theme } from "../../../libs";
@@ -15,9 +13,6 @@ export const styles = StyleSheet.create({
     },
     headerPressArea: {
         position: 'absolute',
-        top: SCREEN_HEIGHT * (Platform.OS === 'ios' ? 0.35 : 0.35),
-        width: SCREEN_WIDTH * 0.5,
-        left: (SCREEN_WIDTH - SCREEN_WIDTH * 0.5) / 2,
         height: scale(46),
         alignItems: 'center',
         justifyContent: 'center',
@@ -118,5 +113,11 @@ export const styles = StyleSheet.create({
     },
     bottomtext:{
         width: scale(200),
-    }
+    },
+    eggHatchOverlay: {
+        ...StyleSheet.absoluteFillObject,
+        flex: 1,
+        zIndex: 100001,
+        elevation: 100001,
+    },
 });

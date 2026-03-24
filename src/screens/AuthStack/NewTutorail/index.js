@@ -8,7 +8,7 @@ import { moderateScale } from "react-native-size-matters"
 import { SvgXml } from "react-native-svg"
 import { cracks, eggsvg } from "../../../assets/Cracks"
 import { congratulationsound, playEggCrackSound } from "../../../utils/SoundManager/SoundManager"
-import { useEffect, useMemo, useRef, useState } from "react"
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react"
 import { PuffMainSprite } from "../../../components/PetSprites/puff"
 import { getPetSpriteComponent } from "../../../components/PetSprites/petSpriteMap"
 import { tutorial9svg, totorial10svg } from "../../../assets/svgs"
@@ -42,6 +42,7 @@ export default () => {
     const navigation = useNavigation()
     const dispatch = useDispatch()
     const petkey = useSelector((s) => s.petReducer?.petkey ?? "")
+    const pendingEggHatch = useSelector((s) => s.startoverpetslice?.pendingEggHatch)
     const key = String(petkey || "").trim() || "3"
 
     const [tapcount, setTapcount] = useState(0)
@@ -70,6 +71,12 @@ export default () => {
         const t = setTimeout(() => setShowPuff(false), PUFF_DURATION_MS)
         return () => clearTimeout(t)
     }, [showPuff])
+
+    useLayoutEffect(() => {
+        if (!pendingEggHatch) return
+        setHatched(true)
+        setPostTutorialSlide(0)
+    }, [pendingEggHatch])
 
     const animateCrack = () => {
         shakeAnim.setValue(0)
