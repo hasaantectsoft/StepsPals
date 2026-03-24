@@ -9,6 +9,7 @@ import { scale } from "react-native-size-matters";
 import { images } from "../../../assets/images";
 import { playButtonSound } from "../../../utils/SoundManager/SoundManager";
 import ScalePressable from "../../../components/ScalePressable/ScalePressable";
+import { SafeFlexView } from "../../../components";
 
 export default () => {
     const pets=[
@@ -37,7 +38,7 @@ export default () => {
         navigation.navigate("NameYourPer", { pet: selectedPet });
     };
     return (
-        <View style={Styles.container}>
+        <SafeFlexView style={Styles.container}>
             <ImageBackground
                 source={images.required}
                 style={Styles.imgbg}
@@ -82,6 +83,6 @@ export default () => {
                 <NextButton useTouchable={false} />
                 </ScalePressable>
             </ImageBackground>
-        </View >
+        </SafeFlexView >
     );
 }
