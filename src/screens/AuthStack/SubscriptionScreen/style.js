@@ -90,12 +90,12 @@ export const styles = StyleSheet.create({
         ...combineStyles.regular10,
         paddingHorizontal: moderateScale(48),
         color: Theme.colors.brown,
-        marginTop: moderateScale(5)
+        marginTop: moderateScale(2)
     },
     prise: {
         ...combineStyles.regular10,
         paddingHorizontal: moderateScale(48),
-        marginBottom: moderateScale(5)
+        // marginBottom: moderateScale(3)
 
     },
     Access: {
