@@ -114,8 +114,9 @@ const styles = StyleSheet.create({
         shadowRadius: 5,
         overflow: 'hidden',
         paddingHorizontal: 10,
-        paddingTop: scale(2),
-        height: scale(70),
+        // paddingTop: scale(2),
+        height: scale(100),
+        paddingBottom:scale(30)
     },
     tabItem: {
         flex: 1,
@@ -125,7 +126,7 @@ const styles = StyleSheet.create({
         
     },
     tabIcon: {
-        width: scale(65),
+        width: scale(62),
         height: scale(62),
         resizeMode: 'contain',
     },

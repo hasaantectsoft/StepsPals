@@ -161,6 +161,7 @@ export default () => {
                             <Pressable onPress={() => setIsUnrankedRankingModalVisible(true)}><Text>Unranked Ranking Modal</Text></Pressable>
                             <Pressable onPress={() => setIsMissedDaysModalVisible(true)}><Text>Missed Days Modal</Text></Pressable>
                             <Pressable onPress={() => setIsUpgradeModalVisible(true)}><Text>Upgrade Pet Modal</Text></Pressable>
+
                         <View style={styles.buttonContainer}>
                             {
                                 Platform.OS === "ios" ?

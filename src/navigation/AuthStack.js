@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 import BottomTab from './BottomStack/BottomTabs';
 import PetMenu from '../screens/AuthStack/PetMenu/PetMenu';
 import SubscriptionScreen from '../screens/AuthStack/SubscriptionScreen/SubscriptionScreen';
+import NewTutorail from '../screens/AuthStack/NewTutorail/index';
 function AuthStack() {
   const Stack = createNativeStackNavigator();
   const screens = {

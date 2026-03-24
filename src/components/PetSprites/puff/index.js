@@ -20,6 +20,7 @@ export function PuffSprite({
   offsetX,
   offsetY = 0,
   style,
+  loop = true,
 }) {
   const resolvedCanvasHeight = canvasHeight ?? frameHeight * spriteScale + 20;
   const resolvedOffsetX = offsetX ?? (SW - frameWidth * spriteScale) / 2;
@@ -27,12 +28,20 @@ export function PuffSprite({
   const progress = useSharedValue(0);
 
   useEffect(() => {
-    progress.value = withRepeat(
-      withTiming(frameCount, { duration: (frameCount / fps) * 1000, easing: Easing.linear }),
-      -1,
-    );
+    if (loop) {
+      progress.value = withRepeat(
+        withTiming(frameCount, { duration: (frameCount / fps) * 1000, easing: Easing.linear }),
+        -1,
+      );
+    } else {
+      progress.value = 0;
+      progress.value = withTiming(frameCount, {
+        duration: (frameCount / fps) * 1000,
+        easing: Easing.linear,
+      });
+    }
     return () => cancelAnimation(progress);
-  }, [fps, frameCount]);
+  }, [fps, frameCount, loop]);
 
   const image = useImage(spriteSheet);
 

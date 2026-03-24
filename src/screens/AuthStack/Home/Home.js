@@ -28,8 +28,6 @@ import { setStartoverPet } from "../../../redux/slices/startoverpetslice";
 import HomeModals from "./HomeModals";
 import GivingTreatModal from "../../../components/Givingtreatmodal";
 import {playbottomtabsound, eatingsooundone, drinkingwatersound,  cleansound,eatingsoountwo} from "../../../utils/SoundManager/SoundManager";
-import { adultcatsprites } from "../../../assets/Sprites/Pets/Cat";
-import { CatAdultSprite_main } from "../../../components/PetSprites/Pets/Cat";
 export default function HomeScreen() {
     const {  navigation, petname, petsteps, step, isComplete, starTapped, setStarTapped, cloudX, cloudY, starFlicker, } = useHomeScreen();
     const dispatch = useDispatch();

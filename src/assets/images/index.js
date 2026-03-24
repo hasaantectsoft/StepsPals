@@ -8,6 +8,7 @@ export const images = {
   PetGravYard: require('./PetGravYard.png'),
   Statistics: require('./Statistics.png'),
   Cat: require('./Cat.png'),
+  NewTutorial: require('./tutorial.png'),
   Dog: require('./Dog.png'),
   Dino: require('./Dino.png'),
   rankingbtn: require('./rankingbtn.png'),
@@ -20,6 +21,7 @@ export const images = {
   Bronze: require('./Bronze.png'),
   Platinum: require('./Platinum.png'),
   Ball: require('./Ball.png'),
+  messageboxtutoial:require('./newmessabebox.png'),
   Capsule: require('./Capsule.png'),
   Legend_First_Player: require('./Legend_First_Player.png'),
   WelocmBackgruound: require('./WelocmBackgruound.png'),
@@ -89,6 +91,15 @@ export const images = {
   givingtreatmodal: require('./givingtreatmodal.png'),
   restoregreenbg: require('./restoregreenbg.png'),
   purchasedone:require('./purchasedone.png'),
+  tutorial2:require('./tutorial2.png'),
+  tutorial3:require('./tutoral3.png'),
+  tutorial4:require('./tutoral4.png'),
+  tutorial5:require('./tutoral5.png'),
+  tutorial6:require('./tutoral6.png'),
+  tutorial7:require('./tutoral7.png'),
+  tutorial8:require('./tutoral8.png'),
+  tutorial9:require('./tutoral9.png'),
+  tutorial10:require('./tutoral10.png'),
 
 
 
