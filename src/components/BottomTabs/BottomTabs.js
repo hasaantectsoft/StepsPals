@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, TouchableOpacity, View, Keyboard, Image } from 'react-native';
-import { scale } from 'react-native-size-matters';
+import { moderateScale, scale } from 'react-native-size-matters';
 import InternetModal from '../InternetModal/InternetModal';
 import NetInfo from '@react-native-community/netinfo';
 import { DeviceEventEmitter } from 'react-native';
@@ -97,7 +97,7 @@ const BottomTabs = ({ activeTab, onTabPress }) => {
 const styles = StyleSheet.create({
     safeArea: {
         position: "absolute",
-        bottom: 0,
+        bottom: moderateScale(-20),
         left: 0,
         right: 0,
         backgroundColor: 'transparent',
