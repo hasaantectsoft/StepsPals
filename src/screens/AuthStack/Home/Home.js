@@ -28,6 +28,8 @@ import { setStartoverPet } from "../../../redux/slices/startoverpetslice";
 import HomeModals from "./HomeModals";
 import GivingTreatModal from "../../../components/Givingtreatmodal";
 import {playbottomtabsound, eatingsooundone, drinkingwatersound,  cleansound,eatingsoountwo} from "../../../utils/SoundManager/SoundManager";
+import { adultcatsprites } from "../../../assets/Sprites/Pets/Cat";
+import { CatAdultSprite_main } from "../../../components/PetSprites/Pets/Cat";
 export default function HomeScreen() {
     const {  navigation, petname, petsteps, step, isComplete, starTapped, setStarTapped, cloudX, cloudY, starFlicker, } = useHomeScreen();
     const dispatch = useDispatch();
@@ -174,6 +176,8 @@ export default function HomeScreen() {
                 onPress={() => { playbottomtabsound(); navigation.replace('PetMenu'); }}>
                 <Text style={styles.name}>{petname}</Text>
                 <Text style={styles.welcome}>{welcomeText}</Text>
+                
+
 
             </Pressable>
             
@@ -184,8 +188,7 @@ export default function HomeScreen() {
             </View>
 
             <SpriteLoader >
-                <ActivePetSprite activeCareKey={activeCareKey} spriteScale={4.0} offsetX={scale(100)} offsetY={scale(-15)} />
-
+                <ActivePetSprite activeCareKey={activeCareKey} spriteScale={3.4} offsetX={scale(100)} offsetY={scale(-15)} />
                 {ActiveCareSprite && (
                     <ActiveCareSprite
                         offsetX={careOffsetX}

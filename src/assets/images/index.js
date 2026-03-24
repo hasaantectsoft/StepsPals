@@ -19,6 +19,7 @@ export const images = {
   Legend: require('./Legend.png'),
   Bronze: require('./Bronze.png'),
   Platinum: require('./Platinum.png'),
+  Ball: require('./Ball.png'),
   Capsule: require('./Capsule.png'),
   Legend_First_Player: require('./Legend_First_Player.png'),
   WelocmBackgruound: require('./WelocmBackgruound.png'),
