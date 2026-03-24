@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { moderateScale } from "react-native-size-matters";
+import { moderateScale, scale } from "react-native-size-matters";
 import { combineStyles } from "../../../libs/combineStyle";
 import { Theme } from "../../../libs";
 
@@ -11,15 +11,15 @@ export const styles = StyleSheet.create({
     alignItems: "center",
   },
   note: {
-  ...combineStyles.regular10,
-    lineHeight:moderateScale(15),
+  ...combineStyles.regular12,
+    lineHeight:moderateScale(20),
     color:Theme.colors.brown,
     textAlign: "center",
-    marginTop: 10,
+    marginTop: scale(25),
   },
   saveBtn: {
-    marginTop: "auto",
-    bottom:moderateScale(60),
+    marginTop: scale(20),
+    // bottom:moderateScale(60),
     // height:moderateScale(50),
     width: "100%",
     // alignItems: "center",
@@ -34,6 +34,7 @@ export const styles = StyleSheet.create({
    position:"absolute"
   },
    backBtn: {
+    marginTop:moderateScale(33),
     position:"absolute",
     right:moderateScale(140),
     top:moderateScale(15)

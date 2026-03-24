@@ -7,12 +7,15 @@ export const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: moderateScale(10),
     paddingTop: moderateScale(50),
+    paddingBottom: moderateScale(120)
 
 
   },
   titleLogo: {
-    width: "100%",
-    height: moderateScale(130)
+    width: "90%",
+    height: moderateScale(130),
+    alignSelf: "center",
+    resizeMode: "contain"
   },
   titleButton: {
     width: "100%",

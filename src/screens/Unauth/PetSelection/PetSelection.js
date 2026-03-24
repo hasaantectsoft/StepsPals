@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, ImageBackground, Text, TouchableOpacity } from "react-native";
+import { View, ImageBackground, Text, TouchableOpacity, Pressable } from "react-native";
 import { Styles } from "./styles";
 import { cat, dino, dog } from "../../../assets/svgs";
 import { SvgXml } from "react-native-svg";
@@ -54,7 +54,7 @@ export default () => {
                         const isSelected = selectedPet?.id === pet.id;
                         const Wrapper = isSelected ? ImageBackground : View;
                         return (
-                            <ScalePressable
+                            <Pressable
                                 key={pet.id}
                                 activeOpacity={0.8}
                                 onPress={() => {setSelectedPet(pet);playButtonSound()}}
@@ -65,7 +65,7 @@ export default () => {
                                             ? images.selected
                                             : undefined
                                     }
-                                    resizeMode="stretch"
+                                    resizeMode="contain"
                                     imageStyle={Styles.selectedBgImage}
                                     style={[Styles.petItem]}
                                 >
@@ -74,7 +74,7 @@ export default () => {
                                     }} xml={pet.svg} height={80} width={90} />
                                     <Text style={Styles.petName}>{pet.name}</Text>
                                 </Wrapper>
-                            </ScalePressable>
+                            </Pressable>
                         );
                     })}
                 </View>

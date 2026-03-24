@@ -55,7 +55,7 @@ const LeaderboardContent = memo(() => (
             data={PlatinumArray}
             title={"PLATINUM"}
             titleImage={images.Platinum}
-            ContainerStyle={{ marginTop: moderateScale(30) }}
+            ContainerStyle={{ marginTop: moderateScale(15) }}
             titleStyle={{ color: "#65839D" }}
         />
         <LeaderBoardComponent

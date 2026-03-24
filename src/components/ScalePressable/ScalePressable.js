@@ -5,7 +5,7 @@ import { styles } from "./ScalePressableStyles";
 
 const ScalePressable = ({
   children,
-  key,
+  
   activeOpacity,
   onPress,
   containerStyle,
@@ -28,7 +28,7 @@ const ScalePressable = ({
 
   const handlePressOut = () => {
     Animated.timing(scaleAnim, {
-      toValue: 1,
+      toValue: 1.1,
       duration: animationDuration,
       useNativeDriver: true,
     }).start();
@@ -40,7 +40,6 @@ const ScalePressable = ({
 
   return (
     <Pressable
-    key={key}
     activeOpacity={activeOpacity}
       onPress={onPress}
       onPressIn={handlePressOut}

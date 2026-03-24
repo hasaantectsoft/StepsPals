@@ -61,7 +61,7 @@ export default function NameYourPet() {
                     <View style={styles.petImageWrap}>
                         <SvgXml xml={PetSvg} width={90} height={90} preserveAspectRatio="xMidYMid meet" />
                     </View>
-                   <ImageBackground source={require('../../../assets/images/input.png')}
+                   <ImageBackground source={require('../../../assets/images/newinput.png')}
                    resizeMode="contain"
                    imageStyle={styles.inputImage}
                    style={styles.inputBg} >

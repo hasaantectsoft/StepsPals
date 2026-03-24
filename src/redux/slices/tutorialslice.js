@@ -3,7 +3,7 @@ import {createSlice} from '@reduxjs/toolkit';
 const tutorialSlice  = createSlice({
   name: 'tutorial',
   initialState: {
-    isnewuser: false,
+    isnewuser: true,
   },
   reducers: {
     setNewUser: (state, action) => {

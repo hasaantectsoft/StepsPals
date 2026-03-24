@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { getCondition } from '../../utils/petCondition';
-import { getPetSpriteComponent } from './petSpriteMap';
+import { getPetFeedingSpriteComponent, getPetSpriteComponent } from './petSpriteMap';
 import { DinoBabySprite_main } from './Pets/Dino';
 
 const getStage = (days) => {
@@ -10,13 +10,13 @@ const getStage = (days) => {
   return 'adult';
 };
 
-export default function ActivePetSprite(props) {
+export default function ActivePetSprite({ activeCareKey, ...props }) {
   const { petkey, petcreatedat, missedDays } = useSelector((s) => s.petReducer);
-  const ageInDays = petcreatedat
-    ? Math.min(Math.floor((Date.now() - petcreatedat) / 86400000), 21)
-    : 0;
+  const ageInDays = petcreatedat ? Math.floor((Date.now() - petcreatedat) / 86400000) : 0;
   const stage = getStage(ageInDays);
   const condition = getCondition(missedDays ?? 0);
-  const SpriteComponent = getPetSpriteComponent(petkey, stage, condition) ?? DinoBabySprite_main;
+  const useFeeding = activeCareKey === 'feed' || activeCareKey === 'treat';
+  const getSprite = useFeeding ? getPetFeedingSpriteComponent : getPetSpriteComponent;
+  const SpriteComponent = getSprite(petkey, stage, condition) ?? DinoBabySprite_main;
   return <SpriteComponent {...props} />;
 }

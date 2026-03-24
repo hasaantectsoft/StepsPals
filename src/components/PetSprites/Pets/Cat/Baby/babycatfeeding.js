@@ -3,15 +3,20 @@ import { useEffect } from 'react';
 import { Dimensions } from 'react-native';
 import { cancelAnimation, Easing, useSharedValue, withRepeat, withTiming } from 'react-native-reanimated';
 import { styles } from './styles';
+import { babycatsprites } from '../../../../../assets/Sprites/Pets/Cat';
+
 const { width: SW } = Dimensions.get('window');
-import { adultcatsprites } from '../../../../../assets/Sprites/Pets/Cat';
+const PADDING_X = 2;
+const PADDING_Y = 2;
+
 // ─── Base Component ──────────────────────────────────────────────────────────
 
-export function CatAdultSprite({
+export function CatBabySprite_Feedingbase({
   spriteSheet,
   frameWidth,
   frameHeight,
   frameCount,
+  frameStart = 0,
   fps = 12,
   spriteScale = 4,
   canvasWidth = SW,
@@ -37,8 +42,8 @@ export function CatAdultSprite({
 
   const sprites = useRectBuffer(1, (rect) => {
     'worklet';
-    const f = Math.floor(progress.value % frameCount);
-    rect.setXYWH(f * frameWidth, 0, frameWidth, frameHeight);
+    const f = frameStart + Math.floor(progress.value % frameCount);
+    rect.setXYWH(PADDING_X + f * frameWidth, PADDING_Y, frameWidth, frameHeight);
   });
 
   const transforms = [Skia.RSXform(spriteScale, 0, resolvedOffsetX, offsetY)];
@@ -47,56 +52,18 @@ export function CatAdultSprite({
 
   return (
     <Canvas style={[{ width: canvasWidth, height: resolvedCanvasHeight }, styles.canvas, style]}>
-      <Atlas image={image} sprites={sprites} transforms={transforms} sampling={{ filter: 0, mipmap: 0 }}
- />
+      <Atlas image={image} sprites={sprites} transforms={transforms} sampling={{ filter: 0, mipmap: 0 }} />
     </Canvas>
   );
-}export function CatAdultSprite_main(props) {
-  return (
-    <CatAdultSprite
-      spriteSheet={adultcatsprites.catmain}
-      frameWidth={48}
-      frameHeight={42}
-      frameCount={45}
-      fps={12}
-      {...props}
-    />
-  );
 }
-
-export function CatAdultSprite_dead(props) {
+export function CatBabySprite_Feeding(props) {
   return (
-    <CatAdultSprite
-      spriteSheet={adultcatsprites.cat_dead}
-      frameWidth={46}
-      frameHeight={34}
-      frameCount={1}
-      fps={12}
-      {...props}
-    />
-  );
-}
-
-export function CatAdultSprite_sick(props) {
-  return (
-    <CatAdultSprite
-      spriteSheet={adultcatsprites.catsick}
-      frameWidth={48}
-      frameHeight={42}
-      frameCount={23}
-      fps={12}
-      {...props}
-    />
-  );
-}
-
-export function CatAdultSprite_verysick(props) {
-  return (
-    <CatAdultSprite
-      spriteSheet={adultcatsprites.catverysick}
-      frameWidth={50}
-      frameHeight={42}
-      frameCount={23}
+    <CatBabySprite_Feedingbase
+      spriteSheet={babycatsprites.catmain}
+      frameWidth={31}
+      frameHeight={32}
+      frameStart={42}
+      frameCount={18}
       fps={12}
       {...props}
     />

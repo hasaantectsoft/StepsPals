@@ -12,6 +12,9 @@ import {
   CatTeenSprite_sick,
   CatTeenSprite_verysick,
 } from './Pets/Cat';
+import { CatAdultSprite_Feeding } from './Pets/Cat/Adult/CatAdultSprite_Feeding';
+import { CatBabySprite_Feeding } from './Pets/Cat/Baby/babycatfeeding';
+import { CatTeenSprite_Feeding } from './Pets/Cat/Teen/teencatfeeding';
 import {
   DogAdultSprite_dead,
   DogAdultSprite_main,
@@ -26,6 +29,9 @@ import {
   DogTeenSprite_sick,
   DogTeenSprite_verysick,
 } from './Pets/Dog';
+import { DogAdultSprite_feeding, DogAdultSprite_sickfeeding, DogAdultSprite_verysickfeeding } from './Pets/Dog/Adult';
+import { DogBabySprite_feeding, DogBabySprite_sickfeeding, DogBabySprite_verysickfeeding } from './Pets/Dog/Baby';
+import { DogTeenSprite_feeding, DogTeenSprite_sickfeeding, DogTeenSprite_verysickfeeding } from './Pets/Dog/Teen';
 import {
   DinoAdultSprite_dead,
   DinoAdultSprite_main,
@@ -40,6 +46,9 @@ import {
   DinoTeenSprite_sick,
   DinoTeenSprite_verysick,
 } from './Pets/Dino';
+import { DinoAdultSprite_feeding, DinoAdultSprite_sickfeeding, DinoAdultSprite_verysickfeeding } from './Pets/Dino/Adult';
+import { DinoBabySprite_feeding, DinoBabySprite_sickfeeding, DinoBabySprite_verysickfeeding } from './Pets/Dino/Baby';
+import { DinoTeenSprite_feeding, DinoTeenSprite_sickfeeding, DinoTeenSprite_verysickfeeding } from './Pets/Dino/Teen';
 import { DeathGhostSprite } from './DeathGhost';
 
 const DOG = {
@@ -64,11 +73,36 @@ const DINO = {
 const PET_MAP = { '1': DOG, '2': CAT, '3': DINO };
 const CONDITION_KEY = { Healthy: 'main', Sick: 'sick', 'Very Sick': 'verysick', Dead: 'dead' };
 
+const DOG_FEEDING = {
+  baby: { main: DogBabySprite_feeding, sick: DogBabySprite_sickfeeding, verysick: DogBabySprite_verysickfeeding },
+  teen: { main: DogTeenSprite_feeding, sick: DogTeenSprite_sickfeeding, verysick: DogTeenSprite_verysickfeeding },
+  adult: { main: DogAdultSprite_feeding, sick: DogAdultSprite_sickfeeding, verysick: DogAdultSprite_verysickfeeding },
+};
+const CAT_FEEDING = {
+  baby: { main: CatBabySprite_Feeding, sick: CatBabySprite_Feeding, verysick: CatBabySprite_Feeding },
+  teen: { main: CatTeenSprite_Feeding, sick: CatTeenSprite_Feeding, verysick: CatTeenSprite_Feeding },
+  adult: { main: CatAdultSprite_Feeding, sick: CatAdultSprite_Feeding, verysick: CatAdultSprite_Feeding },
+};
+const DINO_FEEDING = {
+  baby: { main: DinoBabySprite_feeding, sick: DinoBabySprite_sickfeeding, verysick: DinoBabySprite_verysickfeeding },
+  teen: { main: DinoTeenSprite_feeding, sick: DinoTeenSprite_sickfeeding, verysick: DinoTeenSprite_verysickfeeding },
+  adult: { main: DinoAdultSprite_feeding, sick: DinoAdultSprite_sickfeeding, verysick: DinoAdultSprite_verysickfeeding },
+};
+const PET_FEEDING_MAP = { '1': DOG_FEEDING, '2': CAT_FEEDING, '3': DINO_FEEDING };
+
 export function getPetSpriteComponent(petkey, stage, condition) {
   const key = String(petkey ?? '').trim() || '3';
   const pet = PET_MAP[key] ?? DINO;
   const normalizedStage = ['baby', 'teen', 'adult'].includes(stage) ? stage : 'baby';
   const condKey = CONDITION_KEY[condition] ?? 'main';
+  return pet[normalizedStage]?.[condKey] ?? pet.baby.main;
+}
+
+export function getPetFeedingSpriteComponent(petkey, stage, condition) {
+  const key = String(petkey ?? '').trim() || '3';
+  const pet = PET_FEEDING_MAP[key] ?? DINO_FEEDING;
+  const normalizedStage = ['baby', 'teen', 'adult'].includes(stage) ? stage : 'baby';
+  const condKey = condition === 'Dead' ? 'main' : (CONDITION_KEY[condition] ?? 'main');
   return pet[normalizedStage]?.[condKey] ?? pet.baby.main;
 }
 

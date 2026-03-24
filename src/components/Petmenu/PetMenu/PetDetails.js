@@ -4,7 +4,6 @@ import { Theme } from "../../../libs";
 import { moderateScale } from "react-native-size-matters";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
-const isSmallScreen = SCREEN_WIDTH <= 375;
 
 export default function PetDetails({ pet }) {
   const details = [
@@ -31,7 +30,7 @@ const styles = StyleSheet.create({
   details: {
     alignSelf: "center",
     marginVertical: 10,
-    gap:moderateScale(10)
+    gap:Platform.OS === 'ios' ? moderateScale(16) : moderateScale()
   },
   detailText: {
     ...combineStyles.regular12,

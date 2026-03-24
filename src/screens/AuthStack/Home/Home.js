@@ -28,6 +28,8 @@ import { setStartoverPet } from "../../../redux/slices/startoverpetslice";
 import HomeModals from "./HomeModals";
 import GivingTreatModal from "../../../components/Givingtreatmodal";
 import {playbottomtabsound, eatingsooundone, drinkingwatersound,  cleansound,eatingsoountwo} from "../../../utils/SoundManager/SoundManager";
+import { adultcatsprites } from "../../../assets/Sprites/Pets/Cat";
+import { CatAdultSprite_main } from "../../../components/PetSprites/Pets/Cat";
 export default function HomeScreen() {
     const {  navigation, petname, petsteps, step, isComplete, starTapped, setStarTapped, cloudX, cloudY, starFlicker, } = useHomeScreen();
     const dispatch = useDispatch();
@@ -141,7 +143,7 @@ export default function HomeScreen() {
         }, duration);
     };
 
-    const ActiveCareSprite = activeCareKey ? careMap[activeCareKey] : null;
+    const ActiveCareSprite = activeCareKey && activeCareKey !== 'feed' ? careMap[activeCareKey] : null;
     const handleCareActionChange = (key) => {
         if (starTapped && activeCareKey === "treat") return;
         playCareOnce(key);
@@ -163,7 +165,7 @@ export default function HomeScreen() {
     const getStarDisabledMessage = () => {
         if (starTapped) return "You already claimed your star reward!";
         if (!isComplete) return "Reach your step goal to unlock the star!";
-        if (!allCareChecked) return "Complete all care actions (feed, water, clean) first!";
+        if (!allCareChecked) return "Complete all care actions first!";
         return "";
     };
     return (
@@ -171,9 +173,11 @@ export default function HomeScreen() {
             <Pressable
                 style={styles.headerPressArea}
                 hitSlop={40}
-                onPress={() => { playbottomtabsound(); navigation.navigate('PetMenu'); }}>
-                <Text style={styles.name}>Hello {petname}</Text>
+                onPress={() => { playbottomtabsound(); navigation.replace('PetMenu'); }}>
+                <Text style={styles.name}>{petname}</Text>
                 <Text style={styles.welcome}>{welcomeText}</Text>
+                
+
 
             </Pressable>
             
@@ -184,8 +188,7 @@ export default function HomeScreen() {
             </View>
 
             <SpriteLoader >
-                <ActivePetSprite spriteScale={3.2} />
-
+                <ActivePetSprite activeCareKey={activeCareKey} spriteScale={3.4} offsetX={scale(100)} offsetY={scale(-15)} />
                 {ActiveCareSprite && (
                     <ActiveCareSprite
                         offsetX={careOffsetX}

@@ -1,6 +1,7 @@
 
 import { useEffect, useRef } from "react";
 import { Animated, Dimensions, Easing, StyleSheet, View } from "react-native";
+import { images } from "../../assets/images";
 const { width, height } = Dimensions.get("window");
 const BALL_SIZE = width * 0.13;
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
@@ -62,7 +63,7 @@ export default function BallRollJSX({ showBall = true, children,ispeatdead=false
     >
       {showBall && (
         <Animated.Image
-          source={require("../../assets/images/Ball.png")}
+          source={images.Ball}
           style={[styles.ball, { transform: [{ translateX: ballX }, { rotate: spin }] }]}
           resizeMode="contain"
         />

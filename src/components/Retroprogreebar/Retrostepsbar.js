@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { View, Text } from "react-native";
+import { View, Text, ImageBackground } from "react-native";
 import { styles } from "./styles";
 import { scale } from "react-native-size-matters";
 import { bowl, bowl1, checked, newhomebar, pop1, popp, waterdis, waterfull } from "../../assets/svgs";
@@ -86,6 +86,10 @@ export default function RetroStepsBar({
       <View style={styles.barWrapper}>
         <View style={[styles.outerBar, { width: barWidth, height: height || scale(40), borderRadius: borderRadius || scale(20) }]}>
           <View style={[styles.fillBar, { width: progressWidth }]} />
+          <ImageBackground
+            source={require("../../assets/images/unfilledhomebar.png")}
+            style={[styles.unfilledBar, { left: progressWidth, width: `${(1 - progress) * 100}%` }]}
+          />
         </View>
         <SvgXml xml={newhomebar} style={styles.barBackground} height={scale(70)} width={barWidth} />
         <Text style={styles.text}>{steps}/{goal} Steps</Text>
@@ -95,7 +99,7 @@ export default function RetroStepsBar({
         {iconConfigs.map(({ pct, state, setState, getXml, canPress, careKey }, idx) => (
           <React.Fragment key={idx}>
             <ScalePressable
-              pressableStyle={[styles.iconAbsolute, { left: barWidth * pct - scale(20) }]}
+              pressableStyle={[styles.iconAbsolute, { left: barWidth * pct - scale(35) }]}
               onPress={() => {
                 playbottomtabsound();
                 if (!canPress) {
@@ -112,7 +116,7 @@ export default function RetroStepsBar({
                 }
               }}
             >
-              <SvgXml xml={getXml(state)} height={50} width={40} />
+              <SvgXml xml={getXml(state)} height={60} width={60} />
             </ScalePressable>
             {activeMessageKey === careKey ? (
               <View style={[styles.iconMessageWrap, { left: barWidth * pct - scale(100), width: scale(170) }]}>

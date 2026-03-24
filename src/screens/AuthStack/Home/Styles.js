@@ -1,4 +1,6 @@
-import { Platform, StyleSheet } from "react-native";
+import { Dimensions, Platform, StyleSheet } from "react-native";
+
+const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
 import { moderateScale, scale } from "react-native-size-matters";
 import { Retro } from "../../../utils/extra/retro";
 import { Theme } from "../../../libs";
@@ -13,15 +15,16 @@ export const styles = StyleSheet.create({
     },
     headerPressArea: {
         position: 'absolute',
-        top: Platform.OS === 'ios' ? scale(270) : scale(290),
-        left: 0,
-        right: 0,
-        height: scale(30),
+        top: SCREEN_HEIGHT * (Platform.OS === 'ios' ? 0.35 : 0.35),
+        width: SCREEN_WIDTH * 0.5,
+        left: (SCREEN_WIDTH - SCREEN_WIDTH * 0.5) / 2,
+        height: scale(46),
         alignItems: 'center',
         justifyContent: 'center',
     },
     name:{
-        fontSize: scale(5),
+        fontSize: scale(8),
+        lineHeight: scale(19),
         // maxWidth:scale(100),
         fontFamily: Retro,
         color: Theme.colors.white,
@@ -29,7 +32,7 @@ export const styles = StyleSheet.create({
     },
     star:{ width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' },
     welcome:{
-        fontSize: scale(5),
+        fontSize: scale(8),
         fontFamily: Retro,
         color: Theme.colors.yellow,
         textAlign: 'center',

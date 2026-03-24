@@ -50,7 +50,7 @@ export function DinoTeenSprite({
 
   return (
     <Canvas style={[{ width: canvasWidth, height: resolvedCanvasHeight }, styles.canvas, style]}>
-      <Atlas image={image} sprites={sprites} transforms={transforms} />
+      <Atlas image={image} sprites={sprites} transforms={transforms} sampling={{ filter: 0, mipmap: 0 }} />
     </Canvas>
   );
 }export function DinoTeenSprite_main(props) {

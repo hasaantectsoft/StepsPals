@@ -28,6 +28,12 @@ export const styles = StyleSheet.create({
       left: 0,
       height: "100%",
       backgroundColor: Theme.colors.waterblue,
+      zIndex: 1,
+    },
+    unfilledBar: {
+      position: "absolute",
+      left: 0,
+      height: "100%",
     },
     text: {
       position: "absolute",

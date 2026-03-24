@@ -121,7 +121,7 @@ export const Styles = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "center",
-       width:"90%",
+        width: "85%",
         gap: scale(12),
     },
     sliderWrap: {
@@ -143,8 +143,8 @@ export const Styles = StyleSheet.create({
         backgroundColor: Theme.colors.white,
     },
     stepBtnImg: {
-        width: scale(24),
-        height: scale(24),
+        width: scale(30),
+        height: scale(30),
     },
     retroDoneWrap: {
         marginTop: scale(16),
