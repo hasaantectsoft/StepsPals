@@ -69,3 +69,29 @@ export function CatBabySprite_Feeding(props) {
     />
   );
 }
+export function CatBabySprite_sick_Feeding(props) {
+  return (
+    <CatBabySprite_Feedingbase
+      spriteSheet={babycatsprites.catsick}
+      frameWidth={31}
+      frameHeight={31}
+      frameStart={18}
+      frameCount={17}
+      fps={12}
+      {...props}
+    />
+  );
+}
+export function CatBabySprite_verysick_Feeding(props) {
+  return (
+    <CatBabySprite_Feedingbase
+      spriteSheet={babycatsprites.catverysick}
+      frameWidth={32}
+      frameHeight={32}
+      frameStart={18}
+      frameCount={17}
+      fps={12}
+      {...props}
+    />
+  );
+}

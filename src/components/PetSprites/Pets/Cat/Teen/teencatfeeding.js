@@ -72,3 +72,32 @@ export function CatTeenSprite_Feeding(props) {
   );
 }
 
+
+export function CatTeenSprite_sick_Feeding(props) {
+  return (
+    <CatTeenSprite_Feedingbase
+      spriteSheet={teencatsprites.catsick}
+      frameWidth={40}
+      frameHeight={38}
+      frameStart={20}
+      frameCount={18}
+      fps={12}
+      {...props}
+    />
+  );
+}
+export const CatTeenSprite_sickFeeding = CatTeenSprite_sick_Feeding;
+
+export function CatTeenSprite_verysick_Feeding(props) {
+  return (
+    <CatTeenSprite_Feedingbase
+      spriteSheet={teencatsprites.catverysick}
+      frameWidth={43}
+      frameHeight={35}
+      frameStart={18}
+      frameCount={18}
+      fps={12}
+      {...props}
+    />
+  );
+}

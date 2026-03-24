@@ -12,9 +12,21 @@ import {
   CatTeenSprite_sick,
   CatTeenSprite_verysick,
 } from './Pets/Cat';
-import { CatAdultSprite_Feeding } from './Pets/Cat/Adult/CatAdultSprite_Feeding';
-import { CatBabySprite_Feeding } from './Pets/Cat/Baby/babycatfeeding';
-import { CatTeenSprite_Feeding } from './Pets/Cat/Teen/teencatfeeding';
+import {
+  CatAdultSprite_Feeding,
+  CatAdultSprite_Feeding_sick,
+  CatAdultSprite_Feeding_verysick,
+} from './Pets/Cat/Adult/CatAdultSprite_Feeding';
+import {
+  CatBabySprite_Feeding,
+  CatBabySprite_sick_Feeding,
+  CatBabySprite_verysick_Feeding,
+} from './Pets/Cat/Baby/babycatfeeding';
+import {
+  CatTeenSprite_Feeding,
+  CatTeenSprite_sick_Feeding,
+  CatTeenSprite_verysick_Feeding,
+} from './Pets/Cat/Teen/teencatfeeding';
 import {
   DogAdultSprite_dead,
   DogAdultSprite_main,
@@ -79,9 +91,21 @@ const DOG_FEEDING = {
   adult: { main: DogAdultSprite_feeding, sick: DogAdultSprite_sickfeeding, verysick: DogAdultSprite_verysickfeeding },
 };
 const CAT_FEEDING = {
-  baby: { main: CatBabySprite_Feeding, sick: CatBabySprite_Feeding, verysick: CatBabySprite_Feeding },
-  teen: { main: CatTeenSprite_Feeding, sick: CatTeenSprite_Feeding, verysick: CatTeenSprite_Feeding },
-  adult: { main: CatAdultSprite_Feeding, sick: CatAdultSprite_Feeding, verysick: CatAdultSprite_Feeding },
+  baby: {
+    main: CatBabySprite_Feeding,
+    sick: CatBabySprite_sick_Feeding,
+    verysick: CatBabySprite_verysick_Feeding,
+  },
+  teen: {
+    main: CatTeenSprite_Feeding,
+    sick: CatTeenSprite_sick_Feeding,
+    verysick: CatTeenSprite_verysick_Feeding,
+  },
+  adult: {
+    main: CatAdultSprite_Feeding,
+    sick: CatAdultSprite_Feeding_sick,
+    verysick: CatAdultSprite_Feeding_verysick,
+  },
 };
 const DINO_FEEDING = {
   baby: { main: DinoBabySprite_feeding, sick: DinoBabySprite_sickfeeding, verysick: DinoBabySprite_verysickfeeding },

@@ -24,6 +24,7 @@ import { setProgressStep } from "../../../redux/slices/progressSlice";
 import { PRIVACY_URL, TERMS_URL } from "../../../utils/extra/links";
 import { setIsMain } from "../../../redux/slices/ismain";
 import { setNewUser } from "../../../redux/slices/tutorialslice";
+import { setPendingEggHatch } from "../../../redux/slices/startoverpetslice";
 import { images } from "../../../assets/images";
 import { fetchSteps, HEALTH_CONNECT_PLAY_STORE_URL } from "../../../utils/handler/fetchsteps";
 export default () => {
@@ -169,6 +170,7 @@ export default () => {
                 dispatch(setPetKey(String(pet?.id ?? '')));
                 dispatch(setPetSteps(stepGoal ?? 242));
                 dispatch(setPetCreatedAt(Date.now()));
+                dispatch(setPendingEggHatch(true));
                 dispatch(setSignedIn(true));
                 dispatch(setIsMain(true));
                 dispatch(setNewUser(true));

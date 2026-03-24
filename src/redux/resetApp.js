@@ -10,7 +10,7 @@ import { dispatchMakeCartEmpty } from "./slices/cartSlice";
 import { dispatchThemeMode } from "./slices/themeSlice";
 import { dispatchToken, dispatchUser } from "./slices/userSlice";
 import { setIsMain } from "./slices/ismain";
-import { setStartoverPet } from "./slices/startoverpetslice";
+import { setStartoverPet, setPendingEggHatch } from "./slices/startoverpetslice";
 import { setMusicSound, setSound } from "./slices/soundSlice";
 
 export async function resetApp(dispatch, pet) {
@@ -31,6 +31,7 @@ export async function resetApp(dispatch, pet) {
   dispatch(dispatchUser(null));
   dispatch(setIsMain(false));
   dispatch(setStartoverPet(false));
+  dispatch(setPendingEggHatch(false));
   dispatch(setMusicSound(true));
   dispatch(setSound(true));
 
