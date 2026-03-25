@@ -97,7 +97,7 @@ const BottomTabs = ({ activeTab, onTabPress }) => {
 const styles = StyleSheet.create({
     safeArea: {
         position: "absolute",
-        bottom: moderateScale(-20),
+        bottom: moderateScale(0),
         left: 0,
         right: 0,
         backgroundColor: 'transparent',

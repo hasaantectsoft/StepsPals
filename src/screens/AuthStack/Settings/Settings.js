@@ -20,6 +20,7 @@ import { LegendRankingModal, PlatinumRankingModal, GoldRankingModal, SilverRanki
 import Misseddaysmodal from "../../../components/Misseddaysmodal/missiedonedaymodal";
 import Missed2daysmodal from "../../../components/Misseddaysmodal/missed2daysmodal";
 import UpgradePetModal from "../../../components/UpgradePetModal/upgradepetmodal";
+import { loginWithGoogle } from "../../../utils/GoogleLogin";
 const MS_PER_DAY = 86400000;
 export default () => {
     const { MusicSound, Sound } = useSelector(state => state.soundReducer);
@@ -167,7 +168,7 @@ export default () => {
                                 Platform.OS === "ios" ?
                                     <PressableIcon icon={SignInWithAppleBtnSvg} width={"100%"} height={60} onPress={() => { playButtonSound() }} />
                                     :
-                                    <PressableIcon icon={SignInWithGoogleBtnSvg} width={"100%"} height={60} onPress={() => { playButtonSound() }} />
+                                    <PressableIcon icon={SignInWithGoogleBtnSvg} width={"100%"} height={60} onPress={() => {loginWithGoogle();playButtonSound() }} />
 
                             }
                             <PressableIcon onPress={() => { Linking.openURL(PRIVACY_URL) }} icon={PrivacyPolicyBtnSvg} width={"100%"} height={60} />
