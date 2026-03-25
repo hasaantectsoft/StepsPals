@@ -1,57 +1,128 @@
 import {
-    Image,
+  Image,
   ImageBackground,
   Linking,
-
+  Platform,
   ScrollView,
   Text,
   TouchableOpacity,
   View,
+  AppState,
 } from "react-native";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, useRef } from "react";
 import { useDispatch } from 'react-redux';
-import { checkNotifications } from "react-native-permissions";
+import { useRoute, useFocusEffect } from "@react-navigation/native";
+import { checkNotifications, checkMultiple, PERMISSIONS } from "react-native-permissions";
 import { styles } from "./styles";
 import { Header, NextButton } from "../../../components";
-import { useFocusEffect, useNavigation } from "@react-navigation/native";
+import { useNavigation } from "@react-navigation/native";
 import { setSignedIn } from "../../../redux/slices/authSlice";
 import { permissionUtils } from "../../../utils";
 import { scale } from "react-native-size-matters";
-// need to add corrcet url here
-const PRIVACY_URL = "https://steppals.com/privacy";
-const TERMS_URL = "https://steppals.com/terms";
-
+import { setPetName, setPetKey, setPetSteps, setPetCreatedAt } from "../../../redux/slices/petslice";
+import { setProgressStep } from "../../../redux/slices/progressSlice";
+import { PRIVACY_URL, TERMS_URL } from "../../../utils/extra/links";
+import { setIsMain } from "../../../redux/slices/ismain";
+import { setNewUser } from "../../../redux/slices/tutorialslice";
+import { setPendingEggHatch } from "../../../redux/slices/startoverpetslice";
+import { images } from "../../../assets/images";
+import { fetchSteps, HEALTH_CONNECT_PLAY_STORE_URL } from "../../../utils/handler/fetchsteps";
 export default () => {
   const navigation = useNavigation();
   const dispatch = useDispatch();
+  const appState = useRef(AppState.currentState);
+  
+  const { pet, petName, stepGoal } = useRoute().params || {};
   const [notifGranted, setNotifGranted] = useState(false);
   const [healthGranted, setHealthGranted] = useState(false);
+  const [notifRejectionCount, setNotifRejectionCount] = useState(0);
+  
   const refreshNotif = useCallback(() => {
-    checkNotifications().then(({ status }) =>
-      setNotifGranted(status === "granted")
-    );
+    checkNotifications().then(({ status }) => {
+      setNotifGranted(status === "granted");
+    });
+  }, []);
+
+  const refreshHealthPermissions = useCallback(() => {
+    if (Platform.OS === 'ios') {
+      checkMultiple([PERMISSIONS.IOS.HEALTH]).then((statuses) => {
+        setHealthGranted(statuses[PERMISSIONS.IOS.HEALTH] === 'granted');
+      });
+    }
   }, []);
 
   useEffect(() => {
     refreshNotif();
-  }, [refreshNotif]);
+    refreshHealthPermissions();
+  }, [refreshNotif, refreshHealthPermissions]);
+
+  // Handle app state changes (when app returns from background/settings)
+  useEffect(() => {
+    const subscription = AppState.addEventListener('change', handleAppStateChange);
+
+    return () => {
+      subscription.remove();
+    };
+  }, []);
+
+  const handleAppStateChange = useCallback((nextAppState) => {
+    if (appState.current.match(/inactive|background/) && nextAppState === 'active') {
+      // App has come to foreground, refresh permissions with delay
+      setTimeout(() => {
+        refreshNotif();
+        refreshHealthPermissions();
+      }, 1000);
+    }
+    appState.current = nextAppState;
+  }, [refreshNotif, refreshHealthPermissions]);
+
+  // Refresh permissions when screen comes back into focus (after user goes to settings)
+  useFocusEffect(
+    useCallback(() => {
+      // Add a delay to ensure system has updated permissions
+      const timer = setTimeout(() => {
+        refreshNotif();
+        refreshHealthPermissions();
+      }, 800);
+
+      return () => clearTimeout(timer);
+    }, [refreshNotif, refreshHealthPermissions])
+  );
 
   const onRequestNotification = async () => {
-    const granted = await permissionUtils.requestNotificationPermission();
-    setNotifGranted(granted);
-    console.log(notifGranted)
+    // If rejected 2 times already, open app settings
+    if (notifRejectionCount >= 2) {
+      Linking.openSettings();
+      return;
+    }
 
+    const granted = await permissionUtils.requestNotificationPermission();
+    if (granted) {
+      setNotifGranted(granted);
+      setNotifRejectionCount(0);
+    } else {
+      // User rejected, increment counter
+      setNotifRejectionCount(prev => prev + 1);
+    }
   };
 
   const onRequestHealth = async () => {
     const granted = await permissionUtils.requestHealthPermission();
     setHealthGranted(granted);
   };
-//   console.log(notifGranted)
+  const onRequestHealthAndroid = async () => {
+    const { granted, steps, notInstalled } = await fetchSteps();
+    if (notInstalled) {
+      Linking.openURL(HEALTH_CONNECT_PLAY_STORE_URL);
+      return;
+    }
+    setHealthGranted(granted);
+    if (granted && steps != null) dispatch(setProgressStep(steps));
+  };
 
   return (
     <ImageBackground
-      source={require("../../../assets/images/required.png")}
+      source={images.required}
       style={styles.wrapper}
       resizeMode="cover"
     >
@@ -68,21 +139,21 @@ export default () => {
         showsVerticalScrollIndicator={false}
       >
         <TouchableOpacity onPress={onRequestNotification} disabled={notifGranted}>
-         <Image
-          source={notifGranted ? require("../../../assets/images/permisionnotifif.png") : require("../../../assets/images/healthkitpermsiom.png")}
-height={scale(100)}
-resizeMode="contain"
-style={styles.permissionsImage}
-/>
-</TouchableOpacity>
-<TouchableOpacity onPress={onRequestHealth} disabled={healthGranted}>
-        <Image
-          source={healthGranted ? require("../../../assets/images/permissionenabled.png") : require("../../../assets/images/healthkitpermsiomdis.png")}
-height={scale(100)}
-resizeMode="contain"
-style={styles.permissionsImage}
-/>
-</TouchableOpacity>
+          <Image
+            source={notifGranted ?images.permisionnotifif : images.healthkitpermsiom}
+            height={scale(100)}
+            resizeMode="contain"
+            style={styles.permissionsImage}
+          />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={Platform.OS==='ios' ? onRequestHealth : onRequestHealthAndroid} disabled={healthGranted}>
+          <Image
+            source={healthGranted ? images.permissionenabled : images.healthkitpermsiomdis}
+            height={scale(100)}
+            resizeMode="contain"
+            style={styles.permissionsImage}
+          />
+        </TouchableOpacity>
         <Text style={styles.explanationText}>
           StepPals requires Health access to function. Without step data, your
           Pet can't track progress and the core experience is unavailable.
@@ -93,9 +164,19 @@ style={styles.permissionsImage}
 
         <View style={styles.buttonWrap}>
           <NextButton
-            text="NEXT"
-            onPress={() => navigation.navigate("Settings")}
-            disabled={false}
+            text={"NEXT"}
+            onPress={() => {
+                dispatch(setPetName(petName ?? ''));
+                dispatch(setPetKey(String(pet?.id ?? '')));
+                dispatch(setPetSteps(stepGoal ?? 242));
+                dispatch(setPetCreatedAt(Date.now()));
+                dispatch(setPendingEggHatch(true));
+                dispatch(setSignedIn(true));
+                dispatch(setIsMain(true));
+                dispatch(setNewUser(true));
+                navigation.reset({ index: 0, routes: [{ name: "Main" }] });
+              }}
+            disabled={!notifGranted || !healthGranted ? true : false}
           />
         </View>
       </ScrollView>

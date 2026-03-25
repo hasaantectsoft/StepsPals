@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 import { Theme } from "../../../libs";
-import { scale } from "react-native-size-matters";
+import { moderateScale, scale } from "react-native-size-matters";
 export const Styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -31,16 +31,24 @@ export const Styles = StyleSheet.create({
         borderRadius: Theme.borders.regularRadius,
     },
     selectedPetItem: {
-        borderWidth: 5,
+        borderWidth: 2,
         borderColor: Theme.colors.white,
-        backgroundColor: Theme.colors.selectedPetBg,
+    },
+    selectedBgImage: {
+        resizeMode: "contain",
+height: scale(130),
+width: scale(110),
+        borderRadius: Theme.borders.regularRadius,
+        left:moderateScale(-8),
+
     },
     petName:{
         fontSize: scale(10),
         fontFamily: Theme.typography.Retro.fontFamily,
         textAlign: "center",
         color: Theme.colors.black,
-        marginTop: scale(10),
+        // marginTop: scale(10),
+        
     },
     subtitle: {
         marginTop: scale(10),

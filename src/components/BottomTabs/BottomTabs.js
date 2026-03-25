@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, TouchableOpacity, View, Keyboard, Image } from 'react-native';
-import { scale } from 'react-native-size-matters';
-// import InternetModal from '../InternetModal/InternetModal';
+import { moderateScale, scale } from 'react-native-size-matters';
+import InternetModal from '../InternetModal/InternetModal';
 import NetInfo from '@react-native-community/netinfo';
 import { DeviceEventEmitter } from 'react-native';
-import { Theme } from '../../libs';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import useKeyboard from "../../utils/extra/usekeyboard"
+import {  playbottomtabsound, playButtonSound } from '../../utils/SoundManager/SoundManager';
+import ScalePressable from '../ScalePressable/ScalePressable';
 
-const { colors } = Theme;
 
 const BottomTabs = ({ activeTab, onTabPress }) => {
     
@@ -17,35 +17,33 @@ const BottomTabs = ({ activeTab, onTabPress }) => {
     const isKeyboardVisible = useKeyboard();
    
     const tabIcons = [
-        { name: 'Home', icon: require('../../assets/images/home.png') },
-        { name: 'Statistics', icon: require('../../assets/images/stats.png') },
+        { name: 'Home', icon: require('../../assets/images/home.png') ,inactiveIcon: require('../../assets/images/homeinactive.png') },
+        { name: 'Statistics', icon: require('../../assets/images/stats.png') ,inactiveIcon: require('../../assets/images/stats_inactive.png') },
 
-        { name: 'GraveYard', icon: require('../../assets/images/graveyard.png') },
-        { name: 'LeaderBoard', icon: require('../../assets/images/tropy.png') },
-        { name: 'Settings', icon: require('../../assets/images/settings.png') },
+        { name: 'GraveYard', icon: require('../../assets/images/graveyard.png') ,inactiveIcon: require('../../assets/images/graveyard_inactive.png') },
+        { name: 'LeaderBoard', icon: require('../../assets/images/tropy.png') ,inactiveIcon: require('../../assets/images/inactive_trophy.png') },
+        { name: 'Settings', icon: require('../../assets/images/settings.png') ,inactiveIcon: require('../../assets/images/settings_inactive.png') },
 
     ];
+    const checkConnection = () => {
+        return NetInfo.fetch().then(state => {
+            const connected = !!(state.isConnected || state.isInternetReachable);
+            setIsConnectedModal(!connected);
+            return connected;
+        }).catch(() => false);
+    };
+
     useEffect(() => {
-        const checkConnection = () => {
-            NetInfo.fetch().then(state => {
-                const connected = !!(state.isConnected || state.isInternetReachable);
-                setIsConnectedModal(!connected);
-            }).catch(error => {
-            });
-        };
         let unsubscribe;
         try {
             unsubscribe = NetInfo.addEventListener(state => {
                 const connected = !!(state.isConnected || state.isInternetReachable);
                 setIsConnectedModal(!connected);
             });
-        } catch (error) {
-        }
+        } catch (error) {}
         checkConnection();
         return () => {
-            if (unsubscribe) {
-                unsubscribe();
-            }
+            if (unsubscribe) unsubscribe();
         };
     }, []);
 
@@ -65,37 +63,30 @@ const BottomTabs = ({ activeTab, onTabPress }) => {
 
 
                     <View style={styles.container}>
-                        {/* {isConnectedModal && !hideModal && (
+                        {isConnectedModal && !hideModal && (
                             <InternetModal
-                                isVisible={isConnectedModal}
-                                handleRetry={() => checkInternet()}
-                                title={'No Internet Connection'}
-                                description={
-                                    "Oops! We can't load the content until the internet connection is restored."
-                                }
-                                shortDescription={'Please check your connection.'}
-                                btnTxt={'Retry'}
-                                btntext2={'View draft'}
+                              isVisible={isConnectedModal}
+                              onRetry={checkConnection}
                             />
-                        )} */}
+                        )}
 
                         {tabIcons.map(tab => (
-                            <TouchableOpacity
+                            <ScalePressable
                                 key={tab.name}
                                 style={[
                                     styles.tabItem,
 
                                 ]}
-                                onPress={() => onTabPress(tab.name)}
+                                onPress={() => {playbottomtabsound();onTabPress(tab.name);}}
                             >
                                 <Image
-                                    source={tab.icon}
+                                    source={activeTab === tab.name ? tab.inactiveIcon : tab.icon}
                                     style={[styles.tabIcon, { opacity: activeTab === tab.name ? 1 : 1 }]}
                                     resizeMode="contain"
                                 />
 
 
-                            </TouchableOpacity>
+                            </ScalePressable>
                         ))}
                     </View>
             }
@@ -106,7 +97,7 @@ const BottomTabs = ({ activeTab, onTabPress }) => {
 const styles = StyleSheet.create({
     safeArea: {
         position: "absolute",
-        bottom: 0,
+        bottom: moderateScale(-20),
         left: 0,
         right: 0,
         backgroundColor: 'transparent',
@@ -123,18 +114,20 @@ const styles = StyleSheet.create({
         shadowRadius: 5,
         overflow: 'hidden',
         paddingHorizontal: 10,
-        paddingTop: scale(2),
-        height: scale(70),
+        paddingTop: scale(20),
+        height: scale(100),
+        // paddingBottom:scale(30)
     },
     tabItem: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        // paddingVertical: (9)
+        paddingVertical: (39),
+        
     },
     tabIcon: {
-        width: scale(50),
-        height: scale(50),
+        width: scale(62),
+        height: scale(62),
         resizeMode: 'contain',
     },
     tabText: {

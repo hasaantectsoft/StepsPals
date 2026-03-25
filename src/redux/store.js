@@ -17,6 +17,12 @@ import cartSlice from './slices/cartSlice';
 import themeSlice from './slices/themeSlice';
 import authSlice from './slices/authSlice';
 import tutorialSlice from './slices/tutorialslice';
+import petSlice from './slices/petslice';
+import progressSlice from './slices/progressSlice';
+import soundSlice from './slices/soundSlice';
+import graveyardSlice from './slices/graveyardSlice';
+import startoverpetslice from './slices/startoverpetslice';
+import petCollectionSlice from './slices/petCollectionSlice';
 
 const persistConfig = {
   key: 'root',
@@ -30,6 +36,12 @@ const reducers = combineReducers({
   themeReducer: themeSlice,
   authReducer: authSlice,
   tutorialReducer: tutorialSlice,
+  petReducer: petSlice,
+  petCollectionReducer: petCollectionSlice,
+  progressReducer: progressSlice,
+  soundReducer: soundSlice,
+  graveyardReducer: graveyardSlice,
+  startoverpetslice: startoverpetslice,
 });
 
 const _persistedReducer = persistReducer(persistConfig, reducers);

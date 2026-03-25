@@ -8,13 +8,14 @@ import NetInfo from "@react-native-community/netinfo";
 import {  RetryingState, ConnectedState, NoInternetState } from "../../../components/LandingPageComponents";
 import { useNavigation } from '@react-navigation/native';
 import { useSelector } from "react-redux";
+import { images } from "../../../assets/images";
 
 export default function LandingScreen({  }) {
     const [isRetrying, setIsRetrying] = useState(false);
     const [retryFailed, setRetryFailed] = useState(false);
     const stack=useSelector(state=>state.authReducer?.isSignedIn);
     const isNewUser = useSelector(state => state.tutorialReducer?.isnewuser);
-    const { isConnected, isLoading } = useNetworkStatus();
+    const { isConnected } = useNetworkStatus();
     const navigation = useNavigation();
 
     useEffect(() => {
@@ -26,10 +27,8 @@ export default function LandingScreen({  }) {
     useEffect(() => {
         if (typeof isNewUser !== 'undefined' && isNewUser === false) {
             if (stack) {
-                navigation.replace('Main', { screen: 'Home' });
-            } else {
-                navigation.replace('PetSelection');
-            }
+                // navigation.replace('Main', { screen: 'Home' });
+            } 
         }
     }, [isNewUser, stack, navigation]);
 
@@ -54,7 +53,7 @@ export default function LandingScreen({  }) {
     const handleStart = () => {
         console.log("Starting app...",stack);
         if(stack){
-            navigation.replace('Main', { screen: 'Home' });
+            navigation.replace('Main');
             return;
         }
         else{
@@ -67,7 +66,7 @@ export default function LandingScreen({  }) {
     return (
         <View style={Styles.container}>
             <ImageBackground
-                source={require("../../../assets/images/required.png")}
+                source={images.required}
                 style={Styles.imgbg}
                 resizeMode="cover"
             >

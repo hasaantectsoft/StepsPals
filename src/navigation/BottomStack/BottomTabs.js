@@ -7,6 +7,7 @@ import Settings from '../../screens/AuthStack/Settings/Settings';
 import GraveYard from '../../screens/AuthStack/GraveYard/GraveYard';
 import LeaderBoard from '../../screens/AuthStack/LeaderBoard/LeaderBoard';
 import Statistics from '../../screens/AuthStack/Statistics/Statistics';
+import CollectionScreen from '../../screens/AuthStack/CollectionScreen/CollectionScreen';
 // import { Paw } from '../../assets/svgs';
 const Tab = createBottomTabNavigator();
 
@@ -15,7 +16,8 @@ const tabScreens = {
   Settings: Settings,
   GraveYard: GraveYard,
   LeaderBoard: LeaderBoard,
-  Statistics: Statistics
+  Statistics: Statistics,
+  Collecition:CollectionScreen
 };
 
 const BottomStack = () => (

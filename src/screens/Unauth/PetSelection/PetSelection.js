@@ -1,10 +1,15 @@
 import React, { useState } from "react";
-import { View, ImageBackground, Text, TouchableOpacity } from "react-native";
+import { View, ImageBackground, Text, TouchableOpacity, Pressable } from "react-native";
 import { Styles } from "./styles";
 import { cat, dino, dog } from "../../../assets/svgs";
 import { SvgXml } from "react-native-svg";
 import { useNavigation } from "@react-navigation/native";
 import NextButton from "../../../components/NextButton/NextButton";
+import { scale } from "react-native-size-matters";
+import { images } from "../../../assets/images";
+import { playButtonSound } from "../../../utils/SoundManager/SoundManager";
+import ScalePressable from "../../../components/ScalePressable/ScalePressable";
+import { SafeFlexView } from "../../../components";
 
 export default () => {
     const pets=[
@@ -28,10 +33,14 @@ export default () => {
     ];
     const [selectedPet, setSelectedPet] = useState(pets[0]);
     const navigation = useNavigation();
+    const handleNextPress = () => {
+        playButtonSound();
+        navigation.navigate("NameYourPer", { pet: selectedPet });
+    };
     return (
-        <View style={Styles.container}>
+        <SafeFlexView style={Styles.container}>
             <ImageBackground
-                source={require("../../../assets/images/required.png")}
+                source={images.required}
                 style={Styles.imgbg}
                 resizeMode="cover"
             >
@@ -44,27 +53,36 @@ export default () => {
                 <View style={Styles.petContainer}>
                     {pets.map((pet) => {
                         const isSelected = selectedPet?.id === pet.id;
+                        const Wrapper = isSelected ? ImageBackground : View;
                         return (
-                            <TouchableOpacity
+                            <Pressable
                                 key={pet.id}
                                 activeOpacity={0.8}
-                                onPress={() => setSelectedPet(pet)}
+                                onPress={() => {setSelectedPet(pet);playButtonSound()}}
                             >
-                                <View
-                                    style={[
-                                        Styles.petItem,
-                                        isSelected && Styles.selectedPetItem,
-                                    ]}
+                                <Wrapper
+                                    source={
+                                        isSelected
+                                            ? images.selected
+                                            : undefined
+                                    }
+                                    resizeMode="contain"
+                                    imageStyle={Styles.selectedBgImage}
+                                    style={[Styles.petItem]}
                                 >
-                                    <SvgXml xml={pet.svg} height={80} width={90} />
+                                    <SvgXml style={{
+                                        marginVertical: scale(10),
+                                    }} xml={pet.svg} height={80} width={90} />
                                     <Text style={Styles.petName}>{pet.name}</Text>
-                                </View>
-                            </TouchableOpacity>
+                                </Wrapper>
+                            </Pressable>
                         );
                     })}
                 </View>
-                <NextButton  onPress={() => navigation.navigate('NameYourPer', { pet: selectedPet })} />
+                <ScalePressable onPress={handleNextPress}>
+                <NextButton useTouchable={false} />
+                </ScalePressable>
             </ImageBackground>
-        </View >
+        </SafeFlexView >
     );
 }

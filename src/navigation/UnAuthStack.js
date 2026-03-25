@@ -7,8 +7,10 @@ import GivePermissions from '../screens/Unauth/Permissions/GivePermissions';
 import NameYourPer from '../screens/Unauth/NameYourPer/NameYourPer';
 import Settings from '../screens/AuthStack/Settings/Settings';
 import SubscriptionScreen from '../screens/AuthStack/SubscriptionScreen/SubscriptionScreen';
+import { useSelector } from 'react-redux';
 function UnAuthStack() {
   const Stack = createNativeStackNavigator();
+  const imnewaccount = useSelector(state => state.tutorialReducer?.isnewuser);
 
   const screens = {
     Landing: LandingScreen,
@@ -22,7 +24,8 @@ function UnAuthStack() {
 
   return (
     <Stack.Navigator
-      initialRouteName="SubscriptionScreen"
+      
+      initialRouteName={imnewaccount ? 'Landing' : 'PetSelection'}
       screenOptions={{
         headerShown: false,
         statusBarAnimation: 'fade',

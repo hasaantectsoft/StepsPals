@@ -1,12 +1,23 @@
 {
   "colors": {
+    "waterblue":"#6ECAFF",
     "primary": "#FEEA88",
-    "oragne":"#E89B4C",
-    "DARKRED":"##D93F41",
-    "darkblue":"#2D3E50",
-    "brightgreen":"#4CAF50",
+    "lightgrey":"#B2CAC7",
+    "yellow": "rgba(255, 253, 110, 1)",
+    "oragne": "#E89B4C",
+    "DARKRED": "##D93F41",
+    "darkblue": "#2D3E50",
+    "brightgreen": "#4CAF50",
     "brown": "#6F5548",
+    "darkbrown": "#232220",
+    "unfilledhomebar":"#92A3A1",
     "secondary": "#2ecc71",
+    "yellodimranklegend":"#FFDE94",
+    "platinumranklegend":"#10ADBE",
+    "goldranklegend":"#CB6135",
+    "silverraked":"#437594",
+    "bronzeraked":"#A53C1C",
+    "unrankedranklegend":"#B57807",
     "accent": "#e74c3c",
     "background": "#ecf0f1",
     "text": "#2c3e50",
@@ -22,8 +33,10 @@
     "darkTransparent": "rgba(0,0,0,0.45)",
     "lightTransparent": "rgba(255,255,255,0.45)",
     "selectedPetBg": "#FFF074",
-    "grayBlack":"#2F3450",
-    "ligtBrown":"#806D58"
+    "grayBlack": "#2F3450",
+    "ligtBrown": "#806D58",
+    "DarkGreen": "#cee892",
+    "blue":"#359AF9"
   },
   "typography": {
     "heading": {
@@ -38,9 +51,9 @@
       "fontFamily": "Roboto-Light",
       "fontWeight": "normal"
     },
-    "Retro":{
-      "fontFamily":"PressStart2P-Regular",
-      "fontWeight":"normal"
+    "Retro": {
+      "fontFamily": "PressStart2P-Regular",
+      "fontWeight": "normal"
     }
   },
   "borders": {
@@ -53,19 +66,28 @@
   "shadows": {
     "small": {
       "shadowColor": "#000",
-      "shadowOffset": {"width": 0, "height": 2},
+      "shadowOffset": {
+        "width": 0,
+        "height": 2
+      },
       "shadowOpacity": 0.2,
       "shadowRadius": 2
     },
     "medium": {
       "shadowColor": "#000",
-      "shadowOffset": {"width": 0, "height": 4},
+      "shadowOffset": {
+        "width": 0,
+        "height": 4
+      },
       "shadowOpacity": 0.3,
       "shadowRadius": 4
     },
     "large": {
       "shadowColor": "#000",
-      "shadowOffset": {"width": 0, "height": 6},
+      "shadowOffset": {
+        "width": 0,
+        "height": 6
+      },
       "shadowOpacity": 0.4,
       "shadowRadius": 6
     }

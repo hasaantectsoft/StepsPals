@@ -1384,6 +1384,11 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@kingstinct/react-native-healthkit@^13.3.0":
+  version "13.3.0"
+  resolved "https://registry.yarnpkg.com/@kingstinct/react-native-healthkit/-/react-native-healthkit-13.3.0.tgz#a8237cf2c108c16077db68fc411f4133b8eb0e16"
+  integrity sha512-tIr8N82aZCL2uasBWKT7c+7f1Fp5uQZ/R+DXDCAZKe4D6RTzMcWylFI5mZLZEBv/BN6W8gZBLytGfiys0fLrAw==
+
 "@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1":
   version "5.1.1-v1"
   resolved "https://registry.yarnpkg.com/@nicolo-ribaudo/eslint-scope-5-internals/-/eslint-scope-5-internals-5.1.1-v1.tgz#dbf733a965ca47b1973177dc0bb6c889edcfb129"
@@ -1411,6 +1416,11 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
+
+"@notifee/react-native@^9.1.8":
+  version "9.1.8"
+  resolved "https://registry.yarnpkg.com/@notifee/react-native/-/react-native-9.1.8.tgz#3d55cb3fbcc21f9e35931e366afdf64b294da891"
+  integrity sha512-Az/dueoPerJsbbjRxu8a558wKY+gONUrfoy3Hs++5OqbeMsR0dYe6P+4oN6twrLFyzAhEA1tEoZRvQTFDRmvQg==
 
 "@react-native-async-storage/async-storage@^3.0.1":
   version "3.0.1"
@@ -3028,6 +3038,11 @@ data-view-byte-offset@^1.0.1:
     call-bound "^1.0.2"
     es-errors "^1.3.0"
     is-data-view "^1.0.1"
+
+date-fns@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-4.1.0.tgz#64b3d83fff5aa80438f5b1a633c2e83b8a1c2d14"
+  integrity sha512-Ukq0owbQXxa/U3EGtsdVBkR1w7KOQ5gIBqdH2hkvknzZPYvBxb/aa6E8L7tmjFtkwZBu3UXBbjIgPo/Ez4xaNg==
 
 dayjs@^1.8.15:
   version "1.11.19"
@@ -6039,12 +6054,22 @@ react-native-actions-sheet@^0.9.5:
   resolved "https://registry.yarnpkg.com/react-native-actions-sheet/-/react-native-actions-sheet-0.9.8.tgz#f6c213bdb7cae244495cd54513d5b458cf84f18e"
   integrity sha512-hoFLKEoknwQEuxANbRxtg/LofvhqqLYbtIp/XiqC2cI+nyfYVra5i62A75ksZdBAqB6iZ3nolOwL8voLfSUXIw==
 
+react-native-android-widget@^0.20.1:
+  version "0.20.1"
+  resolved "https://registry.yarnpkg.com/react-native-android-widget/-/react-native-android-widget-0.20.1.tgz#a1d5482933e52d7ffed4bb0919a0d39b744a8f4d"
+  integrity sha512-m3akQCyoG6XUH8OLHOyL3/Xxx/XXTXf9ZyFYmWvSQrv1YUaZ7kVjmeLIYnaNz+qQ9VrTAS9OygCxZQptqCGzjQ==
+
 react-native-animatable@1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/react-native-animatable/-/react-native-animatable-1.4.0.tgz#05a259e1566081ce7d3f6fba1e92edc65f5c6160"
   integrity sha512-DZwaDVWm2NBvBxf7I0wXKXLKb/TxDnkV53sWhCvei1pRyTX3MVFpkvdYBknNBqPrxYuAIlPxEp7gJOidIauUkw==
   dependencies:
     prop-types "^15.8.1"
+
+react-native-background-fetch@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/react-native-background-fetch/-/react-native-background-fetch-4.3.0.tgz#0296719989090f04d087b1f2a25e3b99a645ef09"
+  integrity sha512-ZeHI51pBeFEHGv+MTm+Ui8o75SvCLx3G6J4WVPH1LwAbS8TzWW1PBqa/3znHp2Ek0/yb2dYeKxE9X9rP7oiykA==
 
 react-native-dotenv@^3.4.9:
   version "3.4.11"
@@ -6067,10 +6092,10 @@ react-native-gesture-handler@^2.16.1:
     hoist-non-react-statics "^3.3.0"
     invariant "^2.2.4"
 
-react-native-image-crop-picker@^0.40.2:
-  version "0.40.3"
-  resolved "https://registry.yarnpkg.com/react-native-image-crop-picker/-/react-native-image-crop-picker-0.40.3.tgz#a6b135cd1218a33ad126c1a148ec5a1bd01737ff"
-  integrity sha512-45PKcTnsnLS+E36YwoXutllQdRSOuOsMN0IRcAcwsFXOuAQIOtugXlAuGGL28JHKb/ATaSSPvqCSrdG65Jv3GA==
+react-native-health-connect@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/react-native-health-connect/-/react-native-health-connect-3.5.0.tgz#fbb88b5c111c88c8c8dc3e53a859ff729bd6bc3f"
+  integrity sha512-lIfiRps+jjDs83SApQ3AzBzU2cITwn8nPRl3v+52imWJPVw7qltAXkduioOfqFqOQJuEOwd1Wei3qtMTYbTaag==
 
 react-native-iphone-x-helper@^1.0.3, react-native-iphone-x-helper@^1.3.1:
   version "1.3.1"
@@ -6106,6 +6131,11 @@ react-native-modal@^13.0.1:
   integrity sha512-jCUR2DAskuZtVIbnt2ZssX70DCbTLydkL1Glv1Fc/fqVIhq1LpwBK2hKgSf9VIINXFnDjjGIMIC9HhDXnW7Enw==
   dependencies:
     react-native-animatable "1.4.0"
+
+react-native-nitro-modules@^0.35.0:
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/react-native-nitro-modules/-/react-native-nitro-modules-0.35.0.tgz#e026055bceb1e5b43a54b131d0740b8e61412b2b"
+  integrity sha512-Eho1yEcLbsteGpBFn2XZOp5FIptnEciWzuYBW49S0jo41Un2LeyesIO/MqYLY/c5o7D9Fw9th4pxGtV7OAb0+g==
 
 react-native-permissions@^3.10.1:
   version "3.10.1"
@@ -6171,6 +6201,16 @@ react-native-slider@^0.11.0:
   integrity sha512-jV9K87eu9uWr0uJIyrSpBLnCKvVlOySC2wynq9TFCdV9oGgjt7Niq8Q1A8R8v+5GHsuBw/s8vEj1AAkkUi+u+w==
   dependencies:
     prop-types "^15.5.6"
+
+react-native-sound-player@^0.14.5:
+  version "0.14.5"
+  resolved "https://registry.yarnpkg.com/react-native-sound-player/-/react-native-sound-player-0.14.5.tgz#cb9f854ab18859fd955e23448d97c85da0af29d9"
+  integrity sha512-/fCP91KNNCJ8RindTMERklLCbQ+Vjbd6aGY7ZX2W92mRNvAkbPCQ99PZkvYqJsC7VgUn18rxvGmneZbhb7LnxQ==
+
+react-native-sound@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/react-native-sound/-/react-native-sound-0.13.0.tgz#ec8a5436ea748c5888dfbef6e39d8a27e97e8aac"
+  integrity sha512-SnREzaV0fmpYNuDV1Y8M7FutmaYei0pKBgpldULKKJMkoA3DBv5ppyRxY+oxRQ7HwEpt6LsonrKgM+13GH/tCw==
 
 react-native-svg@^15.15.3:
   version "15.15.3"

@@ -5,40 +5,11 @@ import {
   request,
   requestMultiple,
   requestNotifications,
-  requestLocationAccuracy,
-  openSettings,
 } from 'react-native-permissions';
-
-const handlePermission = result => {
-  let isPermitted = false;
-  switch (result) {
-    case RESULTS.UNAVAILABLE:
-      console.warn(
-        'This feature is not available (on this device / in this context)',
-      );
-      break;
-    case RESULTS.DENIED:
-      console.warn(
-        'The permission has not been requested / is denied but requestable',
-      );
-      break;
-    case RESULTS.LIMITED:
-      console.log(
-        '[Test]',
-        'The permission is limited: some actions are possible',
-      );
-      isPermitted = true;
-      break;
-    case RESULTS.GRANTED:
-      console.log('[Test]', 'The permission is granted');
-      isPermitted = true;
-      break;
-    case RESULTS.BLOCKED:
-      console.warn('The permission is denied and not requestable anymore');
-      break;
-  }
-  return isPermitted;
-};
+import { handlePermission } from './extra/handlePermission';
+import { authorizeHealthKit } from '../healthkit';
+import { authorizationStatusFor } from '@kingstinct/react-native-healthkit';
+import { Linking } from 'react-native';
 
 const permissionUtils = {
   getSinglePermission: async permission => {
@@ -47,7 +18,6 @@ const permissionUtils = {
       const result = await request(permission);
       return handlePermission(result);
     } catch (error) {
-      //handle error
       return isPermitted;
     }
   },
@@ -57,14 +27,12 @@ const permissionUtils = {
     try {
       const results = await requestMultiple(permissions);
 
-      // Check each permission result
       for (let i = 0; i < permissions.length; i++) {
         isPermitted = handlePermission(results[permissions[i]]) || isPermitted;
       }
 
       return isPermitted;
     } catch (error) {
-      // Handle error
       return isPermitted;
     }
   },
@@ -78,46 +46,40 @@ const permissionUtils = {
   },
   requestHealthPermission: async () => {
     if (Platform.OS === 'android') {
-      const result = await request(PERMISSIONS.ANDROID.ACTIVITY_RECOGNITION);
-      return result === RESULTS.GRANTED || result === RESULTS.LIMITED;
+      try {
+        const result = await request(PERMISSIONS.ANDROID.ACTIVITY_RECOGNITION);
+        return result === RESULTS.GRANTED || result === RESULTS.LIMITED;
+      } catch (e) {
+        return false;
+      }
     }
+
     if (Platform.OS === 'ios') {
       try {
-        const HealthKit = require('@kingstinct/react-native-healthkit').default;
-        const { HKQuantityTypeIdentifierStepCount } =
-          require('@kingstinct/react-native-healthkit');
-        await HealthKit.requestAuthorization([
-          HKQuantityTypeIdentifierStepCount,
-        ]);
-        return true;
+
+        const status = await authorizationStatusFor('HKQuantityTypeIdentifierStepCount');
+        // 0 = NOTDETERMINED, 1 = SHARINGDENIED, 2 = SHARINGAUTHORIZED
+        if (status === 2) {
+          return true;
+        }
+
+        if (status === 1) {
+             const grantedRetry = await authorizeHealthKit();
+          if (grantedRetry) return true;
+          try {
+            await Linking.openSettings();
+          } catch (err) {
+          }
+          return false;
+        }
+        const granted = await authorizeHealthKit();
+        return !!granted;
       } catch (e) {
-        openSettings();
         return false;
       }
     }
+
     return false;
-  },
-  openSettings,
-  requestLocationAccuracyPermission: async () => {
-    try {
-      const accuracy = await requestLocationAccuracy({
-        purposeKey:
-          'Need to fetch your location to show active route between two points',
-      });
-      console.log('[Test]', `Location accuracy is: ${accuracy}`);
-      if (
-        accuracy === 'denied' ||
-        accuracy === 'blocked' ||
-        accuracy === 'unavailable'
-      ) {
-        // ask user to allow permission from app setting by using alert or toast
-        return false;
-      }
-      return true;
-    } catch (error) {
-      console.error(error);
-      return false;
-    }
   },
 };
 

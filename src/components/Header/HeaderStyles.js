@@ -1,12 +1,12 @@
 import { StyleSheet } from "react-native";
-import { scale } from "react-native-size-matters";
+import { moderateScale, scale } from "react-native-size-matters";
 import { Theme } from "../../libs";
 
 export default StyleSheet.create({
     row: {
         flexDirection: "row",
         alignItems: "center",
-        paddingHorizontal: scale(16),
+        paddingHorizontal: scale(1),
         paddingVertical: scale(12),
         marginBottom: scale(8),
     },
@@ -23,6 +23,7 @@ export default StyleSheet.create({
         lineHeight: scale(20),
         fontSize: scale(14),
         color: Theme.colors.black,
+        right:moderateScale(5)
     },
     titleContainer: {
         justifyContent: "center",

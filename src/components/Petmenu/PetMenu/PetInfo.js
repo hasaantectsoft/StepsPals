@@ -1,35 +1,23 @@
-import { Dimensions, Image, StyleSheet, Text, View } from "react-native";
+import { Dimensions, Text, View } from "react-native";
+import PetSpriteStill from "../../PetSprites/PetSpriteStill/PetSpriteStill";
+import { styles } from "./PetInfoStyles";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
-const isSmallScreen = SCREEN_WIDTH <= 375;
 
 export default function PetInfo({ pet }) {
   return (
     <View style={styles.petInfo}>
       <Text style={styles.petName}>{pet.name}</Text>
-      <Text style={styles.petDays}>{pet.days} days</Text>
-      <Image source={pet.image} style={styles.petImage} resizeMode="contain" />
+      <Text style={styles.petDays}>{pet.days === "MAX" ? "MAX" : `${pet.days} days`}</Text>
+      <View style={styles.petImage}>
+        <PetSpriteStill
+          petkey={pet.id}
+          stage={pet.stage}
+          condition={pet.condition}
+          size={SCREEN_WIDTH * 0.3}
+          canvasWidth={SCREEN_WIDTH * 0.3}
+        />
+      </View>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  petInfo: {
-    alignItems: "center",
-  },
-  petName: {
-    fontFamily: "PressStart2P_400Regular",
-    fontSize: isSmallScreen ? 18 : 22,
-    textAlign: "center",
-  },
-  petDays: {
-    fontFamily: "PressStart2P_400Regular",
-    fontSize: isSmallScreen ? 12 : 14,
-    marginVertical: 4,
-  },
-  petImage: {
-    width: SCREEN_WIDTH * 0.3,
-    height: SCREEN_WIDTH * 0.3,
-    marginVertical: 10,
-  },
-});

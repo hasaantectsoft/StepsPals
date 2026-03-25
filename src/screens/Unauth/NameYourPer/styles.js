@@ -10,6 +10,7 @@ export const styles = StyleSheet.create({
     },
     headerContainer: {
         paddingTop: scale(30),
+        
     },
     wrapper: {
         flex: 1,
@@ -37,15 +38,13 @@ export const styles = StyleSheet.create({
         color: Theme.colors.darkblue,
     },
     card: {
-        backgroundColor: Theme.colors.oragne,
-        borderWidth: 4,
-        borderColor: Theme.colors.white,
         borderRadius: scale(12),
         paddingVertical: scale(24),
         paddingHorizontal: scale(20),
         alignItems: "center",
         width: "100%",
         maxWidth: scale(250),
+        marginBottom: scale(100),
     },
     title: {
         fontFamily: Theme.typography.Retro.fontFamily,
@@ -56,8 +55,10 @@ export const styles = StyleSheet.create({
     errorText: {
         fontFamily: Theme.typography.Retro.fontFamily,
         fontSize: scale(6),
-        color: Theme.colors.DARKRED,
-        marginTop: scale(8),
+        color: Theme.colors.brown,
+        textAlign: 'center',
+        lineHeight: scale(10),
+        // marginTop: scale(8),
     },
     petImageWrap: {
         marginBottom: scale(16),

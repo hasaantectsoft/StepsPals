@@ -2,26 +2,46 @@ import React, { useState } from "react";
 import { View, Text, ImageBackground } from "react-native";
 import { useRoute, useNavigation } from "@react-navigation/native";
 import { SvgXml } from "react-native-svg";
+import { useSelector, useDispatch } from "react-redux";
 import { Styles } from "./Styles";
 import { Header } from "../../../components";
 import StepSlider from "../../../components/SelectYourGoal/StepSlider";
 import RetroDoneButton from "../../../components/SelectYourGoal/RetroDoneButton";
+import { images } from "../../../assets/images";
+import { setPetName, setPetKey, setPetSteps, setPetCreatedAt, updatePet } from "../../../redux/slices/petslice";
+import { setSignedIn } from "../../../redux/slices/authSlice";
+import { setIsMain } from "../../../redux/slices/ismain";
+import { setPendingEggHatch } from "../../../redux/slices/startoverpetslice";
 
 export default function SelectGoalScreen() {
     const { params } = useRoute();
     const navigation = useNavigation();
+    const dispatch = useDispatch();
     const pet = params?.pet;
     const petName = params?.petName;
-    const [stepGoal, setStepGoal] = useState(5000);
+    const [stepGoal, setStepGoal] = useState(100);
+    
+    const imnewaccount = useSelector((state) => state.tutorialReducer?.isnewuser);
+    const goToMain = () => {
+        dispatch(setPetName(petName ?? ''));
+        dispatch(setPetKey(String(pet?.id ?? '')));
+        dispatch(setPetSteps(stepGoal ?? 100));
+        dispatch(setPetCreatedAt(Date.now()));
+        dispatch(updatePet({ missedDays: 0, petisdead: false }));
+        dispatch(setPendingEggHatch(true));
+        dispatch(setSignedIn(true));
+        dispatch(setIsMain(true));
+        navigation.reset({ index: 0, routes: [{ name: "Main" }] });
+    };
 
     return (
         <View style={Styles.container}>
             <ImageBackground
-                source={require("../../../assets/images/Statistics.png")}
+                source={images.Statistics}
                 style={Styles.imgbg}
                 resizeMode="cover"
             >
-                <Header centersub={true} title="Set your" subtitle="daily Step Goal" onBackPress={() => navigation.goBack()} />
+                <Header centersub={true} title="Set your" subtitle="daily Step Goal" onBackPress={() => navigation.replace('NameYourPer',{pet, petName})} />
                 <View style={Styles.content}>
                     <Text style={Styles.descText}>
                         This is the number of steps you’ll aim to walk each day.
@@ -43,7 +63,7 @@ export default function SelectGoalScreen() {
                         
                     </View>
                     <StepSlider value={stepGoal} onChange={setStepGoal} />
-                    <RetroDoneButton onPress={() => navigation.navigate('GivePermissions', { pet, petName })} />
+                    <RetroDoneButton onPress={() => imnewaccount ? navigation.navigate('GivePermissions', { pet, petName, stepGoal }) : goToMain()} />
                     
                 </View>
             </ImageBackground>

@@ -8,6 +8,7 @@ import NativeRightIconInput from './NativeRightIconInput/NativeRightIconInput';
 import NativeActionSheet from './NativeActionSheet/NativeActionSheet';
 import Header from './Header/Header';
 import NextButton from './NextButton/NextButton';
+import MessageBox from './MessageBox/MessageBox';
 
 export {
   NativeButton,
@@ -20,4 +21,5 @@ export {
   NativeActionSheet,
   Header,
   NextButton,
+  MessageBox,
 };
