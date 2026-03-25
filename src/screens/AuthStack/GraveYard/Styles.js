@@ -50,7 +50,7 @@ export const styles = StyleSheet.create({
     left: 0,
     right: 0,
     ...combineStyles.regular10,
-    fontSize: moderateScale(8),
+    fontSize: moderateScale(6.5),
     textAlign: "center",
   },
 
