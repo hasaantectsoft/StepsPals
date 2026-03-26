@@ -5,6 +5,7 @@ import { authorizeHealthKit } from './healthkit';
 import { useDispatch } from 'react-redux';
 import { setProgressStep } from './redux/slices/progressSlice';
 import { fetchSteps } from './utils/handler/fetchsteps';
+import { mergeIOSWidgetStepsOnly } from './utils/widgetSync';
 
 export default function HealthKitInitializer() {
   const dispatch = useDispatch();
@@ -44,6 +45,7 @@ export default function HealthKitInitializer() {
         const rounded = Number.isFinite(steps) ? Math.round(steps) : 0;
         console.log('Steps today:', rounded);
         dispatch(setProgressStep(rounded));
+        mergeIOSWidgetStepsOnly(rounded);
       } catch (e) {
         console.error(e);
       }

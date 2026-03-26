@@ -11,6 +11,7 @@ import { congratulationsound, playEggCrackSound } from "../../../utils/SoundMana
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react"
 import { PuffMainSprite } from "../../../components/PetSprites/puff"
 import { getPetSpriteComponent } from "../../../components/PetSprites/petSpriteMap"
+import { getFixedBabySpriteScale } from "../../../components/PetSprites/ActivePetSprite"
 import { tutorial9svg, totorial10svg } from "../../../assets/svgs"
 
 const TAP_CRACK1 = 2
@@ -60,10 +61,11 @@ export default () => {
     const frame = BABY_FRAME[key] ?? BABY_FRAME["3"]
 
     const spriteCanvasW = moderateScale(120)
-    const babyScale = 3.5
-    const puffScale = 3.5
+    const babyScale = getFixedBabySpriteScale()
+    const puffScale = babyScale
     const babyOffsetX = (spriteCanvasW - frame.w * babyScale) / 2
     const puffOffsetX = (spriteCanvasW - 56 * puffScale) / 2
+    const spriteCanvasH = Math.max(moderateScale(120), Math.ceil(frame.h * babyScale + moderateScale(28)))
     const puffOffsetY = moderateScale(-18)
 
     useEffect(() => {
@@ -195,7 +197,7 @@ export default () => {
                         <View style={[style.petSlot, style.hatchStack]}>
                             <BabySprite
                                 canvasWidth={spriteCanvasW}
-                                canvasHeight={moderateScale(120)}
+                                canvasHeight={spriteCanvasH}
                                 spriteScale={babyScale}
                                 offsetX={babyOffsetX}
                             />
@@ -204,7 +206,7 @@ export default () => {
                                     <PuffMainSprite
                                         loop={false}
                                         canvasWidth={spriteCanvasW}
-                                        canvasHeight={moderateScale(120)}
+                                        canvasHeight={spriteCanvasH}
                                         spriteScale={puffScale}
                                         offsetX={puffOffsetX}
                                         offsetY={puffOffsetY}

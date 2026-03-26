@@ -21,6 +21,7 @@ export default function RetroStepsBar({
   onAllCareCheckedChange,
   onCareActionChange,
   onDisabledCarePress,
+  onCareBarStateChange,
 }) {
   const [boul, setBoul] = useState(0);
   const [pop, setpop] = useState(0);
@@ -53,6 +54,10 @@ export default function RetroStepsBar({
   useEffect(() => {
     onAllCareCheckedChange?.(allCareChecked);
   }, [allCareChecked, onAllCareCheckedChange]);
+
+  useEffect(() => {
+    onCareBarStateChange?.({ boul, wat, pop });
+  }, [boul, wat, pop, onCareBarStateChange]);
 
   const iconConfigs = useMemo(
     () => ([

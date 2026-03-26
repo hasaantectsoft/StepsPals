@@ -8,6 +8,7 @@ import { cracks, eggsvg } from "../../assets/Cracks";
 import { congratulationsound, playEggCrackSound } from "../../utils/SoundManager/SoundManager";
 import { PuffMainSprite } from "../PetSprites/puff";
 import { getPetSpriteComponent } from "../PetSprites/petSpriteMap";
+import { getFixedBabySpriteScale } from "../PetSprites/ActivePetSprite";
 import { style as styles } from "./styles";
 const TAP_CRACK1 = 2;
 const TAP_CRACK2 = 6;
@@ -34,10 +35,11 @@ export default function EggHatch({ onProceedAfterHatch }) {
   const frame = BABY_FRAME[key] ?? BABY_FRAME["3"];
 
   const spriteCanvasW = moderateScale(120);
-  const babyScale = 3.5;
-  const puffScale = 3.5;
+  const babyScale = getFixedBabySpriteScale();
+  const puffScale = babyScale;
   const babyOffsetX = (spriteCanvasW - frame.w * babyScale) / 2;
   const puffOffsetX = (spriteCanvasW - 56 * puffScale) / 2;
+  const spriteCanvasH = Math.max(moderateScale(120), Math.ceil(frame.h * babyScale + moderateScale(28)));
   const puffOffsetY = moderateScale(-18);
 
   useEffect(() => {
@@ -115,7 +117,7 @@ export default function EggHatch({ onProceedAfterHatch }) {
             <View style={[styles.petSlot, styles.hatchStack]}>
               <BabySprite
                 canvasWidth={spriteCanvasW}
-                canvasHeight={moderateScale(120)}
+                canvasHeight={spriteCanvasH}
                 spriteScale={babyScale}
                 offsetX={babyOffsetX}
               />
@@ -124,7 +126,7 @@ export default function EggHatch({ onProceedAfterHatch }) {
                   <PuffMainSprite
                     loop={false}
                     canvasWidth={spriteCanvasW}
-                    canvasHeight={moderateScale(120)}
+                    canvasHeight={spriteCanvasH}
                     spriteScale={puffScale}
                     offsetX={puffOffsetX}
                     offsetY={puffOffsetY}

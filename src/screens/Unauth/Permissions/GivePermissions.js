@@ -19,7 +19,7 @@ import { useNavigation } from "@react-navigation/native";
 import { setSignedIn } from "../../../redux/slices/authSlice";
 import { permissionUtils } from "../../../utils";
 import { scale } from "react-native-size-matters";
-import { setPetName, setPetKey, setPetSteps, setPetCreatedAt } from "../../../redux/slices/petslice";
+import { setPetName, setPetKey, setPetSteps, setPetCreatedAt, updatePet } from "../../../redux/slices/petslice";
 import { setProgressStep } from "../../../redux/slices/progressSlice";
 import { PRIVACY_URL, TERMS_URL } from "../../../utils/extra/links";
 import { setIsMain } from "../../../redux/slices/ismain";
@@ -170,6 +170,7 @@ export default () => {
                 dispatch(setPetKey(String(pet?.id ?? '')));
                 dispatch(setPetSteps(stepGoal ?? 242));
                 dispatch(setPetCreatedAt(Date.now()));
+                dispatch(updatePet({ missedDays: 0, petisdead: false, lastCheckedDate: null }));
                 dispatch(setPendingEggHatch(true));
                 dispatch(setSignedIn(true));
                 dispatch(setIsMain(true));

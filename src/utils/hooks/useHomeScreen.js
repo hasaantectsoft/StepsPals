@@ -58,6 +58,11 @@ export default function useHomeScreen() {
         if (!petcreatedat) return;
         const today = new Date().toISOString().split('T')[0];
         if (lastCheckedDate === today) return;
+        // First open: establish "checked today" without penalizing (step goal not met yet).
+        if (lastCheckedDate == null) {
+            dispatch(updatePet({ lastCheckedDate: today }));
+            return;
+        }
         const newMissedDays = step >= petsteps && petsteps > 0 ? 0 : missedDays + 1;
         dispatch(updatePet({ missedDays: newMissedDays, lastCheckedDate: today, petisdead: newMissedDays >= 3 }));
     }, [petcreatedat]);

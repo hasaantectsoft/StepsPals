@@ -1,9 +1,7 @@
 
 import { View } from "react-native";
 import { Styles } from "./styles";
-import {
-  LoaderKitView,
-} from 'react-native-loader-kit';
+
 export const LoadingState = () => {
     return (
         <View style={Styles.container}>

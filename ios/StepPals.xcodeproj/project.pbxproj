@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,11 +25,42 @@
 		154019C52F6A918500522FDA /* sadpopup2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 154019B42F6A918500522FDA /* sadpopup2.mp3 */; };
 		154019C62F6A918500522FDA /* chewingtwo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 154019AC2F6A918500522FDA /* chewingtwo.mp3 */; };
 		154019C82F6A943400522FDA /* cleanupswoosh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 154019C72F6A943400522FDA /* cleanupswoosh.mp3 */; };
+		157FE1B72F73F15F00A8A374 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FE1B62F73F15F00A8A374 /* WidgetKit.framework */; };
+		157FE1B92F73F15F00A8A374 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FE1B82F73F15F00A8A374 /* SwiftUI.framework */; };
+		157FE1CA2F73F16100A8A374 /* StepPalsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 157FE1B52F73F15F00A8A374 /* StepPalsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		157FE2102F73F21000210001 /* PressStart2P-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A676C90181145F6B131864C /* PressStart2P-Regular.ttf */; };
+		157FE2302F73F23000230001 /* StepWidgetReload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157FE2312F73F23000230002 /* StepWidgetReload.swift */; };
+		157FE2322F73F23000230003 /* StepWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 157FE2332F73F23000230004 /* StepWidget.m */; };
+		157FE2342F73F24000240001 /* StepWidgetBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157FE2352F73F24000240002 /* StepWidgetBridge.swift */; };
 		5CAEF2BE167FC99F9B3FFE90 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		7A4842DC511C41119FE7D560 /* PressStart2P-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A676C90181145F6B131864C /* PressStart2P-Regular.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		157FE1C82F73F16100A8A374 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 157FE1B42F73F15F00A8A374;
+			remoteInfo = StepPalsWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		157FE1CB2F73F16100A8A374 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				157FE1CA2F73F16100A8A374 /* StepPalsWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0A676C90181145F6B131864C /* PressStart2P-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PressStart2P-Regular.ttf"; path = "../src/assets/fonts/PressStart2P-Regular.ttf"; sourceTree = "<group>"; };
@@ -54,6 +85,13 @@
 		154019B62F6A918500522FDA /* successfulgrowth2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = successfulgrowth2.mp3; sourceTree = "<group>"; };
 		154019B72F6A918500522FDA /* tadafanfarea6313.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tadafanfarea6313.mp3; sourceTree = "<group>"; };
 		154019C72F6A943400522FDA /* cleanupswoosh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cleanupswoosh.mp3; sourceTree = "<group>"; };
+		157FE1B52F73F15F00A8A374 /* StepPalsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StepPalsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		157FE1B62F73F15F00A8A374 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		157FE1B82F73F15F00A8A374 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		157FE1D02F73F1A600A8A374 /* StepPalsWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StepPalsWidgetExtension.entitlements; sourceTree = "<group>"; };
+		157FE2312F73F23000230002 /* StepWidgetReload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StepWidgetReload.swift; path = StepPals/StepWidgetReload.swift; sourceTree = "<group>"; };
+		157FE2332F73F23000230004 /* StepWidget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = StepWidget.m; path = StepPals/StepWidget.m; sourceTree = "<group>"; };
+		157FE2352F73F24000240002 /* StepWidgetBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StepWidgetBridge.swift; path = StepPals/StepWidgetBridge.swift; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-StepPals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepPals.debug.xcconfig"; path = "Target Support Files/Pods-StepPals/Pods-StepPals.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-StepPals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepPals.release.xcconfig"; path = "Target Support Files/Pods-StepPals/Pods-StepPals.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-StepPals.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StepPals.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +99,20 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = StepPals/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		157FE1CE2F73F16100A8A374 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 157FE1B42F73F15F00A8A374 /* StepPalsWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		157FE1BA2F73F15F00A8A374 /* StepPalsWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (157FE1CE2F73F16100A8A374 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = StepPalsWidget; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
@@ -71,12 +123,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		157FE1B22F73F15F00A8A374 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157FE1B92F73F15F00A8A374 /* SwiftUI.framework in Frameworks */,
+				157FE1B72F73F15F00A8A374 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		13B07FAE1A68108700A75B9A /* StepPals */ = {
 			isa = PBXGroup;
 			children = (
+				157FE2312F73F23000230002 /* StepWidgetReload.swift */,
+				157FE2352F73F24000240002 /* StepWidgetBridge.swift */,
+				157FE2332F73F23000230004 /* StepWidget.m */,
 				153F1BE42F5FEB05004D9415 /* StepPals.entitlements */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				761780EC2CA45674006654EE /* AppDelegate.swift */,
@@ -92,6 +156,8 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-StepPals.a */,
+				157FE1B62F73F15F00A8A374 /* WidgetKit.framework */,
+				157FE1B82F73F15F00A8A374 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,8 +196,10 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				157FE1D02F73F1A600A8A374 /* StepPalsWidgetExtension.entitlements */,
 				13B07FAE1A68108700A75B9A /* StepPals */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				157FE1BA2F73F15F00A8A374 /* StepPalsWidget */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -146,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* StepPals.app */,
+				157FE1B52F73F15F00A8A374 /* StepPalsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,15 +242,37 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				157FE1CB2F73F16100A8A374 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				157FE1C92F73F16100A8A374 /* PBXTargetDependency */,
 			);
 			name = StepPals;
 			productName = StepPals;
 			productReference = 13B07F961A680F5B00A75B9A /* StepPals.app */;
 			productType = "com.apple.product-type.application";
+		};
+		157FE1B42F73F15F00A8A374 /* StepPalsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 157FE1CF2F73F16100A8A374 /* Build configuration list for PBXNativeTarget "StepPalsWidgetExtension" */;
+			buildPhases = (
+				157FE1B12F73F15F00A8A374 /* Sources */,
+				157FE1B22F73F15F00A8A374 /* Frameworks */,
+				157FE1B32F73F15F00A8A374 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				157FE1BA2F73F15F00A8A374 /* StepPalsWidget */,
+			);
+			name = StepPalsWidgetExtension;
+			productName = StepPalsWidgetExtension;
+			productReference = 157FE1B52F73F15F00A8A374 /* StepPalsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -189,10 +280,14 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
+					};
+					157FE1B42F73F15F00A8A374 = {
+						CreatedOnToolsVersion = 26.2;
 					};
 				};
 			};
@@ -210,6 +305,7 @@
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* StepPals */,
+				157FE1B42F73F15F00A8A374 /* StepPalsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -242,6 +338,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		157FE1B32F73F15F00A8A374 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157FE2102F73F21000210001 /* PressStart2P-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -269,9 +373,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-StepPals/Pods-StepPals-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-StepPals/Pods-StepPals-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -308,9 +416,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-StepPals/Pods-StepPals-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-StepPals/Pods-StepPals-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -324,11 +436,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				157FE2302F73F23000230001 /* StepWidgetReload.swift in Sources */,
+				157FE2342F73F24000240001 /* StepWidgetBridge.swift in Sources */,
+				157FE2322F73F23000230003 /* StepWidget.m in Sources */,
 				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		157FE1B12F73F15F00A8A374 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		157FE1C92F73F16100A8A374 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 157FE1B42F73F15F00A8A374 /* StepPalsWidgetExtension */;
+			targetProxy = 157FE1C82F73F16100A8A374 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
@@ -398,6 +528,101 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		157FE1CC2F73F16100A8A374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = StepPalsWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = FMA8Z3SFNW;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StepPalsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StepPalsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crumbles.StepPalsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		157FE1CD2F73F16100A8A374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = StepPalsWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = FMA8Z3SFNW;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StepPalsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StepPalsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crumbles.StepPalsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -565,6 +790,15 @@
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		157FE1CF2F73F16100A8A374 /* Build configuration list for PBXNativeTarget "StepPalsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				157FE1CC2F73F16100A8A374 /* Debug */,
+				157FE1CD2F73F16100A8A374 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

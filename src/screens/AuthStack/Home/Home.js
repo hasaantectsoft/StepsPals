@@ -1,4 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
+import { store } from "../../../redux/store";
+import { syncIOSWidgetFromHomeState } from "../../../utils/widgetSync";
 import { Animated, Image, ImageBackground, Pressable, Text, View, useWindowDimensions } from "react-native";
 import { SvgXml } from "react-native-svg";
 import { scale } from "react-native-size-matters";
@@ -13,7 +15,7 @@ import useHomeScreen from "../../../utils/hooks/useHomeScreen";
 import { careOnPetNudge } from "../../../utils/extra/offsets";
 import { careMap } from "../../../utils/extra/caremap";
 import { careDurations } from "../../../utils/extra/delay";
-import ActivePetSprite from "../../../components/PetSprites/ActivePetSprite";
+import ActivePetSprite, { getPetDisplaySpriteScale, PET_HOME_SPRITE_BASE } from "../../../components/PetSprites/ActivePetSprite";
 import { getPetDeathGhostComponent } from "../../../components/PetSprites/petSpriteMap";
 import { getCondition } from "../../../utils/petCondition";
 import { useDispatch, useSelector } from "react-redux";
@@ -31,7 +33,6 @@ import {playbottomtabsound, eatingsooundone, drinkingwatersound,  cleansound,eat
 import EggHatch from "../../../components/Egghatchmain";
 const TV_TOP_FRAC = 0.35;
 const TV_WIDTH_FRAC = 0.5;
-const PET_SPRITE_SCALE = 3.4;
 
 export default function HomeScreen() {
     const { width: winW, height: winH } = useWindowDimensions();
@@ -46,6 +47,7 @@ export default function HomeScreen() {
     const {  navigation, petname, petsteps, step, isComplete, starTapped, setStarTapped, cloudX, cloudY, starFlicker, } = useHomeScreen();
     const dispatch = useDispatch();
     const { missedDays, petkey, petcreatedat, hasShown7DayModal, hasShown21DayModal } = useSelector((s) => s.petReducer);
+    const careSpriteScale = getPetDisplaySpriteScale(PET_HOME_SPRITE_BASE, petcreatedat);
     const pendingEggHatch = useSelector((s) => s.startoverpetslice?.pendingEggHatch);
     const collectionPets = useSelector((s) => s.petCollectionReducer?.pets ?? []);
     const isPetDead = missedDays >= 3;
@@ -59,6 +61,7 @@ export default function HomeScreen() {
     const careTimeoutRef = useRef(null);
     const [upgradeModal, setUpgradeModal] = useState(null); 
     const [adultFlowModal, setAdultFlowModal] = useState(null);
+    const [careBar, setCareBar] = useState({ boul: 0, wat: 0, pop: 0 });
     const messageTimeoutRef = useRef(null);
     const petDieModalTimeoutRef = useRef(null);
     const showDisabledMessage = useCallback((text, fromStar = false) => {
@@ -75,6 +78,19 @@ export default function HomeScreen() {
     useEffect(() => () => {
         if (careTimeoutRef.current) clearTimeout(careTimeoutRef.current);
     }, []);
+
+    useEffect(() => {
+        syncIOSWidgetFromHomeState(store.getState(), { ...careBar, starTapped });
+    }, [
+        careBar,
+        starTapped,
+        step,
+        petname,
+        petkey,
+        petsteps,
+        petcreatedat,
+        missedDays,
+    ]);
     useEffect(() => {
         if (!isPetDead) {
             setShowPetDieModal(false);
@@ -164,8 +180,8 @@ export default function HomeScreen() {
         if (starTapped && activeCareKey === "treat") return;
         playCareOnce(key);
     };
-    const pox = scale(105);
-    const poy = scale(-10);
+    const pox = scale(95);
+    const poy = scale(-20);
     const nudge = activeCareKey ? careOnPetNudge[activeCareKey] : null;
     const careOffsetX = nudge ? pox + nudge.x : pox;
     const careOffsetY = nudge ? poy + nudge.y : poy;
@@ -214,12 +230,12 @@ export default function HomeScreen() {
             </View>
 
             <SpriteLoader >
-                <ActivePetSprite activeCareKey={activeCareKey} spriteScale={PET_SPRITE_SCALE} offsetX={pox} offsetY={poy} />
+                <ActivePetSprite activeCareKey={activeCareKey} spriteScale={PET_HOME_SPRITE_BASE} offsetX={pox} offsetY={poy} />
                 {ActiveCareSprite && (
                     <ActiveCareSprite
                         offsetX={careOffsetX}
                         offsetY={careOffsetY}
-                        spriteScale={PET_SPRITE_SCALE}
+                        spriteScale={careSpriteScale}
                     />
                 )}
             </SpriteLoader>
@@ -230,6 +246,7 @@ export default function HomeScreen() {
                 onAllCareCheckedChange={setAllCareChecked}
                 onCareActionChange={handleCareActionChange}
                 onDisabledCarePress={showDisabledMessage}
+                onCareBarStateChange={setCareBar}
             />
             {disabledMessage && messageFromStar ? (
                 <View style={styles.starMessageWrap}>

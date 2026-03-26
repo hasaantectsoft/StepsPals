@@ -97,11 +97,5 @@ const styles = StyleSheet.create({
     width: BALL_SIZE,
     height: BALL_SIZE,
   },
-  cat: {
-    position: "absolute",
-    left: "50%",
-    marginLeft: -(width * 0.25) / 2,
-    width: width * 0.25,
-    height: width * 0.25,
-  },
+  
 });
