@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import './src/locals/i18n';
 import { Provider } from 'react-redux';
-import { AppState, Platform, StatusBar } from 'react-native';
+import { AppState, StatusBar } from 'react-native';
 import NetInfo from '@react-native-community/netinfo';
 import { PersistGate } from 'reduxjs-toolkit-persist/integration/react';
 import { QueryClient, QueryClientProvider, onlineManager } from 'react-query';
@@ -11,7 +11,7 @@ import AppNavigation from './src/navigation';
 import { store, persistedStore } from './src/redux/store';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { pauseBackgroundSound, preloadSounds, releaseSounds, resumeBackgroundSound, startAppSound } from './src/utils/SoundManager/SoundManager'
-import { authorizeHealthKit } from './src/healthkit';
+import HealthKitInitializer from './src/HealthKitInitializer';
 
 export default function App() {
   const queryClient = new QueryClient();
@@ -23,8 +23,6 @@ export default function App() {
 
 
   useEffect(() => {
-    if (Platform.OS === 'ios') authorizeHealthKit();
-
     preloadSounds();
 
     // Small delay to ensure sounds are loaded before playing
@@ -61,6 +59,7 @@ export default function App() {
                 edges={[ ]}
               >
                 <StatusBar  translucent barStyle="dark-content" backgroundColor="transparent" />
+                <HealthKitInitializer />
                 <AppNavigation />
               </SafeAreaView>
 

@@ -81,6 +81,7 @@ struct CareData: Codable {
     var cleanPoop: CareStatus
     var giveTreat: CareStatus
 
+    /// Same rules as `widgetsexanple/Shared/Types.swift` — one `care_done` asset for feed / water / poop when completed.
     static func getImageName(for careType: CareType, status: CareStatus) -> String {
         switch status {
         case .disabled:
@@ -88,16 +89,7 @@ struct CareData: Codable {
         case .pending:
             return getUnlockedImageName(for: careType)
         case .completed:
-            return getDoneImageName(for: careType)
-        }
-    }
-
-    private static func getDoneImageName(for careType: CareType) -> String {
-        switch careType {
-        case .feed: return "care_bowl_done"
-        case .giveWater: return "care_water_done"
-        case .cleanPoop: return "care_poop_done"
-        case .giveTreat: return "star_treat_done"
+            return "care_done"
         }
     }
 
@@ -106,7 +98,7 @@ struct CareData: Codable {
         case .feed: return "bowl_locked"
         case .giveWater: return "bottle_locked"
         case .cleanPoop: return "poop_locked"
-        case .giveTreat: return "star_treat_locked"
+        case .giveTreat: return "bowl_locked"
         }
     }
 
@@ -115,7 +107,7 @@ struct CareData: Codable {
         case .feed: return "bowl_unlocked"
         case .giveWater: return "bottle_unlocked"
         case .cleanPoop: return "poop_unlocked"
-        case .giveTreat: return "star_treat_unlocked"
+        case .giveTreat: return "bowl_unlocked"
         }
     }
 }

@@ -2,6 +2,8 @@
 //  TreatImageView.swift
 //  StepPalsWidget
 //
+//  Same asset names as `widgetsexanple/Shared/TreatImageView.swift` (star_treat_locked / unlocked / done).
+//
 
 import SwiftUI
 import WidgetKit
@@ -30,6 +32,6 @@ struct TreatImageView: View {
             .widgetAtlasSampling()
             .modifier(WidgetTintPropertiesModifier())
             .scaledToFit()
-            .frame(height: CGFloat(height))
+            .frame(width: CGFloat(height), height: CGFloat(height))
     }
 }

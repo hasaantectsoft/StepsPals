@@ -1,11 +1,13 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Animated, Easing, Platform } from "react-native";
 import { useSelector, useDispatch } from "react-redux";
-import { useNavigation } from "@react-navigation/native";
+import { useFocusEffect, useNavigation } from "@react-navigation/native";
 import { scale } from "react-native-size-matters";
 import { setProgressStep } from "../../redux/slices/progressSlice";
 import { updatePet } from "../../redux/slices/petslice";
 import { fetchSteps } from "../handler/fetchsteps";
+import { fetchTodayStepsIOS } from "../handler/fetchIosSteps";
+import { mergeIOSWidgetStepsOnly } from "../widgetSync";
 import { getCondition, getSpriteByCondition } from "../petCondition";
 import { babyDogsprites, teenDogsprites, adultDogsprites } from "../../assets/Sprites/Pets/Dog";
 import { babydinosprites, teendinosprites, adultdinosprites } from "../../assets/Sprites/Pets/Dino";
@@ -49,6 +51,22 @@ export default function useHomeScreen() {
             });
         }
     }, [dispatch]);
+
+    useFocusEffect(
+        useCallback(() => {
+            if (Platform.OS !== 'ios') return undefined;
+            let cancelled = false;
+            (async () => {
+                const rounded = await fetchTodayStepsIOS();
+                if (cancelled || rounded == null) return;
+                dispatch(setProgressStep(rounded));
+                mergeIOSWidgetStepsOnly(rounded);
+            })();
+            return () => {
+                cancelled = true;
+            };
+        }, [dispatch])
+    );
     useEffect(() => {
         if (pendingpetsteps !== null && pendingfrom !== null && Date.now() >= pendingfrom) {
             dispatch(updatePet({ petsteps: pendingpetsteps, pendingpetsteps: null, pendingfrom: null }));
