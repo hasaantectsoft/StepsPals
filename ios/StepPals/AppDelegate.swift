@@ -45,6 +45,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       }
     }
 
+    PhoneWatchSession.shared.activate()
+
     return true
   }
 }

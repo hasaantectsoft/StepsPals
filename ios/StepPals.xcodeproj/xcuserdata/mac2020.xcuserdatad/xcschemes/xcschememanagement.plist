@@ -9,10 +9,25 @@
 			<key>orderHint</key>
 			<integer>99</integer>
 		</dict>
-		<key>StepPalsWidgetExtension.xcscheme_^#shared#^_</key>
+		<key>StepPalsWatch Watch App.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>104</integer>
+		</dict>
+		<key>StepPalsWatchApp.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>104</integer>
+		</dict>
+		<key>StepPalsWatchWidgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>102</integer>
+		</dict>
+		<key>StepPalsWidgetExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>103</integer>
 		</dict>
 	</dict>
 </dict>

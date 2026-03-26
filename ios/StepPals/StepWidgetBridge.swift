@@ -4,7 +4,7 @@ import WidgetKit
 @objc(StepWidget)
 class StepWidget: NSObject {
 
-    private let appGroupID = "group.com.benleavitt.steppals.shared"
+    private let appGroupID = "group.com.crumbles.shared"
     private let appDataKey = "appData"
 
     @objc
@@ -14,6 +14,7 @@ class StepWidget: NSObject {
         suite.set(data, forKey: appDataKey)
         suite.synchronize()
         WidgetCenter.shared.reloadAllTimelines()
+        PhoneWatchSession.shared.syncAppDataToWatch()
     }
 
     /// Merges step count into existing widget JSON (used if steps refresh without full home payload).
@@ -29,6 +30,7 @@ class StepWidget: NSObject {
         suite.set(out, forKey: appDataKey)
         suite.synchronize()
         WidgetCenter.shared.reloadAllTimelines()
+        PhoneWatchSession.shared.syncAppDataToWatch()
     }
 
     @objc
