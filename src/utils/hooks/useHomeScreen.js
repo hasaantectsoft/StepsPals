@@ -10,6 +10,7 @@ import { getCondition, getSpriteByCondition } from "../petCondition";
 import { babyDogsprites, teenDogsprites, adultDogsprites } from "../../assets/Sprites/Pets/Dog";
 import { babydinosprites, teendinosprites, adultdinosprites } from "../../assets/Sprites/Pets/Dino";
 import { babycatsprites, teencatsprites, adultcatsprites } from "../../assets/Sprites/Pets/Cat";
+import { setStepCount } from "../../redux/slices/stepCountSlice";
 
 const SPRITE_MAP = {
     '1': { baby: babyDogsprites,  teen: teenDogsprites,  adult: adultDogsprites  },
@@ -45,7 +46,7 @@ export default function useHomeScreen() {
     useEffect(() => {
         if (Platform.OS === 'android') {
             fetchSteps().then(({ granted, steps }) => {
-                if (granted && steps != null) dispatch(setProgressStep(steps));
+                if (granted && steps != null) dispatch(setProgressStep(steps)); dispatch(setStepCount(steps))
             });
         }
     }, [dispatch]);

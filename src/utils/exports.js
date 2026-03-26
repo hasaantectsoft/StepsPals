@@ -126,9 +126,9 @@ export const BronzeArray=[
 
 
 export const SubsucripitonArray=[
-  {id:1,type:"Yearly",freeTrails:"3-day free trial,then",prise:"29.99 USD/YEAR",Access:"Full access.Auto-renews yearly",title:"StepPals Yearly",active:false},
-  {id:2,type:"Monthly",freeTrails:"3-day free trial,then",prise:"9.99 USD/month",Access:"Full access.Auto-renew Monthly",title:"StepPals Monthly",active:false},
-  {id:3,type:"Weekly",freeTrails:"3-day free trial,then",prise:"2.99 USD/week",Access:"Full access.Auto-renews Weekly",title:"StepPals Weekly",active:false},
+  {id:1,type:"Yearly",freeTrails:"3-day free trial,then",prise:"Rs 8,400/year",Access:"Subscrive weekly, monthly, or yearly for full access to your StepPal.",title:"ANNUAL PLAN",active:false},
+  {id:2,type:"Monthly",freeTrails:"3-day free trial,then",prise:"Rs 2,800/month",Access:"Subscrive weekly, monthly and yearly for full access to your StepPal.",title:"MONTHLY PLAN",active:false},
+  {id:3,type:"Weekly",freeTrails:"3-day free trial,then",prise:"Rs 850/week",Access:"Subscrive weekly, monthly and yearly for full access to your StepPal.",title:"WEEKLY PLAN",active:true},
 ]
 
 

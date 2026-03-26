@@ -1,78 +1,185 @@
 import { GoogleSignin } from '@react-native-google-signin/google-signin';
+import { store } from '../../redux/store';
+import axios from 'axios';
+import { dispatchSessionTicket } from '../../redux/slices/userSlice';
 
 const PLAYFAB_TITLE_ID = '143435';
 const PLAYFAB_API = `https://${PLAYFAB_TITLE_ID}.playfabapi.com`;
+
 
 GoogleSignin.configure({
   webClientId: '242694053733-i9jkme1fn8n6f5vifg97mbpp1l8949s5.apps.googleusercontent.com',
   offlineAccess: true,
 });
 
+
+const saveUserData = async (sessionTicket, data) => {
+  try {
+    const { data: json } = await axios.post(
+      `${PLAYFAB_API}/Client/UpdateUserData`,
+      { Data: data },
+      {
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Authorization': sessionTicket,
+        },
+      },
+    );
+    if (json.code !== 200) console.warn('❌ Save Error:', json.errorMessage);
+    else console.log('✅ Data Saved');
+  } catch (err) {
+    console.error('❌ Save Error:', err);
+  }
+};
+
+
+
+
+const getUserData = async (sessionTicket) => {
+  try {
+    const { data: json } = await axios.post(
+      `${PLAYFAB_API}/Client/GetUserData`,
+      {},
+      {
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Authorization': sessionTicket,
+        },
+      },
+    );
+    return json.code === 200 ? json.data.Data : null;
+  } catch (err) {
+    console.error('❌ Get Error:', err);
+    return null;
+  }
+};
+
+export const syncStepCountToPlayFab = async (steps) => {
+  try {
+    const sessionTicket = store.getState().userReducer?.sessionTicket;
+    if (!sessionTicket) return false;
+console.log('🔥 syncStepCountToPlayFab:', steps);
+console.log('🔥 sessionTicket:', sessionTicket);
+    const { data: json } = await axios.post(
+      `${PLAYFAB_API}/Client/UpdateUserData`,
+      {
+      
+        Data: {
+          dailyStep: String(steps ?? 0),
+          
+        },
+      },
+      {
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Authorization': sessionTicket,
+        },
+      },
+    );
+
+    return json.code === 200;
+  } catch (error) {
+    console.warn('Step sync failed:', error?.message || error);
+    return false;
+  }
+};
+
+
+
+
+
 export const loginWithGoogle = async () => {
   try {
+   
+    const { petname, petkey, missedDays, petage } = store.getState().petReducer;
+    const { entries } = store.getState().graveyardReducer;
+    const { pets } = store.getState().petCollectionReducer;
+    const { dailyStep, weeklyStepCount,  dailyStepGoal } = store.getState().stepCountReducer;
+    
+
+    
+    const userDataToSave = {
+      PetName: petname || 'Pet',
+      PetKey: String(petkey || ''),
+      MissedDays: String(missedDays || '0'),
+      PetAge: String(petage || '0'),
+      Graveyard: JSON.stringify(entries),
+      Collection: JSON.stringify(pets),
+      dailyStep: String(dailyStep || '0'),
+      WeeklyStepCount: String(weeklyStepCount || '0'),
+      DailyStepGoal: String(dailyStepGoal || '0'),
+    };
+
+    
     await GoogleSignin.hasPlayServices();
-
     await GoogleSignin.signOut().catch(() => {});
-
     const response = await GoogleSignin.signIn();
-
-    if (response.type !== 'success') {
-      console.warn('Google Sign-In cancelled:', response.type);
-      return null;
-    }
+    if (response.type !== 'success') return null;
 
     const googleUserId = response.data?.user?.id;
     const userEmail = response.data?.user?.email;
+    const displayName = response.data?.user?.name;
 
-    if (!googleUserId || !userEmail) {
-      console.error('❌ No user info received from Google');
-      return null;
-    }
-
-    console.log('✅ Google Sign-In success, user:', userEmail);
+    if (!googleUserId || !userEmail) return null;
 
     const password = `GP_${googleUserId}_StepsPals`;
 
-    let loginResponse = await fetch(`${PLAYFAB_API}/Client/LoginWithEmailAddress`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        TitleId: PLAYFAB_TITLE_ID,
-        Email: userEmail,
-        Password: password,
-      }),
-    });
+    // ✅ PlayFab Login
+    let { data: result } = await axios.post(
+      `${PLAYFAB_API}/Client/LoginWithEmailAddress`,
+      { TitleId: PLAYFAB_TITLE_ID, Email: userEmail, Password: password },
+      { headers: { 'Content-Type': 'application/json' } },
+    );
 
-    let result = await loginResponse.json();
-
+    // ✅ Register if not exist
     if (result.code !== 200) {
-      console.log('Account not found, registering...', result.error);
-
-      const registerResponse = await fetch(`${PLAYFAB_API}/Client/RegisterPlayFabUser`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
+      ({ data: result } = await axios.post(
+        `${PLAYFAB_API}/Client/RegisterPlayFabUser`,
+        {
           TitleId: PLAYFAB_TITLE_ID,
           Email: userEmail,
           Password: password,
-          DisplayName: userEmail.split('@')[0],
+          DisplayName: displayName || userEmail.split('@')[0],
           RequireBothUsernameAndEmail: false,
-        }),
-      });
-
-      result = await registerResponse.json();
+        },
+        { headers: { 'Content-Type': 'application/json' } },
+      ));
     }
 
-    if (result.code !== 200) {
-      console.error('❌ PlayFab Error:', result.error, result.errorMessage, JSON.stringify(result.errorDetails));
-      return null;
-    }
+    if (result.code !== 200) return null;
 
-    console.log('✅ PlayFab Login Success:', result);
-    return result;
+    const sessionTicket = result.data.SessionTicket;
+    store.dispatch(dispatchSessionTicket(sessionTicket));
 
+  
+    await saveUserData(sessionTicket, userDataToSave);
+
+   
+    const fetchedData = await getUserData(sessionTicket);
+
+    // Clean data for UI
+    const cleanData = {
+      PetName: fetchedData?.PetName?.Value || '',
+      PetKey: fetchedData?.PetKey?.Value || '',
+      MissedDays: fetchedData?.MissedDays?.Value || '0',
+      PetAge: fetchedData?.PetAge?.Value || '0',
+      Entries: fetchedData?.Entries?.Value ? JSON.parse(fetchedData.Entries.Value) : [],
+      Pets: fetchedData?.Pets?.Value ? JSON.parse(fetchedData.Pets.Value) : [],
+      dailyStep: fetchedData?.StepCount?.Value || '0',
+      WeeklyStepCount: fetchedData?.WeeklyStepGoal?.Value || '0',
+      DailyStepGoal: fetchedData?.DailyStepGoal?.Value || '0',
+    };
+
+    return {
+      user: { email: userEmail, name: displayName },
+      playfab: result.data,
+      data: cleanData,
+    };
   } catch (error) {
     console.error('❌ Login Error:', error);
     return null;
   }
 };
+
+
+

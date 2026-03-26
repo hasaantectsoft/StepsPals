@@ -12,6 +12,7 @@ import { setPetName, setPetKey, setPetSteps, setPetCreatedAt, updatePet } from "
 import { setSignedIn } from "../../../redux/slices/authSlice";
 import { setIsMain } from "../../../redux/slices/ismain";
 import { setPendingEggHatch } from "../../../redux/slices/startoverpetslice";
+import {  setDailyStepGoal } from "../../../redux/slices/stepCountSlice";
 
 export default function SelectGoalScreen() {
     const { params } = useRoute();
@@ -31,6 +32,7 @@ export default function SelectGoalScreen() {
         dispatch(setPendingEggHatch(true));
         dispatch(setSignedIn(true));
         dispatch(setIsMain(true));
+        dispatch(setDailyStepGoal(stepGoal ?? 100));
         navigation.reset({ index: 0, routes: [{ name: "Main" }] });
     };
 
@@ -63,7 +65,14 @@ export default function SelectGoalScreen() {
                         
                     </View>
                     <StepSlider value={stepGoal} onChange={setStepGoal} />
-                    <RetroDoneButton onPress={() => imnewaccount ? navigation.navigate('GivePermissions', { pet, petName, stepGoal }) : goToMain()} />
+                    <RetroDoneButton
+                        onPress={() => {
+                            dispatch(setDailyStepGoal(stepGoal ?? 100));
+                            imnewaccount
+                                ? navigation.navigate('GivePermissions', { pet, petName, stepGoal })
+                                : goToMain();
+                        }}
+                    />
                     
                 </View>
             </ImageBackground>

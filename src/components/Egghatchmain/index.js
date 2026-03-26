@@ -9,7 +9,7 @@ import { congratulationsound, playEggCrackSound } from "../../utils/SoundManager
 import { PuffMainSprite } from "../PetSprites/puff";
 import { getPetSpriteComponent } from "../PetSprites/petSpriteMap";
 import { style as styles } from "./styles";
-const TAP_CRACK1 = 2;
+const TAP_CRACK1 = 3;
 const TAP_CRACK2 = 6;
 const TAP_HATCH = 9;
 const PUFF_FRAMES = 17;
@@ -41,10 +41,13 @@ export default function EggHatch({ onProceedAfterHatch }) {
   const puffOffsetY = moderateScale(-18);
 
   useEffect(() => {
-    if (!showPuff) return;
-    const t = setTimeout(() => setShowPuff(false), PUFF_DURATION_MS);
+    if (!hatched) return;
+    const t = setTimeout(() => {
+      setShowPuff(false);
+      onProceedAfterHatch?.();
+    }, PUFF_DURATION_MS);
     return () => clearTimeout(t);
-  }, [showPuff]);
+  }, [hatched, onProceedAfterHatch]);
 
   const animateCrack = () => {
     shakeAnim.setValue(0);
@@ -78,10 +81,7 @@ export default function EggHatch({ onProceedAfterHatch }) {
   };
 
   const onPress = () => {
-    if (hatched) {
-      onProceedAfterHatch?.();
-      return;
-    }
+    if (hatched) return;
     onEggTap();
   };
 
@@ -89,7 +89,7 @@ export default function EggHatch({ onProceedAfterHatch }) {
   const subText = tapcount === 0 ? "Tap the egg to hatch it!" : "Keep tapping!!";
 
   return (
-    <ImageBackground source={images.egghatch} style={styles.container}>
+    <ImageBackground source={images.EggBreak} style={styles.container}>
       <View style={styles.layerFill}>
         <Text style={styles.heading}>Mystery Egg</Text>
         <Text style={styles.sub}>{subText}</Text>

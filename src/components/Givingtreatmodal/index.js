@@ -51,7 +51,7 @@ it's happy.
           </ImageBackground>
         </View>
 
-        <RetryButton color={Theme.colors.white} onPress={onClose} />
+        <RetryButton color={Theme.colors.white} onPress={onClose} title="Tap to continue" />
       </View>
     </Modal>
   );
@@ -60,7 +60,7 @@ it's happy.
 const styles = StyleSheet.create({
   overlay: {
     flex: 1,
-    backgroundColor: "rgba(0,0,0,0.5)",
+    backgroundColor: "rgba(0,0,0,0.8)",
     justifyContent: "center",
     alignItems: "center",
   },

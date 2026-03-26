@@ -37,7 +37,7 @@ export const styles = StyleSheet.create({
         bottom: moderateScale(10)
     },
     subscucriptionContainer: {
-        marginTop: moderateScale(30),
+        marginTop: moderateScale(5),
         gap: moderateScale(18),
         overflow: "visible",
     },
@@ -83,25 +83,28 @@ export const styles = StyleSheet.create({
     },
     title: {
         ...combineStyles.regular12,
-        paddingHorizontal: moderateScale(48),
+        paddingHorizontal: moderateScale(55),
         paddingTop: moderateScale(24)
     },
     trail: {
         ...combineStyles.regular10,
-        paddingHorizontal: moderateScale(48),
+        paddingHorizontal: moderateScale(55),
         color: Theme.colors.brown,
         marginTop: moderateScale(2)
     },
     prise: {
         ...combineStyles.regular10,
-        paddingHorizontal: moderateScale(48),
+        paddingHorizontal: moderateScale(55),
         // marginBottom: moderateScale(3)
 
     },
     Access: {
         ...combineStyles.regular8,
-        paddingHorizontal: moderateScale(48),
-        color: "#9853C4"
+        paddingHorizontal: moderateScale(55),
+        color: "#9853C4",
+        textAlign: "center",
+        lineHeight: moderateScale(13),
+        fontSize: moderateScale(6),
     },
     restoreText: {
         fontSize: 8,

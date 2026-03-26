@@ -5,11 +5,11 @@ import { Paw } from "../../assets/svgs";
 import { Styles } from "../../screens/Unauth/LandingScreen/styles";
 import ScalePressable from "../ScalePressable/ScalePressable";
 import { playButtonSound } from "../../utils/SoundManager/SoundManager";
-export function RetryButton({ onPress, color }) {
+export function RetryButton({ onPress, color,title }) {
     return (
         <ScalePressable onPress={() => { playButtonSound(); onPress() }} pressableStyle={Styles.retryButton} containerStyle={Styles.retryButton}>
             <SvgXml xml={Paw} height={50} width={50} />
-            <Text style={[Styles.retryText,{color:color}]}>Tap to retry</Text>
+            <Text style={[Styles.retryText,{color:color}]}>{title || 'Tap to retry'}</Text>
         </ScalePressable>
     );
 }

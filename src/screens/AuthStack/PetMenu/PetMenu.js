@@ -29,6 +29,8 @@ const getPetStage = (ageInDays) => {
 
 export default function Petmenu() {
   const { petname, petkey, petsteps, petcreatedat, missedDays } = useSelector((state) => state.petReducer);
+  const { dailyStepCount } = useSelector((state) => state.stepCountReducer);
+  console.log('🔥 dailyStepCount:', dailyStepCount);
   const router = useNavigation();
   const [stepGoal, setStepGoal] = useState(petsteps);
   const [disable, setDisable] = useState(true);
