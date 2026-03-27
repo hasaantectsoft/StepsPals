@@ -12,6 +12,8 @@ import { store, persistedStore } from './src/redux/store';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { pauseBackgroundSound, preloadSounds, releaseSounds, resumeBackgroundSound, startAppSound } from './src/utils/SoundManager/SoundManager'
 import { authorizeHealthKit } from './src/healthkit';
+import { fetchSteps } from './src/utils/handler/fetchsteps';
+import { setProgressStep } from './src/redux/slices/progressSlice';
 
 
 export default function App() {
