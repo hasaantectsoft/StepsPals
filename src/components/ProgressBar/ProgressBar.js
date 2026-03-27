@@ -30,18 +30,26 @@ const ProgressBar = ({ progress = 0, images, onProgressChange }) => {
   const containerX = useRef(0);
   const viewRef = useRef(null);
 
-  // Use a ref (not state) so it's always current inside PanResponder closures
   const isDragging = useRef(false);
 
-  // ✅ FIX: Only sync from parent when NOT dragging
-  // This prevents the prop→effect→withSpring from fighting the drag gesture
+  // Tracks the last progress value we set ourselves (drag or snap)
+  // so we can detect when the prop change came from outside (button press)
+  const internalProgress = useRef(progress);
+
   useEffect(() => {
-    if (!isDragging.current) {
-      progressValue.value = withSpring(progress, { damping: 20, stiffness: 200 });
-    }
+    if (isDragging.current) return;
+
+    const incoming = progress;
+
+    // Skip if we already set this value ourselves (came from drag/snap callback)
+    if (Math.abs(incoming - internalProgress.current) < 0.0001) return;
+
+    // This is an external change (button press) — set DIRECTLY, no spring
+    // withSpring was causing the blink on rapid +/- button presses
+    internalProgress.current = incoming;
+    progressValue.value = incoming;
   }, [progress]);
 
-  // Called on move: gives live feedback while dragging
   const notifyParent = (rawProgress) => {
     if (!onProgressChange) return;
     const rawVal = MIN + rawProgress * (MAX - MIN);
@@ -50,11 +58,15 @@ const ProgressBar = ({ progress = 0, images, onProgressChange }) => {
     onProgressChange(snappedProgress, snapped);
   };
 
-  // Called on release: snaps the head visually to the nearest step
   const snapHeadToStep = (rawProgress) => {
     const rawVal = MIN + rawProgress * (MAX - MIN);
     const snapped = snapToStep(rawVal);
     const snappedProgress = (snapped - MIN) / (MAX - MIN);
+
+    // Update internal ref so useEffect knows this value came from us
+    internalProgress.current = snappedProgress;
+
+    // Spring only on drag release — feels natural, no blink risk here
     progressValue.value = withSpring(snappedProgress, { damping: 20, stiffness: 200 });
   };
 
@@ -64,7 +76,6 @@ const ProgressBar = ({ progress = 0, images, onProgressChange }) => {
       onMoveShouldSetPanResponder: () => true,
 
       onPanResponderGrant: (evt) => {
-        // ✅ FIX: Set BEFORE anything else so the useEffect guard is active immediately
         isDragging.current = true;
 
         viewRef.current?.measure((x, y, width, height, pageX) => {
@@ -75,7 +86,7 @@ const ProgressBar = ({ progress = 0, images, onProgressChange }) => {
         let newProgress = (touchX - FILL_LEFT_OFFSET) / FILL_AREA;
         newProgress = Math.max(0, Math.min(1, newProgress));
 
-        // ✅ FIX: Move head directly (no spring) while dragging for instant response
+        internalProgress.current = newProgress;
         progressValue.value = newProgress;
         runOnJS(notifyParent)(newProgress);
       },
@@ -85,7 +96,7 @@ const ProgressBar = ({ progress = 0, images, onProgressChange }) => {
         let newProgress = (touchX - FILL_LEFT_OFFSET) / FILL_AREA;
         newProgress = Math.max(0, Math.min(1, newProgress));
 
-        // ✅ FIX: Direct assignment (no spring) = smooth drag tracking
+        internalProgress.current = newProgress;
         progressValue.value = newProgress;
         runOnJS(notifyParent)(newProgress);
       },
@@ -95,12 +106,9 @@ const ProgressBar = ({ progress = 0, images, onProgressChange }) => {
         let rawProgress = (touchX - FILL_LEFT_OFFSET) / FILL_AREA;
         rawProgress = Math.max(0, Math.min(1, rawProgress));
 
-        // Snap head visually on release
         runOnJS(snapHeadToStep)(rawProgress);
         runOnJS(notifyParent)(rawProgress);
 
-        // ✅ FIX: Clear AFTER snap is scheduled so useEffect doesn't interfere
-        // Use a small delay to let the snap animation start before re-enabling effect
         setTimeout(() => {
           isDragging.current = false;
         }, 300);
