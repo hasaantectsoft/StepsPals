@@ -12,22 +12,22 @@
 		<key>StepPalsWatch Watch App.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>101</integer>
+			<integer>102</integer>
 		</dict>
 		<key>StepPalsWatchApp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>104</integer>
+			<integer>101</integer>
 		</dict>
 		<key>StepPalsWatchWidgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>102</integer>
+			<integer>103</integer>
 		</dict>
 		<key>StepPalsWidgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>103</integer>
+			<integer>104</integer>
 		</dict>
 	</dict>
 </dict>
