@@ -25,14 +25,6 @@
 		154019C52F6A918500522FDA /* sadpopup2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 154019B42F6A918500522FDA /* sadpopup2.mp3 */; };
 		154019C62F6A918500522FDA /* chewingtwo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 154019AC2F6A918500522FDA /* chewingtwo.mp3 */; };
 		154019C82F6A943400522FDA /* cleanupswoosh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 154019C72F6A943400522FDA /* cleanupswoosh.mp3 */; };
-		1569209B2F75528900438A10 /* StepPalsWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1569209A2F75528900438A10 /* StepPalsWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		156920B12F7552EB00438A10 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FE1B62F73F15F00A8A374 /* WidgetKit.framework */; };
-		156920B22F7552EB00438A10 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FE1B82F73F15F00A8A374 /* SwiftUI.framework */; };
-		156920E12F75540000438A30 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F0E1232F76012300B00123 /* WatchConnectivity.framework */; };
-		156920E22F75540000438A31 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F0E1242F76012400B00124 /* HealthKit.framework */; };
-		156920E32F75540000438A32 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FE1B62F73F15F00A8A374 /* WidgetKit.framework */; };
-		156920E42F75540000438A33 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FE1B82F73F15F00A8A374 /* SwiftUI.framework */; };
-		156920F52F75550000438F05 /* StepPalsWatchWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 156920B02F7552EB00438A10 /* StepPalsWatchWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		157FE1B72F73F15F00A8A374 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FE1B62F73F15F00A8A374 /* WidgetKit.framework */; };
 		157FE1B92F73F15F00A8A374 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FE1B82F73F15F00A8A374 /* SwiftUI.framework */; };
 		157FE1CA2F73F16100A8A374 /* StepPalsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 157FE1B52F73F15F00A8A374 /* StepPalsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -50,24 +42,9 @@
 		A1F0E1562F76015600B00156 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F0E1232F76012300B00123 /* WatchConnectivity.framework */; };
 		A1F2E3D22F75000200A90002 /* PhoneWatchSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12F75000100A90001 /* PhoneWatchSession.swift */; };
 		BAFA466C75798DB0B0D58B2B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
-		F8B6E132D3801D2E59455843 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1569209C2F75528900438A10 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 156920992F75528900438A10;
-			remoteInfo = "StepPalsWatch Watch App";
-		};
-		156920F62F75550000438F06 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 156920AF2F7552EB00438A10;
-			remoteInfo = StepPalsWatchWidgetExtension;
-		};
 		157FE1C82F73F16100A8A374 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
@@ -91,20 +68,8 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				1569209B2F75528900438A10 /* StepPalsWatch Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		156920F12F75550000438F01 /* Embed Foundation Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				156920F52F75550000438F05 /* StepPalsWatchWidgetExtension.appex in Embed Foundation Extensions */,
-			);
-			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		157FE1CB2F73F16100A8A374 /* Embed Foundation Extensions */ = {
@@ -155,8 +120,6 @@
 		154019B72F6A918500522FDA /* tadafanfarea6313.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tadafanfarea6313.mp3; sourceTree = "<group>"; };
 		154019C72F6A943400522FDA /* cleanupswoosh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cleanupswoosh.mp3; sourceTree = "<group>"; };
 		156920952F75528900438A10 /* StepPalsWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepPalsWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1569209A2F75528900438A10 /* StepPalsWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StepPalsWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		156920B02F7552EB00438A10 /* StepPalsWatchWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StepPalsWatchWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		156920D12F75538600438A10 /* StepPalsWatchWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StepPalsWatchWidgetExtension.entitlements; sourceTree = "<group>"; };
 		157FE1B52F73F15F00A8A374 /* StepPalsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StepPalsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		157FE1B62F73F15F00A8A374 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -178,28 +141,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		156920C52F7552EC00438A10 /* Exceptions for "StepPalsWatchWidget" folder in "StepPalsWatchWidgetExtension" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 156920AF2F7552EB00438A10 /* StepPalsWatchWidgetExtension */;
-		};
-		156920C62F7552ED00438A11 /* Exceptions for "StepPalsWatch Watch App" folder in "StepPalsWatch Watch App" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 156920992F75528900438A10 /* StepPalsWatch Watch App */;
-		};
-		157FE1CE2F73F16100A8A374 /* Exceptions for "StepPalsWidget" folder in "StepPalsWidgetExtension" target */ = {
+		157FE1CE2F73F16100A8A374 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
 			target = 157FE1B42F73F15F00A8A374 /* StepPalsWidgetExtension */;
 		};
-		A1F0E0032F76000300B00003 /* Exceptions for "StepPalsWatchApp" folder in "StepPalsWatchApp" target */ = {
+		A1F0E0032F76000300B00003 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -209,65 +158,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1569209E2F75528900438A10 /* StepPalsWatch Watch App */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				156920C62F7552ED00438A11 /* Exceptions for "StepPalsWatch Watch App" folder in "StepPalsWatch Watch App" target */,
-			);
-			explicitFileTypes = {
-			};
-			explicitFolders = (
-			);
-			path = "StepPalsWatch Watch App";
-			sourceTree = "<group>";
-		};
-		156920B32F7552EB00438A10 /* StepPalsWatchWidget */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				156920C52F7552EC00438A10 /* Exceptions for "StepPalsWatchWidget" folder in "StepPalsWatchWidgetExtension" target */,
-			);
-			explicitFileTypes = {
-			};
-			explicitFolders = (
-			);
-			path = StepPalsWatchWidget;
-			sourceTree = "<group>";
-		};
-		157FE1BA2F73F15F00A8A374 /* StepPalsWidget */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				157FE1CE2F73F16100A8A374 /* Exceptions for "StepPalsWidget" folder in "StepPalsWidgetExtension" target */,
-			);
-			explicitFileTypes = {
-			};
-			explicitFolders = (
-			);
-			path = StepPalsWidget;
-			sourceTree = "<group>";
-		};
-		A1F0E0042F76000400B00004 /* StepPalsWatchApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				A1F0E0032F76000300B00003 /* Exceptions for "StepPalsWatchApp" folder in "StepPalsWatchApp" target */,
-			);
-			explicitFileTypes = {
-			};
-			explicitFolders = (
-			);
-			path = StepPalsWatchApp;
-			sourceTree = "<group>";
-		};
-		A1F0E0052F76000500B00005 /* WatchKitShared */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
-			explicitFileTypes = {
-			};
-			explicitFolders = (
-			);
-			path = WatchKitShared;
-			sourceTree = "<group>";
-		};
+		1569209E2F75528900438A10 /* StepPalsWatch Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "StepPalsWatch Watch App"; sourceTree = "<group>"; };
+		156920B32F7552EB00438A10 /* StepPalsWatchWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = StepPalsWatchWidget; sourceTree = "<group>"; };
+		157FE1BA2F73F15F00A8A374 /* StepPalsWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (157FE1CE2F73F16100A8A374 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = StepPalsWidget; sourceTree = "<group>"; };
+		A1F0E0042F76000400B00004 /* StepPalsWatchApp */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A1F0E0032F76000300B00003 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = StepPalsWatchApp; sourceTree = "<group>"; };
+		A1F0E0052F76000500B00005 /* WatchKitShared */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = WatchKitShared; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,26 +172,6 @@
 			files = (
 				A1F0E1562F76015600B00156 /* WatchConnectivity.framework in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-StepPals.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		156920972F75528900438A10 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				156920E32F75540000438A32 /* WidgetKit.framework in Frameworks */,
-				156920E42F75540000438A33 /* SwiftUI.framework in Frameworks */,
-				156920E12F75540000438A30 /* WatchConnectivity.framework in Frameworks */,
-				156920E22F75540000438A31 /* HealthKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		156920AD2F7552EB00438A10 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				156920B22F7552EB00438A10 /* SwiftUI.framework in Frameworks */,
-				156920B12F7552EB00438A10 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,8 +286,6 @@
 				157FE1B52F73F15F00A8A374 /* StepPalsWidgetExtension.appex */,
 				A1F0E1022F76010200B00102 /* StepPalsWatchApp.app */,
 				156920952F75528900438A10 /* StepPalsWatch.app */,
-				1569209A2F75528900438A10 /* StepPalsWatch Watch App.app */,
-				156920B02F7552EB00438A10 /* StepPalsWatchWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -464,56 +337,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				1569209D2F75528900438A10 /* PBXTargetDependency */,
 			);
 			name = StepPalsWatch;
 			productName = StepPalsWatch;
 			productReference = 156920952F75528900438A10 /* StepPalsWatch.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
-		};
-		156920992F75528900438A10 /* StepPalsWatch Watch App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 156920AA2F75528B00438A10 /* Build configuration list for PBXNativeTarget "StepPalsWatch Watch App" */;
-			buildPhases = (
-				156920962F75528900438A10 /* Sources */,
-				156920972F75528900438A10 /* Frameworks */,
-				156920982F75528900438A10 /* Resources */,
-				156920F12F75550000438F01 /* Embed Foundation Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				156920F72F75550000438F07 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				1569209E2F75528900438A10 /* StepPalsWatch Watch App */,
-				A1F0E0052F76000500B00005 /* WatchKitShared */,
-			);
-			name = "StepPalsWatch Watch App";
-			productName = "StepPalsWatch Watch App";
-			productReference = 1569209A2F75528900438A10 /* StepPalsWatch Watch App.app */;
-			productType = "com.apple.product-type.application";
-		};
-		156920AF2F7552EB00438A10 /* StepPalsWatchWidgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 156920C22F7552EC00438A10 /* Build configuration list for PBXNativeTarget "StepPalsWatchWidgetExtension" */;
-			buildPhases = (
-				156920AC2F7552EB00438A10 /* Sources */,
-				156920AD2F7552EB00438A10 /* Frameworks */,
-				156920AE2F7552EB00438A10 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				A1F0E0052F76000500B00005 /* WatchKitShared */,
-				156920B32F7552EB00438A10 /* StepPalsWatchWidget */,
-			);
-			name = StepPalsWatchWidgetExtension;
-			productName = StepPalsWatchWidgetExtension;
-			productReference = 156920B02F7552EB00438A10 /* StepPalsWatchWidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 		157FE1B42F73F15F00A8A374 /* StepPalsWidgetExtension */ = {
 			isa = PBXNativeTarget;
@@ -571,12 +399,6 @@
 					156920942F75528900438A10 = {
 						CreatedOnToolsVersion = 26.2;
 					};
-					156920992F75528900438A10 = {
-						CreatedOnToolsVersion = 26.2;
-					};
-					156920AF2F7552EB00438A10 = {
-						CreatedOnToolsVersion = 26.2;
-					};
 					157FE1B42F73F15F00A8A374 = {
 						CreatedOnToolsVersion = 26.2;
 					};
@@ -602,8 +424,6 @@
 				157FE1B42F73F15F00A8A374 /* StepPalsWidgetExtension */,
 				A1F0E1002F76010000B00100 /* StepPalsWatchApp */,
 				156920942F75528900438A10 /* StepPalsWatch */,
-				156920992F75528900438A10 /* StepPalsWatch Watch App */,
-				156920AF2F7552EB00438A10 /* StepPalsWatchWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -637,21 +457,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		156920932F75528900438A10 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		156920982F75528900438A10 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F8B6E132D3801D2E59455843 /* PrivacyInfo.xcprivacy in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		156920AE2F7552EB00438A10 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -701,9 +506,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-StepPals/Pods-StepPals-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-StepPals/Pods-StepPals-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -740,9 +549,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-StepPals/Pods-StepPals-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-StepPals/Pods-StepPals-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -764,20 +577,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		156920962F75528900438A10 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		156920AC2F7552EB00438A10 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		157FE1B12F73F15F00A8A374 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -795,16 +594,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1569209D2F75528900438A10 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 156920992F75528900438A10 /* StepPalsWatch Watch App */;
-			targetProxy = 1569209C2F75528900438A10 /* PBXContainerItemProxy */;
-		};
-		156920F72F75550000438F07 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 156920AF2F7552EB00438A10 /* StepPalsWatchWidgetExtension */;
-			targetProxy = 156920F62F75550000438F06 /* PBXContainerItemProxy */;
-		};
 		157FE1C92F73F16100A8A374 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 157FE1B42F73F15F00A8A374 /* StepPalsWidgetExtension */;
@@ -946,212 +735,6 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		156920A82F75528B00438A10 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = "StepPalsWatch Watch App/StepPalsWatch Watch App.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = PM6S8Q956W;
-				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "StepPalsWatch Watch App/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = StepPalsWatch;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "StepPals needs access to your step count to track your pet's health and update widgets.";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "StepPals needs Health data access for accurate step tracking on Apple Watch.";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.crumbles;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.crumbles.StepPalsWatch.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 26.2;
-			};
-			name = Debug;
-		};
-		156920A92F75528B00438A10 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = "StepPalsWatch Watch App/StepPalsWatch Watch App.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = PM6S8Q956W;
-				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "StepPalsWatch Watch App/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = StepPalsWatch;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "StepPals needs access to your step count to track your pet's health and update widgets.";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "StepPals needs Health data access for accurate step tracking on Apple Watch.";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.crumbles;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.crumbles.StepPalsWatch.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 26.2;
-			};
-			name = Release;
-		};
-		156920C32F7552EC00438A10 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = StepPalsWatchWidgetExtension.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = FMA8Z3SFNW;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StepPalsWatchWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = StepPalsWatchWidget;
-				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "StepPals needs access to your step count to track your pet's health and update widgets.";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "StepPals needs access to your step count to track your pet's health and update widgets.";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.crumbles.StepPalsWatch.watchkitapp.widget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 26.2;
-			};
-			name = Debug;
-		};
-		156920C42F7552EC00438A10 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = StepPalsWatchWidgetExtension.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = FMA8Z3SFNW;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StepPalsWatchWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = StepPalsWatchWidget;
-				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "StepPals needs access to your step count to track your pet's health and update widgets.";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "StepPals needs access to your step count to track your pet's health and update widgets.";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.crumbles.StepPalsWatch.watchkitapp.widget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 26.2;
 			};
 			name = Release;
 		};
@@ -1476,29 +1059,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		156920AA2F75528B00438A10 /* Build configuration list for PBXNativeTarget "StepPalsWatch Watch App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				156920A82F75528B00438A10 /* Debug */,
-				156920A92F75528B00438A10 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		156920AB2F75528B00438A10 /* Build configuration list for PBXNativeTarget "StepPalsWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				156920A52F75528B00438A10 /* Debug */,
 				156920A62F75528B00438A10 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		156920C22F7552EC00438A10 /* Build configuration list for PBXNativeTarget "StepPalsWatchWidgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				156920C32F7552EC00438A10 /* Debug */,
-				156920C42F7552EC00438A10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

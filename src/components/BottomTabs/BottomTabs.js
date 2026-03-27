@@ -102,7 +102,6 @@ const styles = StyleSheet.create({
         right: 0,
         backgroundColor: 'transparent',
         zIndex: 99999,
-        elevation: 99999,
     },
     container: {
         flexDirection: 'row',

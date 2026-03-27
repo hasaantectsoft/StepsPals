@@ -11,7 +11,7 @@ import { Theme } from "../../libs";
 import ScalePressable from "../ScalePressable/ScalePressable";
 import { fadeoutsound, playButtonSound } from "../../utils/SoundManager/SoundManager";
 
-export default function DeleteMessageModal({ backImg, isVisible, onClose, btn1text, btn2text, subtitle, rowBtton = true, centerButton = false, centerButtonTxt, onpressButton2, onpressCenterButton, title, paw = false, swap = false, modalStyle = {},yellowBtn=false }) {
+export default function DeleteMessageModal({ backImg, isVisible, onClose, btn1text, btn2text, subtitle, rowBtton = true, centerButton = false, centerButtonTxt, onpressButton2, onpressCenterButton, title, paw = false, swap = false, modalStyle = {}, yellowBtn = false }) {
 
   useEffect(() => {
     if (isVisible) {
@@ -27,7 +27,7 @@ export default function DeleteMessageModal({ backImg, isVisible, onClose, btn1te
       statusBarTranslucent
     >
       <View style={styles.overlay}>
-        <View style={[styles.modalBox,modalStyle]}>
+        <View style={[styles.modalBox, modalStyle]}>
           <ImageBackground source={backImg ? backImg : images.ModalBackGround} imageStyle={styles.imgStyle} style={[styles.imgStyle]}>
             {
               title &&
@@ -42,15 +42,15 @@ export default function DeleteMessageModal({ backImg, isVisible, onClose, btn1te
                   <NativeButton
                     title={btn1text}
                     onPress={onClose}
-                    image={swap?images.OringeButton:images.blueButton}
+                    image={swap ? images.OringeButton : images.blueButton}
                     containerStyle={styles.button}
-                     titleStyle={styles.txt}
+                    titleStyle={styles.txt}
                   />
 
                   <NativeButton
                     title={btn2text}
                     onPress={onpressButton2}
-                    image={swap?images.blueButton:yellowBtn?images.YellowButton:images.OringeButton}
+                    image={swap ? images.blueButton : yellowBtn ? images.YellowButton : images.OringeButton}
                     containerStyle={styles.button2}
                     titleStyle={styles.txt}
                   />
@@ -66,7 +66,7 @@ export default function DeleteMessageModal({ backImg, isVisible, onClose, btn1te
                     onPress={onpressCenterButton}
                     image={images.blueButton}
                     containerStyle={styles.centerButton}
-                    
+
                   />
 
                 </>
@@ -80,12 +80,12 @@ export default function DeleteMessageModal({ backImg, isVisible, onClose, btn1te
         {paw && (
           <ScalePressable style={styles.pawBox} onPress={() => { playButtonSound(); onClose(); }}>
             <View style={{
-              alignItems:"center",
-              justifyContent:"center",
-marginTop:moderateScale(20)
-}}>
-            <PressableIcon icon={Paw} width={80} height={60} />
-            <Text style={styles.pawText}>Tap to continue</Text>
+              alignItems: "center",
+              justifyContent: "center",
+              marginTop: moderateScale(20)
+            }}>
+              <PressableIcon icon={Paw} width={80} height={60} />
+              <Text style={styles.pawText}>Tap to continue</Text>
             </View>
           </ScalePressable>
         )}
@@ -97,7 +97,7 @@ marginTop:moderateScale(20)
 const styles = StyleSheet.create({
   overlay: {
     flex: 1,
-    backgroundColor: "rgba(0,0,0,0.5)",
+    backgroundColor: "rgba(0,0,0,0.7)",
     justifyContent: "center",
     alignItems: "center",
   },
@@ -152,15 +152,15 @@ const styles = StyleSheet.create({
     color: Theme.colors.white,
     textAlign: "center",
   },
-  txt:{
-    fontSize:moderateScale(9),
-    top:moderateScale(2)
+  txt: {
+    fontSize: moderateScale(9),
+    top: moderateScale(2)
   },
-  subtitleStyle:{
+  subtitleStyle: {
     textAlign: "center",
-     fontSize:moderateScale(12),
-     width:moderateScale(290),
-     lineHeight:moderateScale(20),
+    fontSize: moderateScale(12),
+    width: moderateScale(290),
+    lineHeight: moderateScale(20),
     //  right:moderateScale(6)
   }
 });

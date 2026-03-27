@@ -189,7 +189,6 @@ export default function HomeScreen() {
     const nudge = activeCareKey ? careOnPetNudge[activeCareKey] : null;
     const careOffsetX = nudge ? pox + nudge.x : pox;
     const careOffsetY = nudge ? poy + nudge.y : poy;
-
     const DeathGhostSprite = getPetDeathGhostComponent(petkey);
     const canCheckStar = isComplete && allCareChecked && !starTapped;
     useEffect(() => {
@@ -202,13 +201,6 @@ export default function HomeScreen() {
             return () => clearTimeout(t);
         }
     }, [activeCareKey]);
-
-
-
-
-
-
-
     useEffect(() => {
         const syncStepsOnAppOpen = async () => {
           if (Platform.OS !== 'android') return;
@@ -219,14 +211,10 @@ export default function HomeScreen() {
           store.dispatch(setDailyStep(steps));
           await syncStepCountToPlayFab(steps);
         };
-    
         if (Platform.OS === 'ios') authorizeHealthKit();
         syncStepsOnAppOpen();
-    
         preloadSounds();
-    
-        // Small delay to ensure sounds are loaded before playing
-        const timer = setTimeout(() => {
+            const timer = setTimeout(() => {
           startAppSound();
         }, 500);
     
@@ -245,11 +233,6 @@ export default function HomeScreen() {
           releaseSounds();
         };
       }, []);
-
-
-
-
-
     const getStarDisabledMessage = () => {
         if (starTapped) return "You already claimed your star reward!";
         if (!isComplete) return "Reach your step goal to unlock the star!";
@@ -271,8 +254,6 @@ export default function HomeScreen() {
                 onPress={() => { playbottomtabsound(); navigation.replace('PetMenu'); }}>
                 <Text style={styles.name} numberOfLines={2} ellipsizeMode="tail">{petname}</Text>
                 <Text style={styles.welcome} numberOfLines={2} ellipsizeMode="tail">{welcomeText}</Text>
-
-
             </Pressable>
             
             <View style={styles.deathGhostCenter}>
@@ -324,7 +305,23 @@ export default function HomeScreen() {
                         playCareOnce("treat");
                     }}
                 >
-                    <Animated.View style={{ opacity: !starTapped && canCheckStar ? starFlicker : 1, width: '100%', height: '100%' }}>
+                    <Animated.View
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                            transform: [
+                                {
+                                    scale:
+                                        !starTapped && canCheckStar
+                                            ? starFlicker.interpolate({
+                                                inputRange: [0, 1],
+                                                outputRange: [0.92, 1.08],
+                                            })
+                                            : 1,
+                                },
+                            ],
+                        }}
+                    >
                         <ImageBackground source={images.star} style={styles.star} imageStyle={{ resizeMode: 'contain' }}>
                             <SvgXml
                                 xml={starTapped ? starchecked : isComplete ? cakefilled : cake}

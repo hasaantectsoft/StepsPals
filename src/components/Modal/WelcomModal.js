@@ -30,7 +30,7 @@ export default function WelcomModal({ backImg, isVisible, onClose,  subtitle,   
           </ImageBackground>
         </View>
         {paw && 
-        <RetryButton color={Theme.colors.white} onPress={() => { playButtonSound(); onClose() }} />
+        <RetryButton title={"Tap to continue"} color={Theme.colors.white} onPress={() => { playButtonSound(); onClose() }} />
         }
       </View>
     </Modal>
@@ -40,7 +40,7 @@ export default function WelcomModal({ backImg, isVisible, onClose,  subtitle,   
 const styles = StyleSheet.create({
   overlay: {
     flex: 1,
-    backgroundColor: "rgba(0,0,0,0.5)",
+    backgroundColor: "rgba(0,0,0,0.7)",
     justifyContent: "center",
     alignItems: "center",
   },

@@ -44,6 +44,11 @@ export const combineStyles = StyleSheet.create({
         fontFamily: Theme.typography.Retro.fontFamily,
         color: Theme.colors.black
     },
+    regular8: {
+        fontSize: moderateScale(8),
+        fontFamily: Theme.typography.Retro.fontFamily,
+        color: Theme.colors.black
+    },
     regular6: {
         fontSize: moderateScale(6),
         fontFamily: Theme.typography.Retro.fontFamily,

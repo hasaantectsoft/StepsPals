@@ -91,7 +91,8 @@ export const images = {
   tutorial9:require('./tutoral9.png'),
   tutorial10:require('./tutoral10.png'),
   egghatch:require('./egghatch.png'),
-  EggBreak:require('./EggBreak.jpeg')
+  EggBreak:require('./EggBreak.jpeg'),
+  missedday:require('./missedday.png')
 
 
 

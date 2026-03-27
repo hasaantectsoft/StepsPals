@@ -7,27 +7,27 @@
 		<key>StepPals.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>98</integer>
+			<integer>0</integer>
 		</dict>
 		<key>StepPalsWatch Watch App.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>102</integer>
+			<integer>116</integer>
 		</dict>
 		<key>StepPalsWatchApp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>101</integer>
+			<integer>118</integer>
 		</dict>
 		<key>StepPalsWatchWidgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>103</integer>
+			<integer>117</integer>
 		</dict>
 		<key>StepPalsWidgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>104</integer>
+			<integer>115</integer>
 		</dict>
 	</dict>
 </dict>

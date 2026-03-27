@@ -29,13 +29,13 @@ export default function missedonedaymodal({
             <View style={styles.overlay}>
                 <View style={styles.modalBox}>
                     <ImageBackground
-                        source={images.givingtreatmodal}
+                        source={images.missedday}
                         imageStyle={styles.imgStyle}
                         style={styles.imgContainer}
                     >
                         <View style={styles.centerContent}>
 
-                            <Text style={[combineStyles.regular10, styles.subtitle]}>
+                            <Text style={[combineStyles.regular8, styles.subtitle]}>
                             You didn’t reach your goal yesterday, so your Pet is sick. Take care of {petname} so that it gets better! If you miss another day it will get very sick!
                             </Text>
                            
@@ -43,7 +43,7 @@ export default function missedonedaymodal({
                     </ImageBackground>
                 </View>
 
-                <RetryButton color={Theme.colors.white} onPress={onClose} />
+                <RetryButton title={"Tap to continue"}  color={Theme.colors.white} onPress={onClose} />
             </View>
         </Modal>
     );
@@ -52,13 +52,15 @@ export default function missedonedaymodal({
 const styles = StyleSheet.create({
     overlay: {
         flex: 1,
-        backgroundColor: "rgba(0,0,0,0.5)",
+        opacity: 1,
+        backgroundColor: "rgba(0,0,0,0.7)",
         justifyContent: "center",
         alignItems: "center",
     },
 
     modalBox: {
-        width: "80%",
+        width: "90%",
+        
         height: moderateScale(230),
         borderRadius: moderateScale(10),
         overflow: "hidden",
@@ -71,7 +73,7 @@ const styles = StyleSheet.create({
     },
 
     imgStyle: {
-        resizeMode: "stretch",
+        resizeMode: "contain",
         borderRadius: moderateScale(10),
     },
 
