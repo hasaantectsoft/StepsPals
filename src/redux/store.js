@@ -23,6 +23,7 @@ import soundSlice from './slices/soundSlice';
 import graveyardSlice from './slices/graveyardSlice';
 import startoverpetslice from './slices/startoverpetslice';
 import petCollectionSlice from './slices/petCollectionSlice';
+import stepCountSlice from './slices/stepCountSlice';
 
 const persistConfig = {
   key: 'root',
@@ -42,6 +43,7 @@ const reducers = combineReducers({
   soundReducer: soundSlice,
   graveyardReducer: graveyardSlice,
   startoverpetslice: startoverpetslice,
+  stepCountReducer: stepCountSlice,
 });
 
 const _persistedReducer = persistReducer(persistConfig, reducers);

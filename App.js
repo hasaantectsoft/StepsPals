@@ -12,6 +12,10 @@ import { store, persistedStore } from './src/redux/store';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { pauseBackgroundSound, preloadSounds, releaseSounds, resumeBackgroundSound, startAppSound } from './src/utils/SoundManager/SoundManager'
 import HealthKitInitializer from './src/HealthKitInitializer';
+import { authorizeHealthKit } from './src/healthkit';
+import { fetchSteps } from './src/utils/handler/fetchsteps';
+import { setProgressStep } from './src/redux/slices/progressSlice';
+
 
 export default function App() {
   const queryClient = new QueryClient();
@@ -23,6 +27,20 @@ export default function App() {
 
 
   useEffect(() => {
+    const syncStepsOnAppOpen = async () => {
+      if (Platform.OS !== 'android') return;
+      const { granted, steps } = await fetchSteps();
+      if (!granted || steps == null) return;
+
+      store.dispatch(setProgressStep(steps));
+      store.dispatch(setStepCount(steps));
+      store.dispatch(setDailyStepCount(steps));
+      await syncStepCountToPlayFab(steps);
+    };
+
+    if (Platform.OS === 'ios') authorizeHealthKit();
+    syncStepsOnAppOpen();
+
     preloadSounds();
 
     // Small delay to ensure sounds are loaded before playing
@@ -35,6 +53,7 @@ export default function App() {
         pauseBackgroundSound();
       } else if (nextAppState === 'active') {
         resumeBackgroundSound();
+        syncStepsOnAppOpen();
       }
     });
 

@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import { store } from "../../../redux/store";
 import { syncIOSWidgetFromHomeState } from "../../../utils/widgetSync";
-import { Animated, Image, ImageBackground, Pressable, Text, View, useWindowDimensions } from "react-native";
+import { Animated, AppState, Image, ImageBackground, Platform, Pressable, Text, View, useWindowDimensions } from "react-native";
 import { SvgXml } from "react-native-svg";
 import { scale } from "react-native-size-matters";
 import { styles } from "./Styles";
@@ -25,12 +24,17 @@ import { addPetToCollection, removePetFromCollection } from "../../../redux/slic
 import { setSignedIn } from "../../../redux/slices/authSlice";
 import { setNewUser } from "../../../redux/slices/tutorialslice";
 import { clearPet } from "../../../redux/slices/petslice";
-import { clearProgress } from "../../../redux/slices/progressSlice";
+import { clearProgress, setProgressStep } from "../../../redux/slices/progressSlice";
 import { setStartoverPet, setPendingEggHatch } from "../../../redux/slices/startoverpetslice";
 import HomeModals from "./HomeModals";
 import GivingTreatModal from "../../../components/Givingtreatmodal";
-import {playbottomtabsound, eatingsooundone, drinkingwatersound,  cleansound,eatingsoountwo} from "../../../utils/SoundManager/SoundManager";
+import {playbottomtabsound, eatingsooundone, drinkingwatersound,  cleansound,eatingsoountwo, startAppSound, preloadSounds, pauseBackgroundSound, resumeBackgroundSound, releaseSounds } from "../../../utils/SoundManager/SoundManager";
 import EggHatch from "../../../components/Egghatchmain";
+import { fetchSteps } from "../../../utils/handler/fetchsteps";
+import { store } from "../../../redux/store";
+import { setDailyStep } from "../../../redux/slices/stepCountSlice";
+import { syncStepCountToPlayFab } from "../../../utils/GoogleLogin";
+import { authorizeHealthKit } from "../../../healthkit";
 const TV_TOP_FRAC = 0.35;
 const TV_WIDTH_FRAC = 0.5;
 
@@ -198,6 +202,54 @@ export default function HomeScreen() {
             return () => clearTimeout(t);
         }
     }, [activeCareKey]);
+
+
+
+
+
+
+
+    useEffect(() => {
+        const syncStepsOnAppOpen = async () => {
+          if (Platform.OS !== 'android') return;
+          const { granted, steps } = await fetchSteps();
+          if (!granted || steps == null) return;
+    
+          store.dispatch(setProgressStep(steps));
+          store.dispatch(setDailyStep(steps));
+          await syncStepCountToPlayFab(steps);
+        };
+    
+        if (Platform.OS === 'ios') authorizeHealthKit();
+        syncStepsOnAppOpen();
+    
+        preloadSounds();
+    
+        // Small delay to ensure sounds are loaded before playing
+        const timer = setTimeout(() => {
+          startAppSound();
+        }, 500);
+    
+        const subscription = AppState.addEventListener('change', (nextAppState) => {
+          if (nextAppState === 'background' || nextAppState === 'inactive') {
+            pauseBackgroundSound();
+          } else if (nextAppState === 'active') {
+            resumeBackgroundSound();
+            syncStepsOnAppOpen();
+          }
+        });
+    
+        return () => {
+          clearTimeout(timer);
+          subscription.remove();
+          releaseSounds();
+        };
+      }, []);
+
+
+
+
+
     const getStarDisabledMessage = () => {
         if (starTapped) return "You already claimed your star reward!";
         if (!isComplete) return "Reach your step goal to unlock the star!";

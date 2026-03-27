@@ -16,8 +16,9 @@ import { playButtonSound } from "../../../utils/SoundManager/SoundManager";
 import WelcomModal from "../../../components/Modal/WelcomModal";
 
 export default () => {
-  const [selectedPlan, setSelectedPlan] = useState();
-  const [isSubscribed, setIsSubscribed] = useState(false);
+  const defaultPlanId = SubsucripitonArray.find((plan) => plan.active)?.id ?? SubsucripitonArray?.[2]?.id;
+  const [selectedPlan, setSelectedPlan] = useState(defaultPlanId);
+  const [isSubscribed, setIsSubscribed] = useState(Boolean(defaultPlanId));
   const [modal, setModal] = useState(false);
   const [restoreModal, setRestoreModal] = useState(false);
   const [trialModal, setTrialModal] = useState(false);
@@ -89,8 +90,7 @@ export default () => {
               />
 
               <Text style={styles.txtStyle}>
-                Subscription expired — gameplay is paused. Subscribe to come back!
-                You can cancel at any time.
+                Subscribe to keep caring for your StepPal! You can cancel at any time.
               </Text>
               <PressableIcon
                 icon={isSubscribed ? SubSucribtionAcitveSvg : SubSucribtionInacitveSvg}
