@@ -4,16 +4,16 @@
 <dict>
 	<key>CFBundleIconName</key>
 	<string>AppIcon</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>StepPals needs access to your step count to track your pet's health.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>StepPals needs Health data access for step tracking on Apple Watch.</string>
+	<key>RCTNewArchEnabled</key>
+	<true/>
 	<key>UIAppFonts</key>
 	<array>
 		<string>PressStart2P-Regular.ttf</string>
 	</array>
-	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.crumbles</string>
-	<key>NSHealthShareUsageDescription</key>
-	<string>StepPals needs access to your step count to track your pet&apos;s health.</string>
-	<key>NSHealthUpdateUsageDescription</key>
-	<string>StepPals needs Health data access for step tracking on Apple Watch.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
@@ -26,5 +26,7 @@
 	<array>
 		<string>workout-processing</string>
 	</array>
+	<key>WKCompanionAppBundleIdentifier</key>
+	<string>com.crumbles</string>
 </dict>
 </plist>

@@ -28,11 +28,11 @@
 		1569209B2F75528900438A10 /* StepPalsWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1569209A2F75528900438A10 /* StepPalsWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		156920B12F7552EB00438A10 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FE1B62F73F15F00A8A374 /* WidgetKit.framework */; };
 		156920B22F7552EB00438A10 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FE1B82F73F15F00A8A374 /* SwiftUI.framework */; };
-		156920F52F75550000438F05 /* StepPalsWatchWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 156920B02F7552EB00438A10 /* StepPalsWatchWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		156920E12F75540000438A30 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F0E1232F76012300B00123 /* WatchConnectivity.framework */; };
 		156920E22F75540000438A31 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F0E1242F76012400B00124 /* HealthKit.framework */; };
 		156920E32F75540000438A32 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FE1B62F73F15F00A8A374 /* WidgetKit.framework */; };
 		156920E42F75540000438A33 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FE1B82F73F15F00A8A374 /* SwiftUI.framework */; };
+		156920F52F75550000438F05 /* StepPalsWatchWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 156920B02F7552EB00438A10 /* StepPalsWatchWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		157FE1B72F73F15F00A8A374 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FE1B62F73F15F00A8A374 /* WidgetKit.framework */; };
 		157FE1B92F73F15F00A8A374 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FE1B82F73F15F00A8A374 /* SwiftUI.framework */; };
 		157FE1CA2F73F16100A8A374 /* StepPalsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 157FE1B52F73F15F00A8A374 /* StepPalsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -49,6 +49,8 @@
 		A1F0E1552F76015500B00155 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F0E1242F76012400B00124 /* HealthKit.framework */; };
 		A1F0E1562F76015600B00156 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F0E1232F76012300B00123 /* WatchConnectivity.framework */; };
 		A1F2E3D22F75000200A90002 /* PhoneWatchSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2E3D12F75000100A90001 /* PhoneWatchSession.swift */; };
+		BAFA466C75798DB0B0D58B2B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		F8B6E132D3801D2E59455843 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,28 +178,28 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		156920C52F7552EC00438A10 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		156920C52F7552EC00438A10 /* Exceptions for "StepPalsWatchWidget" folder in "StepPalsWatchWidgetExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
 			target = 156920AF2F7552EB00438A10 /* StepPalsWatchWidgetExtension */;
 		};
-		156920C62F7552ED00438A11 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		156920C62F7552ED00438A11 /* Exceptions for "StepPalsWatch Watch App" folder in "StepPalsWatch Watch App" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
 			target = 156920992F75528900438A10 /* StepPalsWatch Watch App */;
 		};
-		157FE1CE2F73F16100A8A374 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		157FE1CE2F73F16100A8A374 /* Exceptions for "StepPalsWidget" folder in "StepPalsWidgetExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
 			target = 157FE1B42F73F15F00A8A374 /* StepPalsWidgetExtension */;
 		};
-		A1F0E0032F76000300B00003 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		A1F0E0032F76000300B00003 /* Exceptions for "StepPalsWatchApp" folder in "StepPalsWatchApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -207,11 +209,65 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1569209E2F75528900438A10 /* StepPalsWatch Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (156920C62F7552ED00438A11 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "StepPalsWatch Watch App"; sourceTree = "<group>"; };
-		156920B32F7552EB00438A10 /* StepPalsWatchWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (156920C52F7552EC00438A10 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = StepPalsWatchWidget; sourceTree = "<group>"; };
-		157FE1BA2F73F15F00A8A374 /* StepPalsWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (157FE1CE2F73F16100A8A374 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = StepPalsWidget; sourceTree = "<group>"; };
-		A1F0E0042F76000400B00004 /* StepPalsWatchApp */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A1F0E0032F76000300B00003 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = StepPalsWatchApp; sourceTree = "<group>"; };
-		A1F0E0052F76000500B00005 /* WatchKitShared */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = WatchKitShared; sourceTree = "<group>"; };
+		1569209E2F75528900438A10 /* StepPalsWatch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				156920C62F7552ED00438A11 /* Exceptions for "StepPalsWatch Watch App" folder in "StepPalsWatch Watch App" target */,
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = "StepPalsWatch Watch App";
+			sourceTree = "<group>";
+		};
+		156920B32F7552EB00438A10 /* StepPalsWatchWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				156920C52F7552EC00438A10 /* Exceptions for "StepPalsWatchWidget" folder in "StepPalsWatchWidgetExtension" target */,
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = StepPalsWatchWidget;
+			sourceTree = "<group>";
+		};
+		157FE1BA2F73F15F00A8A374 /* StepPalsWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				157FE1CE2F73F16100A8A374 /* Exceptions for "StepPalsWidget" folder in "StepPalsWidgetExtension" target */,
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = StepPalsWidget;
+			sourceTree = "<group>";
+		};
+		A1F0E0042F76000400B00004 /* StepPalsWatchApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A1F0E0032F76000300B00003 /* Exceptions for "StepPalsWatchApp" folder in "StepPalsWatchApp" target */,
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = StepPalsWatchApp;
+			sourceTree = "<group>";
+		};
+		A1F0E0052F76000500B00005 /* WatchKitShared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = WatchKitShared;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -411,8 +467,6 @@
 				1569209D2F75528900438A10 /* PBXTargetDependency */,
 			);
 			name = StepPalsWatch;
-			packageProductDependencies = (
-			);
 			productName = StepPalsWatch;
 			productReference = 156920952F75528900438A10 /* StepPalsWatch.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
@@ -436,8 +490,6 @@
 				A1F0E0052F76000500B00005 /* WatchKitShared */,
 			);
 			name = "StepPalsWatch Watch App";
-			packageProductDependencies = (
-			);
 			productName = "StepPalsWatch Watch App";
 			productReference = 1569209A2F75528900438A10 /* StepPalsWatch Watch App.app */;
 			productType = "com.apple.product-type.application";
@@ -459,8 +511,6 @@
 				156920B32F7552EB00438A10 /* StepPalsWatchWidget */,
 			);
 			name = StepPalsWatchWidgetExtension;
-			packageProductDependencies = (
-			);
 			productName = StepPalsWatchWidgetExtension;
 			productReference = 156920B02F7552EB00438A10 /* StepPalsWatchWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -597,6 +647,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B6E132D3801D2E59455843 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,6 +670,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAFA466C75798DB0B0D58B2B /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,13 +701,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-StepPals/Pods-StepPals-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-StepPals/Pods-StepPals-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -692,13 +740,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-StepPals/Pods-StepPals-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-StepPals/Pods-StepPals-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

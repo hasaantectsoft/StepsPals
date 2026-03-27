@@ -1,43 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-        <key>WKApplication</key>
-        <true/>
-        <key>WKCompanionAppBundleIdentifier</key>
-        <string>com.crumbles</string>
-        <key>UIAppFonts</key>
-        <array>
-            <string>PressStart2P-Regular.ttf</string>
-        </array>
-        <key>CFBundleExecutable</key>
-        <string>$(EXECUTABLE_NAME)</string>
-        <key>CFBundleName</key>
-        <string>$(PRODUCT_NAME)</string>
-        <key>CFBundleDisplayName</key>
-        <string>$(PRODUCT_NAME)</string>
-        <key>CFBundleIdentifier</key>
-        <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
-        <key>CFBundleVersion</key>
-        <string>$(CURRENT_PROJECT_VERSION)</string>
-        <key>CFBundleShortVersionString</key>
-        <string>$(MARKETING_VERSION)</string>
-        <key>CFBundlePackageType</key>
-        <string>APPL</string>
-        <key>CFBundleIconName</key>
-        <string>AppIcon</string>
-        <key>CFBundleIconFiles</key>
-        <array>
-            <string>AppIcon</string>
-        </array>
-        <key>UIBackgroundModes</key>
-        <array>
-            <string>fetch</string>
-            <string>processing</string>
-        </array>
-        <key>NSHealthShareUsageDescription</key>
-        <string>StepPals needs access to your step count to track your pet's health and update widgets.</string>
-        <key>NSHealthUpdateUsageDescription</key>
-        <string>StepPals needs to update health data for accurate step tracking.</string>
-    </dict>
+<dict>
+	<key>CFBundleDisplayName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>AppIcon</string>
+	</array>
+	<key>CFBundleIconName</key>
+	<string>AppIcon</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>StepPals needs access to your step count to track your pet's health and update widgets.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>StepPals needs to update health data for accurate step tracking.</string>
+	<key>RCTNewArchEnabled</key>
+	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>PressStart2P-Regular.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>processing</string>
+	</array>
+	<key>WKApplication</key>
+	<true/>
+	<key>WKCompanionAppBundleIdentifier</key>
+	<string>com.crumbles</string>
+</dict>
 </plist>
