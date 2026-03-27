@@ -4,9 +4,31 @@ require Pod::Executable.execute_command('node', ['-p',
     "react-native/scripts/react_native_pods.rb",
     {paths: [process.argv[1]]},
   )', __dir__]).strip
+require 'fileutils'
 
 platform :ios, min_ios_version_supported
 prepare_react_native_project!
+
+def ensure_react_native_skia_ios_binaries!
+  skia_pkg = File.expand_path('../node_modules/@shopify/react-native-skia', __dir__)
+  skia_ios_pkg = File.expand_path('../node_modules/react-native-skia-apple-ios', __dir__)
+  skia_macos_pkg = File.expand_path('../node_modules/react-native-skia-apple-macos', __dir__)
+
+  return unless Dir.exist?(skia_pkg)
+
+  ios_src = File.join(skia_ios_pkg, 'libs')
+  macos_src = File.join(skia_macos_pkg, 'libs')
+  ios_dst = File.join(skia_pkg, 'libs', 'ios')
+  macos_dst = File.join(skia_pkg, 'libs', 'macos')
+
+  return unless Dir.exist?(ios_src) && Dir.exist?(macos_src)
+
+  FileUtils.rm_rf(File.join(skia_pkg, 'libs'))
+  FileUtils.mkdir_p(ios_dst)
+  FileUtils.mkdir_p(macos_dst)
+  FileUtils.cp_r(Dir.glob(File.join(ios_src, '*.xcframework')), ios_dst)
+  FileUtils.cp_r(Dir.glob(File.join(macos_src, '*.xcframework')), macos_dst)
+end
 
 linkage = ENV['USE_FRAMEWORKS']
 if linkage != nil
@@ -15,6 +37,7 @@ if linkage != nil
 end
 
 target 'StepPals' do
+  ensure_react_native_skia_ios_binaries!
   config = use_native_modules!
 
   use_react_native!(

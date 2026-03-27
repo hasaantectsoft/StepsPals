@@ -20,7 +20,7 @@ import { LegendRankingModal, PlatinumRankingModal, GoldRankingModal, SilverRanki
 import Misseddaysmodal from "../../../components/Misseddaysmodal/missiedonedaymodal";
 import Missed2daysmodal from "../../../components/Misseddaysmodal/missed2daysmodal";
 import UpgradePetModal from "../../../components/UpgradePetModal/upgradepetmodal";
-import { loginWithGoogle } from "../../../utils/GoogleLogin";
+import { loginWithApple, loginWithGoogle } from "../../../utils/GoogleLogin";
 const MS_PER_DAY = 86400000;
 export default () => {
     const { MusicSound, Sound } = useSelector(state => state.soundReducer);
@@ -151,24 +151,24 @@ export default () => {
 
                         <TouchableOpacity onPress={() => navigation.navigate('SubscriptionScreen')}>
                             <Text>Subscription Screen Testing</Text>
-                           
+
                         </TouchableOpacity>
                         <Pressable onPress={() => setIsLegendRankingModalVisible(true)}><Text>Legend Ranking Modal</Text></Pressable>
-                            <Pressable onPress={() => setIsMissed2DaysModalVisible(true)}><Text>Missed 2 Days Modal</Text></Pressable>
-                            <Pressable onPress={() => setIsPlatinumRankingModalVisible(true)}><Text>Platinum Ranking Modal</Text></Pressable>
-                            <Pressable onPress={() => setIsGoldRankingModalVisible(true)}><Text>Gold Ranking Modal</Text></Pressable>
-                            <Pressable onPress={() => setIsSilverRankingModalVisible(true)}><Text>Silver Ranking Modal</Text></Pressable>
-                            <Pressable onPress={() => setIsBronzeRankingModalVisible(true)}><Text>Bronze Ranking Modal</Text></Pressable>
-                            <Pressable onPress={() => setIsUnrankedRankingModalVisible(true)}><Text>Unranked Ranking Modal</Text></Pressable>
-                            <Pressable onPress={() => setIsMissedDaysModalVisible(true)}><Text>Missed Days Modal</Text></Pressable>
-                            <Pressable onPress={() => setIsUpgradeModalVisible(true)}><Text>Upgrade Pet Modal</Text></Pressable>
+                        <Pressable onPress={() => setIsMissed2DaysModalVisible(true)}><Text>Missed 2 Days Modal</Text></Pressable>
+                        <Pressable onPress={() => setIsPlatinumRankingModalVisible(true)}><Text>Platinum Ranking Modal</Text></Pressable>
+                        <Pressable onPress={() => setIsGoldRankingModalVisible(true)}><Text>Gold Ranking Modal</Text></Pressable>
+                        <Pressable onPress={() => setIsSilverRankingModalVisible(true)}><Text>Silver Ranking Modal</Text></Pressable>
+                        <Pressable onPress={() => setIsBronzeRankingModalVisible(true)}><Text>Bronze Ranking Modal</Text></Pressable>
+                        <Pressable onPress={() => setIsUnrankedRankingModalVisible(true)}><Text>Unranked Ranking Modal</Text></Pressable>
+                        <Pressable onPress={() => setIsMissedDaysModalVisible(true)}><Text>Missed Days Modal</Text></Pressable>
+                        <Pressable onPress={() => setIsUpgradeModalVisible(true)}><Text>Upgrade Pet Modal</Text></Pressable>
 
                         <View style={styles.buttonContainer}>
                             {
                                 Platform.OS === "ios" ?
-                                    <PressableIcon icon={SignInWithAppleBtnSvg} width={"100%"} height={60} onPress={() => { playButtonSound() }} />
+                                    <PressableIcon icon={SignInWithAppleBtnSvg} width={"100%"} height={60} onPress={() => { playButtonSound(); loginWithApple() }} />
                                     :
-                                    <PressableIcon icon={SignInWithGoogleBtnSvg} width={"100%"} height={60} onPress={() => {loginWithGoogle();playButtonSound() }} />
+                                    <PressableIcon icon={SignInWithGoogleBtnSvg} width={"100%"} height={60} onPress={() => { loginWithGoogle(); playButtonSound() }} />
 
                             }
                             <PressableIcon onPress={() => { Linking.openURL(PRIVACY_URL) }} icon={PrivacyPolicyBtnSvg} width={"100%"} height={60} />
